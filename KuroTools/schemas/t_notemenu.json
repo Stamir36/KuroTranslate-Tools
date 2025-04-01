@@ -1,0 +1,17 @@
+{
+	"headers": [
+		"NoteCategoryTab",
+		"NoteChapterMenu",
+		"NoteConnectMenu",
+		"NoteMainChara",
+		"NoteMonsAreaMenu",
+		"NoteMonsSpotMenu",
+		"NoteFishingMenu",
+		"NoteGourmetMenu",
+		"NoteGourmetArea",
+		"NoteBooksMenu",
+		"NoteHelpMenu",
+		"NoteMonsRecordData",
+		"NoteGenesisData"
+	]
+}

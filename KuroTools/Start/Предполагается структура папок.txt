@@ -1,0 +1,18 @@
+*main-path*/
+├── start/
+│   ├── 1_disassemble_dat.bat
+│   ├── 2_extract_strings.bat
+│   ├── 3_create_translation_map.bat
+│   ├── 4_compile_dat.bat
+│   └── (Этот файл) README.txt
+├── dat2py_batch.py
+├── py_to_xliff.py
+├── inject_translations.py
+├── py2dat_batch.py
+├── data_to_py/    (Папка для .py файлов)
+├── py_to_data/    (Папка для собранных .dat)
+├── disasm/        (Папка с модулями дизассемблера/ассемблера)
+├── lib/           (Папка с библиотеками парсера/пакера/crc32)
+├── processcle.py  (Скрипт расшифровки)
+├── data_game_strings.xliff (Файл для перевода)
+└── strings_map.json      (Файл с картой строк)
