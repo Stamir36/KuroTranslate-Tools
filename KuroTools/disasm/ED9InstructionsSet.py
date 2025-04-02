@@ -365,7 +365,7 @@ def init_command_names_dicts():
     (0x10, 0x0F) : "Cmd_unknown_6_0F", (0x10, 0x10) : "Cmd_unknown_6_10", (0x10, 0x11) : "Cmd_unknown_6_11",
     (0x10, 0x12) : "Cmd_unknown_6_12", (0x10, 0x13) : "Cmd_unknown_6_13", (0x10, 0x14) : "Cmd_unknown_6_14",
     (0x10, 0x15) : "Cmd_unknown_6_15", (0x10, 0x16) : "Cmd_unknown_6_16", (0x10, 0x17) : "Cmd_unknown_6_17",
-    (0x10, 0x1A) : "Cmd_unknown_6_1A",
+    (0x10, 0x18) : "Cmd_unknown_6_18", (0x10, 0x19) : "Cmd_unknown_6_19", (0x10, 0x1A) : "Cmd_unknown_6_1A",
 
     # Категория 0x11 (17) (UI?)
     (0x11, 0x00) : "Cmd_unknown_7_00", (0x11, 0x01) : "Cmd_unknown_7_01", (0x11, 0x02) : "Cmd_unknown_7_02",

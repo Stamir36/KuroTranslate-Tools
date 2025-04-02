@@ -989,14 +989,17 @@ class ED9Disassembler(object):
                 index_fun = instruction.operands[0].value
                 called_fun = functions[index_fun]
                 instruction.operands[0] = ED9InstructionsSet.operand(functions[instruction.operands[0].value].name, False) 
-                
 
     def wrap_conversion(self, value: int)->str:
         removeLSB = value & 0xC0000000
         actual_value = remove2MSB(value)
         MSB = removeLSB >> 0x1E
         if (MSB == 3):
-            return "\"" + readtextoffset(self.stream, actual_value).replace("\n", "\\n") + "\"" 
+            text = readtextoffset(self.stream, actual_value) # Читаем сырой текст
+            processed_text = text.replace('\\', '\\\\')
+            processed_text = processed_text.replace('"', "'")
+            processed_text = processed_text.replace("\n", "\\n")
+            return '"' + processed_text + '"'
         elif (MSB == 2):
             actual_value = actual_value << 2 
             bytes = struct.pack("<i",actual_value)

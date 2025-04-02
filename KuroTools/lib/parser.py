@@ -184,6 +184,7 @@ def identifytype(value: int)->str:
     elif (MSB == 3):
         return "string"
 
+''' Original get_actual_value_str function
 
 def get_actual_value_str(stream: BufferedReader, value: int)->str:
     removeLSB = value & 0xC0000000
@@ -201,4 +202,24 @@ def get_actual_value_str(stream: BufferedReader, value: int)->str:
         return str((int(actual_value)))
     else:
         return str(hex(int(actual_value)))
+        
+'''
 
+def get_actual_value_str(stream: BufferedReader, value: int)->str:
+    removeLSB = value & 0xC0000000
+    actual_value = remove2MSB(value)
+    MSB = removeLSB >> 0x1E
+    if (MSB == 3):
+        text = readtextoffset(stream, actual_value)
+        processed_text = text.replace('\\', '\\\\')
+        processed_text = processed_text.replace('"', "'")
+        processed_text = processed_text.replace("\n", "\\n")
+        return '"' + processed_text + '"'
+    elif (MSB == 2):
+        actual_value = actual_value << 2
+        bytes = struct.pack("<i",actual_value)
+        return "FLOAT(" + str(struct.unpack("<f", bytes)[0]) + ")"
+    elif (MSB == 1):
+        return "INT(" + str(int(actual_value)) + ")"
+    else:
+        return "UNDEF(" + str(hex(int(actual_value))) + ")"

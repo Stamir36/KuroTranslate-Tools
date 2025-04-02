@@ -4,7 +4,7 @@
 - Перед первым запуском '2_extract_strings.bat' сделайте резервную копию папки '../data_to_py'!
 - Перед первым запуском '3_create_translation_map.bat' сделайте резервную копию папки '../data_to_py'!
 - Убедитесь, что Python установлен и добавлен в переменную среды PATH.
-- Установите необходимые библиотеки: pip install colorama astunparse lxml customtkinter pygments
+- Установите необходимые библиотеки: pip install colorama astunparse lxml customtkinter pygments deep_translator
 
 ШАГИ:
 

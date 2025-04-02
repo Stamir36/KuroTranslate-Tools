@@ -59,44 +59,46 @@ def inject_strings_and_create_temp(original_py_path, temp_py_path):
        Возвращает (True, кол-во_замен) или (False, 0) при ошибке."""
     global string_translation_map
     replacements_done = 0
-    # --- ИЗМЕНЕНИЕ: Используем ast для надежного парсинга строки ---
-    import ast
-    # ----------------------------------------------------------
+    import ast # Импорт внутри функции, если не импортирован глобально
+
     try:
         with open(original_py_path, 'r', encoding='utf-8') as f_in:
             lines = f_in.readlines()
 
         with open(temp_py_path, 'w', encoding='utf-8') as f_out:
-            for line_num, line in enumerate(lines): # Добавляем номер строки для логов
+            for line_num, line in enumerate(lines):
                 stripped_line = line.strip()
-                # Ищем строки вида PUSHSTRING("...")
-                if stripped_line.startswith("PUSHSTRING(\"") and stripped_line.endswith("\")"):
-                    # Извлекаем оригинальную строку
+                if stripped_line.startswith("PUSHSTRING(") and stripped_line.endswith(")"):
                     try:
-                        # Используем ast.literal_eval для безопасного извлечения строки из кода Python
-                        # Берем аргумент функции: все между '(' и последней ')'
-                        arg_str = stripped_line[len("PUSHSTRING("):-1]
-                        original_string = ast.literal_eval(arg_str) # Оцениваем строку Python -> реальная строка
+                        arg_content = stripped_line[len("PUSHSTRING("):-1].strip()
+                        original_string = ast.literal_eval(arg_content)
 
-                        # Ищем перевод в карте
-                        if original_string in string_translation_map:
-                            translated_string = string_translation_map[original_string]
-                            # Заменяем только если перевод отличается от оригинала
-                            if translated_string != original_string:
-                                # Экранируем для записи в Python код
-                                escaped_translated = translated_string.replace('\\', '\\\\').replace('"', '\\"')
-                                # Формируем новую строку PUSHSTRING
-                                indent = line[:len(line) - len(line.lstrip())] # Сохраняем отступ
-                                new_line = f'{indent}PUSHSTRING("{escaped_translated}")\n'
-                                f_out.write(new_line)
-                                replacements_done += 1
+                        # Убедимся, что это действительно была строка
+                        if isinstance(original_string, str):
+                            # Ищем перевод в карте
+                            if original_string in string_translation_map:
+                                translated_string = string_translation_map[original_string]
+                                # Заменяем только если перевод отличается от оригинала
+                                if translated_string != original_string:
+                                    escaped_translated = translated_string.replace('\\', '\\\\').replace('"', '\\"')
+                                    indent = line[:len(line) - len(line.lstrip())] # Сохраняем отступ
+                                    new_line = f'{indent}PUSHSTRING({repr(translated_string)})\n'
+                                    f_out.write(new_line)
+                                    replacements_done += 1
+                                else:
+                                    f_out.write(line) # Записываем оригинал, если перевод совпадает
                             else:
-                                f_out.write(line) # Записываем оригинал, если перевод совпадает
+                                f_out.write(line) # Оставляем как есть, если нет в карте
                         else:
-                            f_out.write(line) # Оставляем как есть, если нет в карте
-                    except Exception as eval_e:
-                         print(f"    {Fore.YELLOW}Предупреждение: Ошибка разбора строки в {os.path.basename(original_py_path)}:{line_num+1}: {line.strip()} -> {eval_e}{Style.RESET_ALL}")
-                         f_out.write(line) # Оставляем как есть при ошибке
+                             # Если ast.literal_eval вернул не строку (маловероятно, но возможно)
+                             f_out.write(line)
+
+                    except (ValueError, SyntaxError) as eval_e:
+                         f_out.write(line) # Оставляем как есть при ошибке разбора
+                    except Exception as e:
+                        # Другие неожиданные ошибки
+                        print(f"    {Fore.RED}Неожиданная ошибка при обработке строки в {os.path.basename(original_py_path)}:{line_num+1}: {line.strip()} -> {e}{Style.RESET_ALL}")
+                        f_out.write(line)
                 else:
                     f_out.write(line) # Записываем строки без PUSHSTRING как есть
 
@@ -104,8 +106,7 @@ def inject_strings_and_create_temp(original_py_path, temp_py_path):
     except Exception as e:
         print(f"{Fore.RED}    ОШИБКА при создании временного файла {os.path.basename(temp_py_path)}: {e}{Style.RESET_ALL}")
         return False, 0
-
-
+    
 def compile_py_scripts(py_dir_path, dat_dir_path, only_translated):
     """
     Компилирует .py скрипты, предварительно заменяя строки.
