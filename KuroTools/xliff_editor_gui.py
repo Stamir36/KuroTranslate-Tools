@@ -5,13 +5,13 @@ from tkinter import filedialog, messagebox, font as tkfont
 import customtkinter as ctk # type: ignore
 import lxml.etree as ET # type: ignore
 import os
-import sys # <--- Добавлено для sys.argv
+import sys
 import shutil
 import math
 import io
 import uuid
 import traceback
-import time # <--- Добавлено для задержки перевода
+import time
 
 '''
     Исходный язык может быть не только английский, но и корейский, или другой. Пусть язык определяется автоматически.
@@ -42,10 +42,9 @@ except ImportError:
     XmlLexer = None
     Token = object
 
-# --- Deep Translator imports --- # <--- ДОБАВЛЕНО
+# --- Deep Translator imports ---
 try:
     from deep_translator import GoogleTranslator, MyMemoryTranslator # type: ignore
-    # Установим Google как сервис по умолчанию, так как он лучше работает с en->ru
     DEFAULT_TRANSLATOR_SERVICE = "Google" # Или "MyMemory"
     TRANSLATION_AVAILABLE = True
     print(f"Библиотека deep-translator найдена. Сервис по умолчанию: {DEFAULT_TRANSLATOR_SERVICE}")
@@ -54,16 +53,16 @@ except ImportError:
     TRANSLATION_AVAILABLE = False
     GoogleTranslator = MyMemoryTranslator = None
     DEFAULT_TRANSLATOR_SERVICE = None
-# --- /Deep Translator imports --- # <--- КОНЕЦ ДОБАВЛЕННОГО
+# --- /Deep Translator imports ---
 
 # --- Конфигурация ---
 XLIFF_FILE_DEFAULT = "data_game_strings.xliff"
 BACKUP_SUFFIX = ".bak"
-SOURCE_LANG = "en" # Исходный язык (для перевода и XLIFF)
-TARGET_LANG = "ru" # Целевой язык (для перевода и XLIFF)
+SOURCE_LANG = "en"
+TARGET_LANG = "ru"
 ITEMS_PER_PAGE_DEFAULT = 500
 DEFAULT_MODE = "markup"
-TRANSLATION_DELAY_SECONDS = 0.15 # Задержка между запросами к API перевода # <--- ДОБАВЛЕНО
+TRANSLATION_DELAY_SECONDS = 0.15
 # --------------------
 
 # --- Настройки customtkinter ---
@@ -100,6 +99,8 @@ items_per_page = ITEMS_PER_PAGE_DEFAULT
 current_page_units_map = {}
 is_dirty = False
 current_mode = DEFAULT_MODE
+detected_source_lang = SOURCE_LANG
+detected_target_lang = TARGET_LANG
 
 main_window = None
 editor_textbox = None
@@ -107,7 +108,8 @@ save_button = None
 open_button = None
 markup_mode_button = None
 edit_mode_button = None
-translate_button = None # <--- Добавлено
+translate_button = None
+stats_button = None
 status_label = None
 page_label = None
 prev_button = None
@@ -128,7 +130,6 @@ def update_status(message):
     global status_label
     if status_label:
         status_label.configure(text=message)
-    # Немедленно обновить GUI для отображения статуса
     if main_window:
         main_window.update_idletasks()
 
@@ -138,7 +139,8 @@ def reset_state():
      global current_page_index, is_dirty, current_page_units_map, editor_textbox
      global save_button, status_label, page_label, prev_button, next_button
      global page_entry, go_button, page_size_entry, page_size_button, page_var
-     global translate_button # <--- Добавлено
+     global translate_button, stats_button
+     global detected_source_lang, detected_target_lang
 
      xliff_tree = xliff_root = None
      xliff_filepath = ""
@@ -147,6 +149,8 @@ def reset_state():
      current_page_units_map = {}
      current_page_index = 0
      is_dirty = False
+     detected_source_lang = SOURCE_LANG
+     detected_target_lang = TARGET_LANG
 
      if editor_textbox is not None:
          text_widget = editor_textbox._textbox if hasattr(editor_textbox, '_textbox') else None
@@ -164,7 +168,8 @@ def reset_state():
      if go_button: go_button.configure(state=tk.DISABLED)
      if page_size_entry: page_size_entry.configure(state=tk.DISABLED)
      if page_size_button: page_size_button.configure(state=tk.DISABLED)
-     if translate_button: translate_button.configure(state=tk.DISABLED) # <--- Добавлено
+     if translate_button: translate_button.configure(state=tk.DISABLED)
+     if stats_button: stats_button.configure(state=tk.DISABLED)
      if page_var: page_var.set("")
      if page_label: page_label.configure(text="Страница: - / -")
 
@@ -265,7 +270,6 @@ def update_page_size(*args):
                      page_size_var.set(str(items_per_page))
                      return
                  else:
-                     # Пытаемся сохранить перед сменой размера
                      if not save_current_page_data_if_dirty(prompt_save=False):
                          messagebox.showerror("Ошибка", "Не удалось сохранить изменения. Смена размера отменена.")
                          page_size_var.set(str(items_per_page))
@@ -303,7 +307,6 @@ def go_to_page(*args):
         if 1 <= page_num <= num_pages:
             new_page_index = page_num - 1
             if new_page_index == current_page_index: return
-            # Пытаемся сохранить перед переходом
             if not save_current_page_data_if_dirty(prompt_save=True):
                 page_var.set(str(current_page_index + 1))
                 return
@@ -348,7 +351,7 @@ def go_to_prev_page():
 def update_navigation_buttons_state():
      """Обновляет состояние кнопок навигации."""
      global prev_button, next_button, go_button, page_entry, page_size_button, page_size_entry
-     global translate_button, untranslated_ids, items_per_page, xliff_tree, current_page_units_map # <--- Добавлено translate_button, current_page_units_map
+     global translate_button, untranslated_ids, items_per_page, xliff_tree, current_page_units_map
      has_content = bool(untranslated_ids)
      if not xliff_tree: has_content = False
      num_pages = math.ceil(len(untranslated_ids) / items_per_page) if has_content else 1
@@ -356,14 +359,13 @@ def update_navigation_buttons_state():
      prev_state = tk.NORMAL if has_content and current_page_index > 0 else tk.DISABLED
      next_state = tk.NORMAL if has_content and current_page_index < num_pages - 1 else tk.DISABLED
      entry_state = tk.NORMAL if has_content else tk.DISABLED
-     # Состояние кнопки перевода
-     translate_state = tk.NORMAL if xliff_tree and TRANSLATION_AVAILABLE and current_page_units_map else tk.DISABLED # <--- Добавлено
+     translate_state = tk.NORMAL if xliff_tree and TRANSLATION_AVAILABLE and current_page_units_map else tk.DISABLED
 
      if prev_button: prev_button.configure(state=prev_state)
      if next_button: next_button.configure(state=next_state)
      if page_entry: page_entry.configure(state=entry_state)
      if go_button: go_button.configure(state=entry_state)
-     if translate_button: translate_button.configure(state=translate_state) # <--- Добавлено
+     if translate_button: translate_button.configure(state=translate_state)
 
      size_entry_state = tk.NORMAL if xliff_tree else tk.DISABLED
      if page_size_entry: page_size_entry.configure(state=size_entry_state)
@@ -371,18 +373,18 @@ def update_navigation_buttons_state():
 
 # --- Функции для работы с XLIFF ---
 
-def load_xliff(filepath_arg=None): # <--- Добавлено filepath_arg
+def load_xliff(filepath_arg=None):
     """Загружает XLIFF файл."""
     global xliff_tree, xliff_root, xliff_filepath, all_trans_units, untranslated_ids
     global current_page_index, is_dirty, current_mode, save_button, status_label
-    global page_label, open_button, items_per_page, page_size_var
-    # Не нужно добавлять translate_button здесь, он обновляется в update_navigation_buttons_state
+    global page_label, open_button, items_per_page, page_size_var, stats_button
+    global detected_source_lang, detected_target_lang
 
     if is_dirty:
         if not messagebox.askyesno("Несохраненные изменения", "Есть изменения. Загрузить новый файл без сохранения?"):
             return
 
-    if filepath_arg: # <--- Если передан путь файла
+    if filepath_arg:
         filepath = filepath_arg
     else:
         filepath = filedialog.askopenfilename(
@@ -393,7 +395,7 @@ def load_xliff(filepath_arg=None): # <--- Добавлено filepath_arg
         )
     if not filepath: return
 
-    reset_state() # Сбрасывает все состояния, включая кнопку перевода
+    reset_state()
     items_per_page = ITEMS_PER_PAGE_DEFAULT
     if page_size_var: page_size_var.set(str(items_per_page))
 
@@ -411,12 +413,36 @@ def load_xliff(filepath_arg=None): # <--- Добавлено filepath_arg
                  print(f"{Fore.YELLOW}Предупреждение: Пространство имен ('{xliff_root.tag}') отличается от '{expected_ns}'. Попытка продолжить.{Style.RESET_ALL}")
 
         xliff_filepath = filepath
+
+        # ---> ОПРЕДЕЛЕНИЕ ЯЗЫКОВ <---
+        file_node = xliff_root.find('.//xliff:file', namespaces=LXML_NSMAP)
+        if file_node is not None:
+            src_lang = file_node.get('source-language')
+            tgt_lang = file_node.get('target-language')
+            if src_lang:
+                detected_source_lang = src_lang
+                print(f"Обнаружен source-language: {detected_source_lang}")
+            else:
+                detected_source_lang = SOURCE_LANG # Fallback
+                print(f"{Fore.YELLOW}Предупреждение: Атрибут 'source-language' не найден в <file>. Используется '{detected_source_lang}'.{Style.RESET_ALL}")
+            if tgt_lang:
+                detected_target_lang = tgt_lang
+                print(f"Обнаружен target-language: {detected_target_lang}")
+            else:
+                detected_target_lang = TARGET_LANG # Fallback
+                print(f"{Fore.YELLOW}Предупреждение: Атрибут 'target-language' не найден в <file>. Используется '{detected_target_lang}'.{Style.RESET_ALL}")
+        else:
+            detected_source_lang = SOURCE_LANG # Fallback
+            detected_target_lang = TARGET_LANG # Fallback
+            print(f"{Fore.YELLOW}Предупреждение: Элемент <file> не найден. Используются языки по умолчанию: source='{detected_source_lang}', target='{detected_target_lang}'.{Style.RESET_ALL}")
+        # --- КОНЕЦ ОПРЕДЕЛЕНИЯ ЯЗЫКОВ ---
+
         all_trans_units = xliff_root.xpath(".//xliff:trans-unit", namespaces=LXML_NSMAP)
 
         if not all_trans_units:
              print(f"{Fore.YELLOW}Предупреждение: В файле не найдено <trans-unit>.{Style.RESET_ALL}")
 
-        # Определение непереведенных строк (как в исходном коде)
+        # Определение непереведенных строк
         untranslated_ids = []
         for unit in all_trans_units:
             unit_id = unit.get("id")
@@ -424,28 +450,30 @@ def load_xliff(filepath_arg=None): # <--- Добавлено filepath_arg
                  print(f"{Fore.YELLOW}Предупреждение: <trans-unit> без 'id'. Пропускается.{Style.RESET_ALL}")
                  continue
             target_elements = unit.xpath("./xliff:target", namespaces=LXML_NSMAP)
-            if not target_elements or not target_elements[0].xpath("normalize-space(.)"):
-                 approved_attr = target_elements[0].get('approved') if target_elements else None
-                 if approved_attr != 'yes':
-                     untranslated_ids.append(unit_id)
-                 # else:
-                     # print(f"ID: {unit_id} пустой, но approved='yes'. Не добавлен.") # Debug
+            if not target_elements:
+                untranslated_ids.append(unit_id)
+            else:
+                target_node = target_elements[0]
+                approved_attr = target_node.get('approved')
+                has_content = target_node.xpath("normalize-space(.)")
+
+                if not has_content and approved_attr != 'yes':
+                    untranslated_ids.append(unit_id)
 
         current_page_index = 0
         is_dirty = False
-        set_mode(current_mode, force_update=True) # Установка режима
+        set_mode(DEFAULT_MODE, force_update=True) # Устанавливаем дефолтный режим
 
-        # Отображение первой страницы (это заполнит current_page_units_map)
         if current_mode == 'markup': display_markup_page()
         elif current_mode == 'edit': display_edit_page()
 
-        update_status(f"Загружен: {os.path.basename(filepath)} | Всего: {len(all_trans_units)} | Без перевода: {len(untranslated_ids)}")
-        if main_window: main_window.title(f"XLIFF Paged Editor - {os.path.basename(filepath)}")
+        update_status(f"Загружен: {os.path.basename(filepath)} | Всего: {len(all_trans_units)} | Без перевода: {len(untranslated_ids)} | {detected_source_lang} -> {detected_target_lang}")
+        if main_window: main_window.title(f"XLIFF Paged Editor - {os.path.basename(filepath)} [{detected_source_lang}->{detected_target_lang}]")
         if save_button: save_button.configure(state=tk.DISABLED)
+        if stats_button: stats_button.configure(state=tk.NORMAL)
         if editor_textbox:
             editor_textbox.configure(state=tk.NORMAL)
             set_focus_on_editor()
-        # Обновляем состояние кнопок ПОСЛЕ отображения первой страницы
         update_navigation_buttons_state()
 
     except ET.XMLSyntaxError as xe:
@@ -470,25 +498,25 @@ def save_current_page_data_if_dirty(prompt_save=False):
             messagebox.showerror("Ошибка редактора", "Не удалось проверить наличие изменений.")
             return False
 
-    if not textbox_modified: return True # Нет изменений в виджете
+    if not textbox_modified: return True
 
     should_save = True
     if prompt_save:
         mode_text = "разметки" if current_mode == 'markup' else "редактирования"
         result = messagebox.askyesnocancel("Сохранить изменения?", f"Сохранить изменения на стр. {current_page_index + 1} (режим {mode_text})?")
-        if result is None: return False # Отмена действия
-        elif result is False: # Не сохранять
+        if result is None: return False
+        elif result is False:
             should_save = False
             if inner_widget:
-                try: inner_widget.edit_modified(False) # Сбрасываем флаг, т.к. не сохраняем
+                try: inner_widget.edit_modified(False)
                 except tk.TclError: pass
-            return True # Разрешаем действие без сохранения
+            return True
 
     if should_save:
         success = False
-        print(f"Сохранение данных страницы {current_page_index + 1}...") # Debug
+        print(f"Сохранение данных страницы {current_page_index + 1}...")
         if current_mode == 'markup':
-            success = save_markup_page_data(force_check=True) # force_check=True т.к. мы уже знаем, что есть изменения
+            success = save_markup_page_data(force_check=True)
             if not success:
                  messagebox.showerror("Ошибка сохранения", "Не удалось сохранить (разметка). Проверьте XML.")
                  return False
@@ -497,20 +525,17 @@ def save_current_page_data_if_dirty(prompt_save=False):
             if not success:
                  messagebox.showerror("Ошибка сохранения", "Не удалось сохранить (редактирование).")
                  return False
-        # Если сохранение успешно
         if success:
             if inner_widget:
                 try:
-                    inner_widget.edit_modified(False) # Сбрасываем флаг после сохранения
-                    print(f"Флаг модификации редактора сброшен после сохранения стр. {current_page_index + 1}.") # Debug
+                    inner_widget.edit_modified(False)
+                    print(f"Флаг модификации редактора сброшен после сохранения стр. {current_page_index + 1}.")
                 except tk.TclError: pass
             return True
         else:
-            # Этого не должно произойти, если код выше отработал
              messagebox.showerror("Ошибка", "Непредвиденная ошибка при сохранении страницы.")
              return False
     else:
-         # Сюда попадаем, если пользователь нажал "Нет"
          return True
 
 def save_xliff():
@@ -520,12 +545,10 @@ def save_xliff():
         messagebox.showwarning("Нет данных", "Сначала загрузите XLIFF файл.")
         return
 
-    # Пытаемся сохранить данные ТЕКУЩЕЙ страницы перед сохранением файла
-    if not save_current_page_data_if_dirty(prompt_save=False): # Не спрашиваем, просто пытаемся сохранить
+    if not save_current_page_data_if_dirty(prompt_save=False):
         messagebox.showerror("Ошибка", "Не удалось сохранить изменения текущей страницы. Исправьте ошибки перед сохранением файла.")
         return
 
-    # Проверяем глобальный флаг is_dirty
     if not is_dirty:
         if save_button: save_button.configure(state=tk.DISABLED)
         update_status("Нет изменений для сохранения.")
@@ -538,24 +561,22 @@ def save_xliff():
              shutil.copy2(xliff_filepath, backup_filepath)
 
         print(f"Сохранение изменений в: {xliff_filepath}...")
-        # Используем BytesIO для правильной записи UTF-8 с декларацией
         output_buffer = io.BytesIO()
         xliff_tree.write(
             output_buffer,
             pretty_print=True,
-            encoding='utf-8',       # Пишем байты UTF-8
+            encoding='utf-8',
             xml_declaration=True,
         )
         xml_content = output_buffer.getvalue()
         with open(xliff_filepath, "wb") as f:
             f.write(xml_content)
 
-        is_dirty = False # Сбрасываем флаг ПОСЛЕ успешной записи
+        is_dirty = False
         if save_button: save_button.configure(state=tk.DISABLED)
         update_status(f"Файл сохранен: {os.path.basename(xliff_filepath)}")
         print("Файл успешно сохранен, is_dirty сброшен.")
 
-        # Сбрасываем флаг модификации редактора
         inner_widget = _get_inner_text_widget()
         if inner_widget:
              try: inner_widget.edit_modified(False)
@@ -571,7 +592,7 @@ def set_editor_text_highlighted(editor_wrapper, text):
     target_widget = _get_inner_text_widget()
     if not target_widget:
         print("Ошибка: Внутренний виджет редактора не найден.")
-        if editor_wrapper: # Попытка вставить в обертку
+        if editor_wrapper:
              try:
                  editor_wrapper.configure(state=tk.NORMAL)
                  editor_wrapper.delete("1.0", tk.END)
@@ -582,17 +603,13 @@ def set_editor_text_highlighted(editor_wrapper, text):
         return
 
     try:
-        # Включаем виджеты для модификации
         editor_wrapper.configure(state=tk.NORMAL)
         target_widget.configure(state=tk.NORMAL)
+        target_widget.delete("1.0", tk.END)
 
-        target_widget.delete("1.0", tk.END) # Очищаем
-
-        # Подсветка или обычный текст
         if not PYGMENTS_AVAILABLE or TEXT_HIGHLIGHT_CONFIG["lexer"] is None or current_mode != 'markup':
             target_widget.insert("1.0", text)
         else:
-            # Применяем подсветку (код остался тем же)
             for tag in target_widget.tag_names():
                 if tag.startswith("Token_"):
                     try: target_widget.tag_delete(tag)
@@ -622,12 +639,10 @@ def set_editor_text_highlighted(editor_wrapper, text):
             except Exception as e:
                 print(f"{Fore.RED}Ошибка подсветки синтаксиса: {e}{Style.RESET_ALL}")
                 target_widget.delete("1.0", tk.END)
-                target_widget.insert("1.0", text) # Вставляем без подсветки
+                target_widget.insert("1.0", text)
 
-        # Сбрасываем флаг модификации ПОСЛЕ вставки
         target_widget.edit_modified(False)
 
-        # Устанавливаем конечное состояние виджетов
         final_state = tk.NORMAL if xliff_tree else tk.DISABLED
         editor_wrapper.configure(state=final_state)
         target_widget.configure(state=final_state)
@@ -639,11 +654,12 @@ def set_editor_text_highlighted(editor_wrapper, text):
         traceback.print_exc()
 
 
-# --- Функция автоматического перевода --- <--- ДОБАВЛЕНО
+# --- Функция автоматического перевода ---
 def translate_current_page():
     """Переводит <source> для всех <trans-unit> на текущей странице."""
     global current_page_units_map, is_dirty, save_button, untranslated_ids
     global translate_button, status_label, all_trans_units
+    global detected_source_lang, detected_target_lang
 
     if not TRANSLATION_AVAILABLE:
         messagebox.showerror("Ошибка", "Функция перевода недоступна. Установите 'deep-translator'.")
@@ -653,39 +669,38 @@ def translate_current_page():
         return
     if not messagebox.askyesno("Подтверждение перевода",
                                f"Перевести {len(current_page_units_map)} строк на стр. {current_page_index + 1} "
-                               f"({SOURCE_LANG} -> {TARGET_LANG})?\n\n"
+                               f"({detected_source_lang} -> {detected_target_lang})?\n\n"
                                f"Существующие переводы будут ЗАМЕНЕНЫ.\n"
                                f"Сервис: {DEFAULT_TRANSLATOR_SERVICE}"):
         return
 
     print(f"Начало перевода страницы {current_page_index + 1}...")
-    if translate_button: translate_button.configure(state=tk.DISABLED) # Выключаем кнопку на время
+    if translate_button: translate_button.configure(state=tk.DISABLED)
     original_status = status_label.cget("text") if status_label else "Перевод..."
-    update_status(f"Перевод стр. {current_page_index + 1} (0%)...")
+    update_status(f"Перевод стр. {current_page_index + 1} ({detected_source_lang}->{detected_target_lang}) (0%)...")
 
     translated_count = 0; error_count = 0; updated_ids_on_page = set(); any_change_made_in_memory = False
     total_units = len(current_page_units_map); units_processed = 0
 
-    # Инициализация переводчика
     try:
+        source_lang_for_translator = detected_source_lang
+        target_lang_for_translator = detected_target_lang
         if DEFAULT_TRANSLATOR_SERVICE == "Google":
-            translator = GoogleTranslator(source=SOURCE_LANG, target=TARGET_LANG)
+            translator = GoogleTranslator(source=source_lang_for_translator, target=target_lang_for_translator)
         elif DEFAULT_TRANSLATOR_SERVICE == "MyMemory":
-            translator = MyMemoryTranslator(source=SOURCE_LANG, target=TARGET_LANG)
+            translator = MyMemoryTranslator(source=source_lang_for_translator, target=target_lang_for_translator)
         else: raise ValueError(f"Неизвестный сервис: {DEFAULT_TRANSLATOR_SERVICE}")
     except Exception as e:
-         messagebox.showerror("Ошибка инициализации переводчика", f"Не удалось создать переводчик:\n{e}")
-         update_navigation_buttons_state() # Пытаемся включить кнопку обратно
+         messagebox.showerror("Ошибка инициализации переводчика", f"Не удалось создать переводчик ({source_lang_for_translator}->{target_lang_for_translator}):\n{e}")
+         update_navigation_buttons_state()
          update_status(original_status)
          return
 
-    # Карта ID -> unit для быстрого доступа к актуальным элементам
     id_to_unit_map = {unit.get("id"): unit for unit in all_trans_units if unit.get("id")}
 
-    # Итерация по ID юнитов ТЕКУЩЕЙ страницы
-    for unit_id in list(current_page_units_map.keys()): # list() для безопасной итерации
-        unit = id_to_unit_map.get(unit_id) # Берем актуальный unit из общей карты
-        if unit is None: units_processed += 1; continue # Пропускаем, если unit не найден
+    for unit_id in list(current_page_units_map.keys()):
+        unit = id_to_unit_map.get(unit_id)
+        if unit is None: units_processed += 1; continue
 
         source_node = unit.find("xliff:source", namespaces=LXML_NSMAP)
         source_text = source_node.xpath("string(.)") if source_node is not None else None
@@ -698,68 +713,67 @@ def translate_current_page():
         original_target_text = target_node.xpath("string(.)") if target_node is not None else ""
 
         try:
-            # ---> Выполняем перевод <---
             print(f"  - Перевод ID {unit_id} ({units_processed + 1}/{total_units})...")
             translated_text = translator.translate(source_text)
-            time.sleep(TRANSLATION_DELAY_SECONDS) # Задержка
+            time.sleep(TRANSLATION_DELAY_SECONDS)
 
             if translated_text and translated_text.strip():
                 translated_text = translated_text.strip()
-                # Создаем <target>, если его нет
                 if target_node is None:
                     target_node = ET.Element(f"{{{LXML_NSMAP['xliff']}}}target")
-                    # Вставляем после <source> или <note>
                     note_node = unit.find("xliff:note", namespaces=LXML_NSMAP)
                     insert_point = source_node if source_node is not None else note_node
                     if insert_point is not None: insert_point.addnext(target_node)
-                    else: # Если нет ни source, ни note, ищем последний элемент
+                    else:
                          last_element = unit.xpath("./*[last()]")
                          if last_element: last_element[0].addnext(target_node)
-                         else: unit.append(target_node) # Вставляем в конец, если unit пуст
+                         else: unit.append(target_node)
+                    # print(f"  - Создан <target> для ID {unit_id}.") # Debug
 
-                # Обновляем текст, если он изменился
                 if original_target_text != translated_text:
-                    target_node.clear() # Очищаем содержимое и атрибуты
+                    target_node.clear()
                     target_node.text = translated_text
-                    # Опционально: снять 'approved' при автопереводе
                     if 'approved' in target_node.attrib: del target_node.attrib['approved']
                     any_change_made_in_memory = True
                     updated_ids_on_page.add(unit_id)
+                    # print(f"  - ID {unit_id} обновлен.") # Debug
+                # else:
+                    # print(f"  - ID {unit_id} текст не изменился.") # Debug
+
                 translated_count += 1
             else:
                 print(f"  - {Fore.YELLOW}Предупреждение: Пустой перевод для ID {unit_id}.{Style.RESET_ALL}")
-                error_count += 1 # Считаем пустой перевод ошибкой
+                error_count += 1
         except Exception as e:
             print(f"  - {Fore.RED}Ошибка перевода ID {unit_id}: {e}{Style.RESET_ALL}")
             error_count += 1
-            # Пауза при ошибках сети/лимитах
-            if "TooManyRequestsError" in str(e) or "timed out" in str(e):
+            if "TooManyRequestsError" in str(e) or "timed out" in str(e) or "429" in str(e):
                  print(f"{Fore.YELLOW}    -> Пауза из-за ошибки сети/лимита...{Style.RESET_ALL}")
                  time.sleep(5)
 
         units_processed += 1
         progress = int((units_processed / total_units) * 100)
-        update_status(f"Перевод стр. {current_page_index + 1} ({progress}%)...")
+        update_status(f"Перевод стр. {current_page_index + 1} ({detected_source_lang}->{detected_target_lang}) ({progress}%)...")
 
-    # --- Обновление после перевода ---
     final_status = f"Перевод завершен. Успешно: {translated_count}, Ошибки/Пропущено: {error_count}."
     print(final_status)
     update_status(final_status)
 
     if any_change_made_in_memory:
         print("Изменения внесены в память.")
-        is_dirty = True # Устанавливаем глобальный флаг
+        is_dirty = True
         if save_button: save_button.configure(state=tk.NORMAL)
 
-        # Обновление списка непереведенных ID
         ids_to_remove = set()
         for unit_id in updated_ids_on_page:
-            unit = id_to_unit_map.get(unit_id) # Получаем обновленный unit
+            unit = id_to_unit_map.get(unit_id)
             if unit:
                 target = unit.find("xliff:target", namespaces=LXML_NSMAP)
-                # Считаем переведенным, если есть текст в target
-                if target is not None and target.xpath("normalize-space(.)"):
-                    ids_to_remove.add(unit_id)
+                is_approved = target is not None and target.get('approved') == 'yes'
+                has_content = target is not None and target.xpath("normalize-space(.)")
+
+                if has_content or is_approved:
+                     ids_to_remove.add(unit_id)
 
         if ids_to_remove:
             original_count = len(untranslated_ids)
@@ -767,28 +781,26 @@ def translate_current_page():
             removed_count = original_count - len(untranslated_ids)
             print(f"Удалено {removed_count} ID из списка непереведенных после перевода.")
 
-        # Обновляем отображение в редакторе
         print("Обновление редактора...")
         if current_mode == 'markup': display_markup_page()
         elif current_mode == 'edit': display_edit_page()
 
-        # Сбрасываем флаг модификации редактора ПОСЛЕ обновления
         inner_widget = _get_inner_text_widget()
         if inner_widget:
             try: inner_widget.edit_modified(False)
             except tk.TclError: pass
 
-        # Обновляем счетчик страниц и навигацию
         update_navigation_buttons_state()
         num_pages = math.ceil(len(untranslated_ids) / items_per_page) if untranslated_ids else 1
         if page_label: page_label.configure(text=f"Страница: {current_page_index + 1} / {num_pages} (неперев.)")
         if page_var: page_var.set(str(current_page_index + 1))
+
+        update_status(f"{final_status} | Всего: {len(all_trans_units)} | Без перевода: {len(untranslated_ids)}")
+
     else:
         print("Не было внесено изменений в память.")
 
-    # Обновляем состояние кнопок (включая кнопку перевода)
     update_navigation_buttons_state()
-# --- /Функция автоматического перевода --- <--- КОНЕЦ ДОБАВЛЕННОГО
 
 
 # --- Функции отображения страниц ---
@@ -796,18 +808,17 @@ def translate_current_page():
 def display_markup_page():
     """Отображает текущую страницу в режиме разметки XML."""
     global current_page_units_map, editor_textbox, page_label, page_var, current_page_index
-    global untranslated_ids, items_per_page, all_trans_units # Добавлены зависимости
+    global untranslated_ids, items_per_page, all_trans_units
     if editor_textbox is None: return
 
     editor_textbox.configure(state=tk.NORMAL)
-    current_page_units_map.clear() # Очищаем карту ПЕРЕД заполнением
+    current_page_units_map.clear()
 
     if not untranslated_ids:
         if page_label: page_label.configure(text="Страница: - / -")
         if page_var: page_var.set("-")
         set_editor_text_highlighted(editor_textbox, "<нет непереведенных строк для отображения>")
-        # editor_textbox.configure(state=tk.DISABLED) # set_editor_text_highlighted управляет этим
-        update_navigation_buttons_state() # Обновляем кнопки
+        update_navigation_buttons_state()
         return
 
     num_pages = math.ceil(len(untranslated_ids) / items_per_page)
@@ -825,41 +836,38 @@ def display_markup_page():
     for unit_id in page_ids:
         unit = id_to_unit_map.get(unit_id)
         if unit is not None:
-            current_page_units_map[unit_id] = unit # Заполняем карту
+            current_page_units_map[unit_id] = unit
             try:
-                # ---> ИСПРАВЛЕНО: Используем ET.tostring с encoding='unicode' <---
                 xml_string = ET.tostring(
                     unit,
-                    encoding='unicode',      # Получаем строку Python (str)
-                    pretty_print=True,       # Форматируем
-                    xml_declaration=False    # Не нужна декларация для фрагмента
+                    encoding='unicode',
+                    pretty_print=True,
+                    xml_declaration=False
                 ).strip()
                 page_xml_parts.append(xml_string)
-                # -----------------------------------------------------------------
             except Exception as e:
                 print(f"{Fore.RED}Ошибка сериализации <trans-unit> ID '{unit_id}': {e}{Style.RESET_ALL}")
-                traceback.print_exc() # Печатаем стек для отладки
+                traceback.print_exc()
                 page_xml_parts.append(f"<!-- Ошибка отображения unit ID: {unit_id} ({e}) -->")
         else:
             print(f"{Fore.YELLOW}Предупреждение: Не найден <trans-unit> для ID '{unit_id}'.{Style.RESET_ALL}")
 
-    full_xml_block = "\n\n".join(page_xml_parts) # Разделяем юниты пустой строкой
+    full_xml_block = "\n\n".join(page_xml_parts)
     set_editor_text_highlighted(editor_textbox, full_xml_block)
-    editor_textbox.yview_moveto(0.0) # Прокрутка вверх
-    update_navigation_buttons_state() # Обновляем кнопки ПОСЛЕ заполнения карты
+    editor_textbox.yview_moveto(0.0)
+    update_navigation_buttons_state()
 
 
 def display_edit_page():
     """Отображает текущую страницу в режиме простого текста."""
     global current_page_units_map, editor_textbox, page_label, page_var, current_page_index
-    global untranslated_ids, items_per_page, all_trans_units # Добавлены зависимости
+    global untranslated_ids, items_per_page, all_trans_units
     if editor_textbox is None: return
 
     editor_textbox.configure(state=tk.NORMAL)
-    current_page_units_map.clear() # Очищаем карту ПЕРЕД заполнением
+    current_page_units_map.clear()
     target_widget = _get_inner_text_widget()
 
-    # Убираем теги подсветки
     if PYGMENTS_AVAILABLE and target_widget:
         for tag in target_widget.tag_names():
             if tag.startswith("Token_"):
@@ -870,8 +878,7 @@ def display_edit_page():
         if page_label: page_label.configure(text="Страница: - / -")
         if page_var: page_var.set("-")
         set_editor_text_highlighted(editor_textbox, "<нет непереведенных строк для отображения>")
-        # editor_textbox.configure(state=tk.DISABLED) # set_editor_text_highlighted управляет этим
-        update_navigation_buttons_state() # Обновляем кнопки
+        update_navigation_buttons_state()
         return
 
     num_pages = math.ceil(len(untranslated_ids) / items_per_page)
@@ -889,10 +896,9 @@ def display_edit_page():
     for unit_id in page_ids:
         unit = id_to_unit_map.get(unit_id)
         if unit is not None:
-            current_page_units_map[unit_id] = unit # Заполняем карту
+            current_page_units_map[unit_id] = unit
             source_text = unit.xpath("string(./xliff:source)", namespaces=LXML_NSMAP) or ""
             target_node = unit.find("xliff:target", namespaces=LXML_NSMAP)
-            # Используем string() для получения только текста из target
             target_text = target_node.xpath("string(.)") if target_node is not None else ""
 
             text_content.append(f"ID: {unit_id}")
@@ -904,8 +910,8 @@ def display_edit_page():
 
     full_text_block = "\n".join(text_content)
     set_editor_text_highlighted(editor_textbox, full_text_block)
-    editor_textbox.yview_moveto(0.0) # Прокрутка вверх
-    update_navigation_buttons_state() # Обновляем кнопки ПОСЛЕ заполнения карты
+    editor_textbox.yview_moveto(0.0)
+    update_navigation_buttons_state()
 
 
 # --- Функции сохранения страниц ---
@@ -925,6 +931,7 @@ def save_markup_page_data(force_check=False):
     edited_xml_string = editor_textbox.get("1.0", "end-1c").strip() if editor_textbox else ""
     if not edited_xml_string: return True
 
+    # Добавляем корневой элемент с нужным пространством имен для парсинга фрагмента
     xml_to_parse = f"<root xmlns:xliff='{LXML_NSMAP['xliff']}'>{edited_xml_string}</root>"
     updated_ids_on_page = set(); any_change_made_in_memory = False
 
@@ -933,59 +940,81 @@ def save_markup_page_data(force_check=False):
         edited_root = ET.fromstring(xml_to_parse, parser=parser)
         edited_units = edited_root.xpath("./xliff:trans-unit", namespaces=LXML_NSMAP)
         if not edited_units and edited_xml_string.strip():
+             # Если нет юнитов, но текст был, значит, он невалидный
              raise ValueError("Не найдено <trans-unit> в отредактированном тексте.")
 
         found_ids_in_editor = set()
         id_to_edited_unit = {}
         for edited_unit in edited_units:
             unit_id = edited_unit.get("id")
-            if not unit_id: continue
+            if not unit_id:
+                print(f"{Fore.YELLOW}Предупреждение: Обнаружен <trans-unit> без ID в редакторе. Пропускается.{Style.RESET_ALL}")
+                continue
             found_ids_in_editor.add(unit_id)
             id_to_edited_unit[unit_id] = edited_unit
 
         id_to_original_unit_map = {unit.get("id"): unit for unit in all_trans_units if unit.get("id")}
 
-        for unit_id in current_page_units_map.keys():
+        for unit_id in current_page_units_map.keys(): # Итерируем по ID, которые ДОЛЖНЫ БЫТЬ на странице
             original_unit = id_to_original_unit_map.get(unit_id)
             edited_unit = id_to_edited_unit.get(unit_id)
-            if original_unit is None or edited_unit is None: continue
 
-            original_target_node = original_unit.find("xliff:target", namespaces=LXML_NSMAP)
-            edited_target_node = edited_unit.find("xliff:target", namespaces=LXML_NSMAP)
-            original_target_str = ET.tostring(original_target_node, encoding='unicode') if original_target_node is not None else "<target/>"
-            edited_target_str = ET.tostring(edited_target_node, encoding='unicode') if edited_target_node is not None else "<target/>"
+            if original_unit is None:
+                 print(f"{Fore.YELLOW}Предупреждение: Оригинальный <trans-unit> для ID '{unit_id}' не найден в памяти. Пропуск.{Style.RESET_ALL}")
+                 continue
+            if edited_unit is None:
+                 print(f"{Fore.YELLOW}Предупреждение: <trans-unit> для ID '{unit_id}' не найден в отредактированном тексте. Пропуск.{Style.RESET_ALL}")
+                 # Возможно, пользователь удалил его в редакторе. НЕ удаляем из памяти здесь.
+                 continue
 
-            if original_target_str != edited_target_str:
-                if original_target_node is not None: original_unit.remove(original_target_node)
-                if edited_target_node is not None:
-                    source_node = original_unit.find("xliff:source", namespaces=LXML_NSMAP)
-                    note_node = original_unit.find("xliff:note", namespaces=LXML_NSMAP)
-                    insert_point = source_node if source_node is not None else note_node
-                    if insert_point is not None: insert_point.addnext(edited_target_node)
-                    else:
-                        last_element = original_unit.xpath("./*[last()]")
-                        if last_element: last_element[0].addnext(edited_target_node)
-                        else: original_unit.append(edited_target_node)
-                any_change_made_in_memory = True
-                updated_ids_on_page.add(unit_id)
+            try:
+                # Сериализуем оба узла для надежного сравнения
+                original_unit_str = ET.tostring(original_unit, encoding='unicode')
+                edited_unit_str = ET.tostring(edited_unit, encoding='unicode')
+            except Exception as ser_err:
+                 print(f"{Fore.RED}Ошибка сериализации при сравнении ID {unit_id}: {ser_err}{Style.RESET_ALL}")
+                 continue # Пропускаем этот юнит, если не можем сравнить
+
+            if original_unit_str != edited_unit_str:
+                parent = original_unit.getparent()
+                if parent is not None:
+                    # Заменяем старый узел новым в дереве lxml
+                    parent.replace(original_unit, edited_unit)
+                    # Обновляем ссылку в all_trans_units
+                    for i, u in enumerate(all_trans_units):
+                         if u == original_unit: # Сравнение по объекту
+                             all_trans_units[i] = edited_unit
+                             break
+                    # Обновляем карту текущей страницы
+                    current_page_units_map[unit_id] = edited_unit
+                    # Обновляем id_to_original_unit_map для следующих итераций
+                    id_to_original_unit_map[unit_id] = edited_unit
+
+                    any_change_made_in_memory = True
+                    updated_ids_on_page.add(unit_id)
+                    # print(f"  - Полностью заменен <trans-unit> ID {unit_id} в памяти.") # <--- УБРАН ВЫВОД
+                else:
+                    print(f"{Fore.YELLOW}Предупреждение: Не удалось найти родителя для <trans-unit> ID {unit_id}. Замена невозможна.{Style.RESET_ALL}")
 
         new_ids_in_editor = found_ids_in_editor - set(current_page_units_map.keys())
         if new_ids_in_editor:
-             print(f"{Fore.YELLOW}Предупреждение: ID из редактора не найдены на стр.: {', '.join(new_ids_in_editor)}.{Style.RESET_ALL}")
+             # Предупреждаем, но не добавляем их, т.к. они не с этой страницы
+             print(f"{Fore.YELLOW}Предупреждение: ID из редактора не ожидались на этой странице и были проигнорированы: {', '.join(new_ids_in_editor)}.{Style.RESET_ALL}")
 
         if any_change_made_in_memory:
             print(f"Обновлено {len(updated_ids_on_page)} строк в памяти (разметка).")
             is_dirty = True
             if save_button: save_button.configure(state=tk.NORMAL)
 
+            # Обновляем untranslated_ids после изменений
             ids_to_remove = set(); ids_to_add = set()
             for unit_id in updated_ids_on_page:
-                 unit = id_to_original_unit_map.get(unit_id)
+                 unit = id_to_original_unit_map.get(unit_id) # Получаем обновленный unit
                  if unit:
                      target = unit.find("xliff:target", namespaces=LXML_NSMAP)
                      is_approved = target is not None and target.get('approved') == 'yes'
-                     has_text = target is not None and target.xpath("normalize-space(.)")
-                     if has_text or is_approved:
+                     has_content = target is not None and target.xpath("normalize-space(.)")
+                     if has_content or is_approved:
                          if unit_id in untranslated_ids: ids_to_remove.add(unit_id)
                      else:
                          if unit_id not in untranslated_ids: ids_to_add.add(unit_id)
@@ -995,11 +1024,38 @@ def save_markup_page_data(force_check=False):
             if ids_to_add:
                  print(f"Добавление {len(ids_to_add)} ID в непереведенные...")
                  for uid in ids_to_add:
-                     if uid not in untranslated_ids: untranslated_ids.append(uid)
+                     if uid not in untranslated_ids:
+                        # Пытаемся вставить в правильное место, чтобы сохранить исходный порядок
+                        try:
+                            target_unit_index = -1
+                            for i, u in enumerate(all_trans_units):
+                                if u.get("id") == uid:
+                                    target_unit_index = i
+                                    break
+                            if target_unit_index != -1:
+                                inserted = False
+                                for j, untr_id in enumerate(untranslated_ids):
+                                    untr_unit = id_to_original_unit_map.get(untr_id)
+                                    if untr_unit:
+                                        try:
+                                            untr_unit_index = all_trans_units.index(untr_unit)
+                                            if target_unit_index < untr_unit_index:
+                                                untranslated_ids.insert(j, uid)
+                                                inserted = True
+                                                break
+                                        except ValueError: pass # untr_unit мог быть удален
+                                if not inserted:
+                                    untranslated_ids.append(uid) # Добавляем в конец, если не нашли куда вставить раньше
+                            else:
+                                untranslated_ids.append(uid) # Добавляем в конец, если не нашли сам юнит в all_trans_units
+                        except Exception as sort_err:
+                            print(f"Ошибка при сортировке untranslated_ids: {sort_err}. Добавление в конец.")
+                            untranslated_ids.append(uid)
 
             update_navigation_buttons_state()
             num_pages = math.ceil(len(untranslated_ids) / items_per_page) if untranslated_ids else 1
             if page_label: page_label.configure(text=f"Страница: {current_page_index + 1} / {num_pages} (неперев.)")
+            update_status(f"Изменения стр. {current_page_index+1} сохранены в памяти. Всего: {len(all_trans_units)} | Без перевода: {len(untranslated_ids)}")
         else:
             print("Изменений на странице не обнаружено.")
         return True
@@ -1030,11 +1086,12 @@ def save_edit_page_data(force_check=False):
     lines = edited_text.split('\n')
     parsed_targets = {}; current_id = None; current_target_lines = []; in_target_section = False
 
-    try: # Парсинг текста из редактора
+    try:
         for line_number, line in enumerate(lines):
             line_strip = line.strip()
             if line.startswith("ID: "):
-                if current_id is not None: parsed_targets[current_id] = "\n".join(current_target_lines).strip()
+                if current_id is not None:
+                    parsed_targets[current_id] = "\n".join(current_target_lines)
                 current_id = line[4:].strip()
                 if not current_id: current_id = None
                 current_target_lines = []; in_target_section = False
@@ -1044,28 +1101,33 @@ def save_edit_page_data(force_check=False):
                 in_target_section = True
                 current_target_lines.append(line[8:])
             elif line_strip == '-'*30:
-                if current_id is not None: parsed_targets[current_id] = "\n".join(current_target_lines).strip()
+                if current_id is not None:
+                    parsed_targets[current_id] = "\n".join(current_target_lines)
                 current_id = None; current_target_lines = []; in_target_section = False
             elif in_target_section:
                  if current_id is None: continue
                  current_target_lines.append(line)
-        if current_id is not None: parsed_targets[current_id] = "\n".join(current_target_lines).strip()
+        if current_id is not None:
+             parsed_targets[current_id] = "\n".join(current_target_lines)
+
     except Exception as e:
         messagebox.showerror("Ошибка парсинга текста", f"Ошибка разбора текста редактора:\n{e}\n{traceback.format_exc()}")
         return False
 
-    # Применение изменений к lxml
     updated_ids_on_page = set(); any_change_made_in_memory = False
     id_to_original_unit_map = {unit.get("id"): unit for unit in all_trans_units if unit.get("id")}
 
-    for unit_id in current_page_units_map.keys(): # Итерируем по ID с текущей страницы
-        if unit_id in parsed_targets: # Если для этого ID есть данные в редакторе
+    for unit_id in current_page_units_map.keys():
+        if unit_id in parsed_targets:
             original_unit = id_to_original_unit_map.get(unit_id)
             if original_unit is None: continue
+
             new_target_text = parsed_targets[unit_id]
             target_node = original_unit.find("xliff:target", namespaces=LXML_NSMAP)
-            # Сравниваем только текст
-            current_target_text = target_node.xpath("string(.)") if target_node is not None else ""
+
+            current_target_text = ""
+            if target_node is not None:
+                current_target_text = "".join(target_node.itertext()) # Получаем текст как есть
 
             if current_target_text != new_target_text:
                  if target_node is None:
@@ -1074,11 +1136,17 @@ def save_edit_page_data(force_check=False):
                      note_node = original_unit.find("xliff:note", namespaces=LXML_NSMAP)
                      insert_point = source_node if source_node is not None else note_node
                      if insert_point is not None: insert_point.addnext(target_node)
-                     else: original_unit.append(target_node)
+                     else:
+                        last_element = original_unit.xpath("./*[last()]")
+                        if last_element: last_element[0].addnext(target_node)
+                        else: original_unit.append(target_node)
+
                  target_node.clear()
                  target_node.text = new_target_text if new_target_text else None
                  if 'approved' in target_node.attrib: del target_node.attrib['approved']
+
                  any_change_made_in_memory = True; updated_ids_on_page.add(unit_id)
+                 # print(f"  - Обновлен <target> для ID {unit_id} (режим редактирования).") # Debug
 
     ids_only_in_editor = set(parsed_targets.keys()) - set(current_page_units_map.keys())
     if ids_only_in_editor:
@@ -1088,15 +1156,15 @@ def save_edit_page_data(force_check=False):
         print(f"Обновлено {len(updated_ids_on_page)} строк в памяти (редактирование).")
         is_dirty = True
         if save_button: save_button.configure(state=tk.NORMAL)
-        # Обновление untranslated_ids (логика та же, что в markup)
+
         ids_to_remove = set(); ids_to_add = set()
         for unit_id in updated_ids_on_page:
             unit = id_to_original_unit_map.get(unit_id)
             if unit:
                 target = unit.find("xliff:target", namespaces=LXML_NSMAP)
                 is_approved = target is not None and target.get('approved') == 'yes'
-                has_text = target is not None and target.xpath("normalize-space(.)")
-                if has_text or is_approved:
+                has_content = target is not None and target.xpath("normalize-space(.)")
+                if has_content or is_approved:
                     if unit_id in untranslated_ids: ids_to_remove.add(unit_id)
                 else:
                     if unit_id not in untranslated_ids: ids_to_add.add(unit_id)
@@ -1106,13 +1174,110 @@ def save_edit_page_data(force_check=False):
         if ids_to_add:
             print(f"Добавление {len(ids_to_add)} ID в непереведенные...")
             for uid in ids_to_add:
-                if uid not in untranslated_ids: untranslated_ids.append(uid)
+                if uid not in untranslated_ids:
+                    # Пытаемся вставить в правильное место для сохранения порядка (как в markup)
+                    try:
+                        target_unit_index = -1
+                        for i, u in enumerate(all_trans_units):
+                            if u.get("id") == uid:
+                                target_unit_index = i
+                                break
+                        if target_unit_index != -1:
+                            inserted = False
+                            for j, untr_id in enumerate(untranslated_ids):
+                                untr_unit = id_to_original_unit_map.get(untr_id)
+                                if untr_unit:
+                                    try:
+                                        untr_unit_index = all_trans_units.index(untr_unit)
+                                        if target_unit_index < untr_unit_index:
+                                            untranslated_ids.insert(j, uid)
+                                            inserted = True
+                                            break
+                                    except ValueError: pass # untr_unit мог быть удален
+                            if not inserted:
+                                untranslated_ids.append(uid) # Добавляем в конец, если не нашли куда вставить раньше
+                        else:
+                            untranslated_ids.append(uid) # Добавляем в конец, если не нашли сам юнит в all_trans_units
+                    except Exception as sort_err:
+                        print(f"Ошибка при сортировке untranslated_ids: {sort_err}. Добавление в конец.")
+                        untranslated_ids.append(uid)
+
         update_navigation_buttons_state()
         num_pages = math.ceil(len(untranslated_ids) / items_per_page) if untranslated_ids else 1
         if page_label: page_label.configure(text=f"Страница: {current_page_index + 1} / {num_pages} (неперев.)")
+        update_status(f"Изменения стр. {current_page_index+1} сохранены в памяти. Всего: {len(all_trans_units)} | Без перевода: {len(untranslated_ids)}")
+
     else:
         print("Изменений на странице не обнаружено.")
     return True
+
+# --- Функция отображения статистики ---
+def show_statistics_window():
+    """Отображает окно со статистикой перевода."""
+    global all_trans_units, untranslated_ids, main_window
+
+    if not xliff_tree:
+        messagebox.showinfo("Нет данных", "Сначала загрузите XLIFF файл.")
+        return
+
+    # Получаем актуальные данные
+    total_units = len(all_trans_units)
+    untranslated_count = len(untranslated_ids)
+    translated_count = total_units - untranslated_count
+    progress_value = (translated_count / total_units) if total_units > 0 else 0
+
+    # Создаем новое Toplevel окно
+    stats_win = ctk.CTkToplevel(main_window)
+    stats_win.title("Статистика") # Оставляем краткий заголовок окна
+    stats_win.geometry("350x220") # Немного увеличим высоту для прогресс-бара
+    stats_win.resizable(False, False)
+    stats_win.transient(main_window)
+    stats_win.grab_set()
+
+    # --- Заголовок внутри окна ---
+    title_font = ctk.CTkFont(size=14, weight="bold")
+    title_label = ctk.CTkLabel(stats_win, text="Статистика перевода", font=title_font, anchor="center")
+    title_label.pack(pady=(15, 10), padx=15, fill='x')
+
+    # --- Метки с информацией ---
+    info_frame = ctk.CTkFrame(stats_win, fg_color="transparent")
+    info_frame.pack(pady=5, padx=15, fill='x')
+    ctk.CTkLabel(info_frame, text=f"Всего строк:", anchor="w").grid(row=0, column=0, sticky='w', pady=2)
+    ctk.CTkLabel(info_frame, text=f"{total_units}", anchor="e").grid(row=0, column=1, sticky='e', pady=2, padx=(10,0))
+    ctk.CTkLabel(info_frame, text=f"Не переведено строк:", anchor="w").grid(row=1, column=0, sticky='w', pady=2)
+    ctk.CTkLabel(info_frame, text=f"{untranslated_count}", anchor="e").grid(row=1, column=1, sticky='e', pady=2, padx=(10,0))
+    ctk.CTkLabel(info_frame, text=f"Прогресс:", anchor="w").grid(row=2, column=0, sticky='w', pady=2)
+    ctk.CTkLabel(info_frame, text=f"{progress_value*100:.2f}%", anchor="e").grid(row=2, column=1, sticky='e', pady=2, padx=(10,0))
+    info_frame.grid_columnconfigure(0, weight=1) # Метка слева растягивается
+    info_frame.grid_columnconfigure(1, weight=0) # Значение справа прижимается
+
+    # --- Прогресс-бар ---
+    progress_bar = ctk.CTkProgressBar(stats_win, orientation="horizontal", height=15)
+    progress_bar.pack(pady=(10, 5), padx=15, fill='x')
+    progress_bar.set(progress_value) # Устанавливаем значение от 0 до 1
+
+    # --- Кнопка Закрыть ---
+    close_button = ctk.CTkButton(stats_win, text="Закрыть", command=stats_win.destroy, width=100)
+    close_button.pack(pady=(15, 15))
+
+    stats_win.focus_set()
+    # Центрирование окна статистики
+    main_window.update_idletasks() # Обновляем геометрию главного окна
+    stats_win.update_idletasks()   # Обновляем геометрию окна статистики
+    main_win_x = main_window.winfo_x()
+    main_win_y = main_window.winfo_y()
+    main_win_width = main_window.winfo_width()
+    main_win_height = main_window.winfo_height()
+    stats_win_width = stats_win.winfo_width() # Теперь можно получить актуальную ширину/высоту
+    stats_win_height = stats_win.winfo_height()
+    pos_x = main_win_x + (main_win_width // 2) - (stats_win_width // 2)
+    pos_y = main_win_y + (main_win_height // 2) - (stats_win_height // 2)
+    # Корректируем позицию, если окно выходит за пределы экрана (простая проверка)
+    screen_width = main_window.winfo_screenwidth()
+    screen_height = main_window.winfo_screenheight()
+    pos_x = max(0, min(pos_x, screen_width - stats_win_width))
+    pos_y = max(0, min(pos_y, screen_height - stats_win_height))
+    stats_win.geometry(f"+{pos_x}+{pos_y}")
 
 
 # --- Создание основного окна и виджетов ---
@@ -1121,30 +1286,37 @@ def create_main_window():
     global main_window, editor_textbox, prev_button, next_button, page_label, page_var
     global page_entry, go_button, page_size_var, page_size_entry, page_size_button
     global status_label, save_button, open_button, markup_mode_button, edit_mode_button
-    global translate_button # <--- Добавлено
+    global translate_button, stats_button
 
     main_window = ctk.CTk()
     main_window.title("XLIFF Paged Editor")
-    main_window.geometry("1000x700") # Увеличим немного
+    main_window.geometry("1000x700")
 
     # --- Top Frame ---
     top_frame = ctk.CTkFrame(main_window, fg_color="transparent")
     top_frame.pack(side=tk.TOP, fill=tk.X, padx=10, pady=(10, 5))
-    # Frame для кнопок слева
+
+    # --- Left Buttons Frame (Modes, Translate, Stats) ---
     left_buttons_frame = ctk.CTkFrame(top_frame, fg_color="transparent")
     left_buttons_frame.pack(side=tk.LEFT, padx=(0, 10))
+
     markup_mode_button = ctk.CTkButton(left_buttons_frame, text="Режим разметки", command=lambda: set_mode('markup'), width=140)
     markup_mode_button.pack(side=tk.LEFT, padx=(0, 5))
-    edit_mode_button = ctk.CTkButton(left_buttons_frame, text="Режим редактирования", command=lambda: set_mode('edit'), width=160)
-    edit_mode_button.pack(side=tk.LEFT, padx=(0, 10))
-    # Кнопка перевода <--- ДОБАВЛЕНО
-    translate_button = ctk.CTkButton(left_buttons_frame, text="Перевести страницу", command=translate_current_page, width=150)
+    edit_mode_button = ctk.CTkButton(left_buttons_frame, text="Режим текста", command=lambda: set_mode('edit'), width=120)
+    edit_mode_button.pack(side=tk.LEFT, padx=(0, 5))
+    translate_button = ctk.CTkButton(left_buttons_frame, text="Перевести стр.", command=translate_current_page, width=130)
     translate_button.pack(side=tk.LEFT, padx=(0, 5))
-    translate_button.configure(state=tk.DISABLED) # Изначально выключена
+    translate_button.configure(state=tk.DISABLED)
     if not TRANSLATION_AVAILABLE: translate_button.configure(text="Перевод (n/a)")
-    # Кнопка открытия справа
-    open_button = ctk.CTkButton(top_frame, text="Открыть XLIFF...", command=load_xliff, width=120)
-    open_button.pack(side=tk.RIGHT)
+    stats_button = ctk.CTkButton(left_buttons_frame, text="Статистика", command=show_statistics_window, width=100)
+    stats_button.pack(side=tk.LEFT, padx=(0, 5))
+    stats_button.configure(state=tk.DISABLED)
+
+    # --- Right Buttons Frame (Open) ---
+    right_buttons_frame = ctk.CTkFrame(top_frame, fg_color="transparent")
+    right_buttons_frame.pack(side=tk.RIGHT)
+    open_button = ctk.CTkButton(right_buttons_frame, text="Открыть XLIFF...", command=load_xliff, width=120)
+    open_button.pack(side=tk.LEFT)
 
     # --- Bottom Frame (Status and Save) ---
     bottom_frame_outer = ctk.CTkFrame(main_window)
@@ -1184,18 +1356,24 @@ def create_main_window():
     # --- Text Editor ---
     editor_frame = ctk.CTkFrame(main_window, fg_color="transparent")
     editor_frame.pack(expand=True, fill=tk.BOTH, padx=10, pady=(0, 5))
-    editor_font = ctk.CTkFont(family="Consolas", size=11)
+    editor_font = ctk.CTkFont(family="Consolas", size=11) # Или другой моноширинный шрифт
     editor_textbox = ctk.CTkTextbox(
         editor_frame,
-        wrap=tk.NONE, # Начнем без переноса, режим разметки включит WORD
+        wrap=tk.NONE, # Изначально без переноса
         undo=True, font=editor_font, border_width=1, padx=5, pady=5
+        # Убрали явное указание scrollbar - CTkTextbox должен сам управлять ими
     )
+    # Убираем явное создание и упаковку scrollbar X
+    # editor_scrollbar_x = ctk.CTkScrollbar(editor_frame, command=editor_textbox.xview, orientation="horizontal")
+    # editor_scrollbar_x.pack(side=tk.BOTTOM, fill=tk.X)
+    # editor_textbox.configure(xscrollcommand=editor_scrollbar_x.set) # Убираем
+
+    # Оставляем только Y скроллбар, который нужен почти всегда
     editor_scrollbar_y = ctk.CTkScrollbar(editor_frame, command=editor_textbox.yview)
     editor_scrollbar_y.pack(side=tk.RIGHT, fill=tk.Y)
-    editor_scrollbar_x = ctk.CTkScrollbar(editor_frame, command=editor_textbox.xview, orientation="horizontal")
-    editor_scrollbar_x.pack(side=tk.BOTTOM, fill=tk.X) # Скроллбар X для режима без переноса
-    editor_textbox.configure(yscrollcommand=editor_scrollbar_y.set, xscrollcommand=editor_scrollbar_x.set)
+    editor_textbox.configure(yscrollcommand=editor_scrollbar_y.set)
     editor_textbox.pack(expand=True, fill=tk.BOTH, side=tk.LEFT)
+
 
     # --- Внутренний виджет и биндинги ---
     text_widget = _get_inner_text_widget()
@@ -1214,28 +1392,38 @@ def create_main_window():
             except: pass
             try: is_empty = not text_widget.get("1.0", tk.END + "-1c").strip()
             except: pass
+            widget_state = text_widget.cget("state")
+            can_modify = can_modify and (widget_state == tk.NORMAL)
+
             context_menu.entryconfigure("Вырезать", state=tk.NORMAL if can_modify and has_selection else tk.DISABLED)
             context_menu.entryconfigure("Копировать", state=tk.NORMAL if has_selection else tk.DISABLED)
             context_menu.entryconfigure("Вставить", state=tk.NORMAL if can_modify and has_clipboard else tk.DISABLED)
             context_menu.entryconfigure("Выделить все", state=tk.NORMAL if not is_empty else tk.DISABLED)
-            if (can_modify and has_selection) or has_selection or (can_modify and has_clipboard) or not is_empty:
+            if has_selection or (can_modify and has_clipboard) or not is_empty:
                 context_menu.tk_popup(event.x_root, event.y_root)
         text_widget.bind("<Button-3>", show_context_menu)
         text_widget.bind("<Button-2>", show_context_menu)
-        # Используем bind_all для перехвата стандартных комбинаций у CTkTextbox
+
         text_widget.bind_all("<Control-a>", select_all_text); text_widget.bind_all("<Control-A>", select_all_text)
         text_widget.bind_all("<Control-x>", cut_text); text_widget.bind_all("<Control-X>", cut_text)
         text_widget.bind_all("<Control-c>", copy_text); text_widget.bind_all("<Control-C>", copy_text)
         text_widget.bind_all("<Control-v>", paste_text); text_widget.bind_all("<Control-V>", paste_text)
+        text_widget.bind_all("<Command-a>", select_all_text); text_widget.bind_all("<Command-A>", select_all_text)
+        text_widget.bind_all("<Command-x>", cut_text); text_widget.bind_all("<Command-X>", cut_text)
+        text_widget.bind_all("<Command-c>", copy_text); text_widget.bind_all("<Command-C>", copy_text)
+        text_widget.bind_all("<Command-v>", paste_text); text_widget.bind_all("<Command-V>", paste_text)
+
         main_window.bind_all("<Control-s>", lambda event: save_xliff()); main_window.bind_all("<Control-S>", lambda event: save_xliff())
-        text_widget.bind("<<Modified>>", handle_text_modification) # Отслеживание изменений
+        main_window.bind_all("<Command-s>", lambda event: save_xliff()); main_window.bind_all("<Command-S>", lambda event: save_xliff())
+
+        text_widget.bind("<<Modified>>", handle_text_modification)
     else:
         print(f"{Fore.RED}Критическая ошибка: Не удалось получить внутренний tk.Text!{Style.RESET_ALL}")
 
     # --- Initial State ---
     reset_state()
-    set_mode(DEFAULT_MODE, force_update=True) # Устанавливаем начальный режим
-    main_window.protocol("WM_DELETE_WINDOW", on_closing) # Обработчик закрытия
+    set_mode(DEFAULT_MODE, force_update=True)
+    main_window.protocol("WM_DELETE_WINDOW", on_closing)
     return main_window
 
 # --- Управление режимами ---
@@ -1243,18 +1431,18 @@ def set_mode(mode, force_update=False):
     """Переключает режим редактора."""
     global current_mode, markup_mode_button, edit_mode_button, editor_textbox, status_label
     if not xliff_tree and not force_update:
-        # Обновляем только кнопки, если файл не загружен
+        active_color = ctk.ThemeManager.theme["CTkButton"]["fg_color"]
+        inactive_color = ctk.ThemeManager.theme["CTkButton"]["hover_color"]
         if mode == 'markup':
-             if markup_mode_button: markup_mode_button.configure(state=tk.DISABLED)
-             if edit_mode_button: edit_mode_button.configure(state=tk.NORMAL)
+             if markup_mode_button: markup_mode_button.configure(state=tk.DISABLED, fg_color=active_color)
+             if edit_mode_button: edit_mode_button.configure(state=tk.NORMAL, fg_color=inactive_color)
         elif mode == 'edit':
-             if markup_mode_button: markup_mode_button.configure(state=tk.NORMAL)
-             if edit_mode_button: edit_mode_button.configure(state=tk.DISABLED)
-        current_mode = mode # Запоминаем выбранный режим
+             if markup_mode_button: markup_mode_button.configure(state=tk.NORMAL, fg_color=inactive_color)
+             if edit_mode_button: edit_mode_button.configure(state=tk.DISABLED, fg_color=active_color)
+        current_mode = mode
         return
-    if not force_update and mode == current_mode: return # Режим уже установлен
+    if not force_update and mode == current_mode: return
 
-    # Пытаемся сохранить перед сменой режима
     if not force_update:
         if not save_current_page_data_if_dirty(prompt_save=True):
             print("Смена режима отменена.")
@@ -1265,51 +1453,54 @@ def set_mode(mode, force_update=False):
     current_mode = mode
 
     if editor_textbox:
+        active_color = ctk.ThemeManager.theme["CTkButton"]["fg_color"]
+        inactive_color = ctk.ThemeManager.theme["CTkButton"]["hover_color"]
+
         if mode == 'markup':
-            if markup_mode_button: markup_mode_button.configure(state=tk.DISABLED)
-            if edit_mode_button: edit_mode_button.configure(state=tk.NORMAL)
+            if markup_mode_button: markup_mode_button.configure(state=tk.DISABLED, fg_color=active_color)
+            if edit_mode_button: edit_mode_button.configure(state=tk.NORMAL, fg_color=inactive_color)
             editor_textbox.configure(wrap=tk.WORD) # Включаем перенос
             update_status("Режим: Разметка XML")
         elif mode == 'edit':
-            if markup_mode_button: markup_mode_button.configure(state=tk.NORMAL)
-            if edit_mode_button: edit_mode_button.configure(state=tk.DISABLED)
+            if markup_mode_button: markup_mode_button.configure(state=tk.NORMAL, fg_color=inactive_color)
+            if edit_mode_button: edit_mode_button.configure(state=tk.DISABLED, fg_color=active_color)
             editor_textbox.configure(wrap=tk.NONE) # Выключаем перенос
             update_status("Режим: Редактирование текста")
         else:
             current_mode = previous_mode
             print(f"{Fore.RED}Ошибка: Неизвестный режим '{mode}'{Style.RESET_ALL}")
+            set_mode(previous_mode, force_update=True)
             return
 
-        # Перерисовываем содержимое, если режим изменился или нужно принудительно
+        # CTkTextbox должен сам управлять видимостью горизонтального скроллбара
+        # в зависимости от параметра wrap
+
         if mode != previous_mode or force_update:
             if mode == 'markup': display_markup_page()
             elif mode == 'edit': display_edit_page()
 
-        set_focus_on_editor() # Устанавливаем фокус после смены режима/обновления
-    else: # При инициализации, когда editor_textbox еще None
+        set_focus_on_editor()
+    else: # При инициализации
          if mode == 'markup':
-             if markup_mode_button: markup_mode_button.configure(state=tk.DISABLED)
-             if edit_mode_button: edit_mode_button.configure(state=tk.NORMAL)
+             if markup_mode_button: markup_mode_button.configure(state=tk.DISABLED, fg_color=ctk.ThemeManager.theme["CTkButton"]["fg_color"])
+             if edit_mode_button: edit_mode_button.configure(state=tk.NORMAL, fg_color=ctk.ThemeManager.theme["CTkButton"]["hover_color"])
          elif mode == 'edit':
-             if markup_mode_button: markup_mode_button.configure(state=tk.NORMAL)
-             if edit_mode_button: edit_mode_button.configure(state=tk.DISABLED)
+             if markup_mode_button: markup_mode_button.configure(state=tk.NORMAL, fg_color=ctk.ThemeManager.theme["CTkButton"]["hover_color"])
+             if edit_mode_button: edit_mode_button.configure(state=tk.DISABLED, fg_color=ctk.ThemeManager.theme["CTkButton"]["fg_color"])
 
 
 def handle_text_modification(event=None):
     """Обработчик события <<Modified>> от внутреннего tk.Text."""
-    # Этот обработчик в ИСХОДНОЙ версии использовался для установки is_dirty
-    # Оставим его таким же для совместимости с оригинальной логикой,
-    # хотя более строгая проверка делается в save_..._page_data
     global is_dirty, save_button
     inner_widget = _get_inner_text_widget()
     if inner_widget:
         try:
             if inner_widget.edit_modified():
-                 if not is_dirty: # Ставим флаг только один раз
-                     is_dirty = True
-                     print("* Обнаружено изменение текста, установлен флаг is_dirty.") # Debug
-                     if save_button: save_button.configure(state=tk.NORMAL)
-        except tk.TclError: pass # Игнорируем ошибку, если виджет удален
+                 is_dirty = True
+                 if save_button and save_button.cget('state') == tk.DISABLED:
+                     save_button.configure(state=tk.NORMAL)
+                     # print("* Обнаружено изменение текста, флаг is_dirty установлен, кнопка Сохранить включена.") # Debug
+        except tk.TclError: pass
 
 def on_closing():
     """Обработчик события закрытия окна."""
@@ -1321,39 +1512,37 @@ def on_closing():
          try: textbox_modified = inner_widget.edit_modified()
          except tk.TclError: pass
 
-    # Сначала пытаемся сохранить изменения ТЕКУЩЕЙ страницы
     if textbox_modified:
         print("Обнаружены изменения в редакторе при закрытии...")
-        page_save_ok = save_current_page_data_if_dirty(prompt_save=False) # Не спрашиваем
+        page_save_ok = save_current_page_data_if_dirty(prompt_save=False)
         if not page_save_ok:
-             if not messagebox.askokcancel("Ошибка сохранения страницы", "Не удалось сохранить изменения на тек. странице. Все равно выйти?"):
-                 return # Отменяем закрытие
+             if not messagebox.askokcancel("Ошибка сохранения страницы", "Не удалось сохранить изменения на текущей странице.\nВсе равно выйти (изменения страницы будут потеряны)?"):
+                 return
 
-    # Затем проверяем глобальный флаг is_dirty (изменения в памяти)
     if is_dirty:
-        result = messagebox.askyesnocancel("Выход", "Есть несохраненные изменения. Сохранить перед выходом?", icon='warning')
-        if result is True: # Yes
+        result = messagebox.askyesnocancel("Выход", "Есть несохраненные изменения в памяти.\nСохранить их в файл перед выходом?", icon='warning')
+        if result is True:
             save_xliff()
-            if is_dirty: # Если сохранение не удалось
-                 if messagebox.askokcancel("Ошибка сохранения файла", "Не удалось сохранить изменения. Все равно выйти?", icon='error'):
-                     main_window.destroy() # Выходим без сохранения
-                 else: return # Отмена
-            else: main_window.destroy() # Сохранение удалось
-        elif result is False: # No
-            if messagebox.askyesno("Подтверждение", "Вы уверены, что хотите выйти без сохранения?", icon='warning'):
+            if is_dirty:
+                 if messagebox.askokcancel("Ошибка сохранения файла", "Не удалось сохранить изменения в файл.\nВсе равно выйти?", icon='error'):
+                     main_window.destroy()
+                 else: return
+            else: main_window.destroy()
+        elif result is False:
+            if messagebox.askyesno("Подтверждение", "Вы уверены, что хотите выйти без сохранения изменений?", icon='warning'):
                  main_window.destroy()
-            else: return # Отмена
-        else: # Cancel
-            return # Отмена
-    else: # Нет изменений (is_dirty == False)
+            else: return
+        else:
+            return
+    else:
         main_window.destroy()
 
 # --- Запуск приложения ---
 if __name__ == "__main__":
-    filepath_from_cli = None # <--- Добавлено для хранения пути из командной строки
-    if len(sys.argv) > 1: # <--- Проверка аргументов командной строки
+    filepath_from_cli = None
+    if len(sys.argv) > 1:
         filepath_from_cli = sys.argv[1]
-        print(f"Файл из командной строки: {filepath_from_cli}") # Опционально для отладки
+        print(f"Файл из командной строки: {filepath_from_cli}")
 
     display_available = True
     try:
@@ -1363,29 +1552,33 @@ if __name__ == "__main__":
         if "no display name" in str(e) or "couldn't connect to display" in str(e):
              print(f"{Fore.RED}Ошибка Tkinter: Не удалось подключиться к дисплею.{Style.RESET_ALL}")
              display_available = False
-             try: root_err = tk.Tk(); root_err.withdraw(); messagebox.showerror("Ошибка запуска", "Нет граф. дисплея."); root_err.destroy()
+             try: root_err = tk.Tk(); root_err.withdraw(); messagebox.showerror("Ошибка запуска", "Не удалось инициализировать графический интерфейс.\nУбедитесь, что дисплей доступен."); root_err.destroy()
              except Exception: pass
         else:
              print(f"{Fore.RED}Неожиданная ошибка Tcl/Tk при проверке дисплея:{Style.RESET_ALL}\n{e}")
              display_available = False
+             try: root_err = tk.Tk(); root_err.withdraw(); messagebox.showerror("Ошибка Tcl/Tk", f"Критическая ошибка Tcl/Tk:\n{e}\nЗапуск невозможен."); root_err.destroy()
+             except Exception: pass
              sys.exit(1)
 
     if display_available:
         try:
             root = create_main_window()
             if root:
-                if filepath_from_cli: # <--- Загрузка файла, если путь передан
-                    load_xliff(filepath_arg=filepath_from_cli) # <--- Вызов load_xliff с путем
+                if filepath_from_cli:
+                    root.after(100, lambda: load_xliff(filepath_arg=filepath_from_cli))
                 root.mainloop()
-            else: print(f"{Fore.RED}Ошибка: Не удалось создать главное окно.{Style.RESET_ALL}"); sys.exit(1)
+            else:
+                print(f"{Fore.RED}Ошибка: Не удалось создать главное окно.{Style.RESET_ALL}")
+                sys.exit(1)
         except tk.TclError as e:
              print(f"{Fore.RED}Критическая ошибка Tcl/Tk:{Style.RESET_ALL}"); traceback.print_exc()
-             try: root_err = tk.Tk(); root_err.withdraw(); messagebox.showerror("Критическая ошибка Tcl/Tk", f"Ошибка Tcl/Tk:\n{e}\nЗакрытие."); root_err.destroy()
+             try: root_err = tk.Tk(); root_err.withdraw(); messagebox.showerror("Критическая ошибка Tcl/Tk", f"Ошибка Tcl/Tk:\n{e}\nПриложение будет закрыто."); root_err.destroy()
              except Exception: pass
              sys.exit(1)
         except Exception as e:
              print(f"{Fore.RED}Критическая ошибка Python:{Style.RESET_ALL}"); traceback.print_exc()
-             try: root_err = tk.Tk(); root_err.withdraw(); messagebox.showerror("Критическая ошибка Python", f"Ошибка Python:\n{type(e).__name__}: {e}\nЗакрытие."); root_err.destroy()
+             try: root_err = tk.Tk(); root_err.withdraw(); messagebox.showerror("Критическая ошибка Python", f"Ошибка Python:\n{type(e).__name__}: {e}\nПриложение будет закрыто."); root_err.destroy()
              except Exception: pass
              sys.exit(1)
     else:

@@ -7,6 +7,22 @@ import traceback
 import json # Для чтения карты строк
 import uuid # Для временных файлов
 import argparse # Для аргументов командной строки
+import ast # <-- ДОБАВИТЬ ИМПОРТ AST
+
+# Попытка импортировать astunparse (для Python 3.9+) или astor (для < 3.9)
+try:
+    from ast import unparse # Python 3.9+
+except ImportError:
+    try:
+        import astor as astor_importer # Используем псевдоним, чтобы не конфликтовать с модулем ast
+        unparse = astor_importer.to_source
+        print(f"{Fore.YELLOW}Примечание: Используется 'astor' для генерации кода из AST (для Python < 3.9).{Style.RESET_ALL}")
+    except ImportError:
+        print(f"{Fore.RED}ОШИБКА: Не найден ни ast.unparse (Python 3.9+), ни библиотека astor.{Style.RESET_ALL}")
+        print(f"{Fore.RED}Пожалуйста, установите astor: pip install astor{Style.RESET_ALL}")
+        sys.exit(1)
+
+
 try:
     import colorama
     colorama.init(autoreset=True) # Инициализация colorama с автосбросом цвета
@@ -44,7 +60,9 @@ def load_string_map(strmap_filepath):
     print(f"{Fore.CYAN}Загрузка карты строк из: {Style.BRIGHT}{strmap_filepath}{Style.RESET_ALL}...")
     try:
         with open(strmap_abs_path, 'r', encoding='utf-8') as f:
-            string_translation_map = json.load(f)
+            data = json.load(f)
+            # Убедимся, что ключи и значения - строки
+            string_translation_map = {str(k): str(v) for k, v in data.items()}
         print(f"Загружено записей в карте строк: {len(string_translation_map)}")
         if not string_translation_map:
              print(f"{Fore.YELLOW}Предупреждение: Загруженная карта строк пуста.{Style.RESET_ALL}")
@@ -53,63 +71,98 @@ def load_string_map(strmap_filepath):
         print(f"{Fore.RED}Ошибка при чтении JSON карты строк '{strmap_abs_path}': {e}{Style.RESET_ALL}")
         string_translation_map = {}
         return False
+    except Exception as e:
+        print(f"{Fore.RED}Неожиданная ошибка при загрузке карты строк: {e}{Style.RESET_ALL}")
+        string_translation_map = {}
+        return False
 
-def inject_strings_and_create_temp(original_py_path, temp_py_path):
-    """Читает оригинальный .py, заменяет PUSHSTRING и пишет во временный файл.
-       Возвращает (True, кол-во_замен) или (False, 0) при ошибке."""
+
+# --- НОВЫЙ КЛАСС ДЛЯ ЗАМЕНЫ СТРОК ЧЕРЕЗ AST ---
+class StringInjector(ast.NodeTransformer):
+    """
+    Обходит AST и заменяет строковые константы согласно карте переводов.
+    """
+    def __init__(self, translation_map):
+        super().__init__()
+        self.translation_map = translation_map
+        self.replacements_done = 0
+
+    # Для Python 3.8+ используем visit_Constant
+    def visit_Constant(self, node):
+        # Проверяем, что это строковая константа
+        if isinstance(node.value, str):
+            original_string = node.value
+            # Ищем перевод
+            if original_string in self.translation_map:
+                translated_string = self.translation_map[original_string]
+                # Заменяем, только если перевод отличается
+                if translated_string != original_string:
+                    # Создаем новый узел с переведенной строкой
+                    new_node = ast.Constant(value=translated_string)
+                    # Копируем информацию о местоположении для unparse
+                    ast.copy_location(new_node, node)
+                    self.replacements_done += 1
+                    return new_node # Возвращаем измененный узел
+        # Если не строка или нет перевода/не отличается, возвращаем исходный узел
+        return node
+
+    # Для Python < 3.8 используем visit_Str (если нужен)
+    # def visit_Str(self, node):
+    #     original_string = node.s
+    #     if original_string in self.translation_map:
+    #         translated_string = self.translation_map[original_string]
+    #         if translated_string != original_string:
+    #             new_node = ast.Str(s=translated_string)
+    #             ast.copy_location(new_node, node)
+    #             self.replacements_done += 1
+    #             return new_node
+    #     return node
+# --- КОНЕЦ НОВОГО КЛАССА ---
+
+# --- НОВАЯ ФУНКЦИЯ ДЛЯ СОЗДАНИЯ ВРЕМЕННОГО ФАЙЛА ---
+def inject_strings_and_create_temp_ast(original_py_path, temp_py_path):
+    """
+    Читает оригинальный .py, парсит AST, заменяет строки и пишет во временный файл.
+    Возвращает (True, кол-во_замен) или (False, 0) при ошибке.
+    """
     global string_translation_map
-    replacements_done = 0
-    import ast # Импорт внутри функции, если не импортирован глобально
-
     try:
         with open(original_py_path, 'r', encoding='utf-8') as f_in:
-            lines = f_in.readlines()
+            source_code = f_in.read()
 
+        # Парсим исходный код в AST
+        tree = ast.parse(source_code, filename=original_py_path)
+
+        # Создаем и применяем трансформер
+        injector = StringInjector(string_translation_map)
+        modified_tree = injector.visit(tree)
+        replacements = injector.replacements_done
+
+        # Важно: исправляем отсутствующие атрибуты lineno/col_offset после трансформации
+        ast.fix_missing_locations(modified_tree)
+
+        # Генерируем модифицированный код из измененного AST
+        modified_code = unparse(modified_tree) # Используем ast.unparse или astor.to_source
+
+        # Записываем модифицированный код во временный файл
         with open(temp_py_path, 'w', encoding='utf-8') as f_out:
-            for line_num, line in enumerate(lines):
-                stripped_line = line.strip()
-                if stripped_line.startswith("PUSHSTRING(") and stripped_line.endswith(")"):
-                    try:
-                        arg_content = stripped_line[len("PUSHSTRING("):-1].strip()
-                        original_string = ast.literal_eval(arg_content)
+            f_out.write(modified_code)
 
-                        # Убедимся, что это действительно была строка
-                        if isinstance(original_string, str):
-                            # Ищем перевод в карте
-                            if original_string in string_translation_map:
-                                translated_string = string_translation_map[original_string]
-                                # Заменяем только если перевод отличается от оригинала
-                                if translated_string != original_string:
-                                    escaped_translated = translated_string.replace('\\', '\\\\').replace('"', '\\"')
-                                    indent = line[:len(line) - len(line.lstrip())] # Сохраняем отступ
-                                    new_line = f'{indent}PUSHSTRING({repr(translated_string)})\n'
-                                    f_out.write(new_line)
-                                    replacements_done += 1
-                                else:
-                                    f_out.write(line) # Записываем оригинал, если перевод совпадает
-                            else:
-                                f_out.write(line) # Оставляем как есть, если нет в карте
-                        else:
-                             # Если ast.literal_eval вернул не строку (маловероятно, но возможно)
-                             f_out.write(line)
+        return True, replacements
 
-                    except (ValueError, SyntaxError) as eval_e:
-                         f_out.write(line) # Оставляем как есть при ошибке разбора
-                    except Exception as e:
-                        # Другие неожиданные ошибки
-                        print(f"    {Fore.RED}Неожиданная ошибка при обработке строки в {os.path.basename(original_py_path)}:{line_num+1}: {line.strip()} -> {e}{Style.RESET_ALL}")
-                        f_out.write(line)
-                else:
-                    f_out.write(line) # Записываем строки без PUSHSTRING как есть
-
-        return True, replacements_done
-    except Exception as e:
-        print(f"{Fore.RED}    ОШИБКА при создании временного файла {os.path.basename(temp_py_path)}: {e}{Style.RESET_ALL}")
+    except SyntaxError as se:
+        print(f"{Fore.RED}    ОШИБКА СИНТАКСИСА при парсинге {os.path.basename(original_py_path)}:{se.lineno}: {se.text.strip()} -> {se.msg}{Style.RESET_ALL}")
         return False, 0
-    
+    except Exception as e:
+        print(f"{Fore.RED}    ОШИБКА при обработке AST или записи временного файла {os.path.basename(temp_py_path)}: {e}{Style.RESET_ALL}")
+        traceback.print_exc() # Печатаем traceback для детальной диагностики
+        return False, 0
+# --- КОНЕЦ НОВОЙ ФУНКЦИИ ---
+
+
 def compile_py_scripts(py_dir_path, dat_dir_path, only_translated):
     """
-    Компилирует .py скрипты, предварительно заменяя строки.
+    Компилирует .py скрипты, предварительно заменяя строки через AST.
 
     Args:
         py_dir_path (str): Полный путь к директории с .py файлами.
@@ -134,7 +187,7 @@ def compile_py_scripts(py_dir_path, dat_dir_path, only_translated):
     total_replacements = 0
     start_time = time.time()
 
-    print(f"\n{Fore.CYAN}Начинаю компиляцию .py файлов из: {Style.BRIGHT}{py_dir_path}{Style.RESET_ALL} (с внедрением строк)")
+    print(f"\n{Fore.CYAN}Начинаю компиляцию .py файлов из: {Style.BRIGHT}{py_dir_path}{Style.RESET_ALL} (с внедрением строк через AST)")
 
     python_executable = sys.executable
     if not python_executable:
@@ -152,14 +205,17 @@ def compile_py_scripts(py_dir_path, dat_dir_path, only_translated):
         full_py_path = os.path.join(py_dir_path, filename)
         base_name = os.path.splitext(filename)[0]
         expected_dat_filename = f"{base_name}.dat"
+        # Генерируем уникальное, но предсказуемое временное имя для отладки
+        # temp_py_filename = f"{TEMP_PY_PREFIX}{base_name}.py"
+        # Используем UUID для предотвращения конфликтов при параллельном запуске (хотя он не параллельный)
         temp_py_filename = f"{TEMP_PY_PREFIX}{base_name}_{uuid.uuid4().hex[:6]}.py"
         temp_py_path = os.path.join(py_dir_path, temp_py_filename)
-        source_dat_path = os.path.join(py_dir_path, expected_dat_filename)
-        dest_dat_path = os.path.join(dat_dir_path, expected_dat_filename)
+        source_dat_path = os.path.join(py_dir_path, expected_dat_filename) # Где .dat создается ассемблером
+        dest_dat_path = os.path.join(dat_dir_path, expected_dat_filename) # Куда его переместить
 
         print(f"\n--- [{i+1}/{total_files_to_process}] Обработка: {Style.BRIGHT}{filename}{Style.RESET_ALL} ---")
 
-        # Удаляем старые .dat
+        # Удаляем старые .dat в обеих папках на всякий случай
         if os.path.exists(dest_dat_path):
             try: os.remove(dest_dat_path)
             except Exception as e: print(f"  Предупреждение: Не удалось удалить {dest_dat_path}: {e}")
@@ -167,11 +223,13 @@ def compile_py_scripts(py_dir_path, dat_dir_path, only_translated):
             try: os.remove(source_dat_path)
             except Exception as e: print(f"  Предупреждение: Не удалось удалить {source_dat_path}: {e}")
 
-        # 1. Создаем временный файл с заменами строк
-        print(f"  Создание временного файла с переводами: {temp_py_filename}...")
-        success_create_temp, replacements = inject_strings_and_create_temp(full_py_path, temp_py_path)
+        # 1. Создаем временный файл с заменами строк (используем новую функцию)
+        print(f"  Создание временного файла с переводами (AST): {temp_py_filename}...")
+        # ---- ИЗМЕНЕНИЕ ЗДЕСЬ: вызываем новую функцию ----
+        success_create_temp, replacements = inject_strings_and_create_temp_ast(full_py_path, temp_py_path)
+        # ----------------------------------------------
         if not success_create_temp:
-            failed_files.append(f"{filename} (ошибка создания временного файла)")
+            failed_files.append(f"{filename} (ошибка создания временного файла/парсинга AST)")
             if os.path.exists(temp_py_path): os.remove(temp_py_path) # Чистим мусор
             continue
 
@@ -191,23 +249,27 @@ def compile_py_scripts(py_dir_path, dat_dir_path, only_translated):
         # 3. Компилируем временный файл
         compilation_successful = False
         try:
-            print(f"  Запуск компиляции: python {temp_py_filename}")
+            print(f"  Запуск компиляции файла: {temp_py_filename}")
+            # Запускаем временный скрипт
             result = subprocess.run(
                 [python_executable, temp_py_path],
-                capture_output=True, text=True, encoding='utf-8',
-                cwd=py_dir_path,
-                check=False
+                capture_output=True, text=True, encoding='utf-8', # Указываем кодировку явно
+                cwd=py_dir_path, # Запускаем из папки со скриптами
+                check=False # Не выбрасывать исключение при ненулевом коде возврата
             )
 
             if result.returncode != 0:
                 print(f"{Fore.RED}  ОШИБКА КОМПИЛЯЦИИ {temp_py_filename}!{Style.RESET_ALL}")
-                print("--- Вывод ошибки ---")
+                print("--- Stderr ---")
                 print(result.stderr or "Нет вывода в stderr.")
-                print("--------------------")
-                failed_files.append(filename)
+                print("--- Stdout ---")
+                print(result.stdout or "Нет вывода в stdout.")
+                print("--------------")
+                failed_files.append(f"{filename} (ошибка выполнения скрипта)")
             else:
                 compilation_successful = True
                 print(f"  Компиляция {temp_py_filename} завершена.")
+                # Проверяем, появился ли .dat файл в исходной директории
                 if os.path.exists(source_dat_path):
                     try:
                         shutil.move(source_dat_path, dest_dat_path)
@@ -218,12 +280,19 @@ def compile_py_scripts(py_dir_path, dat_dir_path, only_translated):
                         failed_files.append(f"{filename} (ошибка перемещения .dat)")
                 else:
                     print(f"{Fore.RED}  ОШИБКА: {expected_dat_filename} не найден в {INPUT_PY_SUBDIR} после компиляции!{Style.RESET_ALL}")
-                    failed_files.append(f"{filename} (.dat не создан)")
+                    # Возможно, ассемблер сохраняет его сразу в папку назначения? Проверим там.
+                    if os.path.exists(dest_dat_path):
+                        print(f"{Fore.YELLOW}  Примечание: {expected_dat_filename} найден в папке назначения {OUTPUT_DAT_SUBDIR}. Перемещение не требуется.{Style.RESET_ALL}")
+                        compiled_count += 1 # Считаем успешным, если он там
+                    else:
+                        failed_files.append(f"{filename} (.dat не создан)")
 
         except FileNotFoundError:
-             print(f"{Fore.RED}  ОШИБКА: Не удалось найти python или скрипт {temp_py_filename}.{Style.RESET_ALL}")
-             failed_files.append(f"{filename} (ошибка запуска)")
-             if not shutil.which(python_executable): break
+             print(f"{Fore.RED}  ОШИБКА: Не удалось найти python '{python_executable}' или скрипт {temp_py_filename}.{Style.RESET_ALL}")
+             failed_files.append(f"{filename} (ошибка запуска python)")
+             if not shutil.which(python_executable):
+                 print(f"{Fore.RED}  Исполняемый файл Python не найден в системе. Прерывание.{Style.RESET_ALL}")
+                 break # Нет смысла продолжать, если python не найден
         except Exception as e:
             print(f"{Fore.RED}  НЕПРЕДВИДЕННАЯ ОШИБКА при обработке {filename}: {e}{Style.RESET_ALL}")
             print(traceback.format_exc())
@@ -252,8 +321,10 @@ def compile_py_scripts(py_dir_path, dat_dir_path, only_translated):
     print(f"{Fore.CYAN}Затраченное время:       {total_time:.2f} сек.{Style.RESET_ALL}")
     if failed_files:
         print(f"\n{Fore.YELLOW}Список файлов с ошибками:{Style.RESET_ALL}")
-        for fname in failed_files: print(f"- {fname}")
+        unique_failed = sorted(list(set(failed_files))) # Убираем дубликаты
+        for fname in unique_failed: print(f"- {fname}")
     print("--------------------------")
+
 
 def str_to_bool(value):
     """Преобразует строку в булево значение."""
@@ -272,10 +343,10 @@ if __name__ == "__main__":
     parser.add_argument(
         '--only-translated',
         type=str_to_bool,
-        nargs='?',
-        const=True,
+        nargs='?', # Делает аргумент опциональным флагом
+        const=True,  # Значение, если флаг указан без значения (--only-translated)
         default=True, # По умолчанию компилируем только измененные
-        help="Компилировать только те .py файлы, в которых были найдены и заменены строки перевода (default: True)."
+        help="Компилировать только те .py файлы, в которых были найдены и заменены строки перевода (yes/no, true/false, 1/0). По умолчанию: true."
     )
     args = parser.parse_args()
     # --- Конец парсера аргументов ---
@@ -284,9 +355,14 @@ if __name__ == "__main__":
     py_directory = os.path.join(script_location, INPUT_PY_SUBDIR)
     dat_directory = os.path.join(script_location, OUTPUT_DAT_SUBDIR)
 
+    # Загружаем карту строк ПЕРЕД компиляцией
     if load_string_map(STRMAP_FILE):
-        compile_py_scripts(py_directory, dat_directory, args.only_translated) # Передаем параметр
+        compile_py_scripts(py_directory, dat_directory, args.only_translated) # Передаем параметр only_translated
     else:
-         print(f"{Fore.RED}Не удалось загрузить карту строк. Компиляция отменена.{Style.RESET_ALL}")
+        print(f"{Fore.YELLOW}Карта строк не загружена или пуста. Запуск компиляции без замены строк...{Style.RESET_ALL}")
+        # Даже если карта не загружена, пытаемся скомпилировать, но замены не произойдут
+        # Установим only_translated в False, чтобы точно попытаться скомпилировать все
+        compile_py_scripts(py_directory, dat_directory, False)
+
 
     # input("Нажмите Enter для выхода...") # Раскомментируйте, если нужно
