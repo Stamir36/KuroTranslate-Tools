@@ -1069,7 +1069,6 @@ def save_markup_page_data(force_check=False):
         messagebox.showerror("Ошибка обновления", f"Ошибка при обновлении данных (разметка):\n{e}\n{traceback.format_exc()}")
         return False
 
-
 def save_edit_page_data(force_check=False):
     """Сохраняет изменения из редактора (текст) В ПАМЯТЬ."""
     global current_page_units_map, is_dirty, editor_textbox, save_button, untranslated_ids, all_trans_units
@@ -1214,25 +1213,25 @@ def save_edit_page_data(force_check=False):
 # --- Функция отображения статистики ---
 def show_statistics_window():
     """Отображает окно со статистикой перевода."""
-    global all_trans_units, untranslated_ids, main_window
+    global all_trans_units, untranslated_ids, main_window, xliff_tree
 
     if not xliff_tree:
         messagebox.showinfo("Нет данных", "Сначала загрузите XLIFF файл.")
         return
 
-    # Получаем актуальные данные
+    # Пересчитываем статистику на основе текущего состояния untranslated_ids
     total_units = len(all_trans_units)
-    untranslated_count = len(untranslated_ids)
+    untranslated_count = len(untranslated_ids) # Используем актуальную длину списка
     translated_count = total_units - untranslated_count
     progress_value = (translated_count / total_units) if total_units > 0 else 0
 
     # Создаем новое Toplevel окно
     stats_win = ctk.CTkToplevel(main_window)
-    stats_win.title("Статистика") # Оставляем краткий заголовок окна
-    stats_win.geometry("350x220") # Немного увеличим высоту для прогресс-бара
+    stats_win.title("Статистика")
+    stats_win.geometry("350x280") # Немного больше места
     stats_win.resizable(False, False)
-    stats_win.transient(main_window)
-    stats_win.grab_set()
+    stats_win.transient(main_window) # Делаем модальным относительно главного
+    stats_win.grab_set() # Захватываем фокус
 
     # --- Заголовок внутри окна ---
     title_font = ctk.CTkFont(size=14, weight="bold")
@@ -1242,43 +1241,54 @@ def show_statistics_window():
     # --- Метки с информацией ---
     info_frame = ctk.CTkFrame(stats_win, fg_color="transparent")
     info_frame.pack(pady=5, padx=15, fill='x')
-    ctk.CTkLabel(info_frame, text=f"Всего строк:", anchor="w").grid(row=0, column=0, sticky='w', pady=2)
-    ctk.CTkLabel(info_frame, text=f"{total_units}", anchor="e").grid(row=0, column=1, sticky='e', pady=2, padx=(10,0))
-    ctk.CTkLabel(info_frame, text=f"Не переведено строк:", anchor="w").grid(row=1, column=0, sticky='w', pady=2)
-    ctk.CTkLabel(info_frame, text=f"{untranslated_count}", anchor="e").grid(row=1, column=1, sticky='e', pady=2, padx=(10,0))
-    ctk.CTkLabel(info_frame, text=f"Прогресс:", anchor="w").grid(row=2, column=0, sticky='w', pady=2)
-    ctk.CTkLabel(info_frame, text=f"{progress_value*100:.2f}%", anchor="e").grid(row=2, column=1, sticky='e', pady=2, padx=(10,0))
     info_frame.grid_columnconfigure(0, weight=1) # Метка слева растягивается
     info_frame.grid_columnconfigure(1, weight=0) # Значение справа прижимается
 
+    ctk.CTkLabel(info_frame, text="Файл:", anchor="w").grid(row=0, column=0, sticky='w', pady=2)
+    ctk.CTkLabel(info_frame, text=f"{os.path.basename(xliff_filepath)}", anchor="e", wraplength=200).grid(row=0, column=1, sticky='e', pady=2, padx=(10,0))
+
+    ctk.CTkLabel(info_frame, text="Всего строк (trans-unit):", anchor="w").grid(row=1, column=0, sticky='w', pady=2)
+    ctk.CTkLabel(info_frame, text=f"{total_units}", anchor="e").grid(row=1, column=1, sticky='e', pady=2, padx=(10,0))
+
+    ctk.CTkLabel(info_frame, text="Не переведено строк:", anchor="w").grid(row=2, column=0, sticky='w', pady=2)
+    ctk.CTkLabel(info_frame, text=f"{untranslated_count}", anchor="e").grid(row=2, column=1, sticky='e', pady=2, padx=(10,0))
+
+    ctk.CTkLabel(info_frame, text="Переведено строк:", anchor="w").grid(row=3, column=0, sticky='w', pady=2)
+    ctk.CTkLabel(info_frame, text=f"{translated_count}", anchor="e").grid(row=3, column=1, sticky='e', pady=2, padx=(10,0))
+
+    ctk.CTkLabel(info_frame, text="Прогресс перевода:", anchor="w").grid(row=4, column=0, sticky='w', pady=2)
+    ctk.CTkLabel(info_frame, text=f"{progress_value*100:.2f}%", anchor="e").grid(row=4, column=1, sticky='e', pady=2, padx=(10,0))
+
+
     # --- Прогресс-бар ---
-    progress_bar = ctk.CTkProgressBar(stats_win, orientation="horizontal", height=15)
-    progress_bar.pack(pady=(10, 5), padx=15, fill='x')
-    progress_bar.set(progress_value) # Устанавливаем значение от 0 до 1
+    stats_progress_bar = ctk.CTkProgressBar(stats_win, orientation="horizontal", height=15)
+    stats_progress_bar.pack(pady=(15, 10), padx=15, fill='x')
+    stats_progress_bar.set(progress_value) # Устанавливаем значение от 0 до 1
 
-    # --- Кнопка Закрыть ---
-    close_button = ctk.CTkButton(stats_win, text="Закрыть", command=stats_win.destroy, width=100)
-    close_button.pack(pady=(15, 15))
+    stats_win.focus_set() # Устанавливаем фокус на окно статистики
 
-    stats_win.focus_set()
-    # Центрирование окна статистики
+    # --- Центрирование окна статистики ---
+    # Делаем это после упаковки всех элементов, чтобы размеры были известны
     main_window.update_idletasks() # Обновляем геометрию главного окна
     stats_win.update_idletasks()   # Обновляем геометрию окна статистики
+
     main_win_x = main_window.winfo_x()
     main_win_y = main_window.winfo_y()
     main_win_width = main_window.winfo_width()
     main_win_height = main_window.winfo_height()
-    stats_win_width = stats_win.winfo_width() # Теперь можно получить актуальную ширину/высоту
+    stats_win_width = stats_win.winfo_width()
     stats_win_height = stats_win.winfo_height()
+
     pos_x = main_win_x + (main_win_width // 2) - (stats_win_width // 2)
     pos_y = main_win_y + (main_win_height // 2) - (stats_win_height // 2)
-    # Корректируем позицию, если окно выходит за пределы экрана (простая проверка)
+
+    # Корректируем позицию, если окно выходит за пределы экрана
     screen_width = main_window.winfo_screenwidth()
     screen_height = main_window.winfo_screenheight()
     pos_x = max(0, min(pos_x, screen_width - stats_win_width))
     pos_y = max(0, min(pos_y, screen_height - stats_win_height))
-    stats_win.geometry(f"+{pos_x}+{pos_y}")
 
+    stats_win.geometry(f"+{pos_x}+{pos_y}") # Устанавливаем позицию
 
 # --- Создание основного окна и виджетов ---
 def create_main_window():
