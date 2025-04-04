@@ -15,5 +15,30 @@
 			"description": "toffset",
 			"bonus": "toffset"
 		}
+	},
+    "KURO_PC_88B": {
+		"game": "Kuro?",
+		"schema": {
+			"id": "uint",
+			"int1": "uint",
+			"int2": "uint",
+			"int3": "uint",
+			"int4": "uint",
+			"int5": "uint",
+			"int6": "uint",
+			"int7": "uint",
+			"int8": "uint",
+			"int9": "uint",
+            "unk_int1": "int",
+            "unk_int2": "int",
+            "unk_int3": "int",
+            "unk_int4": "int",
+            "unk_int5": "int",
+            "unk_int6": "int",
+            "unk_int7": "int",
+            "unk_int8": "int",
+			"description": "toffset",
+			"bonus": "toffset"
+		}
 	}
 }
