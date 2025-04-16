@@ -92,6 +92,8 @@ def parse(name: Union[str, bytes, os.PathLike]) -> None:
                 #once the sorting is done, we grab the actual entry size from the input tbl
                 actual_entry_size = header["length"]
                 #finally we select the correct schema corresponding to the size specified in the input tbl
+                print(f"\nHeader requesting size {actual_entry_size}: {header['name']}")
+                print(f"Available sizes: {list(schemas_by_size.keys())}, requested: {actual_entry_size}")
                 correct_schema = schemas_by_size[actual_entry_size]
                 header["schema"] = correct_schema[0]
 

@@ -1,0 +1,3 @@
+pip install pandas openpyxl
+python xliff_to_excel.py your_file.xliff output_table.xlsx
+python excel_to_xliff.py output_table.xlsx reconstructed_file.xliff

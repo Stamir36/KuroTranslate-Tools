@@ -82,8 +82,8 @@ def find_and_replace_text(json_filepath, text_fields):
 
 
 # Пример использования
-json_file = 't_text.json'  # Замените на путь к вашему JSON файлу
-text_fields_to_translate = ["value"]
+json_file = 't_itemhelp.json'  # Замените на путь к вашему JSON файлу
+text_fields_to_translate = ["text1", "text2"]
 
 # Запуск программы
 if find_and_replace_text(json_file, text_fields_to_translate):
