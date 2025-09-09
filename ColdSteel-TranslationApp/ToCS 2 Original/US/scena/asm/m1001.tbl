@@ -1,0 +1,56 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;m1001.scn 33
+	DD	PreInit					;m1001.scn 42
+	DD	Init					;m1001.scn 57
+	DD	Init_Replay					;m1001.scn 94
+	DD	Reinit					;m1001.scn 120
+	DD	EV_01_55_01					;m1001.scn 163
+	DD	ET_01_55_01_Camera00					;m1001.scn 629
+	DD	ET_01_55_01_Camera01					;m1001.scn 639
+	DD	ET_01_55_01_Boat01					;m1001.scn 650
+	DD	EV_01_57_02					;m1001.scn 678
+	DD	ET_01_57_02_Boat01					;m1001.scn 2808
+	DD	ET_01_57_02_Boat02					;m1001.scn 2830
+	DD	_EV_01_55_01					;m1001.scn 2871
+	DD	_EV_01_57_02					;m1001.scn 2871
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_EV_01_55_01
+	DW	FUNCNAME_ET_01_55_01_Camera00
+	DW	FUNCNAME_ET_01_55_01_Camera01
+	DW	FUNCNAME_ET_01_55_01_Boat01
+	DW	FUNCNAME_EV_01_57_02
+	DW	FUNCNAME_ET_01_57_02_Boat01
+	DW	FUNCNAME_ET_01_57_02_Boat02
+	DW	FUNCNAME__EV_01_55_01
+	DW	FUNCNAME__EV_01_57_02
+FUNCTION_NAME_TABLE_NUM	EQU	14
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_EV_01_55_01:	DB	'EV_01_55_01',0
+FUNCNAME_ET_01_55_01_Camera00:	DB	'ET_01_55_01_Camera00',0
+FUNCNAME_ET_01_55_01_Camera01:	DB	'ET_01_55_01_Camera01',0
+FUNCNAME_ET_01_55_01_Boat01:	DB	'ET_01_55_01_Boat01',0
+FUNCNAME_EV_01_57_02:	DB	'EV_01_57_02',0
+FUNCNAME_ET_01_57_02_Boat01:	DB	'ET_01_57_02_Boat01',0
+FUNCNAME_ET_01_57_02_Boat02:	DB	'ET_01_57_02_Boat02',0
+FUNCNAME__EV_01_55_01:	DB	'_EV_01_55_01',0
+FUNCNAME__EV_01_57_02:	DB	'_EV_01_57_02',0

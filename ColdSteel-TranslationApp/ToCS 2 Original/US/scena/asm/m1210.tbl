@@ -1,0 +1,98 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;m1210.scn 41
+	DD	BTLSET000					;m1210.scn 47
+	DD	PreInit					;m1210.scn 57
+	DD	Init					;m1210.scn 72
+	DD	Init_Replay					;m1210.scn 110
+	DD	Reinit					;m1210.scn 156
+	DD	LP_doorN					;m1210.scn 175
+	DD	LP_doorW					;m1210.scn 202
+	DD	LP_doorE					;m1210.scn 228
+	DD	Npc_Table					;m1210.scn 259
+	DD	rdolf_setting					;m1210.scn 284
+	DD	TK_rdolf					;m1210.scn 298
+	DD	cratch_setting					;m1210.scn 413
+	DD	TK_cratch					;m1210.scn 426
+	DD	dick_setting					;m1210.scn 494
+	DD	TK_dick					;m1210.scn 520
+	DD	bill_setting					;m1210.scn 761
+	DD	TK_bill					;m1210.scn 787
+	DD	evnpc_jaeger_000_setting					;m1210.scn 992
+	DD	TK_evnpc_jaeger_000					;m1210.scn 1007
+	DD	evnpc_jaeger_001_setting					;m1210.scn 1031
+	DD	TK_evnpc_jaeger_001					;m1210.scn 1046
+	DD	EV_03_50_00					;m1210.scn 1074
+	DD	ET_03_50_00_TurnJAEGER					;m1210.scn 1550
+	DD	EV_03_50_01					;m1210.scn 1562
+	DD	ST_TO_M1200					;m1210.scn 2361
+	DD	_EV_03_50_00					;m1210.scn 2389
+	DD	_EV_03_50_01					;m1210.scn 2389
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_BTLSET000
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_LP_doorN
+	DW	FUNCNAME_LP_doorW
+	DW	FUNCNAME_LP_doorE
+	DW	FUNCNAME_Npc_Table
+	DW	FUNCNAME_rdolf_setting
+	DW	FUNCNAME_TK_rdolf
+	DW	FUNCNAME_cratch_setting
+	DW	FUNCNAME_TK_cratch
+	DW	FUNCNAME_dick_setting
+	DW	FUNCNAME_TK_dick
+	DW	FUNCNAME_bill_setting
+	DW	FUNCNAME_TK_bill
+	DW	FUNCNAME_evnpc_jaeger_000_setting
+	DW	FUNCNAME_TK_evnpc_jaeger_000
+	DW	FUNCNAME_evnpc_jaeger_001_setting
+	DW	FUNCNAME_TK_evnpc_jaeger_001
+	DW	FUNCNAME_EV_03_50_00
+	DW	FUNCNAME_ET_03_50_00_TurnJAEGER
+	DW	FUNCNAME_EV_03_50_01
+	DW	FUNCNAME_ST_TO_M1200
+	DW	FUNCNAME__EV_03_50_00
+	DW	FUNCNAME__EV_03_50_01
+FUNCTION_NAME_TABLE_NUM	EQU	28
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_BTLSET000:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_LP_doorN:	DB	'LP_doorN',0
+FUNCNAME_LP_doorW:	DB	'LP_doorW',0
+FUNCNAME_LP_doorE:	DB	'LP_doorE',0
+FUNCNAME_Npc_Table:	DB	'Npc_Table',0
+FUNCNAME_rdolf_setting:	DB	'rdolf_setting',0
+FUNCNAME_TK_rdolf:	DB	'TK_rdolf',0
+FUNCNAME_cratch_setting:	DB	'cratch_setting',0
+FUNCNAME_TK_cratch:	DB	'TK_cratch',0
+FUNCNAME_dick_setting:	DB	'dick_setting',0
+FUNCNAME_TK_dick:	DB	'TK_dick',0
+FUNCNAME_bill_setting:	DB	'bill_setting',0
+FUNCNAME_TK_bill:	DB	'TK_bill',0
+FUNCNAME_evnpc_jaeger_000_setting:	DB	'evnpc_jaeger_000_setting',0
+FUNCNAME_TK_evnpc_jaeger_000:	DB	'TK_evnpc_jaeger_000',0
+FUNCNAME_evnpc_jaeger_001_setting:	DB	'evnpc_jaeger_001_setting',0
+FUNCNAME_TK_evnpc_jaeger_001:	DB	'TK_evnpc_jaeger_001',0
+FUNCNAME_EV_03_50_00:	DB	'EV_03_50_00',0
+FUNCNAME_ET_03_50_00_TurnJAEGER:	DB	'ET_03_50_00_TurnJAEGER',0
+FUNCNAME_EV_03_50_01:	DB	'EV_03_50_01',0
+FUNCNAME_ST_TO_M1200:	DB	'ST_TO_M1200',0
+FUNCNAME__EV_03_50_00:	DB	'_EV_03_50_00',0
+FUNCNAME__EV_03_50_01:	DB	'_EV_03_50_01',0

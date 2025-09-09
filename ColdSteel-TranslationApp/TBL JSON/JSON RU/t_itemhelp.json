@@ -1,0 +1,1633 @@
+{
+    "version": "v2",
+    "headers": [
+        "ItemHelpData",
+        "CompHelpData"
+    ],
+    "entries": [
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "0",
+                "text": "‐‐‐",
+                "unknown_data": "ffff00000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "1",
+                "text": "‐‐‐",
+                "unknown_data": "ffff00000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "2",
+                "text": "‐‐‐",
+                "unknown_data": "ffff00000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "3",
+                "text": "‐‐‐",
+                "unknown_data": "ffff00000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "4",
+                "text": "‐‐‐",
+                "unknown_data": "ffff00000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "5",
+                "text": "ОЗ-%d％",
+                "unknown_data": "010000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "10",
+                "text": "Отравление (%d％)",
+                "unknown_data": "010000000000000001"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "11",
+                "text": "Печать (%d％)",
+                "unknown_data": "010000000000000001"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "12",
+                "text": "Безмолвие (%d％)",
+                "unknown_data": "010000000000000001"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "13",
+                "text": "Слепота (%d％)",
+                "unknown_data": "010000000000000001"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "14",
+                "text": "Сон (%d％)",
+                "unknown_data": "010000000000000001"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "15",
+                "text": "Ожог (%d％)",
+                "unknown_data": "010000000000000001"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "16",
+                "text": "Заморозка (%d％)",
+                "unknown_data": "010000000000000001"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "17",
+                "text": "Окаменение (%d％)",
+                "unknown_data": "010000000000000001"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "18",
+                "text": "Обморок (%d％)",
+                "unknown_data": "010000000000000001"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "19",
+                "text": "Смятение (%d％)",
+                "unknown_data": "010000000000000001"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "20",
+                "text": "Смерть (%d％)",
+                "unknown_data": "010000000000000001"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "21",
+                "text": "Кошмар (%d％)",
+                "unknown_data": "010000000000000001"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "22",
+                "text": "Задержка+%d",
+                "unknown_data": "020000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "23",
+                "text": "Исчезновение (%d％)",
+                "unknown_data": "010000000000000001"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "24",
+                "text": "‐‐‐",
+                "unknown_data": "ffff00000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "25",
+                "text": "исцеляет",
+                "unknown_data": "010000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "26",
+                "text": "Снижение баланса на %d х.",
+                "unknown_data": "020000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "27",
+                "text": "Поглощение",
+                "unknown_data": "000000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "28",
+                "text": "Слабость на %d х.",
+                "unknown_data": "020000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "30",
+                "text": "СИЛ",
+                "unknown_data": "000000000000000005"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "31",
+                "text": "ЗАЩ",
+                "unknown_data": "000000000000000005"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "32",
+                "text": "М.АТК",
+                "unknown_data": "000000000000000005"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "33",
+                "text": "М.ЗАЩ",
+                "unknown_data": "000000000000000005"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "34",
+                "text": "СКО",
+                "unknown_data": "000000000000000005"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "35",
+                "text": "ПОД",
+                "unknown_data": "000000000000000005"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "36",
+                "text": "ОЗ",
+                "unknown_data": "000000000000000005"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "29",
+                "text": "Случайный негативный статус (%d％)",
+                "unknown_data": "010000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "40",
+                "text": "Воспламенение (%d％)",
+                "unknown_data": "010000000000000001"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "41",
+                "text": "‐‐‐",
+                "unknown_data": "ffff00000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "42",
+                "text": "‐‐‐",
+                "unknown_data": "ffff00000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "43",
+                "text": "‐‐‐",
+                "unknown_data": "ffff00000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "37",
+                "text": "Снижение хар-к (случ.)",
+                "unknown_data": "000000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "50",
+                "text": "Отравление",
+                "unknown_data": "000000000000000002"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "51",
+                "text": "Печать",
+                "unknown_data": "000000000000000002"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "52",
+                "text": "Безмолвие",
+                "unknown_data": "000000000000000002"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "53",
+                "text": "Слепота",
+                "unknown_data": "000000000000000002"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "54",
+                "text": "Сон",
+                "unknown_data": "000000000000000002"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "55",
+                "text": "Ожог",
+                "unknown_data": "000000000000000002"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "56",
+                "text": "Заморозка",
+                "unknown_data": "000000000000000002"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "57",
+                "text": "Окаменение",
+                "unknown_data": "000000000000000002"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "58",
+                "text": "Обморок",
+                "unknown_data": "000000000000000002"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "59",
+                "text": "Смятение",
+                "unknown_data": "000000000000000002"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "60",
+                "text": "Смерть",
+                "unknown_data": "000000000000000002"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "61",
+                "text": "‐‐‐",
+                "unknown_data": "ffff00000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "62",
+                "text": "‐‐‐",
+                "unknown_data": "ffff00000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "65",
+                "text": "СИЛ",
+                "unknown_data": "000000000000000004"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "66",
+                "text": "ЗАЩ",
+                "unknown_data": "000000000000000004"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "67",
+                "text": "М.АТК",
+                "unknown_data": "000000000000000004"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "68",
+                "text": "М.ЗАЩ",
+                "unknown_data": "000000000000000004"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "69",
+                "text": "СКО",
+                "unknown_data": "000000000000000004"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "70",
+                "text": "ПОД",
+                "unknown_data": "000000000000000004"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "71",
+                "text": "Прозрение",
+                "unknown_data": "000000000000000006"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "72",
+                "text": "ОЗ",
+                "unknown_data": "000000000000000004"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "75",
+                "text": "Негативный статус",
+                "unknown_data": "000000000000000002"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "76",
+                "text": "Снижение характеристик",
+                "unknown_data": "000000000000000002"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "77",
+                "text": "Негат. статус/сниж. хар-к",
+                "unknown_data": "000000000000000002"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "78",
+                "text": "--",
+                "unknown_data": "ffff00000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "79",
+                "text": "ОЗ",
+                "unknown_data": "000000000000000004"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "223",
+                "text": "Атакует дважды подряд",
+                "unknown_data": "000000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "100",
+                "text": "Восст. %d ОЗ",
+                "unknown_data": "010000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "101",
+                "text": "Восст. %d ЭН",
+                "unknown_data": "010000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "102",
+                "text": "ОИ+%d",
+                "unknown_data": "010000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "103",
+                "text": "Восст. %s ОЗ",
+                "unknown_data": "0e0000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "104",
+                "text": "Восст. %s ЭН",
+                "unknown_data": "0e0000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "105",
+                "text": "ОИ+%d％",
+                "unknown_data": "010000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "106",
+                "text": "Лечит нокаут/Восст. %d ОЗ",
+                "unknown_data": "010000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "107",
+                "text": "Лечит нокаут/Восст. %s ОЗ",
+                "unknown_data": "0e0000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "108",
+                "text": "Восст. %s ОЗ",
+                "unknown_data": "0c0000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "109",
+                "text": "Поглощение ОЗ (%d％ урона)",
+                "unknown_data": "020000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "110",
+                "text": "‐‐‐",
+                "unknown_data": "ffff00000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "111",
+                "text": "‐‐‐",
+                "unknown_data": "ffff00000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "112",
+                "text": "Поглощение ОЗ (%d％ урона)",
+                "unknown_data": "020000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "113",
+                "text": "Восст. %d%% ОЗ",
+                "unknown_data": "010000000000000006"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "114",
+                "text": "‐‐‐",
+                "unknown_data": "ffff00000000000006"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "115",
+                "text": "ОИ+%d",
+                "unknown_data": "010000000000000006"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "116",
+                "text": "Лечит нокаут/Восст. %s ОЗ",
+                "unknown_data": "0c0000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "117",
+                "text": "‐‐‐",
+                "unknown_data": "ffff00000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "118",
+                "text": "Восст. %d ОЗ/Восст. %d ЭН",
+                "unknown_data": "010002000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "119",
+                "text": "Восст. %d ОЗ/Восст. %d ОИ",
+                "unknown_data": "010002000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "120",
+                "text": "Восст. %d ЭН/%d ОИ",
+                "unknown_data": "010002000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "121",
+                "text": "Восст. %d ОЗ/Восст. %d ЭН/%d ОИ",
+                "unknown_data": "010002000300000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "122",
+                "text": "ОИ+%d или при смерти",
+                "unknown_data": "010000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "123",
+                "text": "Лечит нокаут/негат. статусы/сниж. хар-к/Восст. %s ОЗ",
+                "unknown_data": "0e0000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "124",
+                "text": "Восст. %s ОЗ/Восст. %d ОИ",
+                "unknown_data": "0e0002000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "150",
+                "text": "Физ. неуязвимость",
+                "unknown_data": "000000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "151",
+                "text": "Маг. отражение",
+                "unknown_data": "000000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "170",
+                "text": "Физ. отражение",
+                "unknown_data": "000000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "152",
+                "text": "Негативный статус",
+                "unknown_data": "000000000000000003"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "153",
+                "text": "Снижение характеристик",
+                "unknown_data": "000000000000000003"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "155",
+                "text": "Отравление",
+                "unknown_data": "000000000000000003"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "156",
+                "text": "Печать",
+                "unknown_data": "000000000000000003"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "157",
+                "text": "Безмолвие",
+                "unknown_data": "000000000000000003"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "158",
+                "text": "Слепота",
+                "unknown_data": "000000000000000003"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "159",
+                "text": "Сон",
+                "unknown_data": "000000000000000003"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "160",
+                "text": "Ожог",
+                "unknown_data": "000000000000000003"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "161",
+                "text": "Заморозка",
+                "unknown_data": "000000000000000003"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "162",
+                "text": "Окаменение",
+                "unknown_data": "000000000000000003"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "163",
+                "text": "Обморок",
+                "unknown_data": "000000000000000003"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "164",
+                "text": "Смятение",
+                "unknown_data": "000000000000000003"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "165",
+                "text": "Смерть",
+                "unknown_data": "000000000000000003"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "166",
+                "text": "Кошмар",
+                "unknown_data": "000000000000000003"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "167",
+                "text": "Задержка",
+                "unknown_data": "000000000000000003"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "168",
+                "text": "Исчезновение",
+                "unknown_data": "000000000000000003"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "169",
+                "text": "Негат. статус/сниж. хар-к",
+                "unknown_data": "000000000000000003"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "200",
+                "text": "‐‐‐",
+                "unknown_data": "ffff00000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "73",
+                "text": "Ускорение",
+                "unknown_data": "000000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "202",
+                "text": "Скрытность",
+                "unknown_data": "010000000000000006"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "203",
+                "text": "Анализ",
+                "unknown_data": "000000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "204",
+                "text": "Мгновенное действие",
+                "unknown_data": "000000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "206",
+                "text": "Шанс крит. удара +%d％",
+                "unknown_data": "010000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "207",
+                "text": "Шанс выпад. +%d％ (только для владельца)",
+                "unknown_data": "010000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "208",
+                "text": "Скорость восст. ОИ +%d％",
+                "unknown_data": "010000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "209",
+                "text": "ОИ+%d каждый ход",
+                "unknown_data": "010000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "210",
+                "text": "Воскрешение (с %d％ ОЗ)",
+                "unknown_data": "010000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "211",
+                "text": "‐‐‐",
+                "unknown_data": "ffff00000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "212",
+                "text": "‐‐‐",
+                "unknown_data": "ffff00000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "213",
+                "text": "Задержка искусств %d/%d",
+                "unknown_data": "010002000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "214",
+                "text": "Потребление ЭН %d/%d",
+                "unknown_data": "010002000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "215",
+                "text": "‐‐‐",
+                "unknown_data": "ffff00000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "216",
+                "text": "Увеличивает шанс побега на %d％",
+                "unknown_data": "010000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "217",
+                "text": "Урон врагам выше ур. (+%d％ за разн. ур., макс. +%d％)",
+                "unknown_data": "010002000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "218",
+                "text": "Урон врагам ниже ур. (+%d％ за разн. ур., макс. +%d％)",
+                "unknown_data": "010002000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "219",
+                "text": "(ОЗ+50%% (2 х.) при 200 ОИ)",
+                "unknown_data": "000000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "220",
+                "text": "(Физ. неуязвим. (+Маг. отраж. при 200 ОИ))",
+                "unknown_data": "000000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "222",
+                "text": "Случайный эффект на союзника или врага",
+                "unknown_data": "000000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "224",
+                "text": "100%% шанс побега",
+                "unknown_data": "000000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "225",
+                "text": "Задержка после %s искусств уменьшена вдвое",
+                "unknown_data": "0d0000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "226",
+                "text": "Враги оставляют больше сепита",
+                "unknown_data": "000000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "227",
+                "text": "Шанс побега повышается на %d％",
+                "unknown_data": "010000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "228",
+                "text": "Контратаки всегда наносят крит. урон",
+                "unknown_data": "000000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "229",
+                "text": "Автоматически анализирует побеждённых врагов",
+                "unknown_data": "000000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "230",
+                "text": "Первая атака/навык наносит двойной урон",
+                "unknown_data": "000000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "231",
+                "text": "Позволяет видеть данные о неизученных врагах",
+                "unknown_data": "000000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "232",
+                "text": "Негат. статусы на врагах длятся на 2 хода дольше",
+                "unknown_data": "000000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "233",
+                "text": "‐‐‐",
+                "unknown_data": "ffff00000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "234",
+                "text": "Единение духа",
+                "unknown_data": "000000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "235",
+                "text": "Зов пробудителя",
+                "unknown_data": "000000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "236",
+                "text": "Пылающее сердце",
+                "unknown_data": "000000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "237",
+                "text": "Первое атакующее искусство наносит двойной урон.",
+                "unknown_data": "000000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "238",
+                "text": "Уклонение от маг. атак +%d％",
+                "unknown_data": "010000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "240",
+                "text": "‐‐‐",
+                "unknown_data": "ffff00000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "244",
+                "text": "‐‐‐",
+                "unknown_data": "ffff00000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "245",
+                "text": "‐‐‐",
+                "unknown_data": "ffff00000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "246",
+                "text": "‐‐‐",
+                "unknown_data": "ffff00000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "247",
+                "text": "‐‐‐",
+                "unknown_data": "ffff00000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "248",
+                "text": "Постепенное восст. ОЗ на поле",
+                "unknown_data": "000000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "249",
+                "text": "Постепенное восст. ЭН на поле",
+                "unknown_data": "000000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "250",
+                "text": "Восстанавливает ОИ при атаке врагов на поле.",
+                "unknown_data": "000000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "251",
+                "text": "Даёт %d%% шанс приготовить превосходное блюдо.",
+                "unknown_data": "010000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "252",
+                "text": "Даёт %d%% шанс приготовить необычное блюдо.",
+                "unknown_data": "010000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "253",
+                "text": "Враги с большей вероятностью вас заметят.",
+                "unknown_data": "000000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "254",
+                "text": "Враги на поле с большей вероятностью будут убегать.",
+                "unknown_data": "000000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "239",
+                "text": "Показывает неоткрытые сундуки и врагов на миникарте.",
+                "unknown_data": "000000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "205",
+                "text": "Воскрешение (полные ОЗ/ЭН, ОИ+200)",
+                "unknown_data": "000000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "241",
+                "text": "Воскрешение (с %d％ ОЗ)",
+                "unknown_data": "010000000000000000"
+            }
+        },
+        {
+            "header": "ItemHelpData",
+            "values": {
+                "effect": "242",
+                "text": "‐‐‐",
+                "unknown_data": "ffff00000000000000"
+            }
+        },
+        {
+            "header": "CompHelpData",
+            "values": {
+                "type": "1",
+                "text": "S",
+                "value": "0"
+            }
+        },
+        {
+            "header": "CompHelpData",
+            "values": {
+                "type": "1",
+                "text": "M",
+                "value": "6"
+            }
+        },
+        {
+            "header": "CompHelpData",
+            "values": {
+                "type": "1",
+                "text": "L",
+                "value": "8"
+            }
+        },
+        {
+            "header": "CompHelpData",
+            "values": {
+                "type": "1",
+                "text": "XL",
+                "value": "12"
+            }
+        },
+        {
+            "header": "CompHelpData",
+            "values": {
+                "type": "2",
+                "text": "S",
+                "value": "0"
+            }
+        },
+        {
+            "header": "CompHelpData",
+            "values": {
+                "type": "2",
+                "text": "M",
+                "value": "3"
+            }
+        },
+        {
+            "header": "CompHelpData",
+            "values": {
+                "type": "2",
+                "text": "L",
+                "value": "6"
+            }
+        },
+        {
+            "header": "CompHelpData",
+            "values": {
+                "type": "2",
+                "text": "XL",
+                "value": "8"
+            }
+        },
+        {
+            "header": "CompHelpData",
+            "values": {
+                "type": "3",
+                "text": "S",
+                "value": "0"
+            }
+        },
+        {
+            "header": "CompHelpData",
+            "values": {
+                "type": "3",
+                "text": "M",
+                "value": "1400"
+            }
+        },
+        {
+            "header": "CompHelpData",
+            "values": {
+                "type": "3",
+                "text": "L",
+                "value": "2400"
+            }
+        },
+        {
+            "header": "CompHelpData",
+            "values": {
+                "type": "4",
+                "text": "D",
+                "value": "0"
+            }
+        },
+        {
+            "header": "CompHelpData",
+            "values": {
+                "type": "4",
+                "text": "C",
+                "value": "110"
+            }
+        },
+        {
+            "header": "CompHelpData",
+            "values": {
+                "type": "4",
+                "text": "C+",
+                "value": "115"
+            }
+        },
+        {
+            "header": "CompHelpData",
+            "values": {
+                "type": "4",
+                "text": "B",
+                "value": "120"
+            }
+        },
+        {
+            "header": "CompHelpData",
+            "values": {
+                "type": "4",
+                "text": "B+",
+                "value": "125"
+            }
+        },
+        {
+            "header": "CompHelpData",
+            "values": {
+                "type": "4",
+                "text": "A",
+                "value": "130"
+            }
+        },
+        {
+            "header": "CompHelpData",
+            "values": {
+                "type": "4",
+                "text": "A+",
+                "value": "135"
+            }
+        },
+        {
+            "header": "CompHelpData",
+            "values": {
+                "type": "4",
+                "text": "S",
+                "value": "140"
+            }
+        },
+        {
+            "header": "CompHelpData",
+            "values": {
+                "type": "4",
+                "text": "S+",
+                "value": "150"
+            }
+        },
+        {
+            "header": "CompHelpData",
+            "values": {
+                "type": "4",
+                "text": "SS",
+                "value": "250"
+            }
+        },
+        {
+            "header": "CompHelpData",
+            "values": {
+                "type": "4",
+                "text": "SS+",
+                "value": "300"
+            }
+        },
+        {
+            "header": "CompHelpData",
+            "values": {
+                "type": "4",
+                "text": "SSS",
+                "value": "350"
+            }
+        },
+        {
+            "header": "CompHelpData",
+            "values": {
+                "type": "4",
+                "text": "SSS+",
+                "value": "400"
+            }
+        },
+        {
+            "header": "CompHelpData",
+            "values": {
+                "type": "4",
+                "text": "4S",
+                "value": "450"
+            }
+        },
+        {
+            "header": "CompHelpData",
+            "values": {
+                "type": "4",
+                "text": "4S+",
+                "value": "500"
+            }
+        },
+        {
+            "header": "CompHelpData",
+            "values": {
+                "type": "5",
+                "text": "D",
+                "value": "0"
+            }
+        },
+        {
+            "header": "CompHelpData",
+            "values": {
+                "type": "5",
+                "text": "C",
+                "value": "120"
+            }
+        },
+        {
+            "header": "CompHelpData",
+            "values": {
+                "type": "5",
+                "text": "C+",
+                "value": "135"
+            }
+        },
+        {
+            "header": "CompHelpData",
+            "values": {
+                "type": "5",
+                "text": "B",
+                "value": "150"
+            }
+        },
+        {
+            "header": "CompHelpData",
+            "values": {
+                "type": "5",
+                "text": "B+",
+                "value": "165"
+            }
+        },
+        {
+            "header": "CompHelpData",
+            "values": {
+                "type": "5",
+                "text": "A",
+                "value": "180"
+            }
+        },
+        {
+            "header": "CompHelpData",
+            "values": {
+                "type": "5",
+                "text": "A+",
+                "value": "195"
+            }
+        },
+        {
+            "header": "CompHelpData",
+            "values": {
+                "type": "5",
+                "text": "S",
+                "value": "210"
+            }
+        },
+        {
+            "header": "CompHelpData",
+            "values": {
+                "type": "5",
+                "text": "S+",
+                "value": "225"
+            }
+        },
+        {
+            "header": "CompHelpData",
+            "values": {
+                "type": "5",
+                "text": "SS",
+                "value": "250"
+            }
+        },
+        {
+            "header": "CompHelpData",
+            "values": {
+                "type": "5",
+                "text": "SS+",
+                "value": "300"
+            }
+        },
+        {
+            "header": "CompHelpData",
+            "values": {
+                "type": "5",
+                "text": "SSS",
+                "value": "350"
+            }
+        },
+        {
+            "header": "CompHelpData",
+            "values": {
+                "type": "5",
+                "text": "SSS+",
+                "value": "400"
+            }
+        },
+        {
+            "header": "CompHelpData",
+            "values": {
+                "type": "5",
+                "text": "4S",
+                "value": "450"
+            }
+        },
+        {
+            "header": "CompHelpData",
+            "values": {
+                "type": "5",
+                "text": "5S",
+                "value": "600"
+            }
+        }
+    ]
+}

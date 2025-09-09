@@ -1,0 +1,116 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;t3060.scn 46
+	DD	PreInit					;t3060.scn 53
+	DD	Init					;t3060.scn 68
+	DD	Init_Replay					;t3060.scn 106
+	DD	Reinit					;t3060.scn 143
+	DD	Npc_Table					;t3060.scn 169
+	DD	yurian_setting					;t3060.scn 198
+	DD	TK_yurian					;t3060.scn 212
+	DD	TK_yurian_karuno_nico_04_02					;t3060.scn 245
+	DD	karuno_setting					;t3060.scn 302
+	DD	TK_karuno					;t3060.scn 315
+	DD	nico_setting					;t3060.scn 352
+	DD	TK_nico					;t3060.scn 365
+	DD	dadd_setting					;t3060.scn 405
+	DD	TK_dadd					;t3060.scn 417
+	DD	ares_setting					;t3060.scn 474
+	DD	TK_ares					;t3060.scn 486
+	DD	kraus_setting					;t3060.scn 530
+	DD	TK_kraus					;t3060.scn 568
+	DD	prana_setting					;t3060.scn 897
+	DD	TK_prana					;t3060.scn 937
+	DD	yozef_setting					;t3060.scn 1231
+	DD	TK_yozef					;t3060.scn 1257
+	DD	EV_01_58_01					;t3060.scn 1716
+	DD	ET_01_58_01_AURELIA_1					;t3060.scn 3450
+	DD	ET_01_58_01_WALLACE_1					;t3060.scn 3457
+	DD	ET_01_58_01_REAN_1					;t3060.scn 3464
+	DD	ET_01_58_01_team7_0_1					;t3060.scn 3478
+	DD	ET_01_58_01_team7_1_1					;t3060.scn 3491
+	DD	ET_01_58_01_helper_1					;t3060.scn 3504
+	DD	ET_01_58_01_EMMA_1					;t3060.scn 3517
+	DD	ET_01_58_01_CELINE2_1					;t3060.scn 3530
+	DD	_TK_yozef					;t3060.scn 3568
+	DD	_EV_01_58_01					;t3060.scn 3568
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_Npc_Table
+	DW	FUNCNAME_yurian_setting
+	DW	FUNCNAME_TK_yurian
+	DW	FUNCNAME_TK_yurian_karuno_nico_04_02
+	DW	FUNCNAME_karuno_setting
+	DW	FUNCNAME_TK_karuno
+	DW	FUNCNAME_nico_setting
+	DW	FUNCNAME_TK_nico
+	DW	FUNCNAME_dadd_setting
+	DW	FUNCNAME_TK_dadd
+	DW	FUNCNAME_ares_setting
+	DW	FUNCNAME_TK_ares
+	DW	FUNCNAME_kraus_setting
+	DW	FUNCNAME_TK_kraus
+	DW	FUNCNAME_prana_setting
+	DW	FUNCNAME_TK_prana
+	DW	FUNCNAME_yozef_setting
+	DW	FUNCNAME_TK_yozef
+	DW	FUNCNAME_EV_01_58_01
+	DW	FUNCNAME_ET_01_58_01_AURELIA_1
+	DW	FUNCNAME_ET_01_58_01_WALLACE_1
+	DW	FUNCNAME_ET_01_58_01_REAN_1
+	DW	FUNCNAME_ET_01_58_01_team7_0_1
+	DW	FUNCNAME_ET_01_58_01_team7_1_1
+	DW	FUNCNAME_ET_01_58_01_helper_1
+	DW	FUNCNAME_ET_01_58_01_EMMA_1
+	DW	FUNCNAME_ET_01_58_01_CELINE2_1
+	DW	FUNCNAME__TK_yozef
+	DW	FUNCNAME__EV_01_58_01
+FUNCTION_NAME_TABLE_NUM	EQU	34
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_Npc_Table:	DB	'Npc_Table',0
+FUNCNAME_yurian_setting:	DB	'yurian_setting',0
+FUNCNAME_TK_yurian:	DB	'TK_yurian',0
+FUNCNAME_TK_yurian_karuno_nico_04_02:	DB	'TK_yurian_karuno_nico_04_02',0
+FUNCNAME_karuno_setting:	DB	'karuno_setting',0
+FUNCNAME_TK_karuno:	DB	'TK_karuno',0
+FUNCNAME_nico_setting:	DB	'nico_setting',0
+FUNCNAME_TK_nico:	DB	'TK_nico',0
+FUNCNAME_dadd_setting:	DB	'dadd_setting',0
+FUNCNAME_TK_dadd:	DB	'TK_dadd',0
+FUNCNAME_ares_setting:	DB	'ares_setting',0
+FUNCNAME_TK_ares:	DB	'TK_ares',0
+FUNCNAME_kraus_setting:	DB	'kraus_setting',0
+FUNCNAME_TK_kraus:	DB	'TK_kraus',0
+FUNCNAME_prana_setting:	DB	'prana_setting',0
+FUNCNAME_TK_prana:	DB	'TK_prana',0
+FUNCNAME_yozef_setting:	DB	'yozef_setting',0
+FUNCNAME_TK_yozef:	DB	'TK_yozef',0
+FUNCNAME_EV_01_58_01:	DB	'EV_01_58_01',0
+FUNCNAME_ET_01_58_01_AURELIA_1:	DB	'ET_01_58_01_AURELIA_1',0
+FUNCNAME_ET_01_58_01_WALLACE_1:	DB	'ET_01_58_01_WALLACE_1',0
+FUNCNAME_ET_01_58_01_REAN_1:	DB	'ET_01_58_01_REAN_1',0
+FUNCNAME_ET_01_58_01_team7_0_1:	DB	'ET_01_58_01_team7_0_1',0
+FUNCNAME_ET_01_58_01_team7_1_1:	DB	'ET_01_58_01_team7_1_1',0
+FUNCNAME_ET_01_58_01_helper_1:	DB	'ET_01_58_01_helper_1',0
+FUNCNAME_ET_01_58_01_EMMA_1:	DB	'ET_01_58_01_EMMA_1',0
+FUNCNAME_ET_01_58_01_CELINE2_1:	DB	'ET_01_58_01_CELINE2_1',0
+FUNCNAME__TK_yozef:	DB	'_TK_yozef',0
+FUNCNAME__EV_01_58_01:	DB	'_EV_01_58_01',0

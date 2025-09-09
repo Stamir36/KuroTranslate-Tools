@@ -1,0 +1,332 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;t0001.scn 55
+	DD	BTLSET_QS1					;t0001.scn 61
+	DD	BTLSET_QS2					;t0001.scn 67
+	DD	BTLSET_QS3					;t0001.scn 73
+	DD	PreInit					;t0001.scn 82
+	DD	Init					;t0001.scn 97
+	DD	Init_Replay					;t0001.scn 140
+	DD	Reinit					;t0001.scn 236
+	DD	LP_door03					;t0001.scn 255
+	DD	LP_door11					;t0001.scn 283
+	DD	LP_stable					;t0001.scn 311
+	DD	LP_door12					;t0001.scn 340
+	DD	LP_FieFlower					;t0001.scn 368
+	DD	LP_fishpoint00					;t0001.scn 408
+	DD	LP_bike					;t0001.scn 445
+	DD	AV_FishPoint					;t0001.scn 532
+	DD	Npc_Table					;t0001.scn 553
+	DD	alisa_setting					;t0001.scn 612
+	DD	jusis_setting					;t0001.scn 629
+	DD	fie_setting					;t0001.scn 647
+	DD	ferris_setting					;t0001.scn 664
+	DD	emily_setting					;t0001.scn 689
+	DD	theresia_setting					;t0001.scn 715
+	DD	lambert_setting					;t0001.scn 741
+	DD	pola_setting					;t0001.scn 758
+	DD	edel_setting					;t0001.scn 792
+	DD	vivi_setting					;t0001.scn 818
+	DD	linde_setting					;t0001.scn 834
+	DD	margarita_setting					;t0001.scn 862
+	DD	patrick_setting					;t0001.scn 878
+	DD	celestin_setting					;t0001.scn 905
+	DD	rex_setting					;t0001.scn 924
+	DD	kenneth_setting					;t0001.scn 940
+	DD	annabel_setting					;t0001.scn 959
+	DD	hugo_setting					;t0001.scn 978
+	DD	becky_setting					;t0001.scn 994
+	DD	makarov_setting					;t0001.scn 1011
+	DD	vincent_setting					;t0001.scn 1027
+	DD	salyfa_setting					;t0001.scn 1044
+	DD	thomas_setting					;t0001.scn 1061
+	DD	rosine_setting					;t0001.scn 1092
+	DD	bike_setting					;t0001.scn 1123
+	DD	celine2_setting					;t0001.scn 1150
+	DD	gyler_setting					;t0001.scn 1172
+	DD	TK_gyler					;t0001.scn 1192
+	DD	TK_alisa_ferris_06_03					;t0001.scn 1325
+	DD	TK_becky_hugo_06_01					;t0001.scn 1360
+	DD	TK_vincent_salyfa_06_01					;t0001.scn 1395
+	DD	horse_mach_setting					;t0001.scn 1506
+	DD	TK_horse_mach					;t0001.scn 1518
+	DD	horse_jusis_setting					;t0001.scn 1532
+	DD	TK_horse_jusis					;t0001.scn 1544
+	DD	horse_pola_setting					;t0001.scn 1558
+	DD	TK_horse_pola					;t0001.scn 1578
+	DD	TK_STUDENT1314_06					;t0001.scn 1590
+	DD	t0000_student13_setting					;t0001.scn 1636
+	DD	TK_t0000_student13					;t0001.scn 1649
+	DD	t0000_student14_setting					;t0001.scn 1688
+	DD	TK_t0000_student14					;t0001.scn 1702
+	DD	t0000_student16_setting					;t0001.scn 1737
+	DD	TK_t0000_student16					;t0001.scn 1751
+	DD	t0000_student17_setting					;t0001.scn 1830
+	DD	TK_t0000_student17					;t0001.scn 1845
+	DD	EV_06_03_02					;t0001.scn 1901
+	DD	EV_06_07_00_Load_Check					;t0001.scn 2199
+	DD	EV_06_07_00					;t0001.scn 2209
+	DD	EV_06_07_01					;t0001.scn 2483
+	DD	QS_5103_02_A_02					;t0001.scn 2771
+	DD	QS_5103_02_C					;t0001.scn 2943
+	DD	QS_5102_01					;t0001.scn 3143
+	DD	QS_5102_01_2					;t0001.scn 3878
+	DD	EV_QS_5102_02_01					;t0001.scn 3935
+	DD	EV_QS_5102_02_02					;t0001.scn 3957
+	DD	EV_QS_5102_02_03					;t0001.scn 3979
+	DD	EV_QS_5102_02_04					;t0001.scn 4001
+	DD	EV_QS_5102_02_05					;t0001.scn 4028
+	DD	QS_5102_02					;t0001.scn 4054
+	DD	QS_5102_03					;t0001.scn 5534
+	DD	QS_5102_CHECK					;t0001.scn 6893
+	DD	QS_5102_WIN					;t0001.scn 6907
+	DD	QS_5102_LOSE					;t0001.scn 7138
+	DD	QS_5102_COMP					;t0001.scn 7339
+	DD	SB_06_ABOUT_RUFUS					;t0001.scn 8437
+	DD	EV_SB_06_THOMAS_03_A					;t0001.scn 8606
+	DD	SB_06_THOMAS_03					;t0001.scn 8613
+	DD	SB_06_THOMAS_04					;t0001.scn 9712
+	DD	SB_06_TALK_MAKAROV					;t0001.scn 9962
+	DD	ST_TO_T1000					;t0001.scn 10227
+	DD	_LP_door03					;t0001.scn 10254
+	DD	_LP_door11					;t0001.scn 10254
+	DD	_LP_stable					;t0001.scn 10254
+	DD	_LP_door12					;t0001.scn 10254
+	DD	_TK_horse_mach					;t0001.scn 10254
+	DD	_TK_horse_jusis					;t0001.scn 10254
+	DD	_TK_horse_pola					;t0001.scn 10254
+	DD	_EV_06_07_00					;t0001.scn 10254
+	DD	_EV_06_07_01					;t0001.scn 10254
+	DD	_QS_5103_02_A_02					;t0001.scn 10254
+	DD	_QS_5102_01					;t0001.scn 10254
+	DD	_QS_5102_02					;t0001.scn 10254
+	DD	_QS_5102_03					;t0001.scn 10254
+	DD	_QS_5102_WIN					;t0001.scn 10254
+	DD	_QS_5102_LOSE					;t0001.scn 10254
+	DD	_QS_5102_COMP					;t0001.scn 10254
+	DD	_SB_06_THOMAS_03					;t0001.scn 10254
+	DD	_SB_06_THOMAS_04					;t0001.scn 10254
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_BTLSET_QS1
+	DW	FUNCNAME_BTLSET_QS2
+	DW	FUNCNAME_BTLSET_QS3
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_LP_door03
+	DW	FUNCNAME_LP_door11
+	DW	FUNCNAME_LP_stable
+	DW	FUNCNAME_LP_door12
+	DW	FUNCNAME_LP_FieFlower
+	DW	FUNCNAME_LP_fishpoint00
+	DW	FUNCNAME_LP_bike
+	DW	FUNCNAME_AV_FishPoint
+	DW	FUNCNAME_Npc_Table
+	DW	FUNCNAME_alisa_setting
+	DW	FUNCNAME_jusis_setting
+	DW	FUNCNAME_fie_setting
+	DW	FUNCNAME_ferris_setting
+	DW	FUNCNAME_emily_setting
+	DW	FUNCNAME_theresia_setting
+	DW	FUNCNAME_lambert_setting
+	DW	FUNCNAME_pola_setting
+	DW	FUNCNAME_edel_setting
+	DW	FUNCNAME_vivi_setting
+	DW	FUNCNAME_linde_setting
+	DW	FUNCNAME_margarita_setting
+	DW	FUNCNAME_patrick_setting
+	DW	FUNCNAME_celestin_setting
+	DW	FUNCNAME_rex_setting
+	DW	FUNCNAME_kenneth_setting
+	DW	FUNCNAME_annabel_setting
+	DW	FUNCNAME_hugo_setting
+	DW	FUNCNAME_becky_setting
+	DW	FUNCNAME_makarov_setting
+	DW	FUNCNAME_vincent_setting
+	DW	FUNCNAME_salyfa_setting
+	DW	FUNCNAME_thomas_setting
+	DW	FUNCNAME_rosine_setting
+	DW	FUNCNAME_bike_setting
+	DW	FUNCNAME_celine2_setting
+	DW	FUNCNAME_gyler_setting
+	DW	FUNCNAME_TK_gyler
+	DW	FUNCNAME_TK_alisa_ferris_06_03
+	DW	FUNCNAME_TK_becky_hugo_06_01
+	DW	FUNCNAME_TK_vincent_salyfa_06_01
+	DW	FUNCNAME_horse_mach_setting
+	DW	FUNCNAME_TK_horse_mach
+	DW	FUNCNAME_horse_jusis_setting
+	DW	FUNCNAME_TK_horse_jusis
+	DW	FUNCNAME_horse_pola_setting
+	DW	FUNCNAME_TK_horse_pola
+	DW	FUNCNAME_TK_STUDENT1314_06
+	DW	FUNCNAME_t0000_student13_setting
+	DW	FUNCNAME_TK_t0000_student13
+	DW	FUNCNAME_t0000_student14_setting
+	DW	FUNCNAME_TK_t0000_student14
+	DW	FUNCNAME_t0000_student16_setting
+	DW	FUNCNAME_TK_t0000_student16
+	DW	FUNCNAME_t0000_student17_setting
+	DW	FUNCNAME_TK_t0000_student17
+	DW	FUNCNAME_EV_06_03_02
+	DW	FUNCNAME_EV_06_07_00_Load_Check
+	DW	FUNCNAME_EV_06_07_00
+	DW	FUNCNAME_EV_06_07_01
+	DW	FUNCNAME_QS_5103_02_A_02
+	DW	FUNCNAME_QS_5103_02_C
+	DW	FUNCNAME_QS_5102_01
+	DW	FUNCNAME_QS_5102_01_2
+	DW	FUNCNAME_EV_QS_5102_02_01
+	DW	FUNCNAME_EV_QS_5102_02_02
+	DW	FUNCNAME_EV_QS_5102_02_03
+	DW	FUNCNAME_EV_QS_5102_02_04
+	DW	FUNCNAME_EV_QS_5102_02_05
+	DW	FUNCNAME_QS_5102_02
+	DW	FUNCNAME_QS_5102_03
+	DW	FUNCNAME_QS_5102_CHECK
+	DW	FUNCNAME_QS_5102_WIN
+	DW	FUNCNAME_QS_5102_LOSE
+	DW	FUNCNAME_QS_5102_COMP
+	DW	FUNCNAME_SB_06_ABOUT_RUFUS
+	DW	FUNCNAME_EV_SB_06_THOMAS_03_A
+	DW	FUNCNAME_SB_06_THOMAS_03
+	DW	FUNCNAME_SB_06_THOMAS_04
+	DW	FUNCNAME_SB_06_TALK_MAKAROV
+	DW	FUNCNAME_ST_TO_T1000
+	DW	FUNCNAME__LP_door03
+	DW	FUNCNAME__LP_door11
+	DW	FUNCNAME__LP_stable
+	DW	FUNCNAME__LP_door12
+	DW	FUNCNAME__TK_horse_mach
+	DW	FUNCNAME__TK_horse_jusis
+	DW	FUNCNAME__TK_horse_pola
+	DW	FUNCNAME__EV_06_07_00
+	DW	FUNCNAME__EV_06_07_01
+	DW	FUNCNAME__QS_5103_02_A_02
+	DW	FUNCNAME__QS_5102_01
+	DW	FUNCNAME__QS_5102_02
+	DW	FUNCNAME__QS_5102_03
+	DW	FUNCNAME__QS_5102_WIN
+	DW	FUNCNAME__QS_5102_LOSE
+	DW	FUNCNAME__QS_5102_COMP
+	DW	FUNCNAME__SB_06_THOMAS_03
+	DW	FUNCNAME__SB_06_THOMAS_04
+FUNCTION_NAME_TABLE_NUM	EQU	106
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_BTLSET_QS1:	DB	0
+FUNCNAME_BTLSET_QS2:	DB	0
+FUNCNAME_BTLSET_QS3:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_LP_door03:	DB	'LP_door03',0
+FUNCNAME_LP_door11:	DB	'LP_door11',0
+FUNCNAME_LP_stable:	DB	'LP_stable',0
+FUNCNAME_LP_door12:	DB	'LP_door12',0
+FUNCNAME_LP_FieFlower:	DB	'LP_FieFlower',0
+FUNCNAME_LP_fishpoint00:	DB	'LP_fishpoint00',0
+FUNCNAME_LP_bike:	DB	'LP_bike',0
+FUNCNAME_AV_FishPoint:	DB	'AV_FishPoint',0
+FUNCNAME_Npc_Table:	DB	'Npc_Table',0
+FUNCNAME_alisa_setting:	DB	'alisa_setting',0
+FUNCNAME_jusis_setting:	DB	'jusis_setting',0
+FUNCNAME_fie_setting:	DB	'fie_setting',0
+FUNCNAME_ferris_setting:	DB	'ferris_setting',0
+FUNCNAME_emily_setting:	DB	'emily_setting',0
+FUNCNAME_theresia_setting:	DB	'theresia_setting',0
+FUNCNAME_lambert_setting:	DB	'lambert_setting',0
+FUNCNAME_pola_setting:	DB	'pola_setting',0
+FUNCNAME_edel_setting:	DB	'edel_setting',0
+FUNCNAME_vivi_setting:	DB	'vivi_setting',0
+FUNCNAME_linde_setting:	DB	'linde_setting',0
+FUNCNAME_margarita_setting:	DB	'margarita_setting',0
+FUNCNAME_patrick_setting:	DB	'patrick_setting',0
+FUNCNAME_celestin_setting:	DB	'celestin_setting',0
+FUNCNAME_rex_setting:	DB	'rex_setting',0
+FUNCNAME_kenneth_setting:	DB	'kenneth_setting',0
+FUNCNAME_annabel_setting:	DB	'annabel_setting',0
+FUNCNAME_hugo_setting:	DB	'hugo_setting',0
+FUNCNAME_becky_setting:	DB	'becky_setting',0
+FUNCNAME_makarov_setting:	DB	'makarov_setting',0
+FUNCNAME_vincent_setting:	DB	'vincent_setting',0
+FUNCNAME_salyfa_setting:	DB	'salyfa_setting',0
+FUNCNAME_thomas_setting:	DB	'thomas_setting',0
+FUNCNAME_rosine_setting:	DB	'rosine_setting',0
+FUNCNAME_bike_setting:	DB	'bike_setting',0
+FUNCNAME_celine2_setting:	DB	'celine2_setting',0
+FUNCNAME_gyler_setting:	DB	'gyler_setting',0
+FUNCNAME_TK_gyler:	DB	'TK_gyler',0
+FUNCNAME_TK_alisa_ferris_06_03:	DB	'TK_alisa_ferris_06_03',0
+FUNCNAME_TK_becky_hugo_06_01:	DB	'TK_becky_hugo_06_01',0
+FUNCNAME_TK_vincent_salyfa_06_01:	DB	'TK_vincent_salyfa_06_01',0
+FUNCNAME_horse_mach_setting:	DB	'horse_mach_setting',0
+FUNCNAME_TK_horse_mach:	DB	'TK_horse_mach',0
+FUNCNAME_horse_jusis_setting:	DB	'horse_jusis_setting',0
+FUNCNAME_TK_horse_jusis:	DB	'TK_horse_jusis',0
+FUNCNAME_horse_pola_setting:	DB	'horse_pola_setting',0
+FUNCNAME_TK_horse_pola:	DB	'TK_horse_pola',0
+FUNCNAME_TK_STUDENT1314_06:	DB	'TK_STUDENT1314_06',0
+FUNCNAME_t0000_student13_setting:	DB	't0000_student13_setting',0
+FUNCNAME_TK_t0000_student13:	DB	'TK_t0000_student13',0
+FUNCNAME_t0000_student14_setting:	DB	't0000_student14_setting',0
+FUNCNAME_TK_t0000_student14:	DB	'TK_t0000_student14',0
+FUNCNAME_t0000_student16_setting:	DB	't0000_student16_setting',0
+FUNCNAME_TK_t0000_student16:	DB	'TK_t0000_student16',0
+FUNCNAME_t0000_student17_setting:	DB	't0000_student17_setting',0
+FUNCNAME_TK_t0000_student17:	DB	'TK_t0000_student17',0
+FUNCNAME_EV_06_03_02:	DB	'EV_06_03_02',0
+FUNCNAME_EV_06_07_00_Load_Check:	DB	'EV_06_07_00_Load_Check',0
+FUNCNAME_EV_06_07_00:	DB	'EV_06_07_00',0
+FUNCNAME_EV_06_07_01:	DB	'EV_06_07_01',0
+FUNCNAME_QS_5103_02_A_02:	DB	'QS_5103_02_A_02',0
+FUNCNAME_QS_5103_02_C:	DB	'QS_5103_02_C',0
+FUNCNAME_QS_5102_01:	DB	'QS_5102_01',0
+FUNCNAME_QS_5102_01_2:	DB	'QS_5102_01_2',0
+FUNCNAME_EV_QS_5102_02_01:	DB	'EV_QS_5102_02_01',0
+FUNCNAME_EV_QS_5102_02_02:	DB	'EV_QS_5102_02_02',0
+FUNCNAME_EV_QS_5102_02_03:	DB	'EV_QS_5102_02_03',0
+FUNCNAME_EV_QS_5102_02_04:	DB	'EV_QS_5102_02_04',0
+FUNCNAME_EV_QS_5102_02_05:	DB	'EV_QS_5102_02_05',0
+FUNCNAME_QS_5102_02:	DB	'QS_5102_02',0
+FUNCNAME_QS_5102_03:	DB	'QS_5102_03',0
+FUNCNAME_QS_5102_CHECK:	DB	'QS_5102_CHECK',0
+FUNCNAME_QS_5102_WIN:	DB	'QS_5102_WIN',0
+FUNCNAME_QS_5102_LOSE:	DB	'QS_5102_LOSE',0
+FUNCNAME_QS_5102_COMP:	DB	'QS_5102_COMP',0
+FUNCNAME_SB_06_ABOUT_RUFUS:	DB	'SB_06_ABOUT_RUFUS',0
+FUNCNAME_EV_SB_06_THOMAS_03_A:	DB	'EV_SB_06_THOMAS_03_A',0
+FUNCNAME_SB_06_THOMAS_03:	DB	'SB_06_THOMAS_03',0
+FUNCNAME_SB_06_THOMAS_04:	DB	'SB_06_THOMAS_04',0
+FUNCNAME_SB_06_TALK_MAKAROV:	DB	'SB_06_TALK_MAKAROV',0
+FUNCNAME_ST_TO_T1000:	DB	'ST_TO_T1000',0
+FUNCNAME__LP_door03:	DB	'_LP_door03',0
+FUNCNAME__LP_door11:	DB	'_LP_door11',0
+FUNCNAME__LP_stable:	DB	'_LP_stable',0
+FUNCNAME__LP_door12:	DB	'_LP_door12',0
+FUNCNAME__TK_horse_mach:	DB	'_TK_horse_mach',0
+FUNCNAME__TK_horse_jusis:	DB	'_TK_horse_jusis',0
+FUNCNAME__TK_horse_pola:	DB	'_TK_horse_pola',0
+FUNCNAME__EV_06_07_00:	DB	'_EV_06_07_00',0
+FUNCNAME__EV_06_07_01:	DB	'_EV_06_07_01',0
+FUNCNAME__QS_5103_02_A_02:	DB	'_QS_5103_02_A_02',0
+FUNCNAME__QS_5102_01:	DB	'_QS_5102_01',0
+FUNCNAME__QS_5102_02:	DB	'_QS_5102_02',0
+FUNCNAME__QS_5102_03:	DB	'_QS_5102_03',0
+FUNCNAME__QS_5102_WIN:	DB	'_QS_5102_WIN',0
+FUNCNAME__QS_5102_LOSE:	DB	'_QS_5102_LOSE',0
+FUNCNAME__QS_5102_COMP:	DB	'_QS_5102_COMP',0
+FUNCNAME__SB_06_THOMAS_03:	DB	'_SB_06_THOMAS_03',0
+FUNCNAME__SB_06_THOMAS_04:	DB	'_SB_06_THOMAS_04',0

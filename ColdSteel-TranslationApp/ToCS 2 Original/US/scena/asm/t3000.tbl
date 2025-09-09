@@ -1,0 +1,323 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;t3000.scn 65
+	DD	PreInit					;t3000.scn 74
+	DD	Init					;t3000.scn 89
+	DD	Init_Replay					;t3000.scn 147
+	DD	Reinit					;t3000.scn 209
+	DD	LP_fishpoint00					;t3000.scn 229
+	DD	LP_FIGURE01					;t3000.scn 270
+	DD	LP_Monument					;t3000.scn 292
+	DD	AV_FishPoint					;t3000.scn 323
+	DD	Npc_Table					;t3000.scn 336
+	DD	beryl_setting					;t3000.scn 383
+	DD	yurian_setting					;t3000.scn 407
+	DD	TK_yurian					;t3000.scn 454
+	DD	TK_yurian_karuno_nico_01_C_03					;t3000.scn 712
+	DD	TK_yurian_karuno_nico_03_Z3					;t3000.scn 749
+	DD	karuno_setting					;t3000.scn 807
+	DD	TK_karuno					;t3000.scn 852
+	DD	sven_setting					;t3000.scn 1115
+	DD	TK_sven					;t3000.scn 1148
+	DD	bemu_setting					;t3000.scn 1580
+	DD	TK_bemu					;t3000.scn 1604
+	DD	pero_setting					;t3000.scn 1861
+	DD	TK_pero					;t3000.scn 1889
+	DD	seria_setting					;t3000.scn 2101
+	DD	TK_seria					;t3000.scn 2120
+	DD	TK_seria_kroe_03_Z4					;t3000.scn 2242
+	DD	kroe_setting					;t3000.scn 2284
+	DD	TK_kroe					;t3000.scn 2325
+	DD	TK_kroe_rigna_04_02					;t3000.scn 2825
+	DD	rigna_setting					;t3000.scn 2896
+	DD	TK_rigna					;t3000.scn 2916
+	DD	maria_setting					;t3000.scn 3018
+	DD	TK_maria					;t3000.scn 3030
+	DD	nico_setting					;t3000.scn 3060
+	DD	TK_nico					;t3000.scn 3091
+	DD	dafune_setting					;t3000.scn 3222
+	DD	TK_dafune					;t3000.scn 3238
+	DD	sindy_setting					;t3000.scn 3299
+	DD	TK_sindy					;t3000.scn 3312
+	DD	rogan_setting					;t3000.scn 3403
+	DD	TK_rogan					;t3000.scn 3430
+	DD	risia_setting					;t3000.scn 3574
+	DD	TK_risia					;t3000.scn 3597
+	DD	seramis_setting					;t3000.scn 3674
+	DD	TK_seramis					;t3000.scn 3687
+	DD	gaveli_setting					;t3000.scn 3758
+	DD	TK_gaveli					;t3000.scn 3792
+	DD	frits_setting					;t3000.scn 3944
+	DD	TK_frits					;t3000.scn 3972
+	DD	TK_frits_dadd_03_Z3					;t3000.scn 4080
+	DD	dadd_setting					;t3000.scn 4120
+	DD	TK_dadd					;t3000.scn 4138
+	DD	ares_setting					;t3000.scn 4222
+	DD	TK_ares					;t3000.scn 4242
+	DD	kraus_setting					;t3000.scn 4340
+	DD	TK_kraus					;t3000.scn 4368
+	DD	prana_setting					;t3000.scn 4402
+	DD	TK_prana					;t3000.scn 4417
+	DD	t3000_officer01_setting					;t3000.scn 4511
+	DD	TK_t3000_officer01					;t3000.scn 4529
+	DD	t3000_officer02_setting					;t3000.scn 4649
+	DD	TK_t3000_officer02					;t3000.scn 4661
+	DD	t3000_passenger01_setting					;t3000.scn 4860
+	DD	TK_t3000_passenger01					;t3000.scn 4873
+	DD	t3000_passenger02_setting					;t3000.scn 4909
+	DD	TK_t3000_passenger02					;t3000.scn 4928
+	DD	EV_01_54_00					;t3000.scn 4989
+	DD	ET_01_54_00_REAN_1					;t3000.scn 5533
+	DD	ET_01_54_00_team7_0_1					;t3000.scn 5542
+	DD	ET_01_54_00_team7_1_1					;t3000.scn 5550
+	DD	ET_01_54_00_helper_1					;t3000.scn 5559
+	DD	ET_01_54_00_CELINE2_1					;t3000.scn 5568
+	DD	ET_01_54_00_REAN_2					;t3000.scn 5578
+	DD	ET_01_54_00_team7_0_2					;t3000.scn 5585
+	DD	ET_01_54_00_team7_1_2					;t3000.scn 5592
+	DD	ET_01_54_00_helper_2					;t3000.scn 5599
+	DD	ET_01_54_00_CELINE2_2					;t3000.scn 5606
+	DD	ET_01_54_00_REAN_3					;t3000.scn 5614
+	DD	ET_01_54_00_team7_0_3					;t3000.scn 5623
+	DD	ET_01_54_00_team7_1_3					;t3000.scn 5632
+	DD	ET_01_54_00_helper_3					;t3000.scn 5640
+	DD	ET_01_54_00_CELINE2_3					;t3000.scn 5648
+	DD	ET_01_54_00_Message					;t3000.scn 5658
+	DD	EV_01_55_00					;t3000.scn 5675
+	DD	EV_01_57_03					;t3000.scn 5865
+	DD	ET_EV_01_57_03_MILES					;t3000.scn 6244
+	DD	EV_01_58_00					;t3000.scn 6258
+	DD	ET_01_58_00_AURELIA_1					;t3000.scn 6561
+	DD	ET_01_58_00_WALLACE_1					;t3000.scn 6570
+	DD	ET_01_58_00_AURELIA_2					;t3000.scn 6580
+	DD	ET_01_58_00_WALLACE_2					;t3000.scn 6589
+	DD	EV_01_58_02					;t3000.scn 6602
+	DD	QS_2401_02					;t3000.scn 7017
+	DD	TU_01_OVR_LE					;t3000.scn 7245
+	DD	ST_STATION					;t3000.scn 7302
+	DD	_TK_bemu					;t3000.scn 7325
+	DD	_TK_pero					;t3000.scn 7325
+	DD	_EV_01_54_00					;t3000.scn 7325
+	DD	_EV_01_57_03					;t3000.scn 7325
+	DD	_EV_01_58_00					;t3000.scn 7325
+	DD	_EV_01_58_02					;t3000.scn 7325
+	DD	_QS_2401_02					;t3000.scn 7325
+	DD	_TU_01_OVR_LE					;t3000.scn 7325
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_LP_fishpoint00
+	DW	FUNCNAME_LP_FIGURE01
+	DW	FUNCNAME_LP_Monument
+	DW	FUNCNAME_AV_FishPoint
+	DW	FUNCNAME_Npc_Table
+	DW	FUNCNAME_beryl_setting
+	DW	FUNCNAME_yurian_setting
+	DW	FUNCNAME_TK_yurian
+	DW	FUNCNAME_TK_yurian_karuno_nico_01_C_03
+	DW	FUNCNAME_TK_yurian_karuno_nico_03_Z3
+	DW	FUNCNAME_karuno_setting
+	DW	FUNCNAME_TK_karuno
+	DW	FUNCNAME_sven_setting
+	DW	FUNCNAME_TK_sven
+	DW	FUNCNAME_bemu_setting
+	DW	FUNCNAME_TK_bemu
+	DW	FUNCNAME_pero_setting
+	DW	FUNCNAME_TK_pero
+	DW	FUNCNAME_seria_setting
+	DW	FUNCNAME_TK_seria
+	DW	FUNCNAME_TK_seria_kroe_03_Z4
+	DW	FUNCNAME_kroe_setting
+	DW	FUNCNAME_TK_kroe
+	DW	FUNCNAME_TK_kroe_rigna_04_02
+	DW	FUNCNAME_rigna_setting
+	DW	FUNCNAME_TK_rigna
+	DW	FUNCNAME_maria_setting
+	DW	FUNCNAME_TK_maria
+	DW	FUNCNAME_nico_setting
+	DW	FUNCNAME_TK_nico
+	DW	FUNCNAME_dafune_setting
+	DW	FUNCNAME_TK_dafune
+	DW	FUNCNAME_sindy_setting
+	DW	FUNCNAME_TK_sindy
+	DW	FUNCNAME_rogan_setting
+	DW	FUNCNAME_TK_rogan
+	DW	FUNCNAME_risia_setting
+	DW	FUNCNAME_TK_risia
+	DW	FUNCNAME_seramis_setting
+	DW	FUNCNAME_TK_seramis
+	DW	FUNCNAME_gaveli_setting
+	DW	FUNCNAME_TK_gaveli
+	DW	FUNCNAME_frits_setting
+	DW	FUNCNAME_TK_frits
+	DW	FUNCNAME_TK_frits_dadd_03_Z3
+	DW	FUNCNAME_dadd_setting
+	DW	FUNCNAME_TK_dadd
+	DW	FUNCNAME_ares_setting
+	DW	FUNCNAME_TK_ares
+	DW	FUNCNAME_kraus_setting
+	DW	FUNCNAME_TK_kraus
+	DW	FUNCNAME_prana_setting
+	DW	FUNCNAME_TK_prana
+	DW	FUNCNAME_t3000_officer01_setting
+	DW	FUNCNAME_TK_t3000_officer01
+	DW	FUNCNAME_t3000_officer02_setting
+	DW	FUNCNAME_TK_t3000_officer02
+	DW	FUNCNAME_t3000_passenger01_setting
+	DW	FUNCNAME_TK_t3000_passenger01
+	DW	FUNCNAME_t3000_passenger02_setting
+	DW	FUNCNAME_TK_t3000_passenger02
+	DW	FUNCNAME_EV_01_54_00
+	DW	FUNCNAME_ET_01_54_00_REAN_1
+	DW	FUNCNAME_ET_01_54_00_team7_0_1
+	DW	FUNCNAME_ET_01_54_00_team7_1_1
+	DW	FUNCNAME_ET_01_54_00_helper_1
+	DW	FUNCNAME_ET_01_54_00_CELINE2_1
+	DW	FUNCNAME_ET_01_54_00_REAN_2
+	DW	FUNCNAME_ET_01_54_00_team7_0_2
+	DW	FUNCNAME_ET_01_54_00_team7_1_2
+	DW	FUNCNAME_ET_01_54_00_helper_2
+	DW	FUNCNAME_ET_01_54_00_CELINE2_2
+	DW	FUNCNAME_ET_01_54_00_REAN_3
+	DW	FUNCNAME_ET_01_54_00_team7_0_3
+	DW	FUNCNAME_ET_01_54_00_team7_1_3
+	DW	FUNCNAME_ET_01_54_00_helper_3
+	DW	FUNCNAME_ET_01_54_00_CELINE2_3
+	DW	FUNCNAME_ET_01_54_00_Message
+	DW	FUNCNAME_EV_01_55_00
+	DW	FUNCNAME_EV_01_57_03
+	DW	FUNCNAME_ET_EV_01_57_03_MILES
+	DW	FUNCNAME_EV_01_58_00
+	DW	FUNCNAME_ET_01_58_00_AURELIA_1
+	DW	FUNCNAME_ET_01_58_00_WALLACE_1
+	DW	FUNCNAME_ET_01_58_00_AURELIA_2
+	DW	FUNCNAME_ET_01_58_00_WALLACE_2
+	DW	FUNCNAME_EV_01_58_02
+	DW	FUNCNAME_QS_2401_02
+	DW	FUNCNAME_TU_01_OVR_LE
+	DW	FUNCNAME_ST_STATION
+	DW	FUNCNAME__TK_bemu
+	DW	FUNCNAME__TK_pero
+	DW	FUNCNAME__EV_01_54_00
+	DW	FUNCNAME__EV_01_57_03
+	DW	FUNCNAME__EV_01_58_00
+	DW	FUNCNAME__EV_01_58_02
+	DW	FUNCNAME__QS_2401_02
+	DW	FUNCNAME__TU_01_OVR_LE
+FUNCTION_NAME_TABLE_NUM	EQU	103
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_LP_fishpoint00:	DB	'LP_fishpoint00',0
+FUNCNAME_LP_FIGURE01:	DB	'LP_FIGURE01',0
+FUNCNAME_LP_Monument:	DB	'LP_Monument',0
+FUNCNAME_AV_FishPoint:	DB	'AV_FishPoint',0
+FUNCNAME_Npc_Table:	DB	'Npc_Table',0
+FUNCNAME_beryl_setting:	DB	'beryl_setting',0
+FUNCNAME_yurian_setting:	DB	'yurian_setting',0
+FUNCNAME_TK_yurian:	DB	'TK_yurian',0
+FUNCNAME_TK_yurian_karuno_nico_01_C_03:	DB	'TK_yurian_karuno_nico_01_C_03',0
+FUNCNAME_TK_yurian_karuno_nico_03_Z3:	DB	'TK_yurian_karuno_nico_03_Z3',0
+FUNCNAME_karuno_setting:	DB	'karuno_setting',0
+FUNCNAME_TK_karuno:	DB	'TK_karuno',0
+FUNCNAME_sven_setting:	DB	'sven_setting',0
+FUNCNAME_TK_sven:	DB	'TK_sven',0
+FUNCNAME_bemu_setting:	DB	'bemu_setting',0
+FUNCNAME_TK_bemu:	DB	'TK_bemu',0
+FUNCNAME_pero_setting:	DB	'pero_setting',0
+FUNCNAME_TK_pero:	DB	'TK_pero',0
+FUNCNAME_seria_setting:	DB	'seria_setting',0
+FUNCNAME_TK_seria:	DB	'TK_seria',0
+FUNCNAME_TK_seria_kroe_03_Z4:	DB	'TK_seria_kroe_03_Z4',0
+FUNCNAME_kroe_setting:	DB	'kroe_setting',0
+FUNCNAME_TK_kroe:	DB	'TK_kroe',0
+FUNCNAME_TK_kroe_rigna_04_02:	DB	'TK_kroe_rigna_04_02',0
+FUNCNAME_rigna_setting:	DB	'rigna_setting',0
+FUNCNAME_TK_rigna:	DB	'TK_rigna',0
+FUNCNAME_maria_setting:	DB	'maria_setting',0
+FUNCNAME_TK_maria:	DB	'TK_maria',0
+FUNCNAME_nico_setting:	DB	'nico_setting',0
+FUNCNAME_TK_nico:	DB	'TK_nico',0
+FUNCNAME_dafune_setting:	DB	'dafune_setting',0
+FUNCNAME_TK_dafune:	DB	'TK_dafune',0
+FUNCNAME_sindy_setting:	DB	'sindy_setting',0
+FUNCNAME_TK_sindy:	DB	'TK_sindy',0
+FUNCNAME_rogan_setting:	DB	'rogan_setting',0
+FUNCNAME_TK_rogan:	DB	'TK_rogan',0
+FUNCNAME_risia_setting:	DB	'risia_setting',0
+FUNCNAME_TK_risia:	DB	'TK_risia',0
+FUNCNAME_seramis_setting:	DB	'seramis_setting',0
+FUNCNAME_TK_seramis:	DB	'TK_seramis',0
+FUNCNAME_gaveli_setting:	DB	'gaveli_setting',0
+FUNCNAME_TK_gaveli:	DB	'TK_gaveli',0
+FUNCNAME_frits_setting:	DB	'frits_setting',0
+FUNCNAME_TK_frits:	DB	'TK_frits',0
+FUNCNAME_TK_frits_dadd_03_Z3:	DB	'TK_frits_dadd_03_Z3',0
+FUNCNAME_dadd_setting:	DB	'dadd_setting',0
+FUNCNAME_TK_dadd:	DB	'TK_dadd',0
+FUNCNAME_ares_setting:	DB	'ares_setting',0
+FUNCNAME_TK_ares:	DB	'TK_ares',0
+FUNCNAME_kraus_setting:	DB	'kraus_setting',0
+FUNCNAME_TK_kraus:	DB	'TK_kraus',0
+FUNCNAME_prana_setting:	DB	'prana_setting',0
+FUNCNAME_TK_prana:	DB	'TK_prana',0
+FUNCNAME_t3000_officer01_setting:	DB	't3000_officer01_setting',0
+FUNCNAME_TK_t3000_officer01:	DB	'TK_t3000_officer01',0
+FUNCNAME_t3000_officer02_setting:	DB	't3000_officer02_setting',0
+FUNCNAME_TK_t3000_officer02:	DB	'TK_t3000_officer02',0
+FUNCNAME_t3000_passenger01_setting:	DB	't3000_passenger01_setting',0
+FUNCNAME_TK_t3000_passenger01:	DB	'TK_t3000_passenger01',0
+FUNCNAME_t3000_passenger02_setting:	DB	't3000_passenger02_setting',0
+FUNCNAME_TK_t3000_passenger02:	DB	'TK_t3000_passenger02',0
+FUNCNAME_EV_01_54_00:	DB	'EV_01_54_00',0
+FUNCNAME_ET_01_54_00_REAN_1:	DB	'ET_01_54_00_REAN_1',0
+FUNCNAME_ET_01_54_00_team7_0_1:	DB	'ET_01_54_00_team7_0_1',0
+FUNCNAME_ET_01_54_00_team7_1_1:	DB	'ET_01_54_00_team7_1_1',0
+FUNCNAME_ET_01_54_00_helper_1:	DB	'ET_01_54_00_helper_1',0
+FUNCNAME_ET_01_54_00_CELINE2_1:	DB	'ET_01_54_00_CELINE2_1',0
+FUNCNAME_ET_01_54_00_REAN_2:	DB	'ET_01_54_00_REAN_2',0
+FUNCNAME_ET_01_54_00_team7_0_2:	DB	'ET_01_54_00_team7_0_2',0
+FUNCNAME_ET_01_54_00_team7_1_2:	DB	'ET_01_54_00_team7_1_2',0
+FUNCNAME_ET_01_54_00_helper_2:	DB	'ET_01_54_00_helper_2',0
+FUNCNAME_ET_01_54_00_CELINE2_2:	DB	'ET_01_54_00_CELINE2_2',0
+FUNCNAME_ET_01_54_00_REAN_3:	DB	'ET_01_54_00_REAN_3',0
+FUNCNAME_ET_01_54_00_team7_0_3:	DB	'ET_01_54_00_team7_0_3',0
+FUNCNAME_ET_01_54_00_team7_1_3:	DB	'ET_01_54_00_team7_1_3',0
+FUNCNAME_ET_01_54_00_helper_3:	DB	'ET_01_54_00_helper_3',0
+FUNCNAME_ET_01_54_00_CELINE2_3:	DB	'ET_01_54_00_CELINE2_3',0
+FUNCNAME_ET_01_54_00_Message:	DB	'ET_01_54_00_Message',0
+FUNCNAME_EV_01_55_00:	DB	'EV_01_55_00',0
+FUNCNAME_EV_01_57_03:	DB	'EV_01_57_03',0
+FUNCNAME_ET_EV_01_57_03_MILES:	DB	'ET_EV_01_57_03_MILES',0
+FUNCNAME_EV_01_58_00:	DB	'EV_01_58_00',0
+FUNCNAME_ET_01_58_00_AURELIA_1:	DB	'ET_01_58_00_AURELIA_1',0
+FUNCNAME_ET_01_58_00_WALLACE_1:	DB	'ET_01_58_00_WALLACE_1',0
+FUNCNAME_ET_01_58_00_AURELIA_2:	DB	'ET_01_58_00_AURELIA_2',0
+FUNCNAME_ET_01_58_00_WALLACE_2:	DB	'ET_01_58_00_WALLACE_2',0
+FUNCNAME_EV_01_58_02:	DB	'EV_01_58_02',0
+FUNCNAME_QS_2401_02:	DB	'QS_2401_02',0
+FUNCNAME_TU_01_OVR_LE:	DB	'TU_01_OVR_LE',0
+FUNCNAME_ST_STATION:	DB	'ST_STATION',0
+FUNCNAME__TK_bemu:	DB	'_TK_bemu',0
+FUNCNAME__TK_pero:	DB	'_TK_pero',0
+FUNCNAME__EV_01_54_00:	DB	'_EV_01_54_00',0
+FUNCNAME__EV_01_57_03:	DB	'_EV_01_57_03',0
+FUNCNAME__EV_01_58_00:	DB	'_EV_01_58_00',0
+FUNCNAME__EV_01_58_02:	DB	'_EV_01_58_02',0
+FUNCNAME__QS_2401_02:	DB	'_QS_2401_02',0
+FUNCNAME__TU_01_OVR_LE:	DB	'_TU_01_OVR_LE',0

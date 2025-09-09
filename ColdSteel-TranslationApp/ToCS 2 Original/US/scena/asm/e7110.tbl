@@ -1,0 +1,188 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;e7110.scn 54
+	DD	PreInit					;e7110.scn 66
+	DD	Init					;e7110.scn 82
+	DD	Init_Replay					;e7110.scn 118
+	DD	Reinit					;e7110.scn 285
+	DD	InitEnt					;e7110.scn 301
+	DD	ChangeBgm					;e7110.scn 309
+	DD	LP_bed00					;e7110.scn 335
+	DD	LP_duct_start					;e7110.scn 410
+	DD	LP_door_vulcan					;e7110.scn 444
+	DD	LP_door_scarlet					;e7110.scn 536
+	DD	LP_door_dubarry					;e7110.scn 577
+	DD	LP_door_altina					;e7110.scn 618
+	DD	LP_door_zeno					;e7110.scn 722
+	DD	LP_door_mcburn					;e7110.scn 821
+	DD	AV_02001					;e7110.scn 937
+	DD	AV_02002					;e7110.scn 943
+	DD	AV_02003					;e7110.scn 949
+	DD	AV_02004					;e7110.scn 955
+	DD	Npc_Table					;e7110.scn 964
+	DD	dubarry_setting					;e7110.scn 981
+	DD	blbranc_setting					;e7110.scn 994
+	DD	TK_blbranc					;e7110.scn 1013
+	DD	albert_setting					;e7110.scn 1052
+	DD	TK_albert					;e7110.scn 1074
+	DD	simone_setting					;e7110.scn 1100
+	DD	TK_simone					;e7110.scn 1130
+	DD	EV_02_01_00					;e7110.scn 1261
+	DD	EV_02_01_02					;e7110.scn 3610
+	DD	EV_02_02_00					;e7110.scn 3895
+	DD	EV_02_02_01					;e7110.scn 4145
+	DD	EV_02_02_CheckTalkAll					;e7110.scn 4955
+	DD	EV_02_02_02					;e7110.scn 4972
+	DD	EV_02_02_02_DUBARRY_ANIME					;e7110.scn 5954
+	DD	EV_02_02_03					;e7110.scn 5966
+	DD	EV_02_02_04					;e7110.scn 7334
+	DD	EV_02_02_05					;e7110.scn 8239
+	DD	EV_02_02_07					;e7110.scn 9352
+	DD	EV_02_02_08					;e7110.scn 10142
+	DD	EV_02_02_06					;e7110.scn 11056
+	DD	EV_02_03_00					;e7110.scn 13005
+	DD	SB_02_TALK_MAID					;e7110.scn 13211
+	DD	SB_02_STOPPER_SOLDIER_B					;e7110.scn 13345
+	DD	LP2_exit_door					;e7110.scn 13372
+	DD	_LP_bed00					;e7110.scn 13418
+	DD	_EV_02_01_00					;e7110.scn 13418
+	DD	_EV_02_01_02					;e7110.scn 13418
+	DD	_EV_02_02_00					;e7110.scn 13418
+	DD	_EV_02_02_01					;e7110.scn 13418
+	DD	_EV_02_02_02					;e7110.scn 13418
+	DD	_EV_02_02_02_DUBARRY_ANIME					;e7110.scn 13418
+	DD	_EV_02_02_03					;e7110.scn 13418
+	DD	_EV_02_02_04					;e7110.scn 13418
+	DD	_EV_02_02_05					;e7110.scn 13418
+	DD	_EV_02_02_07					;e7110.scn 13418
+	DD	_EV_02_02_08					;e7110.scn 13418
+	DD	_EV_02_02_06					;e7110.scn 13418
+	DD	_EV_02_03_00					;e7110.scn 13418
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_InitEnt
+	DW	FUNCNAME_ChangeBgm
+	DW	FUNCNAME_LP_bed00
+	DW	FUNCNAME_LP_duct_start
+	DW	FUNCNAME_LP_door_vulcan
+	DW	FUNCNAME_LP_door_scarlet
+	DW	FUNCNAME_LP_door_dubarry
+	DW	FUNCNAME_LP_door_altina
+	DW	FUNCNAME_LP_door_zeno
+	DW	FUNCNAME_LP_door_mcburn
+	DW	FUNCNAME_AV_02001
+	DW	FUNCNAME_AV_02002
+	DW	FUNCNAME_AV_02003
+	DW	FUNCNAME_AV_02004
+	DW	FUNCNAME_Npc_Table
+	DW	FUNCNAME_dubarry_setting
+	DW	FUNCNAME_blbranc_setting
+	DW	FUNCNAME_TK_blbranc
+	DW	FUNCNAME_albert_setting
+	DW	FUNCNAME_TK_albert
+	DW	FUNCNAME_simone_setting
+	DW	FUNCNAME_TK_simone
+	DW	FUNCNAME_EV_02_01_00
+	DW	FUNCNAME_EV_02_01_02
+	DW	FUNCNAME_EV_02_02_00
+	DW	FUNCNAME_EV_02_02_01
+	DW	FUNCNAME_EV_02_02_CheckTalkAll
+	DW	FUNCNAME_EV_02_02_02
+	DW	FUNCNAME_EV_02_02_02_DUBARRY_ANIME
+	DW	FUNCNAME_EV_02_02_03
+	DW	FUNCNAME_EV_02_02_04
+	DW	FUNCNAME_EV_02_02_05
+	DW	FUNCNAME_EV_02_02_07
+	DW	FUNCNAME_EV_02_02_08
+	DW	FUNCNAME_EV_02_02_06
+	DW	FUNCNAME_EV_02_03_00
+	DW	FUNCNAME_SB_02_TALK_MAID
+	DW	FUNCNAME_SB_02_STOPPER_SOLDIER_B
+	DW	FUNCNAME_LP2_exit_door
+	DW	FUNCNAME__LP_bed00
+	DW	FUNCNAME__EV_02_01_00
+	DW	FUNCNAME__EV_02_01_02
+	DW	FUNCNAME__EV_02_02_00
+	DW	FUNCNAME__EV_02_02_01
+	DW	FUNCNAME__EV_02_02_02
+	DW	FUNCNAME__EV_02_02_02_DUBARRY_ANIME
+	DW	FUNCNAME__EV_02_02_03
+	DW	FUNCNAME__EV_02_02_04
+	DW	FUNCNAME__EV_02_02_05
+	DW	FUNCNAME__EV_02_02_07
+	DW	FUNCNAME__EV_02_02_08
+	DW	FUNCNAME__EV_02_02_06
+	DW	FUNCNAME__EV_02_03_00
+FUNCTION_NAME_TABLE_NUM	EQU	58
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_InitEnt:	DB	'InitEnt',0
+FUNCNAME_ChangeBgm:	DB	'ChangeBgm',0
+FUNCNAME_LP_bed00:	DB	'LP_bed00',0
+FUNCNAME_LP_duct_start:	DB	'LP_duct_start',0
+FUNCNAME_LP_door_vulcan:	DB	'LP_door_vulcan',0
+FUNCNAME_LP_door_scarlet:	DB	'LP_door_scarlet',0
+FUNCNAME_LP_door_dubarry:	DB	'LP_door_dubarry',0
+FUNCNAME_LP_door_altina:	DB	'LP_door_altina',0
+FUNCNAME_LP_door_zeno:	DB	'LP_door_zeno',0
+FUNCNAME_LP_door_mcburn:	DB	'LP_door_mcburn',0
+FUNCNAME_AV_02001:	DB	'AV_02001',0
+FUNCNAME_AV_02002:	DB	'AV_02002',0
+FUNCNAME_AV_02003:	DB	'AV_02003',0
+FUNCNAME_AV_02004:	DB	'AV_02004',0
+FUNCNAME_Npc_Table:	DB	'Npc_Table',0
+FUNCNAME_dubarry_setting:	DB	'dubarry_setting',0
+FUNCNAME_blbranc_setting:	DB	'blbranc_setting',0
+FUNCNAME_TK_blbranc:	DB	'TK_blbranc',0
+FUNCNAME_albert_setting:	DB	'albert_setting',0
+FUNCNAME_TK_albert:	DB	'TK_albert',0
+FUNCNAME_simone_setting:	DB	'simone_setting',0
+FUNCNAME_TK_simone:	DB	'TK_simone',0
+FUNCNAME_EV_02_01_00:	DB	'EV_02_01_00',0
+FUNCNAME_EV_02_01_02:	DB	'EV_02_01_02',0
+FUNCNAME_EV_02_02_00:	DB	'EV_02_02_00',0
+FUNCNAME_EV_02_02_01:	DB	'EV_02_02_01',0
+FUNCNAME_EV_02_02_CheckTalkAll:	DB	'EV_02_02_CheckTalkAll',0
+FUNCNAME_EV_02_02_02:	DB	'EV_02_02_02',0
+FUNCNAME_EV_02_02_02_DUBARRY_ANIME:	DB	'EV_02_02_02_DUBARRY_ANIME',0
+FUNCNAME_EV_02_02_03:	DB	'EV_02_02_03',0
+FUNCNAME_EV_02_02_04:	DB	'EV_02_02_04',0
+FUNCNAME_EV_02_02_05:	DB	'EV_02_02_05',0
+FUNCNAME_EV_02_02_07:	DB	'EV_02_02_07',0
+FUNCNAME_EV_02_02_08:	DB	'EV_02_02_08',0
+FUNCNAME_EV_02_02_06:	DB	'EV_02_02_06',0
+FUNCNAME_EV_02_03_00:	DB	'EV_02_03_00',0
+FUNCNAME_SB_02_TALK_MAID:	DB	'SB_02_TALK_MAID',0
+FUNCNAME_SB_02_STOPPER_SOLDIER_B:	DB	'SB_02_STOPPER_SOLDIER_B',0
+FUNCNAME_LP2_exit_door:	DB	'LP2_exit_door',0
+FUNCNAME__LP_bed00:	DB	'_LP_bed00',0
+FUNCNAME__EV_02_01_00:	DB	'_EV_02_01_00',0
+FUNCNAME__EV_02_01_02:	DB	'_EV_02_01_02',0
+FUNCNAME__EV_02_02_00:	DB	'_EV_02_02_00',0
+FUNCNAME__EV_02_02_01:	DB	'_EV_02_02_01',0
+FUNCNAME__EV_02_02_02:	DB	'_EV_02_02_02',0
+FUNCNAME__EV_02_02_02_DUBARRY_ANIME:	DB	'_EV_02_02_02_DUBARRY_ANIME',0
+FUNCNAME__EV_02_02_03:	DB	'_EV_02_02_03',0
+FUNCNAME__EV_02_02_04:	DB	'_EV_02_02_04',0
+FUNCNAME__EV_02_02_05:	DB	'_EV_02_02_05',0
+FUNCNAME__EV_02_02_07:	DB	'_EV_02_02_07',0
+FUNCNAME__EV_02_02_08:	DB	'_EV_02_02_08',0
+FUNCNAME__EV_02_02_06:	DB	'_EV_02_02_06',0
+FUNCNAME__EV_02_03_00:	DB	'_EV_02_03_00',0

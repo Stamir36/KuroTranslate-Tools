@@ -1,0 +1,41 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	BattleInit					;btl0014.scn 35
+	DD	BattleRelease					;btl0014.scn 69
+	DD	BattleSetting					;btl0014.scn 82
+	DD	BattleRetry					;btl0014.scn 100
+	DD	BattleTutorial10					;btl0014.scn 119
+	DD	BattleTutorial13					;btl0014.scn 209
+	DD	BattleTutorial13B					;btl0014.scn 235
+	DD	_BattleTutorial10					;btl0014.scn 243
+	DD	_BattleTutorial13					;btl0014.scn 243
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_BattleInit
+	DW	FUNCNAME_BattleRelease
+	DW	FUNCNAME_BattleSetting
+	DW	FUNCNAME_BattleRetry
+	DW	FUNCNAME_BattleTutorial10
+	DW	FUNCNAME_BattleTutorial13
+	DW	FUNCNAME_BattleTutorial13B
+	DW	FUNCNAME__BattleTutorial10
+	DW	FUNCNAME__BattleTutorial13
+FUNCTION_NAME_TABLE_NUM	EQU	9
+;=====================================================================
+FUNCNAME_BattleInit:	DB	'BattleInit',0
+FUNCNAME_BattleRelease:	DB	'BattleRelease',0
+FUNCNAME_BattleSetting:	DB	'BattleSetting',0
+FUNCNAME_BattleRetry:	DB	'BattleRetry',0
+FUNCNAME_BattleTutorial10:	DB	'BattleTutorial10',0
+FUNCNAME_BattleTutorial13:	DB	'BattleTutorial13',0
+FUNCNAME_BattleTutorial13B:	DB	'BattleTutorial13B',0
+FUNCNAME__BattleTutorial10:	DB	'_BattleTutorial10',0
+FUNCNAME__BattleTutorial13:	DB	'_BattleTutorial13',0

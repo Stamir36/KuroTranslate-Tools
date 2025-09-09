@@ -1,0 +1,245 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;t4810.scn 62
+	DD	PreInit					;t4810.scn 68
+	DD	Init					;t4810.scn 83
+	DD	Init_Replay					;t4810.scn 116
+	DD	Reinit					;t4810.scn 157
+	DD	LP_door_R1					;t4810.scn 177
+	DD	LP_door_L1					;t4810.scn 202
+	DD	LP_door_L2					;t4810.scn 227
+	DD	Npc_Table					;t4810.scn 259
+	DD	beryl_setting					;t4810.scn 304
+	DD	sechs_setting					;t4810.scn 329
+	DD	TK_sechs					;t4810.scn 343
+	DD	TK_sechs_racan_1					;t4810.scn 712
+	DD	TK_sechs_racan_2					;t4810.scn 795
+	DD	TK_sechs_samary_sajes					;t4810.scn 863
+	DD	ryel_setting					;t4810.scn 915
+	DD	TK_ryel					;t4810.scn 953
+	DD	samary_setting					;t4810.scn 1326
+	DD	TK_samary					;t4810.scn 1347
+	DD	TK_samary_ogram_bolt					;t4810.scn 1421
+	DD	sajes_setting					;t4810.scn 1489
+	DD	TK_sajes					;t4810.scn 1517
+	DD	ogram_setting					;t4810.scn 1793
+	DD	TK_ogram					;t4810.scn 1836
+	DD	bolt_setting					;t4810.scn 2214
+	DD	TK_bolt					;t4810.scn 2250
+	DD	NPC_move_bolt					;t4810.scn 2476
+	DD	fuuber_setting					;t4810.scn 2517
+	DD	TK_fuuber					;t4810.scn 2560
+	DD	TK_fuuber_halt					;t4810.scn 2966
+	DD	TK_fuuber_halt2					;t4810.scn 3034
+	DD	halt_setting					;t4810.scn 3082
+	DD	TK_halt					;t4810.scn 3123
+	DD	zats_setting					;t4810.scn 3391
+	DD	TK_zats					;t4810.scn 3415
+	DD	maning_setting					;t4810.scn 3577
+	DD	TK_maning					;t4810.scn 3601
+	DD	TK_maning_zats					;t4810.scn 3719
+	DD	marx_setting					;t4810.scn 3778
+	DD	TK_marx					;t4810.scn 3793
+	DD	dion_setting					;t4810.scn 4162
+	DD	TK_dion					;t4810.scn 4176
+	DD	t4810_soldier01_setting					;t4810.scn 4524
+	DD	TK_t4810_soldier01					;t4810.scn 4537
+	DD	t4810_soldier02_setting					;t4810.scn 4569
+	DD	TK_t4810_soldier02					;t4810.scn 4584
+	DD	t4810_soldier03_setting					;t4810.scn 4642
+	DD	TK_t4810_soldier03					;t4810.scn 4657
+	DD	NPC_move_t4810_soldier03					;t4810.scn 4677
+	DD	t4810_soldier_g01_setting					;t4810.scn 4700
+	DD	TK_t4810_soldier_g01					;t4810.scn 4715
+	DD	t4810_soldier_q_setting					;t4810.scn 4739
+	DD	TK_t4810_soldier_q					;t4810.scn 4753
+	DD	TK_t4810_soldier_q_sajes					;t4810.scn 4796
+	DD	t4810_soldier_s01_setting					;t4810.scn 4831
+	DD	TK_t4810_soldier_s01					;t4810.scn 4845
+	DD	t4810_soldier_s02_setting					;t4810.scn 4880
+	DD	TK_t4810_soldier_s02					;t4810.scn 4895
+	DD	t4810_soldier_s03_setting					;t4810.scn 4922
+	DD	TK_t4810_soldier_s03					;t4810.scn 4937
+	DD	t4810_soldier_s04_setting					;t4810.scn 4963
+	DD	TK_t4810_soldier_s04					;t4810.scn 4978
+	DD	dominic_setting					;t4810.scn 5003
+	DD	TK_dominic					;t4810.scn 5022
+	DD	shal_setting					;t4810.scn 5084
+	DD	TK_shal					;t4810.scn 5097
+	DD	NPC_move_shal					;t4810.scn 5266
+	DD	racan_setting					;t4810.scn 5351
+	DD	TK_racan					;t4810.scn 5365
+	DD	EV_01_35_01					;t4810.scn 5534
+	DD	QS_1203_01					;t4810.scn 6608
+	DD	QS_1203_COMP					;t4810.scn 7033
+	DD	_TK_ogram					;t4810.scn 7349
+	DD	_TK_fuuber					;t4810.scn 7349
+	DD	_TK_marx					;t4810.scn 7349
+	DD	_QS_1203_01					;t4810.scn 7349
+	DD	_QS_1203_COMP					;t4810.scn 7349
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_LP_door_R1
+	DW	FUNCNAME_LP_door_L1
+	DW	FUNCNAME_LP_door_L2
+	DW	FUNCNAME_Npc_Table
+	DW	FUNCNAME_beryl_setting
+	DW	FUNCNAME_sechs_setting
+	DW	FUNCNAME_TK_sechs
+	DW	FUNCNAME_TK_sechs_racan_1
+	DW	FUNCNAME_TK_sechs_racan_2
+	DW	FUNCNAME_TK_sechs_samary_sajes
+	DW	FUNCNAME_ryel_setting
+	DW	FUNCNAME_TK_ryel
+	DW	FUNCNAME_samary_setting
+	DW	FUNCNAME_TK_samary
+	DW	FUNCNAME_TK_samary_ogram_bolt
+	DW	FUNCNAME_sajes_setting
+	DW	FUNCNAME_TK_sajes
+	DW	FUNCNAME_ogram_setting
+	DW	FUNCNAME_TK_ogram
+	DW	FUNCNAME_bolt_setting
+	DW	FUNCNAME_TK_bolt
+	DW	FUNCNAME_NPC_move_bolt
+	DW	FUNCNAME_fuuber_setting
+	DW	FUNCNAME_TK_fuuber
+	DW	FUNCNAME_TK_fuuber_halt
+	DW	FUNCNAME_TK_fuuber_halt2
+	DW	FUNCNAME_halt_setting
+	DW	FUNCNAME_TK_halt
+	DW	FUNCNAME_zats_setting
+	DW	FUNCNAME_TK_zats
+	DW	FUNCNAME_maning_setting
+	DW	FUNCNAME_TK_maning
+	DW	FUNCNAME_TK_maning_zats
+	DW	FUNCNAME_marx_setting
+	DW	FUNCNAME_TK_marx
+	DW	FUNCNAME_dion_setting
+	DW	FUNCNAME_TK_dion
+	DW	FUNCNAME_t4810_soldier01_setting
+	DW	FUNCNAME_TK_t4810_soldier01
+	DW	FUNCNAME_t4810_soldier02_setting
+	DW	FUNCNAME_TK_t4810_soldier02
+	DW	FUNCNAME_t4810_soldier03_setting
+	DW	FUNCNAME_TK_t4810_soldier03
+	DW	FUNCNAME_NPC_move_t4810_soldier03
+	DW	FUNCNAME_t4810_soldier_g01_setting
+	DW	FUNCNAME_TK_t4810_soldier_g01
+	DW	FUNCNAME_t4810_soldier_q_setting
+	DW	FUNCNAME_TK_t4810_soldier_q
+	DW	FUNCNAME_TK_t4810_soldier_q_sajes
+	DW	FUNCNAME_t4810_soldier_s01_setting
+	DW	FUNCNAME_TK_t4810_soldier_s01
+	DW	FUNCNAME_t4810_soldier_s02_setting
+	DW	FUNCNAME_TK_t4810_soldier_s02
+	DW	FUNCNAME_t4810_soldier_s03_setting
+	DW	FUNCNAME_TK_t4810_soldier_s03
+	DW	FUNCNAME_t4810_soldier_s04_setting
+	DW	FUNCNAME_TK_t4810_soldier_s04
+	DW	FUNCNAME_dominic_setting
+	DW	FUNCNAME_TK_dominic
+	DW	FUNCNAME_shal_setting
+	DW	FUNCNAME_TK_shal
+	DW	FUNCNAME_NPC_move_shal
+	DW	FUNCNAME_racan_setting
+	DW	FUNCNAME_TK_racan
+	DW	FUNCNAME_EV_01_35_01
+	DW	FUNCNAME_QS_1203_01
+	DW	FUNCNAME_QS_1203_COMP
+	DW	FUNCNAME__TK_ogram
+	DW	FUNCNAME__TK_fuuber
+	DW	FUNCNAME__TK_marx
+	DW	FUNCNAME__QS_1203_01
+	DW	FUNCNAME__QS_1203_COMP
+FUNCTION_NAME_TABLE_NUM	EQU	77
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_LP_door_R1:	DB	'LP_door_R1',0
+FUNCNAME_LP_door_L1:	DB	'LP_door_L1',0
+FUNCNAME_LP_door_L2:	DB	'LP_door_L2',0
+FUNCNAME_Npc_Table:	DB	'Npc_Table',0
+FUNCNAME_beryl_setting:	DB	'beryl_setting',0
+FUNCNAME_sechs_setting:	DB	'sechs_setting',0
+FUNCNAME_TK_sechs:	DB	'TK_sechs',0
+FUNCNAME_TK_sechs_racan_1:	DB	'TK_sechs_racan_1',0
+FUNCNAME_TK_sechs_racan_2:	DB	'TK_sechs_racan_2',0
+FUNCNAME_TK_sechs_samary_sajes:	DB	'TK_sechs_samary_sajes',0
+FUNCNAME_ryel_setting:	DB	'ryel_setting',0
+FUNCNAME_TK_ryel:	DB	'TK_ryel',0
+FUNCNAME_samary_setting:	DB	'samary_setting',0
+FUNCNAME_TK_samary:	DB	'TK_samary',0
+FUNCNAME_TK_samary_ogram_bolt:	DB	'TK_samary_ogram_bolt',0
+FUNCNAME_sajes_setting:	DB	'sajes_setting',0
+FUNCNAME_TK_sajes:	DB	'TK_sajes',0
+FUNCNAME_ogram_setting:	DB	'ogram_setting',0
+FUNCNAME_TK_ogram:	DB	'TK_ogram',0
+FUNCNAME_bolt_setting:	DB	'bolt_setting',0
+FUNCNAME_TK_bolt:	DB	'TK_bolt',0
+FUNCNAME_NPC_move_bolt:	DB	'NPC_move_bolt',0
+FUNCNAME_fuuber_setting:	DB	'fuuber_setting',0
+FUNCNAME_TK_fuuber:	DB	'TK_fuuber',0
+FUNCNAME_TK_fuuber_halt:	DB	'TK_fuuber_halt',0
+FUNCNAME_TK_fuuber_halt2:	DB	'TK_fuuber_halt2',0
+FUNCNAME_halt_setting:	DB	'halt_setting',0
+FUNCNAME_TK_halt:	DB	'TK_halt',0
+FUNCNAME_zats_setting:	DB	'zats_setting',0
+FUNCNAME_TK_zats:	DB	'TK_zats',0
+FUNCNAME_maning_setting:	DB	'maning_setting',0
+FUNCNAME_TK_maning:	DB	'TK_maning',0
+FUNCNAME_TK_maning_zats:	DB	'TK_maning_zats',0
+FUNCNAME_marx_setting:	DB	'marx_setting',0
+FUNCNAME_TK_marx:	DB	'TK_marx',0
+FUNCNAME_dion_setting:	DB	'dion_setting',0
+FUNCNAME_TK_dion:	DB	'TK_dion',0
+FUNCNAME_t4810_soldier01_setting:	DB	't4810_soldier01_setting',0
+FUNCNAME_TK_t4810_soldier01:	DB	'TK_t4810_soldier01',0
+FUNCNAME_t4810_soldier02_setting:	DB	't4810_soldier02_setting',0
+FUNCNAME_TK_t4810_soldier02:	DB	'TK_t4810_soldier02',0
+FUNCNAME_t4810_soldier03_setting:	DB	't4810_soldier03_setting',0
+FUNCNAME_TK_t4810_soldier03:	DB	'TK_t4810_soldier03',0
+FUNCNAME_NPC_move_t4810_soldier03:	DB	'NPC_move_t4810_soldier03',0
+FUNCNAME_t4810_soldier_g01_setting:	DB	't4810_soldier_g01_setting',0
+FUNCNAME_TK_t4810_soldier_g01:	DB	'TK_t4810_soldier_g01',0
+FUNCNAME_t4810_soldier_q_setting:	DB	't4810_soldier_q_setting',0
+FUNCNAME_TK_t4810_soldier_q:	DB	'TK_t4810_soldier_q',0
+FUNCNAME_TK_t4810_soldier_q_sajes:	DB	'TK_t4810_soldier_q_sajes',0
+FUNCNAME_t4810_soldier_s01_setting:	DB	't4810_soldier_s01_setting',0
+FUNCNAME_TK_t4810_soldier_s01:	DB	'TK_t4810_soldier_s01',0
+FUNCNAME_t4810_soldier_s02_setting:	DB	't4810_soldier_s02_setting',0
+FUNCNAME_TK_t4810_soldier_s02:	DB	'TK_t4810_soldier_s02',0
+FUNCNAME_t4810_soldier_s03_setting:	DB	't4810_soldier_s03_setting',0
+FUNCNAME_TK_t4810_soldier_s03:	DB	'TK_t4810_soldier_s03',0
+FUNCNAME_t4810_soldier_s04_setting:	DB	't4810_soldier_s04_setting',0
+FUNCNAME_TK_t4810_soldier_s04:	DB	'TK_t4810_soldier_s04',0
+FUNCNAME_dominic_setting:	DB	'dominic_setting',0
+FUNCNAME_TK_dominic:	DB	'TK_dominic',0
+FUNCNAME_shal_setting:	DB	'shal_setting',0
+FUNCNAME_TK_shal:	DB	'TK_shal',0
+FUNCNAME_NPC_move_shal:	DB	'NPC_move_shal',0
+FUNCNAME_racan_setting:	DB	'racan_setting',0
+FUNCNAME_TK_racan:	DB	'TK_racan',0
+FUNCNAME_EV_01_35_01:	DB	'EV_01_35_01',0
+FUNCNAME_QS_1203_01:	DB	'QS_1203_01',0
+FUNCNAME_QS_1203_COMP:	DB	'QS_1203_COMP',0
+FUNCNAME__TK_ogram:	DB	'_TK_ogram',0
+FUNCNAME__TK_fuuber:	DB	'_TK_fuuber',0
+FUNCNAME__TK_marx:	DB	'_TK_marx',0
+FUNCNAME__QS_1203_01:	DB	'_QS_1203_01',0
+FUNCNAME__QS_1203_COMP:	DB	'_QS_1203_COMP',0

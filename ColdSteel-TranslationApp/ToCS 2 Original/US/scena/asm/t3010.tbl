@@ -1,0 +1,125 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;t3010.scn 41
+	DD	PreInit					;t3010.scn 47
+	DD	Init					;t3010.scn 63
+	DD	Init_Replay					;t3010.scn 96
+	DD	Reinit					;t3010.scn 127
+	DD	Npc_Table					;t3010.scn 153
+	DD	barows_setting					;t3010.scn 224
+	DD	TK_barows					;t3010.scn 242
+	DD	TK_barows_kei_04_02					;t3010.scn 336
+	DD	kei_setting					;t3010.scn 389
+	DD	TK_kei					;t3010.scn 399
+	DD	miles_setting					;t3010.scn 441
+	DD	TK_miles					;t3010.scn 467
+	DD	kraus_setting					;t3010.scn 1448
+	DD	TK_kraus					;t3010.scn 1473
+	DD	EV_01_54_01					;t3010.scn 1554
+	DD	ET_01_54_01_REAN_1					;t3010.scn 2910
+	DD	ET_01_54_01_team7_0_1					;t3010.scn 2918
+	DD	ET_01_54_01_team7_1_1					;t3010.scn 2928
+	DD	ET_01_54_01_helper_1					;t3010.scn 2938
+	DD	ET_01_54_01_CELINE2_1					;t3010.scn 2948
+	DD	ET_01_54_01_REAN_2					;t3010.scn 2959
+	DD	ET_01_54_01_team7_0_2					;t3010.scn 2967
+	DD	ET_01_54_01_team7_1_2					;t3010.scn 2976
+	DD	ET_01_54_01_helper_2					;t3010.scn 2985
+	DD	ET_01_54_01_CELINE2_2					;t3010.scn 2992
+	DD	QS_2401_01					;t3010.scn 3011
+	DD	QS_2401_COMP					;t3010.scn 3718
+	DD	QS_1302_COMP_MC					;t3010.scn 4113
+	DD	QS_1302_COMP					;t3010.scn 4118
+	DD	QS_1302_COMP_MAIN					;t3010.scn 4122
+	DD	SB_01_QUEST_LEGRAM					;t3010.scn 4267
+	DD	_EV_01_54_01					;t3010.scn 4595
+	DD	_QS_2401_01					;t3010.scn 4595
+	DD	_QS_2401_COMP					;t3010.scn 4595
+	DD	_QS_1302_COMP_MAIN					;t3010.scn 4595
+	DD	_SB_01_QUEST_LEGRAM					;t3010.scn 4595
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_Npc_Table
+	DW	FUNCNAME_barows_setting
+	DW	FUNCNAME_TK_barows
+	DW	FUNCNAME_TK_barows_kei_04_02
+	DW	FUNCNAME_kei_setting
+	DW	FUNCNAME_TK_kei
+	DW	FUNCNAME_miles_setting
+	DW	FUNCNAME_TK_miles
+	DW	FUNCNAME_kraus_setting
+	DW	FUNCNAME_TK_kraus
+	DW	FUNCNAME_EV_01_54_01
+	DW	FUNCNAME_ET_01_54_01_REAN_1
+	DW	FUNCNAME_ET_01_54_01_team7_0_1
+	DW	FUNCNAME_ET_01_54_01_team7_1_1
+	DW	FUNCNAME_ET_01_54_01_helper_1
+	DW	FUNCNAME_ET_01_54_01_CELINE2_1
+	DW	FUNCNAME_ET_01_54_01_REAN_2
+	DW	FUNCNAME_ET_01_54_01_team7_0_2
+	DW	FUNCNAME_ET_01_54_01_team7_1_2
+	DW	FUNCNAME_ET_01_54_01_helper_2
+	DW	FUNCNAME_ET_01_54_01_CELINE2_2
+	DW	FUNCNAME_QS_2401_01
+	DW	FUNCNAME_QS_2401_COMP
+	DW	FUNCNAME_QS_1302_COMP_MC
+	DW	FUNCNAME_QS_1302_COMP
+	DW	FUNCNAME_QS_1302_COMP_MAIN
+	DW	FUNCNAME_SB_01_QUEST_LEGRAM
+	DW	FUNCNAME__EV_01_54_01
+	DW	FUNCNAME__QS_2401_01
+	DW	FUNCNAME__QS_2401_COMP
+	DW	FUNCNAME__QS_1302_COMP_MAIN
+	DW	FUNCNAME__SB_01_QUEST_LEGRAM
+FUNCTION_NAME_TABLE_NUM	EQU	37
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_Npc_Table:	DB	'Npc_Table',0
+FUNCNAME_barows_setting:	DB	'barows_setting',0
+FUNCNAME_TK_barows:	DB	'TK_barows',0
+FUNCNAME_TK_barows_kei_04_02:	DB	'TK_barows_kei_04_02',0
+FUNCNAME_kei_setting:	DB	'kei_setting',0
+FUNCNAME_TK_kei:	DB	'TK_kei',0
+FUNCNAME_miles_setting:	DB	'miles_setting',0
+FUNCNAME_TK_miles:	DB	'TK_miles',0
+FUNCNAME_kraus_setting:	DB	'kraus_setting',0
+FUNCNAME_TK_kraus:	DB	'TK_kraus',0
+FUNCNAME_EV_01_54_01:	DB	'EV_01_54_01',0
+FUNCNAME_ET_01_54_01_REAN_1:	DB	'ET_01_54_01_REAN_1',0
+FUNCNAME_ET_01_54_01_team7_0_1:	DB	'ET_01_54_01_team7_0_1',0
+FUNCNAME_ET_01_54_01_team7_1_1:	DB	'ET_01_54_01_team7_1_1',0
+FUNCNAME_ET_01_54_01_helper_1:	DB	'ET_01_54_01_helper_1',0
+FUNCNAME_ET_01_54_01_CELINE2_1:	DB	'ET_01_54_01_CELINE2_1',0
+FUNCNAME_ET_01_54_01_REAN_2:	DB	'ET_01_54_01_REAN_2',0
+FUNCNAME_ET_01_54_01_team7_0_2:	DB	'ET_01_54_01_team7_0_2',0
+FUNCNAME_ET_01_54_01_team7_1_2:	DB	'ET_01_54_01_team7_1_2',0
+FUNCNAME_ET_01_54_01_helper_2:	DB	'ET_01_54_01_helper_2',0
+FUNCNAME_ET_01_54_01_CELINE2_2:	DB	'ET_01_54_01_CELINE2_2',0
+FUNCNAME_QS_2401_01:	DB	'QS_2401_01',0
+FUNCNAME_QS_2401_COMP:	DB	'QS_2401_COMP',0
+FUNCNAME_QS_1302_COMP_MC:	DB	'QS_1302_COMP_MC',0
+FUNCNAME_QS_1302_COMP:	DB	'QS_1302_COMP',0
+FUNCNAME_QS_1302_COMP_MAIN:	DB	'QS_1302_COMP_MAIN',0
+FUNCNAME_SB_01_QUEST_LEGRAM:	DB	'SB_01_QUEST_LEGRAM',0
+FUNCNAME__EV_01_54_01:	DB	'_EV_01_54_01',0
+FUNCNAME__QS_2401_01:	DB	'_QS_2401_01',0
+FUNCNAME__QS_2401_COMP:	DB	'_QS_2401_COMP',0
+FUNCNAME__QS_1302_COMP_MAIN:	DB	'_QS_1302_COMP_MAIN',0
+FUNCNAME__SB_01_QUEST_LEGRAM:	DB	'_SB_01_QUEST_LEGRAM',0

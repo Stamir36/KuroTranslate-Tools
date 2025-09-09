@@ -1,0 +1,155 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;t4030.scn 52
+	DD	PreInit					;t4030.scn 58
+	DD	Init					;t4030.scn 73
+	DD	Init_Replay					;t4030.scn 113
+	DD	Reinit					;t4030.scn 161
+	DD	Npc_Table					;t4030.scn 187
+	DD	annabel_setting					;t4030.scn 225
+	DD	eliot_setting					;t4030.scn 262
+	DD	machias_setting					;t4030.scn 279
+	DD	emma_setting					;t4030.scn 301
+	DD	celine2_setting					;t4030.scn 317
+	DD	tovar_setting					;t4030.scn 333
+	DD	alf_setting					;t4030.scn 363
+	DD	TK_alf					;t4030.scn 377
+	DD	TK_ALF_KIKI					;t4030.scn 412
+	DD	kiki_setting					;t4030.scn 451
+	DD	NPC_move_KIKI					;t4030.scn 481
+	DD	TK_kiki					;t4030.scn 533
+	DD	gerald_setting					;t4030.scn 850
+	DD	TK_gerald					;t4030.scn 884
+	DD	moritch_setting					;t4030.scn 1532
+	DD	TK_moritch					;t4030.scn 1553
+	DD	TK_ANNABEL_KARIGAN_03_Z1					;t4030.scn 2018
+	DD	karigan_setting					;t4030.scn 2081
+	DD	TK_karigan					;t4030.scn 2096
+	DD	morize_setting					;t4030.scn 2153
+	DD	TK_morize					;t4030.scn 2169
+	DD	EV_00_09_00					;t4030.scn 2228
+	DD	QS_1204_03					;t4030.scn 2657
+	DD	QS_1305_01					;t4030.scn 2857
+	DD	QS_1305_COMP					;t4030.scn 3150
+	DD	SB_KIZUNA_ELIOT_02					;t4030.scn 3423
+	DD	SB_KIZUNA_JUSIS_02					;t4030.scn 3825
+	DD	SB_KIZUNA_SARA_01					;t4030.scn 4085
+	DD	SB_KIZUNA_ELIOT_01_B					;t4030.scn 4516
+	DD	SB_KIZUNA_EMMA_01_B					;t4030.scn 4543
+	DD	SB_KIZUNA_EMMA_02_B					;t4030.scn 4570
+	DD	SB_STUDENT16_KENNETH_03					;t4030.scn 4599
+	DD	TU_00_PERSON_NOTE_C					;t4030.scn 4894
+	DD	_TK_gerald					;t4030.scn 5049
+	DD	_EV_00_09_00					;t4030.scn 5049
+	DD	_QS_1305_01					;t4030.scn 5049
+	DD	_QS_1305_COMP					;t4030.scn 5049
+	DD	_SB_KIZUNA_ELIOT_02					;t4030.scn 5049
+	DD	_SB_KIZUNA_SARA_01					;t4030.scn 5049
+	DD	_SB_STUDENT16_KENNETH_03					;t4030.scn 5049
+	DD	_TU_00_PERSON_NOTE_C					;t4030.scn 5049
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_Npc_Table
+	DW	FUNCNAME_annabel_setting
+	DW	FUNCNAME_eliot_setting
+	DW	FUNCNAME_machias_setting
+	DW	FUNCNAME_emma_setting
+	DW	FUNCNAME_celine2_setting
+	DW	FUNCNAME_tovar_setting
+	DW	FUNCNAME_alf_setting
+	DW	FUNCNAME_TK_alf
+	DW	FUNCNAME_TK_ALF_KIKI
+	DW	FUNCNAME_kiki_setting
+	DW	FUNCNAME_NPC_move_KIKI
+	DW	FUNCNAME_TK_kiki
+	DW	FUNCNAME_gerald_setting
+	DW	FUNCNAME_TK_gerald
+	DW	FUNCNAME_moritch_setting
+	DW	FUNCNAME_TK_moritch
+	DW	FUNCNAME_TK_ANNABEL_KARIGAN_03_Z1
+	DW	FUNCNAME_karigan_setting
+	DW	FUNCNAME_TK_karigan
+	DW	FUNCNAME_morize_setting
+	DW	FUNCNAME_TK_morize
+	DW	FUNCNAME_EV_00_09_00
+	DW	FUNCNAME_QS_1204_03
+	DW	FUNCNAME_QS_1305_01
+	DW	FUNCNAME_QS_1305_COMP
+	DW	FUNCNAME_SB_KIZUNA_ELIOT_02
+	DW	FUNCNAME_SB_KIZUNA_JUSIS_02
+	DW	FUNCNAME_SB_KIZUNA_SARA_01
+	DW	FUNCNAME_SB_KIZUNA_ELIOT_01_B
+	DW	FUNCNAME_SB_KIZUNA_EMMA_01_B
+	DW	FUNCNAME_SB_KIZUNA_EMMA_02_B
+	DW	FUNCNAME_SB_STUDENT16_KENNETH_03
+	DW	FUNCNAME_TU_00_PERSON_NOTE_C
+	DW	FUNCNAME__TK_gerald
+	DW	FUNCNAME__EV_00_09_00
+	DW	FUNCNAME__QS_1305_01
+	DW	FUNCNAME__QS_1305_COMP
+	DW	FUNCNAME__SB_KIZUNA_ELIOT_02
+	DW	FUNCNAME__SB_KIZUNA_SARA_01
+	DW	FUNCNAME__SB_STUDENT16_KENNETH_03
+	DW	FUNCNAME__TU_00_PERSON_NOTE_C
+FUNCTION_NAME_TABLE_NUM	EQU	47
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_Npc_Table:	DB	'Npc_Table',0
+FUNCNAME_annabel_setting:	DB	'annabel_setting',0
+FUNCNAME_eliot_setting:	DB	'eliot_setting',0
+FUNCNAME_machias_setting:	DB	'machias_setting',0
+FUNCNAME_emma_setting:	DB	'emma_setting',0
+FUNCNAME_celine2_setting:	DB	'celine2_setting',0
+FUNCNAME_tovar_setting:	DB	'tovar_setting',0
+FUNCNAME_alf_setting:	DB	'alf_setting',0
+FUNCNAME_TK_alf:	DB	'TK_alf',0
+FUNCNAME_TK_ALF_KIKI:	DB	'TK_ALF_KIKI',0
+FUNCNAME_kiki_setting:	DB	'kiki_setting',0
+FUNCNAME_NPC_move_KIKI:	DB	'NPC_move_KIKI',0
+FUNCNAME_TK_kiki:	DB	'TK_kiki',0
+FUNCNAME_gerald_setting:	DB	'gerald_setting',0
+FUNCNAME_TK_gerald:	DB	'TK_gerald',0
+FUNCNAME_moritch_setting:	DB	'moritch_setting',0
+FUNCNAME_TK_moritch:	DB	'TK_moritch',0
+FUNCNAME_TK_ANNABEL_KARIGAN_03_Z1:	DB	'TK_ANNABEL_KARIGAN_03_Z1',0
+FUNCNAME_karigan_setting:	DB	'karigan_setting',0
+FUNCNAME_TK_karigan:	DB	'TK_karigan',0
+FUNCNAME_morize_setting:	DB	'morize_setting',0
+FUNCNAME_TK_morize:	DB	'TK_morize',0
+FUNCNAME_EV_00_09_00:	DB	'EV_00_09_00',0
+FUNCNAME_QS_1204_03:	DB	'QS_1204_03',0
+FUNCNAME_QS_1305_01:	DB	'QS_1305_01',0
+FUNCNAME_QS_1305_COMP:	DB	'QS_1305_COMP',0
+FUNCNAME_SB_KIZUNA_ELIOT_02:	DB	'SB_KIZUNA_ELIOT_02',0
+FUNCNAME_SB_KIZUNA_JUSIS_02:	DB	'SB_KIZUNA_JUSIS_02',0
+FUNCNAME_SB_KIZUNA_SARA_01:	DB	'SB_KIZUNA_SARA_01',0
+FUNCNAME_SB_KIZUNA_ELIOT_01_B:	DB	'SB_KIZUNA_ELIOT_01_B',0
+FUNCNAME_SB_KIZUNA_EMMA_01_B:	DB	'SB_KIZUNA_EMMA_01_B',0
+FUNCNAME_SB_KIZUNA_EMMA_02_B:	DB	'SB_KIZUNA_EMMA_02_B',0
+FUNCNAME_SB_STUDENT16_KENNETH_03:	DB	'SB_STUDENT16_KENNETH_03',0
+FUNCNAME_TU_00_PERSON_NOTE_C:	DB	'TU_00_PERSON_NOTE_C',0
+FUNCNAME__TK_gerald:	DB	'_TK_gerald',0
+FUNCNAME__EV_00_09_00:	DB	'_EV_00_09_00',0
+FUNCNAME__QS_1305_01:	DB	'_QS_1305_01',0
+FUNCNAME__QS_1305_COMP:	DB	'_QS_1305_COMP',0
+FUNCNAME__SB_KIZUNA_ELIOT_02:	DB	'_SB_KIZUNA_ELIOT_02',0
+FUNCNAME__SB_KIZUNA_SARA_01:	DB	'_SB_KIZUNA_SARA_01',0
+FUNCNAME__SB_STUDENT16_KENNETH_03:	DB	'_SB_STUDENT16_KENNETH_03',0
+FUNCNAME__TU_00_PERSON_NOTE_C:	DB	'_TU_00_PERSON_NOTE_C',0

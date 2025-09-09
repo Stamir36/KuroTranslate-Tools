@@ -1,0 +1,4378 @@
+{
+    "version": "v2",
+    "headers": [
+        "QSChapter",
+        "QSMons"
+    ],
+    "entries": [
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "-1",
+                "section_name": "Записи",
+                "unknown_short": "11"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "0",
+                "section_name": "Хребет Айзенгард",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "1",
+                "section_name": "Долина Имир",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "2",
+                "section_name": "Парк Лунария",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "3",
+                "section_name": "Кельдское шоссе",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "4",
+                "section_name": "Восточное шоссе Тристы",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "5",
+                "section_name": "Просёлок Гаррелии",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "6",
+                "section_name": "Святилище Земли",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "7",
+                "section_name": "Крепость Гаррелия",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "8",
+                "section_name": "Нагорье - Юг",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "9",
+                "section_name": "Поселение кочевников",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "10",
+                "section_name": "Нагорье - Север",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "11",
+                "section_name": "Нагорье - СВ",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "12",
+                "section_name": "Святилище Ветра",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "13",
+                "section_name": "Сторожевая башня",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "14",
+                "section_name": "Эбельское шоссе",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "15",
+                "section_name": "Замок Лоэнгрин",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "16",
+                "section_name": "Леграм",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "17",
+                "section_name": "Святилище Воды",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "18",
+                "section_name": "Южное шоссе Крейцена",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "19",
+                "section_name": "Водный путь Бареахард",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "20",
+                "section_name": "Северное шоссе Крейцена",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "21",
+                "section_name": "Каньон Зубров",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "22",
+                "section_name": "Имир",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "23",
+                "section_name": "Пантагрюэль",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "24",
+                "section_name": "Дерзкий",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "25",
+                "section_name": "Древний карьер",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "26",
+                "section_name": "Мост Двух Драконов",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "27",
+                "section_name": "Просёлок Спина",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "28",
+                "section_name": "Нортийское шоссе",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "29",
+                "section_name": "Горная тропа Заксена",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "30",
+                "section_name": "Железный рудник Заксена",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "31",
+                "section_name": "Штаб-квартира Райнфорд",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "32",
+                "section_name": "Святилище Огня",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "33",
+                "section_name": "Глубины святилища",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "34",
+                "section_name": "Форт Зубров",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "35",
+                "section_name": "Академия Торс",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "36",
+                "section_name": "Императорская вилла Карел",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "37",
+                "section_name": "Адский замок 1Э",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "38",
+                "section_name": "Адский замок 2Э",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "39",
+                "section_name": "Адский замок 3Э",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "40",
+                "section_name": "Алый Трон",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "51",
+                "section_name": "ЭКСТРА: Геофронт E",
+                "unknown_short": "10"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "52",
+                "section_name": "ЭКСТРА: Грёзы - Земля",
+                "unknown_short": "8"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "53",
+                "section_name": "ЭКСТРА: Грёзы - Вода",
+                "unknown_short": "8"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "54",
+                "section_name": "ЭКСТРА: Грёзы - Огонь",
+                "unknown_short": "8"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "55",
+                "section_name": "ЭКСТРА: Грёзы - Ветер",
+                "unknown_short": "8"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "56",
+                "section_name": "ЭКСТРА: Глубины грёз",
+                "unknown_short": "8"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "57",
+                "section_name": "ЭКСТРА: Сундуки испытаний",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "58",
+                "section_name": "ЭКСТРА",
+                "unknown_short": "11"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon210",
+                "section_id": "0",
+                "enemy_id": "1",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon238",
+                "section_id": "0",
+                "enemy_id": "2",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon234",
+                "section_id": "0",
+                "enemy_id": "3",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon103_c01",
+                "section_id": "0",
+                "enemy_id": "4",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc389",
+                "section_id": "0",
+                "enemy_id": "5",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon233_c00",
+                "section_id": "0",
+                "enemy_id": "6",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon159_c00",
+                "section_id": "0",
+                "enemy_id": "7",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon139_c00",
+                "section_id": "0",
+                "enemy_id": "8",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon206",
+                "section_id": "0",
+                "enemy_id": "9",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon203",
+                "section_id": "0",
+                "enemy_id": "10",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon116_c02",
+                "section_id": "1",
+                "enemy_id": "11",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon211",
+                "section_id": "1",
+                "enemy_id": "12",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon040_c01",
+                "section_id": "1",
+                "enemy_id": "13",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon007_c00",
+                "section_id": "1",
+                "enemy_id": "14",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon041_c00",
+                "section_id": "1",
+                "enemy_id": "15",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon235",
+                "section_id": "1",
+                "enemy_id": "16",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon004_c01",
+                "section_id": "1",
+                "enemy_id": "17",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon023_c00",
+                "section_id": "1",
+                "enemy_id": "18",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon206_0",
+                "section_id": "1",
+                "enemy_id": "19",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon207_0",
+                "section_id": "1",
+                "enemy_id": "20",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon119_c00",
+                "section_id": "1",
+                "enemy_id": "21",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon101_c00",
+                "section_id": "1",
+                "enemy_id": "22",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon044",
+                "section_id": "2",
+                "enemy_id": "23",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon144",
+                "section_id": "2",
+                "enemy_id": "24",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon148",
+                "section_id": "2",
+                "enemy_id": "25",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon013",
+                "section_id": "2",
+                "enemy_id": "26",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon020",
+                "section_id": "2",
+                "enemy_id": "27",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon101",
+                "section_id": "2",
+                "enemy_id": "28",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon201",
+                "section_id": "2",
+                "enemy_id": "29",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon004",
+                "section_id": "3",
+                "enemy_id": "30",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon081",
+                "section_id": "3",
+                "enemy_id": "31",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon022",
+                "section_id": "3",
+                "enemy_id": "32",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon083",
+                "section_id": "3",
+                "enemy_id": "33",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon082",
+                "section_id": "3",
+                "enemy_id": "34",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon085",
+                "section_id": "3",
+                "enemy_id": "35",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon028",
+                "section_id": "3",
+                "enemy_id": "36",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon096",
+                "section_id": "3",
+                "enemy_id": "37",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon040",
+                "section_id": "3",
+                "enemy_id": "38",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon117_c01",
+                "section_id": "3",
+                "enemy_id": "39",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon250",
+                "section_id": "3",
+                "enemy_id": "40",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon012_c00",
+                "section_id": "3",
+                "enemy_id": "41",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon088",
+                "section_id": "3",
+                "enemy_id": "42",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon223",
+                "section_id": "3",
+                "enemy_id": "43",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon018_c01",
+                "section_id": "3",
+                "enemy_id": "44",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon221",
+                "section_id": "3",
+                "enemy_id": "45",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon116",
+                "section_id": "4",
+                "enemy_id": "46",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon245",
+                "section_id": "4",
+                "enemy_id": "47",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon005",
+                "section_id": "4",
+                "enemy_id": "48",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon044_c01",
+                "section_id": "4",
+                "enemy_id": "49",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon238_c00",
+                "section_id": "4",
+                "enemy_id": "50",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon093_c00",
+                "section_id": "4",
+                "enemy_id": "51",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon024",
+                "section_id": "4",
+                "enemy_id": "52",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon043_c01",
+                "section_id": "4",
+                "enemy_id": "53",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon098_c00",
+                "section_id": "4",
+                "enemy_id": "54",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc620_c00",
+                "section_id": "4",
+                "enemy_id": "55",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc615_c00",
+                "section_id": "4",
+                "enemy_id": "56",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon090",
+                "section_id": "5",
+                "enemy_id": "57",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon009",
+                "section_id": "5",
+                "enemy_id": "58",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon115",
+                "section_id": "5",
+                "enemy_id": "59",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon082_c00",
+                "section_id": "5",
+                "enemy_id": "60",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon118",
+                "section_id": "5",
+                "enemy_id": "61",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon147_c01",
+                "section_id": "5",
+                "enemy_id": "62",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon005_c02",
+                "section_id": "5",
+                "enemy_id": "63",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon042_c00",
+                "section_id": "5",
+                "enemy_id": "64",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon000_c02",
+                "section_id": "5",
+                "enemy_id": "65",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon219",
+                "section_id": "5",
+                "enemy_id": "66",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon042",
+                "section_id": "6",
+                "enemy_id": "67",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon117_c00",
+                "section_id": "6",
+                "enemy_id": "68",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon041",
+                "section_id": "6",
+                "enemy_id": "69",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon042_c01",
+                "section_id": "6",
+                "enemy_id": "70",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon227_c04",
+                "section_id": "6",
+                "enemy_id": "71",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon233",
+                "section_id": "6",
+                "enemy_id": "72",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon015",
+                "section_id": "6",
+                "enemy_id": "73",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon140",
+                "section_id": "6",
+                "enemy_id": "74",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon159",
+                "section_id": "6",
+                "enemy_id": "75",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon227_c04_0",
+                "section_id": "6",
+                "enemy_id": "76",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon241",
+                "section_id": "7",
+                "enemy_id": "77",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc023",
+                "section_id": "7",
+                "enemy_id": "78",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc024",
+                "section_id": "7",
+                "enemy_id": "79",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc607",
+                "section_id": "7",
+                "enemy_id": "80",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc607_c00",
+                "section_id": "7",
+                "enemy_id": "81",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon200",
+                "section_id": "7",
+                "enemy_id": "82",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon137",
+                "section_id": "8",
+                "enemy_id": "83",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon004_c00",
+                "section_id": "8",
+                "enemy_id": "84",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon092_c00",
+                "section_id": "8",
+                "enemy_id": "85",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon099",
+                "section_id": "8",
+                "enemy_id": "86",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon118_c00",
+                "section_id": "8",
+                "enemy_id": "87",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon091_c00",
+                "section_id": "8",
+                "enemy_id": "88",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon029",
+                "section_id": "8",
+                "enemy_id": "89",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon108_c01",
+                "section_id": "8",
+                "enemy_id": "90",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc391",
+                "section_id": "9",
+                "enemy_id": "91",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc391_c00",
+                "section_id": "9",
+                "enemy_id": "92",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon018",
+                "section_id": "10",
+                "enemy_id": "93",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon093",
+                "section_id": "10",
+                "enemy_id": "94",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon022_c01",
+                "section_id": "10",
+                "enemy_id": "95",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon070_c00",
+                "section_id": "10",
+                "enemy_id": "96",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon002",
+                "section_id": "10",
+                "enemy_id": "97",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon103",
+                "section_id": "10",
+                "enemy_id": "98",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon225_c00",
+                "section_id": "10",
+                "enemy_id": "99",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon207_1",
+                "section_id": "10",
+                "enemy_id": "100",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon109_c00",
+                "section_id": "11",
+                "enemy_id": "101",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon115_c00",
+                "section_id": "11",
+                "enemy_id": "102",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon137_c00",
+                "section_id": "11",
+                "enemy_id": "103",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon119",
+                "section_id": "11",
+                "enemy_id": "104",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon139",
+                "section_id": "11",
+                "enemy_id": "105",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon108",
+                "section_id": "11",
+                "enemy_id": "106",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon029_c00",
+                "section_id": "11",
+                "enemy_id": "107",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon085_c01",
+                "section_id": "12",
+                "enemy_id": "108",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon148_c02",
+                "section_id": "12",
+                "enemy_id": "109",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon246_c00",
+                "section_id": "12",
+                "enemy_id": "110",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon147_c00",
+                "section_id": "12",
+                "enemy_id": "111",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon227_c02",
+                "section_id": "12",
+                "enemy_id": "112",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon142",
+                "section_id": "12",
+                "enemy_id": "113",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon045",
+                "section_id": "12",
+                "enemy_id": "114",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon141_c00",
+                "section_id": "12",
+                "enemy_id": "115",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon019",
+                "section_id": "12",
+                "enemy_id": "116",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon227_c02_0",
+                "section_id": "12",
+                "enemy_id": "117",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon104",
+                "section_id": "13",
+                "enemy_id": "118",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon104_c00",
+                "section_id": "13",
+                "enemy_id": "119",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc350_c05",
+                "section_id": "13",
+                "enemy_id": "120",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon225_c00_0",
+                "section_id": "13",
+                "enemy_id": "121",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc391_0",
+                "section_id": "13",
+                "enemy_id": "122",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc391_c00_0",
+                "section_id": "13",
+                "enemy_id": "123",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc070",
+                "section_id": "13",
+                "enemy_id": "124",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc048",
+                "section_id": "13",
+                "enemy_id": "125",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc630",
+                "section_id": "13",
+                "enemy_id": "126",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc607_0",
+                "section_id": "13",
+                "enemy_id": "127",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc607_c00_0",
+                "section_id": "13",
+                "enemy_id": "128",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc608",
+                "section_id": "13",
+                "enemy_id": "129",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon116_c00",
+                "section_id": "14",
+                "enemy_id": "130",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon005_c00",
+                "section_id": "14",
+                "enemy_id": "131",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon097_c00",
+                "section_id": "14",
+                "enemy_id": "132",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon012",
+                "section_id": "14",
+                "enemy_id": "133",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon148_c01",
+                "section_id": "14",
+                "enemy_id": "134",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon145",
+                "section_id": "14",
+                "enemy_id": "135",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon020_c00",
+                "section_id": "14",
+                "enemy_id": "136",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon002_c00",
+                "section_id": "14",
+                "enemy_id": "137",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon102",
+                "section_id": "14",
+                "enemy_id": "138",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon020_c01",
+                "section_id": "14",
+                "enemy_id": "139",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon203_c00",
+                "section_id": "15",
+                "enemy_id": "140",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon008",
+                "section_id": "15",
+                "enemy_id": "141",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon030",
+                "section_id": "15",
+                "enemy_id": "142",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon032",
+                "section_id": "15",
+                "enemy_id": "143",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon043_c00",
+                "section_id": "15",
+                "enemy_id": "144",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon025",
+                "section_id": "15",
+                "enemy_id": "145",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon037_c00",
+                "section_id": "15",
+                "enemy_id": "146",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc062",
+                "section_id": "16",
+                "enemy_id": "147",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc062_c00",
+                "section_id": "16",
+                "enemy_id": "148",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc062_c01",
+                "section_id": "16",
+                "enemy_id": "149",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc062_c02",
+                "section_id": "16",
+                "enemy_id": "150",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon000_c00",
+                "section_id": "17",
+                "enemy_id": "151",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon212",
+                "section_id": "17",
+                "enemy_id": "152",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon102_c00",
+                "section_id": "17",
+                "enemy_id": "153",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon157_c00",
+                "section_id": "17",
+                "enemy_id": "154",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon227_c01",
+                "section_id": "17",
+                "enemy_id": "155",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon016_c00",
+                "section_id": "17",
+                "enemy_id": "156",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon143_c00",
+                "section_id": "17",
+                "enemy_id": "157",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon146_c00",
+                "section_id": "17",
+                "enemy_id": "158",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon017",
+                "section_id": "17",
+                "enemy_id": "159",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon227_c01_0",
+                "section_id": "17",
+                "enemy_id": "160",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon090_c00",
+                "section_id": "18",
+                "enemy_id": "161",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon081_c00",
+                "section_id": "18",
+                "enemy_id": "162",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon243",
+                "section_id": "18",
+                "enemy_id": "163",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon243_c00",
+                "section_id": "18",
+                "enemy_id": "164",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon243_c01",
+                "section_id": "18",
+                "enemy_id": "165",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon000_c05",
+                "section_id": "19",
+                "enemy_id": "166",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon000_c06",
+                "section_id": "19",
+                "enemy_id": "167",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon048",
+                "section_id": "20",
+                "enemy_id": "168",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon001",
+                "section_id": "20",
+                "enemy_id": "169",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon049",
+                "section_id": "20",
+                "enemy_id": "170",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon005_c01",
+                "section_id": "20",
+                "enemy_id": "171",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon009_c00",
+                "section_id": "20",
+                "enemy_id": "172",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon040_c00",
+                "section_id": "20",
+                "enemy_id": "173",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon247",
+                "section_id": "20",
+                "enemy_id": "174",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon048_c00",
+                "section_id": "20",
+                "enemy_id": "175",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon001_c02",
+                "section_id": "20",
+                "enemy_id": "176",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon248",
+                "section_id": "20",
+                "enemy_id": "177",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon049_c00",
+                "section_id": "20",
+                "enemy_id": "178",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon220",
+                "section_id": "20",
+                "enemy_id": "179",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "ply006_0",
+                "section_id": "21",
+                "enemy_id": "180",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc073",
+                "section_id": "21",
+                "enemy_id": "181",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc071",
+                "section_id": "21",
+                "enemy_id": "182",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc631",
+                "section_id": "21",
+                "enemy_id": "183",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc610",
+                "section_id": "21",
+                "enemy_id": "184",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon092",
+                "section_id": "21",
+                "enemy_id": "185",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon021",
+                "section_id": "21",
+                "enemy_id": "186",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon070",
+                "section_id": "21",
+                "enemy_id": "187",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon043",
+                "section_id": "21",
+                "enemy_id": "188",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon014",
+                "section_id": "21",
+                "enemy_id": "189",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon091",
+                "section_id": "21",
+                "enemy_id": "190",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon096_c01",
+                "section_id": "21",
+                "enemy_id": "191",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon146",
+                "section_id": "21",
+                "enemy_id": "192",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc010",
+                "section_id": "22",
+                "enemy_id": "193",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc601",
+                "section_id": "22",
+                "enemy_id": "194",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon018_c00",
+                "section_id": "22",
+                "enemy_id": "195",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon222",
+                "section_id": "22",
+                "enemy_id": "196",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon104_0",
+                "section_id": "23",
+                "enemy_id": "197",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon104_c00_0",
+                "section_id": "23",
+                "enemy_id": "198",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon224",
+                "section_id": "23",
+                "enemy_id": "199",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc350_c05_0",
+                "section_id": "23",
+                "enemy_id": "200",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon026",
+                "section_id": "23",
+                "enemy_id": "201",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc073_0",
+                "section_id": "23",
+                "enemy_id": "202",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc048_0",
+                "section_id": "23",
+                "enemy_id": "203",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc018",
+                "section_id": "23",
+                "enemy_id": "204",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon130_c10",
+                "section_id": "24",
+                "enemy_id": "205",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon130_c11",
+                "section_id": "24",
+                "enemy_id": "206",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon130_c12",
+                "section_id": "24",
+                "enemy_id": "207",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon130_c13",
+                "section_id": "24",
+                "enemy_id": "208",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon130_c14",
+                "section_id": "24",
+                "enemy_id": "209",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon130_c15",
+                "section_id": "24",
+                "enemy_id": "210",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon075",
+                "section_id": "25",
+                "enemy_id": "211",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon097",
+                "section_id": "25",
+                "enemy_id": "212",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon141",
+                "section_id": "25",
+                "enemy_id": "213",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon076",
+                "section_id": "25",
+                "enemy_id": "214",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc607_c01",
+                "section_id": "26",
+                "enemy_id": "215",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc610_0",
+                "section_id": "26",
+                "enemy_id": "216",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc608_c00",
+                "section_id": "26",
+                "enemy_id": "217",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon224_0",
+                "section_id": "26",
+                "enemy_id": "218",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc350",
+                "section_id": "26",
+                "enemy_id": "219",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon217",
+                "section_id": "26",
+                "enemy_id": "220",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon218",
+                "section_id": "26",
+                "enemy_id": "221",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc351_c07",
+                "section_id": "26",
+                "enemy_id": "222",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon073_c02",
+                "section_id": "26",
+                "enemy_id": "223",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon073_c03",
+                "section_id": "26",
+                "enemy_id": "224",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc608_c05",
+                "section_id": "26",
+                "enemy_id": "225",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon022_c00",
+                "section_id": "27",
+                "enemy_id": "226",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon044_c02",
+                "section_id": "27",
+                "enemy_id": "227",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon028_c00",
+                "section_id": "27",
+                "enemy_id": "228",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon096_c00",
+                "section_id": "27",
+                "enemy_id": "229",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon085_c00",
+                "section_id": "28",
+                "enemy_id": "230",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon001_c00",
+                "section_id": "28",
+                "enemy_id": "231",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon044_c00",
+                "section_id": "28",
+                "enemy_id": "232",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon023",
+                "section_id": "28",
+                "enemy_id": "233",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon083_c00",
+                "section_id": "28",
+                "enemy_id": "234",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon016",
+                "section_id": "28",
+                "enemy_id": "235",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon027",
+                "section_id": "28",
+                "enemy_id": "236",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon098",
+                "section_id": "28",
+                "enemy_id": "237",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc620",
+                "section_id": "28",
+                "enemy_id": "238",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon202",
+                "section_id": "28",
+                "enemy_id": "239",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon117",
+                "section_id": "29",
+                "enemy_id": "240",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon007",
+                "section_id": "29",
+                "enemy_id": "241",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon109",
+                "section_id": "29",
+                "enemy_id": "242",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon021_c00",
+                "section_id": "29",
+                "enemy_id": "243",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon103_c00",
+                "section_id": "29",
+                "enemy_id": "244",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon110",
+                "section_id": "29",
+                "enemy_id": "245",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon225",
+                "section_id": "30",
+                "enemy_id": "246",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc391_1",
+                "section_id": "30",
+                "enemy_id": "247",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc391_c00_1",
+                "section_id": "30",
+                "enemy_id": "248",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon217_0",
+                "section_id": "31",
+                "enemy_id": "249",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon218_0",
+                "section_id": "31",
+                "enemy_id": "250",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon026_0",
+                "section_id": "31",
+                "enemy_id": "251",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon120",
+                "section_id": "31",
+                "enemy_id": "252",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon236",
+                "section_id": "31",
+                "enemy_id": "253",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon216",
+                "section_id": "31",
+                "enemy_id": "254",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon000_c03",
+                "section_id": "32",
+                "enemy_id": "255",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon008_c00",
+                "section_id": "32",
+                "enemy_id": "256",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon157",
+                "section_id": "32",
+                "enemy_id": "257",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon164",
+                "section_id": "32",
+                "enemy_id": "258",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon227_c00",
+                "section_id": "32",
+                "enemy_id": "259",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon208",
+                "section_id": "33",
+                "enemy_id": "260",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon209",
+                "section_id": "33",
+                "enemy_id": "261",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon240",
+                "section_id": "33",
+                "enemy_id": "262",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon204",
+                "section_id": "33",
+                "enemy_id": "263",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc615",
+                "section_id": "34",
+                "enemy_id": "264",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon225_0",
+                "section_id": "34",
+                "enemy_id": "265",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc390",
+                "section_id": "34",
+                "enemy_id": "266",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc390_c00",
+                "section_id": "34",
+                "enemy_id": "267",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon217_1",
+                "section_id": "34",
+                "enemy_id": "268",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon218_1",
+                "section_id": "34",
+                "enemy_id": "269",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon026_1",
+                "section_id": "34",
+                "enemy_id": "270",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc350_0",
+                "section_id": "34",
+                "enemy_id": "271",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon073_c01",
+                "section_id": "34",
+                "enemy_id": "272",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon120_c01",
+                "section_id": "34",
+                "enemy_id": "273",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc351_c07_0",
+                "section_id": "34",
+                "enemy_id": "274",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon215",
+                "section_id": "34",
+                "enemy_id": "275",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc073_1",
+                "section_id": "34",
+                "enemy_id": "276",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc005",
+                "section_id": "35",
+                "enemy_id": "277",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc313",
+                "section_id": "35",
+                "enemy_id": "278",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc180",
+                "section_id": "35",
+                "enemy_id": "279",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc312_c01",
+                "section_id": "35",
+                "enemy_id": "280",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc196",
+                "section_id": "35",
+                "enemy_id": "281",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc181",
+                "section_id": "35",
+                "enemy_id": "282",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc198",
+                "section_id": "35",
+                "enemy_id": "283",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc200",
+                "section_id": "35",
+                "enemy_id": "284",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon073_c01_0",
+                "section_id": "36",
+                "enemy_id": "285",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc350_c05_1",
+                "section_id": "36",
+                "enemy_id": "286",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon215_0",
+                "section_id": "36",
+                "enemy_id": "287",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc351_c05",
+                "section_id": "36",
+                "enemy_id": "288",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon120_c00",
+                "section_id": "36",
+                "enemy_id": "289",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc070_0",
+                "section_id": "36",
+                "enemy_id": "290",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon242",
+                "section_id": "37",
+                "enemy_id": "291",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon032_c00",
+                "section_id": "37",
+                "enemy_id": "292",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon015_c01",
+                "section_id": "37",
+                "enemy_id": "293",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon249",
+                "section_id": "37",
+                "enemy_id": "294",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon019_c00",
+                "section_id": "37",
+                "enemy_id": "295",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon227",
+                "section_id": "37",
+                "enemy_id": "296",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon050",
+                "section_id": "37",
+                "enemy_id": "297",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon205",
+                "section_id": "37",
+                "enemy_id": "298",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon213",
+                "section_id": "37",
+                "enemy_id": "299",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc073_2",
+                "section_id": "37",
+                "enemy_id": "300",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc048_1",
+                "section_id": "37",
+                "enemy_id": "301",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon075_c00",
+                "section_id": "38",
+                "enemy_id": "302",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon145_c00",
+                "section_id": "38",
+                "enemy_id": "303",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon088_c00",
+                "section_id": "38",
+                "enemy_id": "304",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon098_c01",
+                "section_id": "38",
+                "enemy_id": "305",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon017_c00",
+                "section_id": "38",
+                "enemy_id": "306",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon076_c00",
+                "section_id": "38",
+                "enemy_id": "307",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon220_c00",
+                "section_id": "38",
+                "enemy_id": "308",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon046_c05",
+                "section_id": "38",
+                "enemy_id": "309",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon241_0",
+                "section_id": "38",
+                "enemy_id": "310",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc023_0",
+                "section_id": "38",
+                "enemy_id": "311",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc024_0",
+                "section_id": "38",
+                "enemy_id": "312",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon148_c00",
+                "section_id": "39",
+                "enemy_id": "313",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon214",
+                "section_id": "39",
+                "enemy_id": "314",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon025_c00",
+                "section_id": "39",
+                "enemy_id": "315",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon039_c00",
+                "section_id": "39",
+                "enemy_id": "316",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon164_c00",
+                "section_id": "39",
+                "enemy_id": "317",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon037",
+                "section_id": "39",
+                "enemy_id": "318",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon226",
+                "section_id": "39",
+                "enemy_id": "319",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon071_c00",
+                "section_id": "39",
+                "enemy_id": "320",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc071_0",
+                "section_id": "39",
+                "enemy_id": "321",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon015_c00",
+                "section_id": "40",
+                "enemy_id": "322",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon237",
+                "section_id": "40",
+                "enemy_id": "323",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon038",
+                "section_id": "40",
+                "enemy_id": "324",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc018_0",
+                "section_id": "40",
+                "enemy_id": "325",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc016",
+                "section_id": "40",
+                "enemy_id": "326",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc601_0",
+                "section_id": "40",
+                "enemy_id": "327",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon239",
+                "section_id": "40",
+                "enemy_id": "328",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon228",
+                "section_id": "40",
+                "enemy_id": "329",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon228_c00",
+                "section_id": "40",
+                "enemy_id": "330",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon228_c00_0",
+                "section_id": "40",
+                "enemy_id": "331",
+                "is_extra": "0"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon000",
+                "section_id": "51",
+                "enemy_id": "332",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon230",
+                "section_id": "51",
+                "enemy_id": "333",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon024_c00",
+                "section_id": "51",
+                "enemy_id": "334",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon244_c00",
+                "section_id": "51",
+                "enemy_id": "335",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon232",
+                "section_id": "51",
+                "enemy_id": "336",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon231",
+                "section_id": "51",
+                "enemy_id": "337",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon246",
+                "section_id": "51",
+                "enemy_id": "338",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon000_c04",
+                "section_id": "51",
+                "enemy_id": "339",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon244",
+                "section_id": "51",
+                "enemy_id": "340",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon246_c01",
+                "section_id": "51",
+                "enemy_id": "341",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc070_1",
+                "section_id": "51",
+                "enemy_id": "342",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "ply000_0",
+                "section_id": "51",
+                "enemy_id": "343",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon144_c00",
+                "section_id": "52",
+                "enemy_id": "344",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon142_c00",
+                "section_id": "52",
+                "enemy_id": "345",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon075_c00_0",
+                "section_id": "52",
+                "enemy_id": "346",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon015_0",
+                "section_id": "52",
+                "enemy_id": "347",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon097_0",
+                "section_id": "52",
+                "enemy_id": "348",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon143",
+                "section_id": "52",
+                "enemy_id": "349",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon141_c00_0",
+                "section_id": "52",
+                "enemy_id": "350",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon159_0",
+                "section_id": "52",
+                "enemy_id": "351",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon002_c00_0",
+                "section_id": "52",
+                "enemy_id": "352",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon046_c04",
+                "section_id": "52",
+                "enemy_id": "353",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon116_c01",
+                "section_id": "52",
+                "enemy_id": "354",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon076_c00_0",
+                "section_id": "52",
+                "enemy_id": "355",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon050_0",
+                "section_id": "52",
+                "enemy_id": "356",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon139_c00_0",
+                "section_id": "52",
+                "enemy_id": "357",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon200_0",
+                "section_id": "52",
+                "enemy_id": "358",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon000_c00_0",
+                "section_id": "53",
+                "enemy_id": "359",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon007_0",
+                "section_id": "53",
+                "enemy_id": "360",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon041_c00_0",
+                "section_id": "53",
+                "enemy_id": "361",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon102_c00_0",
+                "section_id": "53",
+                "enemy_id": "362",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon157_c00_0",
+                "section_id": "53",
+                "enemy_id": "363",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon146_c00_0",
+                "section_id": "53",
+                "enemy_id": "364",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon049_c00_0",
+                "section_id": "53",
+                "enemy_id": "365",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon119_c00_0",
+                "section_id": "53",
+                "enemy_id": "366",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon164_c00_0",
+                "section_id": "53",
+                "enemy_id": "367",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon102_0",
+                "section_id": "53",
+                "enemy_id": "368",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon017_0",
+                "section_id": "53",
+                "enemy_id": "369",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon108_0",
+                "section_id": "53",
+                "enemy_id": "370",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon037_0",
+                "section_id": "53",
+                "enemy_id": "371",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon101_c00_0",
+                "section_id": "53",
+                "enemy_id": "372",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon203_0",
+                "section_id": "53",
+                "enemy_id": "373",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon000_c03_0",
+                "section_id": "54",
+                "enemy_id": "374",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon140_c00",
+                "section_id": "54",
+                "enemy_id": "375",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon093_0",
+                "section_id": "54",
+                "enemy_id": "376",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon008_c00_0",
+                "section_id": "54",
+                "enemy_id": "377",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon088_c00_0",
+                "section_id": "54",
+                "enemy_id": "378",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon027_0",
+                "section_id": "54",
+                "enemy_id": "379",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon103_0",
+                "section_id": "54",
+                "enemy_id": "380",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon164_0",
+                "section_id": "54",
+                "enemy_id": "381",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon098_c01_0",
+                "section_id": "54",
+                "enemy_id": "382",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon017_c00_0",
+                "section_id": "54",
+                "enemy_id": "383",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon146_0",
+                "section_id": "54",
+                "enemy_id": "384",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon108_c00",
+                "section_id": "54",
+                "enemy_id": "385",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon037_c00_0",
+                "section_id": "54",
+                "enemy_id": "386",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon046_c05_0",
+                "section_id": "54",
+                "enemy_id": "387",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon202_0",
+                "section_id": "54",
+                "enemy_id": "388",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon000_0",
+                "section_id": "55",
+                "enemy_id": "389",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon148_c02_0",
+                "section_id": "55",
+                "enemy_id": "390",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon147",
+                "section_id": "55",
+                "enemy_id": "391",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon045_0",
+                "section_id": "55",
+                "enemy_id": "392",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon096_c00_0",
+                "section_id": "55",
+                "enemy_id": "393",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon159_c00_0",
+                "section_id": "55",
+                "enemy_id": "394",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon039",
+                "section_id": "55",
+                "enemy_id": "395",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon103_c00_0",
+                "section_id": "55",
+                "enemy_id": "396",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon019_0",
+                "section_id": "55",
+                "enemy_id": "397",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon098_c00_0",
+                "section_id": "55",
+                "enemy_id": "398",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon246_c01_0",
+                "section_id": "55",
+                "enemy_id": "399",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon029_0",
+                "section_id": "55",
+                "enemy_id": "400",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon071",
+                "section_id": "55",
+                "enemy_id": "401",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon226_0",
+                "section_id": "55",
+                "enemy_id": "402",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon201_0",
+                "section_id": "55",
+                "enemy_id": "403",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon165_c00",
+                "section_id": "56",
+                "enemy_id": "404",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon169_c00",
+                "section_id": "56",
+                "enemy_id": "405",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon012_c01",
+                "section_id": "57",
+                "enemy_id": "406",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon147_c02",
+                "section_id": "57",
+                "enemy_id": "407",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon041_c01",
+                "section_id": "57",
+                "enemy_id": "408",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon093_c01",
+                "section_id": "57",
+                "enemy_id": "409",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon091_c01",
+                "section_id": "57",
+                "enemy_id": "410",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon148_c03",
+                "section_id": "57",
+                "enemy_id": "411",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon212_c00",
+                "section_id": "57",
+                "enemy_id": "412",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon009_c01",
+                "section_id": "57",
+                "enemy_id": "413",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon141_c01",
+                "section_id": "57",
+                "enemy_id": "414",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon247_c00",
+                "section_id": "57",
+                "enemy_id": "415",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon005_c03",
+                "section_id": "57",
+                "enemy_id": "416",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon028_c01",
+                "section_id": "57",
+                "enemy_id": "417",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon007_c01",
+                "section_id": "57",
+                "enemy_id": "418",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon023_c01",
+                "section_id": "57",
+                "enemy_id": "419",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon234_c00",
+                "section_id": "57",
+                "enemy_id": "420",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon140_c01",
+                "section_id": "57",
+                "enemy_id": "421",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon159_c01",
+                "section_id": "57",
+                "enemy_id": "422",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon143_c01",
+                "section_id": "57",
+                "enemy_id": "423",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon017_c01",
+                "section_id": "57",
+                "enemy_id": "424",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon157_c01",
+                "section_id": "57",
+                "enemy_id": "425",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon008_c01",
+                "section_id": "57",
+                "enemy_id": "426",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon142_c01",
+                "section_id": "57",
+                "enemy_id": "427",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon045_c00",
+                "section_id": "57",
+                "enemy_id": "428",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon021_c01",
+                "section_id": "57",
+                "enemy_id": "429",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon248_c00",
+                "section_id": "57",
+                "enemy_id": "430",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc005_0",
+                "section_id": "58",
+                "enemy_id": "431",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc313_0",
+                "section_id": "58",
+                "enemy_id": "432",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc180_0",
+                "section_id": "58",
+                "enemy_id": "433",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc312_c01_0",
+                "section_id": "58",
+                "enemy_id": "434",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc196_0",
+                "section_id": "58",
+                "enemy_id": "435",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc220",
+                "section_id": "58",
+                "enemy_id": "436",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "npc006",
+                "section_id": "58",
+                "enemy_id": "437",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon240_c00",
+                "section_id": "58",
+                "enemy_id": "438",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon211_0",
+                "section_id": "58",
+                "enemy_id": "439",
+                "is_extra": "1"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon006",
+                "section_id": "58",
+                "enemy_id": "440",
+                "is_extra": "3"
+            }
+        },
+        {
+            "header": "QSMons",
+            "values": {
+                "enemy": "mon006_c00",
+                "section_id": "58",
+                "enemy_id": "441",
+                "is_extra": "3"
+            }
+        }
+    ]
+}

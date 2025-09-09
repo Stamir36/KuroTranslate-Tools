@@ -1,0 +1,572 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	initGame					;system.scn 59
+	DD	debugGame					;system.scn 65
+	DD	startGame					;system.scn 124
+	DD	VITA_SHADOW_OFF					;system.scn 146
+	DD	VITA_SHADOW_ON					;system.scn 151
+	DD	LP_climbup					;system.scn 159
+	DD	LP_climbdown					;system.scn 202
+	DD	LP_climbup_End					;system.scn 255
+	DD	LP_climbdown_End					;system.scn 275
+	DD	AniClimbUp					;system.scn 294
+	DD	AniClimbDown					;system.scn 323
+	DD	AniClimbUpEnd					;system.scn 349
+	DD	AniClimbDownEnd					;system.scn 383
+	DD	LP_ductin					;system.scn 423
+	DD	LP_tbox					;system.scn 519
+	DD	LP_dropItem					;system.scn 559
+	DD	SetRideHorseChr					;system.scn 1904
+	DD	SetHorseChrforRider					;system.scn 2050
+	DD	ResetKisinWeapon					;system.scn 2080
+	DD	SetKisinWeapon0					;system.scn 2087
+	DD	SetKisinWeapon1					;system.scn 2091
+	DD	SetKisinWeapon2					;system.scn 2095
+	DD	SetKisinWeapon3					;system.scn 2099
+	DD	SetKisinWeapon4					;system.scn 2103
+	DD	EV_healobject					;system.scn 2128
+	DD	EV_healobjectGaiden					;system.scn 2306
+	DD	EV_Heal_HPCP					;system.scn 2369
+	DD	EV_Heal_HP					;system.scn 2380
+	DD	EV_AVoice_Duct_Base					;system.scn 2390
+	DD	EV_AVoice_Duct01					;system.scn 2436
+	DD	EV_AVoice_Duct02					;system.scn 2445
+	DD	EV_AVoice_Duct03					;system.scn 2454
+	DD	EV_AVoice_Duct04					;system.scn 2463
+	DD	EV_AVoice_Duct05					;system.scn 2472
+	DD	EV_AVoice_Duct06					;system.scn 2481
+	DD	EV_AVoice_Duct07					;system.scn 2490
+	DD	EV_AVoice_Duct08					;system.scn 2499
+	DD	EV_AVoice_Duct09					;system.scn 2508
+	DD	EV_AVoice_Duct10					;system.scn 2517
+	DD	EV_AVoice_DangionStart					;system.scn 2530
+	DD	EV_AVoice_Dangion2nd					;system.scn 2673
+	DD	EV_AVoice_DangionGoal					;system.scn 2810
+	DD	EV_AVoice_Shining					;system.scn 2953
+	DD	EV_AVoice_Treasure_Base					;system.scn 3103
+	DD	EV_AVoice_Treasure01					;system.scn 3245
+	DD	EV_AVoice_Treasure02					;system.scn 3255
+	DD	EV_AVoice_Treasure03					;system.scn 3264
+	DD	EV_AVoice_Treasure04					;system.scn 3273
+	DD	EV_AVoice_Treasure05					;system.scn 3282
+	DD	EV_AVoice_BigEnemy_Base					;system.scn 3295
+	DD	EV_AVoice_BigEnemy01					;system.scn 3436
+	DD	EV_AVoice_BigEnemy02					;system.scn 3445
+	DD	EV_AVoice_BigEnemy03					;system.scn 3454
+	DD	EV_AVoice_BigEnemy04					;system.scn 3463
+	DD	EV_AVoice_BigEnemy05					;system.scn 3472
+	DD	EV_AVoice_BigEnemy06					;system.scn 3481
+	DD	EV_AVoice_BigEnemy07					;system.scn 3490
+	DD	EV_AVoice_BigEnemy08					;system.scn 3499
+	DD	EV_AVoice_BigEnemy09					;system.scn 3508
+	DD	EV_AVoice_BigEnemy10					;system.scn 3517
+	DD	EV_AVoice_BigEnemy11					;system.scn 3526
+	DD	EV_AVoice_BigEnemy12					;system.scn 3535
+	DD	EV_AVoice_BigEnemy13					;system.scn 3544
+	DD	EV_AVoice_BigEnemy14					;system.scn 3553
+	DD	EV_AVoice_BigEnemy15					;system.scn 3562
+	DD	EV_AVoice_BigEnemy16					;system.scn 3571
+	DD	EV_useItemPomFood					;system.scn 3585
+	DD	ResetShiningPom					;system.scn 3755
+	DD	nousePomFoodBack					;system.scn 3782
+	DD	EV_useItem					;system.scn 4022
+	DD	EV_useItemBlackBookReport					;system.scn 4784
+	DD	SetKisinBattlePartnerReserve					;system.scn 4951
+	DD	SetKisinBattlePartnerReserveAll					;system.scn 4990
+	DD	SetKisinBattlePartner					;system.scn 5007
+	DD	FC_SquareSelectParty					;system.scn 5017
+	DD	SelectTalkMenu					;system.scn 5069
+	DD	SetCourageousJump					;system.scn 5113
+	DD	FC_Change_MapColor					;system.scn 5490
+	DD	FC_Start_Party					;system.scn 5606
+	DD	FC_End_Party					;system.scn 5609
+	DD	FC_MapJumpState					;system.scn 5612
+	DD	FC_MapJumpState2					;system.scn 6402
+	DD	FC_SetAllowRideHorse					;system.scn 7155
+	DD	FC_Celine_Set					;system.scn 7192
+	DD	FC_MapJumpCheck					;system.scn 7232
+	DD	FC_MapJumpCall					;system.scn 7362
+	DD	FC_CourageousPointCheck					;system.scn 7468
+	DD	FC_Into_EV_Gorge					;system.scn 7485
+	DD	FC_Into_EV_01_12_00					;system.scn 7590
+	DD	FC_Into_EV_01_70_00					;system.scn 7606
+	DD	FC_Into_EV_01_68_00					;system.scn 7621
+	DD	FC_Into_EV_03_07_00					;system.scn 7636
+	DD	FC_Into_EV_03_12_00					;system.scn 7652
+	DD	FC_Into_EV_03_54_00					;system.scn 7668
+	DD	FC_Into_EV_DOOR01					;system.scn 7684
+	DD	FC_Into_EV_06_07_00					;system.scn 7699
+	DD	FC_Into_EV_06_07_01					;system.scn 7712
+	DD	FC_SYS_PartySelectBefore					;system.scn 7728
+	DD	FC_SYS_ClearPartySelect					;system.scn 7752
+	DD	FC_SYS_AddPartySelect1					;system.scn 7773
+	DD	FC_SYS_AddPartySelect1_2					;system.scn 7786
+	DD	FC_SYS_AddPartySelect2					;system.scn 7800
+	DD	FC_SYS_AddPartySelect3					;system.scn 7808
+	DD	FC_SYS_PartySelectCall					;system.scn 7816
+	DD	FC_chr_entry					;system.scn 7841
+	DD	FC_chr_exit					;system.scn 7853
+	DD	FC_chr_entry_tk					;system.scn 7879
+	DD	FC_chr_exit_tk					;system.scn 7888
+	DD	FC_Party_Face_Reset					;system.scn 7897
+	DD	FC_Party_Face_Reset2					;system.scn 7972
+	DD	FC_look_dir_Yes					;system.scn 8032
+	DD	FC_look_dir_No					;system.scn 8041
+	DD	FC_Battle_Check					;system.scn 8053
+	DD	FC_Start_HorseRide					;system.scn 8074
+	DD	FC_End_HorseRide					;system.scn 8203
+	DD	FC_Reset_HorseRide					;system.scn 8342
+	DD	FC_Party_Check_ALISA					;system.scn 8399
+	DD	FC_Party_Check_ELIOT					;system.scn 8405
+	DD	FC_Party_Check_LAURA					;system.scn 8411
+	DD	FC_Party_Check_GAIUS					;system.scn 8417
+	DD	FC_Party_Check_MACHIAS					;system.scn 8423
+	DD	FC_Party_Check_JUSIS					;system.scn 8429
+	DD	FC_Party_Check_EMMA					;system.scn 8435
+	DD	FC_Party_Check_FIE					;system.scn 8441
+	DD	FC_Party_Check_MILLIUM					;system.scn 8447
+	DD	FC_Party_Check_SARA					;system.scn 8453
+	DD	FC_PSMenu_Reset					;system.scn 8460
+	DD	FC_Costume_Set					;system.scn 8491
+	DD	FC_Kizuna_PTSave					;system.scn 8669
+	DD	YR_13_01					;system.scn 8820
+	DD	YR_13_02					;system.scn 8862
+	DD	YR_09_02					;system.scn 8927
+	DD	YR_09_03					;system.scn 9076
+	DD	YR_09_04					;system.scn 9235
+	DD	YR_09_05					;system.scn 9411
+	DD	YR_20_00					;system.scn 9584
+	DD	FC_TOWA_EquipCaptainHat					;system.scn 10067
+	DD	FC_AddAP_1					;system.scn 10080
+	DD	FC_AddAP_2					;system.scn 10091
+	DD	FC_AddAP_3					;system.scn 10102
+	DD	FC_AddAP_4					;system.scn 10113
+	DD	FC_AddAP_5					;system.scn 10124
+	DD	FC_AddAP_6					;system.scn 10135
+	DD	FC_AddAP_7					;system.scn 10146
+	DD	FC_AddAP_8					;system.scn 10157
+	DD	FC_AddAP_9					;system.scn 10168
+	DD	FC_AddAP_10					;system.scn 10179
+	DD	FC_CheckGQCompleteAll					;system.scn 10191
+	DD	Set_Mquartz_Lv					;system.scn 10231
+	DD	TK_evnpc_kizetu					;system.scn 10324
+	DD	EV_KeepNote_BlackBook					;system.scn 10345
+	DD	SUB_EV_03_02_00					;system.scn 10486
+	DD	FC_MemoryEvent_End					;system.scn 10801
+	DD	_LP_climbup					;system.scn 10809
+	DD	_LP_climbdown					;system.scn 10809
+	DD	_LP_climbup_End					;system.scn 10809
+	DD	_LP_climbdown_End					;system.scn 10809
+	DD	_AniClimbUp					;system.scn 10809
+	DD	_AniClimbDown					;system.scn 10809
+	DD	_AniClimbUpEnd					;system.scn 10809
+	DD	_AniClimbDownEnd					;system.scn 10809
+	DD	_LP_ductin					;system.scn 10809
+	DD	_LP_tbox					;system.scn 10809
+	DD	_LP_dropItem					;system.scn 10809
+	DD	_EV_healobject					;system.scn 10809
+	DD	_EV_healobjectGaiden					;system.scn 10809
+	DD	_EV_useItem					;system.scn 10809
+	DD	_EV_useItemBlackBookReport					;system.scn 10809
+	DD	_FC_SquareSelectParty					;system.scn 10809
+	DD	_FC_End_HorseRide					;system.scn 10809
+	DD	_YR_09_02					;system.scn 10809
+	DD	_YR_09_03					;system.scn 10809
+	DD	_YR_09_04					;system.scn 10809
+	DD	_YR_09_05					;system.scn 10809
+	DD	_YR_20_00					;system.scn 10809
+	DD	_FC_AddAP_1					;system.scn 10809
+	DD	_FC_AddAP_2					;system.scn 10809
+	DD	_FC_AddAP_3					;system.scn 10809
+	DD	_FC_AddAP_4					;system.scn 10809
+	DD	_FC_AddAP_5					;system.scn 10809
+	DD	_FC_AddAP_6					;system.scn 10809
+	DD	_FC_AddAP_7					;system.scn 10809
+	DD	_FC_AddAP_8					;system.scn 10809
+	DD	_FC_AddAP_9					;system.scn 10809
+	DD	_FC_AddAP_10					;system.scn 10809
+	DD	_SUB_EV_03_02_00					;system.scn 10809
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_initGame
+	DW	FUNCNAME_debugGame
+	DW	FUNCNAME_startGame
+	DW	FUNCNAME_VITA_SHADOW_OFF
+	DW	FUNCNAME_VITA_SHADOW_ON
+	DW	FUNCNAME_LP_climbup
+	DW	FUNCNAME_LP_climbdown
+	DW	FUNCNAME_LP_climbup_End
+	DW	FUNCNAME_LP_climbdown_End
+	DW	FUNCNAME_AniClimbUp
+	DW	FUNCNAME_AniClimbDown
+	DW	FUNCNAME_AniClimbUpEnd
+	DW	FUNCNAME_AniClimbDownEnd
+	DW	FUNCNAME_LP_ductin
+	DW	FUNCNAME_LP_tbox
+	DW	FUNCNAME_LP_dropItem
+	DW	FUNCNAME_SetRideHorseChr
+	DW	FUNCNAME_SetHorseChrforRider
+	DW	FUNCNAME_ResetKisinWeapon
+	DW	FUNCNAME_SetKisinWeapon0
+	DW	FUNCNAME_SetKisinWeapon1
+	DW	FUNCNAME_SetKisinWeapon2
+	DW	FUNCNAME_SetKisinWeapon3
+	DW	FUNCNAME_SetKisinWeapon4
+	DW	FUNCNAME_EV_healobject
+	DW	FUNCNAME_EV_healobjectGaiden
+	DW	FUNCNAME_EV_Heal_HPCP
+	DW	FUNCNAME_EV_Heal_HP
+	DW	FUNCNAME_EV_AVoice_Duct_Base
+	DW	FUNCNAME_EV_AVoice_Duct01
+	DW	FUNCNAME_EV_AVoice_Duct02
+	DW	FUNCNAME_EV_AVoice_Duct03
+	DW	FUNCNAME_EV_AVoice_Duct04
+	DW	FUNCNAME_EV_AVoice_Duct05
+	DW	FUNCNAME_EV_AVoice_Duct06
+	DW	FUNCNAME_EV_AVoice_Duct07
+	DW	FUNCNAME_EV_AVoice_Duct08
+	DW	FUNCNAME_EV_AVoice_Duct09
+	DW	FUNCNAME_EV_AVoice_Duct10
+	DW	FUNCNAME_EV_AVoice_DangionStart
+	DW	FUNCNAME_EV_AVoice_Dangion2nd
+	DW	FUNCNAME_EV_AVoice_DangionGoal
+	DW	FUNCNAME_EV_AVoice_Shining
+	DW	FUNCNAME_EV_AVoice_Treasure_Base
+	DW	FUNCNAME_EV_AVoice_Treasure01
+	DW	FUNCNAME_EV_AVoice_Treasure02
+	DW	FUNCNAME_EV_AVoice_Treasure03
+	DW	FUNCNAME_EV_AVoice_Treasure04
+	DW	FUNCNAME_EV_AVoice_Treasure05
+	DW	FUNCNAME_EV_AVoice_BigEnemy_Base
+	DW	FUNCNAME_EV_AVoice_BigEnemy01
+	DW	FUNCNAME_EV_AVoice_BigEnemy02
+	DW	FUNCNAME_EV_AVoice_BigEnemy03
+	DW	FUNCNAME_EV_AVoice_BigEnemy04
+	DW	FUNCNAME_EV_AVoice_BigEnemy05
+	DW	FUNCNAME_EV_AVoice_BigEnemy06
+	DW	FUNCNAME_EV_AVoice_BigEnemy07
+	DW	FUNCNAME_EV_AVoice_BigEnemy08
+	DW	FUNCNAME_EV_AVoice_BigEnemy09
+	DW	FUNCNAME_EV_AVoice_BigEnemy10
+	DW	FUNCNAME_EV_AVoice_BigEnemy11
+	DW	FUNCNAME_EV_AVoice_BigEnemy12
+	DW	FUNCNAME_EV_AVoice_BigEnemy13
+	DW	FUNCNAME_EV_AVoice_BigEnemy14
+	DW	FUNCNAME_EV_AVoice_BigEnemy15
+	DW	FUNCNAME_EV_AVoice_BigEnemy16
+	DW	FUNCNAME_EV_useItemPomFood
+	DW	FUNCNAME_ResetShiningPom
+	DW	FUNCNAME_nousePomFoodBack
+	DW	FUNCNAME_EV_useItem
+	DW	FUNCNAME_EV_useItemBlackBookReport
+	DW	FUNCNAME_SetKisinBattlePartnerReserve
+	DW	FUNCNAME_SetKisinBattlePartnerReserveAll
+	DW	FUNCNAME_SetKisinBattlePartner
+	DW	FUNCNAME_FC_SquareSelectParty
+	DW	FUNCNAME_SelectTalkMenu
+	DW	FUNCNAME_SetCourageousJump
+	DW	FUNCNAME_FC_Change_MapColor
+	DW	FUNCNAME_FC_Start_Party
+	DW	FUNCNAME_FC_End_Party
+	DW	FUNCNAME_FC_MapJumpState
+	DW	FUNCNAME_FC_MapJumpState2
+	DW	FUNCNAME_FC_SetAllowRideHorse
+	DW	FUNCNAME_FC_Celine_Set
+	DW	FUNCNAME_FC_MapJumpCheck
+	DW	FUNCNAME_FC_MapJumpCall
+	DW	FUNCNAME_FC_CourageousPointCheck
+	DW	FUNCNAME_FC_Into_EV_Gorge
+	DW	FUNCNAME_FC_Into_EV_01_12_00
+	DW	FUNCNAME_FC_Into_EV_01_70_00
+	DW	FUNCNAME_FC_Into_EV_01_68_00
+	DW	FUNCNAME_FC_Into_EV_03_07_00
+	DW	FUNCNAME_FC_Into_EV_03_12_00
+	DW	FUNCNAME_FC_Into_EV_03_54_00
+	DW	FUNCNAME_FC_Into_EV_DOOR01
+	DW	FUNCNAME_FC_Into_EV_06_07_00
+	DW	FUNCNAME_FC_Into_EV_06_07_01
+	DW	FUNCNAME_FC_SYS_PartySelectBefore
+	DW	FUNCNAME_FC_SYS_ClearPartySelect
+	DW	FUNCNAME_FC_SYS_AddPartySelect1
+	DW	FUNCNAME_FC_SYS_AddPartySelect1_2
+	DW	FUNCNAME_FC_SYS_AddPartySelect2
+	DW	FUNCNAME_FC_SYS_AddPartySelect3
+	DW	FUNCNAME_FC_SYS_PartySelectCall
+	DW	FUNCNAME_FC_chr_entry
+	DW	FUNCNAME_FC_chr_exit
+	DW	FUNCNAME_FC_chr_entry_tk
+	DW	FUNCNAME_FC_chr_exit_tk
+	DW	FUNCNAME_FC_Party_Face_Reset
+	DW	FUNCNAME_FC_Party_Face_Reset2
+	DW	FUNCNAME_FC_look_dir_Yes
+	DW	FUNCNAME_FC_look_dir_No
+	DW	FUNCNAME_FC_Battle_Check
+	DW	FUNCNAME_FC_Start_HorseRide
+	DW	FUNCNAME_FC_End_HorseRide
+	DW	FUNCNAME_FC_Reset_HorseRide
+	DW	FUNCNAME_FC_Party_Check_ALISA
+	DW	FUNCNAME_FC_Party_Check_ELIOT
+	DW	FUNCNAME_FC_Party_Check_LAURA
+	DW	FUNCNAME_FC_Party_Check_GAIUS
+	DW	FUNCNAME_FC_Party_Check_MACHIAS
+	DW	FUNCNAME_FC_Party_Check_JUSIS
+	DW	FUNCNAME_FC_Party_Check_EMMA
+	DW	FUNCNAME_FC_Party_Check_FIE
+	DW	FUNCNAME_FC_Party_Check_MILLIUM
+	DW	FUNCNAME_FC_Party_Check_SARA
+	DW	FUNCNAME_FC_PSMenu_Reset
+	DW	FUNCNAME_FC_Costume_Set
+	DW	FUNCNAME_FC_Kizuna_PTSave
+	DW	FUNCNAME_YR_13_01
+	DW	FUNCNAME_YR_13_02
+	DW	FUNCNAME_YR_09_02
+	DW	FUNCNAME_YR_09_03
+	DW	FUNCNAME_YR_09_04
+	DW	FUNCNAME_YR_09_05
+	DW	FUNCNAME_YR_20_00
+	DW	FUNCNAME_FC_TOWA_EquipCaptainHat
+	DW	FUNCNAME_FC_AddAP_1
+	DW	FUNCNAME_FC_AddAP_2
+	DW	FUNCNAME_FC_AddAP_3
+	DW	FUNCNAME_FC_AddAP_4
+	DW	FUNCNAME_FC_AddAP_5
+	DW	FUNCNAME_FC_AddAP_6
+	DW	FUNCNAME_FC_AddAP_7
+	DW	FUNCNAME_FC_AddAP_8
+	DW	FUNCNAME_FC_AddAP_9
+	DW	FUNCNAME_FC_AddAP_10
+	DW	FUNCNAME_FC_CheckGQCompleteAll
+	DW	FUNCNAME_Set_Mquartz_Lv
+	DW	FUNCNAME_TK_evnpc_kizetu
+	DW	FUNCNAME_EV_KeepNote_BlackBook
+	DW	FUNCNAME_SUB_EV_03_02_00
+	DW	FUNCNAME_FC_MemoryEvent_End
+	DW	FUNCNAME__LP_climbup
+	DW	FUNCNAME__LP_climbdown
+	DW	FUNCNAME__LP_climbup_End
+	DW	FUNCNAME__LP_climbdown_End
+	DW	FUNCNAME__AniClimbUp
+	DW	FUNCNAME__AniClimbDown
+	DW	FUNCNAME__AniClimbUpEnd
+	DW	FUNCNAME__AniClimbDownEnd
+	DW	FUNCNAME__LP_ductin
+	DW	FUNCNAME__LP_tbox
+	DW	FUNCNAME__LP_dropItem
+	DW	FUNCNAME__EV_healobject
+	DW	FUNCNAME__EV_healobjectGaiden
+	DW	FUNCNAME__EV_useItem
+	DW	FUNCNAME__EV_useItemBlackBookReport
+	DW	FUNCNAME__FC_SquareSelectParty
+	DW	FUNCNAME__FC_End_HorseRide
+	DW	FUNCNAME__YR_09_02
+	DW	FUNCNAME__YR_09_03
+	DW	FUNCNAME__YR_09_04
+	DW	FUNCNAME__YR_09_05
+	DW	FUNCNAME__YR_20_00
+	DW	FUNCNAME__FC_AddAP_1
+	DW	FUNCNAME__FC_AddAP_2
+	DW	FUNCNAME__FC_AddAP_3
+	DW	FUNCNAME__FC_AddAP_4
+	DW	FUNCNAME__FC_AddAP_5
+	DW	FUNCNAME__FC_AddAP_6
+	DW	FUNCNAME__FC_AddAP_7
+	DW	FUNCNAME__FC_AddAP_8
+	DW	FUNCNAME__FC_AddAP_9
+	DW	FUNCNAME__FC_AddAP_10
+	DW	FUNCNAME__SUB_EV_03_02_00
+FUNCTION_NAME_TABLE_NUM	EQU	186
+;=====================================================================
+FUNCNAME_initGame:	DB	'initGame',0
+FUNCNAME_debugGame:	DB	'debugGame',0
+FUNCNAME_startGame:	DB	'startGame',0
+FUNCNAME_VITA_SHADOW_OFF:	DB	'VITA_SHADOW_OFF',0
+FUNCNAME_VITA_SHADOW_ON:	DB	'VITA_SHADOW_ON',0
+FUNCNAME_LP_climbup:	DB	'LP_climbup',0
+FUNCNAME_LP_climbdown:	DB	'LP_climbdown',0
+FUNCNAME_LP_climbup_End:	DB	'LP_climbup_End',0
+FUNCNAME_LP_climbdown_End:	DB	'LP_climbdown_End',0
+FUNCNAME_AniClimbUp:	DB	'AniClimbUp',0
+FUNCNAME_AniClimbDown:	DB	'AniClimbDown',0
+FUNCNAME_AniClimbUpEnd:	DB	'AniClimbUpEnd',0
+FUNCNAME_AniClimbDownEnd:	DB	'AniClimbDownEnd',0
+FUNCNAME_LP_ductin:	DB	'LP_ductin',0
+FUNCNAME_LP_tbox:	DB	'LP_tbox',0
+FUNCNAME_LP_dropItem:	DB	'LP_dropItem',0
+FUNCNAME_SetRideHorseChr:	DB	'SetRideHorseChr',0
+FUNCNAME_SetHorseChrforRider:	DB	'SetHorseChrforRider',0
+FUNCNAME_ResetKisinWeapon:	DB	'ResetKisinWeapon',0
+FUNCNAME_SetKisinWeapon0:	DB	'SetKisinWeapon0',0
+FUNCNAME_SetKisinWeapon1:	DB	'SetKisinWeapon1',0
+FUNCNAME_SetKisinWeapon2:	DB	'SetKisinWeapon2',0
+FUNCNAME_SetKisinWeapon3:	DB	'SetKisinWeapon3',0
+FUNCNAME_SetKisinWeapon4:	DB	'SetKisinWeapon4',0
+FUNCNAME_EV_healobject:	DB	'EV_healobject',0
+FUNCNAME_EV_healobjectGaiden:	DB	'EV_healobjectGaiden',0
+FUNCNAME_EV_Heal_HPCP:	DB	'EV_Heal_HPCP',0
+FUNCNAME_EV_Heal_HP:	DB	'EV_Heal_HP',0
+FUNCNAME_EV_AVoice_Duct_Base:	DB	'EV_AVoice_Duct_Base',0
+FUNCNAME_EV_AVoice_Duct01:	DB	'EV_AVoice_Duct01',0
+FUNCNAME_EV_AVoice_Duct02:	DB	'EV_AVoice_Duct02',0
+FUNCNAME_EV_AVoice_Duct03:	DB	'EV_AVoice_Duct03',0
+FUNCNAME_EV_AVoice_Duct04:	DB	'EV_AVoice_Duct04',0
+FUNCNAME_EV_AVoice_Duct05:	DB	'EV_AVoice_Duct05',0
+FUNCNAME_EV_AVoice_Duct06:	DB	'EV_AVoice_Duct06',0
+FUNCNAME_EV_AVoice_Duct07:	DB	'EV_AVoice_Duct07',0
+FUNCNAME_EV_AVoice_Duct08:	DB	'EV_AVoice_Duct08',0
+FUNCNAME_EV_AVoice_Duct09:	DB	'EV_AVoice_Duct09',0
+FUNCNAME_EV_AVoice_Duct10:	DB	'EV_AVoice_Duct10',0
+FUNCNAME_EV_AVoice_DangionStart:	DB	'EV_AVoice_DangionStart',0
+FUNCNAME_EV_AVoice_Dangion2nd:	DB	'EV_AVoice_Dangion2nd',0
+FUNCNAME_EV_AVoice_DangionGoal:	DB	'EV_AVoice_DangionGoal',0
+FUNCNAME_EV_AVoice_Shining:	DB	'EV_AVoice_Shining',0
+FUNCNAME_EV_AVoice_Treasure_Base:	DB	'EV_AVoice_Treasure_Base',0
+FUNCNAME_EV_AVoice_Treasure01:	DB	'EV_AVoice_Treasure01',0
+FUNCNAME_EV_AVoice_Treasure02:	DB	'EV_AVoice_Treasure02',0
+FUNCNAME_EV_AVoice_Treasure03:	DB	'EV_AVoice_Treasure03',0
+FUNCNAME_EV_AVoice_Treasure04:	DB	'EV_AVoice_Treasure04',0
+FUNCNAME_EV_AVoice_Treasure05:	DB	'EV_AVoice_Treasure05',0
+FUNCNAME_EV_AVoice_BigEnemy_Base:	DB	'EV_AVoice_BigEnemy_Base',0
+FUNCNAME_EV_AVoice_BigEnemy01:	DB	'EV_AVoice_BigEnemy01',0
+FUNCNAME_EV_AVoice_BigEnemy02:	DB	'EV_AVoice_BigEnemy02',0
+FUNCNAME_EV_AVoice_BigEnemy03:	DB	'EV_AVoice_BigEnemy03',0
+FUNCNAME_EV_AVoice_BigEnemy04:	DB	'EV_AVoice_BigEnemy04',0
+FUNCNAME_EV_AVoice_BigEnemy05:	DB	'EV_AVoice_BigEnemy05',0
+FUNCNAME_EV_AVoice_BigEnemy06:	DB	'EV_AVoice_BigEnemy06',0
+FUNCNAME_EV_AVoice_BigEnemy07:	DB	'EV_AVoice_BigEnemy07',0
+FUNCNAME_EV_AVoice_BigEnemy08:	DB	'EV_AVoice_BigEnemy08',0
+FUNCNAME_EV_AVoice_BigEnemy09:	DB	'EV_AVoice_BigEnemy09',0
+FUNCNAME_EV_AVoice_BigEnemy10:	DB	'EV_AVoice_BigEnemy10',0
+FUNCNAME_EV_AVoice_BigEnemy11:	DB	'EV_AVoice_BigEnemy11',0
+FUNCNAME_EV_AVoice_BigEnemy12:	DB	'EV_AVoice_BigEnemy12',0
+FUNCNAME_EV_AVoice_BigEnemy13:	DB	'EV_AVoice_BigEnemy13',0
+FUNCNAME_EV_AVoice_BigEnemy14:	DB	'EV_AVoice_BigEnemy14',0
+FUNCNAME_EV_AVoice_BigEnemy15:	DB	'EV_AVoice_BigEnemy15',0
+FUNCNAME_EV_AVoice_BigEnemy16:	DB	'EV_AVoice_BigEnemy16',0
+FUNCNAME_EV_useItemPomFood:	DB	'EV_useItemPomFood',0
+FUNCNAME_ResetShiningPom:	DB	'ResetShiningPom',0
+FUNCNAME_nousePomFoodBack:	DB	'nousePomFoodBack',0
+FUNCNAME_EV_useItem:	DB	'EV_useItem',0
+FUNCNAME_EV_useItemBlackBookReport:	DB	'EV_useItemBlackBookReport',0
+FUNCNAME_SetKisinBattlePartnerReserve:	DB	'SetKisinBattlePartnerReserve',0
+FUNCNAME_SetKisinBattlePartnerReserveAll:	DB	'SetKisinBattlePartnerReserveAll',0
+FUNCNAME_SetKisinBattlePartner:	DB	'SetKisinBattlePartner',0
+FUNCNAME_FC_SquareSelectParty:	DB	'FC_SquareSelectParty',0
+FUNCNAME_SelectTalkMenu:	DB	'SelectTalkMenu',0
+FUNCNAME_SetCourageousJump:	DB	'SetCourageousJump',0
+FUNCNAME_FC_Change_MapColor:	DB	'FC_Change_MapColor',0
+FUNCNAME_FC_Start_Party:	DB	'FC_Start_Party',0
+FUNCNAME_FC_End_Party:	DB	'FC_End_Party',0
+FUNCNAME_FC_MapJumpState:	DB	'FC_MapJumpState',0
+FUNCNAME_FC_MapJumpState2:	DB	'FC_MapJumpState2',0
+FUNCNAME_FC_SetAllowRideHorse:	DB	'FC_SetAllowRideHorse',0
+FUNCNAME_FC_Celine_Set:	DB	'FC_Celine_Set',0
+FUNCNAME_FC_MapJumpCheck:	DB	'FC_MapJumpCheck',0
+FUNCNAME_FC_MapJumpCall:	DB	'FC_MapJumpCall',0
+FUNCNAME_FC_CourageousPointCheck:	DB	'FC_CourageousPointCheck',0
+FUNCNAME_FC_Into_EV_Gorge:	DB	'FC_Into_EV_Gorge',0
+FUNCNAME_FC_Into_EV_01_12_00:	DB	'FC_Into_EV_01_12_00',0
+FUNCNAME_FC_Into_EV_01_70_00:	DB	'FC_Into_EV_01_70_00',0
+FUNCNAME_FC_Into_EV_01_68_00:	DB	'FC_Into_EV_01_68_00',0
+FUNCNAME_FC_Into_EV_03_07_00:	DB	'FC_Into_EV_03_07_00',0
+FUNCNAME_FC_Into_EV_03_12_00:	DB	'FC_Into_EV_03_12_00',0
+FUNCNAME_FC_Into_EV_03_54_00:	DB	'FC_Into_EV_03_54_00',0
+FUNCNAME_FC_Into_EV_DOOR01:	DB	'FC_Into_EV_DOOR01',0
+FUNCNAME_FC_Into_EV_06_07_00:	DB	'FC_Into_EV_06_07_00',0
+FUNCNAME_FC_Into_EV_06_07_01:	DB	'FC_Into_EV_06_07_01',0
+FUNCNAME_FC_SYS_PartySelectBefore:	DB	'FC_SYS_PartySelectBefore',0
+FUNCNAME_FC_SYS_ClearPartySelect:	DB	'FC_SYS_ClearPartySelect',0
+FUNCNAME_FC_SYS_AddPartySelect1:	DB	'FC_SYS_AddPartySelect1',0
+FUNCNAME_FC_SYS_AddPartySelect1_2:	DB	'FC_SYS_AddPartySelect1_2',0
+FUNCNAME_FC_SYS_AddPartySelect2:	DB	'FC_SYS_AddPartySelect2',0
+FUNCNAME_FC_SYS_AddPartySelect3:	DB	'FC_SYS_AddPartySelect3',0
+FUNCNAME_FC_SYS_PartySelectCall:	DB	'FC_SYS_PartySelectCall',0
+FUNCNAME_FC_chr_entry:	DB	'FC_chr_entry',0
+FUNCNAME_FC_chr_exit:	DB	'FC_chr_exit',0
+FUNCNAME_FC_chr_entry_tk:	DB	'FC_chr_entry_tk',0
+FUNCNAME_FC_chr_exit_tk:	DB	'FC_chr_exit_tk',0
+FUNCNAME_FC_Party_Face_Reset:	DB	'FC_Party_Face_Reset',0
+FUNCNAME_FC_Party_Face_Reset2:	DB	'FC_Party_Face_Reset2',0
+FUNCNAME_FC_look_dir_Yes:	DB	'FC_look_dir_Yes',0
+FUNCNAME_FC_look_dir_No:	DB	'FC_look_dir_No',0
+FUNCNAME_FC_Battle_Check:	DB	'FC_Battle_Check',0
+FUNCNAME_FC_Start_HorseRide:	DB	'FC_Start_HorseRide',0
+FUNCNAME_FC_End_HorseRide:	DB	'FC_End_HorseRide',0
+FUNCNAME_FC_Reset_HorseRide:	DB	'FC_Reset_HorseRide',0
+FUNCNAME_FC_Party_Check_ALISA:	DB	'FC_Party_Check_ALISA',0
+FUNCNAME_FC_Party_Check_ELIOT:	DB	'FC_Party_Check_ELIOT',0
+FUNCNAME_FC_Party_Check_LAURA:	DB	'FC_Party_Check_LAURA',0
+FUNCNAME_FC_Party_Check_GAIUS:	DB	'FC_Party_Check_GAIUS',0
+FUNCNAME_FC_Party_Check_MACHIAS:	DB	'FC_Party_Check_MACHIAS',0
+FUNCNAME_FC_Party_Check_JUSIS:	DB	'FC_Party_Check_JUSIS',0
+FUNCNAME_FC_Party_Check_EMMA:	DB	'FC_Party_Check_EMMA',0
+FUNCNAME_FC_Party_Check_FIE:	DB	'FC_Party_Check_FIE',0
+FUNCNAME_FC_Party_Check_MILLIUM:	DB	'FC_Party_Check_MILLIUM',0
+FUNCNAME_FC_Party_Check_SARA:	DB	'FC_Party_Check_SARA',0
+FUNCNAME_FC_PSMenu_Reset:	DB	'FC_PSMenu_Reset',0
+FUNCNAME_FC_Costume_Set:	DB	'FC_Costume_Set',0
+FUNCNAME_FC_Kizuna_PTSave:	DB	'FC_Kizuna_PTSave',0
+FUNCNAME_YR_13_01:	DB	'YR_13_01',0
+FUNCNAME_YR_13_02:	DB	'YR_13_02',0
+FUNCNAME_YR_09_02:	DB	'YR_09_02',0
+FUNCNAME_YR_09_03:	DB	'YR_09_03',0
+FUNCNAME_YR_09_04:	DB	'YR_09_04',0
+FUNCNAME_YR_09_05:	DB	'YR_09_05',0
+FUNCNAME_YR_20_00:	DB	'YR_20_00',0
+FUNCNAME_FC_TOWA_EquipCaptainHat:	DB	'FC_TOWA_EquipCaptainHat',0
+FUNCNAME_FC_AddAP_1:	DB	'FC_AddAP_1',0
+FUNCNAME_FC_AddAP_2:	DB	'FC_AddAP_2',0
+FUNCNAME_FC_AddAP_3:	DB	'FC_AddAP_3',0
+FUNCNAME_FC_AddAP_4:	DB	'FC_AddAP_4',0
+FUNCNAME_FC_AddAP_5:	DB	'FC_AddAP_5',0
+FUNCNAME_FC_AddAP_6:	DB	'FC_AddAP_6',0
+FUNCNAME_FC_AddAP_7:	DB	'FC_AddAP_7',0
+FUNCNAME_FC_AddAP_8:	DB	'FC_AddAP_8',0
+FUNCNAME_FC_AddAP_9:	DB	'FC_AddAP_9',0
+FUNCNAME_FC_AddAP_10:	DB	'FC_AddAP_10',0
+FUNCNAME_FC_CheckGQCompleteAll:	DB	'FC_CheckGQCompleteAll',0
+FUNCNAME_Set_Mquartz_Lv:	DB	'Set_Mquartz_Lv',0
+FUNCNAME_TK_evnpc_kizetu:	DB	'TK_evnpc_kizetu',0
+FUNCNAME_EV_KeepNote_BlackBook:	DB	'EV_KeepNote_BlackBook',0
+FUNCNAME_SUB_EV_03_02_00:	DB	'SUB_EV_03_02_00',0
+FUNCNAME_FC_MemoryEvent_End:	DB	'FC_MemoryEvent_End',0
+FUNCNAME__LP_climbup:	DB	'_LP_climbup',0
+FUNCNAME__LP_climbdown:	DB	'_LP_climbdown',0
+FUNCNAME__LP_climbup_End:	DB	'_LP_climbup_End',0
+FUNCNAME__LP_climbdown_End:	DB	'_LP_climbdown_End',0
+FUNCNAME__AniClimbUp:	DB	'_AniClimbUp',0
+FUNCNAME__AniClimbDown:	DB	'_AniClimbDown',0
+FUNCNAME__AniClimbUpEnd:	DB	'_AniClimbUpEnd',0
+FUNCNAME__AniClimbDownEnd:	DB	'_AniClimbDownEnd',0
+FUNCNAME__LP_ductin:	DB	'_LP_ductin',0
+FUNCNAME__LP_tbox:	DB	'_LP_tbox',0
+FUNCNAME__LP_dropItem:	DB	'_LP_dropItem',0
+FUNCNAME__EV_healobject:	DB	'_EV_healobject',0
+FUNCNAME__EV_healobjectGaiden:	DB	'_EV_healobjectGaiden',0
+FUNCNAME__EV_useItem:	DB	'_EV_useItem',0
+FUNCNAME__EV_useItemBlackBookReport:	DB	'_EV_useItemBlackBookReport',0
+FUNCNAME__FC_SquareSelectParty:	DB	'_FC_SquareSelectParty',0
+FUNCNAME__FC_End_HorseRide:	DB	'_FC_End_HorseRide',0
+FUNCNAME__YR_09_02:	DB	'_YR_09_02',0
+FUNCNAME__YR_09_03:	DB	'_YR_09_03',0
+FUNCNAME__YR_09_04:	DB	'_YR_09_04',0
+FUNCNAME__YR_09_05:	DB	'_YR_09_05',0
+FUNCNAME__YR_20_00:	DB	'_YR_20_00',0
+FUNCNAME__FC_AddAP_1:	DB	'_FC_AddAP_1',0
+FUNCNAME__FC_AddAP_2:	DB	'_FC_AddAP_2',0
+FUNCNAME__FC_AddAP_3:	DB	'_FC_AddAP_3',0
+FUNCNAME__FC_AddAP_4:	DB	'_FC_AddAP_4',0
+FUNCNAME__FC_AddAP_5:	DB	'_FC_AddAP_5',0
+FUNCNAME__FC_AddAP_6:	DB	'_FC_AddAP_6',0
+FUNCNAME__FC_AddAP_7:	DB	'_FC_AddAP_7',0
+FUNCNAME__FC_AddAP_8:	DB	'_FC_AddAP_8',0
+FUNCNAME__FC_AddAP_9:	DB	'_FC_AddAP_9',0
+FUNCNAME__FC_AddAP_10:	DB	'_FC_AddAP_10',0
+FUNCNAME__SUB_EV_03_02_00:	DB	'_SUB_EV_03_02_00',0

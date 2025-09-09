@@ -1,0 +1,395 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;t1001.scn 71
+	DD	PreInit					;t1001.scn 77
+	DD	Init					;t1001.scn 92
+	DD	Init_Replay					;t1001.scn 139
+	DD	Reinit					;t1001.scn 199
+	DD	ST_Jane					;t1001.scn 218
+	DD	LP_fishpoint00					;t1001.scn 245
+	DD	AV_FishPoint					;t1001.scn 386
+	DD	Npc_Table					;t1001.scn 407
+	DD	millium_setting					;t1001.scn 455
+	DD	edel_setting					;t1001.scn 471
+	DD	margarita_setting					;t1001.scn 486
+	DD	fidelio_setting					;t1001.scn 501
+	DD	rosine_setting					;t1001.scn 517
+	DD	munch_setting					;t1001.scn 544
+	DD	vincent_setting					;t1001.scn 560
+	DD	salyfa_setting					;t1001.scn 577
+	DD	kenneth_setting					;t1001.scn 594
+	DD	annabel_setting					;t1001.scn 642
+	DD	karigan_setting					;t1001.scn 694
+	DD	rakeroad_setting					;t1001.scn 741
+	DD	narces_setting					;t1001.scn 801
+	DD	antone_setting					;t1001.scn 862
+	DD	ricks_setting					;t1001.scn 899
+	DD	any_setting					;t1001.scn 939
+	DD	TK_any					;t1001.scn 1000
+	DD	NPC_emo_any					;t1001.scn 1163
+	DD	TK_QS5105_ANY_RAKEROAD_NARCES					;t1001.scn 1172
+	DD	TK_rakeroad					;t1001.scn 1222
+	DD	TK_narces					;t1001.scn 1428
+	DD	harison_setting					;t1001.scn 1544
+	DD	TK_harison					;t1001.scn 1557
+	DD	TK_harison_hanna_06_03					;t1001.scn 1591
+	DD	hanna_setting					;t1001.scn 1626
+	DD	TK_hanna					;t1001.scn 1639
+	DD	kult_setting					;t1001.scn 1678
+	DD	TK_kult					;t1001.scn 1701
+	DD	NPC_emo_kult					;t1001.scn 1746
+	DD	TK_kult_any_06_04					;t1001.scn 1757
+	DD	kay_setting					;t1001.scn 1811
+	DD	TK_kay					;t1001.scn 1846
+	DD	TK_kay_rudy_06_03					;t1001.scn 1993
+	DD	rudy_setting					;t1001.scn 2022
+	DD	TK_rudy					;t1001.scn 2052
+	DD	tyzel_setting					;t1001.scn 2152
+	DD	TK_tyzel					;t1001.scn 2164
+	DD	jane_setting					;t1001.scn 2247
+	DD	TK_jane					;t1001.scn 2265
+	DD	oiler_setting					;t1001.scn 2364
+	DD	TK_oiler					;t1001.scn 2377
+	DD	andore_setting					;t1001.scn 2470
+	DD	TK_andore					;t1001.scn 2486
+	DD	lotte_setting					;t1001.scn 2555
+	DD	TK_lotte					;t1001.scn 2575
+	DD	TK_QS5102_VINCENT					;t1001.scn 2661
+	DD	TK_vincent_margarita_06_02					;t1001.scn 2683
+	DD	TK_karigan					;t1001.scn 2722
+	DD	TK_antone					;t1001.scn 2864
+	DD	TK_ricks					;t1001.scn 2954
+	DD	EV_06_00_03					;t1001.scn 3030
+	DD	ET_06_00_03_MoveREAN					;t1001.scn 5018
+	DD	ET_06_00_03_MoveALISA					;t1001.scn 5027
+	DD	ET_06_00_03_MoveELIOT					;t1001.scn 5036
+	DD	ET_06_00_03_MoveLAURA					;t1001.scn 5046
+	DD	ET_06_00_03_MoveMACHIAS					;t1001.scn 5056
+	DD	ET_06_00_03_MoveEMMA					;t1001.scn 5066
+	DD	ET_06_00_03_MoveJUSIS					;t1001.scn 5075
+	DD	ET_06_00_03_MoveFIE					;t1001.scn 5084
+	DD	ET_06_00_03_MoveGAIUS					;t1001.scn 5094
+	DD	ET_06_00_03_MoveMILLIUM					;t1001.scn 5104
+	DD	ET_06_00_03_MoveSARA					;t1001.scn 5114
+	DD	ET_06_00_03_MoveANGELICA					;t1001.scn 5124
+	DD	ET_06_00_03_MoveTOWA					;t1001.scn 5134
+	DD	ET_06_00_03_MoveGEORGE					;t1001.scn 5144
+	DD	ET_06_00_03_MoveCELINE2					;t1001.scn 5153
+	DD	ET_06_00_03_Approach					;t1001.scn 5162
+	DD	ET_06_00_03_Approach2					;t1001.scn 5176
+	DD	EV_06_03_03					;t1001.scn 5186
+	DD	EV_06_04_00					;t1001.scn 6682
+	DD	EV_06_06_00					;t1001.scn 6785
+	DD	ET_06_06_00_MOB					;t1001.scn 6926
+	DD	EV_06_11_00					;t1001.scn 6950
+	DD	ET_06_11_00_MoveGaius					;t1001.scn 8567
+	DD	ET_06_11_00_MoveJusis					;t1001.scn 8594
+	DD	ET_06_11_00_MoveLaura					;t1001.scn 8614
+	DD	ET_06_11_00_MoveMillium					;t1001.scn 8634
+	DD	ET_06_11_00_MoveFie					;t1001.scn 8654
+	DD	ET_06_11_00_MoveSara					;t1001.scn 8684
+	DD	ET_06_11_00_MoveMachias					;t1001.scn 8706
+	DD	ET_06_11_00_MoveEliot					;t1001.scn 8726
+	DD	ET_06_11_00_MoveEmma					;t1001.scn 8746
+	DD	ET_06_11_00_MoveCeline2					;t1001.scn 8766
+	DD	ET_06_11_00_MoveSharon					;t1001.scn 8786
+	DD	ET_06_11_00_MoveAlisa					;t1001.scn 8805
+	DD	QS_5104_02_A					;t1001.scn 8835
+	DD	QS_5104_02_C					;t1001.scn 9014
+	DD	QS_5105_01					;t1001.scn 9189
+	DD	QS_5105_01_03					;t1001.scn 9792
+	DD	QS_5105_02					;t1001.scn 10695
+	DD	QS_5105_03					;t1001.scn 11365
+	DD	QS_5105_03_MoveStop					;t1001.scn 11975
+	DD	QS_5105_03_AnnabelMukkii					;t1001.scn 11983
+	DD	QS_5106_00					;t1001.scn 11996
+	DD	QS_5201_01					;t1001.scn 12168
+	DD	QS_5201_02_A					;t1001.scn 12871
+	DD	EV_QS_5201_COMP_01					;t1001.scn 13133
+	DD	QS_5201_COMP					;t1001.scn 13143
+	DD	QS_5201_COMP_LOOK_AROUND					;t1001.scn 15776
+	DD	QS_5201_COMP_WAIWAI					;t1001.scn 15812
+	DD	QS_5201_COMP_WAITMOVE_TURN					;t1001.scn 15821
+	DD	FC_CheckAllQuestComp					;t1001.scn 15833
+	DD	ST_TO_R0600					;t1001.scn 15893
+	DD	ST_TO_R0620					;t1001.scn 15915
+	DD	ST_station					;t1001.scn 15937
+	DD	_LP_fishpoint00					;t1001.scn 15956
+	DD	_EV_06_00_03					;t1001.scn 15956
+	DD	_EV_06_03_03					;t1001.scn 15956
+	DD	_EV_06_04_00					;t1001.scn 15956
+	DD	_EV_06_06_00					;t1001.scn 15956
+	DD	_EV_06_11_00					;t1001.scn 15956
+	DD	_ET_06_11_00_MoveGaius					;t1001.scn 15956
+	DD	_QS_5105_01_03					;t1001.scn 15956
+	DD	_QS_5105_02					;t1001.scn 15956
+	DD	_QS_5105_03					;t1001.scn 15956
+	DD	_QS_5106_00					;t1001.scn 15956
+	DD	_QS_5201_01					;t1001.scn 15956
+	DD	_QS_5201_COMP					;t1001.scn 15956
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_ST_Jane
+	DW	FUNCNAME_LP_fishpoint00
+	DW	FUNCNAME_AV_FishPoint
+	DW	FUNCNAME_Npc_Table
+	DW	FUNCNAME_millium_setting
+	DW	FUNCNAME_edel_setting
+	DW	FUNCNAME_margarita_setting
+	DW	FUNCNAME_fidelio_setting
+	DW	FUNCNAME_rosine_setting
+	DW	FUNCNAME_munch_setting
+	DW	FUNCNAME_vincent_setting
+	DW	FUNCNAME_salyfa_setting
+	DW	FUNCNAME_kenneth_setting
+	DW	FUNCNAME_annabel_setting
+	DW	FUNCNAME_karigan_setting
+	DW	FUNCNAME_rakeroad_setting
+	DW	FUNCNAME_narces_setting
+	DW	FUNCNAME_antone_setting
+	DW	FUNCNAME_ricks_setting
+	DW	FUNCNAME_any_setting
+	DW	FUNCNAME_TK_any
+	DW	FUNCNAME_NPC_emo_any
+	DW	FUNCNAME_TK_QS5105_ANY_RAKEROAD_NARCES
+	DW	FUNCNAME_TK_rakeroad
+	DW	FUNCNAME_TK_narces
+	DW	FUNCNAME_harison_setting
+	DW	FUNCNAME_TK_harison
+	DW	FUNCNAME_TK_harison_hanna_06_03
+	DW	FUNCNAME_hanna_setting
+	DW	FUNCNAME_TK_hanna
+	DW	FUNCNAME_kult_setting
+	DW	FUNCNAME_TK_kult
+	DW	FUNCNAME_NPC_emo_kult
+	DW	FUNCNAME_TK_kult_any_06_04
+	DW	FUNCNAME_kay_setting
+	DW	FUNCNAME_TK_kay
+	DW	FUNCNAME_TK_kay_rudy_06_03
+	DW	FUNCNAME_rudy_setting
+	DW	FUNCNAME_TK_rudy
+	DW	FUNCNAME_tyzel_setting
+	DW	FUNCNAME_TK_tyzel
+	DW	FUNCNAME_jane_setting
+	DW	FUNCNAME_TK_jane
+	DW	FUNCNAME_oiler_setting
+	DW	FUNCNAME_TK_oiler
+	DW	FUNCNAME_andore_setting
+	DW	FUNCNAME_TK_andore
+	DW	FUNCNAME_lotte_setting
+	DW	FUNCNAME_TK_lotte
+	DW	FUNCNAME_TK_QS5102_VINCENT
+	DW	FUNCNAME_TK_vincent_margarita_06_02
+	DW	FUNCNAME_TK_karigan
+	DW	FUNCNAME_TK_antone
+	DW	FUNCNAME_TK_ricks
+	DW	FUNCNAME_EV_06_00_03
+	DW	FUNCNAME_ET_06_00_03_MoveREAN
+	DW	FUNCNAME_ET_06_00_03_MoveALISA
+	DW	FUNCNAME_ET_06_00_03_MoveELIOT
+	DW	FUNCNAME_ET_06_00_03_MoveLAURA
+	DW	FUNCNAME_ET_06_00_03_MoveMACHIAS
+	DW	FUNCNAME_ET_06_00_03_MoveEMMA
+	DW	FUNCNAME_ET_06_00_03_MoveJUSIS
+	DW	FUNCNAME_ET_06_00_03_MoveFIE
+	DW	FUNCNAME_ET_06_00_03_MoveGAIUS
+	DW	FUNCNAME_ET_06_00_03_MoveMILLIUM
+	DW	FUNCNAME_ET_06_00_03_MoveSARA
+	DW	FUNCNAME_ET_06_00_03_MoveANGELICA
+	DW	FUNCNAME_ET_06_00_03_MoveTOWA
+	DW	FUNCNAME_ET_06_00_03_MoveGEORGE
+	DW	FUNCNAME_ET_06_00_03_MoveCELINE2
+	DW	FUNCNAME_ET_06_00_03_Approach
+	DW	FUNCNAME_ET_06_00_03_Approach2
+	DW	FUNCNAME_EV_06_03_03
+	DW	FUNCNAME_EV_06_04_00
+	DW	FUNCNAME_EV_06_06_00
+	DW	FUNCNAME_ET_06_06_00_MOB
+	DW	FUNCNAME_EV_06_11_00
+	DW	FUNCNAME_ET_06_11_00_MoveGaius
+	DW	FUNCNAME_ET_06_11_00_MoveJusis
+	DW	FUNCNAME_ET_06_11_00_MoveLaura
+	DW	FUNCNAME_ET_06_11_00_MoveMillium
+	DW	FUNCNAME_ET_06_11_00_MoveFie
+	DW	FUNCNAME_ET_06_11_00_MoveSara
+	DW	FUNCNAME_ET_06_11_00_MoveMachias
+	DW	FUNCNAME_ET_06_11_00_MoveEliot
+	DW	FUNCNAME_ET_06_11_00_MoveEmma
+	DW	FUNCNAME_ET_06_11_00_MoveCeline2
+	DW	FUNCNAME_ET_06_11_00_MoveSharon
+	DW	FUNCNAME_ET_06_11_00_MoveAlisa
+	DW	FUNCNAME_QS_5104_02_A
+	DW	FUNCNAME_QS_5104_02_C
+	DW	FUNCNAME_QS_5105_01
+	DW	FUNCNAME_QS_5105_01_03
+	DW	FUNCNAME_QS_5105_02
+	DW	FUNCNAME_QS_5105_03
+	DW	FUNCNAME_QS_5105_03_MoveStop
+	DW	FUNCNAME_QS_5105_03_AnnabelMukkii
+	DW	FUNCNAME_QS_5106_00
+	DW	FUNCNAME_QS_5201_01
+	DW	FUNCNAME_QS_5201_02_A
+	DW	FUNCNAME_EV_QS_5201_COMP_01
+	DW	FUNCNAME_QS_5201_COMP
+	DW	FUNCNAME_QS_5201_COMP_LOOK_AROUND
+	DW	FUNCNAME_QS_5201_COMP_WAIWAI
+	DW	FUNCNAME_QS_5201_COMP_WAITMOVE_TURN
+	DW	FUNCNAME_FC_CheckAllQuestComp
+	DW	FUNCNAME_ST_TO_R0600
+	DW	FUNCNAME_ST_TO_R0620
+	DW	FUNCNAME_ST_station
+	DW	FUNCNAME__LP_fishpoint00
+	DW	FUNCNAME__EV_06_00_03
+	DW	FUNCNAME__EV_06_03_03
+	DW	FUNCNAME__EV_06_04_00
+	DW	FUNCNAME__EV_06_06_00
+	DW	FUNCNAME__EV_06_11_00
+	DW	FUNCNAME__ET_06_11_00_MoveGaius
+	DW	FUNCNAME__QS_5105_01_03
+	DW	FUNCNAME__QS_5105_02
+	DW	FUNCNAME__QS_5105_03
+	DW	FUNCNAME__QS_5106_00
+	DW	FUNCNAME__QS_5201_01
+	DW	FUNCNAME__QS_5201_COMP
+FUNCTION_NAME_TABLE_NUM	EQU	127
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_ST_Jane:	DB	'ST_Jane',0
+FUNCNAME_LP_fishpoint00:	DB	'LP_fishpoint00',0
+FUNCNAME_AV_FishPoint:	DB	'AV_FishPoint',0
+FUNCNAME_Npc_Table:	DB	'Npc_Table',0
+FUNCNAME_millium_setting:	DB	'millium_setting',0
+FUNCNAME_edel_setting:	DB	'edel_setting',0
+FUNCNAME_margarita_setting:	DB	'margarita_setting',0
+FUNCNAME_fidelio_setting:	DB	'fidelio_setting',0
+FUNCNAME_rosine_setting:	DB	'rosine_setting',0
+FUNCNAME_munch_setting:	DB	'munch_setting',0
+FUNCNAME_vincent_setting:	DB	'vincent_setting',0
+FUNCNAME_salyfa_setting:	DB	'salyfa_setting',0
+FUNCNAME_kenneth_setting:	DB	'kenneth_setting',0
+FUNCNAME_annabel_setting:	DB	'annabel_setting',0
+FUNCNAME_karigan_setting:	DB	'karigan_setting',0
+FUNCNAME_rakeroad_setting:	DB	'rakeroad_setting',0
+FUNCNAME_narces_setting:	DB	'narces_setting',0
+FUNCNAME_antone_setting:	DB	'antone_setting',0
+FUNCNAME_ricks_setting:	DB	'ricks_setting',0
+FUNCNAME_any_setting:	DB	'any_setting',0
+FUNCNAME_TK_any:	DB	'TK_any',0
+FUNCNAME_NPC_emo_any:	DB	'NPC_emo_any',0
+FUNCNAME_TK_QS5105_ANY_RAKEROAD_NARCES:	DB	'TK_QS5105_ANY_RAKEROAD_NARCES',0
+FUNCNAME_TK_rakeroad:	DB	'TK_rakeroad',0
+FUNCNAME_TK_narces:	DB	'TK_narces',0
+FUNCNAME_harison_setting:	DB	'harison_setting',0
+FUNCNAME_TK_harison:	DB	'TK_harison',0
+FUNCNAME_TK_harison_hanna_06_03:	DB	'TK_harison_hanna_06_03',0
+FUNCNAME_hanna_setting:	DB	'hanna_setting',0
+FUNCNAME_TK_hanna:	DB	'TK_hanna',0
+FUNCNAME_kult_setting:	DB	'kult_setting',0
+FUNCNAME_TK_kult:	DB	'TK_kult',0
+FUNCNAME_NPC_emo_kult:	DB	'NPC_emo_kult',0
+FUNCNAME_TK_kult_any_06_04:	DB	'TK_kult_any_06_04',0
+FUNCNAME_kay_setting:	DB	'kay_setting',0
+FUNCNAME_TK_kay:	DB	'TK_kay',0
+FUNCNAME_TK_kay_rudy_06_03:	DB	'TK_kay_rudy_06_03',0
+FUNCNAME_rudy_setting:	DB	'rudy_setting',0
+FUNCNAME_TK_rudy:	DB	'TK_rudy',0
+FUNCNAME_tyzel_setting:	DB	'tyzel_setting',0
+FUNCNAME_TK_tyzel:	DB	'TK_tyzel',0
+FUNCNAME_jane_setting:	DB	'jane_setting',0
+FUNCNAME_TK_jane:	DB	'TK_jane',0
+FUNCNAME_oiler_setting:	DB	'oiler_setting',0
+FUNCNAME_TK_oiler:	DB	'TK_oiler',0
+FUNCNAME_andore_setting:	DB	'andore_setting',0
+FUNCNAME_TK_andore:	DB	'TK_andore',0
+FUNCNAME_lotte_setting:	DB	'lotte_setting',0
+FUNCNAME_TK_lotte:	DB	'TK_lotte',0
+FUNCNAME_TK_QS5102_VINCENT:	DB	'TK_QS5102_VINCENT',0
+FUNCNAME_TK_vincent_margarita_06_02:	DB	'TK_vincent_margarita_06_02',0
+FUNCNAME_TK_karigan:	DB	'TK_karigan',0
+FUNCNAME_TK_antone:	DB	'TK_antone',0
+FUNCNAME_TK_ricks:	DB	'TK_ricks',0
+FUNCNAME_EV_06_00_03:	DB	'EV_06_00_03',0
+FUNCNAME_ET_06_00_03_MoveREAN:	DB	'ET_06_00_03_MoveREAN',0
+FUNCNAME_ET_06_00_03_MoveALISA:	DB	'ET_06_00_03_MoveALISA',0
+FUNCNAME_ET_06_00_03_MoveELIOT:	DB	'ET_06_00_03_MoveELIOT',0
+FUNCNAME_ET_06_00_03_MoveLAURA:	DB	'ET_06_00_03_MoveLAURA',0
+FUNCNAME_ET_06_00_03_MoveMACHIAS:	DB	'ET_06_00_03_MoveMACHIAS',0
+FUNCNAME_ET_06_00_03_MoveEMMA:	DB	'ET_06_00_03_MoveEMMA',0
+FUNCNAME_ET_06_00_03_MoveJUSIS:	DB	'ET_06_00_03_MoveJUSIS',0
+FUNCNAME_ET_06_00_03_MoveFIE:	DB	'ET_06_00_03_MoveFIE',0
+FUNCNAME_ET_06_00_03_MoveGAIUS:	DB	'ET_06_00_03_MoveGAIUS',0
+FUNCNAME_ET_06_00_03_MoveMILLIUM:	DB	'ET_06_00_03_MoveMILLIUM',0
+FUNCNAME_ET_06_00_03_MoveSARA:	DB	'ET_06_00_03_MoveSARA',0
+FUNCNAME_ET_06_00_03_MoveANGELICA:	DB	'ET_06_00_03_MoveANGELICA',0
+FUNCNAME_ET_06_00_03_MoveTOWA:	DB	'ET_06_00_03_MoveTOWA',0
+FUNCNAME_ET_06_00_03_MoveGEORGE:	DB	'ET_06_00_03_MoveGEORGE',0
+FUNCNAME_ET_06_00_03_MoveCELINE2:	DB	'ET_06_00_03_MoveCELINE2',0
+FUNCNAME_ET_06_00_03_Approach:	DB	'ET_06_00_03_Approach',0
+FUNCNAME_ET_06_00_03_Approach2:	DB	'ET_06_00_03_Approach2',0
+FUNCNAME_EV_06_03_03:	DB	'EV_06_03_03',0
+FUNCNAME_EV_06_04_00:	DB	'EV_06_04_00',0
+FUNCNAME_EV_06_06_00:	DB	'EV_06_06_00',0
+FUNCNAME_ET_06_06_00_MOB:	DB	'ET_06_06_00_MOB',0
+FUNCNAME_EV_06_11_00:	DB	'EV_06_11_00',0
+FUNCNAME_ET_06_11_00_MoveGaius:	DB	'ET_06_11_00_MoveGaius',0
+FUNCNAME_ET_06_11_00_MoveJusis:	DB	'ET_06_11_00_MoveJusis',0
+FUNCNAME_ET_06_11_00_MoveLaura:	DB	'ET_06_11_00_MoveLaura',0
+FUNCNAME_ET_06_11_00_MoveMillium:	DB	'ET_06_11_00_MoveMillium',0
+FUNCNAME_ET_06_11_00_MoveFie:	DB	'ET_06_11_00_MoveFie',0
+FUNCNAME_ET_06_11_00_MoveSara:	DB	'ET_06_11_00_MoveSara',0
+FUNCNAME_ET_06_11_00_MoveMachias:	DB	'ET_06_11_00_MoveMachias',0
+FUNCNAME_ET_06_11_00_MoveEliot:	DB	'ET_06_11_00_MoveEliot',0
+FUNCNAME_ET_06_11_00_MoveEmma:	DB	'ET_06_11_00_MoveEmma',0
+FUNCNAME_ET_06_11_00_MoveCeline2:	DB	'ET_06_11_00_MoveCeline2',0
+FUNCNAME_ET_06_11_00_MoveSharon:	DB	'ET_06_11_00_MoveSharon',0
+FUNCNAME_ET_06_11_00_MoveAlisa:	DB	'ET_06_11_00_MoveAlisa',0
+FUNCNAME_QS_5104_02_A:	DB	'QS_5104_02_A',0
+FUNCNAME_QS_5104_02_C:	DB	'QS_5104_02_C',0
+FUNCNAME_QS_5105_01:	DB	'QS_5105_01',0
+FUNCNAME_QS_5105_01_03:	DB	'QS_5105_01_03',0
+FUNCNAME_QS_5105_02:	DB	'QS_5105_02',0
+FUNCNAME_QS_5105_03:	DB	'QS_5105_03',0
+FUNCNAME_QS_5105_03_MoveStop:	DB	'QS_5105_03_MoveStop',0
+FUNCNAME_QS_5105_03_AnnabelMukkii:	DB	'QS_5105_03_AnnabelMukkii',0
+FUNCNAME_QS_5106_00:	DB	'QS_5106_00',0
+FUNCNAME_QS_5201_01:	DB	'QS_5201_01',0
+FUNCNAME_QS_5201_02_A:	DB	'QS_5201_02_A',0
+FUNCNAME_EV_QS_5201_COMP_01:	DB	'EV_QS_5201_COMP_01',0
+FUNCNAME_QS_5201_COMP:	DB	'QS_5201_COMP',0
+FUNCNAME_QS_5201_COMP_LOOK_AROUND:	DB	'QS_5201_COMP_LOOK_AROUND',0
+FUNCNAME_QS_5201_COMP_WAIWAI:	DB	'QS_5201_COMP_WAIWAI',0
+FUNCNAME_QS_5201_COMP_WAITMOVE_TURN:	DB	'QS_5201_COMP_WAITMOVE_TURN',0
+FUNCNAME_FC_CheckAllQuestComp:	DB	'FC_CheckAllQuestComp',0
+FUNCNAME_ST_TO_R0600:	DB	'ST_TO_R0600',0
+FUNCNAME_ST_TO_R0620:	DB	'ST_TO_R0620',0
+FUNCNAME_ST_station:	DB	'ST_station',0
+FUNCNAME__LP_fishpoint00:	DB	'_LP_fishpoint00',0
+FUNCNAME__EV_06_00_03:	DB	'_EV_06_00_03',0
+FUNCNAME__EV_06_03_03:	DB	'_EV_06_03_03',0
+FUNCNAME__EV_06_04_00:	DB	'_EV_06_04_00',0
+FUNCNAME__EV_06_06_00:	DB	'_EV_06_06_00',0
+FUNCNAME__EV_06_11_00:	DB	'_EV_06_11_00',0
+FUNCNAME__ET_06_11_00_MoveGaius:	DB	'_ET_06_11_00_MoveGaius',0
+FUNCNAME__QS_5105_01_03:	DB	'_QS_5105_01_03',0
+FUNCNAME__QS_5105_02:	DB	'_QS_5105_02',0
+FUNCNAME__QS_5105_03:	DB	'_QS_5105_03',0
+FUNCNAME__QS_5106_00:	DB	'_QS_5106_00',0
+FUNCNAME__QS_5201_01:	DB	'_QS_5201_01',0
+FUNCNAME__QS_5201_COMP:	DB	'_QS_5201_COMP',0

@@ -1,0 +1,35 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;e9100.scn 37
+	DD	PreInit					;e9100.scn 44
+	DD	Init					;e9100.scn 59
+	DD	Init_Replay					;e9100.scn 87
+	DD	Reinit					;e9100.scn 113
+	DD	SB_KIZUNA_ALISA_05A					;e9100.scn 172
+	DD	_SB_KIZUNA_ALISA_05A					;e9100.scn 833
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_SB_KIZUNA_ALISA_05A
+	DW	FUNCNAME__SB_KIZUNA_ALISA_05A
+FUNCTION_NAME_TABLE_NUM	EQU	7
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_SB_KIZUNA_ALISA_05A:	DB	'SB_KIZUNA_ALISA_05A',0
+FUNCNAME__SB_KIZUNA_ALISA_05A:	DB	'_SB_KIZUNA_ALISA_05A',0

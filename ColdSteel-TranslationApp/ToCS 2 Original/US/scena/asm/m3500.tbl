@@ -1,0 +1,146 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;m3500.scn 45
+	DD	PreInit					;m3500.scn 52
+	DD	Init					;m3500.scn 68
+	DD	Init_Replay					;m3500.scn 120
+	DD	Reinit					;m3500.scn 196
+	DD	FC_DoSelectParty					;m3500.scn 213
+	DD	FC_DoRandomParty					;m3500.scn 286
+	DD	LP_healobject1					;m3500.scn 306
+	DD	LP_healobject0					;m3500.scn 314
+	DD	LP_healobject_k					;m3500.scn 322
+	DD	LP_valimar					;m3500.scn 362
+	DD	Npc_Table					;m3500.scn 504
+	DD	alisa_setting					;m3500.scn 542
+	DD	eliot_setting					;m3500.scn 564
+	DD	laura_setting					;m3500.scn 585
+	DD	machias_setting					;m3500.scn 606
+	DD	emma_setting					;m3500.scn 627
+	DD	celine2_setting					;m3500.scn 648
+	DD	jusis_setting					;m3500.scn 668
+	DD	fie_setting					;m3500.scn 690
+	DD	gaius_setting					;m3500.scn 711
+	DD	millium_setting					;m3500.scn 733
+	DD	sara_setting					;m3500.scn 754
+	DD	towa_setting					;m3500.scn 776
+	DD	george_setting					;m3500.scn 797
+	DD	angelica_setting					;m3500.scn 813
+	DD	sharon_setting					;m3500.scn 834
+	DD	tovar_setting					;m3500.scn 855
+	DD	claire_setting					;m3500.scn 876
+	DD	elise_setting					;m3500.scn 897
+	DD	alfin_setting					;m3500.scn 918
+	DD	valimar_setting					;m3500.scn 940
+	DD	EV_06_08_01					;m3500.scn 1030
+	DD	SB_Elevator					;m3500.scn 5184
+	DD	SB_ElevatorCome					;m3500.scn 5198
+	DD	SB_ElevatorGo					;m3500.scn 5242
+	DD	SB_06_ABOUT_GUILD					;m3500.scn 5292
+	DD	SB_06_ABOUT_LECTER					;m3500.scn 5493
+	DD	SB_06_ABOUT_ROYAL					;m3500.scn 5769
+	DD	_valimar_setting					;m3500.scn 6132
+	DD	_EV_06_08_01					;m3500.scn 6132
+	DD	_SB_ElevatorCome					;m3500.scn 6132
+	DD	_SB_ElevatorGo					;m3500.scn 6132
+	DD	_SB_06_ABOUT_ROYAL					;m3500.scn 6132
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_FC_DoSelectParty
+	DW	FUNCNAME_FC_DoRandomParty
+	DW	FUNCNAME_LP_healobject1
+	DW	FUNCNAME_LP_healobject0
+	DW	FUNCNAME_LP_healobject_k
+	DW	FUNCNAME_LP_valimar
+	DW	FUNCNAME_Npc_Table
+	DW	FUNCNAME_alisa_setting
+	DW	FUNCNAME_eliot_setting
+	DW	FUNCNAME_laura_setting
+	DW	FUNCNAME_machias_setting
+	DW	FUNCNAME_emma_setting
+	DW	FUNCNAME_celine2_setting
+	DW	FUNCNAME_jusis_setting
+	DW	FUNCNAME_fie_setting
+	DW	FUNCNAME_gaius_setting
+	DW	FUNCNAME_millium_setting
+	DW	FUNCNAME_sara_setting
+	DW	FUNCNAME_towa_setting
+	DW	FUNCNAME_george_setting
+	DW	FUNCNAME_angelica_setting
+	DW	FUNCNAME_sharon_setting
+	DW	FUNCNAME_tovar_setting
+	DW	FUNCNAME_claire_setting
+	DW	FUNCNAME_elise_setting
+	DW	FUNCNAME_alfin_setting
+	DW	FUNCNAME_valimar_setting
+	DW	FUNCNAME_EV_06_08_01
+	DW	FUNCNAME_SB_Elevator
+	DW	FUNCNAME_SB_ElevatorCome
+	DW	FUNCNAME_SB_ElevatorGo
+	DW	FUNCNAME_SB_06_ABOUT_GUILD
+	DW	FUNCNAME_SB_06_ABOUT_LECTER
+	DW	FUNCNAME_SB_06_ABOUT_ROYAL
+	DW	FUNCNAME__valimar_setting
+	DW	FUNCNAME__EV_06_08_01
+	DW	FUNCNAME__SB_ElevatorCome
+	DW	FUNCNAME__SB_ElevatorGo
+	DW	FUNCNAME__SB_06_ABOUT_ROYAL
+FUNCTION_NAME_TABLE_NUM	EQU	44
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_FC_DoSelectParty:	DB	'FC_DoSelectParty',0
+FUNCNAME_FC_DoRandomParty:	DB	'FC_DoRandomParty',0
+FUNCNAME_LP_healobject1:	DB	'LP_healobject1',0
+FUNCNAME_LP_healobject0:	DB	'LP_healobject0',0
+FUNCNAME_LP_healobject_k:	DB	'LP_healobject_k',0
+FUNCNAME_LP_valimar:	DB	'LP_valimar',0
+FUNCNAME_Npc_Table:	DB	'Npc_Table',0
+FUNCNAME_alisa_setting:	DB	'alisa_setting',0
+FUNCNAME_eliot_setting:	DB	'eliot_setting',0
+FUNCNAME_laura_setting:	DB	'laura_setting',0
+FUNCNAME_machias_setting:	DB	'machias_setting',0
+FUNCNAME_emma_setting:	DB	'emma_setting',0
+FUNCNAME_celine2_setting:	DB	'celine2_setting',0
+FUNCNAME_jusis_setting:	DB	'jusis_setting',0
+FUNCNAME_fie_setting:	DB	'fie_setting',0
+FUNCNAME_gaius_setting:	DB	'gaius_setting',0
+FUNCNAME_millium_setting:	DB	'millium_setting',0
+FUNCNAME_sara_setting:	DB	'sara_setting',0
+FUNCNAME_towa_setting:	DB	'towa_setting',0
+FUNCNAME_george_setting:	DB	'george_setting',0
+FUNCNAME_angelica_setting:	DB	'angelica_setting',0
+FUNCNAME_sharon_setting:	DB	'sharon_setting',0
+FUNCNAME_tovar_setting:	DB	'tovar_setting',0
+FUNCNAME_claire_setting:	DB	'claire_setting',0
+FUNCNAME_elise_setting:	DB	'elise_setting',0
+FUNCNAME_alfin_setting:	DB	'alfin_setting',0
+FUNCNAME_valimar_setting:	DB	'valimar_setting',0
+FUNCNAME_EV_06_08_01:	DB	'EV_06_08_01',0
+FUNCNAME_SB_Elevator:	DB	'SB_Elevator',0
+FUNCNAME_SB_ElevatorCome:	DB	'SB_ElevatorCome',0
+FUNCNAME_SB_ElevatorGo:	DB	'SB_ElevatorGo',0
+FUNCNAME_SB_06_ABOUT_GUILD:	DB	'SB_06_ABOUT_GUILD',0
+FUNCNAME_SB_06_ABOUT_LECTER:	DB	'SB_06_ABOUT_LECTER',0
+FUNCNAME_SB_06_ABOUT_ROYAL:	DB	'SB_06_ABOUT_ROYAL',0
+FUNCNAME__valimar_setting:	DB	'_valimar_setting',0
+FUNCNAME__EV_06_08_01:	DB	'_EV_06_08_01',0
+FUNCNAME__SB_ElevatorCome:	DB	'_SB_ElevatorCome',0
+FUNCNAME__SB_ElevatorGo:	DB	'_SB_ElevatorGo',0
+FUNCNAME__SB_06_ABOUT_ROYAL:	DB	'_SB_06_ABOUT_ROYAL',0

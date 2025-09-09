@@ -1,0 +1,3035 @@
+{
+    "version": "v2",
+    "headers": [
+        "QSChapter",
+        "QSTitle",
+        "QSText",
+        "QSRank"
+    ],
+    "entries": [
+        {
+            "header": "QSRank",
+            "values": {
+                "id": "0",
+                "text": "Ранг B7",
+                "unknown_int1": "0",
+                "unknown_int2": "9999",
+                "unknown_int3": "9999"
+            }
+        },
+        {
+            "header": "QSRank",
+            "values": {
+                "id": "1",
+                "text": "Ранг B6",
+                "unknown_int1": "15",
+                "unknown_int2": "786",
+                "unknown_int3": "9999"
+            }
+        },
+        {
+            "header": "QSRank",
+            "values": {
+                "id": "2",
+                "text": "Ранг B5",
+                "unknown_int1": "30",
+                "unknown_int2": "3571",
+                "unknown_int3": "9999"
+            }
+        },
+        {
+            "header": "QSRank",
+            "values": {
+                "id": "3",
+                "text": "Ранг B4",
+                "unknown_int1": "45",
+                "unknown_int2": "752",
+                "unknown_int3": "9999"
+            }
+        },
+        {
+            "header": "QSRank",
+            "values": {
+                "id": "4",
+                "text": "Ранг B3",
+                "unknown_int1": "60",
+                "unknown_int2": "3328",
+                "unknown_int3": "9999"
+            }
+        },
+        {
+            "header": "QSRank",
+            "values": {
+                "id": "5",
+                "text": "Ранг B2",
+                "unknown_int1": "75",
+                "unknown_int2": "787",
+                "unknown_int3": "9999"
+            }
+        },
+        {
+            "header": "QSRank",
+            "values": {
+                "id": "6",
+                "text": "Ранг B1",
+                "unknown_int1": "95",
+                "unknown_int2": "3429",
+                "unknown_int3": "9999"
+            }
+        },
+        {
+            "header": "QSRank",
+            "values": {
+                "id": "7",
+                "text": "Ранг A7",
+                "unknown_int1": "115",
+                "unknown_int2": "754",
+                "unknown_int3": "9999"
+            }
+        },
+        {
+            "header": "QSRank",
+            "values": {
+                "id": "8",
+                "text": "Ранг A6",
+                "unknown_int1": "135",
+                "unknown_int2": "3387",
+                "unknown_int3": "9999"
+            }
+        },
+        {
+            "header": "QSRank",
+            "values": {
+                "id": "9",
+                "text": "Ранг A5",
+                "unknown_int1": "155",
+                "unknown_int2": "572",
+                "unknown_int3": "9999"
+            }
+        },
+        {
+            "header": "QSRank",
+            "values": {
+                "id": "10",
+                "text": "Ранг A4",
+                "unknown_int1": "175",
+                "unknown_int2": "3578",
+                "unknown_int3": "9999"
+            }
+        },
+        {
+            "header": "QSRank",
+            "values": {
+                "id": "11",
+                "text": "Ранг A3",
+                "unknown_int1": "200",
+                "unknown_int2": "750",
+                "unknown_int3": "9999"
+            }
+        },
+        {
+            "header": "QSRank",
+            "values": {
+                "id": "12",
+                "text": "Ранг A2",
+                "unknown_int1": "225",
+                "unknown_int2": "422",
+                "unknown_int3": "9999"
+            }
+        },
+        {
+            "header": "QSRank",
+            "values": {
+                "id": "13",
+                "text": "Ранг A1",
+                "unknown_int1": "270",
+                "unknown_int2": "3230",
+                "unknown_int3": "10"
+            }
+        },
+        {
+            "header": "QSRank",
+            "values": {
+                "id": "14",
+                "text": "Ранг A0",
+                "unknown_int1": "315",
+                "unknown_int2": "788",
+                "unknown_int3": "9999"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "1",
+                "section_name": "Act 1 - Part 1",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "2",
+                "section_name": "Act 1 - Part 2",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "3",
+                "section_name": "Act 1 - Part 3",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "4",
+                "section_name": "Act 2 - Part 1",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "5",
+                "section_name": "Act 2 - Part 2",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "6",
+                "section_name": "Act 2 - Part 3",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "7",
+                "section_name": "Act 2 - Part 4",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "8",
+                "section_name": "Finale",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSChapter",
+            "values": {
+                "section_id": "9",
+                "section_name": "Epilogue",
+                "unknown_short": "9"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "140",
+                "unknown_byte": "8",
+                "title": "<Воссоединились с одноклассниками из Сельдика>",
+                "persons": "???",
+                "story_section": "1",
+                "base_ap": "5",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "141",
+                "unknown_byte": "8",
+                "title": "<Встретились с 4-й бронетанковой дивизией>",
+                "persons": "???",
+                "story_section": "1",
+                "base_ap": "8",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "142",
+                "unknown_byte": "8",
+                "title": "<Хорошо показали себя в бою с Лео и Зено>",
+                "persons": "???",
+                "story_section": "1",
+                "base_ap": "3",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "143",
+                "unknown_byte": "8",
+                "title": "<Нашли и исследовали Святилище Земли>",
+                "persons": "???",
+                "story_section": "1",
+                "base_ap": "3",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "144",
+                "unknown_byte": "8",
+                "title": "<Воссоединились с одноклассниками из Норда>",
+                "persons": "???",
+                "story_section": "2",
+                "base_ap": "5",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "145",
+                "unknown_byte": "8",
+                "title": "<Отключили глушитель орбальных волн>",
+                "persons": "???",
+                "story_section": "2",
+                "base_ap": "8",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "146",
+                "unknown_byte": "8",
+                "title": "<Быстро победили Блёблана и Альтину>",
+                "persons": "???",
+                "story_section": "2",
+                "base_ap": "3",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "147",
+                "unknown_byte": "8",
+                "title": "<Нашли и исследовали Святилище Ветра>",
+                "persons": "???",
+                "story_section": "2",
+                "base_ap": "3",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "148",
+                "unknown_byte": "8",
+                "title": "<Воссоединились с одноклассниками из Леграма>",
+                "persons": "???",
+                "story_section": "3",
+                "base_ap": "5",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "149",
+                "unknown_byte": "8",
+                "title": "<Воссоединились с Юсисом>",
+                "persons": "???",
+                "story_section": "3",
+                "base_ap": "8",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "150",
+                "unknown_byte": "8",
+                "title": "<Победили в гонке с Юсисом>",
+                "persons": "???",
+                "story_section": "3",
+                "base_ap": "2",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "151",
+                "unknown_byte": "8",
+                "title": "<Победили Дювали>",
+                "persons": "???",
+                "story_section": "3",
+                "base_ap": "3",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "152",
+                "unknown_byte": "8",
+                "title": "<Хорошо сражались против Руфуса>",
+                "persons": "???",
+                "story_section": "3",
+                "base_ap": "3",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "153",
+                "unknown_byte": "8",
+                "title": "<Нашли и исследовали Святилище Воды>",
+                "persons": "???",
+                "story_section": "3",
+                "base_ap": "3",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "154",
+                "unknown_byte": "8",
+                "title": "<Спасли Фиону>",
+                "persons": "???",
+                "story_section": "4",
+                "base_ap": "8",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "155",
+                "unknown_byte": "8",
+                "title": "<Проникли в Рор>",
+                "persons": "???",
+                "story_section": "5",
+                "base_ap": "8",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "156",
+                "unknown_byte": "8",
+                "title": "<Посетили барьер Чёрного Дракона>",
+                "persons": "???",
+                "story_section": "5",
+                "base_ap": "2",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "157",
+                "unknown_byte": "8",
+                "title": "<Очистили святилище духов>",
+                "persons": "???",
+                "story_section": "6",
+                "base_ap": "3",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "158",
+                "unknown_byte": "8",
+                "title": "<Задержали герцога Альбареа>",
+                "persons": "???",
+                "story_section": "6",
+                "base_ap": "10",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "159",
+                "unknown_byte": "8",
+                "title": "<Очистили все святилища духов>",
+                "persons": "???",
+                "story_section": "7",
+                "base_ap": "10",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "160",
+                "unknown_byte": "8",
+                "title": "<Вернули академию>",
+                "persons": "???",
+                "story_section": "7",
+                "base_ap": "12",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "52",
+                "unknown_byte": "24",
+                "title": "Моника присоединилась",
+                "persons": "???",
+                "story_section": "4",
+                "base_ap": "1",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "53",
+                "unknown_byte": "24",
+                "title": "Минт присоединилась",
+                "persons": "???",
+                "story_section": "4",
+                "base_ap": "1",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "51",
+                "unknown_byte": "24",
+                "title": "Каспер присоединился",
+                "persons": "???",
+                "story_section": "4",
+                "base_ap": "1",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "50",
+                "unknown_byte": "24",
+                "title": "Виви присоединилась",
+                "persons": "???",
+                "story_section": "4",
+                "base_ap": "1",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "56",
+                "unknown_byte": "24",
+                "title": "Эмили присоединилась",
+                "persons": "???",
+                "story_section": "4",
+                "base_ap": "2",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "55",
+                "unknown_byte": "24",
+                "title": "Николас присоединился",
+                "persons": "???",
+                "story_section": "4",
+                "base_ap": "2",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "57",
+                "unknown_byte": "24",
+                "title": "Клара присоединилась",
+                "persons": "???",
+                "story_section": "4",
+                "base_ap": "2",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "54",
+                "unknown_byte": "24",
+                "title": "Бекки присоединилась",
+                "persons": "???",
+                "story_section": "4",
+                "base_ap": "2",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "58",
+                "unknown_byte": "24",
+                "title": "Виви присоединилась",
+                "persons": "???",
+                "story_section": "4",
+                "base_ap": "1",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "59",
+                "unknown_byte": "24",
+                "title": "Бекки присоединилась",
+                "persons": "???",
+                "story_section": "4",
+                "base_ap": "1",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "62",
+                "unknown_byte": "24",
+                "title": "Мунк присоединился",
+                "persons": "???",
+                "story_section": "5",
+                "base_ap": "2",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "63",
+                "unknown_byte": "24",
+                "title": "Паула присоединилась",
+                "persons": "???",
+                "story_section": "5",
+                "base_ap": "2",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "60",
+                "unknown_byte": "24",
+                "title": "Алан присоединился",
+                "persons": "???",
+                "story_section": "5",
+                "base_ap": "2",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "61",
+                "unknown_byte": "24",
+                "title": "Логгинс присоединился",
+                "persons": "???",
+                "story_section": "5",
+                "base_ap": "2",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "65",
+                "unknown_byte": "24",
+                "title": "Фиделио присоединился",
+                "persons": "???",
+                "story_section": "5",
+                "base_ap": "2",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "64",
+                "unknown_byte": "24",
+                "title": "Доротея присоединилась",
+                "persons": "???",
+                "story_section": "5",
+                "base_ap": "2",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "75",
+                "unknown_byte": "24",
+                "title": "Линда присоединилась",
+                "persons": "???",
+                "story_section": "5",
+                "base_ap": "2",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "76",
+                "unknown_byte": "24",
+                "title": "Линда присоединилась",
+                "persons": "???",
+                "story_section": "5",
+                "base_ap": "2",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "74",
+                "unknown_byte": "24",
+                "title": "Кеннет присоединился",
+                "persons": "???",
+                "story_section": "6",
+                "base_ap": "2",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "73",
+                "unknown_byte": "24",
+                "title": "Маргарита присоединилась",
+                "persons": "???",
+                "story_section": "6",
+                "base_ap": "2",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "71",
+                "unknown_byte": "24",
+                "title": "Хьюго присоединился",
+                "persons": "???",
+                "story_section": "6",
+                "base_ap": "2",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "72",
+                "unknown_byte": "24",
+                "title": "Стефан присоединился",
+                "persons": "???",
+                "story_section": "6",
+                "base_ap": "2",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "68",
+                "unknown_byte": "24",
+                "title": "Кляйн присоединился",
+                "persons": "???",
+                "story_section": "6",
+                "base_ap": "2",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "69",
+                "unknown_byte": "24",
+                "title": "Хайбелл присоединился",
+                "persons": "???",
+                "story_section": "6",
+                "base_ap": "2",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "66",
+                "unknown_byte": "24",
+                "title": "Анжелика присоединилась",
+                "persons": "???",
+                "story_section": "5",
+                "base_ap": "2",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "67",
+                "unknown_byte": "24",
+                "title": "Паула присоединилась",
+                "persons": "???",
+                "story_section": "5",
+                "base_ap": "1",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "79",
+                "unknown_byte": "24",
+                "title": "Бриджет присоединилась",
+                "persons": "???",
+                "story_section": "7",
+                "base_ap": "2",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "81",
+                "unknown_byte": "24",
+                "title": "Берилл присоединилась",
+                "persons": "???",
+                "story_section": "7",
+                "base_ap": "2",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "78",
+                "unknown_byte": "24",
+                "title": "Колетт присоединилась",
+                "persons": "???",
+                "story_section": "7",
+                "base_ap": "2",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "84",
+                "unknown_byte": "24",
+                "title": "Рекс присоединился",
+                "persons": "???",
+                "story_section": "7",
+                "base_ap": "2",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "77",
+                "unknown_byte": "24",
+                "title": "Розин присоединилась",
+                "persons": "???",
+                "story_section": "7",
+                "base_ap": "2",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "80",
+                "unknown_byte": "24",
+                "title": "Терезия присоединилась",
+                "persons": "???",
+                "story_section": "7",
+                "base_ap": "2",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "82",
+                "unknown_byte": "24",
+                "title": "Все старшеклассники присоед.",
+                "persons": "???",
+                "story_section": "7",
+                "base_ap": "6",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "39",
+                "unknown_byte": "24",
+                "title": "Все студенты присоед.",
+                "persons": "???",
+                "story_section": "7",
+                "base_ap": "10",
+                "unknown_data": "0000000000000000"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "1",
+                "unknown_byte": "6",
+                "title": "Лечебные травы",
+                "persons": "Отец Зирбель",
+                "story_section": "1",
+                "base_ap": "4",
+                "unknown_data": "d007000000000000"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "1",
+                "unknown_byte_1": "31",
+                "text": "У меня заканчивается трава, из которой я\nделаю лекарства. Если кто-нибудь может\nподелиться, я буду безмерно благодарен.\n\nЕсли хотите помочь, навестите меня в церкви.\n                              - Отец Зирбель",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "1",
+                "unknown_byte_1": "0",
+                "text": "#666c　　　　          ◆　　　　◆　　　　◆\n・Отец Зирбель ищет лечебные травы.\nНачнём с их поисков на Большом рынке.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "1",
+                "unknown_byte_1": "1",
+                "text": "・Мы поговорили с Флинтом на Большом рынке,\nно у него ничего не было. Он сказал, что мы\nможем найти травы в природном парке Лунария\nи посоветовал поговорить с Джонсоном,\nтамошним смотрителем.\n・Стоит проверить! В парк Лунария можно\nпопасть, если пойти на север по Западному\nшоссе Сельдика.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "1",
+                "unknown_byte_1": "2",
+                "text": "・Мы поговорили с Джонсоном, и он\nподтвердил, что в парке можно найти\nлечебные травы. Он посоветовал нам искать\nих у корней деревьев.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "1",
+                "unknown_byte_1": "3",
+                "text": "・Найдена лечебная трава.\nОтнесём её отцу Зирбелю.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "1",
+                "unknown_byte_1": "6",
+                "text": "・Отдали лечебную траву отцу Зирбелю и\nвыполнили просьбу!",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "2",
+                "unknown_byte": "2",
+                "title": "Конец обжорству",
+                "persons": "Управляющий рынком Отто",
+                "story_section": "1",
+                "base_ap": "4",
+                "unknown_data": "dc0500000f210000"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "2",
+                "unknown_byte_1": "31",
+                "text": "На Восточном шоссе Сельдика появился огромный\nопасный монстр. Что ещё хуже, он пожирает\nурожай! Я прошу как можно скорее уничтожить\nего ради всех фермеров.\n\nМонстр: Гигантский Пожиратель Урожая\nМесто: Восточное шоссе Сельдика 2, плато\n\n                    - Отто, управляющий рынком",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "2",
+                "unknown_byte_1": "0",
+                "text": "#666c　　　　          ◆　　　　◆　　　　◆\n・Пожиратель Урожая уничтожен! Расскажем Отто.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "2",
+                "unknown_byte_1": "1",
+                "text": "・Сообщили Отто об уничтожении монстра!",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "3",
+                "unknown_byte": "2",
+                "title": "Крик о помощи",
+                "persons": "Торговец Альбель",
+                "story_section": "1",
+                "base_ap": "4",
+                "unknown_data": "d007000000000000"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "3",
+                "unknown_byte_1": "31",
+                "text": "Мы шли по шоссе и услышали крик о помощи.\n\nКричавшим оказался странствующий торговец по\nимени Альбель, на которого напали монстры.\nНам удалось спасти его и отвезти обратно в\nСельдик.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "3",
+                "unknown_byte_1": "0",
+                "text": "#666c　　　　          ◆　　　　◆　　　　◆\n・Там мы встретили его семью, которая его\nискала. Было приятно воссоединить их.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "4",
+                "unknown_byte": "2",
+                "title": "Поручение с листьями",
+                "persons": "Альф и Кики",
+                "story_section": "1",
+                "base_ap": "4",
+                "unknown_data": "dc05000000000000"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "4",
+                "unknown_byte_1": "31",
+                "text": "Альф и Кики пытаются сделать для папы\nмолитвенных журавликов, но у них нет листьев\nфуки, необходимых для этого.\n\nТак что я согласился найти для них листья.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "4",
+                "unknown_byte_1": "0",
+                "text": "#666c　　　　          ◆　　　　◆　　　　◆\n・Мне нужно всего два листа, и их должно быть\nлегко найти на тропе в долине.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "4",
+                "unknown_byte_1": "1",
+                "text": "・Я нашёл очень красивый лист фуки.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "4",
+                "unknown_byte_1": "2",
+                "text": "・Я нашёл редкий красный лист фуки.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "4",
+                "unknown_byte_1": "3",
+                "text": "・Нужно отдать их Альфу и Кики, когда\nвернусь в город.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "4",
+                "unknown_byte_1": "4",
+                "text": "・Я отдал Альфу и Кики их листья!",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "5",
+                "unknown_byte": "2",
+                "title": "Охота на нагорье",
+                "persons": "Лакан",
+                "story_section": "2",
+                "base_ap": "4",
+                "unknown_data": "dc05000000000000"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "5",
+                "unknown_byte_1": "31",
+                "text": "Похоже, егери выпустили боевых монстров\nна северном нагорье.\n\nСкорее всего, они сделали это, чтобы помешать\n3-й бронетанковой дивизии, но их так много,\nчто они уже нанесли урон поселению. Их нужно\nуничтожить, и я прошу вашей помощи.\n\nПожалуйста, доложите об успехе старейшине\nАйвану, так как я буду в патруле.\n                                      - Лакан",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "5",
+                "unknown_byte_1": "0",
+                "text": "#666c　　　　          ◆　　　　◆　　　　◆",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "5",
+                "unknown_byte_1": "1",
+                "text": "・Победили монстра в южной части этого\nрайона нагорья.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "5",
+                "unknown_byte_1": "2",
+                "text": "・Победили монстра в западной части этого\nрайона нагорья.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "5",
+                "unknown_byte_1": "3",
+                "text": "・Победили монстра в восточной части этого\nрайона нагорья.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "5",
+                "unknown_byte_1": "4",
+                "text": "・Похоже, мы разобрались со всеми\nмонстрами. Вернёмся и доложим старейшине.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "5",
+                "unknown_byte_1": "5",
+                "text": "・Мы сообщили Айвану, что решили его проблему с\nмонстрами!",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "6",
+                "unknown_byte": "2",
+                "title": "Пропавший жеребёнок",
+                "persons": "Шида",
+                "story_section": "2",
+                "base_ap": "4",
+                "unknown_data": "d007000000000000"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "6",
+                "unknown_byte_1": "31",
+                "text": "Один из жеребят, родившихся в нашем\nпоселении, пропал.\n\nЕсли с ним ничего не случилось, он всё ещё\nдолжен быть где-то на нагорье, но кто\nзнает, как долго это продлится...\n\nНе мог бы кто-нибудь поискать его? Если да,\nпожалуйста, поговорите со мной. Я обычно\nзабочусь об овцах в поселении.\n                                     - Шида",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "6",
+                "unknown_byte_1": "0",
+                "text": "#666c　　　　          ◆　　　　◆　　　　◆\n・Алиса говорит, что недавно видела жеребёнка\nв северо-восточной части нагорья.\nПохоже, это хорошее место для начала поисков.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "6",
+                "unknown_byte_1": "2",
+                "text": "・Мы нашли жеребёнка, но он убежал. Впрочем,\nон, скорее всего, всё ещё недалеко.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "6",
+                "unknown_byte_1": "3",
+                "text": "・Мы нашли жеребёнка в глубине\nсеверо-восточной части нагорья, но он\nубежал. У меня такое чувство, что он\nускакал довольно далеко...",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "6",
+                "unknown_byte_1": "4",
+                "text": "・Кажется, что-то есть там, где раньше было\nпоселение... Может, это наш жеребёнок?",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "6",
+                "unknown_byte_1": "5",
+                "text": "・Мы снова нашли жеребёнка и вернули его\nШиде в целости и сохранности!",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "7",
+                "unknown_byte": "2",
+                "title": "Беда рядового Затса",
+                "persons": "Рядовой Затс",
+                "story_section": "2",
+                "base_ap": "4",
+                "unknown_data": "d007000000000000"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "7",
+                "unknown_byte_1": "31",
+                "text": "Затс потерял памятную вещь близкого друга,\nно у него нет времени на её поиски.\n\nОн и Мэннинг думают, что мы найдём её рядом\nсо старым танком, от которого им пришлось\nбежать.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "7",
+                "unknown_byte_1": "0",
+                "text": "#666c　　　　          ◆　　　　◆　　　　◆\n・Они говорят, что мы сможем найти её где-то в\nюжной части нагорья. Нужно проверить\nнесколько разрушенных танков.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "7",
+                "unknown_byte_1": "1",
+                "text": "・Мы что-то нашли! Правда, это всего лишь\nпуговица от военной формы.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "7",
+                "unknown_byte_1": "2",
+                "text": "・Мы что-то нашли! Хотя это просто роса.\nЧестно говоря, мне теперь стыдно, что я\nсказал, будто мы что-то нашли. Это же\nничего особенного.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "7",
+                "unknown_byte_1": "3",
+                "text": "・Мы что-то нашли! Хотя это просто болтающийся\nвинт. Даже не знаю, зачем я решил это\nзаписать...",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "7",
+                "unknown_byte_1": "4",
+                "text": "・Мы нашли кулон, который искали! Вернём\nего Затсу как можно скорее!",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "7",
+                "unknown_byte_1": "5",
+                "text": "・Мы вернули кулон Затсу!",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "8",
+                "unknown_byte": "2",
+                "title": "Приключение за адзуки",
+                "persons": "Камилла",
+                "story_section": "2",
+                "base_ap": "4",
+                "unknown_data": "d007000000000000"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "8",
+                "unknown_byte_1": "31",
+                "text": "Камилла хочет приготовить для всех нас мандзю.\n\nК сожалению, у неё нет бобов адзуки,\nкоторые для этого нужны, поэтому я предложил\nнайти их для неё.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "8",
+                "unknown_byte_1": "0",
+                "text": "#666c　　　　          ◆　　　　◆　　　　◆\n・Начну с поисков того, кто часто готовит\nс адзуки.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "8",
+                "unknown_byte_1": "1",
+                "text": "・Я спросил у Вернера, есть ли у него бобы, но\nон сказал, что дикие обезьяны украли весь\nего запас.\n・Ну да, обычное дело. Может, стоит спросить\nдругого знакомого, который любит готовить\nсладости...",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "8",
+                "unknown_byte_1": "2",
+                "text": "・Я спросил у Джеральда, есть ли у него бобы\nадзуки, но он сказал, что тоже недавно стал\nжертвой диких обезьян. Это просто эпидемия!\n・Впрочем, он предположил, что они могут быть у\nЛюка... Стоит попробовать.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "8",
+                "unknown_byte_1": "3",
+                "text": "・Я спросил у Люка, и он сказал, что бобы\nмогут быть у Лизы. Она сейчас в церкви.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "8",
+                "unknown_byte_1": "4",
+                "text": "・У Лизы всё-таки нашлись бобы адзуки, и мы\nподоспели как раз вовремя, чтобы спасти их\nот той же обезьяньей участи.\n・В знак благодарности она дала мне немного\nбобов, и я отдал их Камилле!",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "9",
+                "unknown_byte": "2",
+                "title": "Тренировочный бой школы Арсейд 2",
+                "persons": "Гавели",
+                "story_section": "3",
+                "base_ap": "4",
+                "unknown_data": "dc05000000000000"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "9",
+                "unknown_byte_1": "31",
+                "text": "Возможно, вы победили нас в прошлый раз, но с\nтех пор мы значительно улучшили свои навыки.\nПоэтому мы хотели бы попросить о ещё одном\nпоединке с вами.\n\nЕсли вы согласны, приходите в\nтренировочный зал. Мы будем ждать.\n                                     - Гавели",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "9",
+                "unknown_byte_1": "0",
+                "text": "#666c　　　　          ◆　　　　◆　　　　◆\n・Они были намного сильнее, чем в прошлый раз,\nно всё же недостаточно, чтобы одолеть нас!",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "10",
+                "unknown_byte": "2",
+                "title": "Монстр с Эбеля",
+                "persons": "Секретарь Майлз",
+                "story_section": "3",
+                "base_ap": "4",
+                "unknown_data": "dc05000000000000"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "10",
+                "unknown_byte_1": "31",
+                "text": "Мне сообщили, что на Эбельском шоссе замечен\nбольшой опасный монстр. Был бы признателен,\nесли бы вы с ним разобрались.\n\nМонстр: Горди Шнарр Г\nМесто: Эбельское шоссе 2, северная сторона\n           - Майлз, секретарь Гильдии эсквайров",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "10",
+                "unknown_byte_1": "0",
+                "text": "#666c　　　　          ◆　　　　◆　　　　◆\n・Завалили Гордо... Горди Шнап... В общем,\nубили монстра без проблем! Надо сообщить\nМайлзу!",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "10",
+                "unknown_byte_1": "1",
+                "text": "・Мы сказали Майлзу, что победили... эту тварь.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "11",
+                "unknown_byte": "2",
+                "title": "Слёзы святой Вероники",
+                "persons": "Сестра Татьяна",
+                "story_section": "3",
+                "base_ap": "4",
+                "unknown_data": "d007000000000000"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "11",
+                "unknown_byte_1": "31",
+                "text": "С начала войны статуя святой Вероники в\nБэрхарде начала плакать чёрными слезами, и\nэто очень беспокоит людей.\n\nЭто дурное предзнаменование, если я когда-либо\nего видел, но, надеюсь, мы сможем что-то\nсделать, чтобы это прекратить...",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "11",
+                "unknown_byte_1": "0",
+                "text": "#666c　　　　          ◆　　　　◆　　　　◆\n・Мы согласились расследовать причину чёрных\nслёз. Первым делом осмотрим саму статую.\nОна находится на центральной площади.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "11",
+                "unknown_byte_1": "1",
+                "text": "・Причина, похоже, в водостоке под городом.\nМы можем попасть туда через вход на\nпривокзальной улице.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "11",
+                "unknown_byte_1": "2",
+                "text": "・Здесь определённо что-то не так. Нужно\nбыть осторожнее...",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "11",
+                "unknown_byte_1": "3",
+                "text": "・Мы победили гигантского монстра, который был\nпричиной чёрных слёз, и рассказали об этом\nсестре Татьяне!",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "12",
+                "unknown_byte": "2",
+                "title": "Пропавший котёнок",
+                "persons": "Ева",
+                "story_section": "3",
+                "base_ap": "4",
+                "unknown_data": "d007000000000000"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "12",
+                "unknown_byte_1": "31",
+                "text": "У Евы пропал котёнок. Интересно, сможем ли мы\nнайти его для неё?",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "12",
+                "unknown_byte_1": "0",
+                "text": "#666c　　　　          ◆　　　　◆　　　　◆\n・Центральная площадь кажется хорошим местом\nдля начала поисков.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "12",
+                "unknown_byte_1": "1",
+                "text": "・Наши подозрения насчёт площади\nподтвердились, но его спугнула лающая\nсобака. Собака лает в сторону Улицы\nРемесленников, так что это наша следующая\nостановка.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "12",
+                "unknown_byte_1": "2",
+                "text": "・Похоже, котёнок задержался на Улице\nРемесленников, чтобы выпить молока, а потом\nпошёл обратно. Надеюсь, он не заблудился по\nпути к Еве...",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "12",
+                "unknown_byte_1": "3",
+                "text": "・Мы получили информацию о возможном\nместонахождении котёнка от двух девочек на\nПривокзальной улице. Похоже, он мог уйти на\nСеверное шоссе Кройцен...",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "12",
+                "unknown_byte_1": "4",
+                "text": "・Мы нашли котёнка на шоссе и вернули его\nЕве!",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "13",
+                "unknown_byte": "2",
+                "title": "Невероятная рыбалка",
+                "persons": "Джеральд",
+                "story_section": "3",
+                "base_ap": "4",
+                "unknown_data": "d007000000000000"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "13",
+                "unknown_byte_1": "31",
+                "text": "Аннабелль остановилась в таверне, но её не\nбыло весь день.\n\nЭто плохой знак...",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "13",
+                "unknown_byte_1": "0",
+                "text": "#666c　　　　          ◆　　　　◆　　　　◆\n・Она должна быть где-то в долине. Я должен\nпопытаться найти её, пока она не попала в\nбеду.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "13",
+                "unknown_byte_1": "1",
+                "text": "・Я нашёл Аннабелль... за рыбалкой. Она в\nпорядке, но отказывается возвращаться в\nтаверну, пока не поймает определённую рыбу.\nЯ намерен ей в этом помочь.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "13",
+                "unknown_byte_1": "2",
+                "text": "・Та рыба, которую она искала? Да, это был\nМОНСТР. Ну что ж. По крайней мере, мне\nудалось уговорить её вернуться в таверну...",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "14",
+                "unknown_byte": "6",
+                "title": "Безумный монстр",
+                "persons": "Старейшина Айван",
+                "story_section": "4",
+                "base_ap": "4",
+                "unknown_data": "c409000000000000"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "14",
+                "unknown_byte_1": "31",
+                "text": "На нагорье появился большой загадочный\nмонстр. Обычно мы бы попросили Лакана\nразобраться с ним, но он в патруле, и с ним\nне связаться. Не могли бы вы победить его\nвместо нас?\n\nЕсли да, то вы можете найти меня в хижине у\nозера, где я разговариваю с Гвином.\n                                - Старейшина Айван",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "14",
+                "unknown_byte_1": "0",
+                "text": "#666c　　　　          ◆　　　　◆　　　　◆\n・Говорят, монстр находится возле большой\nстатуи в северной части нагорья. Пойдём и\nпосмотрим поближе.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "14",
+                "unknown_byte_1": "1",
+                "text": "・Монстр оказался Магическим Рыцарем.\nС ним будет нелегко!",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "14",
+                "unknown_byte_1": "2",
+                "text": "・Мы победили Магического Рыцаря и доложили о\nнашем успехе старейшине Айвану!",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "40",
+                "unknown_byte": "6",
+                "title": "Найти наших первокурсников",
+                "persons": "Президент Тора",
+                "story_section": "4",
+                "base_ap": "4",
+                "unknown_data": "c409000000000000"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "40",
+                "unknown_byte_1": "31",
+                "text": "Я выяснила, где находятся несколько студентов\nТора! Я знаю, как важно, чтобы они\nприсоединились к нам, но я просто хочу\nубедиться, что наши первокурсники в\nбезопасности. Вам нужно будет проверить:\n- Монику\n- Минт\n- Каспера\n- Виви\nЯ уверена, что все они станут отличным\nдополнением к команде! Терминал на мостике\nподскажет, где их найти. Спасибо!\n                                      - Тора",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "40",
+                "unknown_byte_1": "0",
+                "text": "#666c　　　　          ◆　　　　◆　　　　◆",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "40",
+                "unknown_byte_1": "1",
+                "text": "・Моника присоединилась к команде «Дерзкого»!",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "40",
+                "unknown_byte_1": "2",
+                "text": "・Минт присоединилась к команде «Дерзкого»!",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "40",
+                "unknown_byte_1": "3",
+                "text": "・Каспер присоединился к команде «Дерзкого»!",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "40",
+                "unknown_byte_1": "4",
+                "text": "・Виви присоединилась к команде «Дерзкого»!",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "40",
+                "unknown_byte_1": "5",
+                "text": "・Мы нашли всех четырёх студентов!",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "16",
+                "unknown_byte": "2",
+                "title": "В самоволке",
+                "persons": "Генерал-лейтенант Крэйг",
+                "story_section": "4",
+                "base_ap": "4",
+                "unknown_data": "b80b000000000000"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "16",
+                "unknown_byte_1": "31",
+                "text": "Гражданский, которого мы взяли под охрану,\nисчез. Не могли бы вы помочь нам в его\nпоисках?\n\nПоговорите со мной в лагере для получения\nподробной информации.\n                                     - Крэйг",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "16",
+                "unknown_byte_1": "0",
+                "text": "#666c　　　　          ◆　　　　◆　　　　◆\n・Нам сказали, что гражданский исчез сегодня\nутром. Давайте расспросим людей в лагере,\nможет, кто-то видел, как он уходил.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "16",
+                "unknown_byte_1": "1",
+                "text": "・Сержант-майор Эмманс сказал нам, что час\nназад видел разыскиваемого нами человека,\nнаправлявшегося к крепости Гарелия.\n・Может, мы сможем найти его в руинах\nкрепости...",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "16",
+                "unknown_byte_1": "2",
+                "text": "・Мы поговорили с солдатами из 4-й\nбронетанковой дивизии в руинах. Они сказали,\nчто наш гражданский не выходил на Гарелийскую\nпросёлочную дорогу... значит, он всё ещё\nгде-то в руинах. Нужно проверить ещё раз.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "16",
+                "unknown_byte_1": "3",
+                "text": "・Мы нашли гражданского в руинах! Пора\nнемедленно доложить об этом\nгенерал-лейтенанту.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "15",
+                "unknown_byte": "2",
+                "title": "Крутой в опасности!!!",
+                "persons": "Карго",
+                "story_section": "4",
+                "base_ap": "4",
+                "unknown_data": "b80b000001240000"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "15",
+                "unknown_byte_1": "31",
+                "text": "Патири в беде! Эти чёртовы солдаты знати,\nони... Чёрт!\n\nЯ расскажу тебе в гостинице в Леграме, ясно?!\nБыстрее иди сюда!\n                                    - Карго",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "15",
+                "unknown_byte_1": "0",
+                "text": "#666c　　　　          ◆　　　　◆　　　　◆",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "15",
+                "unknown_byte_1": "1",
+                "text": "・Ясно, что Карго нужна помощь, но мы никак не\nможем понять, чего он хочет. Нужно позвать\nМакиаса и посмотреть, сможет ли он во всём\nэтом разобраться.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "15",
+                "unknown_byte_1": "2",
+                "text": "・Насколько мы можем судить, проблема в том,\nчто Карго и Патири должны были встретиться в\nЛеграме, но Патири ещё не появилась.\n・Макиас предположил, что, договариваясь о\nместе встречи, один из них смотрел на карту\nвверх ногами. Но куда тогда могла попасть\nПатири?",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "15",
+                "unknown_byte_1": "3",
+                "text": "・Мы нашли Патири в Юмире и наконец\nвоссоединили её с её подельником!",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "18",
+                "unknown_byte": "6",
+                "title": "Боевое крещение меха",
+                "persons": "Майор Найтхардт",
+                "story_section": "5",
+                "base_ap": "3",
+                "unknown_data": "ac0d000000000000"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "18",
+                "unknown_byte_1": "31",
+                "text": "Шварцер...\n\nЯ хотел бы проверить навыки твоего Божественного\nРыцаря.\n\nЕсли представится возможность, встретимся в\nглавном коридоре Моста Двух Драконов.\n                                  - Найтхардт",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "18",
+                "unknown_byte_1": "0",
+                "text": "#666c　　　　          ◆　　　　◆　　　　◆\n・Майор Найтхардт вызвал меня на бой. Я буду\nпилотировать Валимара, а он — «Шпигель»,\nкоторый армия сумела украсть у альянса.\n・Он пилотировал «Шпигель» с невероятным\nмастерством, но мне едва удалось одержать\nверх!",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "18",
+                "unknown_byte_1": "1",
+                "text": "#666c　　　　          ◆　　　　◆　　　　◆\n・Майор Найтхардт вызвал меня на бой. Я буду\nпилотировать Валимара, а он — «Шпигель»,\nкоторый армия сумела украсть у альянса.\n・Он пилотировал «Шпигель» с невероятным\nмастерством и полностью меня разгромил...\nМ-да.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "17",
+                "unknown_byte": "6",
+                "title": "Червячья разминка",
+                "persons": "Принц Оливерт",
+                "story_section": "5",
+                "base_ap": "4",
+                "unknown_data": "c409000000000000"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "17",
+                "unknown_byte_1": "31",
+                "text": "Ужасные новости, Рин! Злобный червь\nпроглотил Тору целиком! Что будет делать\n«Дерзкий» без своего милого\nзефирного талисмана?\n\n...Ладно, это была выдумка, но только\nподумай: что, если бы её ДЕЙСТВИТЕЛЬНО\nпроглотили? Ты бы наверняка сделал всё\nвозможное, чтобы убить этого монстра, так?\n\nМонстр: Червь Бездны\nМесто: Гарелийская прос. дорога 2, зап. сторона\n                                   - Оливерт",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "17",
+                "unknown_byte_1": "0",
+                "text": "#666c　　　　          ◆　　　　◆　　　　◆\n・Ну... мы ДЕЙСТВИТЕЛЬНО сделали всё возможное,\nда? Безумие.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "19",
+                "unknown_byte": "2",
+                "title": "Охота на чудиков",
+                "persons": "Управляющий Бэггинс",
+                "story_section": "5",
+                "base_ap": "3",
+                "unknown_data": "ac0d000027240000"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "19",
+                "unknown_byte_1": "31",
+                "text": "В последнее время в зоне купален на открытом\nвоздухе происходят разные странности.\n\nХотя это и не срочная просьба, я был бы очень\nпризнателен, если бы вы помогли нам\nрасследовать, почему так происходит.\n\nЗа подробностями, пожалуйста, обратитесь ко\nмне на ресепшен «Крыльев Феникса».\n                                    - Бэггинс",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "19",
+                "unknown_byte_1": "0",
+                "text": "#666c　　　　          ◆　　　　◆　　　　◆\n・«Призраками», стоявшими за всеми проблемами\nв «Крыльях Феникса», на самом деле оказались\nЖуткие Овцы. Мы их немного побили, так что,\nнадеюсь, они дважды подумают, прежде чем\nвозвращаться в деревню.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "19",
+                "unknown_byte_1": "1",
+                "text": "#666c　　　　          ◆　　　　◆　　　　◆\n・«Призраками», стоявшими за всеми проблемами\nв «Крыльях Феникса», на самом деле оказались\nЖуткие Овцы. Поймать их было непросто, но\nкогда мы это сделали, то так их отделали, что\nони дважды подумают, прежде чем возвращаться\nв деревню.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "20",
+                "unknown_byte": "2",
+                "title": "Пропавший рейс",
+                "persons": "Кляйн и Хайбелл",
+                "story_section": "6",
+                "base_ap": "4",
+                "unknown_data": "a00f000014240000"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "20",
+                "unknown_byte_1": "31",
+                "text": "Итак, вот в чём дело: авиалайнер был угнан\nво время полёта и пропал, но нам удалось\nотследить его до хребта Айзенгард. Прямо\nсейчас все заложники всё ещё внутри.\n\nТак что мы собираемся их спасти. Это будет\nнепросто, учитывая, что угонщики вооружены,\nно тут-то и вступаете вы и «Дерзкий». Тора\nможет рассказать вам, как до нас добраться,\nа мы будем ждать на хребте Айзенгард.\nДо встречи!\n                            - Кляйн и Хайбелл",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "20",
+                "unknown_byte_1": "0",
+                "text": "#666c　　　　          ◆　　　　◆　　　　◆\n・Мы встретились с Кляйном и Хайбеллом и начали\nнашу миссию по спасению заложников. Чтобы всё\nполучилось, мы разделимся на две группы.\n・Наша группа проникнет на дирижабль через\nгрузовой отсек, а оттуда мы будем\nпробираться на верхние этажи.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "20",
+                "unknown_byte_1": "1",
+                "text": "・Мы нашли ключ-карту! Следующий этаж, мы идём!",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "20",
+                "unknown_byte_1": "2",
+                "text": "・И ещё одну! Теперь нас ничто не остановит.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "20",
+                "unknown_byte_1": "3",
+                "text": "・С помощью Кляйна и Хайбелла нам удалось\nспасти заложников и схватить преступников!",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "21",
+                "unknown_byte": "2",
+                "title": "Сладчайшее испытание",
+                "persons": "Блёблан",
+                "story_section": "6",
+                "base_ap": "3",
+                "unknown_data": "ac0d000014240000"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "21",
+                "unknown_byte_1": "31",
+                "text": "Дорогие дамы и господа, я взял на себя\nсмелость обратиться к вам с собственной\nпросьбой, втайне от моего достойного\nсоперника.\n\nЯ оставил письмо в месте, отмеченном синим\nкрестом. Думаю, вам будет весьма полезно его\nпрочесть.\n                           - Фантомный вор Б",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "21",
+                "unknown_byte_1": "0",
+                "text": "#666c　　　　          ◆　　　　◆　　　　◆\n・Как и говорилось в записке, мы нашли карту\nФантомного вора Б в лазарете. Часть меня\nпросто хочет выбросить её в мусор и лишить\nего удовольствия издеваться над нами...",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "21",
+                "unknown_byte_1": "1",
+                "text": "・Мы были шокированы, узнав, что Фантомный\nвор Б похитил одного из наших одноклассников\nи теперь выдаёт себя за него. Не удивлены,\nчто он это сделал, — скорее удивлены, что\nмаскировка может быть НАСТОЛЬКО эффективной.\n・Его вызов заключался в том, чтобы мы\nвыяснили, кого из одноклассников похитили, и\nмы смогли дойти до ответа, как и подобает\nотличникам!",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "21",
+                "unknown_byte_1": "2",
+                "text": "・Мы были шокированы, узнав, что Фантомный\nвор Б похитил одного из наших одноклассников\nи теперь выдаёт себя за него. Не удивлены,\nчто он это сделал, — скорее удивлены, что\nмаскировка может быть НАСТОЛЬКО эффективной.\n・Его вызов заключался в том, чтобы мы\nвыяснили, кого из одноклассников похитили, и\nхотя мы пару раз ошиблись, в итоге мы смогли\nдойти до ответа!",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "22",
+                "unknown_byte": "2",
+                "title": "Кройцен ждёт взбучки",
+                "persons": "Принц Оливерт",
+                "story_section": "6",
+                "base_ap": "4",
+                "unknown_data": "b80b000014240000"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "22",
+                "unknown_byte_1": "31",
+                "text": "Представьте, как Юсис Альбареа плачет о\nбезопасности жителей своей провинции, когда\nих преследует по улицам свирепый монстр!\n\nВы ведь не допустите, чтобы такая ужасная\nсцена произошла, не так ли? Битва назначена,\nи Северное шоссе Кройцен ждёт!\n\nМонстр: Аберддон\nМесто: Северное шоссе Кройцен 3\n                                   - Оливерт",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "22",
+                "unknown_byte_1": "0",
+                "text": "#666c　　　　          ◆　　　　◆　　　　◆\n・Мы победили Аберддона, но пришлось попотеть.\nХех...",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "23",
+                "unknown_byte": "2",
+                "title": "Угроза из тумана",
+                "persons": "Дворецкий Клаус",
+                "story_section": "7",
+                "base_ap": "4",
+                "unknown_data": "a00f00002f240000"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "23",
+                "unknown_byte_1": "31",
+                "text": "Проблема, которую вы помогли решить здесь, в\nЛеграме, скажем так, разрешилась в обратную\nсторону и продолжает усугубляться.\n\nМы полагаем, что причина снова может крыться\nв замке Лоэнгрин. Поэтому мы хотели бы\nпопросить ваш класс расследовать это и\nпосмотреть, сможете ли вы решить проблему.\n\nПожалуйста, свяжитесь с нами в Гильдии\nэсквайров Леграма, если сможете нам помочь.\n                                      - Клаус",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "23",
+                "unknown_byte_1": "0",
+                "text": "#666c　　　　          ◆　　　　◆　　　　◆\n・Клаус и Майлз подробно объяснили нам, что\nпроисходит. Как только мы будем готовы,\nотправимся на пристань, чтобы отплыть в\nЛоэнгрин.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "23",
+                "unknown_byte_1": "1",
+                "text": "・Причина всех бед, похоже, кроется в\nподземелье замка. Нам следует продвигаться с\nосторожностью.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "23",
+                "unknown_byte_1": "2",
+                "text": "・К нашему удивлению, виновником оказался тот\nже Носферату с нашей полевой практики.\nКоварные Носферату! Мы снова его одолели и\nрассеяли туман, окутавший Леграм.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "24",
+                "unknown_byte": "2",
+                "title": "Сердца в гармонии",
+                "persons": "Розин",
+                "story_section": "7",
+                "base_ap": "3",
+                "unknown_data": "941100002f240000"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "24",
+                "unknown_byte_1": "31",
+                "text": "Я хочу устроить концерт, чтобы показать жителям\nСельдика, что не всё потеряно, и помочь им\nначать исцеляться.\n\nНе могли бы вы помочь мне, VII класс? Особенно\nя надеюсь на Элиота.\n\nЕсли да, пожалуйста, приходите в часовню\nСельдика. Там мы всё и обсудим.\n                                      - Розин",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "24",
+                "unknown_byte_1": "0",
+                "text": "#666c　　　　          ◆　　　　◆　　　　◆\n・Нельзя устроить концерт без музыкантов!\nМы можем попросить помощи у студентов\nдухового оркестра, но также стоит поговорить\nс инструктором Мэри в Роре и Фионой на\nГарелийском полигоне. ...Думаю, я МОГ БЫ\nпопросить о помощи и уличного музыканта, коего\nвидел на центральной площади Бэрхарда...",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "24",
+                "unknown_byte_1": "1",
+                "text": "・Фиона с радостью согласилась сыграть для нас\nна пианино! ...Теперь нам просто нужно найти\nпианино.\n・Она сказала, что, кажется, на Мосту Двух\nДраконов есть пианино, так что стоит хотя бы\nпоискать.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "24",
+                "unknown_byte_1": "2",
+                "text": "・Мы поговорили с младшим лейтенантом Доминик о\nпианино, и она согласилась отправить его для\nнас в часовню!",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "24",
+                "unknown_byte_1": "3",
+                "text": "・Инструктор Мэри согласилась играть на флейте\nна концерте! Более того, она принесла флейту\nиз академии, так что нам не придётся искать\nещё один инструмент!",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "24",
+                "unknown_byte_1": "4",
+                "text": "・Странствующий музыкант Андре согласился\nсыграть на скрипке на концерте! ...Нам\nповезло?",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "24",
+                "unknown_byte_1": "5",
+                "text": "・Все исполнители на месте. Вернёмся в\nСельдик и сообщим новости Розин!",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "24",
+                "unknown_byte_1": "6",
+                "text": "・Концерт прошёл с большим успехом!",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "25",
+                "unknown_byte": "2",
+                "title": "Каньон ждёт",
+                "persons": "Принц Оливерт",
+                "story_section": "7",
+                "base_ap": "4",
+                "unknown_data": "b80b00002f240000"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "25",
+                "unknown_byte_1": "31",
+                "text": "Помнишь ли ты живописные виды каньона\nАуроксов? Дни, что мы провели там, так\nвлюблены? --Постой. Не то письмо. В общем...\n\nРин, мой добрый друг, я получил известие об\nопасном монстре на тропе каньона Ауроксов.\nНе будешь ли ты так любезен позаботиться о нём\nдля меня?\n\nМонстр: Вольцерон\nМесто: Тропа каньона Ауроксов 3 - вост. зона,\nв стороне от главной дороги.\n                                   - Оливерт",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "25",
+                "unknown_byte_1": "0",
+                "text": "#666c　　　　          ◆　　　　◆　　　　◆\n・И всё-таки, ДЛЯ кого была первая часть того\nписьма? ...Может, лучше и не знать. Короче\nговоря, мы победили монстра.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "26",
+                "unknown_byte": "2",
+                "title": "Карманные часы отца",
+                "persons": "Джек",
+                "story_section": "7",
+                "base_ap": "4",
+                "unknown_data": "a00f00002f240000"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "26",
+                "unknown_byte_1": "31",
+                "text": "Председатель Ирина, в свойственной ей манере,\nотдала Джеку сломанные карманные часы.\nАлиса сказала нам, что это был подарок от её\nотца, и она не очень довольна, что её мать\nтак пренебрегает им. Естественно, мы\nвмешались и предложили помочь починить часы.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "26",
+                "unknown_byte_1": "0",
+                "text": "#666c　　　　          ◆　　　　◆　　　　◆\n・Нам понадобятся три вещи для починки часов:\n1) Регулятор давления тип IV - мы можем\n   найти его в исследовательском центре...\n2) Лист из специального сплава - мы сможем\n   получить его у начальника шахты.\n3) Микроосциллятор - об этом придётся\n   спросить Гвина.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "26",
+                "unknown_byte_1": "1",
+                "text": "・Мы получили регулятор давления тип IV от\nстудентов у Рорского технологического\nинститута!",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "26",
+                "unknown_byte_1": "2",
+                "text": "・Мы спросили начальника шахты в Заксене, есть\nли у него листы из специального сплава, и он\nсказал, что мы можем получить их на грузовой\nстанции в шахте, если скажем, что мы от\nнего.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "26",
+                "unknown_byte_1": "3",
+                "text": "・Мы получили лист из специального сплава от\nшахтёра на станции!",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "26",
+                "unknown_byte_1": "4",
+                "text": "・Гвин сказал нам, что отец Алисы использовал\nземурийскую руду для осциллятора карманных\nчасов. Может быть, Джордж сможет поделиться\nкрошечным кусочком.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "26",
+                "unknown_byte_1": "5",
+                "text": "・Джордж дал нам крупицу земурийской руды. Это\nдолжно помочь нам починить часы!",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "26",
+                "unknown_byte_1": "6",
+                "text": "・Теперь у нас есть все три предмета,\nнеобходимые для ремонта. Отнесём их Джеку.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "26",
+                "unknown_byte_1": "7",
+                "text": "・Алиса смогла починить часы и вернуть их\nматери. Та, казалось, была как всегда\nнезаинтересована, но всё же произнесла\nнесколько слов слабой похвалы в адрес\nусилий Алисы. Хоть что-то.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "27",
+                "unknown_byte": "2",
+                "title": "Мой Ёрмунганд против",
+                "persons": "Принц Оливерт",
+                "story_section": "8",
+                "base_ap": "4",
+                "unknown_data": "ac0d000000000000"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "27",
+                "unknown_byte_1": "31",
+                "text": "Когда мы говорим о змеях, что приходит на ум,\nкак не ужасный Ёрмунганд? Но по правде говоря,\nу меня есть свой собственный великолепный\nзмей, которого я показываю на вечеринках и в\nособых случаях. На самом деле...\n\n[Рин, это майор Вандер. Не обращай внимания\nна принца и просто убей монстра.]\n\nМонстр: Ёрмунганд\nМесто: Восточное шоссе Сельдика 3 - у утёса\nна дальнем севере.\n                                   - Оливерт",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "27",
+                "unknown_byte_1": "0",
+                "text": "#666c　　　　          ◆　　　　◆　　　　◆\n・Мы победили монстра! ...Надеюсь, когда-нибудь\nя смогу выбросить из головы мысль о\nЁрмунганде Его Величества...",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "28",
+                "unknown_byte": "2",
+                "title": "Заксенская бойня",
+                "persons": "Принц Оливерт",
+                "story_section": "8",
+                "base_ap": "4",
+                "unknown_data": "ac0d000000000000"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "28",
+                "unknown_byte_1": "31",
+                "text": "Однажды увидел я даму из Рора,\nУхаживать стал за ней скоро.\nНо лишь на колени присел,\nКак удар прилетел.\nТеперь нет у меня ухажёра.\n\nАх, как я люблю сочинять остроумные стихи!\n\nМонстр: Геспард\nМесто: Горная тропа Заксен 2 - перед\nводопадом\n                                   - Оливерт",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "28",
+                "unknown_byte_1": "0",
+                "text": "#666c　　　　          ◆　　　　◆　　　　◆\n・С Геспардом покончено... но если он пришлёт\nнам стих в следующей просьбе, пусть сам идёт\nубивать монстра.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "29",
+                "unknown_byte": "2",
+                "title": "Норд-норд-ост",
+                "persons": "Принц Оливерт",
+                "story_section": "8",
+                "base_ap": "4",
+                "unknown_data": "ac0d000000000000"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "29",
+                "unknown_byte_1": "31",
+                "text": "Холмы ожили, дорогой Рин, от звуков\nмонстров. Точнее, нагорье, и я бы хотел,\nчтобы ты лично этим занялся.\n\nНадеюсь, твои навыки ещё не достигли плато,\nпотому что тебе придётся лететь, как — осмелюсь\nсказать — ВЕТЕР, чтобы справиться с этой\nугрозой.\n\nМонстр: Гилдер Квейкер\nМесто: Нордское нагорье - северо-восток,\nсеверное плато\n                                   - Оливерт",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "29",
+                "unknown_byte_1": "0",
+                "text": "#666c　　　　          ◆　　　　◆　　　　◆\n・Этот Гилдер Квейкер больше не будет ни\nгильдить, ни квейкерить! О нет... кажется,\nпросьбы принца действительно разлагают мой\nмозг...",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "30",
+                "unknown_byte": "2",
+                "title": "Юмир, близко ли, далеко",
+                "persons": "Принц Оливерт",
+                "story_section": "8",
+                "base_ap": "4",
+                "unknown_data": "ac0d000000000000"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "30",
+                "unknown_byte_1": "31",
+                "text": "Опасность подкралась к дому юного Рина:\nстранный зверь сеет раздоры на пути в Юмир!\n\nОтветит ли он на зов? Будет ли его сестра\nвпечатлена его мужскими подвигами?\nПрочитает ли это кто-нибудь?\n\nМонстр: Сасквоч\nМесто: Долина Юмир - самая глубокая область\n                                   - Оливерт",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "30",
+                "unknown_byte_1": "0",
+                "text": "#666c　　　　          ◆　　　　◆　　　　◆\n・Скорее Сас-КВОЧЕН! ...Ладно, я закончил.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "31",
+                "unknown_byte": "2",
+                "title": "Отсутствующий священник",
+                "persons": "Отец Пауло",
+                "story_section": "8",
+                "base_ap": "4",
+                "unknown_data": "9411000000000000"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "31",
+                "unknown_byte_1": "31",
+                "text": "Отец Пауло беспокоится о ком-то, и его\nтревоги только усиливаются с приближением\nбитвы в Хаймдалле...\n\nНам лучше помочь ему с расследованием!",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "31",
+                "unknown_byte_1": "0",
+                "text": "#666c　　　　          ◆　　　　◆　　　　◆\n・Отец Пауло сказал нам, что странствующий\nсвященник отправился в сторону церкви в\nСельдике, и попросил нас проверить, добрался\nли он.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "31",
+                "unknown_byte_1": "1",
+                "text": "・Мы добрались до Сельдика и спросили отца\nЗирбеля о странствующем священнике. Он\nподтвердил, что тот благополучно прибыл, но\nуже отправился в собор Бэрхарда. Что ж,\nкуда он, туда и мы.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "31",
+                "unknown_byte_1": "2",
+                "text": "・Мы отправились в Бэрхард и поговорили с\nархиепископом Амоном, только чтобы узнать,\nчто странствующий священник уже уехал в\nчасовню Леграма. Чёрт, он быстр.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "31",
+                "unknown_byte_1": "3",
+                "text": "・Мы прибыли в Леграм и поговорили с отцом\nГамилькаром, который сказал нам, что\nсвященник уже уехал в собор Рора. Ладно,\nэто уже просто смешно...",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "31",
+                "unknown_byte_1": "4",
+                "text": "・Мы поговорили с архиепископом Хомсом в соборе\nРора, который подтвердил, что странствующий\nсвященник — какой сюрприз — уже приходил и\nуходил. На этот раз он, видимо, отправился в\nЮмир. Я найду тебя, священник. Можешь на это\nрассчитывать.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "31",
+                "unknown_byte_1": "5",
+                "text": "・Мы прибыли в Юмир и поговорили с отцом\nБернардом. Оказывается, странствующий\nсвященник оставил нам письмо, написанное так,\nсловно он знал о каждом нашем шаге. В нём\nон сказал, что направляется в западную\nЭребонию, и попросил нас передать отцу\nПауло, что он в целости и сохранности.\n・Мы до сих пор не знаем, кто этот священник и\nкак ему удавалось оставаться на шаг впереди,\nно, похоже, сегодня мы ответов не получим.\nТем не менее, мы смогли успокоить отца\nПауло.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "32",
+                "unknown_byte": "6",
+                "title": "Решающая гонка",
+                "persons": "Анжелика",
+                "story_section": "9",
+                "base_ap": "1",
+                "unknown_data": "b80b000000000000"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "32",
+                "unknown_byte_1": "31",
+                "text": "Ты стал довольно хорошо ездить на моём старом\nбайке — настолько хорошо, что это вызвало моё\nлюбопытство. Я хочу раз и навсегда выяснить,\nкто из нас лучший гонщик, и есть только один\nспособ это сделать.\n\nЕсли ты готов принять вызов, приходи в\nинженерный корпус.\n                                   - Анжелика",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "32",
+                "unknown_byte_1": "0",
+                "text": "#666c　　　　          ◆　　　　◆　　　　◆\n・Я соревновался с Анжеликой и победил!",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "32",
+                "unknown_byte_1": "1",
+                "text": "#666c　　　　          ◆　　　　◆　　　　◆\n・Я соревновался с Анжеликой, но она всё ещё\nболее опытный гонщик, чем я...",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "33",
+                "unknown_byte": "6",
+                "title": "Классовая война",
+                "persons": "Патрик",
+                "story_section": "9",
+                "base_ap": "1",
+                "unknown_data": "b80b000000000000"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "33",
+                "unknown_byte_1": "31",
+                "text": "Дамы и господа VII класса,\n\nПришло время окончательно выяснить, какой из\nнаших классов лучше. Приходите на поле\nакадемии в полной боевой готовности и\nприготовьтесь к поражению.\n                                     - Патрик",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "33",
+                "unknown_byte_1": "0",
+                "text": "#666c　　　　          ◆　　　　◆　　　　◆\n・Не успели мы победить Патрика и Селестину,\nкак нас вызвали на бой Феррис, Винсент и\nСариффа. Мы и их победили.\n・Сразу после этого появились директор Вандик и\nинструктор Беатрикс и вызвали нас на бой — но\nнам удалось выстоять!",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "33",
+                "unknown_byte_1": "1",
+                "text": "・Не успели мы победить Патрика и Селестину,\nкак нас вызвали на бой Феррис, Винсент и\nСариффа. Мы и их победили.\n・Сразу после этого появились директор Вандик и\nинструктор Беатрикс и вызвали нас на бой —\nможете себе представить, чем это для нас\nзакончилось...",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "34",
+                "unknown_byte": "2",
+                "title": "Требуется хлам",
+                "persons": "Брэндон",
+                "story_section": "9",
+                "base_ap": "1",
+                "unknown_data": "b80b000005290000"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "34",
+                "unknown_byte_1": "31",
+                "text": "Группа студентов помогает нам устроить\nблошиный рынок, но у нас не так много\nтоваров для продажи, как хотелось бы. Не\nпоможешь исправить это?\n\nЗайди в мой магазин, и я расскажу тебе\nподробности. Заранее спасибо.\n                                     - Брэндон",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "34",
+                "unknown_byte_1": "0",
+                "text": "#666c　　　　          ◆　　　　◆　　　　◆\n・Мне нужно найти людей, у которых могут быть\nненужные вещи, которые можно продать на\nрынке. Брэндон говорит, что ему нужно ещё две,\nно больше — всегда лучше. Пора за дело!",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "34",
+                "unknown_byte_1": "1",
+                "text": "・Я спросил Михта, но он, похоже, не\nзаинтересован отдавать что-либо, не получив\nничего взамен. ...Неудивительно.\n・Интересно, что я мог бы дать ему, чтобы он\nпередумал? Я знаю, он любит скачки, так что\nэто может быть отправной точкой...",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "34",
+                "unknown_byte_1": "2",
+                "text": "・Я получил фотографию лошади от Ламберта.\nЗаинтересует ли это Михта?",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "34",
+                "unknown_byte_1": "3",
+                "text": "・Оказывается, ЕГО это заинтересовало. Он даже\nдал мне за это Миши из папье-маше! Ура...?",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "34",
+                "unknown_byte_1": "4",
+                "text": "・Я получил полную коллекцию книг «Карнелия»\nот инструктора Сары. Они идеально подойдут\nдля рынка.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "34",
+                "unknown_byte_1": "5",
+                "text": "・Я спросил у уборщика Гайлера, не знает ли\nон, где я могу достать что-нибудь на\nпродажу. Он сказал, что второкурсник из\nкакого-то клуба пытается от чего-то\nизбавиться... Может, это можно продать? Мне\nтолько нужно сначала выяснить, что это за\nстудент...",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "34",
+                "unknown_byte_1": "6",
+                "text": "・Ненужной вещью оказалась скульптура льва\nКлары. Теперь она моя!",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "34",
+                "unknown_byte_1": "7",
+                "text": "・Я отдал Брэндону все собранные предметы!\nНадеюсь, он сможет их продать...",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "35",
+                "unknown_byte": "2",
+                "title": "Поговорим о Тристе",
+                "persons": "Майкл",
+                "story_section": "9",
+                "base_ap": "1",
+                "unknown_data": "b80b000005290000"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "35",
+                "unknown_byte_1": "31",
+                "text": "Я планирую запустить новое шоу здесь, на\nРадио Триста, но мне понадобится твоя помощь,\nчтобы первый эфир прошёл идеально.\n\nЕсли у тебя есть время войти в историю радио,\nвстретимся на радиостанции Триста!\n                                   - Майкл",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "35",
+                "unknown_byte_1": "0",
+                "text": "#666c　　　　          ◆　　　　◆　　　　◆\n・Мне нужно собрать комментарии о том, что\nделает Тристу прекрасной, от разных людей из\nследующих категорий:\n1) Пожилой человек\n2) Ребёнок\n3) Рабочий\n4) Студент (трудолюбивый первокурсник)\n5) Учитель (который даст приличный коммент)",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "35",
+                "unknown_byte_1": "1",
+                "text": "・Получил комментарий от «ребёнка» — Тайзела!",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "35",
+                "unknown_byte_1": "2",
+                "text": "・Получил комментарий от «пожилого человека» —\nАббота!",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "35",
+                "unknown_byte_1": "3",
+                "text": "・Получил комментарий от «рабочего» — Лотты!",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "35",
+                "unknown_byte_1": "4",
+                "text": "・Получил комментарий от «студента» — Моники!",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "35",
+                "unknown_byte_1": "5",
+                "text": "・Получил комментарий от «учителя» —\nзавуча Хайнриха!",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "35",
+                "unknown_byte_1": "6",
+                "text": "・Теперь у меня есть все необходимые\nкомментарии! Пора отнести их Майклу.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "35",
+                "unknown_byte_1": "7",
+                "text": "・Я нашёл на столе в радиостанции Триста\nписьмо, подписанное только «Дива».",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "35",
+                "unknown_byte_1": "8",
+                "text": "・Я отдал все комментарии Майклу! Надеюсь, новое\nшоу пройдёт без сучка без задоринки.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "35",
+                "unknown_byte_1": "9",
+                "text": "・Я отдал все комментарии Майклу! Похоже,\nписьмо было от Мисти...",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "36",
+                "unknown_byte": "2",
+                "title": "Рыбацкие страсти",
+                "persons": "Кеннет",
+                "story_section": "9",
+                "base_ap": "1",
+                "unknown_data": "b80b000005290000"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "36",
+                "unknown_byte_1": "31",
+                "text": "Мы с братом устраиваем рыбацкую битву, но\nмне понадобится твоя помощь, чтобы всё\nполучилось.\n\nТак что, если будет время, мы будем на месте\nдля рыбалки в Тристе.\n                                    - Кеннет",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "36",
+                "unknown_byte_1": "0",
+                "text": "#666c　　　　          ◆　　　　◆　　　　◆\n・Кеннет объяснил, что собирается сразиться со\nсвоим братом в рыбацкой битве за\nдоговорной брак Аннабелль, и он хочет,\nчтобы я был его помощником.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "36",
+                "unknown_byte_1": "1",
+                "text": "・Это значит, что мне придётся сразиться в\nпервой части битвы с помощником брата\nКеннета. Наша цель: Благородный Карп.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "36",
+                "unknown_byte_1": "2",
+                "text": "・Мне удалось поймать Благородного Карпа, но\nНарсес не отставал и тоже поймал одного.\n・Теперь всё зависит от битвы между Кеннетом\nи его братом. Они оба будут пытаться\nпоймать Гигантского Меченосца.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "36",
+                "unknown_byte_1": "3",
+                "text": "・Кеннет поймал Гигантского Меченосца, выиграв\nбитву и освободив Аннабелль от брака!",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "37",
+                "unknown_byte": "2",
+                "title": "Уроки плавания: Возвращение",
+                "persons": "Майор Найтхардт",
+                "story_section": "9",
+                "base_ap": "1",
+                "unknown_data": "b80b000005290000"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "37",
+                "unknown_byte_1": "31",
+                "text": "Майор Найтхардт снова предложил\nтренировать парней из VII класса.\n\nЧестно говоря, в этом нет ничего\nудивительного, но идея урока плавания в это\nвремя года — это очень, очень странно...",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "37",
+                "unknown_byte_1": "0",
+                "text": "#666c　　　　          ◆　　　　◆　　　　◆\n・Он начал тренировать нас по своему\nзнаменитому методу «Мужского пути», но как\nтолько мы начали, появились девушки. Я хорошо\nплавал и с удовольствием играл со всеми в\nсалочки в бассейне, так что день удался.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "37",
+                "unknown_byte_1": "1",
+                "text": "#666c　　　　          ◆　　　　◆　　　　◆\n・Он начал тренировать нас по своему\nзнаменитому методу «Мужского пути», но как\nтолько мы начали, появились девушки. Я плавал\nне так хорошо, как хотелось бы, но мне\nпонравилось играть в салочки, так что это всё\nискупило.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSTitle",
+            "values": {
+                "unknown_short": "38",
+                "unknown_byte": "2",
+                "title": "Шарон, с любовью",
+                "persons": "Антон",
+                "story_section": "9",
+                "base_ap": "1",
+                "unknown_data": "b80b000000000000"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "38",
+                "unknown_byte_1": "31",
+                "text": "Антон хочет сблизиться с Шарон, что, по сути,\nозначает, что он хочет, чтобы мы их свели.\n...Ну, поехали.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "38",
+                "unknown_byte_1": "0",
+                "text": "#666c　　　　          ◆　　　　◆　　　　◆\n・Во-первых, он хочет, чтобы мы помогли ему\nвыбрать для неё подарок. Посмотрим, что есть в\nмагазинах Тристы.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "38",
+                "unknown_byte_1": "1",
+                "text": "・Я порекомендовал шикарные розы.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "38",
+                "unknown_byte_1": "2",
+                "text": "・Я порекомендовал цветочный чайный сервиз.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "38",
+                "unknown_byte_1": "3",
+                "text": "・Я порекомендовал «Еду имперского двора».",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "38",
+                "unknown_byte_1": "4",
+                "text": "・Я порекомендовал красивое цельное платье.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "38",
+                "unknown_byte_1": "5",
+                "text": "・Я порекомендовал деревянный браслет.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "38",
+                "unknown_byte_1": "6",
+                "text": "・Я порекомендовал странный камень.\nДамы любят странные камни.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "38",
+                "unknown_byte_1": "7",
+                "text": "・Я предложил ему купить и деревянный\nбраслет, и странный камень, и соединить их.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "38",
+                "unknown_byte_1": "8",
+                "text": "・Шарон, кажется, очень понравился подарок.\n・Антон в итоге отбросил все планы и признался\nШарон в любви. Хоть он и не получил\nжелаемого ответа, он получил поцелуй в щёку,\nчто, честно говоря, лучше, чем кто-либо из\nнас ожидал. Он тоже казался весьма довольным\nисходом.",
+                "unknown_byte_2": "0"
+            }
+        },
+        {
+            "header": "QSText",
+            "values": {
+                "id": "38",
+                "unknown_byte_1": "9",
+                "text": "・Антон в итоге отбросил все планы и признался\nШарон в любви. Хоть он и не получил\nжелаемого ответа, он получил поцелуй в щёку,\nчто, честно говоря, лучше, чем кто-либо из\nнас ожидал. Он тоже казался весьма довольным\nисходом.",
+                "unknown_byte_2": "0"
+            }
+        }
+    ]
+}

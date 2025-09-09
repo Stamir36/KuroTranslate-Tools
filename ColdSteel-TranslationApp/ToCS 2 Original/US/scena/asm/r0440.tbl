@@ -1,0 +1,104 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	BTLSET000					;r0440.scn 52
+	DD	BTLSET001					;r0440.scn 66
+	DD	BTLSET010					;r0440.scn 72
+	DD	BTLSET_KZ0					;r0440.scn 79
+	DD	BTLSET_EV0					;r0440.scn 87
+	DD	PreInit					;r0440.scn 97
+	DD	Init					;r0440.scn 113
+	DD	Init_Replay					;r0440.scn 221
+	DD	Reinit					;r0440.scn 255
+	DD	LP_kbox00					;r0440.scn 291
+	DD	LP_kbox00_Get					;r0440.scn 377
+	DD	LP_mbox00					;r0440.scn 510
+	DD	LP_mbox00_Get					;r0440.scn 520
+	DD	LP_tbox00					;r0440.scn 566
+	DD	AV_03007					;r0440.scn 591
+	DD	Npc_Table					;r0440.scn 600
+	DD	stefan_setting					;r0440.scn 616
+	DD	EV_03_20_00					;r0440.scn 651
+	DD	ET_03_20_00_CommonMove					;r0440.scn 1683
+	DD	SB_STUDENT14_STEFAN_03					;r0440.scn 1707
+	DD	SB_STUDENT14_04					;r0440.scn 1928
+	DD	ET_SB_STUDENT14_04_MoveMonA					;r0440.scn 2127
+	DD	ET_SB_STUDENT14_04_MoveMonB					;r0440.scn 2132
+	DD	SB_STUDENT14_04B					;r0440.scn 2141
+	DD	YR_04_03					;r0440.scn 2668
+	DD	_LP_kbox00_Get					;r0440.scn 3127
+	DD	_LP_mbox00_Get					;r0440.scn 3127
+	DD	_LP_tbox00					;r0440.scn 3127
+	DD	_EV_03_20_00					;r0440.scn 3127
+	DD	_YR_04_03					;r0440.scn 3127
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_BTLSET000
+	DW	FUNCNAME_BTLSET001
+	DW	FUNCNAME_BTLSET010
+	DW	FUNCNAME_BTLSET_KZ0
+	DW	FUNCNAME_BTLSET_EV0
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_LP_kbox00
+	DW	FUNCNAME_LP_kbox00_Get
+	DW	FUNCNAME_LP_mbox00
+	DW	FUNCNAME_LP_mbox00_Get
+	DW	FUNCNAME_LP_tbox00
+	DW	FUNCNAME_AV_03007
+	DW	FUNCNAME_Npc_Table
+	DW	FUNCNAME_stefan_setting
+	DW	FUNCNAME_EV_03_20_00
+	DW	FUNCNAME_ET_03_20_00_CommonMove
+	DW	FUNCNAME_SB_STUDENT14_STEFAN_03
+	DW	FUNCNAME_SB_STUDENT14_04
+	DW	FUNCNAME_ET_SB_STUDENT14_04_MoveMonA
+	DW	FUNCNAME_ET_SB_STUDENT14_04_MoveMonB
+	DW	FUNCNAME_SB_STUDENT14_04B
+	DW	FUNCNAME_YR_04_03
+	DW	FUNCNAME__LP_kbox00_Get
+	DW	FUNCNAME__LP_mbox00_Get
+	DW	FUNCNAME__LP_tbox00
+	DW	FUNCNAME__EV_03_20_00
+	DW	FUNCNAME__YR_04_03
+FUNCTION_NAME_TABLE_NUM	EQU	30
+;=====================================================================
+FUNCNAME_BTLSET000:	DB	0
+FUNCNAME_BTLSET001:	DB	0
+FUNCNAME_BTLSET010:	DB	0
+FUNCNAME_BTLSET_KZ0:	DB	0
+FUNCNAME_BTLSET_EV0:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_LP_kbox00:	DB	'LP_kbox00',0
+FUNCNAME_LP_kbox00_Get:	DB	'LP_kbox00_Get',0
+FUNCNAME_LP_mbox00:	DB	'LP_mbox00',0
+FUNCNAME_LP_mbox00_Get:	DB	'LP_mbox00_Get',0
+FUNCNAME_LP_tbox00:	DB	'LP_tbox00',0
+FUNCNAME_AV_03007:	DB	'AV_03007',0
+FUNCNAME_Npc_Table:	DB	'Npc_Table',0
+FUNCNAME_stefan_setting:	DB	'stefan_setting',0
+FUNCNAME_EV_03_20_00:	DB	'EV_03_20_00',0
+FUNCNAME_ET_03_20_00_CommonMove:	DB	'ET_03_20_00_CommonMove',0
+FUNCNAME_SB_STUDENT14_STEFAN_03:	DB	'SB_STUDENT14_STEFAN_03',0
+FUNCNAME_SB_STUDENT14_04:	DB	'SB_STUDENT14_04',0
+FUNCNAME_ET_SB_STUDENT14_04_MoveMonA:	DB	'ET_SB_STUDENT14_04_MoveMonA',0
+FUNCNAME_ET_SB_STUDENT14_04_MoveMonB:	DB	'ET_SB_STUDENT14_04_MoveMonB',0
+FUNCNAME_SB_STUDENT14_04B:	DB	'SB_STUDENT14_04B',0
+FUNCNAME_YR_04_03:	DB	'YR_04_03',0
+FUNCNAME__LP_kbox00_Get:	DB	'_LP_kbox00_Get',0
+FUNCNAME__LP_mbox00_Get:	DB	'_LP_mbox00_Get',0
+FUNCNAME__LP_tbox00:	DB	'_LP_tbox00',0
+FUNCNAME__EV_03_20_00:	DB	'_EV_03_20_00',0
+FUNCNAME__YR_04_03:	DB	'_YR_04_03',0

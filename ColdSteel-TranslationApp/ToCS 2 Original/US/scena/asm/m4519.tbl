@@ -1,0 +1,92 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;m4519.scn 43
+	DD	BTLSET000					;m4519.scn 51
+	DD	PreInit					;m4519.scn 61
+	DD	Init					;m4519.scn 76
+	DD	Init_Replay					;m4519.scn 141
+	DD	Reinit					;m4519.scn 190
+	DD	LP_dropItem00					;m4519.scn 208
+	DD	LP_healobject					;m4519.scn 216
+	DD	LP_healobject_k					;m4519.scn 224
+	DD	LP_warpobj00					;m4519.scn 244
+	DD	WP_WarpOut					;m4519.scn 365
+	DD	AV_04004					;m4519.scn 401
+	DD	EV_04_15_00					;m4519.scn 432
+	DD	EV_04_15_01					;m4519.scn 2267
+	DD	ET_04_15_01_DUBARRY					;m4519.scn 3659
+	DD	ET_04_15_JUMP_BLBRANC					;m4519.scn 3673
+	DD	ET_04_15_JUMP_DUBARRY					;m4519.scn 3694
+	DD	EV_04_15_03					;m4519.scn 3718
+	DD	SB_04_REVISIT1F					;m4519.scn 4511
+	DD	_LP_warpobj00					;m4519.scn 4590
+	DD	_WP_WarpOut					;m4519.scn 4590
+	DD	_EV_04_15_00					;m4519.scn 4590
+	DD	_EV_04_15_01					;m4519.scn 4590
+	DD	_ET_04_15_JUMP_BLBRANC					;m4519.scn 4590
+	DD	_ET_04_15_JUMP_DUBARRY					;m4519.scn 4590
+	DD	_EV_04_15_03					;m4519.scn 4590
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_BTLSET000
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_LP_dropItem00
+	DW	FUNCNAME_LP_healobject
+	DW	FUNCNAME_LP_healobject_k
+	DW	FUNCNAME_LP_warpobj00
+	DW	FUNCNAME_WP_WarpOut
+	DW	FUNCNAME_AV_04004
+	DW	FUNCNAME_EV_04_15_00
+	DW	FUNCNAME_EV_04_15_01
+	DW	FUNCNAME_ET_04_15_01_DUBARRY
+	DW	FUNCNAME_ET_04_15_JUMP_BLBRANC
+	DW	FUNCNAME_ET_04_15_JUMP_DUBARRY
+	DW	FUNCNAME_EV_04_15_03
+	DW	FUNCNAME_SB_04_REVISIT1F
+	DW	FUNCNAME__LP_warpobj00
+	DW	FUNCNAME__WP_WarpOut
+	DW	FUNCNAME__EV_04_15_00
+	DW	FUNCNAME__EV_04_15_01
+	DW	FUNCNAME__ET_04_15_JUMP_BLBRANC
+	DW	FUNCNAME__ET_04_15_JUMP_DUBARRY
+	DW	FUNCNAME__EV_04_15_03
+FUNCTION_NAME_TABLE_NUM	EQU	26
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_BTLSET000:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_LP_dropItem00:	DB	'LP_dropItem00',0
+FUNCNAME_LP_healobject:	DB	'LP_healobject',0
+FUNCNAME_LP_healobject_k:	DB	'LP_healobject_k',0
+FUNCNAME_LP_warpobj00:	DB	'LP_warpobj00',0
+FUNCNAME_WP_WarpOut:	DB	'WP_WarpOut',0
+FUNCNAME_AV_04004:	DB	'AV_04004',0
+FUNCNAME_EV_04_15_00:	DB	'EV_04_15_00',0
+FUNCNAME_EV_04_15_01:	DB	'EV_04_15_01',0
+FUNCNAME_ET_04_15_01_DUBARRY:	DB	'ET_04_15_01_DUBARRY',0
+FUNCNAME_ET_04_15_JUMP_BLBRANC:	DB	'ET_04_15_JUMP_BLBRANC',0
+FUNCNAME_ET_04_15_JUMP_DUBARRY:	DB	'ET_04_15_JUMP_DUBARRY',0
+FUNCNAME_EV_04_15_03:	DB	'EV_04_15_03',0
+FUNCNAME_SB_04_REVISIT1F:	DB	'SB_04_REVISIT1F',0
+FUNCNAME__LP_warpobj00:	DB	'_LP_warpobj00',0
+FUNCNAME__WP_WarpOut:	DB	'_WP_WarpOut',0
+FUNCNAME__EV_04_15_00:	DB	'_EV_04_15_00',0
+FUNCNAME__EV_04_15_01:	DB	'_EV_04_15_01',0
+FUNCNAME__ET_04_15_JUMP_BLBRANC:	DB	'_ET_04_15_JUMP_BLBRANC',0
+FUNCNAME__ET_04_15_JUMP_DUBARRY:	DB	'_ET_04_15_JUMP_DUBARRY',0
+FUNCNAME__EV_04_15_03:	DB	'_EV_04_15_03',0

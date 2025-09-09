@@ -1,0 +1,71 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;r0220.scn 41
+	DD	BTLSET001					;r0220.scn 48
+	DD	BTLSET_QS2403					;r0220.scn 59
+	DD	PreInit					;r0220.scn 69
+	DD	Init					;r0220.scn 85
+	DD	Init_Replay					;r0220.scn 162
+	DD	Reinit					;r0220.scn 190
+	DD	LP_tbox00					;r0220.scn 209
+	DD	EV_03_30_06					;r0220.scn 261
+	DD	ET_03_30_06_PANZERSOLDAT000					;r0220.scn 504
+	DD	ET_03_30_06_PANZERSOLDAT001					;r0220.scn 527
+	DD	ET_03_30_06_LoopQuake					;r0220.scn 552
+	DD	QS_2403_BTL_Entry_Check					;r0220.scn 583
+	DD	QS_2403_COMP					;r0220.scn 595
+	DD	_LP_tbox00					;r0220.scn 677
+	DD	_EV_03_30_06					;r0220.scn 677
+	DD	_ET_03_30_06_PANZERSOLDAT000					;r0220.scn 677
+	DD	_ET_03_30_06_PANZERSOLDAT001					;r0220.scn 677
+	DD	_QS_2403_COMP					;r0220.scn 677
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_BTLSET001
+	DW	FUNCNAME_BTLSET_QS2403
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_LP_tbox00
+	DW	FUNCNAME_EV_03_30_06
+	DW	FUNCNAME_ET_03_30_06_PANZERSOLDAT000
+	DW	FUNCNAME_ET_03_30_06_PANZERSOLDAT001
+	DW	FUNCNAME_ET_03_30_06_LoopQuake
+	DW	FUNCNAME_QS_2403_BTL_Entry_Check
+	DW	FUNCNAME_QS_2403_COMP
+	DW	FUNCNAME__LP_tbox00
+	DW	FUNCNAME__EV_03_30_06
+	DW	FUNCNAME__ET_03_30_06_PANZERSOLDAT000
+	DW	FUNCNAME__ET_03_30_06_PANZERSOLDAT001
+	DW	FUNCNAME__QS_2403_COMP
+FUNCTION_NAME_TABLE_NUM	EQU	19
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_BTLSET001:	DB	0
+FUNCNAME_BTLSET_QS2403:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_LP_tbox00:	DB	'LP_tbox00',0
+FUNCNAME_EV_03_30_06:	DB	'EV_03_30_06',0
+FUNCNAME_ET_03_30_06_PANZERSOLDAT000:	DB	'ET_03_30_06_PANZERSOLDAT000',0
+FUNCNAME_ET_03_30_06_PANZERSOLDAT001:	DB	'ET_03_30_06_PANZERSOLDAT001',0
+FUNCNAME_ET_03_30_06_LoopQuake:	DB	'ET_03_30_06_LoopQuake',0
+FUNCNAME_QS_2403_BTL_Entry_Check:	DB	'QS_2403_BTL_Entry_Check',0
+FUNCNAME_QS_2403_COMP:	DB	'QS_2403_COMP',0
+FUNCNAME__LP_tbox00:	DB	'_LP_tbox00',0
+FUNCNAME__EV_03_30_06:	DB	'_EV_03_30_06',0
+FUNCNAME__ET_03_30_06_PANZERSOLDAT000:	DB	'_ET_03_30_06_PANZERSOLDAT000',0
+FUNCNAME__ET_03_30_06_PANZERSOLDAT001:	DB	'_ET_03_30_06_PANZERSOLDAT001',0
+FUNCNAME__QS_2403_COMP:	DB	'_QS_2403_COMP',0

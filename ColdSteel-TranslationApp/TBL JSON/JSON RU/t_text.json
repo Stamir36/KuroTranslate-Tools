@@ -1,0 +1,4558 @@
+{
+    "version": "v2",
+    "headers": [
+        "TextTableData"
+    ],
+    "entries": [
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "0",
+                "text": "Поговорить с"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "1",
+                "text": "Сесть верхом"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "2",
+                "text": "Спешиться"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "3",
+                "text": "#166IУскорение"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "4",
+                "text": "#160IВзобраться"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "5",
+                "text": "#160IСпуститься"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "6",
+                "text": "#160IОткрыть"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "7",
+                "text": "#160IПодобрать"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "8",
+                "text": "#160IИспользовать"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "9",
+                "text": "#160IРыбачить"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "10",
+                "text": "#160IАтаковать"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "11",
+                "text": "#166IГаз #164IТормоз/Реверс"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "12",
+                "text": "#160IВыйти"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "13",
+                "text": "#160IВойти в ванну для ног"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "14",
+                "text": "Персонажи, которых вы можете встретить"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "15",
+                "text": "#162IЛошадь"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "16",
+                "text": "#163IБайк"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "17",
+                "text": "#163IСкрыть значки"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "20",
+                "text": "#162I: Осмотреть"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "18",
+                "text": "#168I: Вернуться на «Дерзкий»"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "19",
+                "text": "#1CВернуться на «Дерзкий»?"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "24",
+                "text": "Да"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "25",
+                "text": "Нет"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "26",
+                "text": "#176IПрокрутка #177IВращать камеру #164I#166IМасштаб"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "27",
+                "text": "Алиса Р"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "28",
+                "text": "#144IТекущее местоположение"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "29",
+                "text": "#159IСтанция зарядки орбментов"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "30",
+                "text": "#149IСундук с сокровищами"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "31",
+                "text": "#147IКвестовый монстр"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "630",
+                "text": "#148IСияющая Пом"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "33",
+                "text": "#156IКвестовое событие"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "34",
+                "text": "#154IСюжетное событие"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "35",
+                "text": "#155IСобытие связи"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "37",
+                "text": "#128IПереключатель"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "38",
+                "text": "#129IУстройство телепортации"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "39",
+                "text": "#158IТочка восстановления"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "40",
+                "text": "#153IМесто для рыбалки"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "41",
+                "text": "#146IМагазин"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "42",
+                "text": "#130IСундук с монстром"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "32",
+                "text": "#136IКриптид"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "45",
+                "text": "#138IУстройство телепортации"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "21",
+                "text": "#160IПропустить событие"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "22",
+                "text": "~ПАУЗА~\nОбратите внимание, что пауза и пропуск событий являются функциями отладки."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "23",
+                "text": "#168IПропустить событие"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "46",
+                "text": "Сменить снаряжение."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "47",
+                "text": "Сменить кварц и использовать искусства."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "48",
+                "text": "Использовать предметы."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "49",
+                "text": "Проверить статус и навыки."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "50",
+                "text": "Проверить боевые связи."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "51",
+                "text": "Настроить порядок и построение отряда, а также установить связи."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "52",
+                "text": "Просмотреть содержимое различных записных книжек."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "53",
+                "text": "Сохранить и загрузить данные, а также изменить настройки игры."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "54",
+                "text": "Сохранить данные."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "55",
+                "text": "Загрузить данные."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "56",
+                "text": "Удалить данные сохранения."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "57",
+                "text": "Поделиться данными сохранения с версией для PlayStation㍻Vita,\nиспользуя PlayStation㊥Network."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "58",
+                "text": "Поделиться данными сохранения с версией для PlayStation㍻3,\nиспользуя PlayStation㊥Network."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "59",
+                "text": "Изменить настройки."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "60",
+                "text": "Вернуться на главный экран."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "61",
+                "text": "Вернуться на главный экран?\n(Весь несохранённый прогресс будет утерян.)"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "62",
+                "text": "Загрузить текущий прогресс в PlayStation㊥Network."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "63",
+                "text": "Загрузить прогресс из PlayStation㊥Network."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "64",
+                "text": "Настроить громкость фоновой музыки."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "65",
+                "text": "Настроить громкость звуковых эффектов."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "66",
+                "text": "Настроить громкость голоса."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "67",
+                "text": "Изменить настройки вертикальной камеры."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "68",
+                "text": "Изменить настройки горизонтальной камеры."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "69",
+                "text": "Установить, какую вкладку записной книжки открывает кнопка L2."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "70",
+                "text": "Установить, какую вкладку записной книжки открывает кнопка R2."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "71",
+                "text": "Изменить отображение миникарты."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "72",
+                "text": "Включить или выключить вибрацию контроллера.\nВибрация должна быть сначала включена в системных настройках."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "73",
+                "text": "Настроить кнопки."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "74",
+                "text": "Настроить параметры дисплея."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "75",
+                "text": "Изменить действие кнопки «вверх» на крестовине."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "76",
+                "text": "Изменить действие кнопки «вниз» на крестовине."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "77",
+                "text": "Изменить действие кнопки «влево» на крестовине."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "78",
+                "text": "Изменить действие кнопки «вправо» на крестовине."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "79",
+                "text": "Изменить действие кнопки L1."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "80",
+                "text": "Изменить действие кнопки L."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "81",
+                "text": "Изменить действие кнопки R1."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "82",
+                "text": "Изменить действие кнопки R."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "83",
+                "text": "Изменить действие кнопки ○."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "84",
+                "text": "Изменить, что можно делать во время воспроизведения голосовой реплики.\nВыбор «свободно» позволяет разговаривать с NPC и исследовать."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "85",
+                "text": "Убрать"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "86",
+                "text": "Убрать."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "87",
+                "text": "Экипировать оружие."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "88",
+                "text": "Экипировать одежду."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "89",
+                "text": "Экипировать обувь."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "90",
+                "text": "Экипировать аксессуар."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "91",
+                "text": "Экипировать костюм."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "92",
+                "text": "Экипировать насадку."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "93",
+                "text": "#1CСейчас нельзя экипировать."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "94",
+                "text": "будет установлено как S-приём."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "95",
+                "text": "уже установлено как S-приём."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "96",
+                "text": "×%2d"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "97",
+                "text": "#1CНичего не произошло."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "98",
+                "text": "#3C%s#1C x %d было выброшено."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "99",
+                "text": "#1CЭто не возымело эффекта."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "100",
+                "text": "#1C%s восстановил(а) #3C%d#1C ОЗ."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "101",
+                "text": "#1C%s зарядил(а) #3C%d#1C ОЭ."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "102",
+                "text": "#1C%s восстановил(а) #3C%d#1C ОП."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "103",
+                "text": "#1C%s при смерти."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "104",
+                "text": "будет использовано."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "105",
+                "text": "уже использовано."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "106",
+                "text": "Использовать искусства."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "107",
+                "text": "Установить кварц."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "108",
+                "text": "#1CЭтот мастер-кварц уже экипирован."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "109",
+                "text": "#1C%s уже использует этот мастер-кварц.\nОбменять мастер-кварцы?"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "110",
+                "text": "#55IНе установлено"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "111",
+                "text": "Не установлено"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "112",
+                "text": "#72I#184IНе открыто"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "113",
+                "text": "#1CЭтот слот не открыт."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "114",
+                "text": "#1CАвтоматически установить кварц во все пустые слоты?"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "115",
+                "text": "Сбалансированный"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "116",
+                "text": "Приоритет на физический урон"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "117",
+                "text": "Приоритет на магический урон"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "118",
+                "text": "Приоритет на скорость"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "119",
+                "text": "Отмена"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "120",
+                "text": "#1CУбрать все кварцы?"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "121",
+                "text": "#175I: Изменить порядок в отряде"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "122",
+                "text": "#168I: Меню сохранения"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "123",
+                "text": "#160I: Переключить"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "124",
+                "text": "#162I: Сменить лидера"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "125",
+                "text": "#177I: Вращать персонажа #180I#182I: Увеличить/Уменьшить"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "126",
+                "text": "#177I: Вращать персонажа #162I＋#164I#166I: Увеличить/Уменьшить"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "127",
+                "text": "#162I: Посмотреть искусства #168I: Авто-экипировка #170I: Убрать всё"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "128",
+                "text": "#162I: Переключить страницу"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "129",
+                "text": "#160I: Переместить"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "130",
+                "text": "#162I: Установить связь"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "131",
+                "text": "#162I: Разорвать связь"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "132",
+                "text": "Использовать"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "133",
+                "text": "Выбросить"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "134",
+                "text": "？？？？"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "135",
+                "text": "★？？？？"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "136",
+                "text": "#1CЗакрыть походное меню и начать матч?"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "137",
+                "text": "#1CСейчас нельзя сохраниться."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "138",
+                "text": "#1CНельзя сформировать отряд, состоящий только из павших членов."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "139",
+                "text": "["
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "140",
+                "text": "]"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "141",
+                "text": "･"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "142",
+                "text": "["
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "143",
+                "text": "]"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "144",
+                "text": "Лечение"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "145",
+                "text": "Аннулирование"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "146",
+                "text": "%d ходов"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "147",
+                "text": "Атаки/навыки вызывают"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "148",
+                "text": "Завершено"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "149",
+                "text": "%"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "150",
+                "text": "МЕТК"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "151",
+                "text": "УКЛ"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "152",
+                "text": "Только мужчины"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "153",
+                "text": "Только женщины"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "154",
+                "text": "Фиксированный"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "155",
+                "text": "Р"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "156",
+                "text": "ОР"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "157",
+                "text": "/"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "158",
+                "text": "Усиление"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "159",
+                "text": "Особый"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "160",
+                "text": "("
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "161",
+                "text": ")"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "162",
+                "text": "Атака (класс %s):"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "163",
+                "text": "Магическая атака (класс %s):"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "164",
+                "text": "Восстановление:"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "165",
+                "text": "Поддержка:"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "166",
+                "text": "Атакующее искусство (класс %s):"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "167",
+                "text": "Искусство поддержки:"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "168",
+                "text": "Восстанавливающее искусство:"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "169",
+                "text": "Искусство поддержки:"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "170",
+                "text": "На себя"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "171",
+                "text": "Один"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "172",
+                "text": "Область %s"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "173",
+                "text": "Область %s (Уст.)"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "174",
+                "text": "Область %s (На себя)"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "175",
+                "text": "Линия %s"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "176",
+                "text": "Линия %s (Уст.)"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "177",
+                "text": "Все"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "178",
+                "text": "Земля"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "179",
+                "text": "Вода"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "180",
+                "text": "Огонь"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "181",
+                "text": "Ветер"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "182",
+                "text": "Время"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "183",
+                "text": "Пространство"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "184",
+                "text": "Мираж"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "185",
+                "text": "#1CКупить #3C%s#1C x %d#1C за #579c%d мира#1C?"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "186",
+                "text": "#1CНедостаточно мира."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "187",
+                "text": "#1CНельзя экипировать."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "188",
+                "text": "#1CПродать #3C%s#1C x %d#1C за #579c%d мира#1C?"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "189",
+                "text": "#1CНельзя продать."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "190",
+                "text": "#1CНедостаточно сепита."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "191",
+                "text": "#1CНедостаточно очков."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "192",
+                "text": "#1CОбменять #579c%d очков#1C\nна #3C%s#1C x %d?"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "193",
+                "text": "#1CСоздать #3C%s#1C x%d?"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "194",
+                "text": "#1CНедостаточно предметов."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "195",
+                "text": "#1CПребывание здесь будет стоить #579c%d мира#1C.\nОстаться?\n#3CВаши ОЗ и ОЭ полностью восстановятся,\nа ОП увеличатся на %d."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "196",
+                "text": "#1CЭтот товар распродан."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "197",
+                "text": "#1CВы не можете нести больше #2C%s#1C."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "198",
+                "text": "#1CУ вас в инвентаре слишком много этого предмета,\nчтобы снять его."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "199",
+                "text": "#1CНельзя экипировать более одного одинакового кварца."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "200",
+                "text": "#1CНельзя экипировать два кварца-«разрушителя» или кварца статуса\nна одной линии."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "201",
+                "text": "#1CУровень этого слота недостаточен для этого кварца."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "633",
+                "text": "#1CСамоцвет палящего солнца можно установить только в слоты огня, пространства и ветра."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "634",
+                "text": "#1CСамоцвет ясной луны можно установить только в слоты огня, миража и воды."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "635",
+                "text": "#1CСамоцвет мерцающей звезды можно установить только в слоты огня, времени и земли."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "636",
+                "text": "#1CСамоцвет ревущего дракона можно установить только в слоты земли, воды и ветра."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "637",
+                "text": "#1CСамоцвет божественного спасения можно установить только в слоты времени, пространства и миража."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "202",
+                "text": "#1CНа этой части тела уже экипирована другая насадка."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "203",
+                "text": "#3C%s#1C x %d будет получено в обмен."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "204",
+                "text": "#1CСинтезировать #3C%s#1C?"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "205",
+                "text": "#1CСинтезировано: #3C%s#1C."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "206",
+                "text": "Купить предметы."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "207",
+                "text": "Продать предметы."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "208",
+                "text": "Обменять сепит на мира."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "209",
+                "text": "Сменить снаряжение."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "210",
+                "text": "Синтезировать кварц."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "211",
+                "text": "Улучшить слоты."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "212",
+                "text": "Купить мастер-кварц."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "213",
+                "text": "Купить и сменить крышки ARCUS."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "214",
+                "text": "Установить кварц."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "215",
+                "text": "Модифицировать оружие."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "216",
+                "text": "Отдохнуть и восстановиться.\nОЗ и ОЭ будут полностью восстановлены, а ОП увеличатся на %d."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "217",
+                "text": "Обменять предметы."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "218",
+                "text": "Обменять очки рыболова."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "219",
+                "text": "Завершить сделку."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "220",
+                "text": "Создать EX-сферу."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "221",
+                "text": "#32IСепит земли"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "222",
+                "text": "#33IСепит воды"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "223",
+                "text": "#34IСепит огня"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "224",
+                "text": "#35IСепит ветра"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "225",
+                "text": "#36IСепит времени"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "226",
+                "text": "#37IСепит пространства"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "227",
+                "text": "#38IСепит миража"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "228",
+                "text": "#39IМасса сепита"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "229",
+                "text": "Всего"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "230",
+                "text": "Обмен"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "231",
+                "text": "#1CВыберите, сколько сепита обменять на мира."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "232",
+                "text": "#1CОбменять этот сепит на #579c%d мира#1C?"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "233",
+                "text": "#94I = %3d мира"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "234",
+                "text": "-------------"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "235",
+                "text": "Можно улучшить (ур. 0 ⇒ ур. 1)"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "236",
+                "text": "Можно улучшить (ур. 1 ⇒ ур. 2)"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "237",
+                "text": "-------------"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "238",
+                "text": "ОЭ+"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "239",
+                "text": "#1CЭтот слот больше нельзя улучшить."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "240",
+                "text": "#1CЭтот слот нельзя улучшить."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "241",
+                "text": "#1CУлучшить этот слот?"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "242",
+                "text": "Экипировать #3C%s#1C?"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "243",
+                "text": "Снять #3C%s#1C?"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "244",
+                "text": "#1CКупить #3C%s#1C за #579c%d мира#1C?\nЭто можно экипировать на всех персонажей."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "245",
+                "text": "#1CКупить #3C%s#1C за #579c%d мира#1C?"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "621",
+                "text": "#1CМодифицировать оружие #1C%s в\n#3C%s#1C?"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "622",
+                "text": "#1CЧьё снаряжение модифицировать?"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "623",
+                "text": "Получено: #3C#%dI%s#0C x%d."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "624",
+                "text": "Получено: #3C#%dI%s#0C x%d."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "625",
+                "text": "Получено"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "626",
+                "text": "#1CКостюмы можно сменить в разделе «Снаряжение»\nпоходного меню."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "627",
+                "text": "#1CНасадки можно экипировать в разделе «Снаряжение»\nпоходного меню."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "628",
+                "text": "#1CКрышки ARCUS можно сменить в разделе «Крышки»\nна орбальной фабрике."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "246",
+                "text": "#177I: Прокрутить отряд"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "247",
+                "text": "#162I: Сменить вид　#177I: Прокрутить отряд"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "248",
+                "text": "Обменять сепит земли на мира."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "249",
+                "text": "Обменять сепит воды на мира."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "250",
+                "text": "Обменять сепит огня на мира."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "251",
+                "text": "Обменять сепит ветра на мира."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "252",
+                "text": "Обменять сепит времени на мира."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "253",
+                "text": "Обменять сепит пространства на мира."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "254",
+                "text": "Обменять сепит миража на мира."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "255",
+                "text": "Обменять массу сепита на мира."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "256",
+                "text": "Обменять сепит на мира."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "257",
+                "text": "Этот слот нельзя открыть, так как ведущая к нему\nорбальная цепь не подключена."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "258",
+                "text": "Этот слот достиг максимального уровня."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "259",
+                "text": "Слот можно улучшить с ур. 0 до ур. 1."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "260",
+                "text": "Слот можно улучшить с ур. 1 до ур. 2."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "261",
+                "text": "#1CПроверьте все задания, прежде чем продолжить."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "262",
+                "text": "[Просмотрено]"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "263",
+                "text": "[Непрочитано]"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "264",
+                "text": "[Обязательное]"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "265",
+                "text": "[Выполнено]"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "266",
+                "text": "[Отчёт сдан]"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "267",
+                "text": "[Просрочено]"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "268",
+                "text": "Подтвердить"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "269",
+                "text": "Начать заново"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "270",
+                "text": "Вернуться к выбору"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "271",
+                "text": "Отряд ещё не сформирован."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "272",
+                "text": "Завершить выбор отряда."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "273",
+                "text": "Убрать всех, кроме закреплённых членов, и выбрать заново."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "274",
+                "text": "Вернуться к выбору отряда."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "275",
+                "text": "Выбрать"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "276",
+                "text": "Убрать"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "277",
+                "text": "Закрыть"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "278",
+                "text": "Записная книжка персонажей обновлена."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "279",
+                "text": "#174IПереместить курсор #163IБыстрее #177IНастроить камеру #164I#166IМасштаб"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "280",
+                "text": "Отправиться в #3C%s#0C?"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "281",
+                "text": "сейчас недоступно."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "282",
+                "text": "？？？？"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "283",
+                "text": "Коляска"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "284",
+                "text": "Коляска для орбального байка.\nУстановите флажок, чтобы прикрепить её к байку."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "376",
+                "text": "Громкость"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "377",
+                "text": "Настройки камеры"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "378",
+                "text": "Быстрый доступ к записным книжкам"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "379",
+                "text": "Миникарта"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "380",
+                "text": "Настройки вибрации"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "381",
+                "text": "Настройка кнопок"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "382",
+                "text": "Настройки дисплея"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "383",
+                "text": "Активный голос"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "384",
+                "text": "Фоновая музыка"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "385",
+                "text": "Звуковые эффекты"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "386",
+                "text": "Голос"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "387",
+                "text": "Вертикальная камера"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "388",
+                "text": "Горизонтальная камера"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "389",
+                "text": "Кнопка L2"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "390",
+                "text": "Кнопка R2"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "391",
+                "text": "Настройка миникарты"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "392",
+                "text": "Вибрация контроллера"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "393",
+                "text": "Настройка кнопок"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "394",
+                "text": "Настройки дисплея"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "395",
+                "text": "Настройки активного голоса"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "396",
+                "text": "Кнопка «вверх»"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "397",
+                "text": "Кнопка «вниз»"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "398",
+                "text": "Кнопка «влево»"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "399",
+                "text": "Кнопка «вправо»"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "400",
+                "text": "Кнопка L1"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "401",
+                "text": "Кнопка L"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "402",
+                "text": "Кнопка R1"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "403",
+                "text": "Кнопка R"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "404",
+                "text": "Кнопка ○"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "405",
+                "text": "Ширина"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "406",
+                "text": "Высота"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "407",
+                "text": "Яркость"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "408",
+                "text": "Вернуть настройки по умолчанию"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "409",
+                "text": "#1CВернуть настройки дисплея по умолчанию?"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "410",
+                "text": "Обычная"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "411",
+                "text": "Инвертированная"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "412",
+                "text": "Вращение"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "413",
+                "text": "Фиксированная"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "414",
+                "text": "Вкл."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "415",
+                "text": "Выкл."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "416",
+                "text": "Ждать"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "417",
+                "text": "Свободно"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "418",
+                "text": "Главная записная книжка"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "419",
+                "text": "Журнал заданий"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "420",
+                "text": "Боевой журнал"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "421",
+                "text": "Записная книжка персонажей"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "422",
+                "text": "Книга рецептов"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "423",
+                "text": "Книга рыболова"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "424",
+                "text": "Книги"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "425",
+                "text": "Заметки об активном голосе"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "426",
+                "text": "Помощь"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "427",
+                "text": "Приблизить"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "428",
+                "text": "Отдалить"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "429",
+                "text": "Приблизить/Отдалить"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "430",
+                "text": "Сбросить камеру"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "431",
+                "text": "Повернуть персонажа"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "432",
+                "text": "Сменить лидера (след.)"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "433",
+                "text": "Сменить лидера (пред.)"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "434",
+                "text": "Бег"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "435",
+                "text": "Шаг"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "436",
+                "text": "Сменить персонажа"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "437",
+                "text": "Сбросить угол камеры"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "438",
+                "text": "Настройки масштаба камеры"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "285",
+                "text": "━━━"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "286",
+                "text": "？？？？"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "287",
+                "text": "…"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "288",
+                "text": "Рин Шварцер"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "289",
+                "text": "1-й год, VII класс"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "290",
+                "text": "Ранг B7"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "291",
+                "text": "Ранг B6"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "292",
+                "text": "Ранг B5"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "293",
+                "text": "Ранг B4"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "294",
+                "text": "Ранг B3"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "295",
+                "text": "Ранг B2"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "296",
+                "text": "Ранг B1"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "297",
+                "text": "Ранг A7"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "298",
+                "text": "Ранг A6"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "299",
+                "text": "Ранг A5"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "300",
+                "text": "Ранг A4"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "301",
+                "text": "Ранг A3"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "302",
+                "text": "Ранг A2"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "303",
+                "text": "Ранг A1"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "304",
+                "text": "Ранг A0"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "305",
+                "text": "－－－"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "306",
+                "text": "Выполнено"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "307",
+                "text": "Просрочено"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "308",
+                "text": "Не выполнено"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "309",
+                "text": "Отчёт сдан"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "311",
+                "text": "Длинное"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "312",
+                "text": "Среднее"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "313",
+                "text": "Короткое"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "314",
+                "text": "－"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "315",
+                "text": "#911c[Обяз.]"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "316",
+                "text": "Выполнено"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "317",
+                "text": "Отчёт сдан"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "318",
+                "text": "Просрочено"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "319",
+                "text": ": Прокрутка"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "320",
+                "text": "[%s]"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "321",
+                "text": "#1CНедостаточно ингредиентов."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "322",
+                "text": "#1CБольше приготовить нельзя."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "323",
+                "text": "Кто будет готовить?"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "324",
+                "text": "Готовка"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "325",
+                "text": "・"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "326",
+                "text": "Готовка завершена!"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "327",
+                "text": "Готово!"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "328",
+                "text": "Готово!"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "329",
+                "text": "Завершить?"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "330",
+                "text": "Готово!"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "331",
+                "text": "x"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "332",
+                "text": "Бронзовый рыболов"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "333",
+                "text": "Серебряный рыболов"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "334",
+                "text": "Золотой рыболов"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "335",
+                "text": "Платиновый рыболов"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "337",
+                "text": "Запись активного голоса"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "336",
+                "text": "#1CПрочтите до конца, прежде чем продолжить."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "338",
+                "text": ":"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "339",
+                "text": "★"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "340",
+                "text": "мира"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "341",
+                "text": "－－－"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "342",
+                "text": "[Д]"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "343",
+                "text": "[С]"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "344",
+                "text": "[К]"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "345",
+                "text": "[-]"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "346",
+                "text": "Сыграть ещё раз?"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "347",
+                "text": "Повторить"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "348",
+                "text": "Снизить сложность и повторить"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "349",
+                "text": "Восстановить сложность и повторить"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "350",
+                "text": "Закончить"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "351",
+                "text": "Повторить."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "352",
+                "text": "Снизить сложность и повторить.\n#3CОграничение по времени будет снято, но ваше время не будет сохранено."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "353",
+                "text": "Восстановить сложность и повторить.\n#3CВаше время снова будет сохраняться."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "354",
+                "text": "Вернуться в Юмир."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "355",
+                "text": "Выбор трассы"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "356",
+                "text": "Выбор уровня"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "357",
+                "text": "Трасса А"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "358",
+                "text": "Трасса B"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "359",
+                "text": "Выбрать доску"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "360",
+                "text": "Назад"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "361",
+                "text": "Ур. 1"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "362",
+                "text": "Ур. 2"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "363",
+                "text": "Ур. 3"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "364",
+                "text": "Ур. 4"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "365",
+                "text": "Продолжить"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "366",
+                "text": "Повторить"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "367",
+                "text": "Сдаться"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "368",
+                "text": "Повторить?"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "369",
+                "text": "Вернуться в Юмир?"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "370",
+                "text": "Лучшее время"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "371",
+                "text": "Целевое время"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "372",
+                "text": "Целевые флаги"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "373",
+                "text": "Попробовать снова?"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "374",
+                "text": "Да"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "375",
+                "text": "Продолжить историю"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "439",
+                "text": "Новое сохранение"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "440",
+                "text": "The Legend of Heroes: Trails of Cold Steel II"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "451",
+                "text": "Системные данные"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "452",
+                "text": "Системные данные The Legend of Heroes: Trails of Cold Steel II.\nСодержат настройки игры и т. д."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "453",
+                "text": "Время игры"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "454",
+                "text": "Сложность"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "455",
+                "text": "Лёгкая"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "456",
+                "text": "Обычная"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "457",
+                "text": "Высокая"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "458",
+                "text": "Кошмар"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "459",
+                "text": "Ур."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "460",
+                "text": "　"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "461",
+                "text": "Отряд"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "441",
+                "text": "・"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "442",
+                "text": "Пролог"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "443",
+                "text": "Акт 1"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "444",
+                "text": "Интермиссия"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "445",
+                "text": "Акт 2"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "446",
+                "text": "Финал"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "447",
+                "text": "Дивертисмент"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "448",
+                "text": "Эпилог"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "449",
+                "text": "▼"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "450",
+                "text": "▼Данные о прохождении"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "462",
+                "text": "Сохранение системных данных..."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "463",
+                "text": "Сохранение системных данных"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "464",
+                "text": "Сохранение системных данных."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "465",
+                "text": "Сохранение системных данных.."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "466",
+                "text": "Загрузка системных данных..."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "467",
+                "text": "Загрузка системных данных"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "468",
+                "text": "Загрузка системных данных."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "469",
+                "text": "Загрузка системных данных.."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "470",
+                "text": "Системные данные отсутствуют."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "471",
+                "text": "Системные данные отсутствуют. Всё равно продолжить?"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "472",
+                "text": "Не удалось загрузить системные данные."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "473",
+                "text": "Не удалось загрузить системные данные. Всё равно продолжить?"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "474",
+                "text": "Не удалось сохранить системные данные. Всё равно продолжить?"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "475",
+                "text": "Системные данные не могут быть перезаписаны, так как они повреждены.\nУдалите системные данные и попробуйте снова."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "476",
+                "text": "Системные данные не могут быть перезаписаны, так как они повреждены.\nПродолжить несмотря на это?"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "477",
+                "text": "Данные сохранения не могут быть перезаписаны, так как они повреждены.\nУдалите данные сохранения и попробуйте снова."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "478",
+                "text": "Невозможно загрузить данные сохранения с другим\nвладельцем."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "479",
+                "text": "Невозможно загрузить эти данные сохранения, так как они содержат загружаемый\nконтент, который не был установлен."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "480",
+                "text": "Данные о прохождении можно загрузить только с главного экрана."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "481",
+                "text": "Сохранить"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "482",
+                "text": "Загрузить"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "483",
+                "text": "Удалить"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "484",
+                "text": "#1CПеред началом игры вы можете выбрать, что \nперенести. Чем больше раз вы пройдёте игру,\nтем больше вы сможете перенести в следующее прохождение."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "485",
+                "text": "#1CНедостаточно очков."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "486",
+                "text": "#1CВернуться на главный экран?"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "487",
+                "text": "Загрузка данных о прохождении из #1Cоригинальной игры#0C позволит вам\nполучить особый бонус в этой.\n\nЗагрузить данные о прохождении из оригинала?\nМожно загрузить только #9Cданные о прохождении#0C из #1CTrails of Cold Steel#0C."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "488",
+                "text": "Вы можете использовать данные сохранения из версии оригинальной Trails of Cold Steel\nдля PlayStation㍻Vita, чтобы начать новую игру \nв Trails of Cold Steel II. Загруженные данные должны быть сделаны\n#1Cнепосредственно перед выходом на защиту Тристы#0C в финальной главе.\nЭти данные будут считаться #9Cданными о прохождении#0C. Подходящие данные\nсохранения уже должны быть загружены.\n\nЗагрузить данные сохранения из PlayStation㊥Network?"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "489",
+                "text": "#1CНе удалось найти данные сохранения из версии Trails of Cold Steel\nдля PlayStation㍻Vita."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "490",
+                "text": "#1CДанные сохранения с версии игры для PlayStation㍻Vita\nне подходят для использования, поэтому их не удалось загрузить."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "491",
+                "text": "Вы можете использовать данные сохранения с версии \nоригинальной Trails of Cold Steel для PlayStation㍻3, чтобы начать \nновую игру в Trails of Cold Steel II. Загруженные данные должны быть \nсделаны прямо #1Cперед выходом на защиту Тристы#0C в последней главе. \nЭти данные будут считаться #9Cданными о прохождении#0C. Подходящие \nданные сохранения уже должны быть загружены.\n\nЗагрузить данные сохранения из PlayStation㊥Network?"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "492",
+                "text": "#1CНе удалось найти данные сохранения Trails of Cold Steel\nс версии для PlayStation㍻3."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "493",
+                "text": "#1CДанные сохранения с версии игры для PlayStation㍻3\nне подходят для использования, поэтому их не удалось загрузить."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "494",
+                "text": "Cross-Save"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "495",
+                "text": "#1CВ зависимости от уровня Рина \nбыли получены следующие бонусы:"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "496",
+                "text": "#3C#316IВсе сепиты x100\n#66IАтака 1\n#315IЗерамный порошок"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "497",
+                "text": "#3C#316IВсе сепиты x300\n#66IАтака 1\n#68IПомрачение души\n#315IЗерамный порошок"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "498",
+                "text": "#3C#316IВсе сепиты x500\n#66IАтака 1\n#68IПомрачение души\n#70IСвятая мощь\n#315IЗерамный порошок x2"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "499",
+                "text": "#1CПолучена #3C#308IСеребряная эмблема#1C\nза достижение ученического ранга A1."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "500",
+                "text": "#1CПолучена #3C#308IЗолотая эмблема#1C\nза достижение ученического ранга A0."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "501",
+                "text": "#1CРанг повышен до [%s].\nВ качестве бонуса получен предмет: #%dI#2C%s#1C."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "502",
+                "text": "#1CЗа выполнение задания получено #3C%d#1C миры."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "503",
+                "text": "#160IПродолжить"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "504",
+                "text": "Сохранить"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "505",
+                "text": "Управление данными сохранения"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "506",
+                "text": "Cross-Save"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "507",
+                "text": "Удалить данные сохранения"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "508",
+                "text": "Продолжить"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "509",
+                "text": "Отмена"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "510",
+                "text": "Вернуться на титульный экран"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "511",
+                "text": "Перейти в PlayStation㍻Store?"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "512",
+                "text": "Проверка загружаемого контента..."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "513",
+                "text": "Проверка загружаемого контента"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "514",
+                "text": "Проверка загружаемого контента."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "515",
+                "text": "Проверка загружаемого контента.."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "516",
+                "text": "Получение данных о призах..."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "517",
+                "text": "Получение данных о призах"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "518",
+                "text": "Получение данных о призах."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "519",
+                "text": "Получение данных о призах.."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "520",
+                "text": "Проверка данных..."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "521",
+                "text": "Проверка данных"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "522",
+                "text": "Проверка данных."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "523",
+                "text": "Проверка данных.."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "524",
+                "text": "#6CТекущие данные"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "525",
+                "text": "#6CЗагруженные данные"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "526",
+                "text": "Версия для PlayStation㍻3"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "527",
+                "text": "Версия для PlayStation㍻Vita"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "528",
+                "text": "Последнее обновление"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "529",
+                "text": "Загрузить текущий прогресс в PlayStation㊥Network?"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "530",
+                "text": "#1CНачать загрузку данных?\nУже загруженные данные будут перезаписаны."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "531",
+                "text": "Загрузка данных..."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "532",
+                "text": "Загрузка данных"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "533",
+                "text": "Загрузка данных."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "534",
+                "text": "Загрузка данных.."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "535",
+                "text": "Загрузка данных завершена."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "536",
+                "text": "Загрузка данных прервана."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "537",
+                "text": "Загрузить игровой прогресс из PlayStation㊥Network?"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "538",
+                "text": "#1CНачать загрузку данных?\nВесь несохранённый прогресс будет утерян."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "639",
+                "text": "#1CНачать загрузку данных?"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "539",
+                "text": "Скачивание данных..."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "540",
+                "text": "Скачивание данных"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "541",
+                "text": "Скачивание данных."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "542",
+                "text": "Скачивание данных.."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "543",
+                "text": "Скачивание данных завершено."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "544",
+                "text": "Скачивание данных прервано."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "545",
+                "text": "Настройки родительского контроля этой учётной \nзаписи Sony Entertainment Network не позволяют выходить \nв сеть. Вы не можете использовать сетевые службы с этой учётной записью."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "546",
+                "text": "#1CВыполнен выход из PlayStation㊥Network. Чтобы использовать\nфункцию Cross-Save, войдите в PlayStation㊥Network."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "547",
+                "text": "#1CВы не вошли в PlayStation㊥Network. Чтобы использовать\nфункцию Cross-Save, войдите в PlayStation㊥Network."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "548",
+                "text": "#1CНе удалось скачать данные. Чтобы скачать данные о прогрессе,\nсначала их необходимо загрузить."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "549",
+                "text": "#1CМожно использовать только данные сохранения, принадлежащие тому же владельцу."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "550",
+                "text": "#1CВы не можете обращаться к данным в PlayStation㊥Network\nслишком часто. Подождите и повторите попытку."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "551",
+                "text": "The Legend of Heroes: Trails of Cold Steel II\nДанные установки"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "552",
+                "text": "Недостаточно свободного места на жёстком диске. Требуется ещё %d МБ.\nВыйдите из игры и освободите место, чтобы продолжить."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "553",
+                "text": "Недостаточно свободного места на жёстком диске. Требуется ещё %d КБ.\nВыйдите из игры и освободите место, чтобы продолжить."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "554",
+                "text": "Произошла ошибка при проверке данных установки. \nВыход из игры."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "555",
+                "text": "Данные установки повреждены. \nВыйдите из игры и удалите данные установки."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "556",
+                "text": "Идёт установка данных. Не выключайте питание системы\nво время процесса установки."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "557",
+                "text": "Начать процесс установки."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "558",
+                "text": "Установка данных завершена."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "559",
+                "text": "Произошла ошибка во время процесса установки.\nВыход из игры."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "560",
+                "text": "Обнаружено вмешательство в данные. Выход из игры."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "561",
+                "text": "Далее"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "562",
+                "text": "Пропустить"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "563",
+                "text": "теперь можно использовать."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "564",
+                "text": "был зарегистрирован как S-Break."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "565",
+                "text": "#1CПопытаться сбежать?\nШанс:#3C%d％"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "566",
+                "text": "#1CСбежать не удалось!"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "567",
+                "text": "Умение"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "568",
+                "text": "Заклинание"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "569",
+                "text": "Предмет"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "570",
+                "text": "EX-заклинание"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "571",
+                "text": "Отряд был уничтожен..."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "572",
+                "text": "Повторить"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "573",
+                "text": "Ослабить врагов и повторить"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "574",
+                "text": "Продолжить"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "575",
+                "text": "Вернуться на титульный экран"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "576",
+                "text": "Вы были побеждены."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "577",
+                "text": "#1CШанс: #3C%3d％"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "578",
+                "text": "ЯД"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "579",
+                "text": "ЗАПЕЧ."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "580",
+                "text": "НМОТА"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "581",
+                "text": "СЛПТА"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "582",
+                "text": "СОН"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "583",
+                "text": "ОЖОГ"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "584",
+                "text": "ЗАМОР."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "585",
+                "text": "ОКАМ."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "586",
+                "text": "НОКАУТ"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "587",
+                "text": "СМЯТ."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "588",
+                "text": "СМЕРТЬ"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "589",
+                "text": "КШМР"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "590",
+                "text": "ЗАДЕР."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "591",
+                "text": "ИСЧЕЗ."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "592",
+                "text": "СПД СТ"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "593",
+                "text": "#3C#%dI%s#0C достиг(-ла) уровня %d!"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "594",
+                "text": "Получена новая способность!"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "595",
+                "text": "#1C%s и %s достигли %d-го уровня связи!"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "596",
+                "text": "Это не возымело эффекта..."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "597",
+                "text": "Подробнее"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "598",
+                "text": "Закрыть"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "599",
+                "text": "Условие 1 выполнено!"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "600",
+                "text": "Условие 2 выполнено!"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "601",
+                "text": "★Задача выполнена!"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "602",
+                "text": "Вращать персонажа"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "603",
+                "text": "・"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "604",
+                "text": "#2CДействуйте непрерывно с партнёром\nв течение некоторого времени."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "605",
+                "text": "#3COverdrive не может быть использован одной\nи той же парой дважды подряд."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "606",
+                "text": "#3COverdrive не может быть использован, так как\nпартнёр этого персонажа не может действовать."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "607",
+                "text": "#2CНевозможно во время Overdrive."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "608",
+                "text": "#2CЭто действие отменит Overdrive.\nВсё равно выполнить?"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "609",
+                "text": "#3CМерцающий звёздный самоцвет утратил своё сияние. \nЕго утраченное заклинание нельзя использовать снова."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "610",
+                "text": "#3CПалящий солнечный самоцвет утратил своё сияние. \nЕго утраченное заклинание нельзя использовать снова."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "611",
+                "text": "#3CЯсный лунный самоцвет утратил своё сияние. \nЕго утраченное заклинание нельзя использовать снова."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "612",
+                "text": "#3CРевущий драконий самоцвет утратил своё сияние. \nЕго утраченное заклинание нельзя использовать снова."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "613",
+                "text": "#3CБожественный самоцвет спасения утратил своё сияние. \nЕго утраченное заклинание нельзя использовать снова."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "614",
+                "text": "Валимара можно призвать лишь раз за бой."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "616",
+                "text": "Вы были побеждены..."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "617",
+                "text": "Сменить партнёра"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "618",
+                "text": "Сменить цель"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "619",
+                "text": "■"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "620",
+                "text": "□"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "629",
+                "text": "★★★"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "631",
+                "text": "#1CПри запуске «Новой игры+» весь загружаемый контент\nбудет помечен как неиспользованный. Чтобы получить предметы из DLC, \nзаберите их снова в меню лагеря: ПРЕДМЕТЫ, затем DLC."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "632",
+                "text": "　"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "638",
+                "text": "#1CЕсли вы выберете уровни сложности «Сложно» или «Кошмар», вы не сможете\nвыбрать опцию «Ослабить врагов и повторить» после\nпоражения. Всё равно продолжить?"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "640",
+                "text": "Вернуться на «Дерзкий»"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "641",
+                "text": "Настроить отряд"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "642",
+                "text": "#168IВызвать «Дерзкий»"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "643",
+                "text": "Отмена"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "644",
+                "text": "#1CНельзя настраивать отряд, находясь на мотоцикле или лошади."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "646",
+                "text": "Вернуться к началу"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "648",
+                "text": "Отмена"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "647",
+                "text": "#168IВернуться к началу"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "649",
+                "text": "#168IВернуться к началу"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "650",
+                "text": "#1CВернуться к началу этого яруса?"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "651",
+                "text": "#1CМожно экипировать только одно Фантомное зеркало на персонажа."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "652",
+                "text": "#1CЧтобы просмотреть видеоролики и финальные события связи, вам нужно\nзагрузить данные о прохождении, которые сохраняются после завершения игры.\nЗагрузить данные о прохождении?"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "653",
+                "text": "#1CЗагрузить данные о прохождении?"
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "654",
+                "text": "Выбранные данные не являются данными о прохождении."
+            }
+        },
+        {
+            "header": "TextTableData",
+            "values": {
+                "id": "655",
+                "text": "Отмена"
+            }
+        }
+    ]
+}

@@ -1,0 +1,164 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;t2230.scn 45
+	DD	PreInit					;t2230.scn 52
+	DD	Init					;t2230.scn 67
+	DD	Init_Replay					;t2230.scn 125
+	DD	Reinit					;t2230.scn 185
+	DD	LP_dropItem00					;t2230.scn 206
+	DD	Npc_Table					;t2230.scn 273
+	DD	jusis_setting					;t2230.scn 297
+	DD	engels_setting					;t2230.scn 328
+	DD	TK_engels					;t2230.scn 341
+	DD	hadson_setting					;t2230.scn 418
+	DD	TK_hadson					;t2230.scn 437
+	DD	nadia_setting					;t2230.scn 527
+	DD	TK_nadia					;t2230.scn 539
+	DD	scarlet_setting					;t2230.scn 599
+	DD	TK_scarlet					;t2230.scn 616
+	DD	kisera_setting					;t2230.scn 685
+	DD	TK_kisera					;t2230.scn 697
+	DD	NPC_move_kisera					;t2230.scn 880
+	DD	rurie_setting					;t2230.scn 917
+	DD	TK_rurie					;t2230.scn 935
+	DD	alnor_setting					;t2230.scn 1104
+	DD	TK_alnor					;t2230.scn 1123
+	DD	EV_01_64_03					;t2230.scn 1228
+	DD	SB_KIZUNA_JUSIS_05_B					;t2230.scn 1695
+	DD	SB_03_VISIT_ALBHOUSE2					;t2230.scn 1723
+	DD	EV_SB_03_SCARLET_A					;t2230.scn 2209
+	DD	SB_03_SCARLET					;t2230.scn 2220
+	DD	SB_04_SEE_SCARLET2					;t2230.scn 2772
+	DD	EV_SETPOS_SB_04_ALBAREA_01					;t2230.scn 3402
+	DD	EV_SETPOS_SB_04_ALBAREA_02					;t2230.scn 3424
+	DD	EV_SETPOS_SB_04_ALBAREA_03					;t2230.scn 3450
+	DD	EV_SETPOS_SB_04_ALBAREA_04					;t2230.scn 3472
+	DD	SB_04_ALBAREA					;t2230.scn 3479
+	DD	ST_SCARLETROOM					;t2230.scn 4491
+	DD	ST_DUMMY1					;t2230.scn 4519
+	DD	ST_DUMMY2					;t2230.scn 4542
+	DD	ST_ALBAREAROOM					;t2230.scn 4565
+	DD	ST_ALBAREADUMMY					;t2230.scn 4630
+	DD	EV_SHORT_AL1B					;t2230.scn 4658
+	DD	EV_SHORT_JUSIS					;t2230.scn 4761
+	DD	LP_short_JUSIS					;t2230.scn 4876
+	DD	EV_SHRT_SCARLET					;t2230.scn 4971
+	DD	LP_shrt_SCARLET					;t2230.scn 5090
+	DD	_LP_dropItem00					;t2230.scn 5185
+	DD	_EV_01_64_03					;t2230.scn 5185
+	DD	_SB_03_VISIT_ALBHOUSE2					;t2230.scn 5185
+	DD	_SB_03_SCARLET					;t2230.scn 5185
+	DD	_SB_04_SEE_SCARLET2					;t2230.scn 5185
+	DD	_SB_04_ALBAREA					;t2230.scn 5185
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_LP_dropItem00
+	DW	FUNCNAME_Npc_Table
+	DW	FUNCNAME_jusis_setting
+	DW	FUNCNAME_engels_setting
+	DW	FUNCNAME_TK_engels
+	DW	FUNCNAME_hadson_setting
+	DW	FUNCNAME_TK_hadson
+	DW	FUNCNAME_nadia_setting
+	DW	FUNCNAME_TK_nadia
+	DW	FUNCNAME_scarlet_setting
+	DW	FUNCNAME_TK_scarlet
+	DW	FUNCNAME_kisera_setting
+	DW	FUNCNAME_TK_kisera
+	DW	FUNCNAME_NPC_move_kisera
+	DW	FUNCNAME_rurie_setting
+	DW	FUNCNAME_TK_rurie
+	DW	FUNCNAME_alnor_setting
+	DW	FUNCNAME_TK_alnor
+	DW	FUNCNAME_EV_01_64_03
+	DW	FUNCNAME_SB_KIZUNA_JUSIS_05_B
+	DW	FUNCNAME_SB_03_VISIT_ALBHOUSE2
+	DW	FUNCNAME_EV_SB_03_SCARLET_A
+	DW	FUNCNAME_SB_03_SCARLET
+	DW	FUNCNAME_SB_04_SEE_SCARLET2
+	DW	FUNCNAME_EV_SETPOS_SB_04_ALBAREA_01
+	DW	FUNCNAME_EV_SETPOS_SB_04_ALBAREA_02
+	DW	FUNCNAME_EV_SETPOS_SB_04_ALBAREA_03
+	DW	FUNCNAME_EV_SETPOS_SB_04_ALBAREA_04
+	DW	FUNCNAME_SB_04_ALBAREA
+	DW	FUNCNAME_ST_SCARLETROOM
+	DW	FUNCNAME_ST_DUMMY1
+	DW	FUNCNAME_ST_DUMMY2
+	DW	FUNCNAME_ST_ALBAREAROOM
+	DW	FUNCNAME_ST_ALBAREADUMMY
+	DW	FUNCNAME_EV_SHORT_AL1B
+	DW	FUNCNAME_EV_SHORT_JUSIS
+	DW	FUNCNAME_LP_short_JUSIS
+	DW	FUNCNAME_EV_SHRT_SCARLET
+	DW	FUNCNAME_LP_shrt_SCARLET
+	DW	FUNCNAME__LP_dropItem00
+	DW	FUNCNAME__EV_01_64_03
+	DW	FUNCNAME__SB_03_VISIT_ALBHOUSE2
+	DW	FUNCNAME__SB_03_SCARLET
+	DW	FUNCNAME__SB_04_SEE_SCARLET2
+	DW	FUNCNAME__SB_04_ALBAREA
+FUNCTION_NAME_TABLE_NUM	EQU	50
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_LP_dropItem00:	DB	'LP_dropItem00',0
+FUNCNAME_Npc_Table:	DB	'Npc_Table',0
+FUNCNAME_jusis_setting:	DB	'jusis_setting',0
+FUNCNAME_engels_setting:	DB	'engels_setting',0
+FUNCNAME_TK_engels:	DB	'TK_engels',0
+FUNCNAME_hadson_setting:	DB	'hadson_setting',0
+FUNCNAME_TK_hadson:	DB	'TK_hadson',0
+FUNCNAME_nadia_setting:	DB	'nadia_setting',0
+FUNCNAME_TK_nadia:	DB	'TK_nadia',0
+FUNCNAME_scarlet_setting:	DB	'scarlet_setting',0
+FUNCNAME_TK_scarlet:	DB	'TK_scarlet',0
+FUNCNAME_kisera_setting:	DB	'kisera_setting',0
+FUNCNAME_TK_kisera:	DB	'TK_kisera',0
+FUNCNAME_NPC_move_kisera:	DB	'NPC_move_kisera',0
+FUNCNAME_rurie_setting:	DB	'rurie_setting',0
+FUNCNAME_TK_rurie:	DB	'TK_rurie',0
+FUNCNAME_alnor_setting:	DB	'alnor_setting',0
+FUNCNAME_TK_alnor:	DB	'TK_alnor',0
+FUNCNAME_EV_01_64_03:	DB	'EV_01_64_03',0
+FUNCNAME_SB_KIZUNA_JUSIS_05_B:	DB	'SB_KIZUNA_JUSIS_05_B',0
+FUNCNAME_SB_03_VISIT_ALBHOUSE2:	DB	'SB_03_VISIT_ALBHOUSE2',0
+FUNCNAME_EV_SB_03_SCARLET_A:	DB	'EV_SB_03_SCARLET_A',0
+FUNCNAME_SB_03_SCARLET:	DB	'SB_03_SCARLET',0
+FUNCNAME_SB_04_SEE_SCARLET2:	DB	'SB_04_SEE_SCARLET2',0
+FUNCNAME_EV_SETPOS_SB_04_ALBAREA_01:	DB	'EV_SETPOS_SB_04_ALBAREA_01',0
+FUNCNAME_EV_SETPOS_SB_04_ALBAREA_02:	DB	'EV_SETPOS_SB_04_ALBAREA_02',0
+FUNCNAME_EV_SETPOS_SB_04_ALBAREA_03:	DB	'EV_SETPOS_SB_04_ALBAREA_03',0
+FUNCNAME_EV_SETPOS_SB_04_ALBAREA_04:	DB	'EV_SETPOS_SB_04_ALBAREA_04',0
+FUNCNAME_SB_04_ALBAREA:	DB	'SB_04_ALBAREA',0
+FUNCNAME_ST_SCARLETROOM:	DB	'ST_SCARLETROOM',0
+FUNCNAME_ST_DUMMY1:	DB	'ST_DUMMY1',0
+FUNCNAME_ST_DUMMY2:	DB	'ST_DUMMY2',0
+FUNCNAME_ST_ALBAREAROOM:	DB	'ST_ALBAREAROOM',0
+FUNCNAME_ST_ALBAREADUMMY:	DB	'ST_ALBAREADUMMY',0
+FUNCNAME_EV_SHORT_AL1B:	DB	'EV_SHORT_AL1B',0
+FUNCNAME_EV_SHORT_JUSIS:	DB	'EV_SHORT_JUSIS',0
+FUNCNAME_LP_short_JUSIS:	DB	'LP_short_JUSIS',0
+FUNCNAME_EV_SHRT_SCARLET:	DB	'EV_SHRT_SCARLET',0
+FUNCNAME_LP_shrt_SCARLET:	DB	'LP_shrt_SCARLET',0
+FUNCNAME__LP_dropItem00:	DB	'_LP_dropItem00',0
+FUNCNAME__EV_01_64_03:	DB	'_EV_01_64_03',0
+FUNCNAME__SB_03_VISIT_ALBHOUSE2:	DB	'_SB_03_VISIT_ALBHOUSE2',0
+FUNCNAME__SB_03_SCARLET:	DB	'_SB_03_SCARLET',0
+FUNCNAME__SB_04_SEE_SCARLET2:	DB	'_SB_04_SEE_SCARLET2',0
+FUNCNAME__SB_04_ALBAREA:	DB	'_SB_04_ALBAREA',0

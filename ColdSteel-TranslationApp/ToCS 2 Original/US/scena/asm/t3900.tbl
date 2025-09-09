@@ -1,0 +1,173 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;t3900.scn 52
+	DD	PreInit					;t3900.scn 59
+	DD	Init					;t3900.scn 74
+	DD	Init_Replay					;t3900.scn 100
+	DD	Reinit					;t3900.scn 218
+	DD	AV_03005					;t3900.scn 241
+	DD	Npc_Table					;t3900.scn 250
+	DD	fie_setting					;t3900.scn 284
+	DD	clain_setting					;t3900.scn 312
+	DD	haibel_setting					;t3900.scn 337
+	DD	antone_setting					;t3900.scn 365
+	DD	TK_antone					;t3900.scn 391
+	DD	TK_talk_antone_ricks					;t3900.scn 482
+	DD	ricks_setting					;t3900.scn 528
+	DD	TK_ricks					;t3900.scn 546
+	DD	norton_setting					;t3900.scn 587
+	DD	TK_norton					;t3900.scn 605
+	DD	t3900_qs2301_01_setting					;t3900.scn 766
+	DD	TK_t3900_qs2301_01					;t3900.scn 784
+	DD	t3900_qs2301_02_setting					;t3900.scn 853
+	DD	TK_t3900_qs2301_02					;t3900.scn 871
+	DD	edmond_setting					;t3900.scn 926
+	DD	TK_edmond					;t3900.scn 972
+	DD	sacks_setting					;t3900.scn 1249
+	DD	TK_sacks					;t3900.scn 1295
+	DD	payton_setting					;t3900.scn 1558
+	DD	TK_payton					;t3900.scn 1579
+	DD	t3900_passenger01_setting					;t3900.scn 1877
+	DD	TK_t3900_passenger01					;t3900.scn 1889
+	DD	t3900_passenger02_setting					;t3900.scn 1924
+	DD	TK_t3900_passenger02					;t3900.scn 1936
+	DD	dones_setting					;t3900.scn 1968
+	DD	TK_dones					;t3900.scn 1980
+	DD	EV_03_21_02					;t3900.scn 2064
+	DD	EV_03_22_00					;t3900.scn 2187
+	DD	ET_03_22_00_MoveREAN					;t3900.scn 2699
+	DD	ET_03_22_00_MoveLINDE					;t3900.scn 2708
+	DD	ET_03_22_00_MoveVIVI					;t3900.scn 2716
+	DD	QS_2301_COMP_3					;t3900.scn 2734
+	DD	SB_KIZUNA_FIE_04					;t3900.scn 3127
+	DD	SB_STUDENT17_CLAIN_HAIBEL_01					;t3900.scn 3346
+	DD	SB_02_VISIT_ROERPORT					;t3900.scn 3684
+	DD	SB_03_ROERPORT1					;t3900.scn 3992
+	DD	SB_03_ROERPORT2					;t3900.scn 3996
+	DD	SB_03_ROERPORT3					;t3900.scn 4000
+	DD	EV_RIDESHIP_RO					;t3900.scn 4018
+	DD	_TK_norton					;t3900.scn 4120
+	DD	_EV_03_21_02					;t3900.scn 4120
+	DD	_EV_03_22_00					;t3900.scn 4120
+	DD	_QS_2301_COMP_3					;t3900.scn 4120
+	DD	_SB_KIZUNA_FIE_04					;t3900.scn 4120
+	DD	_SB_STUDENT17_CLAIN_HAIBEL_01					;t3900.scn 4120
+	DD	_SB_02_VISIT_ROERPORT					;t3900.scn 4120
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_AV_03005
+	DW	FUNCNAME_Npc_Table
+	DW	FUNCNAME_fie_setting
+	DW	FUNCNAME_clain_setting
+	DW	FUNCNAME_haibel_setting
+	DW	FUNCNAME_antone_setting
+	DW	FUNCNAME_TK_antone
+	DW	FUNCNAME_TK_talk_antone_ricks
+	DW	FUNCNAME_ricks_setting
+	DW	FUNCNAME_TK_ricks
+	DW	FUNCNAME_norton_setting
+	DW	FUNCNAME_TK_norton
+	DW	FUNCNAME_t3900_qs2301_01_setting
+	DW	FUNCNAME_TK_t3900_qs2301_01
+	DW	FUNCNAME_t3900_qs2301_02_setting
+	DW	FUNCNAME_TK_t3900_qs2301_02
+	DW	FUNCNAME_edmond_setting
+	DW	FUNCNAME_TK_edmond
+	DW	FUNCNAME_sacks_setting
+	DW	FUNCNAME_TK_sacks
+	DW	FUNCNAME_payton_setting
+	DW	FUNCNAME_TK_payton
+	DW	FUNCNAME_t3900_passenger01_setting
+	DW	FUNCNAME_TK_t3900_passenger01
+	DW	FUNCNAME_t3900_passenger02_setting
+	DW	FUNCNAME_TK_t3900_passenger02
+	DW	FUNCNAME_dones_setting
+	DW	FUNCNAME_TK_dones
+	DW	FUNCNAME_EV_03_21_02
+	DW	FUNCNAME_EV_03_22_00
+	DW	FUNCNAME_ET_03_22_00_MoveREAN
+	DW	FUNCNAME_ET_03_22_00_MoveLINDE
+	DW	FUNCNAME_ET_03_22_00_MoveVIVI
+	DW	FUNCNAME_QS_2301_COMP_3
+	DW	FUNCNAME_SB_KIZUNA_FIE_04
+	DW	FUNCNAME_SB_STUDENT17_CLAIN_HAIBEL_01
+	DW	FUNCNAME_SB_02_VISIT_ROERPORT
+	DW	FUNCNAME_SB_03_ROERPORT1
+	DW	FUNCNAME_SB_03_ROERPORT2
+	DW	FUNCNAME_SB_03_ROERPORT3
+	DW	FUNCNAME_EV_RIDESHIP_RO
+	DW	FUNCNAME__TK_norton
+	DW	FUNCNAME__EV_03_21_02
+	DW	FUNCNAME__EV_03_22_00
+	DW	FUNCNAME__QS_2301_COMP_3
+	DW	FUNCNAME__SB_KIZUNA_FIE_04
+	DW	FUNCNAME__SB_STUDENT17_CLAIN_HAIBEL_01
+	DW	FUNCNAME__SB_02_VISIT_ROERPORT
+FUNCTION_NAME_TABLE_NUM	EQU	53
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_AV_03005:	DB	'AV_03005',0
+FUNCNAME_Npc_Table:	DB	'Npc_Table',0
+FUNCNAME_fie_setting:	DB	'fie_setting',0
+FUNCNAME_clain_setting:	DB	'clain_setting',0
+FUNCNAME_haibel_setting:	DB	'haibel_setting',0
+FUNCNAME_antone_setting:	DB	'antone_setting',0
+FUNCNAME_TK_antone:	DB	'TK_antone',0
+FUNCNAME_TK_talk_antone_ricks:	DB	'TK_talk_antone_ricks',0
+FUNCNAME_ricks_setting:	DB	'ricks_setting',0
+FUNCNAME_TK_ricks:	DB	'TK_ricks',0
+FUNCNAME_norton_setting:	DB	'norton_setting',0
+FUNCNAME_TK_norton:	DB	'TK_norton',0
+FUNCNAME_t3900_qs2301_01_setting:	DB	't3900_qs2301_01_setting',0
+FUNCNAME_TK_t3900_qs2301_01:	DB	'TK_t3900_qs2301_01',0
+FUNCNAME_t3900_qs2301_02_setting:	DB	't3900_qs2301_02_setting',0
+FUNCNAME_TK_t3900_qs2301_02:	DB	'TK_t3900_qs2301_02',0
+FUNCNAME_edmond_setting:	DB	'edmond_setting',0
+FUNCNAME_TK_edmond:	DB	'TK_edmond',0
+FUNCNAME_sacks_setting:	DB	'sacks_setting',0
+FUNCNAME_TK_sacks:	DB	'TK_sacks',0
+FUNCNAME_payton_setting:	DB	'payton_setting',0
+FUNCNAME_TK_payton:	DB	'TK_payton',0
+FUNCNAME_t3900_passenger01_setting:	DB	't3900_passenger01_setting',0
+FUNCNAME_TK_t3900_passenger01:	DB	'TK_t3900_passenger01',0
+FUNCNAME_t3900_passenger02_setting:	DB	't3900_passenger02_setting',0
+FUNCNAME_TK_t3900_passenger02:	DB	'TK_t3900_passenger02',0
+FUNCNAME_dones_setting:	DB	'dones_setting',0
+FUNCNAME_TK_dones:	DB	'TK_dones',0
+FUNCNAME_EV_03_21_02:	DB	'EV_03_21_02',0
+FUNCNAME_EV_03_22_00:	DB	'EV_03_22_00',0
+FUNCNAME_ET_03_22_00_MoveREAN:	DB	'ET_03_22_00_MoveREAN',0
+FUNCNAME_ET_03_22_00_MoveLINDE:	DB	'ET_03_22_00_MoveLINDE',0
+FUNCNAME_ET_03_22_00_MoveVIVI:	DB	'ET_03_22_00_MoveVIVI',0
+FUNCNAME_QS_2301_COMP_3:	DB	'QS_2301_COMP_3',0
+FUNCNAME_SB_KIZUNA_FIE_04:	DB	'SB_KIZUNA_FIE_04',0
+FUNCNAME_SB_STUDENT17_CLAIN_HAIBEL_01:	DB	'SB_STUDENT17_CLAIN_HAIBEL_01',0
+FUNCNAME_SB_02_VISIT_ROERPORT:	DB	'SB_02_VISIT_ROERPORT',0
+FUNCNAME_SB_03_ROERPORT1:	DB	'SB_03_ROERPORT1',0
+FUNCNAME_SB_03_ROERPORT2:	DB	'SB_03_ROERPORT2',0
+FUNCNAME_SB_03_ROERPORT3:	DB	'SB_03_ROERPORT3',0
+FUNCNAME_EV_RIDESHIP_RO:	DB	'EV_RIDESHIP_RO',0
+FUNCNAME__TK_norton:	DB	'_TK_norton',0
+FUNCNAME__EV_03_21_02:	DB	'_EV_03_21_02',0
+FUNCNAME__EV_03_22_00:	DB	'_EV_03_22_00',0
+FUNCNAME__QS_2301_COMP_3:	DB	'_QS_2301_COMP_3',0
+FUNCNAME__SB_KIZUNA_FIE_04:	DB	'_SB_KIZUNA_FIE_04',0
+FUNCNAME__SB_STUDENT17_CLAIN_HAIBEL_01:	DB	'_SB_STUDENT17_CLAIN_HAIBEL_01',0
+FUNCNAME__SB_02_VISIT_ROERPORT:	DB	'_SB_02_VISIT_ROERPORT',0

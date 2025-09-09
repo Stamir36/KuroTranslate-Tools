@@ -1,0 +1,140 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;t2120.scn 54
+	DD	PreInit					;t2120.scn 60
+	DD	Init					;t2120.scn 75
+	DD	Init_Replay					;t2120.scn 113
+	DD	Reinit					;t2120.scn 154
+	DD	Npc_Table					;t2120.scn 180
+	DD	eliot_setting					;t2120.scn 213
+	DD	hamond_setting					;t2120.scn 236
+	DD	TK_hamond					;t2120.scn 248
+	DD	kalmin_setting					;t2120.scn 576
+	DD	TK_kalmin					;t2120.scn 588
+	DD	brighth_setting					;t2120.scn 857
+	DD	TK_brighth					;t2120.scn 869
+	DD	NPC_move_brighth					;t2120.scn 990
+	DD	greta_setting					;t2120.scn 1039
+	DD	TK_greta					;t2120.scn 1051
+	DD	baroc_setting					;t2120.scn 1130
+	DD	TK_baroc					;t2120.scn 1151
+	DD	fafner_setting					;t2120.scn 1278
+	DD	TK_fafner					;t2120.scn 1299
+	DD	caroline_setting					;t2120.scn 1431
+	DD	TK_caroline					;t2120.scn 1464
+	DD	TK_caroline_vodan_04_02					;t2120.scn 1670
+	DD	t2120_passenger01_setting					;t2120.scn 1721
+	DD	TK_t2120_passenger01					;t2120.scn 1734
+	DD	t2120_passenger02_setting					;t2120.scn 1780
+	DD	TK_t2120_passenger02					;t2120.scn 1793
+	DD	craris_setting					;t2120.scn 1844
+	DD	TK_craris					;t2120.scn 1861
+	DD	vodan_setting					;t2120.scn 1932
+	DD	TK_vodan					;t2120.scn 1952
+	DD	theresia_setting					;t2120.scn 2019
+	DD	TK_THERESIA_CAROLINE_01_C_04					;t2120.scn 2051
+	DD	TK_THERESIA_CAROLINE_03_C_02					;t2120.scn 2125
+	DD	EV_01_69_00					;t2120.scn 2188
+	DD	SB_STUDENT18_THERESIA_01					;t2120.scn 2529
+	DD	SB_STUDENT18_THERESIA_04					;t2120.scn 2995
+	DD	SB_KIZUNA_ELIOT_05					;t2120.scn 3334
+	DD	SB_KIZUNA_ELIOT_05_B					;t2120.scn 3730
+	DD	_TK_kalmin					;t2120.scn 3762
+	DD	_SB_STUDENT18_THERESIA_04					;t2120.scn 3762
+	DD	_SB_KIZUNA_ELIOT_05					;t2120.scn 3762
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_Npc_Table
+	DW	FUNCNAME_eliot_setting
+	DW	FUNCNAME_hamond_setting
+	DW	FUNCNAME_TK_hamond
+	DW	FUNCNAME_kalmin_setting
+	DW	FUNCNAME_TK_kalmin
+	DW	FUNCNAME_brighth_setting
+	DW	FUNCNAME_TK_brighth
+	DW	FUNCNAME_NPC_move_brighth
+	DW	FUNCNAME_greta_setting
+	DW	FUNCNAME_TK_greta
+	DW	FUNCNAME_baroc_setting
+	DW	FUNCNAME_TK_baroc
+	DW	FUNCNAME_fafner_setting
+	DW	FUNCNAME_TK_fafner
+	DW	FUNCNAME_caroline_setting
+	DW	FUNCNAME_TK_caroline
+	DW	FUNCNAME_TK_caroline_vodan_04_02
+	DW	FUNCNAME_t2120_passenger01_setting
+	DW	FUNCNAME_TK_t2120_passenger01
+	DW	FUNCNAME_t2120_passenger02_setting
+	DW	FUNCNAME_TK_t2120_passenger02
+	DW	FUNCNAME_craris_setting
+	DW	FUNCNAME_TK_craris
+	DW	FUNCNAME_vodan_setting
+	DW	FUNCNAME_TK_vodan
+	DW	FUNCNAME_theresia_setting
+	DW	FUNCNAME_TK_THERESIA_CAROLINE_01_C_04
+	DW	FUNCNAME_TK_THERESIA_CAROLINE_03_C_02
+	DW	FUNCNAME_EV_01_69_00
+	DW	FUNCNAME_SB_STUDENT18_THERESIA_01
+	DW	FUNCNAME_SB_STUDENT18_THERESIA_04
+	DW	FUNCNAME_SB_KIZUNA_ELIOT_05
+	DW	FUNCNAME_SB_KIZUNA_ELIOT_05_B
+	DW	FUNCNAME__TK_kalmin
+	DW	FUNCNAME__SB_STUDENT18_THERESIA_04
+	DW	FUNCNAME__SB_KIZUNA_ELIOT_05
+FUNCTION_NAME_TABLE_NUM	EQU	42
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_Npc_Table:	DB	'Npc_Table',0
+FUNCNAME_eliot_setting:	DB	'eliot_setting',0
+FUNCNAME_hamond_setting:	DB	'hamond_setting',0
+FUNCNAME_TK_hamond:	DB	'TK_hamond',0
+FUNCNAME_kalmin_setting:	DB	'kalmin_setting',0
+FUNCNAME_TK_kalmin:	DB	'TK_kalmin',0
+FUNCNAME_brighth_setting:	DB	'brighth_setting',0
+FUNCNAME_TK_brighth:	DB	'TK_brighth',0
+FUNCNAME_NPC_move_brighth:	DB	'NPC_move_brighth',0
+FUNCNAME_greta_setting:	DB	'greta_setting',0
+FUNCNAME_TK_greta:	DB	'TK_greta',0
+FUNCNAME_baroc_setting:	DB	'baroc_setting',0
+FUNCNAME_TK_baroc:	DB	'TK_baroc',0
+FUNCNAME_fafner_setting:	DB	'fafner_setting',0
+FUNCNAME_TK_fafner:	DB	'TK_fafner',0
+FUNCNAME_caroline_setting:	DB	'caroline_setting',0
+FUNCNAME_TK_caroline:	DB	'TK_caroline',0
+FUNCNAME_TK_caroline_vodan_04_02:	DB	'TK_caroline_vodan_04_02',0
+FUNCNAME_t2120_passenger01_setting:	DB	't2120_passenger01_setting',0
+FUNCNAME_TK_t2120_passenger01:	DB	'TK_t2120_passenger01',0
+FUNCNAME_t2120_passenger02_setting:	DB	't2120_passenger02_setting',0
+FUNCNAME_TK_t2120_passenger02:	DB	'TK_t2120_passenger02',0
+FUNCNAME_craris_setting:	DB	'craris_setting',0
+FUNCNAME_TK_craris:	DB	'TK_craris',0
+FUNCNAME_vodan_setting:	DB	'vodan_setting',0
+FUNCNAME_TK_vodan:	DB	'TK_vodan',0
+FUNCNAME_theresia_setting:	DB	'theresia_setting',0
+FUNCNAME_TK_THERESIA_CAROLINE_01_C_04:	DB	'TK_THERESIA_CAROLINE_01_C_04',0
+FUNCNAME_TK_THERESIA_CAROLINE_03_C_02:	DB	'TK_THERESIA_CAROLINE_03_C_02',0
+FUNCNAME_EV_01_69_00:	DB	'EV_01_69_00',0
+FUNCNAME_SB_STUDENT18_THERESIA_01:	DB	'SB_STUDENT18_THERESIA_01',0
+FUNCNAME_SB_STUDENT18_THERESIA_04:	DB	'SB_STUDENT18_THERESIA_04',0
+FUNCNAME_SB_KIZUNA_ELIOT_05:	DB	'SB_KIZUNA_ELIOT_05',0
+FUNCNAME_SB_KIZUNA_ELIOT_05_B:	DB	'SB_KIZUNA_ELIOT_05_B',0
+FUNCNAME__TK_kalmin:	DB	'_TK_kalmin',0
+FUNCNAME__SB_STUDENT18_THERESIA_04:	DB	'_SB_STUDENT18_THERESIA_04',0
+FUNCNAME__SB_KIZUNA_ELIOT_05:	DB	'_SB_KIZUNA_ELIOT_05',0

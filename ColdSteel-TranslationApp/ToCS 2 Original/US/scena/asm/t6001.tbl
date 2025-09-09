@@ -1,0 +1,38 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;t6001.scn 44
+	DD	PreInit					;t6001.scn 50
+	DD	Init					;t6001.scn 67
+	DD	Init_Replay					;t6001.scn 98
+	DD	Reinit					;t6001.scn 123
+	DD	Npc_Table					;t6001.scn 138
+	DD	EV_06_00_00					;t6001.scn 149
+	DD	_EV_06_00_00					;t6001.scn 495
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_Npc_Table
+	DW	FUNCNAME_EV_06_00_00
+	DW	FUNCNAME__EV_06_00_00
+FUNCTION_NAME_TABLE_NUM	EQU	8
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_Npc_Table:	DB	'Npc_Table',0
+FUNCNAME_EV_06_00_00:	DB	'EV_06_00_00',0
+FUNCNAME__EV_06_00_00:	DB	'_EV_06_00_00',0

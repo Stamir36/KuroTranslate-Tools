@@ -1,0 +1,74 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;c0100.scn 37
+	DD	PreInit					;c0100.scn 43
+	DD	Init					;c0100.scn 58
+	DD	Init_Replay					;c0100.scn 86
+	DD	Reinit					;c0100.scn 113
+	DD	EV_04_03_08					;c0100.scn 156
+	DD	EV_04_03_08_WAIWAI					;c0100.scn 813
+	DD	NPC_move_Cars					;c0100.scn 836
+	DD	NPC_move_Npc_car01					;c0100.scn 898
+	DD	NPC_move_Npc_car04					;c0100.scn 916
+	DD	ET_SE_CAR					;c0100.scn 935
+	DD	EV_04_23_08					;c0100.scn 944
+	DD	ET_SE_DOWN_1					;c0100.scn 1110
+	DD	ET_SE_DOWN_2					;c0100.scn 1118
+	DD	_EV_04_03_08					;c0100.scn 1147
+	DD	_NPC_move_Cars					;c0100.scn 1147
+	DD	_ET_SE_CAR					;c0100.scn 1147
+	DD	_EV_04_23_08					;c0100.scn 1147
+	DD	_ET_SE_DOWN_1					;c0100.scn 1147
+	DD	_ET_SE_DOWN_2					;c0100.scn 1147
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_EV_04_03_08
+	DW	FUNCNAME_EV_04_03_08_WAIWAI
+	DW	FUNCNAME_NPC_move_Cars
+	DW	FUNCNAME_NPC_move_Npc_car01
+	DW	FUNCNAME_NPC_move_Npc_car04
+	DW	FUNCNAME_ET_SE_CAR
+	DW	FUNCNAME_EV_04_23_08
+	DW	FUNCNAME_ET_SE_DOWN_1
+	DW	FUNCNAME_ET_SE_DOWN_2
+	DW	FUNCNAME__EV_04_03_08
+	DW	FUNCNAME__NPC_move_Cars
+	DW	FUNCNAME__ET_SE_CAR
+	DW	FUNCNAME__EV_04_23_08
+	DW	FUNCNAME__ET_SE_DOWN_1
+	DW	FUNCNAME__ET_SE_DOWN_2
+FUNCTION_NAME_TABLE_NUM	EQU	20
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_EV_04_03_08:	DB	'EV_04_03_08',0
+FUNCNAME_EV_04_03_08_WAIWAI:	DB	'EV_04_03_08_WAIWAI',0
+FUNCNAME_NPC_move_Cars:	DB	'NPC_move_Cars',0
+FUNCNAME_NPC_move_Npc_car01:	DB	'NPC_move_Npc_car01',0
+FUNCNAME_NPC_move_Npc_car04:	DB	'NPC_move_Npc_car04',0
+FUNCNAME_ET_SE_CAR:	DB	'ET_SE_CAR',0
+FUNCNAME_EV_04_23_08:	DB	'EV_04_23_08',0
+FUNCNAME_ET_SE_DOWN_1:	DB	'ET_SE_DOWN_1',0
+FUNCNAME_ET_SE_DOWN_2:	DB	'ET_SE_DOWN_2',0
+FUNCNAME__EV_04_03_08:	DB	'_EV_04_03_08',0
+FUNCNAME__NPC_move_Cars:	DB	'_NPC_move_Cars',0
+FUNCNAME__ET_SE_CAR:	DB	'_ET_SE_CAR',0
+FUNCNAME__EV_04_23_08:	DB	'_EV_04_23_08',0
+FUNCNAME__ET_SE_DOWN_1:	DB	'_ET_SE_DOWN_1',0
+FUNCNAME__ET_SE_DOWN_2:	DB	'_ET_SE_DOWN_2',0

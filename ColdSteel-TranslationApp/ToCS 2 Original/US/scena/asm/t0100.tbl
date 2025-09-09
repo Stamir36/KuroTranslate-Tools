@@ -1,0 +1,47 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;t0100.scn 39
+	DD	PreInit					;t0100.scn 47
+	DD	Init					;t0100.scn 62
+	DD	Init_Replay					;t0100.scn 94
+	DD	Reinit					;t0100.scn 129
+	DD	Npc_Table					;t0100.scn 155
+	DD	valimar_setting					;t0100.scn 172
+	DD	LP_valimar					;t0100.scn 202
+	DD	LP_door00					;t0100.scn 364
+	DD	EV_06_02_00					;t0100.scn 451
+	DD	_EV_06_02_00					;t0100.scn 793
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_Npc_Table
+	DW	FUNCNAME_valimar_setting
+	DW	FUNCNAME_LP_valimar
+	DW	FUNCNAME_LP_door00
+	DW	FUNCNAME_EV_06_02_00
+	DW	FUNCNAME__EV_06_02_00
+FUNCTION_NAME_TABLE_NUM	EQU	11
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_Npc_Table:	DB	'Npc_Table',0
+FUNCNAME_valimar_setting:	DB	'valimar_setting',0
+FUNCNAME_LP_valimar:	DB	'LP_valimar',0
+FUNCNAME_LP_door00:	DB	'LP_door00',0
+FUNCNAME_EV_06_02_00:	DB	'EV_06_02_00',0
+FUNCNAME__EV_06_02_00:	DB	'_EV_06_02_00',0

@@ -1,0 +1,53 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;e7140.scn 38
+	DD	PreInit					;e7140.scn 44
+	DD	Init					;e7140.scn 66
+	DD	Init_Replay					;e7140.scn 95
+	DD	Reinit					;e7140.scn 123
+	DD	EV_00_17_01					;e7140.scn 186
+	DD	ET_00_17_01_LoadSaveData					;e7140.scn 1428
+	DD	EV_02_00_01					;e7140.scn 1444
+	DD	ET_move_RUFUS					;e7140.scn 2320
+	DD	ET_move_CROW2					;e7140.scn 2326
+	DD	ET_move_CLOTILDE					;e7140.scn 2333
+	DD	_EV_00_17_01					;e7140.scn 2364
+	DD	_EV_02_00_01					;e7140.scn 2364
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_EV_00_17_01
+	DW	FUNCNAME_ET_00_17_01_LoadSaveData
+	DW	FUNCNAME_EV_02_00_01
+	DW	FUNCNAME_ET_move_RUFUS
+	DW	FUNCNAME_ET_move_CROW2
+	DW	FUNCNAME_ET_move_CLOTILDE
+	DW	FUNCNAME__EV_00_17_01
+	DW	FUNCNAME__EV_02_00_01
+FUNCTION_NAME_TABLE_NUM	EQU	13
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_EV_00_17_01:	DB	'EV_00_17_01',0
+FUNCNAME_ET_00_17_01_LoadSaveData:	DB	'ET_00_17_01_LoadSaveData',0
+FUNCNAME_EV_02_00_01:	DB	'EV_02_00_01',0
+FUNCNAME_ET_move_RUFUS:	DB	'ET_move_RUFUS',0
+FUNCNAME_ET_move_CROW2:	DB	'ET_move_CROW2',0
+FUNCNAME_ET_move_CLOTILDE:	DB	'ET_move_CLOTILDE',0
+FUNCNAME__EV_00_17_01:	DB	'_EV_00_17_01',0
+FUNCNAME__EV_02_00_01:	DB	'_EV_02_00_01',0

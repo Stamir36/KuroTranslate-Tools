@@ -1,0 +1,56 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;t1030.scn 43
+	DD	PreInit					;t1030.scn 50
+	DD	Init					;t1030.scn 65
+	DD	Init_Replay					;t1030.scn 97
+	DD	Reinit					;t1030.scn 142
+	DD	Npc_Table					;t1030.scn 168
+	DD	jusis_setting					;t1030.scn 193
+	DD	machias_setting					;t1030.scn 213
+	DD	TK_machias_jusis_06_03					;t1030.scn 228
+	DD	keinz_setting					;t1030.scn 299
+	DD	TK_keinz					;t1030.scn 329
+	DD	kay_setting					;t1030.scn 559
+	DD	TK_kay					;t1030.scn 572
+	DD	QS_5201_02_C					;t1030.scn 642
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_Npc_Table
+	DW	FUNCNAME_jusis_setting
+	DW	FUNCNAME_machias_setting
+	DW	FUNCNAME_TK_machias_jusis_06_03
+	DW	FUNCNAME_keinz_setting
+	DW	FUNCNAME_TK_keinz
+	DW	FUNCNAME_kay_setting
+	DW	FUNCNAME_TK_kay
+	DW	FUNCNAME_QS_5201_02_C
+FUNCTION_NAME_TABLE_NUM	EQU	14
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_Npc_Table:	DB	'Npc_Table',0
+FUNCNAME_jusis_setting:	DB	'jusis_setting',0
+FUNCNAME_machias_setting:	DB	'machias_setting',0
+FUNCNAME_TK_machias_jusis_06_03:	DB	'TK_machias_jusis_06_03',0
+FUNCNAME_keinz_setting:	DB	'keinz_setting',0
+FUNCNAME_TK_keinz:	DB	'TK_keinz',0
+FUNCNAME_kay_setting:	DB	'kay_setting',0
+FUNCNAME_TK_kay:	DB	'TK_kay',0
+FUNCNAME_QS_5201_02_C:	DB	'QS_5201_02_C',0

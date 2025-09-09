@@ -1,0 +1,101 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;r0920.scn 45
+	DD	BTLSET000					;r0920.scn 53
+	DD	BTLSET001					;r0920.scn 67
+	DD	BTLSET_KZ0					;r0920.scn 75
+	DD	BTLSET_QS1					;r0920.scn 82
+	DD	PreInit					;r0920.scn 94
+	DD	Init					;r0920.scn 111
+	DD	Init_Replay					;r0920.scn 167
+	DD	Reinit					;r0920.scn 195
+	DD	LP_kbox00					;r0920.scn 218
+	DD	LP_kbox00_Get					;r0920.scn 301
+	DD	LP_healobject					;r0920.scn 408
+	DD	AV_00005					;r0920.scn 422
+	DD	AV_00006					;r0920.scn 428
+	DD	EV_00_03_00					;r0920.scn 459
+	DD	ET_00_03_00_QUAKE					;r0920.scn 1042
+	DD	ET_00_03_00_QUAKE_2					;r0920.scn 1053
+	DD	EV_00_03_01					;r0920.scn 1066
+	DD	QS_2301_03					;r0920.scn 2240
+	DD	QS_2301_03_2					;r0920.scn 3254
+	DD	SB_KIZUNA_LAURA_02					;r0920.scn 3669
+	DD	EV_to_r0520					;r0920.scn 4017
+	DD	_LP_kbox00_Get					;r0920.scn 4125
+	DD	_EV_00_03_00					;r0920.scn 4125
+	DD	_ET_00_03_00_QUAKE					;r0920.scn 4125
+	DD	_ET_00_03_00_QUAKE_2					;r0920.scn 4125
+	DD	_EV_00_03_01					;r0920.scn 4125
+	DD	_QS_2301_03					;r0920.scn 4125
+	DD	_SB_KIZUNA_LAURA_02					;r0920.scn 4125
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_BTLSET000
+	DW	FUNCNAME_BTLSET001
+	DW	FUNCNAME_BTLSET_KZ0
+	DW	FUNCNAME_BTLSET_QS1
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_LP_kbox00
+	DW	FUNCNAME_LP_kbox00_Get
+	DW	FUNCNAME_LP_healobject
+	DW	FUNCNAME_AV_00005
+	DW	FUNCNAME_AV_00006
+	DW	FUNCNAME_EV_00_03_00
+	DW	FUNCNAME_ET_00_03_00_QUAKE
+	DW	FUNCNAME_ET_00_03_00_QUAKE_2
+	DW	FUNCNAME_EV_00_03_01
+	DW	FUNCNAME_QS_2301_03
+	DW	FUNCNAME_QS_2301_03_2
+	DW	FUNCNAME_SB_KIZUNA_LAURA_02
+	DW	FUNCNAME_EV_to_r0520
+	DW	FUNCNAME__LP_kbox00_Get
+	DW	FUNCNAME__EV_00_03_00
+	DW	FUNCNAME__ET_00_03_00_QUAKE
+	DW	FUNCNAME__ET_00_03_00_QUAKE_2
+	DW	FUNCNAME__EV_00_03_01
+	DW	FUNCNAME__QS_2301_03
+	DW	FUNCNAME__SB_KIZUNA_LAURA_02
+FUNCTION_NAME_TABLE_NUM	EQU	29
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_BTLSET000:	DB	0
+FUNCNAME_BTLSET001:	DB	0
+FUNCNAME_BTLSET_KZ0:	DB	0
+FUNCNAME_BTLSET_QS1:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_LP_kbox00:	DB	'LP_kbox00',0
+FUNCNAME_LP_kbox00_Get:	DB	'LP_kbox00_Get',0
+FUNCNAME_LP_healobject:	DB	'LP_healobject',0
+FUNCNAME_AV_00005:	DB	'AV_00005',0
+FUNCNAME_AV_00006:	DB	'AV_00006',0
+FUNCNAME_EV_00_03_00:	DB	'EV_00_03_00',0
+FUNCNAME_ET_00_03_00_QUAKE:	DB	'ET_00_03_00_QUAKE',0
+FUNCNAME_ET_00_03_00_QUAKE_2:	DB	'ET_00_03_00_QUAKE_2',0
+FUNCNAME_EV_00_03_01:	DB	'EV_00_03_01',0
+FUNCNAME_QS_2301_03:	DB	'QS_2301_03',0
+FUNCNAME_QS_2301_03_2:	DB	'QS_2301_03_2',0
+FUNCNAME_SB_KIZUNA_LAURA_02:	DB	'SB_KIZUNA_LAURA_02',0
+FUNCNAME_EV_to_r0520:	DB	'EV_to_r0520',0
+FUNCNAME__LP_kbox00_Get:	DB	'_LP_kbox00_Get',0
+FUNCNAME__EV_00_03_00:	DB	'_EV_00_03_00',0
+FUNCNAME__ET_00_03_00_QUAKE:	DB	'_ET_00_03_00_QUAKE',0
+FUNCNAME__ET_00_03_00_QUAKE_2:	DB	'_ET_00_03_00_QUAKE_2',0
+FUNCNAME__EV_00_03_01:	DB	'_EV_00_03_01',0
+FUNCNAME__QS_2301_03:	DB	'_QS_2301_03',0
+FUNCNAME__SB_KIZUNA_LAURA_02:	DB	'_SB_KIZUNA_LAURA_02',0

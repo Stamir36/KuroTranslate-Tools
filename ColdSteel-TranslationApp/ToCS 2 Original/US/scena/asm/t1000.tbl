@@ -1,0 +1,359 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;t1000.scn 60
+	DD	PreInit					;t1000.scn 67
+	DD	Init					;t1000.scn 82
+	DD	Init_Replay					;t1000.scn 143
+	DD	Reinit					;t1000.scn 366
+	DD	LP_fishpoint00					;t1000.scn 392
+	DD	LP_door01					;t1000.scn 429
+	DD	ST_Jane					;t1000.scn 588
+	DD	LP_door07					;t1000.scn 618
+	DD	LP_door04					;t1000.scn 667
+	DD	LP_door06					;t1000.scn 716
+	DD	LP_door03					;t1000.scn 765
+	DD	LP_door09					;t1000.scn 814
+	DD	LP_door10					;t1000.scn 863
+	DD	LP_door08					;t1000.scn 912
+	DD	LP_door13					;t1000.scn 961
+	DD	LP_door12					;t1000.scn 1069
+	DD	LP_door11					;t1000.scn 1176
+	DD	AV_FishPoint					;t1000.scn 1228
+	DD	AV_03026					;t1000.scn 1246
+	DD	SB_03_AV03026					;t1000.scn 1292
+	DD	Npc_Table					;t1000.scn 1689
+	DD	millium_setting					;t1000.scn 1748
+	DD	rosine_setting					;t1000.scn 1770
+	DD	kaspar_setting					;t1000.scn 1787
+	DD	colette_setting					;t1000.scn 1802
+	DD	hugo_setting					;t1000.scn 1820
+	DD	becky_setting					;t1000.scn 1837
+	DD	kenneth_setting					;t1000.scn 1855
+	DD	margarita_setting					;t1000.scn 1878
+	DD	fidelio_setting					;t1000.scn 1893
+	DD	clain_setting					;t1000.scn 1909
+	DD	vincent_setting					;t1000.scn 1925
+	DD	salyfa_setting					;t1000.scn 1940
+	DD	friedel_setting					;t1000.scn 1956
+	DD	valimar_setting					;t1000.scn 1975
+	DD	norton_setting					;t1000.scn 1990
+	DD	NPC_EMO_WAIWAI					;t1000.scn 2005
+	DD	TK_norton					;t1000.scn 2021
+	DD	TK_becky_hugo_04_01					;t1000.scn 2123
+	DD	loggins_setting					;t1000.scn 2169
+	DD	TK_loggins_friedel_04_01					;t1000.scn 2186
+	DD	godon_setting					;t1000.scn 2233
+	DD	TK_godon					;t1000.scn 2245
+	DD	emil_setting					;t1000.scn 2275
+	DD	TK_emil					;t1000.scn 2288
+	DD	any_setting					;t1000.scn 2334
+	DD	TK_any					;t1000.scn 2368
+	DD	TK_any_kenneth_04_01					;t1000.scn 2500
+	DD	harison_setting					;t1000.scn 2554
+	DD	TK_harison					;t1000.scn 2574
+	DD	TK_harison_hanna_04_01					;t1000.scn 2651
+	DD	hanna_setting					;t1000.scn 2697
+	DD	TK_hanna					;t1000.scn 2718
+	DD	kult_setting					;t1000.scn 2787
+	DD	TK_kult					;t1000.scn 2808
+	DD	fred_setting					;t1000.scn 2856
+	DD	TK_fred					;t1000.scn 2870
+	DD	dory_setting					;t1000.scn 2899
+	DD	TK_dory					;t1000.scn 2921
+	DD	keinz_setting					;t1000.scn 3019
+	DD	TK_keinz					;t1000.scn 3032
+	DD	kay_setting					;t1000.scn 3061
+	DD	TK_kay					;t1000.scn 3082
+	DD	TK_kay_emil_04_01					;t1000.scn 3164
+	DD	TK_kay_rudy_03_D_02					;t1000.scn 3206
+	DD	rudy_setting					;t1000.scn 3289
+	DD	TK_rudy					;t1000.scn 3308
+	DD	brandon_setting					;t1000.scn 3451
+	DD	TK_brandon					;t1000.scn 3465
+	DD	tyzel_setting					;t1000.scn 3494
+	DD	TK_tyzel					;t1000.scn 3515
+	DD	juria_setting					;t1000.scn 3614
+	DD	TK_juria					;t1000.scn 3627
+	DD	jane_setting					;t1000.scn 3656
+	DD	TK_jane					;t1000.scn 3682
+	DD	mihct_setting					;t1000.scn 3840
+	DD	TK_mihct					;t1000.scn 3854
+	DD	oiler_setting					;t1000.scn 3880
+	DD	TK_oiler					;t1000.scn 3899
+	DD	marinda_setting					;t1000.scn 4009
+	DD	TK_marinda					;t1000.scn 4031
+	DD	TK_marinda_colette_04_01					;t1000.scn 4119
+	DD	pauro_setting					;t1000.scn 4153
+	DD	TK_pauro					;t1000.scn 4165
+	DD	olnera_setting					;t1000.scn 4192
+	DD	TK_olnera					;t1000.scn 4205
+	DD	andore_setting					;t1000.scn 4234
+	DD	TK_andore					;t1000.scn 4248
+	DD	dominic_setting					;t1000.scn 4332
+	DD	TK_dominic					;t1000.scn 4345
+	DD	t1000_soldier_t01_setting					;t1000.scn 4421
+	DD	TK_t1000_soldier_t01					;t1000.scn 4434
+	DD	lotte_setting					;t1000.scn 4470
+	DD	TK_lotte					;t1000.scn 4497
+	DD	EV_03_47_05					;t1000.scn 4701
+	DD	EV_03_48_00					;t1000.scn 5868
+	DD	EV_04_00_01					;t1000.scn 6605
+	DD	ET_04_00_01_WAIWAI					;t1000.scn 6966
+	DD	EV_04_02_00					;t1000.scn 6976
+	DD	EV_DOOR01					;t1000.scn 7089
+	DD	SB_KIZUNA_END					;t1000.scn 7406
+	DD	SB_03_RADIO					;t1000.scn 7724
+	DD	ST_TO_R0600					;t1000.scn 7937
+	DD	ST_TO_R0620					;t1000.scn 8005
+	DD	ST_station					;t1000.scn 8060
+	DD	_SB_03_AV03026					;t1000.scn 8110
+	DD	_TK_andore					;t1000.scn 8110
+	DD	_TK_lotte					;t1000.scn 8110
+	DD	_EV_03_47_05					;t1000.scn 8110
+	DD	_EV_03_48_00					;t1000.scn 8110
+	DD	_EV_04_00_01					;t1000.scn 8110
+	DD	_EV_04_02_00					;t1000.scn 8110
+	DD	_EV_DOOR01					;t1000.scn 8110
+	DD	_SB_KIZUNA_END					;t1000.scn 8110
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_LP_fishpoint00
+	DW	FUNCNAME_LP_door01
+	DW	FUNCNAME_ST_Jane
+	DW	FUNCNAME_LP_door07
+	DW	FUNCNAME_LP_door04
+	DW	FUNCNAME_LP_door06
+	DW	FUNCNAME_LP_door03
+	DW	FUNCNAME_LP_door09
+	DW	FUNCNAME_LP_door10
+	DW	FUNCNAME_LP_door08
+	DW	FUNCNAME_LP_door13
+	DW	FUNCNAME_LP_door12
+	DW	FUNCNAME_LP_door11
+	DW	FUNCNAME_AV_FishPoint
+	DW	FUNCNAME_AV_03026
+	DW	FUNCNAME_SB_03_AV03026
+	DW	FUNCNAME_Npc_Table
+	DW	FUNCNAME_millium_setting
+	DW	FUNCNAME_rosine_setting
+	DW	FUNCNAME_kaspar_setting
+	DW	FUNCNAME_colette_setting
+	DW	FUNCNAME_hugo_setting
+	DW	FUNCNAME_becky_setting
+	DW	FUNCNAME_kenneth_setting
+	DW	FUNCNAME_margarita_setting
+	DW	FUNCNAME_fidelio_setting
+	DW	FUNCNAME_clain_setting
+	DW	FUNCNAME_vincent_setting
+	DW	FUNCNAME_salyfa_setting
+	DW	FUNCNAME_friedel_setting
+	DW	FUNCNAME_valimar_setting
+	DW	FUNCNAME_norton_setting
+	DW	FUNCNAME_NPC_EMO_WAIWAI
+	DW	FUNCNAME_TK_norton
+	DW	FUNCNAME_TK_becky_hugo_04_01
+	DW	FUNCNAME_loggins_setting
+	DW	FUNCNAME_TK_loggins_friedel_04_01
+	DW	FUNCNAME_godon_setting
+	DW	FUNCNAME_TK_godon
+	DW	FUNCNAME_emil_setting
+	DW	FUNCNAME_TK_emil
+	DW	FUNCNAME_any_setting
+	DW	FUNCNAME_TK_any
+	DW	FUNCNAME_TK_any_kenneth_04_01
+	DW	FUNCNAME_harison_setting
+	DW	FUNCNAME_TK_harison
+	DW	FUNCNAME_TK_harison_hanna_04_01
+	DW	FUNCNAME_hanna_setting
+	DW	FUNCNAME_TK_hanna
+	DW	FUNCNAME_kult_setting
+	DW	FUNCNAME_TK_kult
+	DW	FUNCNAME_fred_setting
+	DW	FUNCNAME_TK_fred
+	DW	FUNCNAME_dory_setting
+	DW	FUNCNAME_TK_dory
+	DW	FUNCNAME_keinz_setting
+	DW	FUNCNAME_TK_keinz
+	DW	FUNCNAME_kay_setting
+	DW	FUNCNAME_TK_kay
+	DW	FUNCNAME_TK_kay_emil_04_01
+	DW	FUNCNAME_TK_kay_rudy_03_D_02
+	DW	FUNCNAME_rudy_setting
+	DW	FUNCNAME_TK_rudy
+	DW	FUNCNAME_brandon_setting
+	DW	FUNCNAME_TK_brandon
+	DW	FUNCNAME_tyzel_setting
+	DW	FUNCNAME_TK_tyzel
+	DW	FUNCNAME_juria_setting
+	DW	FUNCNAME_TK_juria
+	DW	FUNCNAME_jane_setting
+	DW	FUNCNAME_TK_jane
+	DW	FUNCNAME_mihct_setting
+	DW	FUNCNAME_TK_mihct
+	DW	FUNCNAME_oiler_setting
+	DW	FUNCNAME_TK_oiler
+	DW	FUNCNAME_marinda_setting
+	DW	FUNCNAME_TK_marinda
+	DW	FUNCNAME_TK_marinda_colette_04_01
+	DW	FUNCNAME_pauro_setting
+	DW	FUNCNAME_TK_pauro
+	DW	FUNCNAME_olnera_setting
+	DW	FUNCNAME_TK_olnera
+	DW	FUNCNAME_andore_setting
+	DW	FUNCNAME_TK_andore
+	DW	FUNCNAME_dominic_setting
+	DW	FUNCNAME_TK_dominic
+	DW	FUNCNAME_t1000_soldier_t01_setting
+	DW	FUNCNAME_TK_t1000_soldier_t01
+	DW	FUNCNAME_lotte_setting
+	DW	FUNCNAME_TK_lotte
+	DW	FUNCNAME_EV_03_47_05
+	DW	FUNCNAME_EV_03_48_00
+	DW	FUNCNAME_EV_04_00_01
+	DW	FUNCNAME_ET_04_00_01_WAIWAI
+	DW	FUNCNAME_EV_04_02_00
+	DW	FUNCNAME_EV_DOOR01
+	DW	FUNCNAME_SB_KIZUNA_END
+	DW	FUNCNAME_SB_03_RADIO
+	DW	FUNCNAME_ST_TO_R0600
+	DW	FUNCNAME_ST_TO_R0620
+	DW	FUNCNAME_ST_station
+	DW	FUNCNAME__SB_03_AV03026
+	DW	FUNCNAME__TK_andore
+	DW	FUNCNAME__TK_lotte
+	DW	FUNCNAME__EV_03_47_05
+	DW	FUNCNAME__EV_03_48_00
+	DW	FUNCNAME__EV_04_00_01
+	DW	FUNCNAME__EV_04_02_00
+	DW	FUNCNAME__EV_DOOR01
+	DW	FUNCNAME__SB_KIZUNA_END
+FUNCTION_NAME_TABLE_NUM	EQU	115
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_LP_fishpoint00:	DB	'LP_fishpoint00',0
+FUNCNAME_LP_door01:	DB	'LP_door01',0
+FUNCNAME_ST_Jane:	DB	'ST_Jane',0
+FUNCNAME_LP_door07:	DB	'LP_door07',0
+FUNCNAME_LP_door04:	DB	'LP_door04',0
+FUNCNAME_LP_door06:	DB	'LP_door06',0
+FUNCNAME_LP_door03:	DB	'LP_door03',0
+FUNCNAME_LP_door09:	DB	'LP_door09',0
+FUNCNAME_LP_door10:	DB	'LP_door10',0
+FUNCNAME_LP_door08:	DB	'LP_door08',0
+FUNCNAME_LP_door13:	DB	'LP_door13',0
+FUNCNAME_LP_door12:	DB	'LP_door12',0
+FUNCNAME_LP_door11:	DB	'LP_door11',0
+FUNCNAME_AV_FishPoint:	DB	'AV_FishPoint',0
+FUNCNAME_AV_03026:	DB	'AV_03026',0
+FUNCNAME_SB_03_AV03026:	DB	'SB_03_AV03026',0
+FUNCNAME_Npc_Table:	DB	'Npc_Table',0
+FUNCNAME_millium_setting:	DB	'millium_setting',0
+FUNCNAME_rosine_setting:	DB	'rosine_setting',0
+FUNCNAME_kaspar_setting:	DB	'kaspar_setting',0
+FUNCNAME_colette_setting:	DB	'colette_setting',0
+FUNCNAME_hugo_setting:	DB	'hugo_setting',0
+FUNCNAME_becky_setting:	DB	'becky_setting',0
+FUNCNAME_kenneth_setting:	DB	'kenneth_setting',0
+FUNCNAME_margarita_setting:	DB	'margarita_setting',0
+FUNCNAME_fidelio_setting:	DB	'fidelio_setting',0
+FUNCNAME_clain_setting:	DB	'clain_setting',0
+FUNCNAME_vincent_setting:	DB	'vincent_setting',0
+FUNCNAME_salyfa_setting:	DB	'salyfa_setting',0
+FUNCNAME_friedel_setting:	DB	'friedel_setting',0
+FUNCNAME_valimar_setting:	DB	'valimar_setting',0
+FUNCNAME_norton_setting:	DB	'norton_setting',0
+FUNCNAME_NPC_EMO_WAIWAI:	DB	'NPC_EMO_WAIWAI',0
+FUNCNAME_TK_norton:	DB	'TK_norton',0
+FUNCNAME_TK_becky_hugo_04_01:	DB	'TK_becky_hugo_04_01',0
+FUNCNAME_loggins_setting:	DB	'loggins_setting',0
+FUNCNAME_TK_loggins_friedel_04_01:	DB	'TK_loggins_friedel_04_01',0
+FUNCNAME_godon_setting:	DB	'godon_setting',0
+FUNCNAME_TK_godon:	DB	'TK_godon',0
+FUNCNAME_emil_setting:	DB	'emil_setting',0
+FUNCNAME_TK_emil:	DB	'TK_emil',0
+FUNCNAME_any_setting:	DB	'any_setting',0
+FUNCNAME_TK_any:	DB	'TK_any',0
+FUNCNAME_TK_any_kenneth_04_01:	DB	'TK_any_kenneth_04_01',0
+FUNCNAME_harison_setting:	DB	'harison_setting',0
+FUNCNAME_TK_harison:	DB	'TK_harison',0
+FUNCNAME_TK_harison_hanna_04_01:	DB	'TK_harison_hanna_04_01',0
+FUNCNAME_hanna_setting:	DB	'hanna_setting',0
+FUNCNAME_TK_hanna:	DB	'TK_hanna',0
+FUNCNAME_kult_setting:	DB	'kult_setting',0
+FUNCNAME_TK_kult:	DB	'TK_kult',0
+FUNCNAME_fred_setting:	DB	'fred_setting',0
+FUNCNAME_TK_fred:	DB	'TK_fred',0
+FUNCNAME_dory_setting:	DB	'dory_setting',0
+FUNCNAME_TK_dory:	DB	'TK_dory',0
+FUNCNAME_keinz_setting:	DB	'keinz_setting',0
+FUNCNAME_TK_keinz:	DB	'TK_keinz',0
+FUNCNAME_kay_setting:	DB	'kay_setting',0
+FUNCNAME_TK_kay:	DB	'TK_kay',0
+FUNCNAME_TK_kay_emil_04_01:	DB	'TK_kay_emil_04_01',0
+FUNCNAME_TK_kay_rudy_03_D_02:	DB	'TK_kay_rudy_03_D_02',0
+FUNCNAME_rudy_setting:	DB	'rudy_setting',0
+FUNCNAME_TK_rudy:	DB	'TK_rudy',0
+FUNCNAME_brandon_setting:	DB	'brandon_setting',0
+FUNCNAME_TK_brandon:	DB	'TK_brandon',0
+FUNCNAME_tyzel_setting:	DB	'tyzel_setting',0
+FUNCNAME_TK_tyzel:	DB	'TK_tyzel',0
+FUNCNAME_juria_setting:	DB	'juria_setting',0
+FUNCNAME_TK_juria:	DB	'TK_juria',0
+FUNCNAME_jane_setting:	DB	'jane_setting',0
+FUNCNAME_TK_jane:	DB	'TK_jane',0
+FUNCNAME_mihct_setting:	DB	'mihct_setting',0
+FUNCNAME_TK_mihct:	DB	'TK_mihct',0
+FUNCNAME_oiler_setting:	DB	'oiler_setting',0
+FUNCNAME_TK_oiler:	DB	'TK_oiler',0
+FUNCNAME_marinda_setting:	DB	'marinda_setting',0
+FUNCNAME_TK_marinda:	DB	'TK_marinda',0
+FUNCNAME_TK_marinda_colette_04_01:	DB	'TK_marinda_colette_04_01',0
+FUNCNAME_pauro_setting:	DB	'pauro_setting',0
+FUNCNAME_TK_pauro:	DB	'TK_pauro',0
+FUNCNAME_olnera_setting:	DB	'olnera_setting',0
+FUNCNAME_TK_olnera:	DB	'TK_olnera',0
+FUNCNAME_andore_setting:	DB	'andore_setting',0
+FUNCNAME_TK_andore:	DB	'TK_andore',0
+FUNCNAME_dominic_setting:	DB	'dominic_setting',0
+FUNCNAME_TK_dominic:	DB	'TK_dominic',0
+FUNCNAME_t1000_soldier_t01_setting:	DB	't1000_soldier_t01_setting',0
+FUNCNAME_TK_t1000_soldier_t01:	DB	'TK_t1000_soldier_t01',0
+FUNCNAME_lotte_setting:	DB	'lotte_setting',0
+FUNCNAME_TK_lotte:	DB	'TK_lotte',0
+FUNCNAME_EV_03_47_05:	DB	'EV_03_47_05',0
+FUNCNAME_EV_03_48_00:	DB	'EV_03_48_00',0
+FUNCNAME_EV_04_00_01:	DB	'EV_04_00_01',0
+FUNCNAME_ET_04_00_01_WAIWAI:	DB	'ET_04_00_01_WAIWAI',0
+FUNCNAME_EV_04_02_00:	DB	'EV_04_02_00',0
+FUNCNAME_EV_DOOR01:	DB	'EV_DOOR01',0
+FUNCNAME_SB_KIZUNA_END:	DB	'SB_KIZUNA_END',0
+FUNCNAME_SB_03_RADIO:	DB	'SB_03_RADIO',0
+FUNCNAME_ST_TO_R0600:	DB	'ST_TO_R0600',0
+FUNCNAME_ST_TO_R0620:	DB	'ST_TO_R0620',0
+FUNCNAME_ST_station:	DB	'ST_station',0
+FUNCNAME__SB_03_AV03026:	DB	'_SB_03_AV03026',0
+FUNCNAME__TK_andore:	DB	'_TK_andore',0
+FUNCNAME__TK_lotte:	DB	'_TK_lotte',0
+FUNCNAME__EV_03_47_05:	DB	'_EV_03_47_05',0
+FUNCNAME__EV_03_48_00:	DB	'_EV_03_48_00',0
+FUNCNAME__EV_04_00_01:	DB	'_EV_04_00_01',0
+FUNCNAME__EV_04_02_00:	DB	'_EV_04_02_00',0
+FUNCNAME__EV_DOOR01:	DB	'_EV_DOOR01',0
+FUNCNAME__SB_KIZUNA_END:	DB	'_SB_KIZUNA_END',0

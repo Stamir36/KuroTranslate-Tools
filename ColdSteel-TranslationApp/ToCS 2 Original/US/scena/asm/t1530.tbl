@@ -1,0 +1,107 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;t1530.scn 46
+	DD	PreInit					;t1530.scn 53
+	DD	Init					;t1530.scn 68
+	DD	Init_Replay					;t1530.scn 111
+	DD	Reinit					;t1530.scn 164
+	DD	Npc_Table					;t1530.scn 190
+	DD	alfin_setting					;t1530.scn 220
+	DD	rymon_setting					;t1530.scn 251
+	DD	TK_rymon					;t1530.scn 270
+	DD	risy_setting					;t1530.scn 304
+	DD	TK_risy					;t1530.scn 319
+	DD	colnet_setting					;t1530.scn 378
+	DD	TK_colnet					;t1530.scn 397
+	DD	otto_setting					;t1530.scn 425
+	DD	TK_otto					;t1530.scn 467
+	DD	perum_setting					;t1530.scn 749
+	DD	TK_perum					;t1530.scn 834
+	DD	york_setting					;t1530.scn 1181
+	DD	TK_york					;t1530.scn 1242
+	DD	renth_setting					;t1530.scn 1543
+	DD	TK_renth					;t1530.scn 1601
+	DD	TK_york_renth_01_A_03					;t1530.scn 1954
+	DD	zilbel_setting					;t1530.scn 2017
+	DD	TK_zilbel					;t1530.scn 2032
+	DD	QS_1102_COMP					;t1530.scn 2094
+	DD	SB_KIZUNA_MACHIAS_03C					;t1530.scn 2238
+	DD	SB_01_QUEST_CELDIC					;t1530.scn 2366
+	DD	SB_03_DIE_OTTO					;t1530.scn 2841
+	DD	SB_03_DIE_OTTO_YORK					;t1530.scn 3304
+	DD	_QS_1102_COMP					;t1530.scn 3322
+	DD	_SB_01_QUEST_CELDIC					;t1530.scn 3322
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_Npc_Table
+	DW	FUNCNAME_alfin_setting
+	DW	FUNCNAME_rymon_setting
+	DW	FUNCNAME_TK_rymon
+	DW	FUNCNAME_risy_setting
+	DW	FUNCNAME_TK_risy
+	DW	FUNCNAME_colnet_setting
+	DW	FUNCNAME_TK_colnet
+	DW	FUNCNAME_otto_setting
+	DW	FUNCNAME_TK_otto
+	DW	FUNCNAME_perum_setting
+	DW	FUNCNAME_TK_perum
+	DW	FUNCNAME_york_setting
+	DW	FUNCNAME_TK_york
+	DW	FUNCNAME_renth_setting
+	DW	FUNCNAME_TK_renth
+	DW	FUNCNAME_TK_york_renth_01_A_03
+	DW	FUNCNAME_zilbel_setting
+	DW	FUNCNAME_TK_zilbel
+	DW	FUNCNAME_QS_1102_COMP
+	DW	FUNCNAME_SB_KIZUNA_MACHIAS_03C
+	DW	FUNCNAME_SB_01_QUEST_CELDIC
+	DW	FUNCNAME_SB_03_DIE_OTTO
+	DW	FUNCNAME_SB_03_DIE_OTTO_YORK
+	DW	FUNCNAME__QS_1102_COMP
+	DW	FUNCNAME__SB_01_QUEST_CELDIC
+FUNCTION_NAME_TABLE_NUM	EQU	31
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_Npc_Table:	DB	'Npc_Table',0
+FUNCNAME_alfin_setting:	DB	'alfin_setting',0
+FUNCNAME_rymon_setting:	DB	'rymon_setting',0
+FUNCNAME_TK_rymon:	DB	'TK_rymon',0
+FUNCNAME_risy_setting:	DB	'risy_setting',0
+FUNCNAME_TK_risy:	DB	'TK_risy',0
+FUNCNAME_colnet_setting:	DB	'colnet_setting',0
+FUNCNAME_TK_colnet:	DB	'TK_colnet',0
+FUNCNAME_otto_setting:	DB	'otto_setting',0
+FUNCNAME_TK_otto:	DB	'TK_otto',0
+FUNCNAME_perum_setting:	DB	'perum_setting',0
+FUNCNAME_TK_perum:	DB	'TK_perum',0
+FUNCNAME_york_setting:	DB	'york_setting',0
+FUNCNAME_TK_york:	DB	'TK_york',0
+FUNCNAME_renth_setting:	DB	'renth_setting',0
+FUNCNAME_TK_renth:	DB	'TK_renth',0
+FUNCNAME_TK_york_renth_01_A_03:	DB	'TK_york_renth_01_A_03',0
+FUNCNAME_zilbel_setting:	DB	'zilbel_setting',0
+FUNCNAME_TK_zilbel:	DB	'TK_zilbel',0
+FUNCNAME_QS_1102_COMP:	DB	'QS_1102_COMP',0
+FUNCNAME_SB_KIZUNA_MACHIAS_03C:	DB	'SB_KIZUNA_MACHIAS_03C',0
+FUNCNAME_SB_01_QUEST_CELDIC:	DB	'SB_01_QUEST_CELDIC',0
+FUNCNAME_SB_03_DIE_OTTO:	DB	'SB_03_DIE_OTTO',0
+FUNCNAME_SB_03_DIE_OTTO_YORK:	DB	'SB_03_DIE_OTTO_YORK',0
+FUNCNAME__QS_1102_COMP:	DB	'_QS_1102_COMP',0
+FUNCNAME__SB_01_QUEST_CELDIC:	DB	'_SB_01_QUEST_CELDIC',0

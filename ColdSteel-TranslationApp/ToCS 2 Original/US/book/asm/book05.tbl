@@ -1,0 +1,293 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	BookData01_99					;book05.scn 29
+	DD	BookData01_01					;book05.scn 35
+	DD	BookData01_02					;book05.scn 53
+	DD	BookData01_03					;book05.scn 70
+	DD	BookData01_04					;book05.scn 88
+	DD	BookData02_99					;book05.scn 104
+	DD	BookData02_01					;book05.scn 110
+	DD	BookData02_02					;book05.scn 128
+	DD	BookData02_03					;book05.scn 146
+	DD	BookData02_04					;book05.scn 163
+	DD	BookData02_05					;book05.scn 181
+	DD	BookData03_99					;book05.scn 197
+	DD	BookData03_01					;book05.scn 203
+	DD	BookData03_02					;book05.scn 221
+	DD	BookData03_03					;book05.scn 239
+	DD	BookData03_04					;book05.scn 256
+	DD	BookData03_05					;book05.scn 274
+	DD	BookData04_99					;book05.scn 295
+	DD	BookData04_01					;book05.scn 301
+	DD	BookData04_02					;book05.scn 319
+	DD	BookData04_03					;book05.scn 336
+	DD	BookData04_04					;book05.scn 352
+	DD	BookData04_05					;book05.scn 370
+	DD	BookData04_06					;book05.scn 387
+	DD	BookData05_99					;book05.scn 403
+	DD	BookData05_01					;book05.scn 409
+	DD	BookData05_02					;book05.scn 427
+	DD	BookData05_03					;book05.scn 443
+	DD	BookData05_04					;book05.scn 460
+	DD	BookData05_05					;book05.scn 478
+	DD	BookData05_06					;book05.scn 496
+	DD	BookData01A_99					;book05.scn 513
+	DD	BookData01A_01					;book05.scn 519
+	DD	BookData01A_02					;book05.scn 537
+	DD	BookData01A_03					;book05.scn 553
+	DD	BookData01A_04					;book05.scn 571
+	DD	BookData02A_99					;book05.scn 587
+	DD	BookData02A_01					;book05.scn 593
+	DD	BookData02A_02					;book05.scn 611
+	DD	BookData02A_03					;book05.scn 629
+	DD	BookData02A_04					;book05.scn 645
+	DD	BookData02A_05					;book05.scn 663
+	DD	BookData03A_99					;book05.scn 679
+	DD	BookData03A_01					;book05.scn 685
+	DD	BookData03A_02					;book05.scn 703
+	DD	BookData03A_03					;book05.scn 721
+	DD	BookData03A_04					;book05.scn 738
+	DD	BookData03A_05					;book05.scn 756
+	DD	BookData04A_99					;book05.scn 777
+	DD	BookData04A_01					;book05.scn 783
+	DD	BookData04A_02					;book05.scn 801
+	DD	BookData04A_03					;book05.scn 818
+	DD	BookData04A_04					;book05.scn 834
+	DD	BookData04A_05					;book05.scn 852
+	DD	BookData04A_06					;book05.scn 869
+	DD	BookData05A_99					;book05.scn 884
+	DD	BookData05A_01					;book05.scn 890
+	DD	BookData05A_02					;book05.scn 908
+	DD	BookData05A_03					;book05.scn 924
+	DD	BookData05A_04					;book05.scn 941
+	DD	BookData05A_05					;book05.scn 959
+	DD	BookData05A_06					;book05.scn 977
+	DD	BookData01B_99					;book05.scn 994
+	DD	BookData01B_01					;book05.scn 1000
+	DD	BookData01B_02					;book05.scn 1018
+	DD	BookData01B_03					;book05.scn 1034
+	DD	BookData01B_04					;book05.scn 1052
+	DD	BookData02B_99					;book05.scn 1068
+	DD	BookData02B_01					;book05.scn 1074
+	DD	BookData02B_02					;book05.scn 1092
+	DD	BookData02B_03					;book05.scn 1110
+	DD	BookData02B_04					;book05.scn 1126
+	DD	BookData02B_05					;book05.scn 1144
+	DD	BookData03B_99					;book05.scn 1160
+	DD	BookData03B_01					;book05.scn 1166
+	DD	BookData03B_02					;book05.scn 1184
+	DD	BookData03B_03					;book05.scn 1202
+	DD	BookData03B_04					;book05.scn 1219
+	DD	BookData03B_05					;book05.scn 1237
+	DD	BookData04B_99					;book05.scn 1258
+	DD	BookData04B_01					;book05.scn 1264
+	DD	BookData04B_02					;book05.scn 1282
+	DD	BookData04B_03					;book05.scn 1299
+	DD	BookData04B_04					;book05.scn 1315
+	DD	BookData04B_05					;book05.scn 1333
+	DD	BookData04B_06					;book05.scn 1350
+	DD	BookData05B_99					;book05.scn 1365
+	DD	BookData05B_01					;book05.scn 1371
+	DD	BookData05B_02					;book05.scn 1389
+	DD	BookData05B_03					;book05.scn 1405
+	DD	BookData05B_04					;book05.scn 1422
+	DD	BookData05B_05					;book05.scn 1440
+	DD	BookData05B_06					;book05.scn 1458
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_BookData01_99
+	DW	FUNCNAME_BookData01_01
+	DW	FUNCNAME_BookData01_02
+	DW	FUNCNAME_BookData01_03
+	DW	FUNCNAME_BookData01_04
+	DW	FUNCNAME_BookData02_99
+	DW	FUNCNAME_BookData02_01
+	DW	FUNCNAME_BookData02_02
+	DW	FUNCNAME_BookData02_03
+	DW	FUNCNAME_BookData02_04
+	DW	FUNCNAME_BookData02_05
+	DW	FUNCNAME_BookData03_99
+	DW	FUNCNAME_BookData03_01
+	DW	FUNCNAME_BookData03_02
+	DW	FUNCNAME_BookData03_03
+	DW	FUNCNAME_BookData03_04
+	DW	FUNCNAME_BookData03_05
+	DW	FUNCNAME_BookData04_99
+	DW	FUNCNAME_BookData04_01
+	DW	FUNCNAME_BookData04_02
+	DW	FUNCNAME_BookData04_03
+	DW	FUNCNAME_BookData04_04
+	DW	FUNCNAME_BookData04_05
+	DW	FUNCNAME_BookData04_06
+	DW	FUNCNAME_BookData05_99
+	DW	FUNCNAME_BookData05_01
+	DW	FUNCNAME_BookData05_02
+	DW	FUNCNAME_BookData05_03
+	DW	FUNCNAME_BookData05_04
+	DW	FUNCNAME_BookData05_05
+	DW	FUNCNAME_BookData05_06
+	DW	FUNCNAME_BookData01A_99
+	DW	FUNCNAME_BookData01A_01
+	DW	FUNCNAME_BookData01A_02
+	DW	FUNCNAME_BookData01A_03
+	DW	FUNCNAME_BookData01A_04
+	DW	FUNCNAME_BookData02A_99
+	DW	FUNCNAME_BookData02A_01
+	DW	FUNCNAME_BookData02A_02
+	DW	FUNCNAME_BookData02A_03
+	DW	FUNCNAME_BookData02A_04
+	DW	FUNCNAME_BookData02A_05
+	DW	FUNCNAME_BookData03A_99
+	DW	FUNCNAME_BookData03A_01
+	DW	FUNCNAME_BookData03A_02
+	DW	FUNCNAME_BookData03A_03
+	DW	FUNCNAME_BookData03A_04
+	DW	FUNCNAME_BookData03A_05
+	DW	FUNCNAME_BookData04A_99
+	DW	FUNCNAME_BookData04A_01
+	DW	FUNCNAME_BookData04A_02
+	DW	FUNCNAME_BookData04A_03
+	DW	FUNCNAME_BookData04A_04
+	DW	FUNCNAME_BookData04A_05
+	DW	FUNCNAME_BookData04A_06
+	DW	FUNCNAME_BookData05A_99
+	DW	FUNCNAME_BookData05A_01
+	DW	FUNCNAME_BookData05A_02
+	DW	FUNCNAME_BookData05A_03
+	DW	FUNCNAME_BookData05A_04
+	DW	FUNCNAME_BookData05A_05
+	DW	FUNCNAME_BookData05A_06
+	DW	FUNCNAME_BookData01B_99
+	DW	FUNCNAME_BookData01B_01
+	DW	FUNCNAME_BookData01B_02
+	DW	FUNCNAME_BookData01B_03
+	DW	FUNCNAME_BookData01B_04
+	DW	FUNCNAME_BookData02B_99
+	DW	FUNCNAME_BookData02B_01
+	DW	FUNCNAME_BookData02B_02
+	DW	FUNCNAME_BookData02B_03
+	DW	FUNCNAME_BookData02B_04
+	DW	FUNCNAME_BookData02B_05
+	DW	FUNCNAME_BookData03B_99
+	DW	FUNCNAME_BookData03B_01
+	DW	FUNCNAME_BookData03B_02
+	DW	FUNCNAME_BookData03B_03
+	DW	FUNCNAME_BookData03B_04
+	DW	FUNCNAME_BookData03B_05
+	DW	FUNCNAME_BookData04B_99
+	DW	FUNCNAME_BookData04B_01
+	DW	FUNCNAME_BookData04B_02
+	DW	FUNCNAME_BookData04B_03
+	DW	FUNCNAME_BookData04B_04
+	DW	FUNCNAME_BookData04B_05
+	DW	FUNCNAME_BookData04B_06
+	DW	FUNCNAME_BookData05B_99
+	DW	FUNCNAME_BookData05B_01
+	DW	FUNCNAME_BookData05B_02
+	DW	FUNCNAME_BookData05B_03
+	DW	FUNCNAME_BookData05B_04
+	DW	FUNCNAME_BookData05B_05
+	DW	FUNCNAME_BookData05B_06
+FUNCTION_NAME_TABLE_NUM	EQU	93
+;=====================================================================
+FUNCNAME_BookData01_99:	DB	'BookData01_99',0
+FUNCNAME_BookData01_01:	DB	'BookData01_01',0
+FUNCNAME_BookData01_02:	DB	'BookData01_02',0
+FUNCNAME_BookData01_03:	DB	'BookData01_03',0
+FUNCNAME_BookData01_04:	DB	'BookData01_04',0
+FUNCNAME_BookData02_99:	DB	'BookData02_99',0
+FUNCNAME_BookData02_01:	DB	'BookData02_01',0
+FUNCNAME_BookData02_02:	DB	'BookData02_02',0
+FUNCNAME_BookData02_03:	DB	'BookData02_03',0
+FUNCNAME_BookData02_04:	DB	'BookData02_04',0
+FUNCNAME_BookData02_05:	DB	'BookData02_05',0
+FUNCNAME_BookData03_99:	DB	'BookData03_99',0
+FUNCNAME_BookData03_01:	DB	'BookData03_01',0
+FUNCNAME_BookData03_02:	DB	'BookData03_02',0
+FUNCNAME_BookData03_03:	DB	'BookData03_03',0
+FUNCNAME_BookData03_04:	DB	'BookData03_04',0
+FUNCNAME_BookData03_05:	DB	'BookData03_05',0
+FUNCNAME_BookData04_99:	DB	'BookData04_99',0
+FUNCNAME_BookData04_01:	DB	'BookData04_01',0
+FUNCNAME_BookData04_02:	DB	'BookData04_02',0
+FUNCNAME_BookData04_03:	DB	'BookData04_03',0
+FUNCNAME_BookData04_04:	DB	'BookData04_04',0
+FUNCNAME_BookData04_05:	DB	'BookData04_05',0
+FUNCNAME_BookData04_06:	DB	'BookData04_06',0
+FUNCNAME_BookData05_99:	DB	'BookData05_99',0
+FUNCNAME_BookData05_01:	DB	'BookData05_01',0
+FUNCNAME_BookData05_02:	DB	'BookData05_02',0
+FUNCNAME_BookData05_03:	DB	'BookData05_03',0
+FUNCNAME_BookData05_04:	DB	'BookData05_04',0
+FUNCNAME_BookData05_05:	DB	'BookData05_05',0
+FUNCNAME_BookData05_06:	DB	'BookData05_06',0
+FUNCNAME_BookData01A_99:	DB	'BookData01A_99',0
+FUNCNAME_BookData01A_01:	DB	'BookData01A_01',0
+FUNCNAME_BookData01A_02:	DB	'BookData01A_02',0
+FUNCNAME_BookData01A_03:	DB	'BookData01A_03',0
+FUNCNAME_BookData01A_04:	DB	'BookData01A_04',0
+FUNCNAME_BookData02A_99:	DB	'BookData02A_99',0
+FUNCNAME_BookData02A_01:	DB	'BookData02A_01',0
+FUNCNAME_BookData02A_02:	DB	'BookData02A_02',0
+FUNCNAME_BookData02A_03:	DB	'BookData02A_03',0
+FUNCNAME_BookData02A_04:	DB	'BookData02A_04',0
+FUNCNAME_BookData02A_05:	DB	'BookData02A_05',0
+FUNCNAME_BookData03A_99:	DB	'BookData03A_99',0
+FUNCNAME_BookData03A_01:	DB	'BookData03A_01',0
+FUNCNAME_BookData03A_02:	DB	'BookData03A_02',0
+FUNCNAME_BookData03A_03:	DB	'BookData03A_03',0
+FUNCNAME_BookData03A_04:	DB	'BookData03A_04',0
+FUNCNAME_BookData03A_05:	DB	'BookData03A_05',0
+FUNCNAME_BookData04A_99:	DB	'BookData04A_99',0
+FUNCNAME_BookData04A_01:	DB	'BookData04A_01',0
+FUNCNAME_BookData04A_02:	DB	'BookData04A_02',0
+FUNCNAME_BookData04A_03:	DB	'BookData04A_03',0
+FUNCNAME_BookData04A_04:	DB	'BookData04A_04',0
+FUNCNAME_BookData04A_05:	DB	'BookData04A_05',0
+FUNCNAME_BookData04A_06:	DB	'BookData04A_06',0
+FUNCNAME_BookData05A_99:	DB	'BookData05A_99',0
+FUNCNAME_BookData05A_01:	DB	'BookData05A_01',0
+FUNCNAME_BookData05A_02:	DB	'BookData05A_02',0
+FUNCNAME_BookData05A_03:	DB	'BookData05A_03',0
+FUNCNAME_BookData05A_04:	DB	'BookData05A_04',0
+FUNCNAME_BookData05A_05:	DB	'BookData05A_05',0
+FUNCNAME_BookData05A_06:	DB	'BookData05A_06',0
+FUNCNAME_BookData01B_99:	DB	'BookData01B_99',0
+FUNCNAME_BookData01B_01:	DB	'BookData01B_01',0
+FUNCNAME_BookData01B_02:	DB	'BookData01B_02',0
+FUNCNAME_BookData01B_03:	DB	'BookData01B_03',0
+FUNCNAME_BookData01B_04:	DB	'BookData01B_04',0
+FUNCNAME_BookData02B_99:	DB	'BookData02B_99',0
+FUNCNAME_BookData02B_01:	DB	'BookData02B_01',0
+FUNCNAME_BookData02B_02:	DB	'BookData02B_02',0
+FUNCNAME_BookData02B_03:	DB	'BookData02B_03',0
+FUNCNAME_BookData02B_04:	DB	'BookData02B_04',0
+FUNCNAME_BookData02B_05:	DB	'BookData02B_05',0
+FUNCNAME_BookData03B_99:	DB	'BookData03B_99',0
+FUNCNAME_BookData03B_01:	DB	'BookData03B_01',0
+FUNCNAME_BookData03B_02:	DB	'BookData03B_02',0
+FUNCNAME_BookData03B_03:	DB	'BookData03B_03',0
+FUNCNAME_BookData03B_04:	DB	'BookData03B_04',0
+FUNCNAME_BookData03B_05:	DB	'BookData03B_05',0
+FUNCNAME_BookData04B_99:	DB	'BookData04B_99',0
+FUNCNAME_BookData04B_01:	DB	'BookData04B_01',0
+FUNCNAME_BookData04B_02:	DB	'BookData04B_02',0
+FUNCNAME_BookData04B_03:	DB	'BookData04B_03',0
+FUNCNAME_BookData04B_04:	DB	'BookData04B_04',0
+FUNCNAME_BookData04B_05:	DB	'BookData04B_05',0
+FUNCNAME_BookData04B_06:	DB	'BookData04B_06',0
+FUNCNAME_BookData05B_99:	DB	'BookData05B_99',0
+FUNCNAME_BookData05B_01:	DB	'BookData05B_01',0
+FUNCNAME_BookData05B_02:	DB	'BookData05B_02',0
+FUNCNAME_BookData05B_03:	DB	'BookData05B_03',0
+FUNCNAME_BookData05B_04:	DB	'BookData05B_04',0
+FUNCNAME_BookData05B_05:	DB	'BookData05B_05',0
+FUNCNAME_BookData05B_06:	DB	'BookData05B_06',0

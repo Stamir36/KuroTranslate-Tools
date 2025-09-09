@@ -1,0 +1,227 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	Init					;camp_menu_v.scn 22
+	DD	Open					;camp_menu_v.scn 128
+	DD	Close					;camp_menu_v.scn 187
+	DD	FadeIn					;camp_menu_v.scn 205
+	DD	FadeOut					;camp_menu_v.scn 210
+	DD	FadeOut25					;camp_menu_v.scn 215
+	DD	FadeOut50					;camp_menu_v.scn 220
+	DD	FadeOut75					;camp_menu_v.scn 225
+	DD	InitCampMenu					;camp_menu_v.scn 240
+	DD	OpenCampMenu					;camp_menu_v.scn 282
+	DD	CloseCampMenu					;camp_menu_v.scn 303
+	DD	CloseCampMenuLast					;camp_menu_v.scn 319
+	DD	OpenCampHeadMenu					;camp_menu_v.scn 329
+	DD	CloseCampHeadMenu					;camp_menu_v.scn 339
+	DD	InitCampPartyInfo					;camp_menu_v.scn 355
+	DD	OpenCampPartyInfo					;camp_menu_v.scn 399
+	DD	CloseCampPartyInfo					;camp_menu_v.scn 404
+	DD	InitStatusMenu					;camp_menu_v.scn 414
+	DD	OpenStatusMenu					;camp_menu_v.scn 477
+	DD	CloseStatusMenu					;camp_menu_v.scn 499
+	DD	BackStatusInfo					;camp_menu_v.scn 513
+	DD	FrontStatusInfo					;camp_menu_v.scn 527
+	DD	InitEquipMenu					;camp_menu_v.scn 547
+	DD	OpenEquipMenu					;camp_menu_v.scn 631
+	DD	CloseEquipMenu					;camp_menu_v.scn 653
+	DD	BackEquipInfo					;camp_menu_v.scn 667
+	DD	FrontEquipInfo					;camp_menu_v.scn 681
+	DD	OpenEquipItemList					;camp_menu_v.scn 695
+	DD	CloseEquipItemList					;camp_menu_v.scn 704
+	DD	InitOrbmentMenu					;camp_menu_v.scn 718
+	DD	OpenOrbmentMenu					;camp_menu_v.scn 760
+	DD	CloseOrbmentMenu					;camp_menu_v.scn 782
+	DD	BackOrbmentInfo					;camp_menu_v.scn 797
+	DD	FrontOrbmentInfo					;camp_menu_v.scn 811
+	DD	OpenArtsList					;camp_menu_v.scn 826
+	DD	CloseArtsList					;camp_menu_v.scn 837
+	DD	OpenQuartzList					;camp_menu_v.scn 848
+	DD	CloseQuartzList					;camp_menu_v.scn 859
+	DD	OpenQuartzArtsList					;camp_menu_v.scn 871
+	DD	CloseQuartzArtsList					;camp_menu_v.scn 880
+	DD	OpenArtsTarget					;camp_menu_v.scn 890
+	DD	CloseArtsTarget					;camp_menu_v.scn 904
+	DD	OpenMasterQuartzList					;camp_menu_v.scn 917
+	DD	CloseMasterQuartzList					;camp_menu_v.scn 937
+	DD	OpenQuartzItemList					;camp_menu_v.scn 956
+	DD	CloseQuartzItemList					;camp_menu_v.scn 965
+	DD	InitToolbox					;camp_menu_v.scn 978
+	DD	OpenToolbox					;camp_menu_v.scn 1007
+	DD	CloseToolbox					;camp_menu_v.scn 1023
+	DD	CloseToolboxFirst					;camp_menu_v.scn 1037
+	DD	InitToolboxAction					;camp_menu_v.scn 1050
+	DD	OpenToolboxAction					;camp_menu_v.scn 1054
+	DD	CloseToolboxAction					;camp_menu_v.scn 1058
+	DD	OpenToolboxTarget					;camp_menu_v.scn 1066
+	DD	CloseToolboxTarget					;camp_menu_v.scn 1074
+	DD	InitLinkMenu					;camp_menu_v.scn 1086
+	DD	OpenLinkMenu					;camp_menu_v.scn 1102
+	DD	CloseLinkMenu					;camp_menu_v.scn 1125
+	DD	BackLinkInfo					;camp_menu_v.scn 1143
+	DD	FrontLinkInfo					;camp_menu_v.scn 1157
+	DD	InitTacticsMenu					;camp_menu_v.scn 1176
+	DD	OpenTacticsMenu					;camp_menu_v.scn 1190
+	DD	CloseTacticsMenu					;camp_menu_v.scn 1209
+	DD	InitSystemMenu					;camp_menu_v.scn 1228
+	DD	OpenSystemMenu					;camp_menu_v.scn 1247
+	DD	CloseSystemMenu					;camp_menu_v.scn 1264
+	DD	OpenSystemSubMenu					;camp_menu_v.scn 1280
+	DD	CloseSystemSubMenu					;camp_menu_v.scn 1287
+	DD	InitOptionMenu					;camp_menu_v.scn 1300
+	DD	OpenOptionMenu					;camp_menu_v.scn 1310
+	DD	CloseOptionMenu					;camp_menu_v.scn 1321
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Open
+	DW	FUNCNAME_Close
+	DW	FUNCNAME_FadeIn
+	DW	FUNCNAME_FadeOut
+	DW	FUNCNAME_FadeOut25
+	DW	FUNCNAME_FadeOut50
+	DW	FUNCNAME_FadeOut75
+	DW	FUNCNAME_InitCampMenu
+	DW	FUNCNAME_OpenCampMenu
+	DW	FUNCNAME_CloseCampMenu
+	DW	FUNCNAME_CloseCampMenuLast
+	DW	FUNCNAME_OpenCampHeadMenu
+	DW	FUNCNAME_CloseCampHeadMenu
+	DW	FUNCNAME_InitCampPartyInfo
+	DW	FUNCNAME_OpenCampPartyInfo
+	DW	FUNCNAME_CloseCampPartyInfo
+	DW	FUNCNAME_InitStatusMenu
+	DW	FUNCNAME_OpenStatusMenu
+	DW	FUNCNAME_CloseStatusMenu
+	DW	FUNCNAME_BackStatusInfo
+	DW	FUNCNAME_FrontStatusInfo
+	DW	FUNCNAME_InitEquipMenu
+	DW	FUNCNAME_OpenEquipMenu
+	DW	FUNCNAME_CloseEquipMenu
+	DW	FUNCNAME_BackEquipInfo
+	DW	FUNCNAME_FrontEquipInfo
+	DW	FUNCNAME_OpenEquipItemList
+	DW	FUNCNAME_CloseEquipItemList
+	DW	FUNCNAME_InitOrbmentMenu
+	DW	FUNCNAME_OpenOrbmentMenu
+	DW	FUNCNAME_CloseOrbmentMenu
+	DW	FUNCNAME_BackOrbmentInfo
+	DW	FUNCNAME_FrontOrbmentInfo
+	DW	FUNCNAME_OpenArtsList
+	DW	FUNCNAME_CloseArtsList
+	DW	FUNCNAME_OpenQuartzList
+	DW	FUNCNAME_CloseQuartzList
+	DW	FUNCNAME_OpenQuartzArtsList
+	DW	FUNCNAME_CloseQuartzArtsList
+	DW	FUNCNAME_OpenArtsTarget
+	DW	FUNCNAME_CloseArtsTarget
+	DW	FUNCNAME_OpenMasterQuartzList
+	DW	FUNCNAME_CloseMasterQuartzList
+	DW	FUNCNAME_OpenQuartzItemList
+	DW	FUNCNAME_CloseQuartzItemList
+	DW	FUNCNAME_InitToolbox
+	DW	FUNCNAME_OpenToolbox
+	DW	FUNCNAME_CloseToolbox
+	DW	FUNCNAME_CloseToolboxFirst
+	DW	FUNCNAME_InitToolboxAction
+	DW	FUNCNAME_OpenToolboxAction
+	DW	FUNCNAME_CloseToolboxAction
+	DW	FUNCNAME_OpenToolboxTarget
+	DW	FUNCNAME_CloseToolboxTarget
+	DW	FUNCNAME_InitLinkMenu
+	DW	FUNCNAME_OpenLinkMenu
+	DW	FUNCNAME_CloseLinkMenu
+	DW	FUNCNAME_BackLinkInfo
+	DW	FUNCNAME_FrontLinkInfo
+	DW	FUNCNAME_InitTacticsMenu
+	DW	FUNCNAME_OpenTacticsMenu
+	DW	FUNCNAME_CloseTacticsMenu
+	DW	FUNCNAME_InitSystemMenu
+	DW	FUNCNAME_OpenSystemMenu
+	DW	FUNCNAME_CloseSystemMenu
+	DW	FUNCNAME_OpenSystemSubMenu
+	DW	FUNCNAME_CloseSystemSubMenu
+	DW	FUNCNAME_InitOptionMenu
+	DW	FUNCNAME_OpenOptionMenu
+	DW	FUNCNAME_CloseOptionMenu
+FUNCTION_NAME_TABLE_NUM	EQU	71
+;=====================================================================
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Open:	DB	'Open',0
+FUNCNAME_Close:	DB	'Close',0
+FUNCNAME_FadeIn:	DB	'FadeIn',0
+FUNCNAME_FadeOut:	DB	'FadeOut',0
+FUNCNAME_FadeOut25:	DB	'FadeOut25',0
+FUNCNAME_FadeOut50:	DB	'FadeOut50',0
+FUNCNAME_FadeOut75:	DB	'FadeOut75',0
+FUNCNAME_InitCampMenu:	DB	'InitCampMenu',0
+FUNCNAME_OpenCampMenu:	DB	'OpenCampMenu',0
+FUNCNAME_CloseCampMenu:	DB	'CloseCampMenu',0
+FUNCNAME_CloseCampMenuLast:	DB	'CloseCampMenuLast',0
+FUNCNAME_OpenCampHeadMenu:	DB	'OpenCampHeadMenu',0
+FUNCNAME_CloseCampHeadMenu:	DB	'CloseCampHeadMenu',0
+FUNCNAME_InitCampPartyInfo:	DB	'InitCampPartyInfo',0
+FUNCNAME_OpenCampPartyInfo:	DB	'OpenCampPartyInfo',0
+FUNCNAME_CloseCampPartyInfo:	DB	'CloseCampPartyInfo',0
+FUNCNAME_InitStatusMenu:	DB	'InitStatusMenu',0
+FUNCNAME_OpenStatusMenu:	DB	'OpenStatusMenu',0
+FUNCNAME_CloseStatusMenu:	DB	'CloseStatusMenu',0
+FUNCNAME_BackStatusInfo:	DB	'BackStatusInfo',0
+FUNCNAME_FrontStatusInfo:	DB	'FrontStatusInfo',0
+FUNCNAME_InitEquipMenu:	DB	'InitEquipMenu',0
+FUNCNAME_OpenEquipMenu:	DB	'OpenEquipMenu',0
+FUNCNAME_CloseEquipMenu:	DB	'CloseEquipMenu',0
+FUNCNAME_BackEquipInfo:	DB	'BackEquipInfo',0
+FUNCNAME_FrontEquipInfo:	DB	'FrontEquipInfo',0
+FUNCNAME_OpenEquipItemList:	DB	'OpenEquipItemList',0
+FUNCNAME_CloseEquipItemList:	DB	'CloseEquipItemList',0
+FUNCNAME_InitOrbmentMenu:	DB	'InitOrbmentMenu',0
+FUNCNAME_OpenOrbmentMenu:	DB	'OpenOrbmentMenu',0
+FUNCNAME_CloseOrbmentMenu:	DB	'CloseOrbmentMenu',0
+FUNCNAME_BackOrbmentInfo:	DB	'BackOrbmentInfo',0
+FUNCNAME_FrontOrbmentInfo:	DB	'FrontOrbmentInfo',0
+FUNCNAME_OpenArtsList:	DB	'OpenArtsList',0
+FUNCNAME_CloseArtsList:	DB	'CloseArtsList',0
+FUNCNAME_OpenQuartzList:	DB	'OpenQuartzList',0
+FUNCNAME_CloseQuartzList:	DB	'CloseQuartzList',0
+FUNCNAME_OpenQuartzArtsList:	DB	'OpenQuartzArtsList',0
+FUNCNAME_CloseQuartzArtsList:	DB	'CloseQuartzArtsList',0
+FUNCNAME_OpenArtsTarget:	DB	'OpenArtsTarget',0
+FUNCNAME_CloseArtsTarget:	DB	'CloseArtsTarget',0
+FUNCNAME_OpenMasterQuartzList:	DB	'OpenMasterQuartzList',0
+FUNCNAME_CloseMasterQuartzList:	DB	'CloseMasterQuartzList',0
+FUNCNAME_OpenQuartzItemList:	DB	'OpenQuartzItemList',0
+FUNCNAME_CloseQuartzItemList:	DB	'CloseQuartzItemList',0
+FUNCNAME_InitToolbox:	DB	'InitToolbox',0
+FUNCNAME_OpenToolbox:	DB	'OpenToolbox',0
+FUNCNAME_CloseToolbox:	DB	'CloseToolbox',0
+FUNCNAME_CloseToolboxFirst:	DB	'CloseToolboxFirst',0
+FUNCNAME_InitToolboxAction:	DB	'InitToolboxAction',0
+FUNCNAME_OpenToolboxAction:	DB	'OpenToolboxAction',0
+FUNCNAME_CloseToolboxAction:	DB	'CloseToolboxAction',0
+FUNCNAME_OpenToolboxTarget:	DB	'OpenToolboxTarget',0
+FUNCNAME_CloseToolboxTarget:	DB	'CloseToolboxTarget',0
+FUNCNAME_InitLinkMenu:	DB	'InitLinkMenu',0
+FUNCNAME_OpenLinkMenu:	DB	'OpenLinkMenu',0
+FUNCNAME_CloseLinkMenu:	DB	'CloseLinkMenu',0
+FUNCNAME_BackLinkInfo:	DB	'BackLinkInfo',0
+FUNCNAME_FrontLinkInfo:	DB	'FrontLinkInfo',0
+FUNCNAME_InitTacticsMenu:	DB	'InitTacticsMenu',0
+FUNCNAME_OpenTacticsMenu:	DB	'OpenTacticsMenu',0
+FUNCNAME_CloseTacticsMenu:	DB	'CloseTacticsMenu',0
+FUNCNAME_InitSystemMenu:	DB	'InitSystemMenu',0
+FUNCNAME_OpenSystemMenu:	DB	'OpenSystemMenu',0
+FUNCNAME_CloseSystemMenu:	DB	'CloseSystemMenu',0
+FUNCNAME_OpenSystemSubMenu:	DB	'OpenSystemSubMenu',0
+FUNCNAME_CloseSystemSubMenu:	DB	'CloseSystemSubMenu',0
+FUNCNAME_InitOptionMenu:	DB	'InitOptionMenu',0
+FUNCNAME_OpenOptionMenu:	DB	'OpenOptionMenu',0
+FUNCNAME_CloseOptionMenu:	DB	'CloseOptionMenu',0

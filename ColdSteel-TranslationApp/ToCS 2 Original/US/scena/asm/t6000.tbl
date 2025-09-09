@@ -1,0 +1,290 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;t6000.scn 52
+	DD	BTLSET_BTLID03_K0					;t6000.scn 59
+	DD	BTLSET001					;t6000.scn 66
+	DD	PreInit					;t6000.scn 76
+	DD	Init					;t6000.scn 101
+	DD	Init_Replay					;t6000.scn 165
+	DD	Reinit					;t6000.scn 295
+	DD	LP_mbox00					;t6000.scn 323
+	DD	LP_mbox00_Get					;t6000.scn 333
+	DD	LP_fishpoint00					;t6000.scn 362
+	DD	AV_FishPoint					;t6000.scn 400
+	DD	AV_01011					;t6000.scn 410
+	DD	AV_01014					;t6000.scn 416
+	DD	Npc_Table					;t6000.scn 425
+	DD	rex_setting					;t6000.scn 461
+	DD	albel_setting					;t6000.scn 479
+	DD	TK_albel					;t6000.scn 497
+	DD	t6000_soldier01_setting					;t6000.scn 580
+	DD	TK_t6000_soldier01					;t6000.scn 593
+	DD	t6000_soldier02_setting					;t6000.scn 689
+	DD	TK_t6000_soldier02					;t6000.scn 702
+	DD	t6000_soldier03_setting					;t6000.scn 792
+	DD	TK_t6000_soldier03					;t6000.scn 806
+	DD	t6000_soldier04_setting					;t6000.scn 882
+	DD	TK_t6000_soldier04					;t6000.scn 895
+	DD	t6000_worker01_setting					;t6000.scn 991
+	DD	TK_t6000_worker01					;t6000.scn 1004
+	DD	meckel_setting					;t6000.scn 1073
+	DD	TK_meckel					;t6000.scn 1086
+	DD	norton_setting					;t6000.scn 1242
+	DD	TK_norton					;t6000.scn 1256
+	DD	wilginy_setting					;t6000.scn 1340
+	DD	TK_wilginy					;t6000.scn 1354
+	DD	r0630_soldier_l01_setting					;t6000.scn 1438
+	DD	TK_r0630_soldier_l01					;t6000.scn 1452
+	DD	r0630_soldier_l02_setting					;t6000.scn 1483
+	DD	TK_r0630_soldier_l02					;t6000.scn 1497
+	DD	r0630_soldier_s01_setting					;t6000.scn 1528
+	DD	TK_r0630_soldier_s01					;t6000.scn 1543
+	DD	r0630_soldier_s02_setting					;t6000.scn 1573
+	DD	TK_r0630_soldier_s02					;t6000.scn 1588
+	DD	r0630_soldier_s03_setting					;t6000.scn 1616
+	DD	TK_r0630_soldier_s03					;t6000.scn 1631
+	DD	r0630_soldier_s04_setting					;t6000.scn 1653
+	DD	TK_r0630_soldier_s04					;t6000.scn 1668
+	DD	r0630_soldier_s05_setting					;t6000.scn 1694
+	DD	TK_r0630_soldier_s05					;t6000.scn 1708
+	DD	EV_01_17_00_Entry_Check					;t6000.scn 1776
+	DD	EV_01_19_00_Entry_Check					;t6000.scn 1783
+	DD	EV_01_15_02					;t6000.scn 1793
+	DD	ET_01_15_02_FIE_1					;t6000.scn 2188
+	DD	EV_01_17_00					;t6000.scn 2200
+	DD	ET_01_17_00_REAN_1					;t6000.scn 2727
+	DD	ET_01_17_00_ELIOT_1					;t6000.scn 2736
+	DD	ET_01_17_00_MACHIAS_1					;t6000.scn 2745
+	DD	ET_01_17_00_FIE_1					;t6000.scn 2755
+	DD	ET_01_17_00_TOVAR_1					;t6000.scn 2764
+	DD	ET_01_17_00_CELINE2_1					;t6000.scn 2773
+	DD	EV_01_19_00					;t6000.scn 2786
+	DD	ET_look_dir_Around1					;t6000.scn 3066
+	DD	EV_01_20_00					;t6000.scn 3086
+	DD	ET_01_20_00_REAN_1					;t6000.scn 3276
+	DD	ET_01_20_00_ELIOT_1					;t6000.scn 3285
+	DD	ET_01_20_00_MACHIAS_1					;t6000.scn 3294
+	DD	ET_01_20_00_FIE_1					;t6000.scn 3303
+	DD	ET_01_20_00_TOVAR_1					;t6000.scn 3314
+	DD	ET_01_20_00_CELINE2_1					;t6000.scn 3323
+	DD	EV_01_24_02					;t6000.scn 3338
+	DD	EV_03_04_04					;t6000.scn 3584
+	DD	ET_03_04_04_loadVALIMAR					;t6000.scn 4179
+	DD	ET_03_04_04_WarpIn					;t6000.scn 4188
+	DD	ET_03_04_04_TurnToVALIMAR					;t6000.scn 4197
+	DD	ET_03_04_04_TurnToVALIMAR_SE					;t6000.scn 4206
+	DD	EV_03_04_05					;t6000.scn 4219
+	DD	ET_03_04_05_loadVALIMAR					;t6000.scn 4793
+	DD	ET_03_04_05_releaseVALIMAR					;t6000.scn 4801
+	DD	EV_03_05_03					;t6000.scn 4810
+	DD	QS_1103_00					;t6000.scn 5690
+	DD	ST_BRIDGE					;t6000.scn 5902
+	DD	ST_TUNNEL					;t6000.scn 5969
+	DD	_LP_mbox00_Get					;t6000.scn 6098
+	DD	_EV_01_15_02					;t6000.scn 6098
+	DD	_EV_01_17_00					;t6000.scn 6098
+	DD	_EV_01_19_00					;t6000.scn 6098
+	DD	_EV_01_20_00					;t6000.scn 6098
+	DD	_EV_01_24_02					;t6000.scn 6098
+	DD	_EV_03_04_04					;t6000.scn 6098
+	DD	_ET_03_04_04_WarpIn					;t6000.scn 6098
+	DD	_ET_03_04_04_TurnToVALIMAR					;t6000.scn 6098
+	DD	_ET_03_04_04_TurnToVALIMAR_SE					;t6000.scn 6098
+	DD	_EV_03_04_05					;t6000.scn 6098
+	DD	_EV_03_05_03					;t6000.scn 6098
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_BTLSET_BTLID03_K0
+	DW	FUNCNAME_BTLSET001
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_LP_mbox00
+	DW	FUNCNAME_LP_mbox00_Get
+	DW	FUNCNAME_LP_fishpoint00
+	DW	FUNCNAME_AV_FishPoint
+	DW	FUNCNAME_AV_01011
+	DW	FUNCNAME_AV_01014
+	DW	FUNCNAME_Npc_Table
+	DW	FUNCNAME_rex_setting
+	DW	FUNCNAME_albel_setting
+	DW	FUNCNAME_TK_albel
+	DW	FUNCNAME_t6000_soldier01_setting
+	DW	FUNCNAME_TK_t6000_soldier01
+	DW	FUNCNAME_t6000_soldier02_setting
+	DW	FUNCNAME_TK_t6000_soldier02
+	DW	FUNCNAME_t6000_soldier03_setting
+	DW	FUNCNAME_TK_t6000_soldier03
+	DW	FUNCNAME_t6000_soldier04_setting
+	DW	FUNCNAME_TK_t6000_soldier04
+	DW	FUNCNAME_t6000_worker01_setting
+	DW	FUNCNAME_TK_t6000_worker01
+	DW	FUNCNAME_meckel_setting
+	DW	FUNCNAME_TK_meckel
+	DW	FUNCNAME_norton_setting
+	DW	FUNCNAME_TK_norton
+	DW	FUNCNAME_wilginy_setting
+	DW	FUNCNAME_TK_wilginy
+	DW	FUNCNAME_r0630_soldier_l01_setting
+	DW	FUNCNAME_TK_r0630_soldier_l01
+	DW	FUNCNAME_r0630_soldier_l02_setting
+	DW	FUNCNAME_TK_r0630_soldier_l02
+	DW	FUNCNAME_r0630_soldier_s01_setting
+	DW	FUNCNAME_TK_r0630_soldier_s01
+	DW	FUNCNAME_r0630_soldier_s02_setting
+	DW	FUNCNAME_TK_r0630_soldier_s02
+	DW	FUNCNAME_r0630_soldier_s03_setting
+	DW	FUNCNAME_TK_r0630_soldier_s03
+	DW	FUNCNAME_r0630_soldier_s04_setting
+	DW	FUNCNAME_TK_r0630_soldier_s04
+	DW	FUNCNAME_r0630_soldier_s05_setting
+	DW	FUNCNAME_TK_r0630_soldier_s05
+	DW	FUNCNAME_EV_01_17_00_Entry_Check
+	DW	FUNCNAME_EV_01_19_00_Entry_Check
+	DW	FUNCNAME_EV_01_15_02
+	DW	FUNCNAME_ET_01_15_02_FIE_1
+	DW	FUNCNAME_EV_01_17_00
+	DW	FUNCNAME_ET_01_17_00_REAN_1
+	DW	FUNCNAME_ET_01_17_00_ELIOT_1
+	DW	FUNCNAME_ET_01_17_00_MACHIAS_1
+	DW	FUNCNAME_ET_01_17_00_FIE_1
+	DW	FUNCNAME_ET_01_17_00_TOVAR_1
+	DW	FUNCNAME_ET_01_17_00_CELINE2_1
+	DW	FUNCNAME_EV_01_19_00
+	DW	FUNCNAME_ET_look_dir_Around1
+	DW	FUNCNAME_EV_01_20_00
+	DW	FUNCNAME_ET_01_20_00_REAN_1
+	DW	FUNCNAME_ET_01_20_00_ELIOT_1
+	DW	FUNCNAME_ET_01_20_00_MACHIAS_1
+	DW	FUNCNAME_ET_01_20_00_FIE_1
+	DW	FUNCNAME_ET_01_20_00_TOVAR_1
+	DW	FUNCNAME_ET_01_20_00_CELINE2_1
+	DW	FUNCNAME_EV_01_24_02
+	DW	FUNCNAME_EV_03_04_04
+	DW	FUNCNAME_ET_03_04_04_loadVALIMAR
+	DW	FUNCNAME_ET_03_04_04_WarpIn
+	DW	FUNCNAME_ET_03_04_04_TurnToVALIMAR
+	DW	FUNCNAME_ET_03_04_04_TurnToVALIMAR_SE
+	DW	FUNCNAME_EV_03_04_05
+	DW	FUNCNAME_ET_03_04_05_loadVALIMAR
+	DW	FUNCNAME_ET_03_04_05_releaseVALIMAR
+	DW	FUNCNAME_EV_03_05_03
+	DW	FUNCNAME_QS_1103_00
+	DW	FUNCNAME_ST_BRIDGE
+	DW	FUNCNAME_ST_TUNNEL
+	DW	FUNCNAME__LP_mbox00_Get
+	DW	FUNCNAME__EV_01_15_02
+	DW	FUNCNAME__EV_01_17_00
+	DW	FUNCNAME__EV_01_19_00
+	DW	FUNCNAME__EV_01_20_00
+	DW	FUNCNAME__EV_01_24_02
+	DW	FUNCNAME__EV_03_04_04
+	DW	FUNCNAME__ET_03_04_04_WarpIn
+	DW	FUNCNAME__ET_03_04_04_TurnToVALIMAR
+	DW	FUNCNAME__ET_03_04_04_TurnToVALIMAR_SE
+	DW	FUNCNAME__EV_03_04_05
+	DW	FUNCNAME__EV_03_05_03
+FUNCTION_NAME_TABLE_NUM	EQU	92
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_BTLSET_BTLID03_K0:	DB	0
+FUNCNAME_BTLSET001:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_LP_mbox00:	DB	'LP_mbox00',0
+FUNCNAME_LP_mbox00_Get:	DB	'LP_mbox00_Get',0
+FUNCNAME_LP_fishpoint00:	DB	'LP_fishpoint00',0
+FUNCNAME_AV_FishPoint:	DB	'AV_FishPoint',0
+FUNCNAME_AV_01011:	DB	'AV_01011',0
+FUNCNAME_AV_01014:	DB	'AV_01014',0
+FUNCNAME_Npc_Table:	DB	'Npc_Table',0
+FUNCNAME_rex_setting:	DB	'rex_setting',0
+FUNCNAME_albel_setting:	DB	'albel_setting',0
+FUNCNAME_TK_albel:	DB	'TK_albel',0
+FUNCNAME_t6000_soldier01_setting:	DB	't6000_soldier01_setting',0
+FUNCNAME_TK_t6000_soldier01:	DB	'TK_t6000_soldier01',0
+FUNCNAME_t6000_soldier02_setting:	DB	't6000_soldier02_setting',0
+FUNCNAME_TK_t6000_soldier02:	DB	'TK_t6000_soldier02',0
+FUNCNAME_t6000_soldier03_setting:	DB	't6000_soldier03_setting',0
+FUNCNAME_TK_t6000_soldier03:	DB	'TK_t6000_soldier03',0
+FUNCNAME_t6000_soldier04_setting:	DB	't6000_soldier04_setting',0
+FUNCNAME_TK_t6000_soldier04:	DB	'TK_t6000_soldier04',0
+FUNCNAME_t6000_worker01_setting:	DB	't6000_worker01_setting',0
+FUNCNAME_TK_t6000_worker01:	DB	'TK_t6000_worker01',0
+FUNCNAME_meckel_setting:	DB	'meckel_setting',0
+FUNCNAME_TK_meckel:	DB	'TK_meckel',0
+FUNCNAME_norton_setting:	DB	'norton_setting',0
+FUNCNAME_TK_norton:	DB	'TK_norton',0
+FUNCNAME_wilginy_setting:	DB	'wilginy_setting',0
+FUNCNAME_TK_wilginy:	DB	'TK_wilginy',0
+FUNCNAME_r0630_soldier_l01_setting:	DB	'r0630_soldier_l01_setting',0
+FUNCNAME_TK_r0630_soldier_l01:	DB	'TK_r0630_soldier_l01',0
+FUNCNAME_r0630_soldier_l02_setting:	DB	'r0630_soldier_l02_setting',0
+FUNCNAME_TK_r0630_soldier_l02:	DB	'TK_r0630_soldier_l02',0
+FUNCNAME_r0630_soldier_s01_setting:	DB	'r0630_soldier_s01_setting',0
+FUNCNAME_TK_r0630_soldier_s01:	DB	'TK_r0630_soldier_s01',0
+FUNCNAME_r0630_soldier_s02_setting:	DB	'r0630_soldier_s02_setting',0
+FUNCNAME_TK_r0630_soldier_s02:	DB	'TK_r0630_soldier_s02',0
+FUNCNAME_r0630_soldier_s03_setting:	DB	'r0630_soldier_s03_setting',0
+FUNCNAME_TK_r0630_soldier_s03:	DB	'TK_r0630_soldier_s03',0
+FUNCNAME_r0630_soldier_s04_setting:	DB	'r0630_soldier_s04_setting',0
+FUNCNAME_TK_r0630_soldier_s04:	DB	'TK_r0630_soldier_s04',0
+FUNCNAME_r0630_soldier_s05_setting:	DB	'r0630_soldier_s05_setting',0
+FUNCNAME_TK_r0630_soldier_s05:	DB	'TK_r0630_soldier_s05',0
+FUNCNAME_EV_01_17_00_Entry_Check:	DB	'EV_01_17_00_Entry_Check',0
+FUNCNAME_EV_01_19_00_Entry_Check:	DB	'EV_01_19_00_Entry_Check',0
+FUNCNAME_EV_01_15_02:	DB	'EV_01_15_02',0
+FUNCNAME_ET_01_15_02_FIE_1:	DB	'ET_01_15_02_FIE_1',0
+FUNCNAME_EV_01_17_00:	DB	'EV_01_17_00',0
+FUNCNAME_ET_01_17_00_REAN_1:	DB	'ET_01_17_00_REAN_1',0
+FUNCNAME_ET_01_17_00_ELIOT_1:	DB	'ET_01_17_00_ELIOT_1',0
+FUNCNAME_ET_01_17_00_MACHIAS_1:	DB	'ET_01_17_00_MACHIAS_1',0
+FUNCNAME_ET_01_17_00_FIE_1:	DB	'ET_01_17_00_FIE_1',0
+FUNCNAME_ET_01_17_00_TOVAR_1:	DB	'ET_01_17_00_TOVAR_1',0
+FUNCNAME_ET_01_17_00_CELINE2_1:	DB	'ET_01_17_00_CELINE2_1',0
+FUNCNAME_EV_01_19_00:	DB	'EV_01_19_00',0
+FUNCNAME_ET_look_dir_Around1:	DB	'ET_look_dir_Around1',0
+FUNCNAME_EV_01_20_00:	DB	'EV_01_20_00',0
+FUNCNAME_ET_01_20_00_REAN_1:	DB	'ET_01_20_00_REAN_1',0
+FUNCNAME_ET_01_20_00_ELIOT_1:	DB	'ET_01_20_00_ELIOT_1',0
+FUNCNAME_ET_01_20_00_MACHIAS_1:	DB	'ET_01_20_00_MACHIAS_1',0
+FUNCNAME_ET_01_20_00_FIE_1:	DB	'ET_01_20_00_FIE_1',0
+FUNCNAME_ET_01_20_00_TOVAR_1:	DB	'ET_01_20_00_TOVAR_1',0
+FUNCNAME_ET_01_20_00_CELINE2_1:	DB	'ET_01_20_00_CELINE2_1',0
+FUNCNAME_EV_01_24_02:	DB	'EV_01_24_02',0
+FUNCNAME_EV_03_04_04:	DB	'EV_03_04_04',0
+FUNCNAME_ET_03_04_04_loadVALIMAR:	DB	'ET_03_04_04_loadVALIMAR',0
+FUNCNAME_ET_03_04_04_WarpIn:	DB	'ET_03_04_04_WarpIn',0
+FUNCNAME_ET_03_04_04_TurnToVALIMAR:	DB	'ET_03_04_04_TurnToVALIMAR',0
+FUNCNAME_ET_03_04_04_TurnToVALIMAR_SE:	DB	'ET_03_04_04_TurnToVALIMAR_SE',0
+FUNCNAME_EV_03_04_05:	DB	'EV_03_04_05',0
+FUNCNAME_ET_03_04_05_loadVALIMAR:	DB	'ET_03_04_05_loadVALIMAR',0
+FUNCNAME_ET_03_04_05_releaseVALIMAR:	DB	'ET_03_04_05_releaseVALIMAR',0
+FUNCNAME_EV_03_05_03:	DB	'EV_03_05_03',0
+FUNCNAME_QS_1103_00:	DB	'QS_1103_00',0
+FUNCNAME_ST_BRIDGE:	DB	'ST_BRIDGE',0
+FUNCNAME_ST_TUNNEL:	DB	'ST_TUNNEL',0
+FUNCNAME__LP_mbox00_Get:	DB	'_LP_mbox00_Get',0
+FUNCNAME__EV_01_15_02:	DB	'_EV_01_15_02',0
+FUNCNAME__EV_01_17_00:	DB	'_EV_01_17_00',0
+FUNCNAME__EV_01_19_00:	DB	'_EV_01_19_00',0
+FUNCNAME__EV_01_20_00:	DB	'_EV_01_20_00',0
+FUNCNAME__EV_01_24_02:	DB	'_EV_01_24_02',0
+FUNCNAME__EV_03_04_04:	DB	'_EV_03_04_04',0
+FUNCNAME__ET_03_04_04_WarpIn:	DB	'_ET_03_04_04_WarpIn',0
+FUNCNAME__ET_03_04_04_TurnToVALIMAR:	DB	'_ET_03_04_04_TurnToVALIMAR',0
+FUNCNAME__ET_03_04_04_TurnToVALIMAR_SE:	DB	'_ET_03_04_04_TurnToVALIMAR_SE',0
+FUNCNAME__EV_03_04_05:	DB	'_EV_03_04_05',0
+FUNCNAME__EV_03_05_03:	DB	'_EV_03_05_03',0

@@ -1,0 +1,1819 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="combined_tbl_json" datatype="plaintext" source_language="en" target_language="ru">
+    <body>
+      <trans-unit id="tbl_00264560ae">
+        <note>File: t_text.json</note>
+        <source>The Legend of Heroes: Trails of Cold Steel II</source>
+        <target>The Legend of Heroes: Trails of Cold Steel II</target></trans-unit>
+      <trans-unit id="tbl_003832d1cf">
+        <note>File: t_text.json</note>
+        <source>End Transaction.</source>
+        <target>Завершить транзакцию.</target></trans-unit>
+      <trans-unit id="tbl_0291c0b4a9">
+        <note>File: t_text.json</note>
+        <source>Active Voice Record</source>
+        <target>Журнал реплик</target></trans-unit>
+      <trans-unit id="tbl_03b1435c40">
+        <note>File: t_text.json</note>
+        <source>View the contents of various notebooks.</source>
+        <target>Просмотреть содержимое различных записных книжек.</target></trans-unit>
+      <trans-unit id="tbl_050d1306b7">
+        <note>File: t_text.json</note>
+        <source>#1CCannot equip.</source>
+        <target>#1CНевозможно экипировать.</target></trans-unit>
+      <trans-unit id="tbl_058d54c35a">
+        <note>File: t_text.json</note>
+        <source>#1CRevert display settings to default?</source>
+        <target>#1CВернуть настройки экрана к стандартным?</target></trans-unit>
+      <trans-unit id="tbl_059924d951">
+        <note>File: t_text.json</note>
+        <source>Exchange space sepith for mira.</source>
+        <target>Обменять сепиты пространства на миру.</target></trans-unit>
+      <trans-unit id="tbl_059cd6bf81">
+        <note>File: t_text.json</note>
+        <source>Act 2</source>
+        <target>Акт 2</target></trans-unit>
+      <trans-unit id="tbl_0697c5905b">
+        <note>File: t_text.json</note>
+        <source>#1CBuy #3C%s#1C for #579c%d mira#1C?</source>
+        <target>#1CКупить #3C%s#1C за #579c%d миры#1C?</target></trans-unit>
+      <trans-unit id="tbl_06a2746871">
+        <note>File: t_text.json</note>
+        <source>It is not possible to load save data with a different\nowner.</source>
+        <target>Невозможно загрузить данные сохранения другого\nвладельца.</target></trans-unit>
+      <trans-unit id="tbl_06fe391427">
+        <note>File: t_text.json</note>
+        <source>Exchange mirage sepith for mira.</source>
+        <target>Обменять сепиты иллюзий на миру.</target></trans-unit>
+      <trans-unit id="tbl_073d5ccdbb">
+        <note>File: t_text.json</note>
+        <source>#160ISkip Event</source>
+        <target>#160IПропустить событие</target></trans-unit>
+      <trans-unit id="tbl_0797058cac">
+        <note>File: t_text.json</note>
+        <source>Change Leader (Next)</source>
+        <target>Сменить лидера (след.)</target></trans-unit>
+      <trans-unit id="tbl_082a470ee5">
+        <note>File: t_text.json</note>
+        <source>Downloading data.</source>
+        <target>Загрузка данных.</target></trans-unit>
+      <trans-unit id="tbl_08500ee6e2">
+        <note>File: t_text.json</note>
+        <source>Offensive Art (Class %s):</source>
+        <target>Атакующее заклинание (класс %s):</target></trans-unit>
+      <trans-unit id="tbl_08c84811a4">
+        <note>File: t_text.json</note>
+        <source>You were defeated...</source>
+        <target>Вы были побеждены...</target></trans-unit>
+      <trans-unit id="tbl_08e844b0e7">
+        <note>File: t_text.json</note>
+        <source>Set which notebook tab the R2 Button opens.</source>
+        <target>Назначить вкладку записной книжки для кнопки R2.</target></trans-unit>
+      <trans-unit id="tbl_0910c91bb8">
+        <note>File: t_text.json</note>
+        <source>Set quartz.</source>
+        <target>Установить кварц.</target></trans-unit>
+      <trans-unit id="tbl_09f725c0f0">
+        <note>File: t_text.json</note>
+        <source>Support Art:</source>
+        <target>Заклинание поддержки:</target></trans-unit>
+      <trans-unit id="tbl_0a485d2565">
+        <note>File: t_text.json</note>
+        <source>#2CDoing this will cancel Overdrive.\nDo it anyway?</source>
+        <target>#2CЭто действие отменит сверхбоевой режим.\nВсё равно выполнить?</target></trans-unit>
+      <trans-unit id="tbl_0aa36d83d4">
+        <note>File: t_text.json</note>
+        <source>#1C%s and %s reached link level %d!</source>
+        <target>#1CУровень связи %s и %s достиг %d!</target></trans-unit>
+      <trans-unit id="tbl_0ab203a817">
+        <note>File: t_text.json</note>
+        <source>Silver Angler</source>
+        <target>Серебряный Рыболов</target></trans-unit>
+      <trans-unit id="tbl_0ae43d57e7">
+        <note>File: t_text.json</note>
+        <source>#3C%s#1C x %d was thrown away.</source>
+        <target>#3C%s#1C (%d шт.) выброшено.</target></trans-unit>
+      <trans-unit id="tbl_0aebb5d502">
+        <note>File: t_text.json</note>
+        <source>Cannot load this save data, as it contains downloadable \ncontent which hasn't been installed.</source>
+        <target>Невозможно загрузить эти данные сохранения, так как они содержат\nнеустановленный загружаемый контент.</target></trans-unit>
+      <trans-unit id="tbl_0bbab40b8b">
+        <note>File: t_text.json</note>
+        <source>System Data</source>
+        <target>Системные данные</target></trans-unit>
+      <trans-unit id="tbl_0be9a2ab9f">
+        <note>File: t_text.json</note>
+        <source>Checking downloadable content.</source>
+        <target>Проверка загружаемого контента.</target></trans-unit>
+      <trans-unit id="tbl_0beef20be7">
+        <note>File: t_text.json</note>
+        <source>#1C%s is already using this master quartz.\nExchange master quartz?</source>
+        <target>#1C%s уже использует этот мастер-кварц.\nЗаменить мастер-кварц?</target></trans-unit>
+      <trans-unit id="tbl_0bef13b4af">
+        <note>File: t_text.json</note>
+        <source>Synthesize Quartz.</source>
+        <target>Синтезировать кварц.</target></trans-unit>
+      <trans-unit id="tbl_0f94f5380b">
+        <note>File: t_text.json</note>
+        <source>#162I: Change Leader</source>
+        <target>#162I: Сменить лидера</target></trans-unit>
+      <trans-unit id="tbl_108d8882a4">
+        <note>File: t_text.json</note>
+        <source>－－－</source>
+        <target>－－－</target></trans-unit>
+      <trans-unit id="tbl_11b1a7b302">
+        <note>File: t_text.json</note>
+        <source>Checking downloadable content...</source>
+        <target>Проверка загружаемого контента...</target></trans-unit>
+      <trans-unit id="tbl_12d30300b6">
+        <note>File: t_text.json</note>
+        <source>#155IBonding Event</source>
+        <target>#155IСобытие связи</target></trans-unit>
+      <trans-unit id="tbl_12d727e9c4">
+        <note>File: t_text.json</note>
+        <source>Restore difficulty and retry</source>
+        <target>Восстановить сложность и повторить</target></trans-unit>
+      <trans-unit id="tbl_135cb6c18a">
+        <note>File: t_text.json</note>
+        <source>System data could not be overwritten, as it is damaged.\nContinue regardless?</source>
+        <target>Системные данные повреждены, и их не удалось перезаписать.\nВсё равно продолжить?</target></trans-unit>
+      <trans-unit id="tbl_13737ea56a">
+        <note>File: t_text.json</note>
+        <source>Quest Notebook</source>
+        <target>Журнал заданий</target></trans-unit>
+      <trans-unit id="tbl_13b8e0f5e0">
+        <note>File: t_text.json</note>
+        <source>？？？？</source>
+        <target>？？？？</target></trans-unit>
+      <trans-unit id="tbl_14922b1b0e">
+        <note>File: t_text.json</note>
+        <source>#160I: Switch</source>
+        <target>#160I: Переключить</target></trans-unit>
+      <trans-unit id="tbl_14e1ccfa5e">
+        <note>File: t_text.json</note>
+        <source>Reset Camera</source>
+        <target>Сбросить камеру</target></trans-unit>
+      <trans-unit id="tbl_14e256e857">
+        <note>File: t_text.json</note>
+        <source>#1CInsufficient points.</source>
+        <target>#1CНедостаточно очков.</target></trans-unit>
+      <trans-unit id="tbl_150339cfc6">
+        <note>File: t_text.json</note>
+        <source>#1CInsufficient mira.</source>
+        <target>#1CНедостаточно миры.</target></trans-unit>
+      <trans-unit id="tbl_162164b7e8">
+        <note>File: t_text.json</note>
+        <source>Alisa R</source>
+        <target>Алиса Р</target></trans-unit>
+      <trans-unit id="tbl_1673b70691">
+        <note>File: t_text.json</note>
+        <source>#1CInsufficient ingredients.</source>
+        <target>#1CНедостаточно ингредиентов.</target></trans-unit>
+      <trans-unit id="tbl_167b1b0c3a">
+        <note>File: t_text.json</note>
+        <source>Load data.</source>
+        <target>Загрузить данные.</target></trans-unit>
+      <trans-unit id="tbl_168506f2d6">
+        <note>File: t_text.json</note>
+        <source>Area %s</source>
+        <target>Область %s</target></trans-unit>
+      <trans-unit id="tbl_16c42e716b">
+        <note>File: t_text.json</note>
+        <source>This Sony Entertainment Network account's parental \ncontrol settings do not allow it to go online. You cannot \nuse online services on this account.</source>
+        <target>Настройки родительского контроля этой учётной записи\nSony Entertainment Network не позволяют выходить в сеть. Вы не можете\nиспользовать сетевые службы с этой учётной записью.</target></trans-unit>
+      <trans-unit id="tbl_1747ab898f">
+        <note>File: t_text.json</note>
+        <source>#1CExchange this sepith for #579c%d mira#1C?</source>
+        <target>#1CОбменять эти сепиты на #579c%d миры#1C?</target></trans-unit>
+      <trans-unit id="tbl_1748d87248">
+        <note>File: t_text.json</note>
+        <source>Change what the R1 button does.</source>
+        <target>Изменить назначение кнопки R1.</target></trans-unit>
+      <trans-unit id="tbl_17ba71e1d7">
+        <note>File: t_text.json</note>
+        <source>#1CARCUS covers can be changed within the Cover section\nat an orbal factory.</source>
+        <target>#1CКрышки «АРКУС» можно сменить в разделе «Крышки»\nв мастерской.</target></trans-unit>
+      <trans-unit id="tbl_191858d870">
+        <note>File: t_text.json</note>
+        <source>#1CCostumes can be changed in the Equip section of the\nCamp Menu.</source>
+        <target>#1CКостюмы можно сменить в разделе «Снаряжение»\nв походном меню.</target></trans-unit>
+      <trans-unit id="tbl_19d805bbad">
+        <note>File: t_text.json</note>
+        <source>Checking data.</source>
+        <target>Проверка данных.</target></trans-unit>
+      <trans-unit id="tbl_1a2d2b93ba">
+        <note>File: t_text.json</note>
+        <source>Horizontal Camera</source>
+        <target>Горизонтальная камера</target></trans-unit>
+      <trans-unit id="tbl_1b6c88c61d">
+        <note>File: t_text.json</note>
+        <source>Obtaining trophy data...</source>
+        <target>Получение данных о призах...</target></trans-unit>
+      <trans-unit id="tbl_1c0689880d">
+        <note>File: t_text.json</note>
+        <source>Lower the difficulty and retry.\n#3CThe time limit will be removed, but your time won't be saved.</source>
+        <target>Снизить сложность и повторить.\n#3CОграничение по времени будет снято, но ваш результат не будет сохранён.</target></trans-unit>
+      <trans-unit id="tbl_1c0d7a768d">
+        <note>File: t_text.json</note>
+        <source>Obtaining trophy data</source>
+        <target>Получение данных о призах</target></trans-unit>
+      <trans-unit id="tbl_1e9c02138a">
+        <note>File: t_text.json</note>
+        <source>Exchange sepith for mira.</source>
+        <target>Обменять сепиты на миру.</target></trans-unit>
+      <trans-unit id="tbl_1ee4424064">
+        <note>File: t_text.json</note>
+        <source>Rotate Character</source>
+        <target>Повернуть персонажа</target></trans-unit>
+      <trans-unit id="tbl_1f54d30092">
+        <note>File: t_text.json</note>
+        <source>Play again?</source>
+        <target>Сыграть ещё раз?</target></trans-unit>
+      <trans-unit id="tbl_1fd8a6d6e0">
+        <note>File: t_text.json</note>
+        <source>#1CYou cannot carry any more #2C%s#1C.</source>
+        <target>#1CВы не можете нести больше #2C%s#1C.</target></trans-unit>
+      <trans-unit id="tbl_1ff4d9f74e">
+        <note>File: t_text.json</note>
+        <source>Check status and crafts.</source>
+        <target>Проверить статус и навыки.</target></trans-unit>
+      <trans-unit id="tbl_21fbd72aad">
+        <note>File: t_text.json</note>
+        <source>#1CLoad clear data?</source>
+        <target>#1CЗагрузить данные о прохождении?</target></trans-unit>
+      <trans-unit id="tbl_2263c0e390">
+        <note>File: t_text.json</note>
+        <source>Slot can be upgraded from Lv1 to Lv2.</source>
+        <target>Слот можно улучшить с Ур. 1 до Ур. 2.</target></trans-unit>
+      <trans-unit id="tbl_22d208f79c">
+        <note>File: t_text.json</note>
+        <source>#37ISpace Sepith</source>
+        <target>#37IСепит пространства</target></trans-unit>
+      <trans-unit id="tbl_23488b8826">
+        <note>File: t_text.json</note>
+        <source>Loading system data..</source>
+        <target>Загрузка системных данных...</target></trans-unit>
+      <trans-unit id="tbl_241434d0d3">
+        <note>File: t_text.json</note>
+        <source>#1CSelect how many sepith to exchange for mira.</source>
+        <target>#1CВыберите, сколько сепитов обменять на миру.</target></trans-unit>
+      <trans-unit id="tbl_2424ae0961">
+        <note>File: t_text.json</note>
+        <source>Line %s (Set)</source>
+        <target>Линия %s (уст.)</target></trans-unit>
+      <trans-unit id="tbl_245dabb2a1">
+        <note>File: t_text.json</note>
+        <source>Change what the left button on the directional pad does.</source>
+        <target>Изменить назначение кнопки «влево» на крестовине.</target></trans-unit>
+      <trans-unit id="tbl_247191790f">
+        <note>File: t_text.json</note>
+        <source>#1CThis slot can't be upgraded.</source>
+        <target>#1CЭтот слот нельзя улучшить.</target></trans-unit>
+      <trans-unit id="tbl_261e88b95d">
+        <note>File: t_text.json</note>
+        <source>Change what the up button on the directional pad does.</source>
+        <target>Изменить назначение кнопки «вверх» на крестовине.</target></trans-unit>
+      <trans-unit id="tbl_266814a065">
+        <note>File: t_text.json</note>
+        <source>▼Clear data</source>
+        <target>▼Данные о прохождении</target></trans-unit>
+      <trans-unit id="tbl_27370e46b9">
+        <note>File: t_text.json</note>
+        <source>#1CReceived a #3C#308ISilver Emblem#1C\nfor reaching Student Rank A1.</source>
+        <target>#1CПолучена #3C#308IСеребряная эмблема#1C\nза достижение ученического ранга A1.</target></trans-unit>
+      <trans-unit id="tbl_273d7a03ac">
+        <note>File: t_text.json</note>
+        <source>#1COnly save data belonging to the same owner can be used.</source>
+        <target>#1CМожно использовать только данные сохранения того же владельца.</target></trans-unit>
+      <trans-unit id="tbl_274868229a">
+        <note>File: t_text.json</note>
+        <source>Insufficient free space on the hard disk drive. %dKB more is required.\nQuit the game and free up additional space to continue.</source>
+        <target>Недостаточно свободного места на жёстком диске. Требуется ещё %d КБ.\nВыйдите из игры и освободите место, чтобы продолжить.</target></trans-unit>
+      <trans-unit id="tbl_283996b625">
+        <note>File: t_text.json</note>
+        <source>Return to Title Screen.</source>
+        <target>Вернуться на главный экран.</target></trans-unit>
+      <trans-unit id="tbl_287c7fc5c5">
+        <note>File: t_text.json</note>
+        <source>Rank B3</source>
+        <target>Ранг B3</target></trans-unit>
+      <trans-unit id="tbl_28b763bec3">
+        <note>File: t_text.json</note>
+        <source>#1CGlimmering Star Gem can only be set in fire, time, and earth slots.</source>
+        <target>#1CМерцающий звёздный самоцвет можно установить только в слоты огня, времени и земли.</target></trans-unit>
+      <trans-unit id="tbl_28ef5d40d7">
+        <note>File: t_text.json</note>
+        <source>Gold Angler</source>
+        <target>Золотой Рыболов</target></trans-unit>
+      <trans-unit id="tbl_2987a30dd0">
+        <note>File: t_text.json</note>
+        <source>Change equipment.</source>
+        <target>Сменить снаряжение.</target></trans-unit>
+      <trans-unit id="tbl_2a4f822b78">
+        <note>File: t_text.json</note>
+        <source>Exchange Sepith for Mira.</source>
+        <target>Обменять сепиты на миру.</target></trans-unit>
+      <trans-unit id="tbl_2b1600282d">
+        <note>File: t_text.json</note>
+        <source>Gained a new ability!</source>
+        <target>Получена новая способность!</target></trans-unit>
+      <trans-unit id="tbl_2b809a98cd">
+        <note>File: t_text.json</note>
+        <source>Customize Weapons.</source>
+        <target>Улучшить оружие.</target></trans-unit>
+      <trans-unit id="tbl_2c7b08f910">
+        <note>File: t_text.json</note>
+        <source>#1CReturn to Title Screen?</source>
+        <target>#1CВернуться на главный экран?</target></trans-unit>
+      <trans-unit id="tbl_2cfd9f3c0c">
+        <note>File: t_text.json</note>
+        <source>#1CBefore beginning the game, you can select what to \ncarry over. The more times you clear the game,\nthe more you can carry over to your next playthrough.</source>
+        <target>#1CПеред началом игры вы можете выбрать, что\nперенести. Чем больше раз вы пройдёте игру,\nтем больше сможете перенести в следующее прохождение.</target></trans-unit>
+      <trans-unit id="tbl_2d52883fbd">
+        <note>File: t_text.json</note>
+        <source>Configure button settings.</source>
+        <target>Настроить кнопки.</target></trans-unit>
+      <trans-unit id="tbl_2dc7351c4f">
+        <note>File: t_text.json</note>
+        <source>#6CUploaded data</source>
+        <target>#6CВыгруженные данные</target></trans-unit>
+      <trans-unit id="tbl_2e2f66ec76">
+        <note>File: t_text.json</note>
+        <source>#1CReceived #3C%d#1C mira for completing the quest.</source>
+        <target>#1CПолучено #3C%d#1C миры за выполнение задания.</target></trans-unit>
+      <trans-unit id="tbl_2f45be3eb3">
+        <note>File: t_text.json</note>
+        <source>#162I: Switch Page</source>
+        <target>#162I: Сменить страницу</target></trans-unit>
+      <trans-unit id="tbl_2f7ae83b41">
+        <note>File: t_text.json</note>
+        <source>#1CMake #3C%s#1C x%d?</source>
+        <target>#1CСоздать #3C%s#1C (%d шт.)?</target></trans-unit>
+      <trans-unit id="tbl_2fa1144734">
+        <note>File: t_text.json</note>
+        <source>Down Button</source>
+        <target>Кнопка «вниз»</target></trans-unit>
+      <trans-unit id="tbl_2fbe4c1fa8">
+        <note>File: t_text.json</note>
+        <source>#3CThe Divine Salvation Gem has lost its radiance. \nIts lost art can't be used again.</source>
+        <target>#3CСамоцвет Божественного Спасения утратил своё сияние.\nУтраченное заклинание больше нельзя использовать.</target></trans-unit>
+      <trans-unit id="tbl_2fe4b912e1">
+        <note>File: t_text.json</note>
+        <source>Talk to</source>
+        <target>Поговорить</target></trans-unit>
+      <trans-unit id="tbl_303d21286b">
+        <note>File: t_text.json</note>
+        <source>Battle Notebook</source>
+        <target>Боевой журнал</target></trans-unit>
+      <trans-unit id="tbl_307a91a1bb">
+        <note>File: t_text.json</note>
+        <source>#1C%s recovered #3C%d#1C HP.</source>
+        <target>#1C%s восстановил(а) #3C%d#1C ОЗ.</target></trans-unit>
+      <trans-unit id="tbl_30e0b422af">
+        <note>File: t_text.json</note>
+        <source>Platinum Angler</source>
+        <target>Платиновый Рыболов</target></trans-unit>
+      <trans-unit id="tbl_31153f73b7">
+        <note>File: t_text.json</note>
+        <source>Tampered-with data detected. Quitting the game.</source>
+        <target>Обнаружены изменённые данные. Выход из игры.</target></trans-unit>
+      <trans-unit id="tbl_316f921525">
+        <note>File: t_text.json</note>
+        <source>Change minimap display.</source>
+        <target>Изменить отображение миникарты.</target></trans-unit>
+      <trans-unit id="tbl_318fd1f9b4">
+        <note>File: t_text.json</note>
+        <source>#1CCannot sell.</source>
+        <target>#1CНевозможно продать.</target></trans-unit>
+      <trans-unit id="tbl_31a3598105">
+        <note>File: t_text.json</note>
+        <source>Return to Title Screen?\n(Any unsaved progress will be lost.)</source>
+        <target>Вернуться на главный экран?\n(Весь несохранённый прогресс будет утерян.)</target></trans-unit>
+      <trans-unit id="tbl_3376d2f28b">
+        <note>File: t_text.json</note>
+        <source>Camera Zoom Settings</source>
+        <target>Настройки масштаба камеры</target></trans-unit>
+      <trans-unit id="tbl_337bd9449f">
+        <note>File: t_text.json</note>
+        <source>Area %s (Self)</source>
+        <target>Область %s (на себя)</target></trans-unit>
+      <trans-unit id="tbl_33cce76de8">
+        <note>File: t_text.json</note>
+        <source>Exchange Angler Points.</source>
+        <target>Обменять очки рыболова.</target></trans-unit>
+      <trans-unit id="tbl_33ea2faec6">
+        <note>File: t_text.json</note>
+        <source>Adjust display settings.</source>
+        <target>Настроить параметры экрана.</target></trans-unit>
+      <trans-unit id="tbl_3456bc482d">
+        <note>File: t_text.json</note>
+        <source>Year 1 Class VII</source>
+        <target>Первый год, VII класс</target></trans-unit>
+      <trans-unit id="tbl_3478df7bdf">
+        <note>File: t_text.json</note>
+        <source>Exchange sepith masses for mira.</source>
+        <target>Обменять массивы сепитов на миру.</target></trans-unit>
+      <trans-unit id="tbl_348d5ab4f1">
+        <note>File: t_text.json</note>
+        <source>Change Character</source>
+        <target>Сменить персонажа</target></trans-unit>
+      <trans-unit id="tbl_34a7e963d3">
+        <note>File: t_text.json</note>
+        <source>#166IAccelerate #164IBrake/Reverse</source>
+        <target>#166IУскорение #164IТормоз/Реверс</target></trans-unit>
+      <trans-unit id="tbl_34d122f3cc">
+        <note>File: t_text.json</note>
+        <source>You can use save data from the PlayStation㍻Vita version of\nthe original Trails of Cold Steel to begin a new game of \nTrails of Cold Steel II. The uploaded data must be from just\n#1Cbefore going out to defend Trista#0C in the Final Chapter.\nThis data will be regarded as #9Cclear data#0C. Suitable save\ndata must already be uploaded.\n\nDownload save data from the PlayStation㊥Network?</source>
+        <target>Вы можете использовать данные сохранения с версии для PlayStation®Vita\nоригинальной Trails of Cold Steel, чтобы начать новую игру\nв Trails of Cold Steel II. Выгруженные данные должны быть сделаны прямо\n#1Cперед выходом на защиту Трайсты#0C в последней главе.\nЭти данные будут считаться #9Cданными о прохождении#0C. Подходящие данные\nсохранения уже должны быть выгружены.\n\nЗагрузить данные сохранения из PlayStation™Network?</target></trans-unit>
+      <trans-unit id="tbl_34f19097ee">
+        <note>File: t_text.json</note>
+        <source>#1CAutomatically set quartz in all empty slots?</source>
+        <target>#1CАвтоматически установить кварц во все пустые слоты?</target></trans-unit>
+      <trans-unit id="tbl_36063774f9">
+        <note>File: t_text.json</note>
+        <source> can't be accessed right now.</source>
+        <target>сейчас недоступно.</target></trans-unit>
+      <trans-unit id="tbl_36268f6ee9">
+        <note>File: t_text.json</note>
+        <source>Rank B4</source>
+        <target>Ранг B4</target></trans-unit>
+      <trans-unit id="tbl_3669a475f3">
+        <note>File: t_text.json</note>
+        <source>Change what the L1 button does.</source>
+        <target>Изменить назначение кнопки L1.</target></trans-unit>
+      <trans-unit id="tbl_369fc9965d">
+        <note>File: t_text.json</note>
+        <source>No system data exists.</source>
+        <target>Системные данные отсутствуют.</target></trans-unit>
+      <trans-unit id="tbl_38230ff419">
+        <note>File: t_text.json</note>
+        <source>#153IFishing Point</source>
+        <target>#153IМесто для рыбалки</target></trans-unit>
+      <trans-unit id="tbl_38720e508c">
+        <note>File: t_text.json</note>
+        <source>#1CThis item is sold out.</source>
+        <target>#1CЭтот товар распродан.</target></trans-unit>
+      <trans-unit id="tbl_389b0bd2f7">
+        <note>File: t_text.json</note>
+        <source>Minimap Setting</source>
+        <target>Настройка миникарты</target></trans-unit>
+      <trans-unit id="tbl_39816b8158">
+        <note>File: t_text.json</note>
+        <source>#1CCould not download data. To download progress data, you will\nfirst need to upload data.</source>
+        <target>#1CНе удалось загрузить данные. Чтобы загрузить данные о прогрессе, вам\nсначала нужно выгрузить их.</target></trans-unit>
+      <trans-unit id="tbl_39aa2b854f">
+        <note>File: t_text.json</note>
+        <source>Vertical Camera</source>
+        <target>Вертикальная камера</target></trans-unit>
+      <trans-unit id="tbl_39d08c7d04">
+        <note>File: t_text.json</note>
+        <source>#1CYou cannot save right now.</source>
+        <target>#1CСейчас нельзя сохраниться.</target></trans-unit>
+      <trans-unit id="tbl_3a35f58f76">
+        <note>File: t_text.json</note>
+        <source>Condition 2 met!</source>
+        <target>Условие 2 выполнено!</target></trans-unit>
+      <trans-unit id="tbl_3a3849f5a9">
+        <note>File: t_text.json</note>
+        <source>#39ISepith Mass</source>
+        <target>#39IМассив сепитов</target></trans-unit>
+      <trans-unit id="tbl_3a61fb292b">
+        <note>File: t_text.json</note>
+        <source>Rank A2</source>
+        <target>Ранг A2</target></trans-unit>
+      <trans-unit id="tbl_3a6df91f7c">
+        <note>File: t_text.json</note>
+        <source>Best Time</source>
+        <target>Лучшее время</target></trans-unit>
+      <trans-unit id="tbl_3a8c5abfba">
+        <note>File: t_text.json</note>
+        <source>#3C#%dI%s#0C reached level %d!</source>
+        <target>#3C#%dI%s#0C достиг(ла) %d-го уровня!</target></trans-unit>
+      <trans-unit id="tbl_3ac7cd428d">
+        <note>File: t_text.json</note>
+        <source>PlayStation㍻Vita Version</source>
+        <target>Версия для PlayStation®Vita</target></trans-unit>
+      <trans-unit id="tbl_3b3cbe5741">
+        <note>File: t_text.json</note>
+        <source>Condition 1 met!</source>
+        <target>Условие 1 выполнено!</target></trans-unit>
+      <trans-unit id="tbl_3b88c9e0ac">
+        <note>File: t_text.json</note>
+        <source>The Legend of Heroes: Trails of Cold Steel II system data.\nContains game settings, etc.</source>
+        <target>Системные данные The Legend of Heroes: Trails of Cold Steel II.\nСодержат настройки игры и т.д.</target></trans-unit>
+      <trans-unit id="tbl_3ba6121017">
+        <note>File: t_text.json</note>
+        <source>#163IHide Icons</source>
+        <target>#163IСкрыть значки</target></trans-unit>
+      <trans-unit id="tbl_3bbbb12590">
+        <note>File: t_text.json</note>
+        <source>Rank B7</source>
+        <target>Ранг B7</target></trans-unit>
+      <trans-unit id="tbl_3c4aa784a4">
+        <note>File: t_text.json</note>
+        <source>Target Flags</source>
+        <target>Метки целей</target></trans-unit>
+      <trans-unit id="tbl_3e19182a44">
+        <note>File: t_text.json</note>
+        <source>Active Voice</source>
+        <target>Активные реплики</target></trans-unit>
+      <trans-unit id="tbl_3e2095b2cc">
+        <note>File: t_text.json</note>
+        <source>Camera Settings</source>
+        <target>Настройки камеры</target></trans-unit>
+      <trans-unit id="tbl_3f95c4cb43">
+        <note>File: t_text.json</note>
+        <source>Characters you can meet</source>
+        <target>Персонажи, которых можно встретить</target></trans-unit>
+      <trans-unit id="tbl_4018f3b6bc">
+        <note>File: t_text.json</note>
+        <source>Adjust Party</source>
+        <target>Настроить отряд</target></trans-unit>
+      <trans-unit id="tbl_4052762ca4">
+        <note>File: t_text.json</note>
+        <source>Buy Master Quartz.</source>
+        <target>Купить мастер-кварц.</target></trans-unit>
+      <trans-unit id="tbl_413e3eac4e">
+        <note>File: t_text.json</note>
+        <source>Equips an Attachment.</source>
+        <target>Надеть аксессуар.</target></trans-unit>
+      <trans-unit id="tbl_419fb29cca">
+        <note>File: t_text.json</note>
+        <source>Bronze Angler</source>
+        <target>Бронзовый Рыболов</target></trans-unit>
+      <trans-unit id="tbl_43588ec0a4">
+        <note>File: t_text.json</note>
+        <source>Equip #3C%s#1C?</source>
+        <target>Экипировать #3C%s#1C?</target></trans-unit>
+      <trans-unit id="tbl_436a44958c">
+        <note>File: t_text.json</note>
+        <source>Obtained #3C#%dI%s#0C x%d.</source>
+        <target>Получено: #3C#%dI%s#0C (%d шт.).</target></trans-unit>
+      <trans-unit id="tbl_43bdecf574">
+        <note>File: t_text.json</note>
+        <source>Active Voice Settings</source>
+        <target>Настройки активных реплик</target></trans-unit>
+      <trans-unit id="tbl_441ba1685b">
+        <note>File: t_text.json</note>
+        <source>#3C#316IAll Sepith x300\n#66IAttack 1\n#68ISoul Blur\n#315IZeram Powder</source>
+        <target>#3C#316IВсе сепиты x300\n#66IAttack 1\n#68ISoul Blur\n#315IZeram Powder</target></trans-unit>
+      <trans-unit id="tbl_4436598882">
+        <note>File: t_text.json</note>
+        <source>#158IRecovery Point</source>
+        <target>#158IТочка восстановления</target></trans-unit>
+      <trans-unit id="tbl_4441342015">
+        <note>File: t_text.json</note>
+        <source>#1CThe save data from the PlayStation㍻Vita version of the game\nis not suitable for use, so it could not be loaded.</source>
+        <target>#1CДанные сохранения с версии игры для PlayStation®Vita\nне подходят, поэтому не могут быть загружены.</target></trans-unit>
+      <trans-unit id="tbl_44cca441be">
+        <note>File: t_text.json</note>
+        <source>Slot can be upgraded from Lv0 to Lv1.</source>
+        <target>Слот можно улучшить с Ур. 0 до Ур. 1.</target></trans-unit>
+      <trans-unit id="tbl_44f1eaf8fb">
+        <note>File: t_text.json</note>
+        <source>Make EX Orb.</source>
+        <target>Создать EX-сферу.</target></trans-unit>
+      <trans-unit id="tbl_46218cd0dd">
+        <note>File: t_text.json</note>
+        <source>%d turns</source>
+        <target>Ходов: %d</target></trans-unit>
+      <trans-unit id="tbl_46aa60c448">
+        <note>File: t_text.json</note>
+        <source>Rank A4</source>
+        <target>Ранг A4</target></trans-unit>
+      <trans-unit id="tbl_4746346750">
+        <note>File: t_text.json</note>
+        <source>Change Leader (Previous)</source>
+        <target>Сменить лидера (пред.)</target></trans-unit>
+      <trans-unit id="tbl_476a24f914">
+        <note>File: t_text.json</note>
+        <source>#160IGet Out</source>
+        <target>#160IВыйти</target></trans-unit>
+      <trans-unit id="tbl_47b459e8c4">
+        <note>File: t_text.json</note>
+        <source>An error occurred when checking install data. \nQuitting the game.</source>
+        <target>Произошла ошибка при проверке установочных данных.\nВыход из игры.</target></trans-unit>
+      <trans-unit id="tbl_47d3c9fb31">
+        <note>File: t_text.json</note>
+        <source>#168I: Save Menu</source>
+        <target>#168I: Меню сохранения</target></trans-unit>
+      <trans-unit id="tbl_48560642c4">
+        <note>File: t_text.json</note>
+        <source>A sidecar for an orbal bike.\nChecking the box attaches it to the bike.</source>
+        <target>Коляска для орбального байка.\nОтметка в поле прикрепит её к байку.</target></trans-unit>
+      <trans-unit id="tbl_49687d9e1c">
+        <note>File: t_text.json</note>
+        <source>Zoom Out</source>
+        <target>Отдалить</target></trans-unit>
+      <trans-unit id="tbl_4989909c98">
+        <note>File: t_text.json</note>
+        <source>Display Settings</source>
+        <target>Настройки экрана</target></trans-unit>
+      <trans-unit id="tbl_49b249a7e0">
+        <note>File: t_text.json</note>
+        <source>Saving system data</source>
+        <target>Сохранение системных данных</target></trans-unit>
+      <trans-unit id="tbl_4aec946e93">
+        <note>File: t_text.json</note>
+        <source>Return to Default Settings</source>
+        <target>Вернуть стандартные настройки</target></trans-unit>
+      <trans-unit id="tbl_4af9922ef0">
+        <note>File: t_text.json</note>
+        <source>Adjust SE volume.</source>
+        <target>Настроить громкость эффектов.</target></trans-unit>
+      <trans-unit id="tbl_4b57e0eaaa">
+        <note>File: t_text.json</note>
+        <source>Main Notebook</source>
+        <target>Основной журнал</target></trans-unit>
+      <trans-unit id="tbl_4bcc816090">
+        <note>File: t_text.json</note>
+        <source>Give up</source>
+        <target>Сдаться</target></trans-unit>
+      <trans-unit id="tbl_4c4b8cfa49">
+        <note>File: t_text.json</note>
+        <source>#1CRead to the end before continuing.</source>
+        <target>#1CПрочтите до конца, прежде чем продолжить.</target></trans-unit>
+      <trans-unit id="tbl_4cc89aaf7f">
+        <note>File: t_text.json</note>
+        <source>#138IWarp Device</source>
+        <target>#138IУстройство телепортации</target></trans-unit>
+      <trans-unit id="tbl_4d37de4c97">
+        <note>File: t_text.json</note>
+        <source>#3C%s#1C x %d will be received in exchange.</source>
+        <target>В обмен будет получено: #3C%s#1C (%d шт.).</target></trans-unit>
+      <trans-unit id="tbl_4ef570c0d2">
+        <note>File: t_text.json</note>
+        <source>Change Target</source>
+        <target>Сменить цель</target></trans-unit>
+      <trans-unit id="tbl_4f6f9a07d8">
+        <note>File: t_text.json</note>
+        <source>Rank A6</source>
+        <target>Ранг A6</target></trans-unit>
+      <trans-unit id="tbl_509040918c">
+        <note>File: t_text.json</note>
+        <source>#3C#316IAll Sepith x100\n#66IAttack 1\n#315IZeram Powder</source>
+        <target>#3C#316IВсе сепиты x100\n#66IAttack 1\n#315IZeram Powder</target></trans-unit>
+      <trans-unit id="tbl_51b558e2e5">
+        <note>File: t_text.json</note>
+        <source>Course Select</source>
+        <target>Выбор курса</target></trans-unit>
+      <trans-unit id="tbl_52103f6455">
+        <note>File: t_text.json</note>
+        <source>Upload current progress to the PlayStation㊥Network.</source>
+        <target>Выгрузить текущий прогресс в PlayStation™Network.</target></trans-unit>
+      <trans-unit id="tbl_522d6e1911">
+        <note>File: t_text.json</note>
+        <source>An error occurred during the installation process.\nQuitting the game.</source>
+        <target>Произошла ошибка во время установки.\nВыход из игры.</target></trans-unit>
+      <trans-unit id="tbl_5440a33e9c">
+        <note>File: t_text.json</note>
+        <source>#3COverdrive can't be used because this\ncharacter's partner is unable to act.</source>
+        <target>#3CСверхбоевой режим недоступен, так как\nпартнёр этого персонажа не может действовать.</target></trans-unit>
+      <trans-unit id="tbl_55d1839b21">
+        <note>File: t_text.json</note>
+        <source>Check combat links.</source>
+        <target>Проверить боевые связи.</target></trans-unit>
+      <trans-unit id="tbl_56061f421e">
+        <note>File: t_text.json</note>
+        <source>It had no effect...</source>
+        <target>Это не дало эффекта...</target></trans-unit>
+      <trans-unit id="tbl_5662b522e0">
+        <note>File: t_text.json</note>
+        <source>#1CDivine Salvation Gem can only be set in time, space, and mirage slots.</source>
+        <target>#1CСамоцвет Божественного Спасения можно установить только в слоты времени, пространства и иллюзий.</target></trans-unit>
+      <trans-unit id="tbl_56ec834f09">
+        <note>File: t_text.json</note>
+        <source>#1CClose the Camp Menu and begin the match?</source>
+        <target>#1CЗакрыть походное меню и начать матч?</target></trans-unit>
+      <trans-unit id="tbl_57213ef40a">
+        <note>File: t_text.json</note>
+        <source>#1CExchange #579c%d points#1C\nfor #3C%s#1C x %d?</source>
+        <target>#1CОбменять #579c%d очков#1C\nна #3C%s#1C (%d шт.)?</target></trans-unit>
+      <trans-unit id="tbl_5775994a7d">
+        <note>File: t_text.json</note>
+        <source>Selected data isn't clear data.</source>
+        <target>Выбранные данные не являются данными о прохождении.</target></trans-unit>
+      <trans-unit id="tbl_587dc3ec82">
+        <note>File: t_text.json</note>
+        <source>#1CCouldn't flee!</source>
+        <target>#1CНе удалось сбежать!</target></trans-unit>
+      <trans-unit id="tbl_5959a7cefa">
+        <note>File: t_text.json</note>
+        <source>Turn Character</source>
+        <target>Повернуть персонажа</target></trans-unit>
+      <trans-unit id="tbl_59a12b4257">
+        <note>File: t_text.json</note>
+        <source>Save data.</source>
+        <target>Сохранить данные.</target></trans-unit>
+      <trans-unit id="tbl_59b44f2ed7">
+        <note>File: t_text.json</note>
+        <source>#35IWind Sepith</source>
+        <target>#35IСепит ветра</target></trans-unit>
+      <trans-unit id="tbl_5a8ef600b1">
+        <note>File: t_text.json</note>
+        <source>#1CReceived a #3C#308IGolden Emblem#1C\nfor reaching Student Rank A0.</source>
+        <target>#1CПолучена #3C#308IЗолотая эмблема#1C\nза достижение ученического ранга A0.</target></trans-unit>
+      <trans-unit id="tbl_5b371d3f17">
+        <note>File: t_text.json</note>
+        <source>Could not load system data. Continue anyway?</source>
+        <target>Не удалось загрузить системные данные. Всё равно продолжить?</target></trans-unit>
+      <trans-unit id="tbl_5bdf616c11">
+        <note>File: t_text.json</note>
+        <source>Equips an Accessory.</source>
+        <target>Надеть аксессуар.</target></trans-unit>
+      <trans-unit id="tbl_5c8f00557b">
+        <note>File: t_text.json</note>
+        <source>#1CCheck all of the quests before continuing.</source>
+        <target>#1CПроверьте все задания, прежде чем продолжить.</target></trans-unit>
+      <trans-unit id="tbl_5d6b402a6b">
+        <note>File: t_text.json</note>
+        <source>New Save Data</source>
+        <target>Новые данные сохранения</target></trans-unit>
+      <trans-unit id="tbl_5daf3eac88">
+        <note>File: t_text.json</note>
+        <source>No system data exists. Continue anyway?</source>
+        <target>Системные данные отсутствуют. Всё равно продолжить?</target></trans-unit>
+      <trans-unit id="tbl_5dd2352cc7">
+        <note>File: t_text.json</note>
+        <source>Change what the right button on the directional pad does.</source>
+        <target>Изменить назначение кнопки «вправо» на крестовине.</target></trans-unit>
+      <trans-unit id="tbl_5dd708d337">
+        <note>File: t_text.json</note>
+        <source>Rank A1</source>
+        <target>Ранг A1</target></trans-unit>
+      <trans-unit id="tbl_5e349a27cb">
+        <note>File: t_text.json</note>
+        <source>#160IEnter Foot Bath</source>
+        <target>#160IВойти в ножную ванну</target></trans-unit>
+      <trans-unit id="tbl_5e36bc3994">
+        <note>File: t_text.json</note>
+        <source>#1CYou can't equip more than one of the same quartz.</source>
+        <target>#1CНельзя экипировать больше одного одинакового кварца.</target></trans-unit>
+      <trans-unit id="tbl_5e3f2909aa">
+        <note>File: t_text.json</note>
+        <source>#162I: Change view　#177I: Scroll through party</source>
+        <target>#162I: Сменить вид　#177I: Прокрутить отряд</target></trans-unit>
+      <trans-unit id="tbl_5e59954f7e">
+        <note>File: t_text.json</note>
+        <source>#1CYou can't equip two 'breaker' or status quartz \non the same line.</source>
+        <target>#1CНельзя установить два кварца типа «пробой» или кварца статуса\nна одну линию.</target></trans-unit>
+      <trans-unit id="tbl_5f304a454f">
+        <note>File: t_text.json</note>
+        <source>#1CSigned out from the PlayStation㊥Network. To use Cross-Save\nfunctionality, sign in to the PlayStation㊥Network.</source>
+        <target>#1CВы вышли из PlayStation™Network. Чтобы использовать функцию\nCross-Save, войдите в PlayStation™Network.</target></trans-unit>
+      <trans-unit id="tbl_5f9a8905af">
+        <note>File: t_text.json</note>
+        <source>Set Quartz.</source>
+        <target>Установить кварц.</target></trans-unit>
+      <trans-unit id="tbl_61f035b56a">
+        <note>File: t_text.json</note>
+        <source> was registered as S-Break.</source>
+        <target>зарегистрирован как S-приём.</target></trans-unit>
+      <trans-unit id="tbl_64ba8ce134">
+        <note>File: t_text.json</note>
+        <source>#1CReturn to the start of this stratum?</source>
+        <target>#1CВернуться к началу этого яруса?</target></trans-unit>
+      <trans-unit id="tbl_6670a2d9c3">
+        <note>File: t_text.json</note>
+        <source>Valimar can only be summoned once per battle.</source>
+        <target>Валимара можно призвать лишь раз за битву.</target></trans-unit>
+      <trans-unit id="tbl_66a6b579bf">
+        <note>File: t_text.json</note>
+        <source>Checking data</source>
+        <target>Проверка данных</target></trans-unit>
+      <trans-unit id="tbl_67312ab67a">
+        <note>File: t_text.json</note>
+        <source>Up Button</source>
+        <target>Кнопка «вверх»</target></trans-unit>
+      <trans-unit id="tbl_682976b44d">
+        <note>File: t_text.json</note>
+        <source>#174IMove Cursor #163IMove Faster #177IAdjust Camera #164I#166IZoom</source>
+        <target>#174IПереместить курсор #163IБыстрое перемещение #177IНастроить камеру #164I#166IМасштаб</target></trans-unit>
+      <trans-unit id="tbl_6860c160e5">
+        <note>File: t_text.json</note>
+        <source>#1CYou can't adjust your party while on the bike or horse.</source>
+        <target>#1CНельзя настраивать отряд, находясь на байке или лошади.</target></trans-unit>
+      <trans-unit id="tbl_68bdc24896">
+        <note>File: t_text.json</note>
+        <source>#1CIt had no effect.</source>
+        <target>#1CЭто не дало эффекта.</target></trans-unit>
+      <trans-unit id="tbl_68e9cb5e0a">
+        <note>File: t_text.json</note>
+        <source>Return to Ymir?</source>
+        <target>Вернуться в Юмир?</target></trans-unit>
+      <trans-unit id="tbl_695ed1c203">
+        <note>File: t_text.json</note>
+        <source>Saving system data...</source>
+        <target>Сохранение системных данных...</target></trans-unit>
+      <trans-unit id="tbl_6962c51ef5">
+        <note>File: t_text.json</note>
+        <source>#148IShining Pom</source>
+        <target>#148IСияющий пом</target></trans-unit>
+      <trans-unit id="tbl_69a48a99c8">
+        <note>File: t_text.json</note>
+        <source>Lower difficulty and retry</source>
+        <target>Снизить сложность и повторить</target></trans-unit>
+      <trans-unit id="tbl_6a321dcde8">
+        <note>File: t_text.json</note>
+        <source>Share saved data with the PlayStation㍻Vita version\nusing the PlayStation㊥Network.</source>
+        <target>Обменивайтесь данными сохранения с версией для PlayStation®Vita,\nиспользуя PlayStation™Network.</target></trans-unit>
+      <trans-unit id="tbl_6aae4b865a">
+        <note>File: t_text.json</note>
+        <source>#1CUpgrade this slot?</source>
+        <target>#1CУлучшить этот слот?</target></trans-unit>
+      <trans-unit id="tbl_6ae05082d7">
+        <note>File: t_text.json</note>
+        <source>#1CAttempt to flee?\nChance:#3C%d％</source>
+        <target>#1CПопытаться сбежать?\nШанс: #3C%d％</target></trans-unit>
+      <trans-unit id="tbl_6af5010482">
+        <note>File: t_text.json</note>
+        <source>L1 Button</source>
+        <target>Кнопка L1</target></trans-unit>
+      <trans-unit id="tbl_6c7448093f">
+        <note>File: t_text.json</note>
+        <source>L2 Button</source>
+        <target>Кнопка L2</target></trans-unit>
+      <trans-unit id="tbl_6e128d26a4">
+        <note>File: t_text.json</note>
+        <source>#1CInsufficient items.</source>
+        <target>#1CНедостаточно предметов.</target></trans-unit>
+      <trans-unit id="tbl_701df47e31">
+        <note>File: t_text.json</note>
+        <source>Change what you can do while an active voice line is playing.\nSelecting 'free' lets you talk to NPCs and investigate.</source>
+        <target>Измените, что можно делать во время проигрывания активной реплики.\nВыбор «свободно» позволяет говорить с NPC и исследовать.</target></trans-unit>
+      <trans-unit id="tbl_7097d0108e">
+        <note>File: t_text.json</note>
+        <source>Left Button</source>
+        <target>Кнопка «влево»</target></trans-unit>
+      <trans-unit id="tbl_70cb4b69e1">
+        <note>File: t_text.json</note>
+        <source>#168IReturn to start point</source>
+        <target>#168IВернуться в начало</target></trans-unit>
+      <trans-unit id="tbl_748e8d9b0b">
+        <note>File: t_text.json</note>
+        <source>Exchange fire sepith for mira.</source>
+        <target>Обменять сепиты огня на миру.</target></trans-unit>
+      <trans-unit id="tbl_748ed618cb">
+        <note>File: t_text.json</note>
+        <source>Women Only</source>
+        <target>Только для женщин</target></trans-unit>
+      <trans-unit id="tbl_749637e397">
+        <note>File: t_text.json</note>
+        <source>#154IStory Event</source>
+        <target>#154IСюжетное событие</target></trans-unit>
+      <trans-unit id="tbl_760004e1a9">
+        <note>File: t_text.json</note>
+        <source>Downloading data...</source>
+        <target>Загрузка данных...</target></trans-unit>
+      <trans-unit id="tbl_791a6556c3">
+        <note>File: t_text.json</note>
+        <source>#2CAct continuously with your partner\nfor a period of time.</source>
+        <target>#2CДействовать непрерывно с партнёром\nв течение некоторого времени.</target></trans-unit>
+      <trans-unit id="tbl_79e72ddb8e">
+        <note>File: t_text.json</note>
+        <source>The party hasn't been formed yet.</source>
+        <target>Отряд ещё не сформирован.</target></trans-unit>
+      <trans-unit id="tbl_7a425361b3">
+        <note>File: t_text.json</note>
+        <source>End party selection.</source>
+        <target>Завершить выбор отряда.</target></trans-unit>
+      <trans-unit id="tbl_7abbf2b17d">
+        <note>File: t_text.json</note>
+        <source>Delete save data.</source>
+        <target>Удалить данные сохранения.</target></trans-unit>
+      <trans-unit id="tbl_7b745a0cfa">
+        <note>File: t_text.json</note>
+        <source>#147IQuest Monster</source>
+        <target>#147IМонстр по заданию</target></trans-unit>
+      <trans-unit id="tbl_7bad59b821">
+        <note>File: t_text.json</note>
+        <source>Restore the difficulty and retry.\n#3CYour time will be saved again.</source>
+        <target>Восстановить сложность и повторить.\n#3CВаше время снова будет сохраняться.</target></trans-unit>
+      <trans-unit id="tbl_7df3dbb551">
+        <note>File: t_text.json</note>
+        <source>#1CYou cannot access data on the PlayStation㊥Network\nrepeatedly in a short period of time. Wait and try again.</source>
+        <target>#1CВы не можете обращаться к данным в PlayStation™Network\nслишком часто. Подождите и попробуйте снова.</target></trans-unit>
+      <trans-unit id="tbl_7e31d52fb4">
+        <note>File: t_text.json</note>
+        <source>Rean Schwarzer</source>
+        <target>Рин Шварцер</target></trans-unit>
+      <trans-unit id="tbl_7f296b57c1">
+        <note>File: t_text.json</note>
+        <source>Area %s (Set)</source>
+        <target>Область %s (уст.)</target></trans-unit>
+      <trans-unit id="tbl_7fc9e492ec">
+        <note>File: t_text.json</note>
+        <source>Uploading data...</source>
+        <target>Выгрузка данных...</target></trans-unit>
+      <trans-unit id="tbl_80ec332b75">
+        <note>File: t_text.json</note>
+        <source>Exchange water sepith for mira.</source>
+        <target>Обменять сепиты воды на миру.</target></trans-unit>
+      <trans-unit id="tbl_81b84b58c5">
+        <note>File: t_text.json</note>
+        <source>Return to Courageous</source>
+        <target>Вернуться на «Дерзкий»</target></trans-unit>
+      <trans-unit id="tbl_81bcc671ee">
+        <note>File: t_text.json</note>
+        <source> has already been used.</source>
+        <target>уже использовано.</target></trans-unit>
+      <trans-unit id="tbl_81d4817267">
+        <note>File: t_text.json</note>
+        <source>#1CCannot equip now.</source>
+        <target>#1CСейчас нельзя экипировать.</target></trans-unit>
+      <trans-unit id="tbl_822445feb1">
+        <note>File: t_text.json</note>
+        <source>#162I: View Arts #168I: Auto-Equip #170I: Remove All</source>
+        <target>#162I: Просмотр заклинаний #168I: Автоэкипировка #170I: Снять всё</target></trans-unit>
+      <trans-unit id="tbl_827d46aff8">
+        <note>File: t_text.json</note>
+        <source>#1CYou cannot form a party consisting only of K.O.ed members.</source>
+        <target>#1CНельзя сформировать отряд только из выведенных из строя персонажей.</target></trans-unit>
+      <trans-unit id="tbl_85675fe4a6">
+        <note>File: t_text.json</note>
+        <source>#1CThis slot is unopened.</source>
+        <target>#1CЭтот слот не открыт.</target></trans-unit>
+      <trans-unit id="tbl_86275a19ed">
+        <note>File: t_text.json</note>
+        <source>Men Only</source>
+        <target>Только для мужчин</target></trans-unit>
+      <trans-unit id="tbl_86f9abfe7b">
+        <note>File: t_text.json</note>
+        <source>Remove all but locked members and reselect.</source>
+        <target>Удалить всех, кроме закреплённых, и выбрать заново.</target></trans-unit>
+      <trans-unit id="tbl_8789e07ef6">
+        <note>File: t_text.json</note>
+        <source>Buy Items.</source>
+        <target>Купить предметы.</target></trans-unit>
+      <trans-unit id="tbl_8871a66ae6">
+        <note>File: t_text.json</note>
+        <source>Upload current progress to PlayStation㊥Network?</source>
+        <target>Выгрузить текущий прогресс в PlayStation™Network?</target></trans-unit>
+      <trans-unit id="tbl_8905018a4e">
+        <note>File: t_text.json</note>
+        <source>#177I: Rotate Character #180I#182I: Enlarge/Shrink</source>
+        <target>#177I: Повернуть персонажа #180I#182I: Увеличить/Уменьшить</target></trans-unit>
+      <trans-unit id="tbl_89139d4def">
+        <note>File: t_text.json</note>
+        <source>Commence installation process.</source>
+        <target>Начать процесс установки.</target></trans-unit>
+      <trans-unit id="tbl_89a46fa0ea">
+        <note>File: t_text.json</note>
+        <source>Challenge again?</source>
+        <target>Попробовать снова?</target></trans-unit>
+      <trans-unit id="tbl_8b38a16014">
+        <note>File: t_text.json</note>
+        <source>Act 1</source>
+        <target>Акт 1</target></trans-unit>
+      <trans-unit id="tbl_8cabbc8f2b">
+        <note>File: t_text.json</note>
+        <source>#1CSearing Sun Gem can only be set in fire, space, and wind slots.</source>
+        <target>#1CСамоцвет Палящего Солнца можно установить только в слоты огня, пространства и ветра.</target></trans-unit>
+      <trans-unit id="tbl_8d86096473">
+        <note>File: t_text.json</note>
+        <source>#6CCurrent data</source>
+        <target>#6CТекущие данные</target></trans-unit>
+      <trans-unit id="tbl_8de92a4118">
+        <note>File: t_text.json</note>
+        <source>PlayStation㍻3 Version</source>
+        <target>Версия для PlayStation®3</target></trans-unit>
+      <trans-unit id="tbl_8ea3171f05">
+        <note>File: t_text.json</note>
+        <source>Change horizontal camera settings.</source>
+        <target>Изменить настройки горизонтальной камеры.</target></trans-unit>
+      <trans-unit id="tbl_8f3303b62f">
+        <note>File: t_text.json</note>
+        <source>#1CReturn to the Courageous?</source>
+        <target>#1CВернуться на «Дерзкий»?</target></trans-unit>
+      <trans-unit id="tbl_90ccf6852d">
+        <note>File: t_text.json</note>
+        <source>Character notebook updated.</source>
+        <target>Журнал персонажей обновлён.</target></trans-unit>
+      <trans-unit id="tbl_90f4289c37">
+        <note>File: t_text.json</note>
+        <source>#1CWhen you start a New Game+, all downloadable content\nwill be marked as unused. To use DLC items, reobtain\nthem from ITEM then DLC in the Camp Menu.</source>
+        <target>#1CПри начале «Новой игры+» весь загружаемый контент\nбудет помечен как неиспользованный. Чтобы использовать предметы DLC,\nполучите их заново в походном меню: «ПРЕДМЕТЫ», затем «DLC».</target></trans-unit>
+      <trans-unit id="tbl_913ed61336">
+        <note>File: t_text.json</note>
+        <source>#1CThis slot can't be upgraded any further.</source>
+        <target>#1CЭтот слот больше нельзя улучшить.</target></trans-unit>
+      <trans-unit id="tbl_917fb5e361">
+        <note>File: t_text.json</note>
+        <source>System data could not be overwritten, as it is damaged.\nDelete the system data and then try again.</source>
+        <target>Системные данные повреждены, и их не удалось перезаписать.\nУдалите системные данные и попробуйте снова.</target></trans-unit>
+      <trans-unit id="tbl_918e156db1">
+        <note>File: t_text.json</note>
+        <source>Can upgrade (Lv1⇒Lv2)</source>
+        <target>Можно улучшить (Ур. 1⇒Ур. 2)</target></trans-unit>
+      <trans-unit id="tbl_9343d820f1">
+        <note>File: t_text.json</note>
+        <source>#156IQuest Event</source>
+        <target>#156IСобытие задания</target></trans-unit>
+      <trans-unit id="tbl_938b2ec8fd">
+        <note>File: t_text.json</note>
+        <source>Rank A7</source>
+        <target>Ранг A7</target></trans-unit>
+      <trans-unit id="tbl_94c45c9be4">
+        <note>File: t_text.json</note>
+        <source>#38IMirage Sepith</source>
+        <target>#38IСепит иллюзий</target></trans-unit>
+      <trans-unit id="tbl_955565c207">
+        <note>File: t_text.json</note>
+        <source>#3CThe Clear Moon Gem has lost its radiance. \nIts lost art can't be used again.</source>
+        <target>#3CСамоцвет Ясной Луны утратил своё сияние.\nУтраченное заклинание больше нельзя использовать.</target></trans-unit>
+      <trans-unit id="tbl_96a897f0d2">
+        <note>File: t_text.json</note>
+        <source>Prioritize magical damage</source>
+        <target>Приоритет магического урона</target></trans-unit>
+      <trans-unit id="tbl_96d6964d16">
+        <note>File: t_text.json</note>
+        <source>#1CCould not find save data from the PlayStation㍻3 version of\nTrails of Cold Steel.</source>
+        <target>#1CНе удалось найти данные сохранения с версии Trails of Cold Steel\nдля PlayStation®3.</target></trans-unit>
+      <trans-unit id="tbl_972a93b08e">
+        <note>File: t_text.json</note>
+        <source>#130IMonster Chest</source>
+        <target>#130IСундук с монстром</target></trans-unit>
+      <trans-unit id="tbl_9748f03748">
+        <note>File: t_text.json</note>
+        <source>#177I: Scroll through party</source>
+        <target>#177I: Прокрутить отряд</target></trans-unit>
+      <trans-unit id="tbl_97caf6724e">
+        <note>File: t_text.json</note>
+        <source>#160IPick Up</source>
+        <target>#160IПодобрать</target></trans-unit>
+      <trans-unit id="tbl_99595af603">
+        <note>File: t_text.json</note>
+        <source>#1C%s recovered #3C%d#1C CP.</source>
+        <target>#1C%s восстановил(а) #3C%d#1C ОР.</target></trans-unit>
+      <trans-unit id="tbl_9a03c84e76">
+        <note>File: t_text.json</note>
+        <source>Use arts.</source>
+        <target>Использовать заклинания.</target></trans-unit>
+      <trans-unit id="tbl_9a6599f9d1">
+        <note>File: t_text.json</note>
+        <source>Use items.</source>
+        <target>Использовать предметы.</target></trans-unit>
+      <trans-unit id="tbl_9a973a9b17">
+        <note>File: t_text.json</note>
+        <source>#1CCommence downloading data?\nAll unsaved progress will be lost.</source>
+        <target>#1CНачать загрузку данных?\nВесь несохранённый прогресс будет утерян.</target></trans-unit>
+      <trans-unit id="tbl_9a9c568223">
+        <note>File: t_text.json</note>
+        <source>×%2d</source>
+        <target>×%2d</target></trans-unit>
+      <trans-unit id="tbl_9c0a48fd9f">
+        <note>File: t_text.json</note>
+        <source>#1CCommence uploading data?\nThe already uploaded data will be overwritten.</source>
+        <target>#1CНачать выгрузку данных?\nУже выгруженные данные будут перезаписаны.</target></trans-unit>
+      <trans-unit id="tbl_9c4fcf09ab">
+        <note>File: t_text.json</note>
+        <source>Can upgrade (Lv0⇒Lv1)</source>
+        <target>Можно улучшить (Ур. 0⇒Ур. 1)</target></trans-unit>
+      <trans-unit id="tbl_9c7d91f391">
+        <note>File: t_text.json</note>
+        <source>Buy and Change ARCUS Covers.</source>
+        <target>Купить и сменить крышки «АРКУС».</target></trans-unit>
+      <trans-unit id="tbl_9c9d09c115">
+        <note>File: t_text.json</note>
+        <source>Change what the down button on the directional pad does.</source>
+        <target>Изменить назначение кнопки «вниз» на крестовине.</target></trans-unit>
+      <trans-unit id="tbl_9ca0209051">
+        <note>File: t_text.json</note>
+        <source>#1CYou can only equip one Phantasmal Mirror per character.</source>
+        <target>#1CМожно экипировать только одно Призрачное зеркало на персонажа.</target></trans-unit>
+      <trans-unit id="tbl_9d34eaedf1">
+        <note>File: t_text.json</note>
+        <source>R1 Button</source>
+        <target>Кнопка R1</target></trans-unit>
+      <trans-unit id="tbl_9dcba05293">
+        <note>File: t_text.json</note>
+        <source>Uploading data interrupted.</source>
+        <target>Выгрузка данных прервана.</target></trans-unit>
+      <trans-unit id="tbl_9dd539344e">
+        <note>File: t_text.json</note>
+        <source>#168I: Return to Courageous</source>
+        <target>#168I: Вернуться на «Дерзкий»</target></trans-unit>
+      <trans-unit id="tbl_9e1888241f">
+        <note>File: t_text.json</note>
+        <source>Line %s</source>
+        <target>Линия %s</target></trans-unit>
+      <trans-unit id="tbl_9e2507700b">
+        <note>File: t_text.json</note>
+        <source>#1CInsufficient sepith.</source>
+        <target>#1CНедостаточно сепитов.</target></trans-unit>
+      <trans-unit id="tbl_9e4f452d72">
+        <note>File: t_text.json</note>
+        <source>#1CIf you select Hard or Nightmare, you won't be able to\nchoose the 'Weaken Enemies and Retry' option after\ngetting a game over. Continue anyway?</source>
+        <target>#1CЕсли вы выберете «Тяжело» или «Кошмар», вы не сможете\nвыбрать опцию «Ослабить врагов и повторить» после\nпроигрыша. Всё равно продолжить?</target></trans-unit>
+      <trans-unit id="tbl_9fb3cda303">
+        <note>File: t_text.json</note>
+        <source>#1CTo view movies and final bonding events, you will need\nto load clear data which is saved upon clearing the game.\nLoad clear data?</source>
+        <target>#1CЧтобы просматривать ролики и финальные события связи, вам нужно\nзагрузить данные о прохождении, которые сохраняются после завершения игры.\nЗагрузить данные о прохождении?</target></trans-unit>
+      <trans-unit id="tbl_9fc8177cc9">
+        <note>File: t_text.json</note>
+        <source>Uploading data.</source>
+        <target>Выгрузка данных.</target></trans-unit>
+      <trans-unit id="tbl_a0f799f0fd">
+        <note>File: t_text.json</note>
+        <source>#1C%s is near death.</source>
+        <target>#1C%s при смерти.</target></trans-unit>
+      <trans-unit id="tbl_a186c117e5">
+        <note>File: t_text.json</note>
+        <source>#1CCustomize whose equipment?</source>
+        <target>#1CЧьё снаряжение улучшить?</target></trans-unit>
+      <trans-unit id="tbl_a290fea8ce">
+        <note>File: t_text.json</note>
+        <source>: Scroll</source>
+        <target>: Прокрутка</target></trans-unit>
+      <trans-unit id="tbl_a3710b8a8d">
+        <note>File: t_text.json</note>
+        <source>Checking downloadable content..</source>
+        <target>Проверка загружаемого контента...</target></trans-unit>
+      <trans-unit id="tbl_a587ac39ac">
+        <note>File: t_text.json</note>
+        <source>Share saved data with the PlayStation㍻3 version\nusing the PlayStation㊥Network.</source>
+        <target>Обменивайтесь данными сохранения с версией для PlayStation®3,\nиспользуя PlayStation™Network.</target></trans-unit>
+      <trans-unit id="tbl_a5db51ed5b">
+        <note>File: t_text.json</note>
+        <source>#1CRemove all quartz?</source>
+        <target>#1CСнять все кварцы?</target></trans-unit>
+      <trans-unit id="tbl_a60a308e34">
+        <note>File: t_text.json</note>
+        <source>#162I: Investigate</source>
+        <target>#162I: Осмотреть</target></trans-unit>
+      <trans-unit id="tbl_a67e850e21">
+        <note>File: t_text.json</note>
+        <source>Loading system data...</source>
+        <target>Загрузка системных данных...</target></trans-unit>
+      <trans-unit id="tbl_a6d18a309b">
+        <note>File: t_text.json</note>
+        <source>Upgrade Slots.</source>
+        <target>Улучшить слоты.</target></trans-unit>
+      <trans-unit id="tbl_a798132d7e">
+        <note>File: t_text.json</note>
+        <source>#1CNothing happened.</source>
+        <target>#1CНичего не произошло.</target></trans-unit>
+      <trans-unit id="tbl_a8f0f8f1c6">
+        <note>File: t_text.json</note>
+        <source>Obtaining trophy data..</source>
+        <target>Получение данных о призах...</target></trans-unit>
+      <trans-unit id="tbl_a9daa0dae3">
+        <note>File: t_text.json</note>
+        <source>Change what the L button does.</source>
+        <target>Изменить назначение кнопки L.</target></trans-unit>
+      <trans-unit id="tbl_aa89922f6c">
+        <note>File: t_text.json</note>
+        <source>Prioritize physical damage</source>
+        <target>Приоритет физического урона</target></trans-unit>
+      <trans-unit id="tbl_aacfeeba13">
+        <note>File: t_text.json</note>
+        <source>#3CThe Glimmering Star Gem has lost its radiance. \nIts lost art can't be used again.</source>
+        <target>#3CМерцающий звёздный самоцвет утратил своё сияние.\nУтраченное заклинание больше нельзя использовать.</target></trans-unit>
+      <trans-unit id="tbl_aadb9dc12c">
+        <note>File: t_text.json</note>
+        <source>Checking data..</source>
+        <target>Проверка данных...</target></trans-unit>
+      <trans-unit id="tbl_ab537e1a1c">
+        <note>File: t_text.json</note>
+        <source>Download game progress from PlayStation㊥Network?</source>
+        <target>Загрузить прогресс игры из PlayStation™Network?</target></trans-unit>
+      <trans-unit id="tbl_abe630fe99">
+        <note>File: t_text.json</note>
+        <source>#149ITreasure Chest</source>
+        <target>#149IСундук с сокровищами</target></trans-unit>
+      <trans-unit id="tbl_ac9a470b77">
+        <note>File: t_text.json</note>
+        <source>Return to Title Screen</source>
+        <target>Вернуться на главный экран</target></trans-unit>
+      <trans-unit id="tbl_ad1ccf98a0">
+        <note>File: t_text.json</note>
+        <source>This slot cannot be opened as the orbal circuit\nleading to it is not connected.</source>
+        <target>Этот слот нельзя открыть, так как ведущая\nк нему орбальная цепь не соединена.</target></trans-unit>
+      <trans-unit id="tbl_b061138883">
+        <note>File: t_text.json</note>
+        <source>★？？？？</source>
+        <target>★？？？？</target></trans-unit>
+      <trans-unit id="tbl_b06a7e7a1e">
+        <note>File: t_text.json</note>
+        <source>Cooking complete!</source>
+        <target>Готовка завершена!</target></trans-unit>
+      <trans-unit id="tbl_b0a87e7b00">
+        <note>File: t_text.json</note>
+        <source>#55INot set</source>
+        <target>#55IНе задано</target></trans-unit>
+      <trans-unit id="tbl_b1e5741faa">
+        <note>File: t_text.json</note>
+        <source>Attack (Class %s):</source>
+        <target>Атака (класс %s):</target></trans-unit>
+      <trans-unit id="tbl_b2738a7940">
+        <note>File: t_text.json</note>
+        <source>#175I: Change Party Order</source>
+        <target>#175I: Изменить порядок в отряде</target></trans-unit>
+      <trans-unit id="tbl_b2f631b968">
+        <note>File: t_text.json</note>
+        <source>Adjust voice volume.</source>
+        <target>Настроить громкость голосов.</target></trans-unit>
+      <trans-unit id="tbl_b30e2349a1">
+        <note>File: t_text.json</note>
+        <source>Checking data...</source>
+        <target>Проверка данных...</target></trans-unit>
+      <trans-unit id="tbl_b338eab99b">
+        <note>File: t_text.json</note>
+        <source>#177I: Rotate Character #162I＋#164I#166I: Enlarge/Shrink</source>
+        <target>#177I: Повернуть персонажа #162I＋#164I#166I: Увеличить/Уменьшить</target></trans-unit>
+      <trans-unit id="tbl_b387bf418e">
+        <note>File: t_text.json</note>
+        <source>#1CSell #3C%s#1C x %d#1C for #579c%d mira#1C?</source>
+        <target>#1CПродать #3C%s#1C (%d шт.)#1C за #579c%d миры#1C?</target></trans-unit>
+      <trans-unit id="tbl_b3911c79c4">
+        <note>File: t_text.json</note>
+        <source>Rest and recover.\nHP and EP will be fully recovered, and CP will increase by %d.</source>
+        <target>Отдохнуть и восстановиться.\nОЗ и ОЭ будут полностью восстановлены, а ОР увеличатся на %d.</target></trans-unit>
+      <trans-unit id="tbl_b3a62627ed">
+        <note>File: t_text.json</note>
+        <source>Uploading data complete.</source>
+        <target>Выгрузка данных завершена.</target></trans-unit>
+      <trans-unit id="tbl_b3e4faf65b">
+        <note>File: t_text.json</note>
+        <source>#160I: Move</source>
+        <target>#160I: Двигаться</target></trans-unit>
+      <trans-unit id="tbl_b4e689f18f">
+        <note>File: t_text.json</note>
+        <source>#162I: Set Link</source>
+        <target>#162I: Установить связь</target></trans-unit>
+      <trans-unit id="tbl_b55e1a749f">
+        <note>File: t_text.json</note>
+        <source>The party was wiped out...</source>
+        <target>Отряд был уничтожен...</target></trans-unit>
+      <trans-unit id="tbl_b580bef65c">
+        <note>File: t_text.json</note>
+        <source>#1CCould not find save data from the PlayStation㍻Vita version of\nTrails of Cold Steel.</source>
+        <target>#1CНе удалось найти данные сохранения с версии Trails of Cold Steel\nдля PlayStation®Vita.</target></trans-unit>
+      <trans-unit id="tbl_b63d515ad6">
+        <note>File: t_text.json</note>
+        <source>The Legend of Heroes: Trails of Cold Steel II\nInstall Data</source>
+        <target>The Legend of Heroes: Trails of Cold Steel II\nУстановочные данные</target></trans-unit>
+      <trans-unit id="tbl_b7ef274cc0">
+        <note>File: t_text.json</note>
+        <source>#168ICall Courageous</source>
+        <target>#168IВызвать «Дерзкий»</target></trans-unit>
+      <trans-unit id="tbl_b877cf89be">
+        <note>File: t_text.json</note>
+        <source>R2 Button</source>
+        <target>Кнопка R2</target></trans-unit>
+      <trans-unit id="tbl_b8f32ab94d">
+        <note>File: t_text.json</note>
+        <source>Downloading data..</source>
+        <target>Загрузка данных...</target></trans-unit>
+      <trans-unit id="tbl_b9a59ab7c3">
+        <note>File: t_text.json</note>
+        <source>#1CRank increased to [%s].\nReceived #%dI#2C%s#1C as a perk.</source>
+        <target>#1CРанг повышен до [%s].\nВ качестве награды получено: #%dI#2C%s#1C.</target></trans-unit>
+      <trans-unit id="tbl_ba3ed9a42f">
+        <note>File: t_text.json</note>
+        <source>Equips Clothing.</source>
+        <target>Надеть одежду.</target></trans-unit>
+      <trans-unit id="tbl_baa4e1384b">
+        <note>File: t_text.json</note>
+        <source>Downloading data</source>
+        <target>Загрузка данных</target></trans-unit>
+      <trans-unit id="tbl_bb445f5b4e">
+        <note>File: t_text.json</note>
+        <source>Could not save system data. Continue anyway?</source>
+        <target>Не удалось сохранить системные данные. Всё равно продолжить?</target></trans-unit>
+      <trans-unit id="tbl_bb6d925f0e">
+        <note>File: t_text.json</note>
+        <source> will be set as S-Break.</source>
+        <target>будет установлен как S-приём.</target></trans-unit>
+      <trans-unit id="tbl_bb819fcdd2">
+        <note>File: t_text.json</note>
+        <source>#144ICurrent Location</source>
+        <target>#144IТекущее местоположение</target></trans-unit>
+      <trans-unit id="tbl_bc088a02fe">
+        <note>File: t_text.json</note>
+        <source>#1CBased on Rean's level, the following \nbonuses were received:</source>
+        <target>#1CВ зависимости от уровня Рина получены\nследующие бонусы:</target></trans-unit>
+      <trans-unit id="tbl_bc0ba632c0">
+        <note>File: t_text.json</note>
+        <source>Clear data can only be loaded from the Title Screen.</source>
+        <target>Данные о прохождении можно загрузить только с главного экрана.</target></trans-unit>
+      <trans-unit id="tbl_bc60eca8f4">
+        <note>File: t_text.json</note>
+        <source>Unequip #3C%s#1C?</source>
+        <target>Снять #3C%s#1C?</target></trans-unit>
+      <trans-unit id="tbl_bdab7ac4f3">
+        <note>File: t_text.json</note>
+        <source>#1CClear Moon Gem can only be set in fire, mirage, and water slots.</source>
+        <target>#1CСамоцвет Ясной Луны можно установить только в слоты огня, иллюзий и воды.</target></trans-unit>
+      <trans-unit id="tbl_bddf17fbc5">
+        <note>File: t_text.json</note>
+        <source>Loading system data.</source>
+        <target>Загрузка системных данных.</target></trans-unit>
+      <trans-unit id="tbl_beb3ff4221">
+        <note>File: t_text.json</note>
+        <source> will be used.</source>
+        <target>будет использовано.</target></trans-unit>
+      <trans-unit id="tbl_beb6668950">
+        <note>File: t_text.json</note>
+        <source>Sell Items.</source>
+        <target>Продать предметы.</target></trans-unit>
+      <trans-unit id="tbl_bed5ba049b">
+        <note>File: t_text.json</note>
+        <source>Reset Camera Angle</source>
+        <target>Сбросить угол камеры</target></trans-unit>
+      <trans-unit id="tbl_bf3f763d91">
+        <note>File: t_text.json</note>
+        <source>#1CSynthesize #3C%s#1C?</source>
+        <target>#1CСинтезировать #3C%s#1C?</target></trans-unit>
+      <trans-unit id="tbl_bf6b943e9b">
+        <note>File: t_text.json</note>
+        <source>Change Partner</source>
+        <target>Сменить партнёра</target></trans-unit>
+      <trans-unit id="tbl_bf7c037609">
+        <note>File: t_text.json</note>
+        <source>Loading system data</source>
+        <target>Загрузка системных данных</target></trans-unit>
+      <trans-unit id="tbl_bf7f648697">
+        <note>File: t_text.json</note>
+        <source>Change what the R button does.</source>
+        <target>Изменить назначение кнопки R.</target></trans-unit>
+      <trans-unit id="tbl_bf83aa872f">
+        <note>File: t_text.json</note>
+        <source>#1CStaying here will cost #579c%d mira#1C.\nStay here?\n#3CYour HP and EP will fully recover,\nand your CP will increase by %d.</source>
+        <target>#1CНочлег здесь стоит #579c%d миры#1C.\nОстаться?\n#3CВаши ОЗ и ОЭ полностью восстановятся,\nа ОР увеличатся на %d.</target></trans-unit>
+      <trans-unit id="tbl_bf9bceb8dd">
+        <note>File: t_text.json</note>
+        <source>Sound Effects</source>
+        <target>Звуковые эффекты</target></trans-unit>
+      <trans-unit id="tbl_c04796cd2b">
+        <note>File: t_text.json</note>
+        <source>Change quartz and use arts.</source>
+        <target>Менять кварцы и использовать заклинания.</target></trans-unit>
+      <trans-unit id="tbl_c09d2644ee">
+        <note>File: t_text.json</note>
+        <source>#3COverdrive can't be used by the same pair\ntwice in a row.</source>
+        <target>#3CСверхбоевой режим не может быть использован\nодной парой дважды подряд.</target></trans-unit>
+      <trans-unit id="tbl_c1210fdfdb">
+        <note>File: t_text.json</note>
+        <source>#3CThe Searing Sun Gem has lost its radiance. \nIts lost art can't be used again.</source>
+        <target>#3CСамоцвет Палящего Солнца утратил своё сияние.\nУтраченное заклинание больше нельзя использовать.</target></trans-unit>
+      <trans-unit id="tbl_c1c740f0f4">
+        <note>File: t_text.json</note>
+        <source>#1CBuy #3C%s#1C x %d#1C for #579c%d mira#1C?</source>
+        <target>#1CКупить #3C%s#1C (%d шт.)#1C за #579c%d миры#1C?</target></trans-unit>
+      <trans-unit id="tbl_c1e104b63c">
+        <note>File: t_text.json</note>
+        <source>Who will do the cooking?</source>
+        <target>Кто будет готовить?</target></trans-unit>
+      <trans-unit id="tbl_c2175e7cbe">
+        <note>File: t_text.json</note>
+        <source>Obtaining trophy data.</source>
+        <target>Получение данных о призах.</target></trans-unit>
+      <trans-unit id="tbl_c2d8e04a84">
+        <note>File: t_text.json</note>
+        <source>L Button</source>
+        <target>Кнопка L</target></trans-unit>
+      <trans-unit id="tbl_c377b79c9c">
+        <note>File: t_text.json</note>
+        <source>Change Equipment.</source>
+        <target>Сменить снаряжение.</target></trans-unit>
+      <trans-unit id="tbl_c545c973ed">
+        <note>File: t_text.json</note>
+        <source>#1CCustomize #1C%s's weapon into\n#3C%s#1C?</source>
+        <target>#1CУлучшить оружие #1C%s до\n#3C%s#1C?</target></trans-unit>
+      <trans-unit id="tbl_c5db833301">
+        <note>File: t_text.json</note>
+        <source>Exchange wind sepith for mira.</source>
+        <target>Обменять сепиты ветра на миру.</target></trans-unit>
+      <trans-unit id="tbl_c6098f5fe9">
+        <note>File: t_text.json</note>
+        <source>Manage Save Data</source>
+        <target>Управление данными сохранения</target></trans-unit>
+      <trans-unit id="tbl_c61be35d7f">
+        <note>File: t_text.json</note>
+        <source>Attacks/crafts cause</source>
+        <target>Атаки/навыки вызывают</target></trans-unit>
+      <trans-unit id="tbl_c6524aaec0">
+        <note>File: t_text.json</note>
+        <source>Rank B5</source>
+        <target>Ранг B5</target></trans-unit>
+      <trans-unit id="tbl_c6d3dc4644">
+        <note>File: t_text.json</note>
+        <source>★Task complete!</source>
+        <target>★Задача выполнена!</target></trans-unit>
+      <trans-unit id="tbl_c6e1965503">
+        <note>File: t_text.json</note>
+        <source>○ Button</source>
+        <target>Кнопка ○</target></trans-unit>
+      <trans-unit id="tbl_c750529bba">
+        <note>File: t_text.json</note>
+        <source>EX Art</source>
+        <target>EX-заклинание</target></trans-unit>
+      <trans-unit id="tbl_c7ca3f16d6">
+        <note>File: t_text.json</note>
+        <source>#1CChance: #3C%3d％</source>
+        <target>#1CШанс: #3C%3d％</target></trans-unit>
+      <trans-unit id="tbl_c7d9de3dc7">
+        <note>File: t_text.json</note>
+        <source>Download uploaded progress from the PlayStation㊥Network.</source>
+        <target>Загрузить выгруженный прогресс из PlayStation™Network.</target></trans-unit>
+      <trans-unit id="tbl_c982f93b57">
+        <note>File: t_text.json</note>
+        <source>~PAUSE~\nNote that pausing and skipping in events is debug functionality.</source>
+        <target>~ПАУЗА~\nПауза и пропуск событий являются отладочной функцией.</target></trans-unit>
+      <trans-unit id="tbl_cb7d52aa7d">
+        <note>File: t_text.json</note>
+        <source>Exchange time sepith for mira.</source>
+        <target>Обменять сепиты времени на миру.</target></trans-unit>
+      <trans-unit id="tbl_cc122d978b">
+        <note>File: t_text.json</note>
+        <source>R Button</source>
+        <target>Кнопка R</target></trans-unit>
+      <trans-unit id="tbl_cdaa80af46">
+        <note>File: t_text.json</note>
+        <source>Return to Selection</source>
+        <target>Вернуться к выбору</target></trans-unit>
+      <trans-unit id="tbl_cdb135e61f">
+        <note>File: t_text.json</note>
+        <source>Trade Items.</source>
+        <target>Обменять предметы.</target></trans-unit>
+      <trans-unit id="tbl_ced4b45aea">
+        <note>File: t_text.json</note>
+        <source>Saving system data..</source>
+        <target>Сохранение системных данных...</target></trans-unit>
+      <trans-unit id="tbl_cf2a58a883">
+        <note>File: t_text.json</note>
+        <source> can now be used.</source>
+        <target>теперь можно использовать.</target></trans-unit>
+      <trans-unit id="tbl_cfa3b4d919">
+        <note>File: t_text.json</note>
+        <source>Equips Footwear.</source>
+        <target>Надеть обувь.</target></trans-unit>
+      <trans-unit id="tbl_d0022fccd5">
+        <note>File: t_text.json</note>
+        <source>Target Time</source>
+        <target>Целевое время</target></trans-unit>
+      <trans-unit id="tbl_d0122c5245">
+        <note>File: t_text.json</note>
+        <source>Level Select</source>
+        <target>Выбор уровня</target></trans-unit>
+      <trans-unit id="tbl_d1f9abc5fe">
+        <note>File: t_text.json</note>
+        <source>#2CNot possible during Overdrive.</source>
+        <target>#2CНевозможно во время сверхбоевого режима.</target></trans-unit>
+      <trans-unit id="tbl_d20230e9ee">
+        <note>File: t_text.json</note>
+        <source>Adjust BGM volume.</source>
+        <target>Настроить громкость музыки.</target></trans-unit>
+      <trans-unit id="tbl_d2684156c6">
+        <note>File: t_text.json</note>
+        <source>#1CAnother attachment is already equipped on that part\nof the body.</source>
+        <target>#1CНа эту часть тела уже надет другой\nаксессуар.</target></trans-unit>
+      <trans-unit id="tbl_d2bdefda31">
+        <note>File: t_text.json</note>
+        <source>Change what the ○ button does.</source>
+        <target>Изменить назначение кнопки ○.</target></trans-unit>
+      <trans-unit id="tbl_d3c5ade9b6">
+        <note>File: t_text.json</note>
+        <source>#162I: Sever Link</source>
+        <target>#162I: Разорвать связь</target></trans-unit>
+      <trans-unit id="tbl_d3f0aa98fd">
+        <note>File: t_text.json</note>
+        <source>Return to start point</source>
+        <target>Вернуться в начало</target></trans-unit>
+      <trans-unit id="tbl_d44b97618e">
+        <note>File: t_text.json</note>
+        <source>Equips a Costume.</source>
+        <target>Надеть костюм.</target></trans-unit>
+      <trans-unit id="tbl_d453f01f9d">
+        <note>File: t_text.json</note>
+        <source>Continue Story</source>
+        <target>Продолжить историю</target></trans-unit>
+      <trans-unit id="tbl_d4addf171d">
+        <note>File: t_text.json</note>
+        <source>Controller Vibration</source>
+        <target>Вибрация контроллера</target></trans-unit>
+      <trans-unit id="tbl_d4c3733a39">
+        <note>File: t_text.json</note>
+        <source>Right Button</source>
+        <target>Кнопка «вправо»</target></trans-unit>
+      <trans-unit id="tbl_d4fc77c2c8">
+        <note>File: t_text.json</note>
+        <source>Change settings.</source>
+        <target>Изменить настройки.</target></trans-unit>
+      <trans-unit id="tbl_d531858fe2">
+        <note>File: t_text.json</note>
+        <source>#1C%s charged #3C%d#1C EP.</source>
+        <target>#1C%s зарядил(а) #3C%d#1C ОЭ.</target></trans-unit>
+      <trans-unit id="tbl_d64569eb0e">
+        <note>File: t_text.json</note>
+        <source>━━━</source>
+        <target>━━━</target></trans-unit>
+      <trans-unit id="tbl_d6b6fc68c4">
+        <note>File: t_text.json</note>
+        <source>Exchange earth sepith for mira.</source>
+        <target>Обменять сепиты земли на миру.</target></trans-unit>
+      <trans-unit id="tbl_d708372d0a">
+        <note>File: t_text.json</note>
+        <source>Rank B6</source>
+        <target>Ранг B6</target></trans-unit>
+      <trans-unit id="tbl_d73bda0503">
+        <note>File: t_text.json</note>
+        <source> is already set as S-Break.</source>
+        <target>уже установлен как S-приём.</target></trans-unit>
+      <trans-unit id="tbl_d75139a69d">
+        <note>File: t_text.json</note>
+        <source>Rank A5</source>
+        <target>Ранг A5</target></trans-unit>
+      <trans-unit id="tbl_d7fbe08971">
+        <note>File: t_text.json</note>
+        <source>#1CYou have too many of this item in your inventory\nto unequip it.</source>
+        <target>#1CУ вас в инвентаре слишком много этих предметов,\nчтобы снять его.</target></trans-unit>
+      <trans-unit id="tbl_d9adc10906">
+        <note>File: t_text.json</note>
+        <source>Vibration Settings</source>
+        <target>Настройки вибрации</target></trans-unit>
+      <trans-unit id="tbl_d9e1a5a642">
+        <note>File: t_text.json</note>
+        <source>#33IWater Sepith</source>
+        <target>#33IСепит воды</target></trans-unit>
+      <trans-unit id="tbl_dabe385a7e">
+        <note>File: t_text.json</note>
+        <source>Rank A0</source>
+        <target>Ранг A0</target></trans-unit>
+      <trans-unit id="tbl_dae86cb73d">
+        <note>File: t_text.json</note>
+        <source>Magic Attack (Class %s):</source>
+        <target>Магическая атака (класс %s):</target></trans-unit>
+      <trans-unit id="tbl_db9350fc1c">
+        <note>File: t_text.json</note>
+        <source>#36ITime Sepith</source>
+        <target>#36IСепит времени</target></trans-unit>
+      <trans-unit id="tbl_dc12f1d87a">
+        <note>File: t_text.json</note>
+        <source>Adjust party order and formation, and set links.</source>
+        <target>Настройте порядок и построение отряда, установите связи.</target></trans-unit>
+      <trans-unit id="tbl_dc20bcd27d">
+        <note>File: t_text.json</note>
+        <source>Active Voice Notes</source>
+        <target>Заметки об активных репликах</target></trans-unit>
+      <trans-unit id="tbl_dcec428d76">
+        <note>File: t_text.json</note>
+        <source>#160IClimb Down</source>
+        <target>#160IСпуститься</target></trans-unit>
+      <trans-unit id="tbl_dd8b117215">
+        <note>File: t_text.json</note>
+        <source>#1CCommence downloading data?</source>
+        <target>#1CНачать загрузку данных?</target></trans-unit>
+      <trans-unit id="tbl_dda8e354fb">
+        <note>File: t_text.json</note>
+        <source>Zoom In</source>
+        <target>Приблизить</target></trans-unit>
+      <trans-unit id="tbl_ddb40de6c5">
+        <note>File: t_text.json</note>
+        <source>Checking downloadable content</source>
+        <target>Проверка загружаемого контента</target></trans-unit>
+      <trans-unit id="tbl_ded8516af5">
+        <note>File: t_text.json</note>
+        <source>Rank B2</source>
+        <target>Ранг B2</target></trans-unit>
+      <trans-unit id="tbl_df196a6a24">
+        <note>File: t_text.json</note>
+        <source>Set which notebook tab the L2 Button opens. </source>
+        <target>Назначить вкладку записной книжки для кнопки L2.</target></trans-unit>
+      <trans-unit id="tbl_e016faa7cd">
+        <note>File: t_text.json</note>
+        <source>#1CThis slot's level is insufficient for this quartz.</source>
+        <target>#1CУровень этого слота недостаточен для этого кварца.</target></trans-unit>
+      <trans-unit id="tbl_e09da2d34d">
+        <note>File: t_text.json</note>
+        <source>Downloading data interrupted.</source>
+        <target>Загрузка данных прервана.</target></trans-unit>
+      <trans-unit id="tbl_e19cd6b00f">
+        <note>File: t_text.json</note>
+        <source>#94I = %3d mira</source>
+        <target>#94I = %3d миры</target></trans-unit>
+      <trans-unit id="tbl_e1e40b58d3">
+        <note>File: t_text.json</note>
+        <source>Rank A3</source>
+        <target>Ранг A3</target></trans-unit>
+      <trans-unit id="tbl_e2306a9c2b">
+        <note>File: t_text.json</note>
+        <source>Return to party selection.</source>
+        <target>Вернуться к выбору отряда.</target></trans-unit>
+      <trans-unit id="tbl_e29a5c7428">
+        <note>File: t_text.json</note>
+        <source>Save data could not be overwritten, as it is damaged.\nDelete the save data and then try again.</source>
+        <target>Данные сохранения повреждены, и их не удалось перезаписать.\nУдалите данные сохранения и попробуйте снова.</target></trans-unit>
+      <trans-unit id="tbl_e430fde331">
+        <note>File: t_text.json</note>
+        <source>Button Configurations</source>
+        <target>Настройки кнопок</target></trans-unit>
+      <trans-unit id="tbl_e443488ac2">
+        <note>File: t_text.json</note>
+        <source>#159IOrbment Charging Station</source>
+        <target>#159IСтанция зарядки орбментов</target></trans-unit>
+      <trans-unit id="tbl_e4c6373421">
+        <note>File: t_text.json</note>
+        <source>#1CYou can't make any more.</source>
+        <target>#1CБольше создать нельзя.</target></trans-unit>
+      <trans-unit id="tbl_e5191331d4">
+        <note>File: t_text.json</note>
+        <source>#1CThis master quartz is already equipped.</source>
+        <target>#1CЭтот мастер-кварц уже экипирован.</target></trans-unit>
+      <trans-unit id="tbl_e531ea3d3d">
+        <note>File: t_text.json</note>
+        <source>#1CSynthesized #3C%s#1C.</source>
+        <target>#1CСинтезировано: #3C%s#1C.</target></trans-unit>
+      <trans-unit id="tbl_e55106c5f4">
+        <note>File: t_text.json</note>
+        <source>Travel to #3C%s#0C?</source>
+        <target>Отправиться в #3C%s#0C?</target></trans-unit>
+      <trans-unit id="tbl_e5f6dc8268">
+        <note>File: t_text.json</note>
+        <source>Not set</source>
+        <target>Не назначено</target></trans-unit>
+      <trans-unit id="tbl_e74e1362d8">
+        <note>File: t_text.json</note>
+        <source>#1CYou are not signed in to the PlayStation㊥Network. To use\nCross-Save functionality, sign in to the PlayStation㊥Network.</source>
+        <target>#1CВы не вошли в PlayStation™Network. Чтобы использовать\nфункцию Cross-Save, войдите в PlayStation™Network.</target></trans-unit>
+      <trans-unit id="tbl_e77d73aa44">
+        <note>File: t_text.json</note>
+        <source>#1CBuy #3C%s#1C for #579c%d mira#1C?\nThis can be equipped on all characters.</source>
+        <target>#1CКупить #3C%s#1C за #579c%d миры#1C?\nЭтот предмет могут экипировать все персонажи.</target></trans-unit>
+      <trans-unit id="tbl_e7c1870944">
+        <note>File: t_text.json</note>
+        <source>Save and load data, and alter the game's settings.</source>
+        <target>Сохраняйте и загружайте данные, а также меняйте настройки игры.</target></trans-unit>
+      <trans-unit id="tbl_e80ca407f3">
+        <note>File: t_text.json</note>
+        <source>Select Board</source>
+        <target>Выбрать доску</target></trans-unit>
+      <trans-unit id="tbl_e85da54713">
+        <note>File: t_text.json</note>
+        <source>Installing data complete.</source>
+        <target>Установка данных завершена.</target></trans-unit>
+      <trans-unit id="tbl_e9717647e8">
+        <note>File: t_text.json</note>
+        <source>Fishing Book</source>
+        <target>Книга рыболова</target></trans-unit>
+      <trans-unit id="tbl_e9a4fc543d">
+        <note>File: t_text.json</note>
+        <source>Recovery Art:</source>
+        <target>Восстанавливающее заклинание:</target></trans-unit>
+      <trans-unit id="tbl_ea22ff08f7">
+        <note>File: t_text.json</note>
+        <source>Uploading data</source>
+        <target>Выгрузка данных</target></trans-unit>
+      <trans-unit id="tbl_ea50a51b51">
+        <note>File: t_text.json</note>
+        <source>Uploading data..</source>
+        <target>Выгрузка данных...</target></trans-unit>
+      <trans-unit id="tbl_eab3d842fe">
+        <note>File: t_text.json</note>
+        <source>#129IWarp Device</source>
+        <target>#129IУстройство телепортации</target></trans-unit>
+      <trans-unit id="tbl_ead7a8bc19">
+        <note>File: t_text.json</note>
+        <source>#1CAttachments can be equipped in the Equip section of\nthe Camp Menu.</source>
+        <target>#1CАксессуары можно экипировать в разделе «Снаряжение»\nв походном меню.</target></trans-unit>
+      <trans-unit id="tbl_eb004f660f">
+        <note>File: t_text.json</note>
+        <source>Loading clear data from #1Cthe original game#0C will allow you\nto obtain a special bonus in this one.\n\nLoad clear data from the original?\nOnly #9Cclear data#0C from #1CTrails of Cold Steel#0C can be loaded.</source>
+        <target>Загрузка данных о прохождении #1Cоригинальной игры#0C позволит вам\nполучить в этой игре особый бонус.\n\nЗагрузить данные о прохождении оригинала?\nМожно загрузить только #9Cданные о прохождении#0C из #1CTrails of Cold Steel#0C.</target></trans-unit>
+      <trans-unit id="tbl_ec214e6a4b">
+        <note>File: t_text.json</note>
+        <source>Install data is corrupted. \nQuit the game and delete the install data.</source>
+        <target>Установочные данные повреждены.\nВыйдите из игры и удалите установочные данные.</target></trans-unit>
+      <trans-unit id="tbl_ecae6b8952">
+        <note>File: t_text.json</note>
+        <source>#168ISkip Event</source>
+        <target>#168IПропустить событие</target></trans-unit>
+      <trans-unit id="tbl_edee56197c">
+        <note>File: t_text.json</note>
+        <source>#1CThe save data from the PlayStation㍻3 version of the game\nis not suitable for use, so it could not be loaded.</source>
+        <target>#1CДанные сохранения с версии игры для PlayStation®3\nне подходят, поэтому не могут быть загружены.</target></trans-unit>
+      <trans-unit id="tbl_eeb9c45700">
+        <note>File: t_text.json</note>
+        <source>Saving system data.</source>
+        <target>Сохранение системных данных.</target></trans-unit>
+      <trans-unit id="tbl_ef260d9d51">
+        <note>File: t_text.json</note>
+        <source>Insufficient free space on the hard disk drive. %dMB more is required.\nQuit the game and free up additional space to continue.</source>
+        <target>Недостаточно свободного места на жёстком диске. Требуется ещё %d МБ.\nВыйдите из игры и освободите место, чтобы продолжить.</target></trans-unit>
+      <trans-unit id="tbl_f05dd15855">
+        <note>File: t_text.json</note>
+        <source>Go to the PlayStation㍻Store?</source>
+        <target>Перейти в PlayStation®Store?</target></trans-unit>
+      <trans-unit id="tbl_f11b47c9b8">
+        <note>File: t_text.json</note>
+        <source>Rank B1</source>
+        <target>Ранг B1</target></trans-unit>
+      <trans-unit id="tbl_f15d404a44">
+        <note>File: t_text.json</note>
+        <source>Delete Save Data</source>
+        <target>Удалить данные сохранения</target></trans-unit>
+      <trans-unit id="tbl_f1eb746f2d">
+        <note>File: t_text.json</note>
+        <source>#176IScroll #177ITurn camera #164I#166IZoom</source>
+        <target>#176IПрокрутка #177IПоворот камеры #164I#166IМасштаб</target></trans-unit>
+      <trans-unit id="tbl_f27c4c5d9c">
+        <note>File: t_text.json</note>
+        <source>Weaken Enemies and Retry</source>
+        <target>Ослабить врагов и повторить</target></trans-unit>
+      <trans-unit id="tbl_f2deec9667">
+        <note>File: t_text.json</note>
+        <source>View Specifics</source>
+        <target>Посмотреть детали</target></trans-unit>
+      <trans-unit id="tbl_f31c701db6">
+        <note>File: t_text.json</note>
+        <source>#32IEarth Sepith</source>
+        <target>#32IСепит земли</target></trans-unit>
+      <trans-unit id="tbl_f347ba2ad5">
+        <note>File: t_text.json</note>
+        <source>Return to Ymir.</source>
+        <target>Вернуться в Юмир.</target></trans-unit>
+      <trans-unit id="tbl_f36a51a2b9">
+        <note>File: t_text.json</note>
+        <source>Installing data. Do not turn off the system's power during the\ninstallation process.</source>
+        <target>Идёт установка данных. Не выключайте питание системы\nво время установки.</target></trans-unit>
+      <trans-unit id="tbl_f3a544b21f">
+        <note>File: t_text.json</note>
+        <source>This slot is at its maximum level.</source>
+        <target>Этот слот достиг максимального уровня.</target></trans-unit>
+      <trans-unit id="tbl_f3e7459395">
+        <note>File: t_text.json</note>
+        <source>#34IFire Sepith</source>
+        <target>#34IСепит огня</target></trans-unit>
+      <trans-unit id="tbl_f46d95f631">
+        <note>File: t_text.json</note>
+        <source>Equips a Weapon.</source>
+        <target>Экипировать оружие.</target></trans-unit>
+      <trans-unit id="tbl_f47bff08e9">
+        <note>File: t_text.json</note>
+        <source>#3C#316IAll Sepith x500\n#66IAttack 1\n#68ISoul Blur\n#70ISaintly Force\n#315IZeram Powder x2</source>
+        <target>#3C#316IВсе сепиты x500\n#66IAttack 1\n#68ISoul Blur\n#70ISaintly Force\n#315IZeram Powder x2</target></trans-unit>
+      <trans-unit id="tbl_f4fed04025">
+        <note>File: t_text.json</note>
+        <source>Turn controller vibration on or off.\nVibration needs to be enabled in system settings first.</source>
+        <target>Включить или выключить вибрацию контроллера.\nВибрация должна быть сперва включена в настройках системы.</target></trans-unit>
+      <trans-unit id="tbl_f54ee1d370">
+        <note>File: t_text.json</note>
+        <source>#1CRoaring Dragon Gem can only be set in earth, water, and wind slots.</source>
+        <target>#1CСамоцвет Ревущего Дракона можно установить только в слоты земли, воды и ветра.</target></trans-unit>
+      <trans-unit id="tbl_f662283e42">
+        <note>File: t_text.json</note>
+        <source>Change vertical camera settings.</source>
+        <target>Изменить настройки вертикальной камеры.</target></trans-unit>
+      <trans-unit id="tbl_f77f7d8394">
+        <note>File: t_text.json</note>
+        <source>You were defeated.</source>
+        <target>Вы были побеждены.</target></trans-unit>
+      <trans-unit id="tbl_fbf9556881">
+        <note>File: t_text.json</note>
+        <source>Character Notebook</source>
+        <target>Журнал персонажей</target></trans-unit>
+      <trans-unit id="tbl_fc8b4544ca">
+        <note>File: t_text.json</note>
+        <source>You can use save data from the PlayStation㍻3 version of\nthe original Trails of Cold Steel to begin a new game of \nTrails of Cold Steel II. The uploaded data must be from just\n#1Cbefore going out to defend Trista#0C in the Final Chapter. \nThis data will be regarded as #9Cclear data#0C. Suitable save\ndata must already be uploaded.\n\nDownload save data from the PlayStation㊥Network?</source>
+        <target>Вы можете использовать данные сохранения с версии для PlayStation®3\nоригинальной Trails of Cold Steel, чтобы начать новую игру\nв Trails of Cold Steel II. Выгруженные данные должны быть сделаны прямо\n#1Cперед выходом на защиту Трайсты#0C в последней главе.\nЭти данные будут считаться #9Cданными о прохождении#0C. Подходящие данные\nсохранения уже должны быть выгружены.\n\nЗагрузить данные сохранения из PlayStation™Network?</target></trans-unit>
+      <trans-unit id="tbl_fcbdadec96">
+        <note>File: t_text.json</note>
+        <source>Notebook Shortcuts</source>
+        <target>Быстрый доступ к журналу</target></trans-unit>
+      <trans-unit id="tbl_fd0979d367">
+        <note>File: t_text.json</note>
+        <source>Downloading data complete.</source>
+        <target>Загрузка данных завершена.</target></trans-unit>
+      <trans-unit id="tbl_fd1aa333e7">
+        <note>File: t_text.json</note>
+        <source>Prioritize speed</source>
+        <target>Приоритет скорости</target></trans-unit>
+      <trans-unit id="tbl_fd37fbe4e0">
+        <note>File: t_text.json</note>
+        <source>★★★</source>
+        <target>★★★</target></trans-unit>
+      <trans-unit id="tbl_fdc746f5de">
+        <note>File: t_text.json</note>
+        <source>Last updated</source>
+        <target>Последнее обновление</target></trans-unit>
+      <trans-unit id="tbl_fdcbbb3cee">
+        <note>File: t_text.json</note>
+        <source>Could not load system data.</source>
+        <target>Не удалось загрузить системные данные.</target></trans-unit>
+      <trans-unit id="tbl_fdd6c5c279">
+        <note>File: t_text.json</note>
+        <source>#3CThe Roaring Dragon Gem has lost its radiance. \nIts lost art can't be used again.</source>
+        <target>#3CСамоцвет Ревущего Дракона утратил своё сияние.\nУтраченное заклинание больше нельзя использовать.</target></trans-unit>
+      <trans-unit id="tbl_fedfa123e3">
+        <note>File: t_text.json</note>
+        <source>Recipe Book</source>
+        <target>Книга рецептов</target></trans-unit>
+      <trans-unit id="tbl_ff13c78450">
+        <note>File: t_text.json</note>
+        <source>Zoom In/Out</source>
+        <target>Приблизить/Отдалить</target></trans-unit>
+    </body>
+  </file>
+</xliff>

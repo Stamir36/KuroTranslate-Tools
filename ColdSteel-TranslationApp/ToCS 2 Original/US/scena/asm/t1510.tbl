@@ -1,0 +1,176 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;t1510.scn 57
+	DD	PreInit					;t1510.scn 64
+	DD	Init					;t1510.scn 79
+	DD	Init_Replay					;t1510.scn 127
+	DD	Reinit					;t1510.scn 187
+	DD	Npc_Table					;t1510.scn 213
+	DD	laura_setting					;t1510.scn 252
+	DD	celine2_setting					;t1510.scn 268
+	DD	fie_setting					;t1510.scn 286
+	DD	sara_setting					;t1510.scn 324
+	DD	marco_setting					;t1510.scn 347
+	DD	TK_marco					;t1510.scn 361
+	DD	TK_MARCO_HAINZ_01_A_02					;t1510.scn 401
+	DD	hainz_setting					;t1510.scn 442
+	DD	TK_hainz					;t1510.scn 458
+	DD	givson_setting					;t1510.scn 505
+	DD	TK_givson					;t1510.scn 519
+	DD	squaro_setting					;t1510.scn 565
+	DD	TK_squaro					;t1510.scn 595
+	DD	TK_SQUARO_MORIZE_03_A_02					;t1510.scn 799
+	DD	magot_setting					;t1510.scn 854
+	DD	TK_magot					;t1510.scn 876
+	DD	ruise_setting					;t1510.scn 1429
+	DD	TK_ruise					;t1510.scn 1456
+	DD	NPC_move_ruise					;t1510.scn 1781
+	DD	morize_setting					;t1510.scn 1821
+	DD	TK_morize					;t1510.scn 1838
+	DD	york_setting					;t1510.scn 1960
+	DD	TK_york					;t1510.scn 1975
+	DD	renth_setting					;t1510.scn 2064
+	DD	TK_renth					;t1510.scn 2080
+	DD	feene_setting					;t1510.scn 2134
+	DD	TK_feene					;t1510.scn 2150
+	DD	pole_setting					;t1510.scn 2206
+	DD	TK_pole					;t1510.scn 2230
+	DD	goshe_setting					;t1510.scn 2265
+	DD	TK_goshe					;t1510.scn 2280
+	DD	antone_setting					;t1510.scn 2382
+	DD	TK_antone					;t1510.scn 2409
+	DD	jiret_setting					;t1510.scn 2548
+	DD	TK_jiret					;t1510.scn 2563
+	DD	EV_01_10_00					;t1510.scn 2613
+	DD	SB_KIZUNA_LAURA_03					;t1510.scn 3101
+	DD	SB_KIZUNA_MACHIAS_03A					;t1510.scn 3672
+	DD	SB_KIZUNA_FIE_03					;t1510.scn 3779
+	DD	SB_KIZUNA_SARA_03					;t1510.scn 4194
+	DD	SB_KIZUNA_LAURA_03_B					;t1510.scn 4503
+	DD	SB_KIZUNA_FIE_03_B					;t1510.scn 4530
+	DD	SB_KIZUNA_SARA_03_B					;t1510.scn 4557
+	DD	_TK_magot					;t1510.scn 4589
+	DD	_EV_01_10_00					;t1510.scn 4589
+	DD	_SB_KIZUNA_LAURA_03					;t1510.scn 4589
+	DD	_SB_KIZUNA_FIE_03					;t1510.scn 4589
+	DD	_SB_KIZUNA_SARA_03					;t1510.scn 4589
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_Npc_Table
+	DW	FUNCNAME_laura_setting
+	DW	FUNCNAME_celine2_setting
+	DW	FUNCNAME_fie_setting
+	DW	FUNCNAME_sara_setting
+	DW	FUNCNAME_marco_setting
+	DW	FUNCNAME_TK_marco
+	DW	FUNCNAME_TK_MARCO_HAINZ_01_A_02
+	DW	FUNCNAME_hainz_setting
+	DW	FUNCNAME_TK_hainz
+	DW	FUNCNAME_givson_setting
+	DW	FUNCNAME_TK_givson
+	DW	FUNCNAME_squaro_setting
+	DW	FUNCNAME_TK_squaro
+	DW	FUNCNAME_TK_SQUARO_MORIZE_03_A_02
+	DW	FUNCNAME_magot_setting
+	DW	FUNCNAME_TK_magot
+	DW	FUNCNAME_ruise_setting
+	DW	FUNCNAME_TK_ruise
+	DW	FUNCNAME_NPC_move_ruise
+	DW	FUNCNAME_morize_setting
+	DW	FUNCNAME_TK_morize
+	DW	FUNCNAME_york_setting
+	DW	FUNCNAME_TK_york
+	DW	FUNCNAME_renth_setting
+	DW	FUNCNAME_TK_renth
+	DW	FUNCNAME_feene_setting
+	DW	FUNCNAME_TK_feene
+	DW	FUNCNAME_pole_setting
+	DW	FUNCNAME_TK_pole
+	DW	FUNCNAME_goshe_setting
+	DW	FUNCNAME_TK_goshe
+	DW	FUNCNAME_antone_setting
+	DW	FUNCNAME_TK_antone
+	DW	FUNCNAME_jiret_setting
+	DW	FUNCNAME_TK_jiret
+	DW	FUNCNAME_EV_01_10_00
+	DW	FUNCNAME_SB_KIZUNA_LAURA_03
+	DW	FUNCNAME_SB_KIZUNA_MACHIAS_03A
+	DW	FUNCNAME_SB_KIZUNA_FIE_03
+	DW	FUNCNAME_SB_KIZUNA_SARA_03
+	DW	FUNCNAME_SB_KIZUNA_LAURA_03_B
+	DW	FUNCNAME_SB_KIZUNA_FIE_03_B
+	DW	FUNCNAME_SB_KIZUNA_SARA_03_B
+	DW	FUNCNAME__TK_magot
+	DW	FUNCNAME__EV_01_10_00
+	DW	FUNCNAME__SB_KIZUNA_LAURA_03
+	DW	FUNCNAME__SB_KIZUNA_FIE_03
+	DW	FUNCNAME__SB_KIZUNA_SARA_03
+FUNCTION_NAME_TABLE_NUM	EQU	54
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_Npc_Table:	DB	'Npc_Table',0
+FUNCNAME_laura_setting:	DB	'laura_setting',0
+FUNCNAME_celine2_setting:	DB	'celine2_setting',0
+FUNCNAME_fie_setting:	DB	'fie_setting',0
+FUNCNAME_sara_setting:	DB	'sara_setting',0
+FUNCNAME_marco_setting:	DB	'marco_setting',0
+FUNCNAME_TK_marco:	DB	'TK_marco',0
+FUNCNAME_TK_MARCO_HAINZ_01_A_02:	DB	'TK_MARCO_HAINZ_01_A_02',0
+FUNCNAME_hainz_setting:	DB	'hainz_setting',0
+FUNCNAME_TK_hainz:	DB	'TK_hainz',0
+FUNCNAME_givson_setting:	DB	'givson_setting',0
+FUNCNAME_TK_givson:	DB	'TK_givson',0
+FUNCNAME_squaro_setting:	DB	'squaro_setting',0
+FUNCNAME_TK_squaro:	DB	'TK_squaro',0
+FUNCNAME_TK_SQUARO_MORIZE_03_A_02:	DB	'TK_SQUARO_MORIZE_03_A_02',0
+FUNCNAME_magot_setting:	DB	'magot_setting',0
+FUNCNAME_TK_magot:	DB	'TK_magot',0
+FUNCNAME_ruise_setting:	DB	'ruise_setting',0
+FUNCNAME_TK_ruise:	DB	'TK_ruise',0
+FUNCNAME_NPC_move_ruise:	DB	'NPC_move_ruise',0
+FUNCNAME_morize_setting:	DB	'morize_setting',0
+FUNCNAME_TK_morize:	DB	'TK_morize',0
+FUNCNAME_york_setting:	DB	'york_setting',0
+FUNCNAME_TK_york:	DB	'TK_york',0
+FUNCNAME_renth_setting:	DB	'renth_setting',0
+FUNCNAME_TK_renth:	DB	'TK_renth',0
+FUNCNAME_feene_setting:	DB	'feene_setting',0
+FUNCNAME_TK_feene:	DB	'TK_feene',0
+FUNCNAME_pole_setting:	DB	'pole_setting',0
+FUNCNAME_TK_pole:	DB	'TK_pole',0
+FUNCNAME_goshe_setting:	DB	'goshe_setting',0
+FUNCNAME_TK_goshe:	DB	'TK_goshe',0
+FUNCNAME_antone_setting:	DB	'antone_setting',0
+FUNCNAME_TK_antone:	DB	'TK_antone',0
+FUNCNAME_jiret_setting:	DB	'jiret_setting',0
+FUNCNAME_TK_jiret:	DB	'TK_jiret',0
+FUNCNAME_EV_01_10_00:	DB	'EV_01_10_00',0
+FUNCNAME_SB_KIZUNA_LAURA_03:	DB	'SB_KIZUNA_LAURA_03',0
+FUNCNAME_SB_KIZUNA_MACHIAS_03A:	DB	'SB_KIZUNA_MACHIAS_03A',0
+FUNCNAME_SB_KIZUNA_FIE_03:	DB	'SB_KIZUNA_FIE_03',0
+FUNCNAME_SB_KIZUNA_SARA_03:	DB	'SB_KIZUNA_SARA_03',0
+FUNCNAME_SB_KIZUNA_LAURA_03_B:	DB	'SB_KIZUNA_LAURA_03_B',0
+FUNCNAME_SB_KIZUNA_FIE_03_B:	DB	'SB_KIZUNA_FIE_03_B',0
+FUNCNAME_SB_KIZUNA_SARA_03_B:	DB	'SB_KIZUNA_SARA_03_B',0
+FUNCNAME__TK_magot:	DB	'_TK_magot',0
+FUNCNAME__EV_01_10_00:	DB	'_EV_01_10_00',0
+FUNCNAME__SB_KIZUNA_LAURA_03:	DB	'_SB_KIZUNA_LAURA_03',0
+FUNCNAME__SB_KIZUNA_FIE_03:	DB	'_SB_KIZUNA_FIE_03',0
+FUNCNAME__SB_KIZUNA_SARA_03:	DB	'_SB_KIZUNA_SARA_03',0

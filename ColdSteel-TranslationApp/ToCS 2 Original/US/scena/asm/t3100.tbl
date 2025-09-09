@@ -1,0 +1,128 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;t3100.scn 49
+	DD	PreInit					;t3100.scn 56
+	DD	Init					;t3100.scn 71
+	DD	Init_Replay					;t3100.scn 104
+	DD	Reinit					;t3100.scn 146
+	DD	LP_Shop01					;t3100.scn 165
+	DD	Npc_Table					;t3100.scn 179
+	DD	seria_setting					;t3100.scn 217
+	DD	TK_seria					;t3100.scn 236
+	DD	NPC_move_seria					;t3100.scn 507
+	DD	weiber_setting					;t3100.scn 553
+	DD	TK_weiber					;t3100.scn 565
+	DD	barows_setting					;t3100.scn 949
+	DD	TK_barows					;t3100.scn 970
+	DD	TK_barows_kei_rigna					;t3100.scn 1166
+	DD	TK_barows_kei_03_Z4					;t3100.scn 1223
+	DD	TK_barows_kei_01_C_02					;t3100.scn 1271
+	DD	kei_setting					;t3100.scn 1332
+	DD	TK_kei					;t3100.scn 1352
+	DD	rigna_setting					;t3100.scn 1582
+	DD	TK_rigna					;t3100.scn 1608
+	DD	maria_setting					;t3100.scn 1814
+	DD	TK_maria					;t3100.scn 1844
+	DD	nico_setting					;t3100.scn 2120
+	DD	TK_nico					;t3100.scn 2140
+	DD	morize_setting					;t3100.scn 2244
+	DD	TK_morize					;t3100.scn 2260
+	DD	risia_setting					;t3100.scn 2407
+	DD	TK_risia					;t3100.scn 2419
+	DD	t3000_passenger01_setting					;t3100.scn 2485
+	DD	TK_t3000_passenger01					;t3100.scn 2499
+	DD	dubarry_setting					;t3100.scn 2532
+	DD	TK_dubarry					;t3100.scn 2549
+	DD	kargo_setting					;t3100.scn 2679
+	DD	TK_kargo					;t3100.scn 2700
+	DD	QS_2102_01					;t3100.scn 2767
+	DD	_TK_weiber					;t3100.scn 3500
+	DD	_QS_2102_01					;t3100.scn 3500
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_LP_Shop01
+	DW	FUNCNAME_Npc_Table
+	DW	FUNCNAME_seria_setting
+	DW	FUNCNAME_TK_seria
+	DW	FUNCNAME_NPC_move_seria
+	DW	FUNCNAME_weiber_setting
+	DW	FUNCNAME_TK_weiber
+	DW	FUNCNAME_barows_setting
+	DW	FUNCNAME_TK_barows
+	DW	FUNCNAME_TK_barows_kei_rigna
+	DW	FUNCNAME_TK_barows_kei_03_Z4
+	DW	FUNCNAME_TK_barows_kei_01_C_02
+	DW	FUNCNAME_kei_setting
+	DW	FUNCNAME_TK_kei
+	DW	FUNCNAME_rigna_setting
+	DW	FUNCNAME_TK_rigna
+	DW	FUNCNAME_maria_setting
+	DW	FUNCNAME_TK_maria
+	DW	FUNCNAME_nico_setting
+	DW	FUNCNAME_TK_nico
+	DW	FUNCNAME_morize_setting
+	DW	FUNCNAME_TK_morize
+	DW	FUNCNAME_risia_setting
+	DW	FUNCNAME_TK_risia
+	DW	FUNCNAME_t3000_passenger01_setting
+	DW	FUNCNAME_TK_t3000_passenger01
+	DW	FUNCNAME_dubarry_setting
+	DW	FUNCNAME_TK_dubarry
+	DW	FUNCNAME_kargo_setting
+	DW	FUNCNAME_TK_kargo
+	DW	FUNCNAME_QS_2102_01
+	DW	FUNCNAME__TK_weiber
+	DW	FUNCNAME__QS_2102_01
+FUNCTION_NAME_TABLE_NUM	EQU	38
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_LP_Shop01:	DB	'LP_Shop01',0
+FUNCNAME_Npc_Table:	DB	'Npc_Table',0
+FUNCNAME_seria_setting:	DB	'seria_setting',0
+FUNCNAME_TK_seria:	DB	'TK_seria',0
+FUNCNAME_NPC_move_seria:	DB	'NPC_move_seria',0
+FUNCNAME_weiber_setting:	DB	'weiber_setting',0
+FUNCNAME_TK_weiber:	DB	'TK_weiber',0
+FUNCNAME_barows_setting:	DB	'barows_setting',0
+FUNCNAME_TK_barows:	DB	'TK_barows',0
+FUNCNAME_TK_barows_kei_rigna:	DB	'TK_barows_kei_rigna',0
+FUNCNAME_TK_barows_kei_03_Z4:	DB	'TK_barows_kei_03_Z4',0
+FUNCNAME_TK_barows_kei_01_C_02:	DB	'TK_barows_kei_01_C_02',0
+FUNCNAME_kei_setting:	DB	'kei_setting',0
+FUNCNAME_TK_kei:	DB	'TK_kei',0
+FUNCNAME_rigna_setting:	DB	'rigna_setting',0
+FUNCNAME_TK_rigna:	DB	'TK_rigna',0
+FUNCNAME_maria_setting:	DB	'maria_setting',0
+FUNCNAME_TK_maria:	DB	'TK_maria',0
+FUNCNAME_nico_setting:	DB	'nico_setting',0
+FUNCNAME_TK_nico:	DB	'TK_nico',0
+FUNCNAME_morize_setting:	DB	'morize_setting',0
+FUNCNAME_TK_morize:	DB	'TK_morize',0
+FUNCNAME_risia_setting:	DB	'risia_setting',0
+FUNCNAME_TK_risia:	DB	'TK_risia',0
+FUNCNAME_t3000_passenger01_setting:	DB	't3000_passenger01_setting',0
+FUNCNAME_TK_t3000_passenger01:	DB	'TK_t3000_passenger01',0
+FUNCNAME_dubarry_setting:	DB	'dubarry_setting',0
+FUNCNAME_TK_dubarry:	DB	'TK_dubarry',0
+FUNCNAME_kargo_setting:	DB	'kargo_setting',0
+FUNCNAME_TK_kargo:	DB	'TK_kargo',0
+FUNCNAME_QS_2102_01:	DB	'QS_2102_01',0
+FUNCNAME__TK_weiber:	DB	'_TK_weiber',0
+FUNCNAME__QS_2102_01:	DB	'_QS_2102_01',0

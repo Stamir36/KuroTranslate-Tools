@@ -1,0 +1,164 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;r0205.scn 66
+	DD	BTLSET000					;r0205.scn 72
+	DD	BTLSET002					;r0205.scn 80
+	DD	BTLSET_BTLID01_K3					;r0205.scn 87
+	DD	PreInit					;r0205.scn 97
+	DD	Init					;r0205.scn 115
+	DD	Init_Replay					;r0205.scn 155
+	DD	Reinit					;r0205.scn 193
+	DD	InitEnt					;r0205.scn 221
+	DD	changeMap					;r0205.scn 242
+	DD	changeMapA					;r0205.scn 251
+	DD	changeMapB					;r0205.scn 267
+	DD	AV_01056					;r0205.scn 293
+	DD	AV_01056b					;r0205.scn 331
+	DD	AV_01057					;r0205.scn 362
+	DD	EV_01_71_03					;r0205.scn 670
+	DD	EV_01_73_00					;r0205.scn 1875
+	DD	EV_01_73_01					;r0205.scn 2297
+	DD	EV_01_73_02					;r0205.scn 2646
+	DD	EV_01_73_03					;r0205.scn 5586
+	DD	EV_01_73_05					;r0205.scn 8530
+	DD	ET_01_73_05_SE					;r0205.scn 9199
+	DD	EV_01_73_06					;r0205.scn 9209
+	DD	EV_01_73_06_DetachEquip					;r0205.scn 10081
+	DD	SetCurrentPartyFlag					;r0205.scn 10093
+	DD	MG06_0_Start					;r0205.scn 10178
+	DD	MG06_0_Continue					;r0205.scn 11017
+	DD	MG06_0_Retry					;r0205.scn 11030
+	DD	ET_MG06_0_ChrConfig					;r0205.scn 11266
+	DD	ET_MG06_0_Team7					;r0205.scn 11275
+	DD	ET_MG06_0_Laura					;r0205.scn 11284
+	DD	ET_MG06_0_Emma					;r0205.scn 11293
+	DD	MG_Millium					;r0205.scn 11304
+	DD	ET_MG06_0_AgertlumCtrl					;r0205.scn 11309
+	DD	ET_MG06_0_HelperMove					;r0205.scn 11344
+	DD	ET_MG06_0_PopupCloser					;r0205.scn 11369
+	DD	MG06_0_EnableEntry					;r0205.scn 11386
+	DD	MG06_0_DisableEntry					;r0205.scn 11391
+	DD	ET_MG06_0_HorseCtrl					;r0205.scn 11410
+	DD	MG06_0_End					;r0205.scn 11485
+	DD	_EV_01_71_03					;r0205.scn 11621
+	DD	_EV_01_73_00					;r0205.scn 11621
+	DD	_EV_01_73_01					;r0205.scn 11621
+	DD	_EV_01_73_02					;r0205.scn 11621
+	DD	_EV_01_73_03					;r0205.scn 11621
+	DD	_EV_01_73_05					;r0205.scn 11621
+	DD	_ET_01_73_05_SE					;r0205.scn 11621
+	DD	_EV_01_73_06					;r0205.scn 11621
+	DD	_MG06_0_Start					;r0205.scn 11621
+	DD	_MG06_0_Retry					;r0205.scn 11621
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_BTLSET000
+	DW	FUNCNAME_BTLSET002
+	DW	FUNCNAME_BTLSET_BTLID01_K3
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_InitEnt
+	DW	FUNCNAME_changeMap
+	DW	FUNCNAME_changeMapA
+	DW	FUNCNAME_changeMapB
+	DW	FUNCNAME_AV_01056
+	DW	FUNCNAME_AV_01056b
+	DW	FUNCNAME_AV_01057
+	DW	FUNCNAME_EV_01_71_03
+	DW	FUNCNAME_EV_01_73_00
+	DW	FUNCNAME_EV_01_73_01
+	DW	FUNCNAME_EV_01_73_02
+	DW	FUNCNAME_EV_01_73_03
+	DW	FUNCNAME_EV_01_73_05
+	DW	FUNCNAME_ET_01_73_05_SE
+	DW	FUNCNAME_EV_01_73_06
+	DW	FUNCNAME_EV_01_73_06_DetachEquip
+	DW	FUNCNAME_SetCurrentPartyFlag
+	DW	FUNCNAME_MG06_0_Start
+	DW	FUNCNAME_MG06_0_Continue
+	DW	FUNCNAME_MG06_0_Retry
+	DW	FUNCNAME_ET_MG06_0_ChrConfig
+	DW	FUNCNAME_ET_MG06_0_Team7
+	DW	FUNCNAME_ET_MG06_0_Laura
+	DW	FUNCNAME_ET_MG06_0_Emma
+	DW	FUNCNAME_MG_Millium
+	DW	FUNCNAME_ET_MG06_0_AgertlumCtrl
+	DW	FUNCNAME_ET_MG06_0_HelperMove
+	DW	FUNCNAME_ET_MG06_0_PopupCloser
+	DW	FUNCNAME_MG06_0_EnableEntry
+	DW	FUNCNAME_MG06_0_DisableEntry
+	DW	FUNCNAME_ET_MG06_0_HorseCtrl
+	DW	FUNCNAME_MG06_0_End
+	DW	FUNCNAME__EV_01_71_03
+	DW	FUNCNAME__EV_01_73_00
+	DW	FUNCNAME__EV_01_73_01
+	DW	FUNCNAME__EV_01_73_02
+	DW	FUNCNAME__EV_01_73_03
+	DW	FUNCNAME__EV_01_73_05
+	DW	FUNCNAME__ET_01_73_05_SE
+	DW	FUNCNAME__EV_01_73_06
+	DW	FUNCNAME__MG06_0_Start
+	DW	FUNCNAME__MG06_0_Retry
+FUNCTION_NAME_TABLE_NUM	EQU	50
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_BTLSET000:	DB	0
+FUNCNAME_BTLSET002:	DB	0
+FUNCNAME_BTLSET_BTLID01_K3:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_InitEnt:	DB	'InitEnt',0
+FUNCNAME_changeMap:	DB	'changeMap',0
+FUNCNAME_changeMapA:	DB	'changeMapA',0
+FUNCNAME_changeMapB:	DB	'changeMapB',0
+FUNCNAME_AV_01056:	DB	'AV_01056',0
+FUNCNAME_AV_01056b:	DB	'AV_01056b',0
+FUNCNAME_AV_01057:	DB	'AV_01057',0
+FUNCNAME_EV_01_71_03:	DB	'EV_01_71_03',0
+FUNCNAME_EV_01_73_00:	DB	'EV_01_73_00',0
+FUNCNAME_EV_01_73_01:	DB	'EV_01_73_01',0
+FUNCNAME_EV_01_73_02:	DB	'EV_01_73_02',0
+FUNCNAME_EV_01_73_03:	DB	'EV_01_73_03',0
+FUNCNAME_EV_01_73_05:	DB	'EV_01_73_05',0
+FUNCNAME_ET_01_73_05_SE:	DB	'ET_01_73_05_SE',0
+FUNCNAME_EV_01_73_06:	DB	'EV_01_73_06',0
+FUNCNAME_EV_01_73_06_DetachEquip:	DB	'EV_01_73_06_DetachEquip',0
+FUNCNAME_SetCurrentPartyFlag:	DB	'SetCurrentPartyFlag',0
+FUNCNAME_MG06_0_Start:	DB	'MG06_0_Start',0
+FUNCNAME_MG06_0_Continue:	DB	'MG06_0_Continue',0
+FUNCNAME_MG06_0_Retry:	DB	'MG06_0_Retry',0
+FUNCNAME_ET_MG06_0_ChrConfig:	DB	'ET_MG06_0_ChrConfig',0
+FUNCNAME_ET_MG06_0_Team7:	DB	'ET_MG06_0_Team7',0
+FUNCNAME_ET_MG06_0_Laura:	DB	'ET_MG06_0_Laura',0
+FUNCNAME_ET_MG06_0_Emma:	DB	'ET_MG06_0_Emma',0
+FUNCNAME_MG_Millium:	DB	'MG_Millium',0
+FUNCNAME_ET_MG06_0_AgertlumCtrl:	DB	'ET_MG06_0_AgertlumCtrl',0
+FUNCNAME_ET_MG06_0_HelperMove:	DB	'ET_MG06_0_HelperMove',0
+FUNCNAME_ET_MG06_0_PopupCloser:	DB	'ET_MG06_0_PopupCloser',0
+FUNCNAME_MG06_0_EnableEntry:	DB	'MG06_0_EnableEntry',0
+FUNCNAME_MG06_0_DisableEntry:	DB	'MG06_0_DisableEntry',0
+FUNCNAME_ET_MG06_0_HorseCtrl:	DB	'ET_MG06_0_HorseCtrl',0
+FUNCNAME_MG06_0_End:	DB	'MG06_0_End',0
+FUNCNAME__EV_01_71_03:	DB	'_EV_01_71_03',0
+FUNCNAME__EV_01_73_00:	DB	'_EV_01_73_00',0
+FUNCNAME__EV_01_73_01:	DB	'_EV_01_73_01',0
+FUNCNAME__EV_01_73_02:	DB	'_EV_01_73_02',0
+FUNCNAME__EV_01_73_03:	DB	'_EV_01_73_03',0
+FUNCNAME__EV_01_73_05:	DB	'_EV_01_73_05',0
+FUNCNAME__ET_01_73_05_SE:	DB	'_ET_01_73_05_SE',0
+FUNCNAME__EV_01_73_06:	DB	'_EV_01_73_06',0
+FUNCNAME__MG06_0_Start:	DB	'_MG06_0_Start',0
+FUNCNAME__MG06_0_Retry:	DB	'_MG06_0_Retry',0

@@ -1,0 +1,704 @@
+{
+    "version": "v2",
+    "headers": [
+        "NaviTextData"
+    ],
+    "entries": [
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "1",
+                "text": "Спуститься с хребта Айзенгард.",
+                "unknown_data_2": "00200320"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "2",
+                "text": "Прогуляться по Юмиру.",
+                "unknown_data_2": "03200a20"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "3",
+                "text": "Исследовать долину Юмир.",
+                "unknown_data_2": "0a200d20"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "4",
+                "text": "Поспешить обратно в Юмир.",
+                "unknown_data_2": "0d200021"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "5",
+                "text": "Отправиться на другую сторону долины Юмир.",
+                "unknown_data_2": "00210121"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "6",
+                "text": "Выбраться из природного парка Лунария.",
+                "unknown_data_2": "01210321"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "7",
+                "text": "Посетить близлежащую ферму.",
+                "unknown_data_2": "03210421"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "8",
+                "text": "Отправиться в Селдик.",
+                "unknown_data_2": "04210521"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "9",
+                "text": "Проверить обстановку возле Тристы.",
+                "unknown_data_2": "05210621"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "10",
+                "text": "Отправиться в Селдик.",
+                "unknown_data_2": "06210721"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "11",
+                "text": "Найти зацепки об одноклассниках.",
+                "unknown_data_2": "07210b21"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "12",
+                "text": "Разгадать загадку на восточном шоссе.",
+                "unknown_data_2": "0b210e21"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "13",
+                "text": "Отправиться в Селдик.",
+                "unknown_data_2": "0e21a022"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "14",
+                "text": "Поговорить с управляющим рынка.",
+                "unknown_data_2": "a022a122"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "15",
+                "text": "Выполнить обязательную просьбу.",
+                "unknown_data_2": "a122a222"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "16",
+                "text": "Ждать у мельницы звонка от Фи и Элиота.",
+                "unknown_data_2": "a2220f21"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "17",
+                "text": "Встретиться в точке D.",
+                "unknown_data_2": "0f211021"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "18",
+                "text": "Отправиться к Мосту Двух Драконов.",
+                "unknown_data_2": "10211121"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "19",
+                "text": "Найти способ попасть на пути.",
+                "unknown_data_2": "11211321"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "20",
+                "text": "Пройти через Мост Двух Драконов.",
+                "unknown_data_2": "13211521"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "21",
+                "text": "Отправиться в крепость Гаррелия.",
+                "unknown_data_2": "15211821"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "22",
+                "text": "Осмотреть базу, затем ждать у Валимара.",
+                "unknown_data_2": "18211921"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "23",
+                "text": "Провести свободное время, затем отдохнуть.",
+                "unknown_data_2": "19211a21"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "24",
+                "text": "Отправиться на другую сторону долины Юмир.",
+                "unknown_data_2": "1a211c21"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "25",
+                "text": "Отправиться к Вратам Зендер или в поселение.",
+                "unknown_data_2": "1c211d21"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "26",
+                "text": "Отправиться к Вратам Зендер.",
+                "unknown_data_2": "1d211e21"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "27",
+                "text": "Отправиться в поселение.",
+                "unknown_data_2": "1e212021"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "28",
+                "text": "Встретиться с остальными на СВ нагорье.",
+                "unknown_data_2": "20212421"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "29",
+                "text": "Отправиться на плато в южном нагорье.",
+                "unknown_data_2": "24212621"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "30",
+                "text": "Пробраться на дозорную башню.",
+                "unknown_data_2": "26212721"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "31",
+                "text": "Отключить глушитель на крыше.",
+                "unknown_data_2": "27212a21"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "32",
+                "text": "Провести свободное время, затем отдохнуть.",
+                "unknown_data_2": "2a212b21"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "33",
+                "text": "Отправиться на другую сторону долины Юмир.",
+                "unknown_data_2": "2b212d21"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "34",
+                "text": "Отправиться в Леграм.",
+                "unknown_data_2": "2d212e21"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "35",
+                "text": "Отправиться в замок Лоэнгрин.",
+                "unknown_data_2": "2e213221"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "36",
+                "text": "Отправиться в Бареахард.",
+                "unknown_data_2": "32213721"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "37",
+                "text": "Искать зацепки о местонахождении Юсиса.",
+                "unknown_data_2": "37213b21"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "38",
+                "text": "Отправиться в ресторан на площади.",
+                "unknown_data_2": "3b213c21"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "39",
+                "text": "Отправиться в аэропорт.",
+                "unknown_data_2": "3c213d21"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "40",
+                "text": "Войти на борт дирижабля.",
+                "unknown_data_2": "3d213e21"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "41",
+                "text": "Отправиться в гостиную на третьем этаже.",
+                "unknown_data_2": "3e213f21"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "42",
+                "text": "Подготовиться к дуэли, а затем начать.",
+                "unknown_data_2": "3f214021"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "43",
+                "text": "Провести свободное время, затем отдохнуть.",
+                "unknown_data_2": "40210023"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "44",
+                "text": "Собрать информацию.",
+                "unknown_data_2": "00230123"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "45",
+                "text": "Сбежать из гостевой зоны корабля.",
+                "unknown_data_2": "01230323"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "46",
+                "text": "Сбежать с «Пантагрюэля».",
+                "unknown_data_2": "03230024"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "47",
+                "text": "Осмотреть помещения дирижабля.",
+                "unknown_data_2": "00248725"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "48",
+                "text": "Путешествовать по региону, выполняя просьбы.",
+                "unknown_data_2": "87250124"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "49",
+                "text": "Вернуться на «Дерзкий».",
+                "unknown_data_2": "01240224"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "50",
+                "text": "Закончить подготовку и начать операцию.",
+                "unknown_data_2": "02240324"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "51",
+                "text": "Спасти Фиону.",
+                "unknown_data_2": "03240424"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "52",
+                "text": "Прогуляться, затем вернуться на «Дерзкий».",
+                "unknown_data_2": "04240524"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "53",
+                "text": "Путешествовать по региону, выполняя просьбы.",
+                "unknown_data_2": "05242724"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "54",
+                "text": "Вернуться на «Дерзкий».",
+                "unknown_data_2": "27240624"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "55",
+                "text": "Закончить подготовку и начать операцию.",
+                "unknown_data_2": "06240724"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "56",
+                "text": "Отправиться в Рор.",
+                "unknown_data_2": "07240824"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "57",
+                "text": "Собрать информацию.",
+                "unknown_data_2": "08240a24"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "58",
+                "text": "Отправиться в закусочную «Дванс».",
+                "unknown_data_2": "0a240b24"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "59",
+                "text": "Отправиться в Саксонскую железную шахту.",
+                "unknown_data_2": "0b242924"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "60",
+                "text": "Отправиться на грузовую станцию.",
+                "unknown_data_2": "29240d24"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "61",
+                "text": "Исследовать поезд.",
+                "unknown_data_2": "0d240f24"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "62",
+                "text": "Отправиться в офис председателя Ирины на 23Э.",
+                "unknown_data_2": "0f241024"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "63",
+                "text": "Прогуляться, затем вернуться на «Дерзкий».",
+                "unknown_data_2": "10241124"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "64",
+                "text": "Пройти Святилища Духов.",
+                "unknown_data_2": "11241424"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "65",
+                "text": "Вернуться на «Дерзкий».",
+                "unknown_data_2": "14242a24"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "66",
+                "text": "Завершить дела, затем помочь Георгу.",
+                "unknown_data_2": "2a242b24"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "67",
+                "text": "Осмотреть город.",
+                "unknown_data_2": "2b241524"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "68",
+                "text": "Закончить подготовку и начать операцию.",
+                "unknown_data_2": "15241724"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "69",
+                "text": "Задержать герцога Альбарею.",
+                "unknown_data_2": "17241824"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "70",
+                "text": "Посетить особняк герцога Альбареи.",
+                "unknown_data_2": "18242c28"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "71",
+                "text": "Навестить Скарлет.",
+                "unknown_data_2": "2c282728"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "72",
+                "text": "Прогуляться, затем вернуться на «Дерзкий».",
+                "unknown_data_2": "27281924"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "73",
+                "text": "Собрать Земурийскую руду в Святилищах.",
+                "unknown_data_2": "19242f24"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "74",
+                "text": "Вернуться на «Дерзкий».",
+                "unknown_data_2": "2f243024"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "75",
+                "text": "Завершить дела, затем помочь Георгу.",
+                "unknown_data_2": "30242224"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "76",
+                "text": "Закончить подготовку и начать операцию.",
+                "unknown_data_2": "22242324"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "77",
+                "text": "Освободить академию.",
+                "unknown_data_2": "23240026"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "78",
+                "text": "Прогуляться по академии и Тристе.",
+                "unknown_data_2": "00260226"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "79",
+                "text": "Закончить подготовку и начать операцию.",
+                "unknown_data_2": "02260326"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "80",
+                "text": "Освободить пленников.",
+                "unknown_data_2": "03260a26"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "81",
+                "text": "Исследовать Адский замок.",
+                "unknown_data_2": "0a260028"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "82",
+                "text": "Исследовать сектор Е Геофронта.",
+                "unknown_data_2": "00280029"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "83",
+                "text": "Прогуляться по академии.",
+                "unknown_data_2": "00290329"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "84",
+                "text": "Прогуляться, затем вернуться в свою комнату.",
+                "unknown_data_2": "03290429"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "85",
+                "text": "Выполнить просьбы.",
+                "unknown_data_2": "04290529"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "86",
+                "text": "Отправиться в старое здание школы.",
+                "unknown_data_2": "05290629"
+            }
+        },
+        {
+            "header": "NaviTextData",
+            "values": {
+                "id": "87",
+                "text": "Вернуть старое здание школы в норму.",
+                "unknown_data_2": "06290000"
+            }
+        }
+    ]
+}

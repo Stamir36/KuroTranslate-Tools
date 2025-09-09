@@ -1,0 +1,251 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;t0080.scn 52
+	DD	PreInit					;t0080.scn 58
+	DD	Init					;t0080.scn 73
+	DD	Init_Replay					;t0080.scn 113
+	DD	Reinit					;t0080.scn 253
+	DD	LP_N_door00					;t0080.scn 273
+	DD	LP_N_door01					;t0080.scn 295
+	DD	LP_N_door02					;t0080.scn 316
+	DD	LP_N_door03					;t0080.scn 337
+	DD	LP_N_door04					;t0080.scn 358
+	DD	LP_Board01					;t0080.scn 386
+	DD	LP_door12					;t0080.scn 410
+	DD	LP_door00					;t0080.scn 433
+	DD	LP_door06					;t0080.scn 621
+	DD	LP_door07					;t0080.scn 649
+	DD	LP_door09					;t0080.scn 677
+	DD	LP_door10					;t0080.scn 705
+	DD	LP_door08					;t0080.scn 733
+	DD	Npc_Table					;t0080.scn 826
+	DD	celine2_setting					;t0080.scn 896
+	DD	machias_setting					;t0080.scn 923
+	DD	stefan_setting					;t0080.scn 946
+	DD	dorothe_setting					;t0080.scn 968
+	DD	alisa_setting					;t0080.scn 990
+	DD	emma_setting					;t0080.scn 1006
+	DD	towa_setting					;t0080.scn 1022
+	DD	ferris_setting					;t0080.scn 1050
+	DD	emily_setting					;t0080.scn 1066
+	DD	theresia_setting					;t0080.scn 1082
+	DD	friedel_setting					;t0080.scn 1098
+	DD	loggins_setting					;t0080.scn 1116
+	DD	rex_setting					;t0080.scn 1133
+	DD	kenneth_setting					;t0080.scn 1149
+	DD	beryl_setting					;t0080.scn 1165
+	DD	munch_setting					;t0080.scn 1182
+	DD	fidelio_setting					;t0080.scn 1199
+	DD	TK_fidelio_rex_06_04					;t0080.scn 1226
+	DD	TK_friedel_loggins_06_03					;t0080.scn 1273
+	DD	TK_machias_stefan_06_01					;t0080.scn 1331
+	DD	samansa_setting					;t0080.scn 1377
+	DD	TK_samansa					;t0080.scn 1418
+	DD	ramzei_setting					;t0080.scn 1636
+	DD	TK_ramzei					;t0080.scn 1672
+	DD	james_setting					;t0080.scn 1852
+	DD	TK_james					;t0080.scn 1893
+	DD	student_council01_setting					;t0080.scn 2097
+	DD	TK_student_council01					;t0080.scn 2118
+	DD	student_council02_setting					;t0080.scn 2229
+	DD	TK_student_council02					;t0080.scn 2244
+	DD	student_council03_setting					;t0080.scn 2281
+	DD	TK_student_council03					;t0080.scn 2301
+	DD	student_council04_setting					;t0080.scn 2424
+	DD	TK_student_council04					;t0080.scn 2445
+	DD	student_chess01_setting					;t0080.scn 2557
+	DD	TK_student_chess01					;t0080.scn 2578
+	DD	student_chess02_setting					;t0080.scn 2644
+	DD	TK_student_chess02					;t0080.scn 2664
+	DD	t0000_student01_setting					;t0080.scn 2715
+	DD	TK_STUDENT0102_06					;t0080.scn 2730
+	DD	TK_t0000_student01					;t0080.scn 2772
+	DD	t0000_student02_setting					;t0080.scn 2811
+	DD	TK_t0000_student02					;t0080.scn 2826
+	DD	t0000_student03_setting					;t0080.scn 2862
+	DD	TK_t0000_student03					;t0080.scn 2876
+	DD	t0000_student04_setting					;t0080.scn 2928
+	DD	TK_t0000_student04					;t0080.scn 2942
+	DD	EV_06_03_00					;t0080.scn 2997
+	DD	EV_06_03_01					;t0080.scn 3203
+	DD	MM_TOWA_02					;t0080.scn 4485
+	DD	_LP_door12					;t0080.scn 5705
+	DD	_LP_door00					;t0080.scn 5705
+	DD	_LP_door06					;t0080.scn 5705
+	DD	_LP_door07					;t0080.scn 5705
+	DD	_LP_door09					;t0080.scn 5705
+	DD	_LP_door10					;t0080.scn 5705
+	DD	_LP_door08					;t0080.scn 5705
+	DD	_EV_06_03_00					;t0080.scn 5705
+	DD	_EV_06_03_01					;t0080.scn 5705
+	DD	_MM_TOWA_02					;t0080.scn 5705
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_LP_N_door00
+	DW	FUNCNAME_LP_N_door01
+	DW	FUNCNAME_LP_N_door02
+	DW	FUNCNAME_LP_N_door03
+	DW	FUNCNAME_LP_N_door04
+	DW	FUNCNAME_LP_Board01
+	DW	FUNCNAME_LP_door12
+	DW	FUNCNAME_LP_door00
+	DW	FUNCNAME_LP_door06
+	DW	FUNCNAME_LP_door07
+	DW	FUNCNAME_LP_door09
+	DW	FUNCNAME_LP_door10
+	DW	FUNCNAME_LP_door08
+	DW	FUNCNAME_Npc_Table
+	DW	FUNCNAME_celine2_setting
+	DW	FUNCNAME_machias_setting
+	DW	FUNCNAME_stefan_setting
+	DW	FUNCNAME_dorothe_setting
+	DW	FUNCNAME_alisa_setting
+	DW	FUNCNAME_emma_setting
+	DW	FUNCNAME_towa_setting
+	DW	FUNCNAME_ferris_setting
+	DW	FUNCNAME_emily_setting
+	DW	FUNCNAME_theresia_setting
+	DW	FUNCNAME_friedel_setting
+	DW	FUNCNAME_loggins_setting
+	DW	FUNCNAME_rex_setting
+	DW	FUNCNAME_kenneth_setting
+	DW	FUNCNAME_beryl_setting
+	DW	FUNCNAME_munch_setting
+	DW	FUNCNAME_fidelio_setting
+	DW	FUNCNAME_TK_fidelio_rex_06_04
+	DW	FUNCNAME_TK_friedel_loggins_06_03
+	DW	FUNCNAME_TK_machias_stefan_06_01
+	DW	FUNCNAME_samansa_setting
+	DW	FUNCNAME_TK_samansa
+	DW	FUNCNAME_ramzei_setting
+	DW	FUNCNAME_TK_ramzei
+	DW	FUNCNAME_james_setting
+	DW	FUNCNAME_TK_james
+	DW	FUNCNAME_student_council01_setting
+	DW	FUNCNAME_TK_student_council01
+	DW	FUNCNAME_student_council02_setting
+	DW	FUNCNAME_TK_student_council02
+	DW	FUNCNAME_student_council03_setting
+	DW	FUNCNAME_TK_student_council03
+	DW	FUNCNAME_student_council04_setting
+	DW	FUNCNAME_TK_student_council04
+	DW	FUNCNAME_student_chess01_setting
+	DW	FUNCNAME_TK_student_chess01
+	DW	FUNCNAME_student_chess02_setting
+	DW	FUNCNAME_TK_student_chess02
+	DW	FUNCNAME_t0000_student01_setting
+	DW	FUNCNAME_TK_STUDENT0102_06
+	DW	FUNCNAME_TK_t0000_student01
+	DW	FUNCNAME_t0000_student02_setting
+	DW	FUNCNAME_TK_t0000_student02
+	DW	FUNCNAME_t0000_student03_setting
+	DW	FUNCNAME_TK_t0000_student03
+	DW	FUNCNAME_t0000_student04_setting
+	DW	FUNCNAME_TK_t0000_student04
+	DW	FUNCNAME_EV_06_03_00
+	DW	FUNCNAME_EV_06_03_01
+	DW	FUNCNAME_MM_TOWA_02
+	DW	FUNCNAME__LP_door12
+	DW	FUNCNAME__LP_door00
+	DW	FUNCNAME__LP_door06
+	DW	FUNCNAME__LP_door07
+	DW	FUNCNAME__LP_door09
+	DW	FUNCNAME__LP_door10
+	DW	FUNCNAME__LP_door08
+	DW	FUNCNAME__EV_06_03_00
+	DW	FUNCNAME__EV_06_03_01
+	DW	FUNCNAME__MM_TOWA_02
+FUNCTION_NAME_TABLE_NUM	EQU	79
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_LP_N_door00:	DB	'LP_N_door00',0
+FUNCNAME_LP_N_door01:	DB	'LP_N_door01',0
+FUNCNAME_LP_N_door02:	DB	'LP_N_door02',0
+FUNCNAME_LP_N_door03:	DB	'LP_N_door03',0
+FUNCNAME_LP_N_door04:	DB	'LP_N_door04',0
+FUNCNAME_LP_Board01:	DB	'LP_Board01',0
+FUNCNAME_LP_door12:	DB	'LP_door12',0
+FUNCNAME_LP_door00:	DB	'LP_door00',0
+FUNCNAME_LP_door06:	DB	'LP_door06',0
+FUNCNAME_LP_door07:	DB	'LP_door07',0
+FUNCNAME_LP_door09:	DB	'LP_door09',0
+FUNCNAME_LP_door10:	DB	'LP_door10',0
+FUNCNAME_LP_door08:	DB	'LP_door08',0
+FUNCNAME_Npc_Table:	DB	'Npc_Table',0
+FUNCNAME_celine2_setting:	DB	'celine2_setting',0
+FUNCNAME_machias_setting:	DB	'machias_setting',0
+FUNCNAME_stefan_setting:	DB	'stefan_setting',0
+FUNCNAME_dorothe_setting:	DB	'dorothe_setting',0
+FUNCNAME_alisa_setting:	DB	'alisa_setting',0
+FUNCNAME_emma_setting:	DB	'emma_setting',0
+FUNCNAME_towa_setting:	DB	'towa_setting',0
+FUNCNAME_ferris_setting:	DB	'ferris_setting',0
+FUNCNAME_emily_setting:	DB	'emily_setting',0
+FUNCNAME_theresia_setting:	DB	'theresia_setting',0
+FUNCNAME_friedel_setting:	DB	'friedel_setting',0
+FUNCNAME_loggins_setting:	DB	'loggins_setting',0
+FUNCNAME_rex_setting:	DB	'rex_setting',0
+FUNCNAME_kenneth_setting:	DB	'kenneth_setting',0
+FUNCNAME_beryl_setting:	DB	'beryl_setting',0
+FUNCNAME_munch_setting:	DB	'munch_setting',0
+FUNCNAME_fidelio_setting:	DB	'fidelio_setting',0
+FUNCNAME_TK_fidelio_rex_06_04:	DB	'TK_fidelio_rex_06_04',0
+FUNCNAME_TK_friedel_loggins_06_03:	DB	'TK_friedel_loggins_06_03',0
+FUNCNAME_TK_machias_stefan_06_01:	DB	'TK_machias_stefan_06_01',0
+FUNCNAME_samansa_setting:	DB	'samansa_setting',0
+FUNCNAME_TK_samansa:	DB	'TK_samansa',0
+FUNCNAME_ramzei_setting:	DB	'ramzei_setting',0
+FUNCNAME_TK_ramzei:	DB	'TK_ramzei',0
+FUNCNAME_james_setting:	DB	'james_setting',0
+FUNCNAME_TK_james:	DB	'TK_james',0
+FUNCNAME_student_council01_setting:	DB	'student_council01_setting',0
+FUNCNAME_TK_student_council01:	DB	'TK_student_council01',0
+FUNCNAME_student_council02_setting:	DB	'student_council02_setting',0
+FUNCNAME_TK_student_council02:	DB	'TK_student_council02',0
+FUNCNAME_student_council03_setting:	DB	'student_council03_setting',0
+FUNCNAME_TK_student_council03:	DB	'TK_student_council03',0
+FUNCNAME_student_council04_setting:	DB	'student_council04_setting',0
+FUNCNAME_TK_student_council04:	DB	'TK_student_council04',0
+FUNCNAME_student_chess01_setting:	DB	'student_chess01_setting',0
+FUNCNAME_TK_student_chess01:	DB	'TK_student_chess01',0
+FUNCNAME_student_chess02_setting:	DB	'student_chess02_setting',0
+FUNCNAME_TK_student_chess02:	DB	'TK_student_chess02',0
+FUNCNAME_t0000_student01_setting:	DB	't0000_student01_setting',0
+FUNCNAME_TK_STUDENT0102_06:	DB	'TK_STUDENT0102_06',0
+FUNCNAME_TK_t0000_student01:	DB	'TK_t0000_student01',0
+FUNCNAME_t0000_student02_setting:	DB	't0000_student02_setting',0
+FUNCNAME_TK_t0000_student02:	DB	'TK_t0000_student02',0
+FUNCNAME_t0000_student03_setting:	DB	't0000_student03_setting',0
+FUNCNAME_TK_t0000_student03:	DB	'TK_t0000_student03',0
+FUNCNAME_t0000_student04_setting:	DB	't0000_student04_setting',0
+FUNCNAME_TK_t0000_student04:	DB	'TK_t0000_student04',0
+FUNCNAME_EV_06_03_00:	DB	'EV_06_03_00',0
+FUNCNAME_EV_06_03_01:	DB	'EV_06_03_01',0
+FUNCNAME_MM_TOWA_02:	DB	'MM_TOWA_02',0
+FUNCNAME__LP_door12:	DB	'_LP_door12',0
+FUNCNAME__LP_door00:	DB	'_LP_door00',0
+FUNCNAME__LP_door06:	DB	'_LP_door06',0
+FUNCNAME__LP_door07:	DB	'_LP_door07',0
+FUNCNAME__LP_door09:	DB	'_LP_door09',0
+FUNCNAME__LP_door10:	DB	'_LP_door10',0
+FUNCNAME__LP_door08:	DB	'_LP_door08',0
+FUNCNAME__EV_06_03_00:	DB	'_EV_06_03_00',0
+FUNCNAME__EV_06_03_01:	DB	'_EV_06_03_01',0
+FUNCNAME__MM_TOWA_02:	DB	'_MM_TOWA_02',0

@@ -1,0 +1,116 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;r0640.scn 37
+	DD	PreInit					;r0640.scn 50
+	DD	Init					;r0640.scn 67
+	DD	Init_Replay					;r0640.scn 98
+	DD	Reinit					;r0640.scn 123
+	DD	EV_04_03_00					;r0640.scn 166
+	DD	EV_04_03_00_TankSet					;r0640.scn 720
+	DD	EV_04_03_00_CarSet					;r0640.scn 727
+	DD	EV_04_03_00_PanzerSetW					;r0640.scn 734
+	DD	EV_04_03_00_PanzerSet					;r0640.scn 740
+	DD	EV_04_03_00_TankStop					;r0640.scn 746
+	DD	EV_04_03_00_CarStop					;r0640.scn 751
+	DD	EV_04_03_00_TankMove					;r0640.scn 757
+	DD	EV_04_03_00_PanzerMove					;r0640.scn 834
+	DD	EV_04_03_06					;r0640.scn 953
+	DD	EV_04_03_06_PanzerSetW					;r0640.scn 1995
+	DD	EV_04_03_06_PanzerSet					;r0640.scn 2001
+	DD	ET_04_03_06_TankFire					;r0640.scn 2007
+	DD	ET_04_03_06_CarFire					;r0640.scn 2018
+	DD	ET_04_03_06_PanzerFire					;r0640.scn 2025
+	DD	ET_04_03_06_TankHit					;r0640.scn 2036
+	DD	ET_SE_TANKHIT					;r0640.scn 2061
+	DD	EV_04_03_06_PanzerMove					;r0640.scn 2066
+	DD	EV_04_11_05					;r0640.scn 2166
+	DD	_EV_04_03_00					;r0640.scn 2504
+	DD	_EV_04_03_00_TankSet					;r0640.scn 2504
+	DD	_EV_04_03_00_CarSet					;r0640.scn 2504
+	DD	_EV_04_03_00_TankStop					;r0640.scn 2504
+	DD	_EV_04_03_00_CarStop					;r0640.scn 2504
+	DD	_EV_04_03_06					;r0640.scn 2504
+	DD	_ET_04_03_06_TankFire					;r0640.scn 2504
+	DD	_ET_04_03_06_PanzerFire					;r0640.scn 2504
+	DD	_ET_SE_TANKHIT					;r0640.scn 2504
+	DD	_EV_04_11_05					;r0640.scn 2504
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_EV_04_03_00
+	DW	FUNCNAME_EV_04_03_00_TankSet
+	DW	FUNCNAME_EV_04_03_00_CarSet
+	DW	FUNCNAME_EV_04_03_00_PanzerSetW
+	DW	FUNCNAME_EV_04_03_00_PanzerSet
+	DW	FUNCNAME_EV_04_03_00_TankStop
+	DW	FUNCNAME_EV_04_03_00_CarStop
+	DW	FUNCNAME_EV_04_03_00_TankMove
+	DW	FUNCNAME_EV_04_03_00_PanzerMove
+	DW	FUNCNAME_EV_04_03_06
+	DW	FUNCNAME_EV_04_03_06_PanzerSetW
+	DW	FUNCNAME_EV_04_03_06_PanzerSet
+	DW	FUNCNAME_ET_04_03_06_TankFire
+	DW	FUNCNAME_ET_04_03_06_CarFire
+	DW	FUNCNAME_ET_04_03_06_PanzerFire
+	DW	FUNCNAME_ET_04_03_06_TankHit
+	DW	FUNCNAME_ET_SE_TANKHIT
+	DW	FUNCNAME_EV_04_03_06_PanzerMove
+	DW	FUNCNAME_EV_04_11_05
+	DW	FUNCNAME__EV_04_03_00
+	DW	FUNCNAME__EV_04_03_00_TankSet
+	DW	FUNCNAME__EV_04_03_00_CarSet
+	DW	FUNCNAME__EV_04_03_00_TankStop
+	DW	FUNCNAME__EV_04_03_00_CarStop
+	DW	FUNCNAME__EV_04_03_06
+	DW	FUNCNAME__ET_04_03_06_TankFire
+	DW	FUNCNAME__ET_04_03_06_PanzerFire
+	DW	FUNCNAME__ET_SE_TANKHIT
+	DW	FUNCNAME__EV_04_11_05
+FUNCTION_NAME_TABLE_NUM	EQU	34
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_EV_04_03_00:	DB	'EV_04_03_00',0
+FUNCNAME_EV_04_03_00_TankSet:	DB	'EV_04_03_00_TankSet',0
+FUNCNAME_EV_04_03_00_CarSet:	DB	'EV_04_03_00_CarSet',0
+FUNCNAME_EV_04_03_00_PanzerSetW:	DB	'EV_04_03_00_PanzerSetW',0
+FUNCNAME_EV_04_03_00_PanzerSet:	DB	'EV_04_03_00_PanzerSet',0
+FUNCNAME_EV_04_03_00_TankStop:	DB	'EV_04_03_00_TankStop',0
+FUNCNAME_EV_04_03_00_CarStop:	DB	'EV_04_03_00_CarStop',0
+FUNCNAME_EV_04_03_00_TankMove:	DB	'EV_04_03_00_TankMove',0
+FUNCNAME_EV_04_03_00_PanzerMove:	DB	'EV_04_03_00_PanzerMove',0
+FUNCNAME_EV_04_03_06:	DB	'EV_04_03_06',0
+FUNCNAME_EV_04_03_06_PanzerSetW:	DB	'EV_04_03_06_PanzerSetW',0
+FUNCNAME_EV_04_03_06_PanzerSet:	DB	'EV_04_03_06_PanzerSet',0
+FUNCNAME_ET_04_03_06_TankFire:	DB	'ET_04_03_06_TankFire',0
+FUNCNAME_ET_04_03_06_CarFire:	DB	'ET_04_03_06_CarFire',0
+FUNCNAME_ET_04_03_06_PanzerFire:	DB	'ET_04_03_06_PanzerFire',0
+FUNCNAME_ET_04_03_06_TankHit:	DB	'ET_04_03_06_TankHit',0
+FUNCNAME_ET_SE_TANKHIT:	DB	'ET_SE_TANKHIT',0
+FUNCNAME_EV_04_03_06_PanzerMove:	DB	'EV_04_03_06_PanzerMove',0
+FUNCNAME_EV_04_11_05:	DB	'EV_04_11_05',0
+FUNCNAME__EV_04_03_00:	DB	'_EV_04_03_00',0
+FUNCNAME__EV_04_03_00_TankSet:	DB	'_EV_04_03_00_TankSet',0
+FUNCNAME__EV_04_03_00_CarSet:	DB	'_EV_04_03_00_CarSet',0
+FUNCNAME__EV_04_03_00_TankStop:	DB	'_EV_04_03_00_TankStop',0
+FUNCNAME__EV_04_03_00_CarStop:	DB	'_EV_04_03_00_CarStop',0
+FUNCNAME__EV_04_03_06:	DB	'_EV_04_03_06',0
+FUNCNAME__ET_04_03_06_TankFire:	DB	'_ET_04_03_06_TankFire',0
+FUNCNAME__ET_04_03_06_PanzerFire:	DB	'_ET_04_03_06_PanzerFire',0
+FUNCNAME__ET_SE_TANKHIT:	DB	'_ET_SE_TANKHIT',0
+FUNCNAME__EV_04_11_05:	DB	'_EV_04_11_05',0

@@ -1,0 +1,539 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;e7020.scn 54
+	DD	PreInit					;e7020.scn 61
+	DD	Init					;e7020.scn 83
+	DD	Init_Replay					;e7020.scn 144
+	DD	Reinit					;e7020.scn 186
+	DD	LP_elev					;e7020.scn 230
+	DD	LP_Monitor					;e7020.scn 308
+	DD	LP_QuestMenu					;e7020.scn 362
+	DD	FC_CheckStudentCount					;e7020.scn 888
+	DD	FC_StudentMenu					;e7020.scn 975
+	DD	FC_StudentInfo					;e7020.scn 1095
+	DD	FC_GetTowaCostumeCount					;e7020.scn 1443
+	DD	FC_GetTowaMeganeCount					;e7020.scn 1459
+	DD	FC_GetTowaEtcCount					;e7020.scn 1511
+	DD	FC_ConfigMenu					;e7020.scn 1617
+	DD	FC_FlySkipMenu					;e7020.scn 1661
+	DD	FC_FlySkipApply					;e7020.scn 1700
+	DD	FC_TowaCostumeMenu					;e7020.scn 1750
+	DD	FC_TowaCostumeApply					;e7020.scn 1808
+	DD	FC_TowaMeganeMenu					;e7020.scn 1846
+	DD	FC_TowaMeganeApply					;e7020.scn 2002
+	DD	FC_TowaEtcMenu					;e7020.scn 2061
+	DD	FC_TowaEtcApply					;e7020.scn 2368
+	DD	Npc_Table					;e7020.scn 2488
+	DD	alisa_setting					;e7020.scn 2556
+	DD	laura_setting					;e7020.scn 2572
+	DD	jusis_setting					;e7020.scn 2592
+	DD	gaius_setting					;e7020.scn 2607
+	DD	fie_setting					;e7020.scn 2623
+	DD	eliot_setting					;e7020.scn 2650
+	DD	sara_setting					;e7020.scn 2667
+	DD	towa_setting					;e7020.scn 2693
+	DD	angelica_setting					;e7020.scn 2727
+	DD	mint_setting					;e7020.scn 2757
+	DD	linde_setting					;e7020.scn 2790
+	DD	npc_dummy_setting					;e7020.scn 2823
+	DD	alan_setting					;e7020.scn 2847
+	DD	clain_setting					;e7020.scn 2890
+	DD	olivert_setting					;e7020.scn 2943
+	DD	vivi_setting					;e7020.scn 2960
+	DD	TK_vivi_linde_03_Z3					;e7020.scn 3003
+	DD	TK_fie_vivi_03_Z2					;e7020.scn 3115
+	DD	TK_eliot_jusis_03_A_01					;e7020.scn 3163
+	DD	journey_setting					;e7020.scn 3216
+	DD	TK_journey					;e7020.scn 3234
+	DD	crono_setting					;e7020.scn 3334
+	DD	TK_crono					;e7020.scn 3352
+	DD	kartis_setting					;e7020.scn 3445
+	DD	TK_kartis					;e7020.scn 3458
+	DD	boyjer_setting					;e7020.scn 3555
+	DD	TK_boyjer					;e7020.scn 3573
+	DD	e7020_student10_setting					;e7020.scn 3745
+	DD	TK_e7020_student10					;e7020.scn 3758
+	DD	e7020_student11_setting					;e7020.scn 3785
+	DD	TK_e7020_student11					;e7020.scn 3798
+	DD	EV_03_04_02					;e7020.scn 3832
+	DD	EV_03_08_00					;e7020.scn 4031
+	DD	EV_03_10_02					;e7020.scn 4155
+	DD	EV_03_24_00					;e7020.scn 4379
+	DD	EV_03_30_01					;e7020.scn 4496
+	DD	EV_03_33_01					;e7020.scn 4676
+	DD	EV_03_35_00					;e7020.scn 4790
+	DD	EV_03_46_00					;e7020.scn 4913
+	DD	EV_03_47_02					;e7020.scn 5040
+	DD	EV_04_02_03					;e7020.scn 5493
+	DD	EV_04_12_00					;e7020.scn 5580
+	DD	ET_04_12_00_loadVALIMAR					;e7020.scn 5794
+	DD	ET_04_12_00_releaseVALIMAR					;e7020.scn 5799
+	DD	EV_03_03_00					;e7020.scn 5806
+	DD	ET_03_03_00_AppearREAN					;e7020.scn 7170
+	DD	ET_03_03_00_AppearGAIUS					;e7020.scn 7181
+	DD	ET_03_03_00_AppearOther0					;e7020.scn 7192
+	DD	ET_03_03_00_AppearOther1					;e7020.scn 7203
+	DD	ET_03_03_00_AppearOther2					;e7020.scn 7214
+	DD	ET_03_03_00_AppearOther3					;e7020.scn 7225
+	DD	ET_03_03_00_AppearCELINE2					;e7020.scn 7236
+	DD	EV_03_04_00					;e7020.scn 7250
+	DD	EV_03_04_01					;e7020.scn 7477
+	DD	ET_03_04_01_TurnToREAN					;e7020.scn 8440
+	DD	ET_03_04_01_TurnToGEORGE					;e7020.scn 8450
+	DD	EV_03_08_01					;e7020.scn 8463
+	DD	ET_03_08_01_TurnToREAN					;e7020.scn 9310
+	DD	EV_03_09_00					;e7020.scn 9323
+	DD	ET_03_09_00_TurnToREAN					;e7020.scn 11006
+	DD	EV_03_10_00					;e7020.scn 11019
+	DD	EV_03_10_01					;e7020.scn 11232
+	DD	EV_03_24_01					;e7020.scn 12136
+	DD	ET_03_24_01_TurnToREAN					;e7020.scn 13984
+	DD	ET_03_24_01_TurnToCELINE2					;e7020.scn 13994
+	DD	EV_03_55_04					;e7020.scn 14010
+	DD	EV_03_30_00					;e7020.scn 14522
+	DD	EV_03_33_02					;e7020.scn 14964
+	DD	EV_03_35_01					;e7020.scn 15341
+	DD	ET_03_35_01_TurnToREAN					;e7020.scn 16643
+	DD	ET_03_35_01_TurnToSARA					;e7020.scn 16653
+	DD	EV_03_56_03					;e7020.scn 16666
+	DD	ET_03_56_03_TurnToREAN					;e7020.scn 18308
+	DD	ET_03_56_03_TurnToMonitor					;e7020.scn 18318
+	DD	EV_03_46_01					;e7020.scn 18330
+	DD	EV_03_47_00					;e7020.scn 18782
+	DD	EV_03_47_01					;e7020.scn 18947
+	DD	ET_03_47_01_Turn					;e7020.scn 19877
+	DD	EV_04_00_04					;e7020.scn 19888
+	DD	ET_04_00_04_TurnTo					;e7020.scn 21969
+	DD	ET_04_00_04_TurnToALFIN					;e7020.scn 21977
+	DD	ET_04_00_04_TurnToMonitor					;e7020.scn 21987
+	DD	EV_04_02_04					;e7020.scn 22000
+	DD	EV_04_12_01					;e7020.scn 23001
+	DD	EV_04_12_03					;e7020.scn 23750
+	DD	EV_04_12_07					;e7020.scn 24081
+	DD	Sub_Quake0					;e7020.scn 24405
+	DD	EV_04_23_11					;e7020.scn 24415
+	DD	EV_03_28_00					;e7020.scn 24774
+	DD	EV_03_45_00					;e7020.scn 24789
+	DD	QS_2301_01					;e7020.scn 24816
+	DD	QS_2302_04					;e7020.scn 24950
+	DD	SB_03_FIRST_REPORT					;e7020.scn 24983
+	DD	YR_CHECK_STUDENT_COMP					;e7020.scn 25465
+	DD	YR_11_00					;e7020.scn 25496
+	DD	TU_03_SHIP_5F					;e7020.scn 25795
+	DD	TU_03_BECKY					;e7020.scn 26065
+	DD	TU_03_CALL_CLARA_0					;e7020.scn 26191
+	DD	TU_03_CALL_CLARA					;e7020.scn 26291
+	DD	TU_03_REPORT					;e7020.scn 26599
+	DD	LP_None_Ang					;e7020.scn 26626
+	DD	EV_RIDESHIP_CO					;e7020.scn 26748
+	DD	WP_Courageous_Out					;e7020.scn 26779
+	DD	WP_Courageous_Out2					;e7020.scn 26925
+	DD	WP_Courageous_In					;e7020.scn 27043
+	DD	_LP_elev					;e7020.scn 27130
+	DD	_LP_QuestMenu					;e7020.scn 27130
+	DD	_EV_03_04_02					;e7020.scn 27130
+	DD	_EV_03_08_00					;e7020.scn 27130
+	DD	_EV_03_10_02					;e7020.scn 27130
+	DD	_EV_03_24_00					;e7020.scn 27130
+	DD	_EV_03_30_01					;e7020.scn 27130
+	DD	_EV_03_33_01					;e7020.scn 27130
+	DD	_EV_03_35_00					;e7020.scn 27130
+	DD	_EV_03_46_00					;e7020.scn 27130
+	DD	_EV_03_47_02					;e7020.scn 27130
+	DD	_EV_04_02_03					;e7020.scn 27130
+	DD	_EV_04_12_00					;e7020.scn 27130
+	DD	_EV_03_03_00					;e7020.scn 27130
+	DD	_EV_03_04_00					;e7020.scn 27130
+	DD	_EV_03_04_01					;e7020.scn 27130
+	DD	_EV_03_08_01					;e7020.scn 27130
+	DD	_EV_03_09_00					;e7020.scn 27130
+	DD	_EV_03_10_00					;e7020.scn 27130
+	DD	_EV_03_10_01					;e7020.scn 27130
+	DD	_EV_03_24_01					;e7020.scn 27130
+	DD	_EV_03_55_04					;e7020.scn 27130
+	DD	_EV_03_30_00					;e7020.scn 27130
+	DD	_EV_03_35_01					;e7020.scn 27130
+	DD	_EV_03_56_03					;e7020.scn 27130
+	DD	_EV_03_46_01					;e7020.scn 27130
+	DD	_EV_03_47_00					;e7020.scn 27130
+	DD	_EV_03_47_01					;e7020.scn 27130
+	DD	_EV_04_00_04					;e7020.scn 27130
+	DD	_EV_04_02_04					;e7020.scn 27130
+	DD	_EV_04_12_01					;e7020.scn 27130
+	DD	_EV_04_12_03					;e7020.scn 27130
+	DD	_EV_04_12_07					;e7020.scn 27130
+	DD	_EV_04_23_11					;e7020.scn 27130
+	DD	_EV_03_28_00					;e7020.scn 27130
+	DD	_EV_03_45_00					;e7020.scn 27130
+	DD	_SB_03_FIRST_REPORT					;e7020.scn 27130
+	DD	_YR_11_00					;e7020.scn 27130
+	DD	_TU_03_SHIP_5F					;e7020.scn 27130
+	DD	_TU_03_BECKY					;e7020.scn 27130
+	DD	_TU_03_CALL_CLARA_0					;e7020.scn 27130
+	DD	_TU_03_CALL_CLARA					;e7020.scn 27130
+	DD	_EV_RIDESHIP_CO					;e7020.scn 27130
+	DD	_WP_Courageous_Out					;e7020.scn 27130
+	DD	_WP_Courageous_Out2					;e7020.scn 27130
+	DD	_WP_Courageous_In					;e7020.scn 27130
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_LP_elev
+	DW	FUNCNAME_LP_Monitor
+	DW	FUNCNAME_LP_QuestMenu
+	DW	FUNCNAME_FC_CheckStudentCount
+	DW	FUNCNAME_FC_StudentMenu
+	DW	FUNCNAME_FC_StudentInfo
+	DW	FUNCNAME_FC_GetTowaCostumeCount
+	DW	FUNCNAME_FC_GetTowaMeganeCount
+	DW	FUNCNAME_FC_GetTowaEtcCount
+	DW	FUNCNAME_FC_ConfigMenu
+	DW	FUNCNAME_FC_FlySkipMenu
+	DW	FUNCNAME_FC_FlySkipApply
+	DW	FUNCNAME_FC_TowaCostumeMenu
+	DW	FUNCNAME_FC_TowaCostumeApply
+	DW	FUNCNAME_FC_TowaMeganeMenu
+	DW	FUNCNAME_FC_TowaMeganeApply
+	DW	FUNCNAME_FC_TowaEtcMenu
+	DW	FUNCNAME_FC_TowaEtcApply
+	DW	FUNCNAME_Npc_Table
+	DW	FUNCNAME_alisa_setting
+	DW	FUNCNAME_laura_setting
+	DW	FUNCNAME_jusis_setting
+	DW	FUNCNAME_gaius_setting
+	DW	FUNCNAME_fie_setting
+	DW	FUNCNAME_eliot_setting
+	DW	FUNCNAME_sara_setting
+	DW	FUNCNAME_towa_setting
+	DW	FUNCNAME_angelica_setting
+	DW	FUNCNAME_mint_setting
+	DW	FUNCNAME_linde_setting
+	DW	FUNCNAME_npc_dummy_setting
+	DW	FUNCNAME_alan_setting
+	DW	FUNCNAME_clain_setting
+	DW	FUNCNAME_olivert_setting
+	DW	FUNCNAME_vivi_setting
+	DW	FUNCNAME_TK_vivi_linde_03_Z3
+	DW	FUNCNAME_TK_fie_vivi_03_Z2
+	DW	FUNCNAME_TK_eliot_jusis_03_A_01
+	DW	FUNCNAME_journey_setting
+	DW	FUNCNAME_TK_journey
+	DW	FUNCNAME_crono_setting
+	DW	FUNCNAME_TK_crono
+	DW	FUNCNAME_kartis_setting
+	DW	FUNCNAME_TK_kartis
+	DW	FUNCNAME_boyjer_setting
+	DW	FUNCNAME_TK_boyjer
+	DW	FUNCNAME_e7020_student10_setting
+	DW	FUNCNAME_TK_e7020_student10
+	DW	FUNCNAME_e7020_student11_setting
+	DW	FUNCNAME_TK_e7020_student11
+	DW	FUNCNAME_EV_03_04_02
+	DW	FUNCNAME_EV_03_08_00
+	DW	FUNCNAME_EV_03_10_02
+	DW	FUNCNAME_EV_03_24_00
+	DW	FUNCNAME_EV_03_30_01
+	DW	FUNCNAME_EV_03_33_01
+	DW	FUNCNAME_EV_03_35_00
+	DW	FUNCNAME_EV_03_46_00
+	DW	FUNCNAME_EV_03_47_02
+	DW	FUNCNAME_EV_04_02_03
+	DW	FUNCNAME_EV_04_12_00
+	DW	FUNCNAME_ET_04_12_00_loadVALIMAR
+	DW	FUNCNAME_ET_04_12_00_releaseVALIMAR
+	DW	FUNCNAME_EV_03_03_00
+	DW	FUNCNAME_ET_03_03_00_AppearREAN
+	DW	FUNCNAME_ET_03_03_00_AppearGAIUS
+	DW	FUNCNAME_ET_03_03_00_AppearOther0
+	DW	FUNCNAME_ET_03_03_00_AppearOther1
+	DW	FUNCNAME_ET_03_03_00_AppearOther2
+	DW	FUNCNAME_ET_03_03_00_AppearOther3
+	DW	FUNCNAME_ET_03_03_00_AppearCELINE2
+	DW	FUNCNAME_EV_03_04_00
+	DW	FUNCNAME_EV_03_04_01
+	DW	FUNCNAME_ET_03_04_01_TurnToREAN
+	DW	FUNCNAME_ET_03_04_01_TurnToGEORGE
+	DW	FUNCNAME_EV_03_08_01
+	DW	FUNCNAME_ET_03_08_01_TurnToREAN
+	DW	FUNCNAME_EV_03_09_00
+	DW	FUNCNAME_ET_03_09_00_TurnToREAN
+	DW	FUNCNAME_EV_03_10_00
+	DW	FUNCNAME_EV_03_10_01
+	DW	FUNCNAME_EV_03_24_01
+	DW	FUNCNAME_ET_03_24_01_TurnToREAN
+	DW	FUNCNAME_ET_03_24_01_TurnToCELINE2
+	DW	FUNCNAME_EV_03_55_04
+	DW	FUNCNAME_EV_03_30_00
+	DW	FUNCNAME_EV_03_33_02
+	DW	FUNCNAME_EV_03_35_01
+	DW	FUNCNAME_ET_03_35_01_TurnToREAN
+	DW	FUNCNAME_ET_03_35_01_TurnToSARA
+	DW	FUNCNAME_EV_03_56_03
+	DW	FUNCNAME_ET_03_56_03_TurnToREAN
+	DW	FUNCNAME_ET_03_56_03_TurnToMonitor
+	DW	FUNCNAME_EV_03_46_01
+	DW	FUNCNAME_EV_03_47_00
+	DW	FUNCNAME_EV_03_47_01
+	DW	FUNCNAME_ET_03_47_01_Turn
+	DW	FUNCNAME_EV_04_00_04
+	DW	FUNCNAME_ET_04_00_04_TurnTo
+	DW	FUNCNAME_ET_04_00_04_TurnToALFIN
+	DW	FUNCNAME_ET_04_00_04_TurnToMonitor
+	DW	FUNCNAME_EV_04_02_04
+	DW	FUNCNAME_EV_04_12_01
+	DW	FUNCNAME_EV_04_12_03
+	DW	FUNCNAME_EV_04_12_07
+	DW	FUNCNAME_Sub_Quake0
+	DW	FUNCNAME_EV_04_23_11
+	DW	FUNCNAME_EV_03_28_00
+	DW	FUNCNAME_EV_03_45_00
+	DW	FUNCNAME_QS_2301_01
+	DW	FUNCNAME_QS_2302_04
+	DW	FUNCNAME_SB_03_FIRST_REPORT
+	DW	FUNCNAME_YR_CHECK_STUDENT_COMP
+	DW	FUNCNAME_YR_11_00
+	DW	FUNCNAME_TU_03_SHIP_5F
+	DW	FUNCNAME_TU_03_BECKY
+	DW	FUNCNAME_TU_03_CALL_CLARA_0
+	DW	FUNCNAME_TU_03_CALL_CLARA
+	DW	FUNCNAME_TU_03_REPORT
+	DW	FUNCNAME_LP_None_Ang
+	DW	FUNCNAME_EV_RIDESHIP_CO
+	DW	FUNCNAME_WP_Courageous_Out
+	DW	FUNCNAME_WP_Courageous_Out2
+	DW	FUNCNAME_WP_Courageous_In
+	DW	FUNCNAME__LP_elev
+	DW	FUNCNAME__LP_QuestMenu
+	DW	FUNCNAME__EV_03_04_02
+	DW	FUNCNAME__EV_03_08_00
+	DW	FUNCNAME__EV_03_10_02
+	DW	FUNCNAME__EV_03_24_00
+	DW	FUNCNAME__EV_03_30_01
+	DW	FUNCNAME__EV_03_33_01
+	DW	FUNCNAME__EV_03_35_00
+	DW	FUNCNAME__EV_03_46_00
+	DW	FUNCNAME__EV_03_47_02
+	DW	FUNCNAME__EV_04_02_03
+	DW	FUNCNAME__EV_04_12_00
+	DW	FUNCNAME__EV_03_03_00
+	DW	FUNCNAME__EV_03_04_00
+	DW	FUNCNAME__EV_03_04_01
+	DW	FUNCNAME__EV_03_08_01
+	DW	FUNCNAME__EV_03_09_00
+	DW	FUNCNAME__EV_03_10_00
+	DW	FUNCNAME__EV_03_10_01
+	DW	FUNCNAME__EV_03_24_01
+	DW	FUNCNAME__EV_03_55_04
+	DW	FUNCNAME__EV_03_30_00
+	DW	FUNCNAME__EV_03_35_01
+	DW	FUNCNAME__EV_03_56_03
+	DW	FUNCNAME__EV_03_46_01
+	DW	FUNCNAME__EV_03_47_00
+	DW	FUNCNAME__EV_03_47_01
+	DW	FUNCNAME__EV_04_00_04
+	DW	FUNCNAME__EV_04_02_04
+	DW	FUNCNAME__EV_04_12_01
+	DW	FUNCNAME__EV_04_12_03
+	DW	FUNCNAME__EV_04_12_07
+	DW	FUNCNAME__EV_04_23_11
+	DW	FUNCNAME__EV_03_28_00
+	DW	FUNCNAME__EV_03_45_00
+	DW	FUNCNAME__SB_03_FIRST_REPORT
+	DW	FUNCNAME__YR_11_00
+	DW	FUNCNAME__TU_03_SHIP_5F
+	DW	FUNCNAME__TU_03_BECKY
+	DW	FUNCNAME__TU_03_CALL_CLARA_0
+	DW	FUNCNAME__TU_03_CALL_CLARA
+	DW	FUNCNAME__EV_RIDESHIP_CO
+	DW	FUNCNAME__WP_Courageous_Out
+	DW	FUNCNAME__WP_Courageous_Out2
+	DW	FUNCNAME__WP_Courageous_In
+FUNCTION_NAME_TABLE_NUM	EQU	175
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_LP_elev:	DB	'LP_elev',0
+FUNCNAME_LP_Monitor:	DB	'LP_Monitor',0
+FUNCNAME_LP_QuestMenu:	DB	'LP_QuestMenu',0
+FUNCNAME_FC_CheckStudentCount:	DB	'FC_CheckStudentCount',0
+FUNCNAME_FC_StudentMenu:	DB	'FC_StudentMenu',0
+FUNCNAME_FC_StudentInfo:	DB	'FC_StudentInfo',0
+FUNCNAME_FC_GetTowaCostumeCount:	DB	'FC_GetTowaCostumeCount',0
+FUNCNAME_FC_GetTowaMeganeCount:	DB	'FC_GetTowaMeganeCount',0
+FUNCNAME_FC_GetTowaEtcCount:	DB	'FC_GetTowaEtcCount',0
+FUNCNAME_FC_ConfigMenu:	DB	'FC_ConfigMenu',0
+FUNCNAME_FC_FlySkipMenu:	DB	'FC_FlySkipMenu',0
+FUNCNAME_FC_FlySkipApply:	DB	'FC_FlySkipApply',0
+FUNCNAME_FC_TowaCostumeMenu:	DB	'FC_TowaCostumeMenu',0
+FUNCNAME_FC_TowaCostumeApply:	DB	'FC_TowaCostumeApply',0
+FUNCNAME_FC_TowaMeganeMenu:	DB	'FC_TowaMeganeMenu',0
+FUNCNAME_FC_TowaMeganeApply:	DB	'FC_TowaMeganeApply',0
+FUNCNAME_FC_TowaEtcMenu:	DB	'FC_TowaEtcMenu',0
+FUNCNAME_FC_TowaEtcApply:	DB	'FC_TowaEtcApply',0
+FUNCNAME_Npc_Table:	DB	'Npc_Table',0
+FUNCNAME_alisa_setting:	DB	'alisa_setting',0
+FUNCNAME_laura_setting:	DB	'laura_setting',0
+FUNCNAME_jusis_setting:	DB	'jusis_setting',0
+FUNCNAME_gaius_setting:	DB	'gaius_setting',0
+FUNCNAME_fie_setting:	DB	'fie_setting',0
+FUNCNAME_eliot_setting:	DB	'eliot_setting',0
+FUNCNAME_sara_setting:	DB	'sara_setting',0
+FUNCNAME_towa_setting:	DB	'towa_setting',0
+FUNCNAME_angelica_setting:	DB	'angelica_setting',0
+FUNCNAME_mint_setting:	DB	'mint_setting',0
+FUNCNAME_linde_setting:	DB	'linde_setting',0
+FUNCNAME_npc_dummy_setting:	DB	'npc_dummy_setting',0
+FUNCNAME_alan_setting:	DB	'alan_setting',0
+FUNCNAME_clain_setting:	DB	'clain_setting',0
+FUNCNAME_olivert_setting:	DB	'olivert_setting',0
+FUNCNAME_vivi_setting:	DB	'vivi_setting',0
+FUNCNAME_TK_vivi_linde_03_Z3:	DB	'TK_vivi_linde_03_Z3',0
+FUNCNAME_TK_fie_vivi_03_Z2:	DB	'TK_fie_vivi_03_Z2',0
+FUNCNAME_TK_eliot_jusis_03_A_01:	DB	'TK_eliot_jusis_03_A_01',0
+FUNCNAME_journey_setting:	DB	'journey_setting',0
+FUNCNAME_TK_journey:	DB	'TK_journey',0
+FUNCNAME_crono_setting:	DB	'crono_setting',0
+FUNCNAME_TK_crono:	DB	'TK_crono',0
+FUNCNAME_kartis_setting:	DB	'kartis_setting',0
+FUNCNAME_TK_kartis:	DB	'TK_kartis',0
+FUNCNAME_boyjer_setting:	DB	'boyjer_setting',0
+FUNCNAME_TK_boyjer:	DB	'TK_boyjer',0
+FUNCNAME_e7020_student10_setting:	DB	'e7020_student10_setting',0
+FUNCNAME_TK_e7020_student10:	DB	'TK_e7020_student10',0
+FUNCNAME_e7020_student11_setting:	DB	'e7020_student11_setting',0
+FUNCNAME_TK_e7020_student11:	DB	'TK_e7020_student11',0
+FUNCNAME_EV_03_04_02:	DB	'EV_03_04_02',0
+FUNCNAME_EV_03_08_00:	DB	'EV_03_08_00',0
+FUNCNAME_EV_03_10_02:	DB	'EV_03_10_02',0
+FUNCNAME_EV_03_24_00:	DB	'EV_03_24_00',0
+FUNCNAME_EV_03_30_01:	DB	'EV_03_30_01',0
+FUNCNAME_EV_03_33_01:	DB	'EV_03_33_01',0
+FUNCNAME_EV_03_35_00:	DB	'EV_03_35_00',0
+FUNCNAME_EV_03_46_00:	DB	'EV_03_46_00',0
+FUNCNAME_EV_03_47_02:	DB	'EV_03_47_02',0
+FUNCNAME_EV_04_02_03:	DB	'EV_04_02_03',0
+FUNCNAME_EV_04_12_00:	DB	'EV_04_12_00',0
+FUNCNAME_ET_04_12_00_loadVALIMAR:	DB	'ET_04_12_00_loadVALIMAR',0
+FUNCNAME_ET_04_12_00_releaseVALIMAR:	DB	'ET_04_12_00_releaseVALIMAR',0
+FUNCNAME_EV_03_03_00:	DB	'EV_03_03_00',0
+FUNCNAME_ET_03_03_00_AppearREAN:	DB	'ET_03_03_00_AppearREAN',0
+FUNCNAME_ET_03_03_00_AppearGAIUS:	DB	'ET_03_03_00_AppearGAIUS',0
+FUNCNAME_ET_03_03_00_AppearOther0:	DB	'ET_03_03_00_AppearOther0',0
+FUNCNAME_ET_03_03_00_AppearOther1:	DB	'ET_03_03_00_AppearOther1',0
+FUNCNAME_ET_03_03_00_AppearOther2:	DB	'ET_03_03_00_AppearOther2',0
+FUNCNAME_ET_03_03_00_AppearOther3:	DB	'ET_03_03_00_AppearOther3',0
+FUNCNAME_ET_03_03_00_AppearCELINE2:	DB	'ET_03_03_00_AppearCELINE2',0
+FUNCNAME_EV_03_04_00:	DB	'EV_03_04_00',0
+FUNCNAME_EV_03_04_01:	DB	'EV_03_04_01',0
+FUNCNAME_ET_03_04_01_TurnToREAN:	DB	'ET_03_04_01_TurnToREAN',0
+FUNCNAME_ET_03_04_01_TurnToGEORGE:	DB	'ET_03_04_01_TurnToGEORGE',0
+FUNCNAME_EV_03_08_01:	DB	'EV_03_08_01',0
+FUNCNAME_ET_03_08_01_TurnToREAN:	DB	'ET_03_08_01_TurnToREAN',0
+FUNCNAME_EV_03_09_00:	DB	'EV_03_09_00',0
+FUNCNAME_ET_03_09_00_TurnToREAN:	DB	'ET_03_09_00_TurnToREAN',0
+FUNCNAME_EV_03_10_00:	DB	'EV_03_10_00',0
+FUNCNAME_EV_03_10_01:	DB	'EV_03_10_01',0
+FUNCNAME_EV_03_24_01:	DB	'EV_03_24_01',0
+FUNCNAME_ET_03_24_01_TurnToREAN:	DB	'ET_03_24_01_TurnToREAN',0
+FUNCNAME_ET_03_24_01_TurnToCELINE2:	DB	'ET_03_24_01_TurnToCELINE2',0
+FUNCNAME_EV_03_55_04:	DB	'EV_03_55_04',0
+FUNCNAME_EV_03_30_00:	DB	'EV_03_30_00',0
+FUNCNAME_EV_03_33_02:	DB	'EV_03_33_02',0
+FUNCNAME_EV_03_35_01:	DB	'EV_03_35_01',0
+FUNCNAME_ET_03_35_01_TurnToREAN:	DB	'ET_03_35_01_TurnToREAN',0
+FUNCNAME_ET_03_35_01_TurnToSARA:	DB	'ET_03_35_01_TurnToSARA',0
+FUNCNAME_EV_03_56_03:	DB	'EV_03_56_03',0
+FUNCNAME_ET_03_56_03_TurnToREAN:	DB	'ET_03_56_03_TurnToREAN',0
+FUNCNAME_ET_03_56_03_TurnToMonitor:	DB	'ET_03_56_03_TurnToMonitor',0
+FUNCNAME_EV_03_46_01:	DB	'EV_03_46_01',0
+FUNCNAME_EV_03_47_00:	DB	'EV_03_47_00',0
+FUNCNAME_EV_03_47_01:	DB	'EV_03_47_01',0
+FUNCNAME_ET_03_47_01_Turn:	DB	'ET_03_47_01_Turn',0
+FUNCNAME_EV_04_00_04:	DB	'EV_04_00_04',0
+FUNCNAME_ET_04_00_04_TurnTo:	DB	'ET_04_00_04_TurnTo',0
+FUNCNAME_ET_04_00_04_TurnToALFIN:	DB	'ET_04_00_04_TurnToALFIN',0
+FUNCNAME_ET_04_00_04_TurnToMonitor:	DB	'ET_04_00_04_TurnToMonitor',0
+FUNCNAME_EV_04_02_04:	DB	'EV_04_02_04',0
+FUNCNAME_EV_04_12_01:	DB	'EV_04_12_01',0
+FUNCNAME_EV_04_12_03:	DB	'EV_04_12_03',0
+FUNCNAME_EV_04_12_07:	DB	'EV_04_12_07',0
+FUNCNAME_Sub_Quake0:	DB	'Sub_Quake0',0
+FUNCNAME_EV_04_23_11:	DB	'EV_04_23_11',0
+FUNCNAME_EV_03_28_00:	DB	'EV_03_28_00',0
+FUNCNAME_EV_03_45_00:	DB	'EV_03_45_00',0
+FUNCNAME_QS_2301_01:	DB	'QS_2301_01',0
+FUNCNAME_QS_2302_04:	DB	'QS_2302_04',0
+FUNCNAME_SB_03_FIRST_REPORT:	DB	'SB_03_FIRST_REPORT',0
+FUNCNAME_YR_CHECK_STUDENT_COMP:	DB	'YR_CHECK_STUDENT_COMP',0
+FUNCNAME_YR_11_00:	DB	'YR_11_00',0
+FUNCNAME_TU_03_SHIP_5F:	DB	'TU_03_SHIP_5F',0
+FUNCNAME_TU_03_BECKY:	DB	'TU_03_BECKY',0
+FUNCNAME_TU_03_CALL_CLARA_0:	DB	'TU_03_CALL_CLARA_0',0
+FUNCNAME_TU_03_CALL_CLARA:	DB	'TU_03_CALL_CLARA',0
+FUNCNAME_TU_03_REPORT:	DB	'TU_03_REPORT',0
+FUNCNAME_LP_None_Ang:	DB	'LP_None_Ang',0
+FUNCNAME_EV_RIDESHIP_CO:	DB	'EV_RIDESHIP_CO',0
+FUNCNAME_WP_Courageous_Out:	DB	'WP_Courageous_Out',0
+FUNCNAME_WP_Courageous_Out2:	DB	'WP_Courageous_Out2',0
+FUNCNAME_WP_Courageous_In:	DB	'WP_Courageous_In',0
+FUNCNAME__LP_elev:	DB	'_LP_elev',0
+FUNCNAME__LP_QuestMenu:	DB	'_LP_QuestMenu',0
+FUNCNAME__EV_03_04_02:	DB	'_EV_03_04_02',0
+FUNCNAME__EV_03_08_00:	DB	'_EV_03_08_00',0
+FUNCNAME__EV_03_10_02:	DB	'_EV_03_10_02',0
+FUNCNAME__EV_03_24_00:	DB	'_EV_03_24_00',0
+FUNCNAME__EV_03_30_01:	DB	'_EV_03_30_01',0
+FUNCNAME__EV_03_33_01:	DB	'_EV_03_33_01',0
+FUNCNAME__EV_03_35_00:	DB	'_EV_03_35_00',0
+FUNCNAME__EV_03_46_00:	DB	'_EV_03_46_00',0
+FUNCNAME__EV_03_47_02:	DB	'_EV_03_47_02',0
+FUNCNAME__EV_04_02_03:	DB	'_EV_04_02_03',0
+FUNCNAME__EV_04_12_00:	DB	'_EV_04_12_00',0
+FUNCNAME__EV_03_03_00:	DB	'_EV_03_03_00',0
+FUNCNAME__EV_03_04_00:	DB	'_EV_03_04_00',0
+FUNCNAME__EV_03_04_01:	DB	'_EV_03_04_01',0
+FUNCNAME__EV_03_08_01:	DB	'_EV_03_08_01',0
+FUNCNAME__EV_03_09_00:	DB	'_EV_03_09_00',0
+FUNCNAME__EV_03_10_00:	DB	'_EV_03_10_00',0
+FUNCNAME__EV_03_10_01:	DB	'_EV_03_10_01',0
+FUNCNAME__EV_03_24_01:	DB	'_EV_03_24_01',0
+FUNCNAME__EV_03_55_04:	DB	'_EV_03_55_04',0
+FUNCNAME__EV_03_30_00:	DB	'_EV_03_30_00',0
+FUNCNAME__EV_03_35_01:	DB	'_EV_03_35_01',0
+FUNCNAME__EV_03_56_03:	DB	'_EV_03_56_03',0
+FUNCNAME__EV_03_46_01:	DB	'_EV_03_46_01',0
+FUNCNAME__EV_03_47_00:	DB	'_EV_03_47_00',0
+FUNCNAME__EV_03_47_01:	DB	'_EV_03_47_01',0
+FUNCNAME__EV_04_00_04:	DB	'_EV_04_00_04',0
+FUNCNAME__EV_04_02_04:	DB	'_EV_04_02_04',0
+FUNCNAME__EV_04_12_01:	DB	'_EV_04_12_01',0
+FUNCNAME__EV_04_12_03:	DB	'_EV_04_12_03',0
+FUNCNAME__EV_04_12_07:	DB	'_EV_04_12_07',0
+FUNCNAME__EV_04_23_11:	DB	'_EV_04_23_11',0
+FUNCNAME__EV_03_28_00:	DB	'_EV_03_28_00',0
+FUNCNAME__EV_03_45_00:	DB	'_EV_03_45_00',0
+FUNCNAME__SB_03_FIRST_REPORT:	DB	'_SB_03_FIRST_REPORT',0
+FUNCNAME__YR_11_00:	DB	'_YR_11_00',0
+FUNCNAME__TU_03_SHIP_5F:	DB	'_TU_03_SHIP_5F',0
+FUNCNAME__TU_03_BECKY:	DB	'_TU_03_BECKY',0
+FUNCNAME__TU_03_CALL_CLARA_0:	DB	'_TU_03_CALL_CLARA_0',0
+FUNCNAME__TU_03_CALL_CLARA:	DB	'_TU_03_CALL_CLARA',0
+FUNCNAME__EV_RIDESHIP_CO:	DB	'_EV_RIDESHIP_CO',0
+FUNCNAME__WP_Courageous_Out:	DB	'_WP_Courageous_Out',0
+FUNCNAME__WP_Courageous_Out2:	DB	'_WP_Courageous_Out2',0
+FUNCNAME__WP_Courageous_In:	DB	'_WP_Courageous_In',0

@@ -1,0 +1,167 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;r0500.scn 59
+	DD	BTLSET000					;r0500.scn 65
+	DD	BTLSET001					;r0500.scn 80
+	DD	BTLSET002					;r0500.scn 87
+	DD	PreInit					;r0500.scn 97
+	DD	Init					;r0500.scn 114
+	DD	Init_Replay					;r0500.scn 240
+	DD	Reinit					;r0500.scn 341
+	DD	LP_tbox00					;r0500.scn 369
+	DD	LP_mbox00					;r0500.scn 390
+	DD	LP_mbox00_Get					;r0500.scn 400
+	DD	LP_fishpoint00					;r0500.scn 429
+	DD	AV_FishPoint					;r0500.scn 487
+	DD	AV_00007					;r0500.scn 505
+	DD	AV_00008					;r0500.scn 511
+	DD	AV_00012					;r0500.scn 517
+	DD	AV_00012b					;r0500.scn 527
+	DD	Npc_Table					;r0500.scn 539
+	DD	annabel_setting					;r0500.scn 572
+	DD	EV_00_12_00					;r0500.scn 606
+	DD	EV_00_15_00					;r0500.scn 790
+	DD	QS_1104_02_A					;r0500.scn 1204
+	DD	SB_KIZUNA_SARA_02					;r0500.scn 1340
+	DD	SB_KIZUNA_SHARON_01					;r0500.scn 1845
+	DD	EV_SE_BATTLE					;r0500.scn 2370
+	DD	YR_13_ST					;r0500.scn 2402
+	DD	YR_13_00					;r0500.scn 2425
+	DD	YR_13_04					;r0500.scn 3121
+	DD	YR_13_05					;r0500.scn 3374
+	DD	TU_00_BTL4_FIND					;r0500.scn 3585
+	DD	TU_00_BTL4_ST					;r0500.scn 3813
+	DD	TU_00_BTL4_Entry_Check					;r0500.scn 3846
+	DD	TU_00_BTL4_WIN					;r0500.scn 3858
+	DD	ST_TO_T4000					;r0500.scn 4075
+	DD	FC_ClearPartySelect					;r0500.scn 4168
+	DD	FC_AddPartySelect1					;r0500.scn 4189
+	DD	FC_AddPartySelect1_2					;r0500.scn 4202
+	DD	FC_AddPartySelect2					;r0500.scn 4216
+	DD	FC_AddPartySelect3					;r0500.scn 4224
+	DD	FC_PartySelectCall					;r0500.scn 4232
+	DD	PartySelectAfter					;r0500.scn 4249
+	DD	_LP_tbox00					;r0500.scn 4261
+	DD	_LP_mbox00_Get					;r0500.scn 4261
+	DD	_AV_00012b					;r0500.scn 4261
+	DD	_QS_1104_02_A					;r0500.scn 4261
+	DD	_SB_KIZUNA_SARA_02					;r0500.scn 4261
+	DD	_SB_KIZUNA_SHARON_01					;r0500.scn 4261
+	DD	_EV_SE_BATTLE					;r0500.scn 4261
+	DD	_YR_13_00					;r0500.scn 4261
+	DD	_TU_00_BTL4_FIND					;r0500.scn 4261
+	DD	_TU_00_BTL4_WIN					;r0500.scn 4261
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_BTLSET000
+	DW	FUNCNAME_BTLSET001
+	DW	FUNCNAME_BTLSET002
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_LP_tbox00
+	DW	FUNCNAME_LP_mbox00
+	DW	FUNCNAME_LP_mbox00_Get
+	DW	FUNCNAME_LP_fishpoint00
+	DW	FUNCNAME_AV_FishPoint
+	DW	FUNCNAME_AV_00007
+	DW	FUNCNAME_AV_00008
+	DW	FUNCNAME_AV_00012
+	DW	FUNCNAME_AV_00012b
+	DW	FUNCNAME_Npc_Table
+	DW	FUNCNAME_annabel_setting
+	DW	FUNCNAME_EV_00_12_00
+	DW	FUNCNAME_EV_00_15_00
+	DW	FUNCNAME_QS_1104_02_A
+	DW	FUNCNAME_SB_KIZUNA_SARA_02
+	DW	FUNCNAME_SB_KIZUNA_SHARON_01
+	DW	FUNCNAME_EV_SE_BATTLE
+	DW	FUNCNAME_YR_13_ST
+	DW	FUNCNAME_YR_13_00
+	DW	FUNCNAME_YR_13_04
+	DW	FUNCNAME_YR_13_05
+	DW	FUNCNAME_TU_00_BTL4_FIND
+	DW	FUNCNAME_TU_00_BTL4_ST
+	DW	FUNCNAME_TU_00_BTL4_Entry_Check
+	DW	FUNCNAME_TU_00_BTL4_WIN
+	DW	FUNCNAME_ST_TO_T4000
+	DW	FUNCNAME_FC_ClearPartySelect
+	DW	FUNCNAME_FC_AddPartySelect1
+	DW	FUNCNAME_FC_AddPartySelect1_2
+	DW	FUNCNAME_FC_AddPartySelect2
+	DW	FUNCNAME_FC_AddPartySelect3
+	DW	FUNCNAME_FC_PartySelectCall
+	DW	FUNCNAME_PartySelectAfter
+	DW	FUNCNAME__LP_tbox00
+	DW	FUNCNAME__LP_mbox00_Get
+	DW	FUNCNAME__AV_00012b
+	DW	FUNCNAME__QS_1104_02_A
+	DW	FUNCNAME__SB_KIZUNA_SARA_02
+	DW	FUNCNAME__SB_KIZUNA_SHARON_01
+	DW	FUNCNAME__EV_SE_BATTLE
+	DW	FUNCNAME__YR_13_00
+	DW	FUNCNAME__TU_00_BTL4_FIND
+	DW	FUNCNAME__TU_00_BTL4_WIN
+FUNCTION_NAME_TABLE_NUM	EQU	51
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_BTLSET000:	DB	0
+FUNCNAME_BTLSET001:	DB	0
+FUNCNAME_BTLSET002:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_LP_tbox00:	DB	'LP_tbox00',0
+FUNCNAME_LP_mbox00:	DB	'LP_mbox00',0
+FUNCNAME_LP_mbox00_Get:	DB	'LP_mbox00_Get',0
+FUNCNAME_LP_fishpoint00:	DB	'LP_fishpoint00',0
+FUNCNAME_AV_FishPoint:	DB	'AV_FishPoint',0
+FUNCNAME_AV_00007:	DB	'AV_00007',0
+FUNCNAME_AV_00008:	DB	'AV_00008',0
+FUNCNAME_AV_00012:	DB	'AV_00012',0
+FUNCNAME_AV_00012b:	DB	'AV_00012b',0
+FUNCNAME_Npc_Table:	DB	'Npc_Table',0
+FUNCNAME_annabel_setting:	DB	'annabel_setting',0
+FUNCNAME_EV_00_12_00:	DB	'EV_00_12_00',0
+FUNCNAME_EV_00_15_00:	DB	'EV_00_15_00',0
+FUNCNAME_QS_1104_02_A:	DB	'QS_1104_02_A',0
+FUNCNAME_SB_KIZUNA_SARA_02:	DB	'SB_KIZUNA_SARA_02',0
+FUNCNAME_SB_KIZUNA_SHARON_01:	DB	'SB_KIZUNA_SHARON_01',0
+FUNCNAME_EV_SE_BATTLE:	DB	'EV_SE_BATTLE',0
+FUNCNAME_YR_13_ST:	DB	'YR_13_ST',0
+FUNCNAME_YR_13_00:	DB	'YR_13_00',0
+FUNCNAME_YR_13_04:	DB	'YR_13_04',0
+FUNCNAME_YR_13_05:	DB	'YR_13_05',0
+FUNCNAME_TU_00_BTL4_FIND:	DB	'TU_00_BTL4_FIND',0
+FUNCNAME_TU_00_BTL4_ST:	DB	'TU_00_BTL4_ST',0
+FUNCNAME_TU_00_BTL4_Entry_Check:	DB	'TU_00_BTL4_Entry_Check',0
+FUNCNAME_TU_00_BTL4_WIN:	DB	'TU_00_BTL4_WIN',0
+FUNCNAME_ST_TO_T4000:	DB	'ST_TO_T4000',0
+FUNCNAME_FC_ClearPartySelect:	DB	'FC_ClearPartySelect',0
+FUNCNAME_FC_AddPartySelect1:	DB	'FC_AddPartySelect1',0
+FUNCNAME_FC_AddPartySelect1_2:	DB	'FC_AddPartySelect1_2',0
+FUNCNAME_FC_AddPartySelect2:	DB	'FC_AddPartySelect2',0
+FUNCNAME_FC_AddPartySelect3:	DB	'FC_AddPartySelect3',0
+FUNCNAME_FC_PartySelectCall:	DB	'FC_PartySelectCall',0
+FUNCNAME_PartySelectAfter:	DB	'PartySelectAfter',0
+FUNCNAME__LP_tbox00:	DB	'_LP_tbox00',0
+FUNCNAME__LP_mbox00_Get:	DB	'_LP_mbox00_Get',0
+FUNCNAME__AV_00012b:	DB	'_AV_00012b',0
+FUNCNAME__QS_1104_02_A:	DB	'_QS_1104_02_A',0
+FUNCNAME__SB_KIZUNA_SARA_02:	DB	'_SB_KIZUNA_SARA_02',0
+FUNCNAME__SB_KIZUNA_SHARON_01:	DB	'_SB_KIZUNA_SHARON_01',0
+FUNCNAME__EV_SE_BATTLE:	DB	'_EV_SE_BATTLE',0
+FUNCNAME__YR_13_00:	DB	'_YR_13_00',0
+FUNCNAME__TU_00_BTL4_FIND:	DB	'_TU_00_BTL4_FIND',0
+FUNCNAME__TU_00_BTL4_WIN:	DB	'_TU_00_BTL4_WIN',0

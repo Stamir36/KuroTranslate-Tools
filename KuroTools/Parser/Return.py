@@ -76,8 +76,8 @@ def replace_ids_with_translations(json_filepath, xliff_filepath):
     return True
 
 # Пример использования
-json_file = 't_voice_subtitle.json'  # Замените на путь к вашему JSON файлу
-xliff_file = 't_voice_subtitle.xliff'  # Замените на путь к вашему XLIFF файлу
+json_file = 't_notemons.json'  # Замените на путь к вашему JSON файлу
+xliff_file = 't_notemons.xliff'  # Замените на путь к вашему XLIFF файлу
 
 if replace_ids_with_translations(json_file, xliff_file):
     print("Файл JSON успешно обновлен.")

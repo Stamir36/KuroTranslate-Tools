@@ -1,0 +1,143 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;e7120.scn 44
+	DD	BTLSET000					;e7120.scn 51
+	DD	BTLSET001					;e7120.scn 57
+	DD	BTLSET002					;e7120.scn 63
+	DD	BTLSET003					;e7120.scn 71
+	DD	PreInit					;e7120.scn 82
+	DD	Init					;e7120.scn 98
+	DD	Init_Replay					;e7120.scn 165
+	DD	Reinit					;e7120.scn 235
+	DD	LP_ductin_ST					;e7120.scn 263
+	DD	LP_healobject					;e7120.scn 304
+	DD	LP_healobject1					;e7120.scn 315
+	DD	AV_02006					;e7120.scn 329
+	DD	AV_02006b					;e7120.scn 335
+	DD	AV_02008					;e7120.scn 341
+	DD	Npc_Table					;e7120.scn 350
+	DD	e7120_soldier_r01_setting					;e7120.scn 371
+	DD	e7120_soldier_r02_setting					;e7120.scn 380
+	DD	evnpc_soldier_002_setting					;e7120.scn 391
+	DD	evnpc_soldier_003_setting					;e7120.scn 408
+	DD	evnpc_soldier_004_setting					;e7120.scn 426
+	DD	evnpc_soldier_005_setting					;e7120.scn 443
+	DD	TK_evnpc_soldier_002					;e7120.scn 464
+	DD	TK_evnpc_soldier_003					;e7120.scn 467
+	DD	TK_evnpc_soldier_004					;e7120.scn 470
+	DD	TK_evnpc_soldier_005					;e7120.scn 473
+	DD	EV_02_04_00					;e7120.scn 486
+	DD	ET_look_dir_Around					;e7120.scn 745
+	DD	EV_02_04_01					;e7120.scn 756
+	DD	EV_02_05_00					;e7120.scn 907
+	DD	ET_02_05_00_Reinit					;e7120.scn 1068
+	DD	ET_02_06_00_LoopQuake					;e7120.scn 1094
+	DD	Sub_Quake0					;e7120.scn 1101
+	DD	EV_02_06_00					;e7120.scn 1126
+	DD	EV_02_06_01					;e7120.scn 2021
+	DD	EV_SB_02_STOPPER_SOLDIER_01					;e7120.scn 2485
+	DD	SB_02_STOPPER_SOLDIER					;e7120.scn 2495
+	DD	ST_TO_E7110					;e7120.scn 2639
+	DD	_EV_02_04_00					;e7120.scn 2666
+	DD	_EV_02_04_01					;e7120.scn 2666
+	DD	_EV_02_05_00					;e7120.scn 2666
+	DD	_EV_02_06_00					;e7120.scn 2666
+	DD	_EV_02_06_01					;e7120.scn 2666
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_BTLSET000
+	DW	FUNCNAME_BTLSET001
+	DW	FUNCNAME_BTLSET002
+	DW	FUNCNAME_BTLSET003
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_LP_ductin_ST
+	DW	FUNCNAME_LP_healobject
+	DW	FUNCNAME_LP_healobject1
+	DW	FUNCNAME_AV_02006
+	DW	FUNCNAME_AV_02006b
+	DW	FUNCNAME_AV_02008
+	DW	FUNCNAME_Npc_Table
+	DW	FUNCNAME_e7120_soldier_r01_setting
+	DW	FUNCNAME_e7120_soldier_r02_setting
+	DW	FUNCNAME_evnpc_soldier_002_setting
+	DW	FUNCNAME_evnpc_soldier_003_setting
+	DW	FUNCNAME_evnpc_soldier_004_setting
+	DW	FUNCNAME_evnpc_soldier_005_setting
+	DW	FUNCNAME_TK_evnpc_soldier_002
+	DW	FUNCNAME_TK_evnpc_soldier_003
+	DW	FUNCNAME_TK_evnpc_soldier_004
+	DW	FUNCNAME_TK_evnpc_soldier_005
+	DW	FUNCNAME_EV_02_04_00
+	DW	FUNCNAME_ET_look_dir_Around
+	DW	FUNCNAME_EV_02_04_01
+	DW	FUNCNAME_EV_02_05_00
+	DW	FUNCNAME_ET_02_05_00_Reinit
+	DW	FUNCNAME_ET_02_06_00_LoopQuake
+	DW	FUNCNAME_Sub_Quake0
+	DW	FUNCNAME_EV_02_06_00
+	DW	FUNCNAME_EV_02_06_01
+	DW	FUNCNAME_EV_SB_02_STOPPER_SOLDIER_01
+	DW	FUNCNAME_SB_02_STOPPER_SOLDIER
+	DW	FUNCNAME_ST_TO_E7110
+	DW	FUNCNAME__EV_02_04_00
+	DW	FUNCNAME__EV_02_04_01
+	DW	FUNCNAME__EV_02_05_00
+	DW	FUNCNAME__EV_02_06_00
+	DW	FUNCNAME__EV_02_06_01
+FUNCTION_NAME_TABLE_NUM	EQU	43
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_BTLSET000:	DB	0
+FUNCNAME_BTLSET001:	DB	0
+FUNCNAME_BTLSET002:	DB	0
+FUNCNAME_BTLSET003:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_LP_ductin_ST:	DB	'LP_ductin_ST',0
+FUNCNAME_LP_healobject:	DB	'LP_healobject',0
+FUNCNAME_LP_healobject1:	DB	'LP_healobject1',0
+FUNCNAME_AV_02006:	DB	'AV_02006',0
+FUNCNAME_AV_02006b:	DB	'AV_02006b',0
+FUNCNAME_AV_02008:	DB	'AV_02008',0
+FUNCNAME_Npc_Table:	DB	'Npc_Table',0
+FUNCNAME_e7120_soldier_r01_setting:	DB	'e7120_soldier_r01_setting',0
+FUNCNAME_e7120_soldier_r02_setting:	DB	'e7120_soldier_r02_setting',0
+FUNCNAME_evnpc_soldier_002_setting:	DB	'evnpc_soldier_002_setting',0
+FUNCNAME_evnpc_soldier_003_setting:	DB	'evnpc_soldier_003_setting',0
+FUNCNAME_evnpc_soldier_004_setting:	DB	'evnpc_soldier_004_setting',0
+FUNCNAME_evnpc_soldier_005_setting:	DB	'evnpc_soldier_005_setting',0
+FUNCNAME_TK_evnpc_soldier_002:	DB	'TK_evnpc_soldier_002',0
+FUNCNAME_TK_evnpc_soldier_003:	DB	'TK_evnpc_soldier_003',0
+FUNCNAME_TK_evnpc_soldier_004:	DB	'TK_evnpc_soldier_004',0
+FUNCNAME_TK_evnpc_soldier_005:	DB	'TK_evnpc_soldier_005',0
+FUNCNAME_EV_02_04_00:	DB	'EV_02_04_00',0
+FUNCNAME_ET_look_dir_Around:	DB	'ET_look_dir_Around',0
+FUNCNAME_EV_02_04_01:	DB	'EV_02_04_01',0
+FUNCNAME_EV_02_05_00:	DB	'EV_02_05_00',0
+FUNCNAME_ET_02_05_00_Reinit:	DB	'ET_02_05_00_Reinit',0
+FUNCNAME_ET_02_06_00_LoopQuake:	DB	'ET_02_06_00_LoopQuake',0
+FUNCNAME_Sub_Quake0:	DB	'Sub_Quake0',0
+FUNCNAME_EV_02_06_00:	DB	'EV_02_06_00',0
+FUNCNAME_EV_02_06_01:	DB	'EV_02_06_01',0
+FUNCNAME_EV_SB_02_STOPPER_SOLDIER_01:	DB	'EV_SB_02_STOPPER_SOLDIER_01',0
+FUNCNAME_SB_02_STOPPER_SOLDIER:	DB	'SB_02_STOPPER_SOLDIER',0
+FUNCNAME_ST_TO_E7110:	DB	'ST_TO_E7110',0
+FUNCNAME__EV_02_04_00:	DB	'_EV_02_04_00',0
+FUNCNAME__EV_02_04_01:	DB	'_EV_02_04_01',0
+FUNCNAME__EV_02_05_00:	DB	'_EV_02_05_00',0
+FUNCNAME__EV_02_06_00:	DB	'_EV_02_06_00',0
+FUNCNAME__EV_02_06_01:	DB	'_EV_02_06_01',0

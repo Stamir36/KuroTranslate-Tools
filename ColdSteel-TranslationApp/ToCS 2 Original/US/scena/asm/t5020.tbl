@@ -1,0 +1,104 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;t5020.scn 41
+	DD	BTLSET000					;t5020.scn 47
+	DD	BTLSET001					;t5020.scn 60
+	DD	BTLSET010					;t5020.scn 67
+	DD	PreInit					;t5020.scn 78
+	DD	Init					;t5020.scn 93
+	DD	Init_Replay					;t5020.scn 178
+	DD	Reinit					;t5020.scn 242
+	DD	LP_healobject					;t5020.scn 271
+	DD	LP_tbox00					;t5020.scn 282
+	DD	LP_mbox00					;t5020.scn 324
+	DD	LP_mbox00_Get					;t5020.scn 334
+	DD	LP_switch00					;t5020.scn 363
+	DD	LP_switch01					;t5020.scn 403
+	DD	AV_03022					;t5020.scn 454
+	DD	AV_03023					;t5020.scn 460
+	DD	AV_DUCT01					;t5020.scn 466
+	DD	Npc_Table					;t5020.scn 475
+	DD	sara_setting					;t5020.scn 491
+	DD	EV_03_31_00					;t5020.scn 522
+	DD	EV_SE_FOOT					;t5020.scn 1649
+	DD	EV_03_31_01					;t5020.scn 1659
+	DD	ST_TO_T5000					;t5020.scn 3168
+	DD	_LP_tbox00					;t5020.scn 3198
+	DD	_LP_mbox00_Get					;t5020.scn 3198
+	DD	_LP_switch00					;t5020.scn 3198
+	DD	_LP_switch01					;t5020.scn 3198
+	DD	_EV_03_31_00					;t5020.scn 3198
+	DD	_EV_SE_FOOT					;t5020.scn 3198
+	DD	_EV_03_31_01					;t5020.scn 3198
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_BTLSET000
+	DW	FUNCNAME_BTLSET001
+	DW	FUNCNAME_BTLSET010
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_LP_healobject
+	DW	FUNCNAME_LP_tbox00
+	DW	FUNCNAME_LP_mbox00
+	DW	FUNCNAME_LP_mbox00_Get
+	DW	FUNCNAME_LP_switch00
+	DW	FUNCNAME_LP_switch01
+	DW	FUNCNAME_AV_03022
+	DW	FUNCNAME_AV_03023
+	DW	FUNCNAME_AV_DUCT01
+	DW	FUNCNAME_Npc_Table
+	DW	FUNCNAME_sara_setting
+	DW	FUNCNAME_EV_03_31_00
+	DW	FUNCNAME_EV_SE_FOOT
+	DW	FUNCNAME_EV_03_31_01
+	DW	FUNCNAME_ST_TO_T5000
+	DW	FUNCNAME__LP_tbox00
+	DW	FUNCNAME__LP_mbox00_Get
+	DW	FUNCNAME__LP_switch00
+	DW	FUNCNAME__LP_switch01
+	DW	FUNCNAME__EV_03_31_00
+	DW	FUNCNAME__EV_SE_FOOT
+	DW	FUNCNAME__EV_03_31_01
+FUNCTION_NAME_TABLE_NUM	EQU	30
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_BTLSET000:	DB	0
+FUNCNAME_BTLSET001:	DB	0
+FUNCNAME_BTLSET010:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_LP_healobject:	DB	'LP_healobject',0
+FUNCNAME_LP_tbox00:	DB	'LP_tbox00',0
+FUNCNAME_LP_mbox00:	DB	'LP_mbox00',0
+FUNCNAME_LP_mbox00_Get:	DB	'LP_mbox00_Get',0
+FUNCNAME_LP_switch00:	DB	'LP_switch00',0
+FUNCNAME_LP_switch01:	DB	'LP_switch01',0
+FUNCNAME_AV_03022:	DB	'AV_03022',0
+FUNCNAME_AV_03023:	DB	'AV_03023',0
+FUNCNAME_AV_DUCT01:	DB	'AV_DUCT01',0
+FUNCNAME_Npc_Table:	DB	'Npc_Table',0
+FUNCNAME_sara_setting:	DB	'sara_setting',0
+FUNCNAME_EV_03_31_00:	DB	'EV_03_31_00',0
+FUNCNAME_EV_SE_FOOT:	DB	'EV_SE_FOOT',0
+FUNCNAME_EV_03_31_01:	DB	'EV_03_31_01',0
+FUNCNAME_ST_TO_T5000:	DB	'ST_TO_T5000',0
+FUNCNAME__LP_tbox00:	DB	'_LP_tbox00',0
+FUNCNAME__LP_mbox00_Get:	DB	'_LP_mbox00_Get',0
+FUNCNAME__LP_switch00:	DB	'_LP_switch00',0
+FUNCNAME__LP_switch01:	DB	'_LP_switch01',0
+FUNCNAME__EV_03_31_00:	DB	'_EV_03_31_00',0
+FUNCNAME__EV_SE_FOOT:	DB	'_EV_SE_FOOT',0
+FUNCNAME__EV_03_31_01:	DB	'_EV_03_31_01',0

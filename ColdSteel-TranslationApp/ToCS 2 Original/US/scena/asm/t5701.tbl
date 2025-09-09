@@ -1,0 +1,239 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;t5701.scn 55
+	DD	PreInit					;t5701.scn 61
+	DD	Init					;t5701.scn 80
+	DD	Init_Replay					;t5701.scn 114
+	DD	Reinit					;t5701.scn 209
+	DD	AV_01023					;t5701.scn 232
+	DD	Npc_Table					;t5701.scn 241
+	DD	munch_setting					;t5701.scn 290
+	DD	npc_dummy_setting					;t5701.scn 330
+	DD	rex_setting					;t5701.scn 347
+	DD	valimar_setting					;t5701.scn 363
+	DD	gaul_setting					;t5701.scn 393
+	DD	TK_gaul					;t5701.scn 406
+	DD	kisling_setting					;t5701.scn 592
+	DD	TK_kisling					;t5701.scn 606
+	DD	arbekker_setting					;t5701.scn 749
+	DD	TK_arbekker					;t5701.scn 778
+	DD	TK_arbekker_t5701_soldier_03_Z2					;t5701.scn 896
+	DD	SB_03_ARBEKKER					;t5701.scn 933
+	DD	wilginy_setting					;t5701.scn 1085
+	DD	TK_wilginy					;t5701.scn 1105
+	DD	loki_setting					;t5701.scn 1361
+	DD	TK_loki					;t5701.scn 1397
+	DD	emanz_setting					;t5701.scn 1745
+	DD	TK_emanz					;t5701.scn 1777
+	DD	brocken_setting					;t5701.scn 2014
+	DD	TK_brocken					;t5701.scn 2027
+	DD	t5701_soldier_f01_setting					;t5701.scn 2285
+	DD	TK_t5701_soldier_f01					;t5701.scn 2303
+	DD	NPC_move_t5701_soldier_f01					;t5701.scn 2373
+	DD	claire_setting					;t5701.scn 2400
+	DD	TK_claire					;t5701.scn 2414
+	DD	engels_setting					;t5701.scn 2507
+	DD	TK_engels					;t5701.scn 2522
+	DD	t6020_soldier_w01_setting					;t5701.scn 2583
+	DD	TK_t6020_soldier_w01					;t5701.scn 2596
+	DD	t5701_soldier_a01_setting					;t5701.scn 2649
+	DD	TK_t5701_soldier_a01					;t5701.scn 2672
+	DD	t5701_soldier_a02_setting					;t5701.scn 2705
+	DD	TK_t5701_soldier_a02					;t5701.scn 2727
+	DD	t5701_soldier_a03_setting					;t5701.scn 2765
+	DD	TK_t5701_soldier_a03					;t5701.scn 2787
+	DD	t5701_soldier_a04_setting					;t5701.scn 2826
+	DD	TK_t5701_soldier_a04					;t5701.scn 2851
+	DD	t5701_soldier_a05_setting					;t5701.scn 2888
+	DD	TK_t5701_soldier_a05					;t5701.scn 2911
+	DD	dominic_setting					;t5701.scn 2947
+	DD	TK_dominic					;t5701.scn 2961
+	DD	antone_setting					;t5701.scn 3044
+	DD	TK_antone					;t5701.scn 3064
+	DD	t5701_soldier_s01_setting					;t5701.scn 3134
+	DD	TK_t5701_soldier_s01					;t5701.scn 3158
+	DD	EV_01_25_00					;t5701.scn 3249
+	DD	EV_01_25_02					;t5701.scn 3403
+	DD	EV_01_26_00					;t5701.scn 3574
+	DD	EV_01_26_01					;t5701.scn 3692
+	DD	ET_AniEvKincho					;t5701.scn 4720
+	DD	ET_ChrWarpIn					;t5701.scn 4727
+	DD	ET_look_dir_Around1					;t5701.scn 4734
+	DD	ET_look_dir_Around2					;t5701.scn 4746
+	DD	ET_01_26_01_FIE_1					;t5701.scn 4758
+	DD	ET_01_26_01_CRAIG_1					;t5701.scn 4766
+	DD	ET_01_26_01_SOLDIER000_1					;t5701.scn 4774
+	DD	ET_01_26_01_SOLDIER001_1					;t5701.scn 4781
+	DD	ET_01_26_01_SOLDIER002_1					;t5701.scn 4788
+	DD	ET_01_26_01_MACHIAS_1					;t5701.scn 4796
+	DD	ET_01_26_01_FIE_2					;t5701.scn 4803
+	DD	QS_2103_02					;t5701.scn 4821
+	DD	SB_STUDENT09_MUNCH_01					;t5701.scn 5063
+	DD	SB_STUDENT09_MUNCH_03					;t5701.scn 5682
+	DD	ST_ENTRANCE					;t5701.scn 5994
+	DD	EV_to_t5501					;t5701.scn 6063
+	DD	_TK_wilginy					;t5701.scn 6165
+	DD	_EV_01_26_01					;t5701.scn 6165
+	DD	_SB_STUDENT09_MUNCH_03					;t5701.scn 6165
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_AV_01023
+	DW	FUNCNAME_Npc_Table
+	DW	FUNCNAME_munch_setting
+	DW	FUNCNAME_npc_dummy_setting
+	DW	FUNCNAME_rex_setting
+	DW	FUNCNAME_valimar_setting
+	DW	FUNCNAME_gaul_setting
+	DW	FUNCNAME_TK_gaul
+	DW	FUNCNAME_kisling_setting
+	DW	FUNCNAME_TK_kisling
+	DW	FUNCNAME_arbekker_setting
+	DW	FUNCNAME_TK_arbekker
+	DW	FUNCNAME_TK_arbekker_t5701_soldier_03_Z2
+	DW	FUNCNAME_SB_03_ARBEKKER
+	DW	FUNCNAME_wilginy_setting
+	DW	FUNCNAME_TK_wilginy
+	DW	FUNCNAME_loki_setting
+	DW	FUNCNAME_TK_loki
+	DW	FUNCNAME_emanz_setting
+	DW	FUNCNAME_TK_emanz
+	DW	FUNCNAME_brocken_setting
+	DW	FUNCNAME_TK_brocken
+	DW	FUNCNAME_t5701_soldier_f01_setting
+	DW	FUNCNAME_TK_t5701_soldier_f01
+	DW	FUNCNAME_NPC_move_t5701_soldier_f01
+	DW	FUNCNAME_claire_setting
+	DW	FUNCNAME_TK_claire
+	DW	FUNCNAME_engels_setting
+	DW	FUNCNAME_TK_engels
+	DW	FUNCNAME_t6020_soldier_w01_setting
+	DW	FUNCNAME_TK_t6020_soldier_w01
+	DW	FUNCNAME_t5701_soldier_a01_setting
+	DW	FUNCNAME_TK_t5701_soldier_a01
+	DW	FUNCNAME_t5701_soldier_a02_setting
+	DW	FUNCNAME_TK_t5701_soldier_a02
+	DW	FUNCNAME_t5701_soldier_a03_setting
+	DW	FUNCNAME_TK_t5701_soldier_a03
+	DW	FUNCNAME_t5701_soldier_a04_setting
+	DW	FUNCNAME_TK_t5701_soldier_a04
+	DW	FUNCNAME_t5701_soldier_a05_setting
+	DW	FUNCNAME_TK_t5701_soldier_a05
+	DW	FUNCNAME_dominic_setting
+	DW	FUNCNAME_TK_dominic
+	DW	FUNCNAME_antone_setting
+	DW	FUNCNAME_TK_antone
+	DW	FUNCNAME_t5701_soldier_s01_setting
+	DW	FUNCNAME_TK_t5701_soldier_s01
+	DW	FUNCNAME_EV_01_25_00
+	DW	FUNCNAME_EV_01_25_02
+	DW	FUNCNAME_EV_01_26_00
+	DW	FUNCNAME_EV_01_26_01
+	DW	FUNCNAME_ET_AniEvKincho
+	DW	FUNCNAME_ET_ChrWarpIn
+	DW	FUNCNAME_ET_look_dir_Around1
+	DW	FUNCNAME_ET_look_dir_Around2
+	DW	FUNCNAME_ET_01_26_01_FIE_1
+	DW	FUNCNAME_ET_01_26_01_CRAIG_1
+	DW	FUNCNAME_ET_01_26_01_SOLDIER000_1
+	DW	FUNCNAME_ET_01_26_01_SOLDIER001_1
+	DW	FUNCNAME_ET_01_26_01_SOLDIER002_1
+	DW	FUNCNAME_ET_01_26_01_MACHIAS_1
+	DW	FUNCNAME_ET_01_26_01_FIE_2
+	DW	FUNCNAME_QS_2103_02
+	DW	FUNCNAME_SB_STUDENT09_MUNCH_01
+	DW	FUNCNAME_SB_STUDENT09_MUNCH_03
+	DW	FUNCNAME_ST_ENTRANCE
+	DW	FUNCNAME_EV_to_t5501
+	DW	FUNCNAME__TK_wilginy
+	DW	FUNCNAME__EV_01_26_01
+	DW	FUNCNAME__SB_STUDENT09_MUNCH_03
+FUNCTION_NAME_TABLE_NUM	EQU	75
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_AV_01023:	DB	'AV_01023',0
+FUNCNAME_Npc_Table:	DB	'Npc_Table',0
+FUNCNAME_munch_setting:	DB	'munch_setting',0
+FUNCNAME_npc_dummy_setting:	DB	'npc_dummy_setting',0
+FUNCNAME_rex_setting:	DB	'rex_setting',0
+FUNCNAME_valimar_setting:	DB	'valimar_setting',0
+FUNCNAME_gaul_setting:	DB	'gaul_setting',0
+FUNCNAME_TK_gaul:	DB	'TK_gaul',0
+FUNCNAME_kisling_setting:	DB	'kisling_setting',0
+FUNCNAME_TK_kisling:	DB	'TK_kisling',0
+FUNCNAME_arbekker_setting:	DB	'arbekker_setting',0
+FUNCNAME_TK_arbekker:	DB	'TK_arbekker',0
+FUNCNAME_TK_arbekker_t5701_soldier_03_Z2:	DB	'TK_arbekker_t5701_soldier_03_Z2',0
+FUNCNAME_SB_03_ARBEKKER:	DB	'SB_03_ARBEKKER',0
+FUNCNAME_wilginy_setting:	DB	'wilginy_setting',0
+FUNCNAME_TK_wilginy:	DB	'TK_wilginy',0
+FUNCNAME_loki_setting:	DB	'loki_setting',0
+FUNCNAME_TK_loki:	DB	'TK_loki',0
+FUNCNAME_emanz_setting:	DB	'emanz_setting',0
+FUNCNAME_TK_emanz:	DB	'TK_emanz',0
+FUNCNAME_brocken_setting:	DB	'brocken_setting',0
+FUNCNAME_TK_brocken:	DB	'TK_brocken',0
+FUNCNAME_t5701_soldier_f01_setting:	DB	't5701_soldier_f01_setting',0
+FUNCNAME_TK_t5701_soldier_f01:	DB	'TK_t5701_soldier_f01',0
+FUNCNAME_NPC_move_t5701_soldier_f01:	DB	'NPC_move_t5701_soldier_f01',0
+FUNCNAME_claire_setting:	DB	'claire_setting',0
+FUNCNAME_TK_claire:	DB	'TK_claire',0
+FUNCNAME_engels_setting:	DB	'engels_setting',0
+FUNCNAME_TK_engels:	DB	'TK_engels',0
+FUNCNAME_t6020_soldier_w01_setting:	DB	't6020_soldier_w01_setting',0
+FUNCNAME_TK_t6020_soldier_w01:	DB	'TK_t6020_soldier_w01',0
+FUNCNAME_t5701_soldier_a01_setting:	DB	't5701_soldier_a01_setting',0
+FUNCNAME_TK_t5701_soldier_a01:	DB	'TK_t5701_soldier_a01',0
+FUNCNAME_t5701_soldier_a02_setting:	DB	't5701_soldier_a02_setting',0
+FUNCNAME_TK_t5701_soldier_a02:	DB	'TK_t5701_soldier_a02',0
+FUNCNAME_t5701_soldier_a03_setting:	DB	't5701_soldier_a03_setting',0
+FUNCNAME_TK_t5701_soldier_a03:	DB	'TK_t5701_soldier_a03',0
+FUNCNAME_t5701_soldier_a04_setting:	DB	't5701_soldier_a04_setting',0
+FUNCNAME_TK_t5701_soldier_a04:	DB	'TK_t5701_soldier_a04',0
+FUNCNAME_t5701_soldier_a05_setting:	DB	't5701_soldier_a05_setting',0
+FUNCNAME_TK_t5701_soldier_a05:	DB	'TK_t5701_soldier_a05',0
+FUNCNAME_dominic_setting:	DB	'dominic_setting',0
+FUNCNAME_TK_dominic:	DB	'TK_dominic',0
+FUNCNAME_antone_setting:	DB	'antone_setting',0
+FUNCNAME_TK_antone:	DB	'TK_antone',0
+FUNCNAME_t5701_soldier_s01_setting:	DB	't5701_soldier_s01_setting',0
+FUNCNAME_TK_t5701_soldier_s01:	DB	'TK_t5701_soldier_s01',0
+FUNCNAME_EV_01_25_00:	DB	'EV_01_25_00',0
+FUNCNAME_EV_01_25_02:	DB	'EV_01_25_02',0
+FUNCNAME_EV_01_26_00:	DB	'EV_01_26_00',0
+FUNCNAME_EV_01_26_01:	DB	'EV_01_26_01',0
+FUNCNAME_ET_AniEvKincho:	DB	'ET_AniEvKincho',0
+FUNCNAME_ET_ChrWarpIn:	DB	'ET_ChrWarpIn',0
+FUNCNAME_ET_look_dir_Around1:	DB	'ET_look_dir_Around1',0
+FUNCNAME_ET_look_dir_Around2:	DB	'ET_look_dir_Around2',0
+FUNCNAME_ET_01_26_01_FIE_1:	DB	'ET_01_26_01_FIE_1',0
+FUNCNAME_ET_01_26_01_CRAIG_1:	DB	'ET_01_26_01_CRAIG_1',0
+FUNCNAME_ET_01_26_01_SOLDIER000_1:	DB	'ET_01_26_01_SOLDIER000_1',0
+FUNCNAME_ET_01_26_01_SOLDIER001_1:	DB	'ET_01_26_01_SOLDIER001_1',0
+FUNCNAME_ET_01_26_01_SOLDIER002_1:	DB	'ET_01_26_01_SOLDIER002_1',0
+FUNCNAME_ET_01_26_01_MACHIAS_1:	DB	'ET_01_26_01_MACHIAS_1',0
+FUNCNAME_ET_01_26_01_FIE_2:	DB	'ET_01_26_01_FIE_2',0
+FUNCNAME_QS_2103_02:	DB	'QS_2103_02',0
+FUNCNAME_SB_STUDENT09_MUNCH_01:	DB	'SB_STUDENT09_MUNCH_01',0
+FUNCNAME_SB_STUDENT09_MUNCH_03:	DB	'SB_STUDENT09_MUNCH_03',0
+FUNCNAME_ST_ENTRANCE:	DB	'ST_ENTRANCE',0
+FUNCNAME_EV_to_t5501:	DB	'EV_to_t5501',0
+FUNCNAME__TK_wilginy:	DB	'_TK_wilginy',0
+FUNCNAME__EV_01_26_01:	DB	'_EV_01_26_01',0
+FUNCNAME__SB_STUDENT09_MUNCH_03:	DB	'_SB_STUDENT09_MUNCH_03',0

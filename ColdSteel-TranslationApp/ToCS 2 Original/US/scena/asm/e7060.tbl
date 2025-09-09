@@ -1,0 +1,290 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;e7060.scn 46
+	DD	PreInit					;e7060.scn 55
+	DD	Init					;e7060.scn 72
+	DD	Init_Replay					;e7060.scn 133
+	DD	Reinit					;e7060.scn 318
+	DD	LP_elev					;e7060.scn 337
+	DD	LP_egroom					;e7060.scn 415
+	DD	LP_delivent					;e7060.scn 440
+	DD	LP_valimar					;e7060.scn 465
+	DD	LP_Blade1					;e7060.scn 949
+	DD	LP_Blade2					;e7060.scn 978
+	DD	LP_Blade3					;e7060.scn 1008
+	DD	LP_Stone1					;e7060.scn 1038
+	DD	LP_Stone2					;e7060.scn 1065
+	DD	LP_Stone3					;e7060.scn 1090
+	DD	LP_Stone4					;e7060.scn 1115
+	DD	LP_bike					;e7060.scn 1141
+	DD	Npc_Table					;e7060.scn 1206
+	DD	emma_setting					;e7060.scn 1252
+	DD	celine2_setting					;e7060.scn 1268
+	DD	jusis_setting					;e7060.scn 1284
+	DD	gaius_setting					;e7060.scn 1316
+	DD	george_setting					;e7060.scn 1340
+	DD	angelica_setting					;e7060.scn 1399
+	DD	schmitt_setting					;e7060.scn 1419
+	DD	pola_setting					;e7060.scn 1435
+	DD	mint_setting					;e7060.scn 1469
+	DD	clara_setting					;e7060.scn 1491
+	DD	lambert_setting					;e7060.scn 1535
+	DD	valimar_setting					;e7060.scn 1553
+	DD	bike_setting					;e7060.scn 1572
+	DD	payton_setting					;e7060.scn 1605
+	DD	TK_payton					;e7060.scn 1618
+	DD	e7020_student07_setting					;e7060.scn 1729
+	DD	TK_e7020_student07					;e7060.scn 1742
+	DD	e7020_student08_setting					;e7060.scn 1769
+	DD	TK_e7020_student08					;e7060.scn 1783
+	DD	horse_mach_setting					;e7060.scn 1811
+	DD	TK_horse_mach					;e7060.scn 1830
+	DD	horse_jusis_setting					;e7060.scn 1843
+	DD	TK_horse_jusis					;e7060.scn 1862
+	DD	horse_pola_setting					;e7060.scn 1875
+	DD	TK_horse_pola					;e7060.scn 1894
+	DD	EV_03_00_04					;e7060.scn 1913
+	DD	EV_03_23_00					;e7060.scn 3964
+	DD	EV_03_28_01					;e7060.scn 4594
+	DD	EV_03_52_00					;e7060.scn 5232
+	DD	EV_03_52_01					;e7060.scn 5598
+	DD	EV_03_52_02					;e7060.scn 5733
+	DD	ET_03_52_02_LookToTOWA					;e7060.scn 6587
+	DD	ET_03_52_02_EMO_BIKKURI					;e7060.scn 6594
+	DD	EV_03_45_01					;e7060.scn 6603
+	DD	EV_03_56_00					;e7060.scn 6942
+	DD	EV_03_56_01					;e7060.scn 7142
+	DD	EV_03_56_02					;e7060.scn 7267
+	DD	YR_10_00					;e7060.scn 7730
+	DD	QS_2404_02_C_02					;e7060.scn 8042
+	DD	SB_KIZUNA_ALISA_05					;e7060.scn 8277
+	DD	SB_03_TACHI_SISAKU					;e7060.scn 8538
+	DD	TU_03_SHIP_1F					;e7060.scn 8684
+	DD	TU_03_MOTORCYCLE					;e7060.scn 8900
+	DD	TU_03_VALIMAR					;e7060.scn 9227
+	DD	TU_03_SHIP_COMP					;e7060.scn 9469
+	DD	TU_03_EX_ORB_A					;e7060.scn 9503
+	DD	TU_03_EX_ORB_B					;e7060.scn 9512
+	DD	TU_03_EX_ORB_MAIN					;e7060.scn 9521
+	DD	MM_TOVAR_01					;e7060.scn 10282
+	DD	MM_CLAIRE_01					;e7060.scn 11836
+	DD	MM_SHARON_01					;e7060.scn 13408
+	DD	_LP_elev					;e7060.scn 14969
+	DD	_TK_horse_mach					;e7060.scn 14969
+	DD	_TK_horse_jusis					;e7060.scn 14969
+	DD	_TK_horse_pola					;e7060.scn 14969
+	DD	_EV_03_00_04					;e7060.scn 14969
+	DD	_EV_03_23_00					;e7060.scn 14969
+	DD	_EV_03_28_01					;e7060.scn 14969
+	DD	_EV_03_52_00					;e7060.scn 14969
+	DD	_EV_03_52_01					;e7060.scn 14969
+	DD	_EV_03_52_02					;e7060.scn 14969
+	DD	_EV_03_45_01					;e7060.scn 14969
+	DD	_EV_03_56_00					;e7060.scn 14969
+	DD	_EV_03_56_01					;e7060.scn 14969
+	DD	_QS_2404_02_C_02					;e7060.scn 14969
+	DD	_SB_KIZUNA_ALISA_05					;e7060.scn 14969
+	DD	_TU_03_SHIP_1F					;e7060.scn 14969
+	DD	_TU_03_MOTORCYCLE					;e7060.scn 14969
+	DD	_TU_03_VALIMAR					;e7060.scn 14969
+	DD	_TU_03_SHIP_COMP					;e7060.scn 14969
+	DD	_TU_03_EX_ORB_MAIN					;e7060.scn 14969
+	DD	_MM_TOVAR_01					;e7060.scn 14969
+	DD	_MM_CLAIRE_01					;e7060.scn 14969
+	DD	_MM_SHARON_01					;e7060.scn 14969
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_LP_elev
+	DW	FUNCNAME_LP_egroom
+	DW	FUNCNAME_LP_delivent
+	DW	FUNCNAME_LP_valimar
+	DW	FUNCNAME_LP_Blade1
+	DW	FUNCNAME_LP_Blade2
+	DW	FUNCNAME_LP_Blade3
+	DW	FUNCNAME_LP_Stone1
+	DW	FUNCNAME_LP_Stone2
+	DW	FUNCNAME_LP_Stone3
+	DW	FUNCNAME_LP_Stone4
+	DW	FUNCNAME_LP_bike
+	DW	FUNCNAME_Npc_Table
+	DW	FUNCNAME_emma_setting
+	DW	FUNCNAME_celine2_setting
+	DW	FUNCNAME_jusis_setting
+	DW	FUNCNAME_gaius_setting
+	DW	FUNCNAME_george_setting
+	DW	FUNCNAME_angelica_setting
+	DW	FUNCNAME_schmitt_setting
+	DW	FUNCNAME_pola_setting
+	DW	FUNCNAME_mint_setting
+	DW	FUNCNAME_clara_setting
+	DW	FUNCNAME_lambert_setting
+	DW	FUNCNAME_valimar_setting
+	DW	FUNCNAME_bike_setting
+	DW	FUNCNAME_payton_setting
+	DW	FUNCNAME_TK_payton
+	DW	FUNCNAME_e7020_student07_setting
+	DW	FUNCNAME_TK_e7020_student07
+	DW	FUNCNAME_e7020_student08_setting
+	DW	FUNCNAME_TK_e7020_student08
+	DW	FUNCNAME_horse_mach_setting
+	DW	FUNCNAME_TK_horse_mach
+	DW	FUNCNAME_horse_jusis_setting
+	DW	FUNCNAME_TK_horse_jusis
+	DW	FUNCNAME_horse_pola_setting
+	DW	FUNCNAME_TK_horse_pola
+	DW	FUNCNAME_EV_03_00_04
+	DW	FUNCNAME_EV_03_23_00
+	DW	FUNCNAME_EV_03_28_01
+	DW	FUNCNAME_EV_03_52_00
+	DW	FUNCNAME_EV_03_52_01
+	DW	FUNCNAME_EV_03_52_02
+	DW	FUNCNAME_ET_03_52_02_LookToTOWA
+	DW	FUNCNAME_ET_03_52_02_EMO_BIKKURI
+	DW	FUNCNAME_EV_03_45_01
+	DW	FUNCNAME_EV_03_56_00
+	DW	FUNCNAME_EV_03_56_01
+	DW	FUNCNAME_EV_03_56_02
+	DW	FUNCNAME_YR_10_00
+	DW	FUNCNAME_QS_2404_02_C_02
+	DW	FUNCNAME_SB_KIZUNA_ALISA_05
+	DW	FUNCNAME_SB_03_TACHI_SISAKU
+	DW	FUNCNAME_TU_03_SHIP_1F
+	DW	FUNCNAME_TU_03_MOTORCYCLE
+	DW	FUNCNAME_TU_03_VALIMAR
+	DW	FUNCNAME_TU_03_SHIP_COMP
+	DW	FUNCNAME_TU_03_EX_ORB_A
+	DW	FUNCNAME_TU_03_EX_ORB_B
+	DW	FUNCNAME_TU_03_EX_ORB_MAIN
+	DW	FUNCNAME_MM_TOVAR_01
+	DW	FUNCNAME_MM_CLAIRE_01
+	DW	FUNCNAME_MM_SHARON_01
+	DW	FUNCNAME__LP_elev
+	DW	FUNCNAME__TK_horse_mach
+	DW	FUNCNAME__TK_horse_jusis
+	DW	FUNCNAME__TK_horse_pola
+	DW	FUNCNAME__EV_03_00_04
+	DW	FUNCNAME__EV_03_23_00
+	DW	FUNCNAME__EV_03_28_01
+	DW	FUNCNAME__EV_03_52_00
+	DW	FUNCNAME__EV_03_52_01
+	DW	FUNCNAME__EV_03_52_02
+	DW	FUNCNAME__EV_03_45_01
+	DW	FUNCNAME__EV_03_56_00
+	DW	FUNCNAME__EV_03_56_01
+	DW	FUNCNAME__QS_2404_02_C_02
+	DW	FUNCNAME__SB_KIZUNA_ALISA_05
+	DW	FUNCNAME__TU_03_SHIP_1F
+	DW	FUNCNAME__TU_03_MOTORCYCLE
+	DW	FUNCNAME__TU_03_VALIMAR
+	DW	FUNCNAME__TU_03_SHIP_COMP
+	DW	FUNCNAME__TU_03_EX_ORB_MAIN
+	DW	FUNCNAME__MM_TOVAR_01
+	DW	FUNCNAME__MM_CLAIRE_01
+	DW	FUNCNAME__MM_SHARON_01
+FUNCTION_NAME_TABLE_NUM	EQU	92
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_LP_elev:	DB	'LP_elev',0
+FUNCNAME_LP_egroom:	DB	'LP_egroom',0
+FUNCNAME_LP_delivent:	DB	'LP_delivent',0
+FUNCNAME_LP_valimar:	DB	'LP_valimar',0
+FUNCNAME_LP_Blade1:	DB	'LP_Blade1',0
+FUNCNAME_LP_Blade2:	DB	'LP_Blade2',0
+FUNCNAME_LP_Blade3:	DB	'LP_Blade3',0
+FUNCNAME_LP_Stone1:	DB	'LP_Stone1',0
+FUNCNAME_LP_Stone2:	DB	'LP_Stone2',0
+FUNCNAME_LP_Stone3:	DB	'LP_Stone3',0
+FUNCNAME_LP_Stone4:	DB	'LP_Stone4',0
+FUNCNAME_LP_bike:	DB	'LP_bike',0
+FUNCNAME_Npc_Table:	DB	'Npc_Table',0
+FUNCNAME_emma_setting:	DB	'emma_setting',0
+FUNCNAME_celine2_setting:	DB	'celine2_setting',0
+FUNCNAME_jusis_setting:	DB	'jusis_setting',0
+FUNCNAME_gaius_setting:	DB	'gaius_setting',0
+FUNCNAME_george_setting:	DB	'george_setting',0
+FUNCNAME_angelica_setting:	DB	'angelica_setting',0
+FUNCNAME_schmitt_setting:	DB	'schmitt_setting',0
+FUNCNAME_pola_setting:	DB	'pola_setting',0
+FUNCNAME_mint_setting:	DB	'mint_setting',0
+FUNCNAME_clara_setting:	DB	'clara_setting',0
+FUNCNAME_lambert_setting:	DB	'lambert_setting',0
+FUNCNAME_valimar_setting:	DB	'valimar_setting',0
+FUNCNAME_bike_setting:	DB	'bike_setting',0
+FUNCNAME_payton_setting:	DB	'payton_setting',0
+FUNCNAME_TK_payton:	DB	'TK_payton',0
+FUNCNAME_e7020_student07_setting:	DB	'e7020_student07_setting',0
+FUNCNAME_TK_e7020_student07:	DB	'TK_e7020_student07',0
+FUNCNAME_e7020_student08_setting:	DB	'e7020_student08_setting',0
+FUNCNAME_TK_e7020_student08:	DB	'TK_e7020_student08',0
+FUNCNAME_horse_mach_setting:	DB	'horse_mach_setting',0
+FUNCNAME_TK_horse_mach:	DB	'TK_horse_mach',0
+FUNCNAME_horse_jusis_setting:	DB	'horse_jusis_setting',0
+FUNCNAME_TK_horse_jusis:	DB	'TK_horse_jusis',0
+FUNCNAME_horse_pola_setting:	DB	'horse_pola_setting',0
+FUNCNAME_TK_horse_pola:	DB	'TK_horse_pola',0
+FUNCNAME_EV_03_00_04:	DB	'EV_03_00_04',0
+FUNCNAME_EV_03_23_00:	DB	'EV_03_23_00',0
+FUNCNAME_EV_03_28_01:	DB	'EV_03_28_01',0
+FUNCNAME_EV_03_52_00:	DB	'EV_03_52_00',0
+FUNCNAME_EV_03_52_01:	DB	'EV_03_52_01',0
+FUNCNAME_EV_03_52_02:	DB	'EV_03_52_02',0
+FUNCNAME_ET_03_52_02_LookToTOWA:	DB	'ET_03_52_02_LookToTOWA',0
+FUNCNAME_ET_03_52_02_EMO_BIKKURI:	DB	'ET_03_52_02_EMO_BIKKURI',0
+FUNCNAME_EV_03_45_01:	DB	'EV_03_45_01',0
+FUNCNAME_EV_03_56_00:	DB	'EV_03_56_00',0
+FUNCNAME_EV_03_56_01:	DB	'EV_03_56_01',0
+FUNCNAME_EV_03_56_02:	DB	'EV_03_56_02',0
+FUNCNAME_YR_10_00:	DB	'YR_10_00',0
+FUNCNAME_QS_2404_02_C_02:	DB	'QS_2404_02_C_02',0
+FUNCNAME_SB_KIZUNA_ALISA_05:	DB	'SB_KIZUNA_ALISA_05',0
+FUNCNAME_SB_03_TACHI_SISAKU:	DB	'SB_03_TACHI_SISAKU',0
+FUNCNAME_TU_03_SHIP_1F:	DB	'TU_03_SHIP_1F',0
+FUNCNAME_TU_03_MOTORCYCLE:	DB	'TU_03_MOTORCYCLE',0
+FUNCNAME_TU_03_VALIMAR:	DB	'TU_03_VALIMAR',0
+FUNCNAME_TU_03_SHIP_COMP:	DB	'TU_03_SHIP_COMP',0
+FUNCNAME_TU_03_EX_ORB_A:	DB	'TU_03_EX_ORB_A',0
+FUNCNAME_TU_03_EX_ORB_B:	DB	'TU_03_EX_ORB_B',0
+FUNCNAME_TU_03_EX_ORB_MAIN:	DB	'TU_03_EX_ORB_MAIN',0
+FUNCNAME_MM_TOVAR_01:	DB	'MM_TOVAR_01',0
+FUNCNAME_MM_CLAIRE_01:	DB	'MM_CLAIRE_01',0
+FUNCNAME_MM_SHARON_01:	DB	'MM_SHARON_01',0
+FUNCNAME__LP_elev:	DB	'_LP_elev',0
+FUNCNAME__TK_horse_mach:	DB	'_TK_horse_mach',0
+FUNCNAME__TK_horse_jusis:	DB	'_TK_horse_jusis',0
+FUNCNAME__TK_horse_pola:	DB	'_TK_horse_pola',0
+FUNCNAME__EV_03_00_04:	DB	'_EV_03_00_04',0
+FUNCNAME__EV_03_23_00:	DB	'_EV_03_23_00',0
+FUNCNAME__EV_03_28_01:	DB	'_EV_03_28_01',0
+FUNCNAME__EV_03_52_00:	DB	'_EV_03_52_00',0
+FUNCNAME__EV_03_52_01:	DB	'_EV_03_52_01',0
+FUNCNAME__EV_03_52_02:	DB	'_EV_03_52_02',0
+FUNCNAME__EV_03_45_01:	DB	'_EV_03_45_01',0
+FUNCNAME__EV_03_56_00:	DB	'_EV_03_56_00',0
+FUNCNAME__EV_03_56_01:	DB	'_EV_03_56_01',0
+FUNCNAME__QS_2404_02_C_02:	DB	'_QS_2404_02_C_02',0
+FUNCNAME__SB_KIZUNA_ALISA_05:	DB	'_SB_KIZUNA_ALISA_05',0
+FUNCNAME__TU_03_SHIP_1F:	DB	'_TU_03_SHIP_1F',0
+FUNCNAME__TU_03_MOTORCYCLE:	DB	'_TU_03_MOTORCYCLE',0
+FUNCNAME__TU_03_VALIMAR:	DB	'_TU_03_VALIMAR',0
+FUNCNAME__TU_03_SHIP_COMP:	DB	'_TU_03_SHIP_COMP',0
+FUNCNAME__TU_03_EX_ORB_MAIN:	DB	'_TU_03_EX_ORB_MAIN',0
+FUNCNAME__MM_TOVAR_01:	DB	'_MM_TOVAR_01',0
+FUNCNAME__MM_CLAIRE_01:	DB	'_MM_CLAIRE_01',0
+FUNCNAME__MM_SHARON_01:	DB	'_MM_SHARON_01',0

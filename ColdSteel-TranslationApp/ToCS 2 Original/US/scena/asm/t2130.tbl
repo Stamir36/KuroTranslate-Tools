@@ -1,0 +1,113 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;t2130.scn 44
+	DD	PreInit					;t2130.scn 59
+	DD	Init					;t2130.scn 74
+	DD	Init_Replay					;t2130.scn 107
+	DD	Reinit					;t2130.scn 135
+	DD	LP_Talk01					;t2130.scn 154
+	DD	Npc_Table					;t2130.scn 167
+	DD	gaius_setting					;t2130.scn 191
+	DD	amon_setting					;t2130.scn 216
+	DD	TK_amon					;t2130.scn 228
+	DD	ozwald_setting					;t2130.scn 435
+	DD	TK_ozwald					;t2130.scn 447
+	DD	tatiana_setting					;t2130.scn 585
+	DD	TK_tatiana					;t2130.scn 621
+	DD	rogarl_setting					;t2130.scn 771
+	DD	TK_rogarl					;t2130.scn 783
+	DD	anette_setting					;t2130.scn 934
+	DD	TK_anette					;t2130.scn 953
+	DD	TK_ANETTE_RABY_03_C_02					;t2130.scn 1043
+	DD	raby_setting					;t2130.scn 1099
+	DD	TK_raby					;t2130.scn 1118
+	DD	bulzon_setting					;t2130.scn 1210
+	DD	TK_bulzon					;t2130.scn 1224
+	DD	QS_1303_01					;t2130.scn 1405
+	DD	QS_1303_COMP					;t2130.scn 2094
+	DD	QS_3105_03					;t2130.scn 2306
+	DD	SB_KIZUNA_GAIUS_05					;t2130.scn 2662
+	DD	SB_KIZUNA_ALFIN_03A					;t2130.scn 3028
+	DD	SB_KIZUNA_GAIUS_05_B					;t2130.scn 3747
+	DD	_QS_1303_01					;t2130.scn 3779
+	DD	_QS_1303_COMP					;t2130.scn 3779
+	DD	_SB_KIZUNA_GAIUS_05					;t2130.scn 3779
+	DD	_SB_KIZUNA_ALFIN_03A					;t2130.scn 3779
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_LP_Talk01
+	DW	FUNCNAME_Npc_Table
+	DW	FUNCNAME_gaius_setting
+	DW	FUNCNAME_amon_setting
+	DW	FUNCNAME_TK_amon
+	DW	FUNCNAME_ozwald_setting
+	DW	FUNCNAME_TK_ozwald
+	DW	FUNCNAME_tatiana_setting
+	DW	FUNCNAME_TK_tatiana
+	DW	FUNCNAME_rogarl_setting
+	DW	FUNCNAME_TK_rogarl
+	DW	FUNCNAME_anette_setting
+	DW	FUNCNAME_TK_anette
+	DW	FUNCNAME_TK_ANETTE_RABY_03_C_02
+	DW	FUNCNAME_raby_setting
+	DW	FUNCNAME_TK_raby
+	DW	FUNCNAME_bulzon_setting
+	DW	FUNCNAME_TK_bulzon
+	DW	FUNCNAME_QS_1303_01
+	DW	FUNCNAME_QS_1303_COMP
+	DW	FUNCNAME_QS_3105_03
+	DW	FUNCNAME_SB_KIZUNA_GAIUS_05
+	DW	FUNCNAME_SB_KIZUNA_ALFIN_03A
+	DW	FUNCNAME_SB_KIZUNA_GAIUS_05_B
+	DW	FUNCNAME__QS_1303_01
+	DW	FUNCNAME__QS_1303_COMP
+	DW	FUNCNAME__SB_KIZUNA_GAIUS_05
+	DW	FUNCNAME__SB_KIZUNA_ALFIN_03A
+FUNCTION_NAME_TABLE_NUM	EQU	33
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_LP_Talk01:	DB	'LP_Talk01',0
+FUNCNAME_Npc_Table:	DB	'Npc_Table',0
+FUNCNAME_gaius_setting:	DB	'gaius_setting',0
+FUNCNAME_amon_setting:	DB	'amon_setting',0
+FUNCNAME_TK_amon:	DB	'TK_amon',0
+FUNCNAME_ozwald_setting:	DB	'ozwald_setting',0
+FUNCNAME_TK_ozwald:	DB	'TK_ozwald',0
+FUNCNAME_tatiana_setting:	DB	'tatiana_setting',0
+FUNCNAME_TK_tatiana:	DB	'TK_tatiana',0
+FUNCNAME_rogarl_setting:	DB	'rogarl_setting',0
+FUNCNAME_TK_rogarl:	DB	'TK_rogarl',0
+FUNCNAME_anette_setting:	DB	'anette_setting',0
+FUNCNAME_TK_anette:	DB	'TK_anette',0
+FUNCNAME_TK_ANETTE_RABY_03_C_02:	DB	'TK_ANETTE_RABY_03_C_02',0
+FUNCNAME_raby_setting:	DB	'raby_setting',0
+FUNCNAME_TK_raby:	DB	'TK_raby',0
+FUNCNAME_bulzon_setting:	DB	'bulzon_setting',0
+FUNCNAME_TK_bulzon:	DB	'TK_bulzon',0
+FUNCNAME_QS_1303_01:	DB	'QS_1303_01',0
+FUNCNAME_QS_1303_COMP:	DB	'QS_1303_COMP',0
+FUNCNAME_QS_3105_03:	DB	'QS_3105_03',0
+FUNCNAME_SB_KIZUNA_GAIUS_05:	DB	'SB_KIZUNA_GAIUS_05',0
+FUNCNAME_SB_KIZUNA_ALFIN_03A:	DB	'SB_KIZUNA_ALFIN_03A',0
+FUNCNAME_SB_KIZUNA_GAIUS_05_B:	DB	'SB_KIZUNA_GAIUS_05_B',0
+FUNCNAME__QS_1303_01:	DB	'_QS_1303_01',0
+FUNCNAME__QS_1303_COMP:	DB	'_QS_1303_COMP',0
+FUNCNAME__SB_KIZUNA_GAIUS_05:	DB	'_SB_KIZUNA_GAIUS_05',0
+FUNCNAME__SB_KIZUNA_ALFIN_03A:	DB	'_SB_KIZUNA_ALFIN_03A',0

@@ -1,0 +1,215 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;t0020.scn 42
+	DD	PreInit					;t0020.scn 83
+	DD	Init					;t0020.scn 103
+	DD	Init_Replay					;t0020.scn 149
+	DD	Reinit					;t0020.scn 251
+	DD	LP_1_I					;t0020.scn 270
+	DD	LP_1_II					;t0020.scn 296
+	DD	LP_1_III					;t0020.scn 322
+	DD	LP_1_IV					;t0020.scn 348
+	DD	LP_1_V					;t0020.scn 374
+	DD	LP_1_VII					;t0020.scn 400
+	DD	LP_1_VII_board					;t0020.scn 475
+	DD	LP_door05					;t0020.scn 556
+	DD	LP_door02					;t0020.scn 584
+	DD	LP_door10					;t0020.scn 612
+	DD	LP_door04					;t0020.scn 639
+	DD	LP_door12					;t0020.scn 667
+	DD	LP_door03					;t0020.scn 693
+	DD	LP_door11					;t0020.scn 721
+	DD	Npc_Table					;t0020.scn 754
+	DD	gaius_setting					;t0020.scn 809
+	DD	clara_setting					;t0020.scn 838
+	DD	linde_setting					;t0020.scn 865
+	DD	vivi_setting					;t0020.scn 888
+	DD	nicholas_setting					;t0020.scn 912
+	DD	heinrich_setting					;t0020.scn 946
+	DD	NPC_move_HEINRICH2					;t0020.scn 960
+	DD	eliot_setting					;t0020.scn 1001
+	DD	millium_setting					;t0020.scn 1017
+	DD	haibel_setting					;t0020.scn 1034
+	DD	bridget_setting					;t0020.scn 1049
+	DD	mint_setting					;t0020.scn 1065
+	DD	margarita_setting					;t0020.scn 1081
+	DD	rosine_setting					;t0020.scn 1099
+	DD	colette_setting					;t0020.scn 1116
+	DD	NPC_move_COLETTE					;t0020.scn 1130
+	DD	TK_gaius_clara_06_03					;t0020.scn 1218
+	DD	TK_vivi_linde_04_01					;t0020.scn 1267
+	DD	EV_06_00_04					;t0020.scn 1342
+	DD	QS_5103_02_C_02					;t0020.scn 6739
+	DD	SB_06_THOMAS_05					;t0020.scn 7115
+	DD	MM_ALISA_02					;t0020.scn 7153
+	DD	MM_ELIOT_02					;t0020.scn 7625
+	DD	MM_LAURA_02					;t0020.scn 8116
+	DD	MM_MACHIAS_02					;t0020.scn 8595
+	DD	MM_EMMA_02					;t0020.scn 9102
+	DD	MM_JUSIS_02					;t0020.scn 9588
+	DD	MM_FIE_02					;t0020.scn 10137
+	DD	MM_GAIUS_02					;t0020.scn 10625
+	DD	MM_MILLIUM_02					;t0020.scn 11147
+	DD	MM_SARA_02					;t0020.scn 11644
+	DD	_LP_door05					;t0020.scn 12490
+	DD	_LP_door02					;t0020.scn 12490
+	DD	_LP_door04					;t0020.scn 12490
+	DD	_LP_door03					;t0020.scn 12490
+	DD	_EV_06_00_04					;t0020.scn 12490
+	DD	_QS_5103_02_C_02					;t0020.scn 12490
+	DD	_MM_ALISA_02					;t0020.scn 12490
+	DD	_MM_ELIOT_02					;t0020.scn 12490
+	DD	_MM_LAURA_02					;t0020.scn 12490
+	DD	_MM_MACHIAS_02					;t0020.scn 12490
+	DD	_MM_EMMA_02					;t0020.scn 12490
+	DD	_MM_JUSIS_02					;t0020.scn 12490
+	DD	_MM_FIE_02					;t0020.scn 12490
+	DD	_MM_GAIUS_02					;t0020.scn 12490
+	DD	_MM_MILLIUM_02					;t0020.scn 12490
+	DD	_MM_SARA_02					;t0020.scn 12490
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_LP_1_I
+	DW	FUNCNAME_LP_1_II
+	DW	FUNCNAME_LP_1_III
+	DW	FUNCNAME_LP_1_IV
+	DW	FUNCNAME_LP_1_V
+	DW	FUNCNAME_LP_1_VII
+	DW	FUNCNAME_LP_1_VII_board
+	DW	FUNCNAME_LP_door05
+	DW	FUNCNAME_LP_door02
+	DW	FUNCNAME_LP_door10
+	DW	FUNCNAME_LP_door04
+	DW	FUNCNAME_LP_door12
+	DW	FUNCNAME_LP_door03
+	DW	FUNCNAME_LP_door11
+	DW	FUNCNAME_Npc_Table
+	DW	FUNCNAME_gaius_setting
+	DW	FUNCNAME_clara_setting
+	DW	FUNCNAME_linde_setting
+	DW	FUNCNAME_vivi_setting
+	DW	FUNCNAME_nicholas_setting
+	DW	FUNCNAME_heinrich_setting
+	DW	FUNCNAME_NPC_move_HEINRICH2
+	DW	FUNCNAME_eliot_setting
+	DW	FUNCNAME_millium_setting
+	DW	FUNCNAME_haibel_setting
+	DW	FUNCNAME_bridget_setting
+	DW	FUNCNAME_mint_setting
+	DW	FUNCNAME_margarita_setting
+	DW	FUNCNAME_rosine_setting
+	DW	FUNCNAME_colette_setting
+	DW	FUNCNAME_NPC_move_COLETTE
+	DW	FUNCNAME_TK_gaius_clara_06_03
+	DW	FUNCNAME_TK_vivi_linde_04_01
+	DW	FUNCNAME_EV_06_00_04
+	DW	FUNCNAME_QS_5103_02_C_02
+	DW	FUNCNAME_SB_06_THOMAS_05
+	DW	FUNCNAME_MM_ALISA_02
+	DW	FUNCNAME_MM_ELIOT_02
+	DW	FUNCNAME_MM_LAURA_02
+	DW	FUNCNAME_MM_MACHIAS_02
+	DW	FUNCNAME_MM_EMMA_02
+	DW	FUNCNAME_MM_JUSIS_02
+	DW	FUNCNAME_MM_FIE_02
+	DW	FUNCNAME_MM_GAIUS_02
+	DW	FUNCNAME_MM_MILLIUM_02
+	DW	FUNCNAME_MM_SARA_02
+	DW	FUNCNAME__LP_door05
+	DW	FUNCNAME__LP_door02
+	DW	FUNCNAME__LP_door04
+	DW	FUNCNAME__LP_door03
+	DW	FUNCNAME__EV_06_00_04
+	DW	FUNCNAME__QS_5103_02_C_02
+	DW	FUNCNAME__MM_ALISA_02
+	DW	FUNCNAME__MM_ELIOT_02
+	DW	FUNCNAME__MM_LAURA_02
+	DW	FUNCNAME__MM_MACHIAS_02
+	DW	FUNCNAME__MM_EMMA_02
+	DW	FUNCNAME__MM_JUSIS_02
+	DW	FUNCNAME__MM_FIE_02
+	DW	FUNCNAME__MM_GAIUS_02
+	DW	FUNCNAME__MM_MILLIUM_02
+	DW	FUNCNAME__MM_SARA_02
+FUNCTION_NAME_TABLE_NUM	EQU	67
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_LP_1_I:	DB	'LP_1_I',0
+FUNCNAME_LP_1_II:	DB	'LP_1_II',0
+FUNCNAME_LP_1_III:	DB	'LP_1_III',0
+FUNCNAME_LP_1_IV:	DB	'LP_1_IV',0
+FUNCNAME_LP_1_V:	DB	'LP_1_V',0
+FUNCNAME_LP_1_VII:	DB	'LP_1_VII',0
+FUNCNAME_LP_1_VII_board:	DB	'LP_1_VII_board',0
+FUNCNAME_LP_door05:	DB	'LP_door05',0
+FUNCNAME_LP_door02:	DB	'LP_door02',0
+FUNCNAME_LP_door10:	DB	'LP_door10',0
+FUNCNAME_LP_door04:	DB	'LP_door04',0
+FUNCNAME_LP_door12:	DB	'LP_door12',0
+FUNCNAME_LP_door03:	DB	'LP_door03',0
+FUNCNAME_LP_door11:	DB	'LP_door11',0
+FUNCNAME_Npc_Table:	DB	'Npc_Table',0
+FUNCNAME_gaius_setting:	DB	'gaius_setting',0
+FUNCNAME_clara_setting:	DB	'clara_setting',0
+FUNCNAME_linde_setting:	DB	'linde_setting',0
+FUNCNAME_vivi_setting:	DB	'vivi_setting',0
+FUNCNAME_nicholas_setting:	DB	'nicholas_setting',0
+FUNCNAME_heinrich_setting:	DB	'heinrich_setting',0
+FUNCNAME_NPC_move_HEINRICH2:	DB	'NPC_move_HEINRICH2',0
+FUNCNAME_eliot_setting:	DB	'eliot_setting',0
+FUNCNAME_millium_setting:	DB	'millium_setting',0
+FUNCNAME_haibel_setting:	DB	'haibel_setting',0
+FUNCNAME_bridget_setting:	DB	'bridget_setting',0
+FUNCNAME_mint_setting:	DB	'mint_setting',0
+FUNCNAME_margarita_setting:	DB	'margarita_setting',0
+FUNCNAME_rosine_setting:	DB	'rosine_setting',0
+FUNCNAME_colette_setting:	DB	'colette_setting',0
+FUNCNAME_NPC_move_COLETTE:	DB	'NPC_move_COLETTE',0
+FUNCNAME_TK_gaius_clara_06_03:	DB	'TK_gaius_clara_06_03',0
+FUNCNAME_TK_vivi_linde_04_01:	DB	'TK_vivi_linde_04_01',0
+FUNCNAME_EV_06_00_04:	DB	'EV_06_00_04',0
+FUNCNAME_QS_5103_02_C_02:	DB	'QS_5103_02_C_02',0
+FUNCNAME_SB_06_THOMAS_05:	DB	'SB_06_THOMAS_05',0
+FUNCNAME_MM_ALISA_02:	DB	'MM_ALISA_02',0
+FUNCNAME_MM_ELIOT_02:	DB	'MM_ELIOT_02',0
+FUNCNAME_MM_LAURA_02:	DB	'MM_LAURA_02',0
+FUNCNAME_MM_MACHIAS_02:	DB	'MM_MACHIAS_02',0
+FUNCNAME_MM_EMMA_02:	DB	'MM_EMMA_02',0
+FUNCNAME_MM_JUSIS_02:	DB	'MM_JUSIS_02',0
+FUNCNAME_MM_FIE_02:	DB	'MM_FIE_02',0
+FUNCNAME_MM_GAIUS_02:	DB	'MM_GAIUS_02',0
+FUNCNAME_MM_MILLIUM_02:	DB	'MM_MILLIUM_02',0
+FUNCNAME_MM_SARA_02:	DB	'MM_SARA_02',0
+FUNCNAME__LP_door05:	DB	'_LP_door05',0
+FUNCNAME__LP_door02:	DB	'_LP_door02',0
+FUNCNAME__LP_door04:	DB	'_LP_door04',0
+FUNCNAME__LP_door03:	DB	'_LP_door03',0
+FUNCNAME__EV_06_00_04:	DB	'_EV_06_00_04',0
+FUNCNAME__QS_5103_02_C_02:	DB	'_QS_5103_02_C_02',0
+FUNCNAME__MM_ALISA_02:	DB	'_MM_ALISA_02',0
+FUNCNAME__MM_ELIOT_02:	DB	'_MM_ELIOT_02',0
+FUNCNAME__MM_LAURA_02:	DB	'_MM_LAURA_02',0
+FUNCNAME__MM_MACHIAS_02:	DB	'_MM_MACHIAS_02',0
+FUNCNAME__MM_EMMA_02:	DB	'_MM_EMMA_02',0
+FUNCNAME__MM_JUSIS_02:	DB	'_MM_JUSIS_02',0
+FUNCNAME__MM_FIE_02:	DB	'_MM_FIE_02',0
+FUNCNAME__MM_GAIUS_02:	DB	'_MM_GAIUS_02',0
+FUNCNAME__MM_MILLIUM_02:	DB	'_MM_MILLIUM_02',0
+FUNCNAME__MM_SARA_02:	DB	'_MM_SARA_02',0

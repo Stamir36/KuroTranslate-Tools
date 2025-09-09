@@ -1,0 +1,56 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;t3020.scn 45
+	DD	PreInit					;t3020.scn 52
+	DD	Init					;t3020.scn 67
+	DD	Init_Replay					;t3020.scn 100
+	DD	Reinit					;t3020.scn 131
+	DD	Npc_Table					;t3020.scn 157
+	DD	rigna_setting					;t3020.scn 185
+	DD	TK_rigna					;t3020.scn 198
+	DD	dankan_setting					;t3020.scn 267
+	DD	TK_dankan					;t3020.scn 279
+	DD	watteau_setting					;t3020.scn 685
+	DD	TK_watteau					;t3020.scn 697
+	DD	SB_STUDENT13_HUGO_02					;t3020.scn 1094
+	DD	_SB_STUDENT13_HUGO_02					;t3020.scn 1378
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_Npc_Table
+	DW	FUNCNAME_rigna_setting
+	DW	FUNCNAME_TK_rigna
+	DW	FUNCNAME_dankan_setting
+	DW	FUNCNAME_TK_dankan
+	DW	FUNCNAME_watteau_setting
+	DW	FUNCNAME_TK_watteau
+	DW	FUNCNAME_SB_STUDENT13_HUGO_02
+	DW	FUNCNAME__SB_STUDENT13_HUGO_02
+FUNCTION_NAME_TABLE_NUM	EQU	14
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_Npc_Table:	DB	'Npc_Table',0
+FUNCNAME_rigna_setting:	DB	'rigna_setting',0
+FUNCNAME_TK_rigna:	DB	'TK_rigna',0
+FUNCNAME_dankan_setting:	DB	'dankan_setting',0
+FUNCNAME_TK_dankan:	DB	'TK_dankan',0
+FUNCNAME_watteau_setting:	DB	'watteau_setting',0
+FUNCNAME_TK_watteau:	DB	'TK_watteau',0
+FUNCNAME_SB_STUDENT13_HUGO_02:	DB	'SB_STUDENT13_HUGO_02',0
+FUNCNAME__SB_STUDENT13_HUGO_02:	DB	'_SB_STUDENT13_HUGO_02',0

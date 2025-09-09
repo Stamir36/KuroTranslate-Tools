@@ -1,0 +1,464 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;t1500.scn 74
+	DD	PreInit					;t1500.scn 89
+	DD	Init					;t1500.scn 108
+	DD	Init_Replay					;t1500.scn 154
+	DD	Reinit					;t1500.scn 267
+	DD	LP_Board01					;t1500.scn 300
+	DD	LP_paper					;t1500.scn 315
+	DD	AV_01003					;t1500.scn 350
+	DD	AV_01003_2					;t1500.scn 355
+	DD	AV_01003_2b					;t1500.scn 362
+	DD	Npc_Table					;t1500.scn 369
+	DD	rosine_setting					;t1500.scn 432
+	DD	evnpc_soldier_000_setting					;t1500.scn 445
+	DD	evnpc_soldier_001_setting					;t1500.scn 461
+	DD	alisa_setting					;t1500.scn 485
+	DD	eliot_setting					;t1500.scn 501
+	DD	emma_setting					;t1500.scn 518
+	DD	machias_setting					;t1500.scn 537
+	DD	jusis_setting					;t1500.scn 559
+	DD	gaius_setting					;t1500.scn 575
+	DD	towa_setting					;t1500.scn 592
+	DD	risy_setting					;t1500.scn 617
+	DD	TK_risy					;t1500.scn 629
+	DD	belta_setting					;t1500.scn 716
+	DD	TK_belta					;t1500.scn 743
+	DD	baroc_setting					;t1500.scn 913
+	DD	TK_baroc					;t1500.scn 925
+	DD	marco_setting					;t1500.scn 1094
+	DD	TK_marco					;t1500.scn 1113
+	DD	TK_marco_hainz_01_A_03					;t1500.scn 1339
+	DD	givson_setting					;t1500.scn 1379
+	DD	TK_givson					;t1500.scn 1398
+	DD	rymon_setting					;t1500.scn 1608
+	DD	TK_rymon					;t1500.scn 1620
+	DD	hainz_setting					;t1500.scn 2031
+	DD	TK_hainz					;t1500.scn 2043
+	DD	rouche_setting					;t1500.scn 2121
+	DD	TK_rouche					;t1500.scn 2133
+	DD	frint_setting					;t1500.scn 2387
+	DD	TK_frint					;t1500.scn 2406
+	DD	colnet_setting					;t1500.scn 2664
+	DD	TK_colnet					;t1500.scn 2676
+	DD	anita_setting					;t1500.scn 2964
+	DD	TK_anita					;t1500.scn 2991
+	DD	squaro_setting					;t1500.scn 3215
+	DD	TK_squaro					;t1500.scn 3227
+	DD	tabroo_setting					;t1500.scn 3279
+	DD	TK_tabroo					;t1500.scn 3293
+	DD	hamar_setting					;t1500.scn 3555
+	DD	TK_hamar					;t1500.scn 3574
+	DD	NPC_move_hamar					;t1500.scn 3773
+	DD	ozet_setting					;t1500.scn 3817
+	DD	TK_ozet					;t1500.scn 3837
+	DD	NPC_move_ozet_01					;t1500.scn 4046
+	DD	NPC_move_ozet_02					;t1500.scn 4096
+	DD	chris_setting					;t1500.scn 4128
+	DD	TK_chris					;t1500.scn 4153
+	DD	suesy_setting					;t1500.scn 4414
+	DD	TK_suesy					;t1500.scn 4433
+	DD	jake_setting					;t1500.scn 4556
+	DD	TK_jake					;t1500.scn 4577
+	DD	mina_setting					;t1500.scn 4700
+	DD	TK_mina					;t1500.scn 4712
+	DD	ruru_setting					;t1500.scn 4909
+	DD	TK_ruru					;t1500.scn 4920
+	DD	t1500_soldier_r01_setting					;t1500.scn 4935
+	DD	TK_t1500_soldier_r01					;t1500.scn 4947
+	DD	t1500_soldier_r02_setting					;t1500.scn 5096
+	DD	TK_t1500_soldier_r02					;t1500.scn 5109
+	DD	t1500_soldier_r03_setting					;t1500.scn 5192
+	DD	TK_t1500_soldier_r03					;t1500.scn 5205
+	DD	kissling_setting					;t1500.scn 5283
+	DD	TK_kissling					;t1500.scn 5296
+	DD	t1500_soldier_s01_setting					;t1500.scn 5355
+	DD	TK_t1500_soldier_s01					;t1500.scn 5368
+	DD	t1500_soldier_s02_setting					;t1500.scn 5400
+	DD	TK_t1500_soldier_s02					;t1500.scn 5414
+	DD	knocker_setting					;t1500.scn 5465
+	DD	TK_knocker					;t1500.scn 5477
+	DD	dominic_setting					;t1500.scn 5596
+	DD	TK_dominic					;t1500.scn 5610
+	DD	andore_setting					;t1500.scn 5701
+	DD	TK_andore					;t1500.scn 5715
+	DD	loretta_setting					;t1500.scn 5801
+	DD	TK_loretta					;t1500.scn 5832
+	DD	mika_setting					;t1500.scn 5856
+	DD	TK_mika					;t1500.scn 5886
+	DD	jonson_setting					;t1500.scn 5909
+	DD	TK_jonson					;t1500.scn 5922
+	DD	EV_01_08_00					;t1500.scn 6111
+	DD	EV_01_11_00					;t1500.scn 6360
+	DD	ET_01_11_00_SOLDIER000_1					;t1500.scn 7164
+	DD	ET_01_11_00_SOLDIER001_1					;t1500.scn 7177
+	DD	ET_01_11_00_REAN_1					;t1500.scn 7191
+	DD	ET_01_11_00_CELINE2_1					;t1500.scn 7197
+	DD	ET_01_11_00_ROSINE_1					;t1500.scn 7203
+	DD	EV_01_12_00					;t1500.scn 7214
+	DD	ET_01_12_00_CHRIS_1					;t1500.scn 8095
+	DD	EV_03_05_04					;t1500.scn 8108
+	DD	EV_03_07_00					;t1500.scn 8376
+	DD	ET_03_07_00_MoveBECKY					;t1500.scn 9303
+	DD	QS_1101_02					;t1500.scn 9321
+	DD	QS_1103_03					;t1500.scn 9595
+	DD	QS_1103_MOVE_ALBEL					;t1500.scn 10140
+	DD	QS_1103_MOVE_LORETTA					;t1500.scn 10168
+	DD	QS_1103_MOVE_MIKA					;t1500.scn 10197
+	DD	SB_KIZUNA_ALISA_03					;t1500.scn 10235
+	DD	SB_KIZUNA_ELIOT_03					;t1500.scn 10532
+	DD	SB_KIZUNA_MACHIAS_03					;t1500.scn 10876
+	DD	SB_KIZUNA_MACHIAS_03B					;t1500.scn 11021
+	DD	SB_KIZUNA_MACHIAS_03D					;t1500.scn 11111
+	DD	SB_KIZUNA_JUSIS_03					;t1500.scn 11280
+	DD	SB_KIZUNA_SARA_03A					;t1500.scn 11785
+	DD	SB_KIZUNA_ALFIN_01					;t1500.scn 12057
+	DD	SB_KIZUNA_MACHIAS_03_B					;t1500.scn 12788
+	DD	SB_KIZUNA_ALISA_03_B					;t1500.scn 12815
+	DD	SB_KIZUNA_ELIOT_03_B					;t1500.scn 12842
+	DD	SB_KIZUNA_EMMA_03_B					;t1500.scn 12869
+	DD	SB_KIZUNA_JUSIS_03_B					;t1500.scn 12896
+	DD	SB_KIZUNA_GAIUS_03_B					;t1500.scn 12923
+	DD	SB_KIZUNA_TOWA_01_B					;t1500.scn 12950
+	DD	SB_KIZUNA_ALFIN_01_B					;t1500.scn 12977
+	DD	SB_01_UNEQUIP_MEGANE					;t1500.scn 13006
+	DD	TU_01_QUEST_NOTE					;t1500.scn 13351
+	DD	TU_03_FREEPOINT					;t1500.scn 13684
+	DD	YR_19_02					;t1500.scn 13753
+	DD	ST_STATION					;t1500.scn 13957
+	DD	ST_WESTGATE					;t1500.scn 14001
+	DD	ST_EASTGATE					;t1500.scn 14067
+	DD	ST_ARMY_POSY1					;t1500.scn 14110
+	DD	ST_ARMY_POSY2					;t1500.scn 14162
+	DD	_TK_marco					;t1500.scn 14216
+	DD	_TK_givson					;t1500.scn 14216
+	DD	_TK_ruru					;t1500.scn 14216
+	DD	_TK_andore					;t1500.scn 14216
+	DD	_EV_01_08_00					;t1500.scn 14216
+	DD	_EV_01_11_00					;t1500.scn 14216
+	DD	_EV_01_12_00					;t1500.scn 14216
+	DD	_EV_03_05_04					;t1500.scn 14216
+	DD	_EV_03_07_00					;t1500.scn 14216
+	DD	_QS_1103_03					;t1500.scn 14216
+	DD	_SB_KIZUNA_ELIOT_03					;t1500.scn 14216
+	DD	_SB_KIZUNA_MACHIAS_03					;t1500.scn 14216
+	DD	_SB_KIZUNA_MACHIAS_03D					;t1500.scn 14216
+	DD	_SB_KIZUNA_JUSIS_03					;t1500.scn 14216
+	DD	_SB_KIZUNA_SARA_03A					;t1500.scn 14216
+	DD	_SB_KIZUNA_ALFIN_01					;t1500.scn 14216
+	DD	_SB_01_UNEQUIP_MEGANE					;t1500.scn 14216
+	DD	_TU_01_QUEST_NOTE					;t1500.scn 14216
+	DD	_TU_03_FREEPOINT					;t1500.scn 14216
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_LP_Board01
+	DW	FUNCNAME_LP_paper
+	DW	FUNCNAME_AV_01003
+	DW	FUNCNAME_AV_01003_2
+	DW	FUNCNAME_AV_01003_2b
+	DW	FUNCNAME_Npc_Table
+	DW	FUNCNAME_rosine_setting
+	DW	FUNCNAME_evnpc_soldier_000_setting
+	DW	FUNCNAME_evnpc_soldier_001_setting
+	DW	FUNCNAME_alisa_setting
+	DW	FUNCNAME_eliot_setting
+	DW	FUNCNAME_emma_setting
+	DW	FUNCNAME_machias_setting
+	DW	FUNCNAME_jusis_setting
+	DW	FUNCNAME_gaius_setting
+	DW	FUNCNAME_towa_setting
+	DW	FUNCNAME_risy_setting
+	DW	FUNCNAME_TK_risy
+	DW	FUNCNAME_belta_setting
+	DW	FUNCNAME_TK_belta
+	DW	FUNCNAME_baroc_setting
+	DW	FUNCNAME_TK_baroc
+	DW	FUNCNAME_marco_setting
+	DW	FUNCNAME_TK_marco
+	DW	FUNCNAME_TK_marco_hainz_01_A_03
+	DW	FUNCNAME_givson_setting
+	DW	FUNCNAME_TK_givson
+	DW	FUNCNAME_rymon_setting
+	DW	FUNCNAME_TK_rymon
+	DW	FUNCNAME_hainz_setting
+	DW	FUNCNAME_TK_hainz
+	DW	FUNCNAME_rouche_setting
+	DW	FUNCNAME_TK_rouche
+	DW	FUNCNAME_frint_setting
+	DW	FUNCNAME_TK_frint
+	DW	FUNCNAME_colnet_setting
+	DW	FUNCNAME_TK_colnet
+	DW	FUNCNAME_anita_setting
+	DW	FUNCNAME_TK_anita
+	DW	FUNCNAME_squaro_setting
+	DW	FUNCNAME_TK_squaro
+	DW	FUNCNAME_tabroo_setting
+	DW	FUNCNAME_TK_tabroo
+	DW	FUNCNAME_hamar_setting
+	DW	FUNCNAME_TK_hamar
+	DW	FUNCNAME_NPC_move_hamar
+	DW	FUNCNAME_ozet_setting
+	DW	FUNCNAME_TK_ozet
+	DW	FUNCNAME_NPC_move_ozet_01
+	DW	FUNCNAME_NPC_move_ozet_02
+	DW	FUNCNAME_chris_setting
+	DW	FUNCNAME_TK_chris
+	DW	FUNCNAME_suesy_setting
+	DW	FUNCNAME_TK_suesy
+	DW	FUNCNAME_jake_setting
+	DW	FUNCNAME_TK_jake
+	DW	FUNCNAME_mina_setting
+	DW	FUNCNAME_TK_mina
+	DW	FUNCNAME_ruru_setting
+	DW	FUNCNAME_TK_ruru
+	DW	FUNCNAME_t1500_soldier_r01_setting
+	DW	FUNCNAME_TK_t1500_soldier_r01
+	DW	FUNCNAME_t1500_soldier_r02_setting
+	DW	FUNCNAME_TK_t1500_soldier_r02
+	DW	FUNCNAME_t1500_soldier_r03_setting
+	DW	FUNCNAME_TK_t1500_soldier_r03
+	DW	FUNCNAME_kissling_setting
+	DW	FUNCNAME_TK_kissling
+	DW	FUNCNAME_t1500_soldier_s01_setting
+	DW	FUNCNAME_TK_t1500_soldier_s01
+	DW	FUNCNAME_t1500_soldier_s02_setting
+	DW	FUNCNAME_TK_t1500_soldier_s02
+	DW	FUNCNAME_knocker_setting
+	DW	FUNCNAME_TK_knocker
+	DW	FUNCNAME_dominic_setting
+	DW	FUNCNAME_TK_dominic
+	DW	FUNCNAME_andore_setting
+	DW	FUNCNAME_TK_andore
+	DW	FUNCNAME_loretta_setting
+	DW	FUNCNAME_TK_loretta
+	DW	FUNCNAME_mika_setting
+	DW	FUNCNAME_TK_mika
+	DW	FUNCNAME_jonson_setting
+	DW	FUNCNAME_TK_jonson
+	DW	FUNCNAME_EV_01_08_00
+	DW	FUNCNAME_EV_01_11_00
+	DW	FUNCNAME_ET_01_11_00_SOLDIER000_1
+	DW	FUNCNAME_ET_01_11_00_SOLDIER001_1
+	DW	FUNCNAME_ET_01_11_00_REAN_1
+	DW	FUNCNAME_ET_01_11_00_CELINE2_1
+	DW	FUNCNAME_ET_01_11_00_ROSINE_1
+	DW	FUNCNAME_EV_01_12_00
+	DW	FUNCNAME_ET_01_12_00_CHRIS_1
+	DW	FUNCNAME_EV_03_05_04
+	DW	FUNCNAME_EV_03_07_00
+	DW	FUNCNAME_ET_03_07_00_MoveBECKY
+	DW	FUNCNAME_QS_1101_02
+	DW	FUNCNAME_QS_1103_03
+	DW	FUNCNAME_QS_1103_MOVE_ALBEL
+	DW	FUNCNAME_QS_1103_MOVE_LORETTA
+	DW	FUNCNAME_QS_1103_MOVE_MIKA
+	DW	FUNCNAME_SB_KIZUNA_ALISA_03
+	DW	FUNCNAME_SB_KIZUNA_ELIOT_03
+	DW	FUNCNAME_SB_KIZUNA_MACHIAS_03
+	DW	FUNCNAME_SB_KIZUNA_MACHIAS_03B
+	DW	FUNCNAME_SB_KIZUNA_MACHIAS_03D
+	DW	FUNCNAME_SB_KIZUNA_JUSIS_03
+	DW	FUNCNAME_SB_KIZUNA_SARA_03A
+	DW	FUNCNAME_SB_KIZUNA_ALFIN_01
+	DW	FUNCNAME_SB_KIZUNA_MACHIAS_03_B
+	DW	FUNCNAME_SB_KIZUNA_ALISA_03_B
+	DW	FUNCNAME_SB_KIZUNA_ELIOT_03_B
+	DW	FUNCNAME_SB_KIZUNA_EMMA_03_B
+	DW	FUNCNAME_SB_KIZUNA_JUSIS_03_B
+	DW	FUNCNAME_SB_KIZUNA_GAIUS_03_B
+	DW	FUNCNAME_SB_KIZUNA_TOWA_01_B
+	DW	FUNCNAME_SB_KIZUNA_ALFIN_01_B
+	DW	FUNCNAME_SB_01_UNEQUIP_MEGANE
+	DW	FUNCNAME_TU_01_QUEST_NOTE
+	DW	FUNCNAME_TU_03_FREEPOINT
+	DW	FUNCNAME_YR_19_02
+	DW	FUNCNAME_ST_STATION
+	DW	FUNCNAME_ST_WESTGATE
+	DW	FUNCNAME_ST_EASTGATE
+	DW	FUNCNAME_ST_ARMY_POSY1
+	DW	FUNCNAME_ST_ARMY_POSY2
+	DW	FUNCNAME__TK_marco
+	DW	FUNCNAME__TK_givson
+	DW	FUNCNAME__TK_ruru
+	DW	FUNCNAME__TK_andore
+	DW	FUNCNAME__EV_01_08_00
+	DW	FUNCNAME__EV_01_11_00
+	DW	FUNCNAME__EV_01_12_00
+	DW	FUNCNAME__EV_03_05_04
+	DW	FUNCNAME__EV_03_07_00
+	DW	FUNCNAME__QS_1103_03
+	DW	FUNCNAME__SB_KIZUNA_ELIOT_03
+	DW	FUNCNAME__SB_KIZUNA_MACHIAS_03
+	DW	FUNCNAME__SB_KIZUNA_MACHIAS_03D
+	DW	FUNCNAME__SB_KIZUNA_JUSIS_03
+	DW	FUNCNAME__SB_KIZUNA_SARA_03A
+	DW	FUNCNAME__SB_KIZUNA_ALFIN_01
+	DW	FUNCNAME__SB_01_UNEQUIP_MEGANE
+	DW	FUNCNAME__TU_01_QUEST_NOTE
+	DW	FUNCNAME__TU_03_FREEPOINT
+FUNCTION_NAME_TABLE_NUM	EQU	150
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_LP_Board01:	DB	'LP_Board01',0
+FUNCNAME_LP_paper:	DB	'LP_paper',0
+FUNCNAME_AV_01003:	DB	'AV_01003',0
+FUNCNAME_AV_01003_2:	DB	'AV_01003_2',0
+FUNCNAME_AV_01003_2b:	DB	'AV_01003_2b',0
+FUNCNAME_Npc_Table:	DB	'Npc_Table',0
+FUNCNAME_rosine_setting:	DB	'rosine_setting',0
+FUNCNAME_evnpc_soldier_000_setting:	DB	'evnpc_soldier_000_setting',0
+FUNCNAME_evnpc_soldier_001_setting:	DB	'evnpc_soldier_001_setting',0
+FUNCNAME_alisa_setting:	DB	'alisa_setting',0
+FUNCNAME_eliot_setting:	DB	'eliot_setting',0
+FUNCNAME_emma_setting:	DB	'emma_setting',0
+FUNCNAME_machias_setting:	DB	'machias_setting',0
+FUNCNAME_jusis_setting:	DB	'jusis_setting',0
+FUNCNAME_gaius_setting:	DB	'gaius_setting',0
+FUNCNAME_towa_setting:	DB	'towa_setting',0
+FUNCNAME_risy_setting:	DB	'risy_setting',0
+FUNCNAME_TK_risy:	DB	'TK_risy',0
+FUNCNAME_belta_setting:	DB	'belta_setting',0
+FUNCNAME_TK_belta:	DB	'TK_belta',0
+FUNCNAME_baroc_setting:	DB	'baroc_setting',0
+FUNCNAME_TK_baroc:	DB	'TK_baroc',0
+FUNCNAME_marco_setting:	DB	'marco_setting',0
+FUNCNAME_TK_marco:	DB	'TK_marco',0
+FUNCNAME_TK_marco_hainz_01_A_03:	DB	'TK_marco_hainz_01_A_03',0
+FUNCNAME_givson_setting:	DB	'givson_setting',0
+FUNCNAME_TK_givson:	DB	'TK_givson',0
+FUNCNAME_rymon_setting:	DB	'rymon_setting',0
+FUNCNAME_TK_rymon:	DB	'TK_rymon',0
+FUNCNAME_hainz_setting:	DB	'hainz_setting',0
+FUNCNAME_TK_hainz:	DB	'TK_hainz',0
+FUNCNAME_rouche_setting:	DB	'rouche_setting',0
+FUNCNAME_TK_rouche:	DB	'TK_rouche',0
+FUNCNAME_frint_setting:	DB	'frint_setting',0
+FUNCNAME_TK_frint:	DB	'TK_frint',0
+FUNCNAME_colnet_setting:	DB	'colnet_setting',0
+FUNCNAME_TK_colnet:	DB	'TK_colnet',0
+FUNCNAME_anita_setting:	DB	'anita_setting',0
+FUNCNAME_TK_anita:	DB	'TK_anita',0
+FUNCNAME_squaro_setting:	DB	'squaro_setting',0
+FUNCNAME_TK_squaro:	DB	'TK_squaro',0
+FUNCNAME_tabroo_setting:	DB	'tabroo_setting',0
+FUNCNAME_TK_tabroo:	DB	'TK_tabroo',0
+FUNCNAME_hamar_setting:	DB	'hamar_setting',0
+FUNCNAME_TK_hamar:	DB	'TK_hamar',0
+FUNCNAME_NPC_move_hamar:	DB	'NPC_move_hamar',0
+FUNCNAME_ozet_setting:	DB	'ozet_setting',0
+FUNCNAME_TK_ozet:	DB	'TK_ozet',0
+FUNCNAME_NPC_move_ozet_01:	DB	'NPC_move_ozet_01',0
+FUNCNAME_NPC_move_ozet_02:	DB	'NPC_move_ozet_02',0
+FUNCNAME_chris_setting:	DB	'chris_setting',0
+FUNCNAME_TK_chris:	DB	'TK_chris',0
+FUNCNAME_suesy_setting:	DB	'suesy_setting',0
+FUNCNAME_TK_suesy:	DB	'TK_suesy',0
+FUNCNAME_jake_setting:	DB	'jake_setting',0
+FUNCNAME_TK_jake:	DB	'TK_jake',0
+FUNCNAME_mina_setting:	DB	'mina_setting',0
+FUNCNAME_TK_mina:	DB	'TK_mina',0
+FUNCNAME_ruru_setting:	DB	'ruru_setting',0
+FUNCNAME_TK_ruru:	DB	'TK_ruru',0
+FUNCNAME_t1500_soldier_r01_setting:	DB	't1500_soldier_r01_setting',0
+FUNCNAME_TK_t1500_soldier_r01:	DB	'TK_t1500_soldier_r01',0
+FUNCNAME_t1500_soldier_r02_setting:	DB	't1500_soldier_r02_setting',0
+FUNCNAME_TK_t1500_soldier_r02:	DB	'TK_t1500_soldier_r02',0
+FUNCNAME_t1500_soldier_r03_setting:	DB	't1500_soldier_r03_setting',0
+FUNCNAME_TK_t1500_soldier_r03:	DB	'TK_t1500_soldier_r03',0
+FUNCNAME_kissling_setting:	DB	'kissling_setting',0
+FUNCNAME_TK_kissling:	DB	'TK_kissling',0
+FUNCNAME_t1500_soldier_s01_setting:	DB	't1500_soldier_s01_setting',0
+FUNCNAME_TK_t1500_soldier_s01:	DB	'TK_t1500_soldier_s01',0
+FUNCNAME_t1500_soldier_s02_setting:	DB	't1500_soldier_s02_setting',0
+FUNCNAME_TK_t1500_soldier_s02:	DB	'TK_t1500_soldier_s02',0
+FUNCNAME_knocker_setting:	DB	'knocker_setting',0
+FUNCNAME_TK_knocker:	DB	'TK_knocker',0
+FUNCNAME_dominic_setting:	DB	'dominic_setting',0
+FUNCNAME_TK_dominic:	DB	'TK_dominic',0
+FUNCNAME_andore_setting:	DB	'andore_setting',0
+FUNCNAME_TK_andore:	DB	'TK_andore',0
+FUNCNAME_loretta_setting:	DB	'loretta_setting',0
+FUNCNAME_TK_loretta:	DB	'TK_loretta',0
+FUNCNAME_mika_setting:	DB	'mika_setting',0
+FUNCNAME_TK_mika:	DB	'TK_mika',0
+FUNCNAME_jonson_setting:	DB	'jonson_setting',0
+FUNCNAME_TK_jonson:	DB	'TK_jonson',0
+FUNCNAME_EV_01_08_00:	DB	'EV_01_08_00',0
+FUNCNAME_EV_01_11_00:	DB	'EV_01_11_00',0
+FUNCNAME_ET_01_11_00_SOLDIER000_1:	DB	'ET_01_11_00_SOLDIER000_1',0
+FUNCNAME_ET_01_11_00_SOLDIER001_1:	DB	'ET_01_11_00_SOLDIER001_1',0
+FUNCNAME_ET_01_11_00_REAN_1:	DB	'ET_01_11_00_REAN_1',0
+FUNCNAME_ET_01_11_00_CELINE2_1:	DB	'ET_01_11_00_CELINE2_1',0
+FUNCNAME_ET_01_11_00_ROSINE_1:	DB	'ET_01_11_00_ROSINE_1',0
+FUNCNAME_EV_01_12_00:	DB	'EV_01_12_00',0
+FUNCNAME_ET_01_12_00_CHRIS_1:	DB	'ET_01_12_00_CHRIS_1',0
+FUNCNAME_EV_03_05_04:	DB	'EV_03_05_04',0
+FUNCNAME_EV_03_07_00:	DB	'EV_03_07_00',0
+FUNCNAME_ET_03_07_00_MoveBECKY:	DB	'ET_03_07_00_MoveBECKY',0
+FUNCNAME_QS_1101_02:	DB	'QS_1101_02',0
+FUNCNAME_QS_1103_03:	DB	'QS_1103_03',0
+FUNCNAME_QS_1103_MOVE_ALBEL:	DB	'QS_1103_MOVE_ALBEL',0
+FUNCNAME_QS_1103_MOVE_LORETTA:	DB	'QS_1103_MOVE_LORETTA',0
+FUNCNAME_QS_1103_MOVE_MIKA:	DB	'QS_1103_MOVE_MIKA',0
+FUNCNAME_SB_KIZUNA_ALISA_03:	DB	'SB_KIZUNA_ALISA_03',0
+FUNCNAME_SB_KIZUNA_ELIOT_03:	DB	'SB_KIZUNA_ELIOT_03',0
+FUNCNAME_SB_KIZUNA_MACHIAS_03:	DB	'SB_KIZUNA_MACHIAS_03',0
+FUNCNAME_SB_KIZUNA_MACHIAS_03B:	DB	'SB_KIZUNA_MACHIAS_03B',0
+FUNCNAME_SB_KIZUNA_MACHIAS_03D:	DB	'SB_KIZUNA_MACHIAS_03D',0
+FUNCNAME_SB_KIZUNA_JUSIS_03:	DB	'SB_KIZUNA_JUSIS_03',0
+FUNCNAME_SB_KIZUNA_SARA_03A:	DB	'SB_KIZUNA_SARA_03A',0
+FUNCNAME_SB_KIZUNA_ALFIN_01:	DB	'SB_KIZUNA_ALFIN_01',0
+FUNCNAME_SB_KIZUNA_MACHIAS_03_B:	DB	'SB_KIZUNA_MACHIAS_03_B',0
+FUNCNAME_SB_KIZUNA_ALISA_03_B:	DB	'SB_KIZUNA_ALISA_03_B',0
+FUNCNAME_SB_KIZUNA_ELIOT_03_B:	DB	'SB_KIZUNA_ELIOT_03_B',0
+FUNCNAME_SB_KIZUNA_EMMA_03_B:	DB	'SB_KIZUNA_EMMA_03_B',0
+FUNCNAME_SB_KIZUNA_JUSIS_03_B:	DB	'SB_KIZUNA_JUSIS_03_B',0
+FUNCNAME_SB_KIZUNA_GAIUS_03_B:	DB	'SB_KIZUNA_GAIUS_03_B',0
+FUNCNAME_SB_KIZUNA_TOWA_01_B:	DB	'SB_KIZUNA_TOWA_01_B',0
+FUNCNAME_SB_KIZUNA_ALFIN_01_B:	DB	'SB_KIZUNA_ALFIN_01_B',0
+FUNCNAME_SB_01_UNEQUIP_MEGANE:	DB	'SB_01_UNEQUIP_MEGANE',0
+FUNCNAME_TU_01_QUEST_NOTE:	DB	'TU_01_QUEST_NOTE',0
+FUNCNAME_TU_03_FREEPOINT:	DB	'TU_03_FREEPOINT',0
+FUNCNAME_YR_19_02:	DB	'YR_19_02',0
+FUNCNAME_ST_STATION:	DB	'ST_STATION',0
+FUNCNAME_ST_WESTGATE:	DB	'ST_WESTGATE',0
+FUNCNAME_ST_EASTGATE:	DB	'ST_EASTGATE',0
+FUNCNAME_ST_ARMY_POSY1:	DB	'ST_ARMY_POSY1',0
+FUNCNAME_ST_ARMY_POSY2:	DB	'ST_ARMY_POSY2',0
+FUNCNAME__TK_marco:	DB	'_TK_marco',0
+FUNCNAME__TK_givson:	DB	'_TK_givson',0
+FUNCNAME__TK_ruru:	DB	'_TK_ruru',0
+FUNCNAME__TK_andore:	DB	'_TK_andore',0
+FUNCNAME__EV_01_08_00:	DB	'_EV_01_08_00',0
+FUNCNAME__EV_01_11_00:	DB	'_EV_01_11_00',0
+FUNCNAME__EV_01_12_00:	DB	'_EV_01_12_00',0
+FUNCNAME__EV_03_05_04:	DB	'_EV_03_05_04',0
+FUNCNAME__EV_03_07_00:	DB	'_EV_03_07_00',0
+FUNCNAME__QS_1103_03:	DB	'_QS_1103_03',0
+FUNCNAME__SB_KIZUNA_ELIOT_03:	DB	'_SB_KIZUNA_ELIOT_03',0
+FUNCNAME__SB_KIZUNA_MACHIAS_03:	DB	'_SB_KIZUNA_MACHIAS_03',0
+FUNCNAME__SB_KIZUNA_MACHIAS_03D:	DB	'_SB_KIZUNA_MACHIAS_03D',0
+FUNCNAME__SB_KIZUNA_JUSIS_03:	DB	'_SB_KIZUNA_JUSIS_03',0
+FUNCNAME__SB_KIZUNA_SARA_03A:	DB	'_SB_KIZUNA_SARA_03A',0
+FUNCNAME__SB_KIZUNA_ALFIN_01:	DB	'_SB_KIZUNA_ALFIN_01',0
+FUNCNAME__SB_01_UNEQUIP_MEGANE:	DB	'_SB_01_UNEQUIP_MEGANE',0
+FUNCNAME__TU_01_QUEST_NOTE:	DB	'_TU_01_QUEST_NOTE',0
+FUNCNAME__TU_03_FREEPOINT:	DB	'_TU_03_FREEPOINT',0

@@ -1,0 +1,138 @@
+{
+    "version": "v2",
+    "headers": [
+        "hkitugi_lst"
+    ],
+    "entries": [
+        {
+            "header": "hkitugi_lst",
+            "values": {
+                "unknown_short": "0",
+                "unknown_data": "6019",
+                "cost": "0",
+                "text": "#3CПеренос#0C: Уровни связи, Натиск",
+                "description": "Перенести уровни связи отряда, а также возможность использовать\nОвердрайв друг с другом."
+            }
+        },
+        {
+            "header": "hkitugi_lst",
+            "values": {
+                "unknown_short": "1",
+                "unknown_data": "6119",
+                "cost": "1",
+                "text": "#3CПеренос#0C: Уровни персонажей",
+                "description": "Перенести уровни персонажей отряда."
+            }
+        },
+        {
+            "header": "hkitugi_lst",
+            "values": {
+                "unknown_short": "2",
+                "unknown_data": "6219",
+                "cost": "1",
+                "text": "#3CПеренос#0C: Уровни ячеек",
+                "description": "Перенести уровни слотов орбментов."
+            }
+        },
+        {
+            "header": "hkitugi_lst",
+            "values": {
+                "unknown_short": "3",
+                "unknown_data": "6319",
+                "cost": "1",
+                "text": "#3CПеренос#0C: Уровни мастер-кварцев",
+                "description": "Перенести уровни мастер-кварцев."
+            }
+        },
+        {
+            "header": "hkitugi_lst",
+            "values": {
+                "unknown_short": "4",
+                "unknown_data": "6419",
+                "cost": "1",
+                "text": "#3CПеренос#0C: Мира, сепит",
+                "description": "Перенести миру и сепиты."
+            }
+        },
+        {
+            "header": "hkitugi_lst",
+            "values": {
+                "unknown_short": "5",
+                "unknown_data": "6519",
+                "cost": "1",
+                "text": "#3CПеренос#0C: Предметы",
+                "description": "Перенести предметы (экипировку, мастер-кварцы, кварцы, расходуемые и т.д.).\nНе включает стандартные мастер-кварцы отряда и некоторые сюжетные предметы."
+            }
+        },
+        {
+            "header": "hkitugi_lst",
+            "values": {
+                "unknown_short": "6",
+                "unknown_data": "6619",
+                "cost": "1",
+                "text": "#3CПеренос#0C: Данные из блокнота",
+                "description": "Перенести данные записной книжки: бои, персонажи, рецепты, рыбалку\nи книги. Также вы будете получать в 3 раза больше очков рыболова."
+            }
+        },
+        {
+            "header": "hkitugi_lst",
+            "values": {
+                "unknown_short": "7",
+                "unknown_data": "6719",
+                "cost": "1",
+                "text": "#3C     Бонус#0C: Купальные костюмы",
+                "description": "Начать новую игру, имея в инвентаре купальные костюмы отряда."
+            }
+        },
+        {
+            "header": "hkitugi_lst",
+            "values": {
+                "unknown_short": "8",
+                "unknown_data": "6819",
+                "cost": "1",
+                "text": "#3C     Бонус#0C: Акад. купальники, др. костюмы (1)",
+                "description": "Начать новую игру, имея в инвентаре купальники академии и\nдругие костюмы отряда."
+            }
+        },
+        {
+            "header": "hkitugi_lst",
+            "values": {
+                "unknown_short": "9",
+                "unknown_data": "6b19",
+                "cost": "1",
+                "text": "#3C     Бонус#0C: Сцен. костюмы, др. костюмы (2)",
+                "description": "Начать новую игру, имея в инвентаре сценические и другие\nкостюмы отряда."
+            }
+        },
+        {
+            "header": "hkitugi_lst",
+            "values": {
+                "unknown_short": "10",
+                "unknown_data": "6919",
+                "cost": "2",
+                "text": "#3C     Бонус#0C: 300 000 мира, 3000 каждого сепита",
+                "description": "Начать игру с бонусом в 300 000 миры и 3000 сепитов\nкаждого типа."
+            }
+        },
+        {
+            "header": "hkitugi_lst",
+            "values": {
+                "unknown_short": "11",
+                "unknown_data": "6a19",
+                "cost": "4",
+                "text": "#3C     Бонус#0C: Макс. очков связи",
+                "description": "Максимальное количество очков событий в выходные и\nсвободные дни."
+            }
+        },
+        {
+            "header": "hkitugi_lst",
+            "values": {
+                "unknown_short": "12",
+                "unknown_data": "0000",
+                "cost": "0",
+                "text": "#1C                     Начать игру",
+                "description": "Начать игру с этими параметрами."
+            }
+        }
+    ]
+}

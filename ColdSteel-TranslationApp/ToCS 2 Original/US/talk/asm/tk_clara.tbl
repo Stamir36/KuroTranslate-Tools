@@ -1,0 +1,23 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	TK_clara					;tk_clara.scn 53
+	DD	TK_clara_END					;tk_clara.scn 731
+	DD	_TK_clara					;tk_clara.scn 740
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_TK_clara
+	DW	FUNCNAME_TK_clara_END
+	DW	FUNCNAME__TK_clara
+FUNCTION_NAME_TABLE_NUM	EQU	3
+;=====================================================================
+FUNCNAME_TK_clara:	DB	'TK_clara',0
+FUNCNAME_TK_clara_END:	DB	'TK_clara_END',0
+FUNCNAME__TK_clara:	DB	'_TK_clara',0

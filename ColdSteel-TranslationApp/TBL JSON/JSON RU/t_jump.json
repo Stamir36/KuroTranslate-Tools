@@ -1,0 +1,1362 @@
+{
+    "version": "v2",
+    "headers": [
+        "MapJumpData",
+        "CourageousJumpData"
+    ],
+    "entries": [
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "01000100",
+                "name": "Главный вход",
+                "unknown_data_2": "01000000",
+                "unknown_string_1": "t0000",
+                "unknown_string_2": "0",
+                "unknown_data_3": "0000000000000000000000c0000034439e020000db010000000000000100"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "02000100",
+                "name": "Главное здание - 1-й этаж",
+                "unknown_data_2": "01000000",
+                "unknown_string_1": "t0010",
+                "unknown_string_2": "t0010_t0000_1",
+                "unknown_data_3": "804fc3470000000000000000000000008d04000056020000000000000200"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "03000100",
+                "name": "Главное здание - 2-й этаж",
+                "unknown_data_2": "01000000",
+                "unknown_string_1": "t0020",
+                "unknown_string_2": "t0020_t0010_1",
+                "unknown_data_3": "804fc34700000000000000000000000086040000a4010000000000000300"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "04000100",
+                "name": "Главное здание - Крыша",
+                "unknown_data_2": "01000000",
+                "unknown_string_1": "t0000",
+                "unknown_string_2": "t0000_t0020",
+                "unknown_data_3": "804fc347000000000000000000000000860400000e010000000000000400"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "05000100",
+                "name": "Студсоюз",
+                "unknown_data_2": "01000000",
+                "unknown_string_1": "t0080",
+                "unknown_string_2": "t0080_t0000",
+                "unknown_data_3": "804fc347000000000000000000000000240300005b010000000000000500"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "06000100",
+                "name": "Библиотека",
+                "unknown_data_2": "01000000",
+                "unknown_string_1": "t0060",
+                "unknown_string_2": "t0060_t0000",
+                "unknown_data_3": "804fc3470000000000000000000000008a0300005d010000000000000600"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "07000100",
+                "name": "Внутренний двор",
+                "unknown_data_2": "01000000",
+                "unknown_string_1": "t0000",
+                "unknown_string_2": "0",
+                "unknown_data_3": "000000000000000000008cc2000000006302000012010000000000000700"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "08000100",
+                "name": "Поле академии",
+                "unknown_data_2": "01000000",
+                "unknown_string_1": "t0000",
+                "unknown_string_2": "0",
+                "unknown_data_3": "000094c2000040c0000068c2000087434d0100006b010000000000000800"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "09000100",
+                "name": "Спортзал",
+                "unknown_data_2": "0100ca2b",
+                "unknown_string_1": "t0050",
+                "unknown_string_2": "t0050_t0000",
+                "unknown_data_3": "804fc34700000000000000000000000014020000d8000000000000000900"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "0a000100",
+                "name": "Инженерный корпус",
+                "unknown_data_2": "0100cb2b",
+                "unknown_string_1": "t0090",
+                "unknown_string_2": "t0090_t0000",
+                "unknown_data_3": "804fc34700000000000000000000000010030000ea000000000000000a00"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "0b000100",
+                "name": "Старое здание школы",
+                "unknown_data_2": "01000000",
+                "unknown_string_1": "t0200",
+                "unknown_string_2": "go_t0000",
+                "unknown_data_3": "804fc347000000000000000000000000e802000081000000000000000c00"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "0c000100",
+                "name": "Старое здание школы",
+                "unknown_data_2": "01000000",
+                "unknown_string_1": "t0202",
+                "unknown_string_2": "go_t0001",
+                "unknown_data_3": "804fc347000000000000000000000000e802000081000000000000000d00"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "0d000100",
+                "name": "Главный вход",
+                "unknown_data_2": "01000000",
+                "unknown_string_1": "t0001",
+                "unknown_string_2": "0",
+                "unknown_data_3": "0000000000000000000000c0000034439e020000db010000000000000100"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "0e000100",
+                "name": "Главное здание - Крыша",
+                "unknown_data_2": "01000000",
+                "unknown_string_1": "t0001",
+                "unknown_string_2": "t0001_t0020",
+                "unknown_data_3": "804fc347000000000000000000000000860400000e010000000000000400"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "0f000100",
+                "name": "Внутренний двор",
+                "unknown_data_2": "01000000",
+                "unknown_string_1": "t0001",
+                "unknown_string_2": "0",
+                "unknown_data_3": "000000000000000000008cc2000000006302000012010000000000000700"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "10000100",
+                "name": "Поле академии",
+                "unknown_data_2": "01000000",
+                "unknown_string_1": "t0001",
+                "unknown_string_2": "0",
+                "unknown_data_3": "000094c2000040c0000068c2000087434d0100006b010000000000000800"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "11000100",
+                "name": "Актовый зал",
+                "unknown_data_2": "01000000",
+                "unknown_string_1": "t0070",
+                "unknown_string_2": "t0070_t0001",
+                "unknown_data_3": "804fc347000000000000000000000000f4010000ea010000000000000b00"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "65000200",
+                "name": "Общежитие VII класса",
+                "unknown_data_2": "0200cc2b",
+                "unknown_string_1": "t1010",
+                "unknown_string_2": "go_t1000",
+                "unknown_data_3": "804fc3470000000000000000000000005c030000ee010000000000000100"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "66000200",
+                "name": "Кафе и трактир «Кирше»",
+                "unknown_data_2": "02000000",
+                "unknown_string_1": "t1050",
+                "unknown_string_2": "go_t1000",
+                "unknown_data_3": "804fc34700000000000000000000000030020000dc010000000000000200"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "67000200",
+                "name": "Универмаг Брэндона",
+                "unknown_data_2": "02000000",
+                "unknown_string_1": "t1020",
+                "unknown_string_2": "go_t1000",
+                "unknown_data_3": "804fc347000000000000000000000000ca020000b6010000000000000300"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "68000200",
+                "name": "Бутик «Le Sage»",
+                "unknown_data_2": "02000000",
+                "unknown_string_1": "t1040",
+                "unknown_string_2": "go_t1000",
+                "unknown_data_3": "804fc347000000000000000000000000c40200008e010000000000000400"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "69000200",
+                "name": "Книжный магазин Кейнса",
+                "unknown_data_2": "02000000",
+                "unknown_string_1": "t1030",
+                "unknown_string_2": "go_t1000",
+                "unknown_data_3": "804fc3470000000000000000000000002802000086010000000000000500"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "6a000200",
+                "name": "Ломбард Михта",
+                "unknown_data_2": "02000000",
+                "unknown_string_1": "t1060",
+                "unknown_string_2": "go_t1000",
+                "unknown_data_3": "804fc347000000000000000000000000080300003e010000000000000600"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "6b000200",
+                "name": "Парк",
+                "unknown_data_2": "02000000",
+                "unknown_string_1": "t1000",
+                "unknown_string_2": "0",
+                "unknown_data_3": "713d8a3e000000bf1f858bc0000034438e020000d4010000000000000700"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "6c000200",
+                "name": "Главные ворота академии",
+                "unknown_data_2": "02000000",
+                "unknown_string_1": "t1000",
+                "unknown_string_2": "0",
+                "unknown_data_3": "f628f4c000000040d723a2c2000000000b020000a2000000000000000800"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "6d000200",
+                "name": "Восточный тракт Тристы",
+                "unknown_data_2": "0200cd2b",
+                "unknown_string_1": "r0620",
+                "unknown_string_2": "go_t1000",
+                "unknown_data_3": "804fc3470000000000000000000000009b030000bd010000000000000900"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "6e000200",
+                "name": "Парк",
+                "unknown_data_2": "02000000",
+                "unknown_string_1": "t1001",
+                "unknown_string_2": "0",
+                "unknown_data_3": "713d8a3e000000bf1f858bc0000034438e020000d4010000000000000700"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "6f000200",
+                "name": "Главные ворота академии",
+                "unknown_data_2": "02000000",
+                "unknown_string_1": "t1001",
+                "unknown_string_2": "0",
+                "unknown_data_3": "f628f4c000000040d723a2c2000000000b020000a2000000000000000800"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "c9000300",
+                "name": "Большой рынок",
+                "unknown_data_2": "03000000",
+                "unknown_string_1": "t1501",
+                "unknown_string_2": "0",
+                "unknown_data_3": "00000000000000c0000010c200003443aa0200001a010000000000000100"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "ca000300",
+                "name": "Большой рынок",
+                "unknown_data_2": "03000000",
+                "unknown_string_1": "t1500",
+                "unknown_string_2": "0",
+                "unknown_data_3": "00000000000000c0000010c200003443aa0200001a010000000000000100"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "cb000300",
+                "name": "Трактир «Флюгер»",
+                "unknown_data_2": "03000000",
+                "unknown_string_1": "t1510",
+                "unknown_string_2": "go_t1500",
+                "unknown_data_3": "804fc3470000000000000000000000003e03000072010000000000000200"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "cc000300",
+                "name": "Оружейная и орбальная фабрика Одвина",
+                "unknown_data_2": "03000000",
+                "unknown_string_1": "t1550",
+                "unknown_string_2": "go_t1500",
+                "unknown_data_3": "804fc34700000000000000000000000066030000ee010000000000000300"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "cd000300",
+                "name": "Восточный Селдикский тракт",
+                "unknown_data_2": "0300c12b",
+                "unknown_string_1": "r0020",
+                "unknown_string_2": "go_t1500",
+                "unknown_data_3": "804fc347000000000000000000000000220400009c010000000000000400"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "ce000300",
+                "name": "Западный Селдикский тракт",
+                "unknown_data_2": "0300c22b",
+                "unknown_string_1": "r0000",
+                "unknown_string_2": "go_t1500",
+                "unknown_data_3": "804fc347000000000000000000000000b10100004c020000000000000500"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "2d010400",
+                "name": "Центральная площадь",
+                "unknown_data_2": "04000000",
+                "unknown_string_1": "t2100",
+                "unknown_string_2": "0",
+                "unknown_data_3": "5c8f1240000000003d0a7740000034431e03000035010000000000000100"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "2e010400",
+                "name": "Привокзальная улица",
+                "unknown_data_2": "04000000",
+                "unknown_string_1": "t2000",
+                "unknown_string_2": "go_t2100",
+                "unknown_data_3": "804fc3470000000000000000000000009b03000008010000000000000200"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "2f010400",
+                "name": "Дворянский квартал",
+                "unknown_data_2": "04000000",
+                "unknown_string_1": "t2200",
+                "unknown_string_2": "go_t2100",
+                "unknown_data_3": "804fc3470000000000000000000000006602000053010000000000000300"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "30010400",
+                "name": "Улица Ремесленников",
+                "unknown_data_2": "04000000",
+                "unknown_string_1": "t2300",
+                "unknown_string_2": "go_t2100",
+                "unknown_data_3": "804fc347000000000000000000000000350300007b010000000000000400"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "31010400",
+                "name": "Отель «Эсмеральда»",
+                "unknown_data_2": "04000000",
+                "unknown_string_1": "t2110",
+                "unknown_string_2": "out1",
+                "unknown_data_3": "804fc347000000000000000000000000a802000012010000000000000500"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "32010400",
+                "name": "Галерея «Кристис»",
+                "unknown_data_2": "04000000",
+                "unknown_string_1": "t2020",
+                "unknown_string_2": "out1",
+                "unknown_data_3": "804fc3470000000000000000000000003b040000a4000000000000000600"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "33010400",
+                "name": "Фабрика Давоса",
+                "unknown_data_2": "04000000",
+                "unknown_string_1": "t2310",
+                "unknown_string_2": "out1",
+                "unknown_data_3": "804fc347000000000000000000000000690300009a010000000000000700"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "34010400",
+                "name": "Аэропорт Бэрейхард",
+                "unknown_data_2": "04000000",
+                "unknown_string_1": "t2400",
+                "unknown_string_2": "t2400_entrance",
+                "unknown_data_3": "804fc347000000000000000000000000400400004e010000000000000800"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "35010400",
+                "name": "Тропа каньона Орокс",
+                "unknown_data_2": "0400c32b",
+                "unknown_string_1": "r0200",
+                "unknown_string_2": "go_t2000",
+                "unknown_data_3": "804fc347000000000000000000000000db040000be000000000000000900"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "36010400",
+                "name": "Северный Крейценский тракт",
+                "unknown_data_2": "0400c42b",
+                "unknown_string_1": "r0100",
+                "unknown_string_2": "go_t2000",
+                "unknown_data_3": "804fc347000000000000000000000000c30300004a000000000000000a00"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "37010400",
+                "name": "Южный Крейценский тракт",
+                "unknown_data_2": "0400c52b",
+                "unknown_string_1": "r0130",
+                "unknown_string_2": "go_t2300",
+                "unknown_data_3": "804fc34700000000000000000000000041030000de020000000000000b00"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "91010500",
+                "name": "Гостевая юрта",
+                "unknown_data_2": "05000000",
+                "unknown_string_1": "t4520",
+                "unknown_string_2": "go_t4501",
+                "unknown_data_3": "804fc3470000000000000000000000000000000000000000000000000100"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "96010500",
+                "name": "Дом старейшины",
+                "unknown_data_2": "05000000",
+                "unknown_string_1": "t4530",
+                "unknown_string_2": "go_t4501",
+                "unknown_data_3": "804fc3470000000000000000000000000000000000000000000000000200"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "92010500",
+                "name": "Дом Ворзел",
+                "unknown_data_2": "05000000",
+                "unknown_string_1": "t4510",
+                "unknown_string_2": "go_t4501",
+                "unknown_data_3": "804fc3470000000000000000000000000000000000000000000000000300"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "93010500",
+                "name": "Торговый пост",
+                "unknown_data_2": "05000000",
+                "unknown_string_1": "t4540",
+                "unknown_string_2": "go_t4501",
+                "unknown_data_3": "804fc3470000000000000000000000000000000000000000000000000400"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "94010500",
+                "name": "Нордское нагорье - Юг",
+                "unknown_data_2": "05000000",
+                "unknown_string_1": "r0800",
+                "unknown_string_2": "go_t4501",
+                "unknown_data_3": "804fc3470000000000000000000000000000000000000000000000000500"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "95010500",
+                "name": "Нордское нагорье - Север",
+                "unknown_data_2": "05000000",
+                "unknown_string_1": "r0810",
+                "unknown_string_2": "for_t4501",
+                "unknown_data_3": "804fc3470000000000000000000000000000000000000000000000000600"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "9b010600",
+                "name": "Гостевая юрта",
+                "unknown_data_2": "06000000",
+                "unknown_string_1": "t4520",
+                "unknown_string_2": "go_t4601",
+                "unknown_data_3": "804fc3470000000000000000000000000000000000000000000000000100"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "a0010600",
+                "name": "Дом старейшины",
+                "unknown_data_2": "06000000",
+                "unknown_string_1": "t4530",
+                "unknown_string_2": "go_t4601",
+                "unknown_data_3": "804fc3470000000000000000000000000000000000000000000000000200"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "9c010600",
+                "name": "Дом Ворзел",
+                "unknown_data_2": "06000000",
+                "unknown_string_1": "t4510",
+                "unknown_string_2": "go_t4601",
+                "unknown_data_3": "804fc3470000000000000000000000000000000000000000000000000300"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "9d010600",
+                "name": "Торговый пост",
+                "unknown_data_2": "06000000",
+                "unknown_string_1": "t4540",
+                "unknown_string_2": "go_t4601",
+                "unknown_data_3": "804fc3470000000000000000000000000000000000000000000000000400"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "9e010600",
+                "name": "Хижина у озера",
+                "unknown_data_2": "06000000",
+                "unknown_string_1": "t4610",
+                "unknown_string_2": "go_t4601",
+                "unknown_data_3": "804fc3470000000000000000000000000000000000000000000000000500"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "9f010600",
+                "name": "Нордское нагорье - Север",
+                "unknown_data_2": "06000000",
+                "unknown_string_1": "r0810",
+                "unknown_string_2": "go_t4601",
+                "unknown_data_3": "804fc3470000000000000000000000000000000000000000000000000600"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "a5010b00",
+                "name": "Врата Зендер",
+                "unknown_data_2": "0f000000",
+                "unknown_string_1": "r0800",
+                "unknown_string_2": "0",
+                "unknown_data_3": "5218acc3a4709d41d7e3d443008090430000000000000000000000000100"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "a6010b00",
+                "name": "Место поселения",
+                "unknown_data_2": "0f000000",
+                "unknown_string_1": "t4501",
+                "unknown_string_2": "for_r0800",
+                "unknown_data_3": "804fc3470000000000000000000000000000000000000000000000000200"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "a7010b00",
+                "name": "Кочевое поселение",
+                "unknown_data_2": "0f000000",
+                "unknown_string_1": "t4501",
+                "unknown_string_2": "for_r0800",
+                "unknown_data_3": "804fc3470000000000000000000000000000000000000000000000000200"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "a8010b00",
+                "name": "Сторожевая башня",
+                "unknown_data_2": "0f00ce2b",
+                "unknown_string_1": "t4701",
+                "unknown_string_2": "for_r0800",
+                "unknown_data_3": "804fc3470000000000000000000000000000000000000000000000000300"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "af010c00",
+                "name": "Озеро Лакрима",
+                "unknown_data_2": "10000000",
+                "unknown_string_1": "t4601",
+                "unknown_string_2": "for_r0810",
+                "unknown_data_3": "804fc3470000000000000000000000000000000000000000000000000100"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "b0010c00",
+                "name": "Место поселения",
+                "unknown_data_2": "10000000",
+                "unknown_string_1": "t4501",
+                "unknown_string_2": "go_r0810",
+                "unknown_data_3": "804fc3470000000000000000000000000000000000000000000000000200"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "b1010c00",
+                "name": "Кочевое поселение",
+                "unknown_data_2": "10000000",
+                "unknown_string_1": "t4501",
+                "unknown_string_2": "go_r0810",
+                "unknown_data_3": "804fc3470000000000000000000000000000000000000000000000000200"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "b2010c00",
+                "name": "Нордское нагорье - Северо-восток",
+                "unknown_data_2": "10000000",
+                "unknown_string_1": "r0820",
+                "unknown_string_2": "go_r0810",
+                "unknown_data_3": "804fc3470000000000000000000000000000000000000000000000000300"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "b3010c00",
+                "name": "Древний карьер",
+                "unknown_data_2": "10000000",
+                "unknown_string_1": "m1500",
+                "unknown_string_2": "for_r0810",
+                "unknown_data_3": "804fc3470000000000000000000000000000000000000000000000000400"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "b9010d00",
+                "name": "Нордское нагорье - Север",
+                "unknown_data_2": "11000000",
+                "unknown_string_1": "r0810",
+                "unknown_string_2": "go_r0820",
+                "unknown_data_3": "804fc3470000000000000000000000000000000000000000000000000100"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "ba010d00",
+                "name": "Святилище Арии",
+                "unknown_data_2": "11000000",
+                "unknown_string_1": "r0820",
+                "unknown_string_2": "0",
+                "unknown_data_3": "9a1958c33333754200608ec3cd4c53430000000000000000000000000200"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "f5010700",
+                "name": "Особняк виконта Арсейдов",
+                "unknown_data_2": "07000000",
+                "unknown_string_1": "t3060",
+                "unknown_string_2": "from_t3000",
+                "unknown_data_3": "804fc3470000000000000000000000000000000000000000000000000100"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "f6010700",
+                "name": "Гильдия брайсеров - Леграм",
+                "unknown_data_2": "07000000",
+                "unknown_string_1": "t3010",
+                "unknown_string_2": "from_t3000",
+                "unknown_data_3": "804fc3470000000000000000000000000000000000000000000000000200"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "f7010700",
+                "name": "Трактир «Априкозе»",
+                "unknown_data_2": "07000000",
+                "unknown_string_1": "t3100",
+                "unknown_string_2": "from_t3000_00",
+                "unknown_data_3": "804fc3470000000000000000000000000000000000000000000000000300"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "f8010700",
+                "name": "Магазин Ватто",
+                "unknown_data_2": "07000000",
+                "unknown_string_1": "t3020",
+                "unknown_string_2": "from_t3000_00",
+                "unknown_data_3": "804fc3470000000000000000000000000000000000000000000000000400"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "f9010700",
+                "name": "Эбельский тракт",
+                "unknown_data_2": "07000000",
+                "unknown_string_1": "r0300",
+                "unknown_string_2": "from_t3000",
+                "unknown_data_3": "804fc3470000000000000000000000000000000000000000000000000500"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "59020800",
+                "name": "Штаб-квартира «Рейнфорд»",
+                "unknown_data_2": "0800c62b",
+                "unknown_string_1": "t3510",
+                "unknown_string_2": "go_t3500",
+                "unknown_data_3": "804fc347000000000000000000000000b8010000dc000000000000000100"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "5a020800",
+                "name": "RF Arms",
+                "unknown_data_2": "08000000",
+                "unknown_string_1": "t3600",
+                "unknown_string_2": "go_t3500",
+                "unknown_data_3": "804fc34700000000000000000000000077010000a4010000000000000200"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "5b020800",
+                "name": "Магазин RF",
+                "unknown_data_2": "08000000",
+                "unknown_string_1": "t3560",
+                "unknown_string_2": "go_t3500",
+                "unknown_data_3": "804fc347000000000000000000000000610300009f010000000000000300"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "5c020800",
+                "name": "Товары Боронии",
+                "unknown_data_2": "08000000",
+                "unknown_string_1": "t3570",
+                "unknown_string_2": "go_t3500",
+                "unknown_data_3": "804fc34700000000000000000000000074040000cc010000000000000400"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "5d020800",
+                "name": "Ремонтная мастерская Джекасса",
+                "unknown_data_2": "08000000",
+                "unknown_string_1": "t3730",
+                "unknown_string_2": "go_t3500",
+                "unknown_data_3": "804fc3470000000000000000000000006003000010010000000000000500"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "5e020800",
+                "name": "Аэропорт Рор",
+                "unknown_data_2": "08000000",
+                "unknown_string_1": "t3900",
+                "unknown_string_2": "go_t3500",
+                "unknown_data_3": "804fc347000000000000000000000000a604000068010000000000000600"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "5f020800",
+                "name": "Нортийский тракт",
+                "unknown_data_2": "0800c72b",
+                "unknown_string_1": "r0410",
+                "unknown_string_2": "to_t3500",
+                "unknown_data_3": "804fc347000000000000000000000000c20300003b020000000000000900"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "60020800",
+                "name": "Просёлок Спина",
+                "unknown_data_2": "0800c82b",
+                "unknown_string_1": "r0400",
+                "unknown_string_2": "to_t3500",
+                "unknown_data_3": "804fc347000000000000000000000000b602000016020000000000000a00"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "61020800",
+                "name": "Горная тропа Заксен",
+                "unknown_data_2": "0800c92b",
+                "unknown_string_1": "r0420",
+                "unknown_string_2": "to_t3500",
+                "unknown_data_3": "804fc3470000000000000000000000001a0400000e010000000000000b00"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "62020800",
+                "name": "Верхний уровень - Здание RF",
+                "unknown_data_2": "08000000",
+                "unknown_string_1": "t3500",
+                "unknown_string_2": "0",
+                "unknown_data_3": "0000000000006041713dd2c100000000cc0100002c010000000000000700"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "63020800",
+                "name": "Нижний уровень - Привокзальная площадь",
+                "unknown_data_2": "08000000",
+                "unknown_string_1": "t3500",
+                "unknown_string_2": "0",
+                "unknown_data_3": "000000c0cdcccc3d0000184200003443de030000cc010000000000000800"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "21030900",
+                "name": "Особняк барона Шварцера",
+                "unknown_data_2": "09000000",
+                "unknown_string_1": "t4040",
+                "unknown_string_2": "out1",
+                "unknown_data_3": "804fc3470000000000000000000000007b0100006a010000000000000100"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "22030900",
+                "name": "«Крылья Феникса»",
+                "unknown_data_2": "09000000",
+                "unknown_string_1": "t4060",
+                "unknown_string_2": "go_t4000",
+                "unknown_data_3": "804fc347000000000000000000000000d6030000ce000000000000000200"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "23030900",
+                "name": "Таверна «Эхо долины»",
+                "unknown_data_2": "09000000",
+                "unknown_string_1": "t4030",
+                "unknown_string_2": "out1",
+                "unknown_data_3": "804fc3470000000000000000000000008603000062010000000000000300"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "24030900",
+                "name": "Универмаг «Зуёк»",
+                "unknown_data_2": "09000000",
+                "unknown_string_1": "t4020",
+                "unknown_string_2": "out1",
+                "unknown_data_3": "804fc347000000000000000000000000460200002b020000000000000400"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "25030900",
+                "name": "Площадь - Ванна для ног",
+                "unknown_data_2": "09000000",
+                "unknown_string_1": "t4000",
+                "unknown_string_2": "0",
+                "unknown_data_3": "ae472dc100000000a4706d4000003443ba020000ca010000000000000500"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "26030900",
+                "name": "Долина Юмир",
+                "unknown_data_2": "0900c02b",
+                "unknown_string_1": "r0500",
+                "unknown_string_2": "go_t4000",
+                "unknown_data_3": "804fc34700000000000000000000000012020000be000000000000000600"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "85030a00",
+                "name": "5-й эт.: Мостик",
+                "unknown_data_2": "0a000000",
+                "unknown_string_1": "e7020",
+                "unknown_string_2": "0",
+                "unknown_data_3": "000000000000004000000a4200000000be00000086010000000000000100"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "86030a00",
+                "name": "4-й эт.: Конференц-зал/Тренировки",
+                "unknown_data_2": "0a000000",
+                "unknown_string_1": "e7030",
+                "unknown_string_2": "elev",
+                "unknown_data_3": "804fc347000000000000000000000000ca01000094010000000000000300"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "87030a00",
+                "name": "3-й эт.: Магазины/Палуба",
+                "unknown_data_2": "0a000000",
+                "unknown_string_1": "e7040",
+                "unknown_string_2": "elev",
+                "unknown_data_3": "804fc3470000000000000000000000008c02000038010000000000000400"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "88030a00",
+                "name": "2-й эт.: Кухня/Прочее",
+                "unknown_data_2": "0a000000",
+                "unknown_string_1": "e7050",
+                "unknown_string_2": "elev",
+                "unknown_data_3": "804fc3470000000000000000000000007c0300003e010000000000000500"
+            }
+        },
+        {
+            "header": "MapJumpData",
+            "values": {
+                "unknown_data_1": "89030a00",
+                "name": "1-й эт.: Орбальная фабрика/Трюм",
+                "unknown_data_2": "0a000000",
+                "unknown_string_1": "e7060",
+                "unknown_string_2": "elev",
+                "unknown_data_3": "804fc347000000000000000000000000440400000a010000000000000600"
+            }
+        },
+        {
+            "header": "CourageousJumpData",
+            "values": {
+                "unknown_data_1": "0000",
+                "name": "Леграм",
+                "unknown_data_2": "3333b3be52b87e40",
+                "unknown_string_1": "t3000",
+                "unknown_string_2": "0",
+                "unknown_data_3": "02e17ab4410ad7a33c9a99d741000061432000040020002000"
+            }
+        },
+        {
+            "header": "CourageousJumpData",
+            "values": {
+                "unknown_data_1": "0100",
+                "name": "Юмир",
+                "unknown_data_2": "666666bf9a9909c0",
+                "unknown_string_1": "t4000",
+                "unknown_string_2": "0",
+                "unknown_data_3": "02a470a5c0000000bfae4735419a1955432000200020002000"
+            }
+        },
+        {
+            "header": "CourageousJumpData",
+            "values": {
+                "unknown_data_1": "0200",
+                "name": "Врата Зендер",
+                "unknown_data_2": "52b8fe3fae4721c0",
+                "unknown_string_1": "r0800",
+                "unknown_string_2": "0",
+                "unknown_data_3": "0266a6d0c39a99af413313e1433373a1432000200020002000"
+            }
+        },
+        {
+            "header": "CourageousJumpData",
+            "values": {
+                "unknown_data_1": "0300",
+                "name": "Сторожевая башня",
+                "unknown_data_2": "66662640295c2fc0",
+                "unknown_string_1": "t4701",
+                "unknown_string_2": "0",
+                "unknown_data_3": "0052f83ec36666d942a4708e429a99e6422000200020002000"
+            }
+        },
+        {
+            "header": "CourageousJumpData",
+            "values": {
+                "unknown_data_1": "0400",
+                "name": "Озеро Лакрима",
+                "unknown_data_2": "333333405c8f82c0",
+                "unknown_string_1": "t4601",
+                "unknown_string_2": "0",
+                "unknown_data_3": "027b748bc352b8c042142ebe43cd4c0f430000200020002000"
+            }
+        },
+        {
+            "header": "CourageousJumpData",
+            "values": {
+                "unknown_data_1": "0500",
+                "name": "Озеро Лакрима",
+                "unknown_data_2": "333333405c8f82c0",
+                "unknown_string_1": "t4601",
+                "unknown_string_2": "0",
+                "unknown_data_3": "007b748bc352b8c042142ebe43cd4c0f430000200020002000"
+            }
+        },
+        {
+            "header": "CourageousJumpData",
+            "values": {
+                "unknown_data_1": "0600",
+                "name": "Гаррелийский полигон",
+                "unknown_data_2": "cdcc3c40295c8f3f",
+                "unknown_string_1": "t5701",
+                "unknown_string_2": "0",
+                "unknown_data_3": "0200002ac2f6289440cdcc97c2000034432000200020002000"
+            }
+        },
+        {
+            "header": "CourageousJumpData",
+            "values": {
+                "unknown_data_1": "0700",
+                "name": "Крепость Гаррелия - Руины",
+                "unknown_data_2": "9a994940c3f5a83f",
+                "unknown_string_1": "t5501",
+                "unknown_string_2": "0",
+                "unknown_data_3": "0066e60bc3e17a94bf33b307430000b4422000200020002000"
+            }
+        },
+        {
+            "header": "CourageousJumpData",
+            "values": {
+                "unknown_data_1": "0800",
+                "name": "Селдик",
+                "unknown_data_2": "cdcc4c3e7b14ae3f",
+                "unknown_string_1": "t1500",
+                "unknown_string_2": "0",
+                "unknown_data_3": "02b81e053e0000000052b8c640000034432000200020002000"
+            }
+        },
+        {
+            "header": "CourageousJumpData",
+            "values": {
+                "unknown_data_1": "0900",
+                "name": "Природный парк Лунария",
+                "unknown_data_2": "0ad723bda4707d3f",
+                "unknown_string_1": "r0010",
+                "unknown_string_2": "0",
+                "unknown_data_3": "000000aac100000041713daac2000000002000200020002000"
+            }
+        },
+        {
+            "header": "CourageousJumpData",
+            "values": {
+                "unknown_data_1": "0a00",
+                "name": "Мост Двух Драконов",
+                "unknown_data_2": "cdccac3ff628bc3f",
+                "unknown_string_1": "t6000",
+                "unknown_string_2": "0",
+                "unknown_data_3": "00f6288ec114ae374085eb71c00000b4422000200020002000"
+            }
+        },
+        {
+            "header": "CourageousJumpData",
+            "values": {
+                "unknown_data_1": "0b00",
+                "name": "Рор",
+                "unknown_data_2": "c3f5a83eec5178bf",
+                "unknown_string_1": "t3500",
+                "unknown_string_2": "0",
+                "unknown_data_3": "0185eb01c0cdcccc3d14ae1842000034432000200020002000"
+            }
+        },
+        {
+            "header": "CourageousJumpData",
+            "values": {
+                "unknown_data_1": "0c00",
+                "name": "Заксенский железный рудник",
+                "unknown_data_2": "ae47613ee17ad4bf",
+                "unknown_string_1": "m1200",
+                "unknown_string_2": "0",
+                "unknown_data_3": "00ec5105c2f628dcc000008f42cdcc20432000200020002000"
+            }
+        },
+        {
+            "header": "CourageousJumpData",
+            "values": {
+                "unknown_data_1": "0d00",
+                "name": "Барьер «Чёрный Дракон»",
+                "unknown_data_2": "1f858bbfb81e053e",
+                "unknown_string_1": "t6500",
+                "unknown_string_2": "0",
+                "unknown_data_3": "000ad723bd0000403fc3b503c333b334432000200020002000"
+            }
+        },
+        {
+            "header": "CourageousJumpData",
+            "values": {
+                "unknown_data_1": "0e00",
+                "name": "Святилище Земли",
+                "unknown_data_2": "c3f51840c3f5c83f",
+                "unknown_string_1": "r1000",
+                "unknown_string_2": "0",
+                "unknown_data_3": "008f824643295c0bc1aec7e04200808f432000200020002000"
+            }
+        },
+        {
+            "header": "CourageousJumpData",
+            "values": {
+                "unknown_data_1": "0f00",
+                "name": "Святилище Воды",
+                "unknown_data_2": "0ad7233e295c5f40",
+                "unknown_string_1": "r0320",
+                "unknown_string_2": "0",
+                "unknown_data_3": "00142e2bc3000038c166e680c2000087432000200020002000"
+            }
+        },
+        {
+            "header": "CourageousJumpData",
+            "values": {
+                "unknown_data_1": "1000",
+                "name": "Святилище Арии",
+                "unknown_data_2": "e17a544052b85ec0",
+                "unknown_string_1": "r0820",
+                "unknown_string_2": "0",
+                "unknown_data_3": "009a1958c33333754200608ec3cd4c53432000200020002000"
+            }
+        },
+        {
+            "header": "CourageousJumpData",
+            "values": {
+                "unknown_data_1": "1100",
+                "name": "Святилище Огня",
+                "unknown_data_2": "1f85ebbe9a9999be",
+                "unknown_string_1": "r0450",
+                "unknown_string_2": "0",
+                "unknown_data_3": "00a4b004437b14fec0486112439a59a9432000200020002000"
+            }
+        },
+        {
+            "header": "CourageousJumpData",
+            "values": {
+                "unknown_data_1": "1200",
+                "name": "Бэрейхард",
+                "unknown_data_2": "85ebd13e48e12a40",
+                "unknown_string_1": "t2100",
+                "unknown_string_2": "0",
+                "unknown_data_3": "01295c1f40000000007b147ec0000034432000200020002000"
+            }
+        },
+        {
+            "header": "CourageousJumpData",
+            "values": {
+                "unknown_data_1": "1300",
+                "name": "Форт Орокс",
+                "unknown_data_2": "ec51983f8fc22540",
+                "unknown_string_1": "t5000",
+                "unknown_string_2": "0",
+                "unknown_data_3": "005c8f064214ae3b417b1406c1008034432000200020002000"
+            }
+        },
+        {
+            "header": "CourageousJumpData",
+            "values": {
+                "unknown_data_1": "1400",
+                "name": "Место поселения",
+                "unknown_data_2": "0000304048e14ac0",
+                "unknown_string_1": "t4501",
+                "unknown_string_2": "0",
+                "unknown_data_3": "0085eb9940ec5148419a997042cdcc11432000200020002000"
+            }
+        },
+        {
+            "header": "CourageousJumpData",
+            "values": {
+                "unknown_data_1": "1500",
+                "name": "Кочевое поселение",
+                "unknown_data_2": "0000304048e14ac0",
+                "unknown_string_1": "t4501",
+                "unknown_string_2": "0",
+                "unknown_data_3": "0285eb9940ec5148419a997042cdcc11432000200020002000"
+            }
+        },
+        {
+            "header": "CourageousJumpData",
+            "values": {
+                "unknown_data_1": "1600",
+                "name": "Триста",
+                "unknown_data_2": "0000a0bf3d0a973f",
+                "unknown_string_1": "t1000",
+                "unknown_string_2": "0",
+                "unknown_data_3": "020000803e0000000033333340000034432000200020002000"
+            }
+        },
+        {
+            "header": "CourageousJumpData",
+            "values": {
+                "unknown_data_1": "1700",
+                "name": "Хребет Айзенгард",
+                "unknown_data_2": "52b81ebf85eb21c0",
+                "unknown_string_1": "r0920",
+                "unknown_string_2": "0",
+                "unknown_data_3": "00cdccd440cdccfcc066663ac23333a5422000200020002000"
+            }
+        },
+        {
+            "header": "CourageousJumpData",
+            "values": {
+                "unknown_data_1": "1800",
+                "name": "Имперская вилла Карел",
+                "unknown_data_2": "333313c014ae473f",
+                "unknown_string_1": "c1000",
+                "unknown_string_2": "0",
+                "unknown_data_3": "0052b8b64000000000b81ec5409a99b6422000200020002000"
+            }
+        },
+        {
+            "header": "CourageousJumpData",
+            "values": {
+                "unknown_data_1": "1900",
+                "name": "Адский замок",
+                "unknown_data_2": "c3f508c05c8f823f",
+                "unknown_string_1": "m4500",
+                "unknown_string_2": "0",
+                "unknown_data_3": "0000000000cdcc84c0666603c2000034432000200020002000"
+            }
+        },
+        {
+            "header": "CourageousJumpData",
+            "values": {
+                "unknown_data_1": "1a00",
+                "name": "Просёлок Спина",
+                "unknown_data_2": "8fc2753d8fc275bf",
+                "unknown_string_1": "r0400",
+                "unknown_string_2": "0",
+                "unknown_data_3": "000000e0c1000080bf00004c410000f1422000200020002000"
+            }
+        },
+        {
+            "header": "CourageousJumpData",
+            "values": {
+                "unknown_data_1": "1b00",
+                "name": "Селдик",
+                "unknown_data_2": "cdcc4c3e7b14ae3f",
+                "unknown_string_1": "t1501",
+                "unknown_string_2": "0",
+                "unknown_data_3": "02b81e053e0000000052b8c640000034432000200020002000"
+            }
+        }
+    ]
+}

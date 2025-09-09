@@ -1,0 +1,110 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;m5020.scn 42
+	DD	BTLSET000					;m5020.scn 48
+	DD	BTLSET001					;m5020.scn 64
+	DD	BTLSET010					;m5020.scn 71
+	DD	BTLSET011					;m5020.scn 78
+	DD	PreInit					;m5020.scn 91
+	DD	Init					;m5020.scn 106
+	DD	Init_Replay					;m5020.scn 192
+	DD	Reinit					;m5020.scn 259
+	DD	LP_healobject					;m5020.scn 282
+	DD	LP_mbox00					;m5020.scn 293
+	DD	LP_mbox00_Get					;m5020.scn 303
+	DD	LP_event_rw0					;m5020.scn 332
+	DD	LP_event_rw1					;m5020.scn 439
+	DD	LP_event_rw2					;m5020.scn 537
+	DD	LP_event_rw3					;m5020.scn 639
+	DD	LP_event_rw4					;m5020.scn 741
+	DD	AV_05002					;m5020.scn 846
+	DD	EV_05_04_00					;m5020.scn 880
+	DD	EV_05_04_01					;m5020.scn 966
+	DD	EV_05_05_00					;m5020.scn 1317
+	DD	EV_05_05_01					;m5020.scn 1461
+	DD	_LP_mbox00_Get					;m5020.scn 1800
+	DD	_LP_event_rw0					;m5020.scn 1800
+	DD	_LP_event_rw1					;m5020.scn 1800
+	DD	_LP_event_rw2					;m5020.scn 1800
+	DD	_LP_event_rw3					;m5020.scn 1800
+	DD	_LP_event_rw4					;m5020.scn 1800
+	DD	_EV_05_04_00					;m5020.scn 1800
+	DD	_EV_05_04_01					;m5020.scn 1800
+	DD	_EV_05_05_00					;m5020.scn 1800
+	DD	_EV_05_05_01					;m5020.scn 1800
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_BTLSET000
+	DW	FUNCNAME_BTLSET001
+	DW	FUNCNAME_BTLSET010
+	DW	FUNCNAME_BTLSET011
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_LP_healobject
+	DW	FUNCNAME_LP_mbox00
+	DW	FUNCNAME_LP_mbox00_Get
+	DW	FUNCNAME_LP_event_rw0
+	DW	FUNCNAME_LP_event_rw1
+	DW	FUNCNAME_LP_event_rw2
+	DW	FUNCNAME_LP_event_rw3
+	DW	FUNCNAME_LP_event_rw4
+	DW	FUNCNAME_AV_05002
+	DW	FUNCNAME_EV_05_04_00
+	DW	FUNCNAME_EV_05_04_01
+	DW	FUNCNAME_EV_05_05_00
+	DW	FUNCNAME_EV_05_05_01
+	DW	FUNCNAME__LP_mbox00_Get
+	DW	FUNCNAME__LP_event_rw0
+	DW	FUNCNAME__LP_event_rw1
+	DW	FUNCNAME__LP_event_rw2
+	DW	FUNCNAME__LP_event_rw3
+	DW	FUNCNAME__LP_event_rw4
+	DW	FUNCNAME__EV_05_04_00
+	DW	FUNCNAME__EV_05_04_01
+	DW	FUNCNAME__EV_05_05_00
+	DW	FUNCNAME__EV_05_05_01
+FUNCTION_NAME_TABLE_NUM	EQU	32
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_BTLSET000:	DB	0
+FUNCNAME_BTLSET001:	DB	0
+FUNCNAME_BTLSET010:	DB	0
+FUNCNAME_BTLSET011:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_LP_healobject:	DB	'LP_healobject',0
+FUNCNAME_LP_mbox00:	DB	'LP_mbox00',0
+FUNCNAME_LP_mbox00_Get:	DB	'LP_mbox00_Get',0
+FUNCNAME_LP_event_rw0:	DB	'LP_event_rw0',0
+FUNCNAME_LP_event_rw1:	DB	'LP_event_rw1',0
+FUNCNAME_LP_event_rw2:	DB	'LP_event_rw2',0
+FUNCNAME_LP_event_rw3:	DB	'LP_event_rw3',0
+FUNCNAME_LP_event_rw4:	DB	'LP_event_rw4',0
+FUNCNAME_AV_05002:	DB	'AV_05002',0
+FUNCNAME_EV_05_04_00:	DB	'EV_05_04_00',0
+FUNCNAME_EV_05_04_01:	DB	'EV_05_04_01',0
+FUNCNAME_EV_05_05_00:	DB	'EV_05_05_00',0
+FUNCNAME_EV_05_05_01:	DB	'EV_05_05_01',0
+FUNCNAME__LP_mbox00_Get:	DB	'_LP_mbox00_Get',0
+FUNCNAME__LP_event_rw0:	DB	'_LP_event_rw0',0
+FUNCNAME__LP_event_rw1:	DB	'_LP_event_rw1',0
+FUNCNAME__LP_event_rw2:	DB	'_LP_event_rw2',0
+FUNCNAME__LP_event_rw3:	DB	'_LP_event_rw3',0
+FUNCNAME__LP_event_rw4:	DB	'_LP_event_rw4',0
+FUNCNAME__EV_05_04_00:	DB	'_EV_05_04_00',0
+FUNCNAME__EV_05_04_01:	DB	'_EV_05_04_01',0
+FUNCNAME__EV_05_05_00:	DB	'_EV_05_05_00',0
+FUNCNAME__EV_05_05_01:	DB	'_EV_05_05_01',0

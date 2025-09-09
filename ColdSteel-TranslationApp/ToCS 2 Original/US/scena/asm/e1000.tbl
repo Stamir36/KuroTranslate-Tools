@@ -1,0 +1,47 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;e1000.scn 37
+	DD	PreInit					;e1000.scn 44
+	DD	Init					;e1000.scn 59
+	DD	Init_Replay					;e1000.scn 92
+	DD	Reinit					;e1000.scn 118
+	DD	EV_01_01_02					;e1000.scn 161
+	DD	EV_01_32_02					;e1000.scn 458
+	DD	EV_01_52_02					;e1000.scn 736
+	DD	_EV_01_01_02					;e1000.scn 960
+	DD	_EV_01_32_02					;e1000.scn 960
+	DD	_EV_01_52_02					;e1000.scn 960
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_EV_01_01_02
+	DW	FUNCNAME_EV_01_32_02
+	DW	FUNCNAME_EV_01_52_02
+	DW	FUNCNAME__EV_01_01_02
+	DW	FUNCNAME__EV_01_32_02
+	DW	FUNCNAME__EV_01_52_02
+FUNCTION_NAME_TABLE_NUM	EQU	11
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_EV_01_01_02:	DB	'EV_01_01_02',0
+FUNCNAME_EV_01_32_02:	DB	'EV_01_32_02',0
+FUNCNAME_EV_01_52_02:	DB	'EV_01_52_02',0
+FUNCNAME__EV_01_01_02:	DB	'_EV_01_01_02',0
+FUNCNAME__EV_01_32_02:	DB	'_EV_01_32_02',0
+FUNCNAME__EV_01_52_02:	DB	'_EV_01_52_02',0

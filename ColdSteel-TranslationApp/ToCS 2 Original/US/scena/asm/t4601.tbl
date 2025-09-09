@@ -1,0 +1,287 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;t4601.scn 55
+	DD	PreInit					;t4601.scn 63
+	DD	Init					;t4601.scn 81
+	DD	Init_Replay					;t4601.scn 134
+	DD	Reinit					;t4601.scn 205
+	DD	Move_Geru_Enable					;t4601.scn 222
+	DD	Move_Geru_Disable					;t4601.scn 309
+	DD	EV_SE_T4600TONNB					;t4601.scn 401
+	DD	LP_fishpoint00					;t4601.scn 412
+	DD	LP_Garage					;t4601.scn 449
+	DD	LP_Warehouse					;t4601.scn 474
+	DD	AV_FishPoint					;t4601.scn 504
+	DD	AV_01032					;t4601.scn 514
+	DD	Npc_Table					;t4601.scn 523
+	DD	TK_Horse					;t4601.scn 560
+	DD	gwenn_setting					;t4601.scn 571
+	DD	TK_gwenn					;t4601.scn 585
+	DD	racan_setting					;t4601.scn 758
+	DD	TK_racan					;t4601.scn 776
+	DD	toma_setting					;t4601.scn 895
+	DD	TK_toma					;t4601.scn 925
+	DD	seeda_setting					;t4601.scn 1236
+	DD	TK_seeda					;t4601.scn 1273
+	DD	lily_setting					;t4601.scn 1771
+	DD	TK_lily					;t4601.scn 1816
+	DD	NPC_move_lily					;t4601.scn 2089
+	DD	shal_setting					;t4601.scn 2134
+	DD	TK_shal					;t4601.scn 2148
+	DD	TK_shal_toma					;t4601.scn 2214
+	DD	amul_setting					;t4601.scn 2293
+	DD	TK_amul					;t4601.scn 2314
+	DD	san_setting					;t4601.scn 2454
+	DD	TK_san					;t4601.scn 2469
+	DD	kotan_setting					;t4601.scn 2549
+	DD	TK_kotan					;t4601.scn 2596
+	DD	NPC_move_kotan					;t4601.scn 2811
+	DD	NPC_move_kotan2					;t4601.scn 2830
+	DD	NPC_move_kotan2_wait					;t4601.scn 2867
+	DD	NPC_move_kotan3					;t4601.scn 2874
+	DD	watari_setting					;t4601.scn 2897
+	DD	TK_watari					;t4601.scn 2926
+	DD	horse_agon_setting					;t4601.scn 3234
+	DD	TK_horse_agon					;t4601.scn 3259
+	DD	horse_white_setting					;t4601.scn 3277
+	DD	TK_horse_white					;t4601.scn 3291
+	DD	horse_brown_setting					;t4601.scn 3309
+	DD	TK_horse_brown					;t4601.scn 3323
+	DD	horse_ilfa_setting					;t4601.scn 3341
+	DD	TK_horse_ilfa					;t4601.scn 3355
+	DD	horse_zeku_setting					;t4601.scn 3369
+	DD	TK_horse_zeku					;t4601.scn 3412
+	DD	sheep_01_setting					;t4601.scn 3454
+	DD	sheep_02_setting					;t4601.scn 3474
+	DD	sheep_03_setting					;t4601.scn 3492
+	DD	TK_sheep_01					;t4601.scn 3510
+	DD	TK_sheep_02					;t4601.scn 3521
+	DD	TK_sheep_03					;t4601.scn 3532
+	DD	EV_01_37_00					;t4601.scn 3551
+	DD	ET_01_37_00_SEEDA_1					;t4601.scn 4138
+	DD	ET_01_37_00_TOMA_1					;t4601.scn 4144
+	DD	ET_01_37_00_SHAL_1					;t4601.scn 4149
+	DD	EV_01_41_02					;t4601.scn 4158
+	DD	EV_01_41_04					;t4601.scn 4252
+	DD	EV_01_47_00					;t4601.scn 4733
+	DD	ET_01_47_01_RACAN_TALK					;t4601.scn 6810
+	DD	ET_01_47_01_GAIUS_TALK					;t4601.scn 6819
+	DD	ET_ChrWarpIn					;t4601.scn 6837
+	DD	EV_03_02_00					;t4601.scn 6847
+	DD	ET_03_02_00_TurnToREAN					;t4601.scn 7420
+	DD	QS_1202_01					;t4601.scn 7439
+	DD	QS_1202_COMP					;t4601.scn 7828
+	DD	QS_2404_02_C					;t4601.scn 8280
+	DD	TU_01_OVR_AM					;t4601.scn 8595
+	DD	_EV_SE_T4600TONNB					;t4601.scn 8670
+	DD	_TK_seeda					;t4601.scn 8670
+	DD	_TK_lily					;t4601.scn 8670
+	DD	_TK_horse_agon					;t4601.scn 8670
+	DD	_TK_horse_white					;t4601.scn 8670
+	DD	_TK_horse_brown					;t4601.scn 8670
+	DD	_TK_horse_ilfa					;t4601.scn 8670
+	DD	_TK_horse_zeku					;t4601.scn 8670
+	DD	_TK_sheep_01					;t4601.scn 8670
+	DD	_TK_sheep_02					;t4601.scn 8670
+	DD	_TK_sheep_03					;t4601.scn 8670
+	DD	_EV_01_37_00					;t4601.scn 8670
+	DD	_EV_01_41_04					;t4601.scn 8670
+	DD	_EV_01_47_00					;t4601.scn 8670
+	DD	_EV_03_02_00					;t4601.scn 8670
+	DD	_QS_1202_01					;t4601.scn 8670
+	DD	_QS_1202_COMP					;t4601.scn 8670
+	DD	_TU_01_OVR_AM					;t4601.scn 8670
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_Move_Geru_Enable
+	DW	FUNCNAME_Move_Geru_Disable
+	DW	FUNCNAME_EV_SE_T4600TONNB
+	DW	FUNCNAME_LP_fishpoint00
+	DW	FUNCNAME_LP_Garage
+	DW	FUNCNAME_LP_Warehouse
+	DW	FUNCNAME_AV_FishPoint
+	DW	FUNCNAME_AV_01032
+	DW	FUNCNAME_Npc_Table
+	DW	FUNCNAME_TK_Horse
+	DW	FUNCNAME_gwenn_setting
+	DW	FUNCNAME_TK_gwenn
+	DW	FUNCNAME_racan_setting
+	DW	FUNCNAME_TK_racan
+	DW	FUNCNAME_toma_setting
+	DW	FUNCNAME_TK_toma
+	DW	FUNCNAME_seeda_setting
+	DW	FUNCNAME_TK_seeda
+	DW	FUNCNAME_lily_setting
+	DW	FUNCNAME_TK_lily
+	DW	FUNCNAME_NPC_move_lily
+	DW	FUNCNAME_shal_setting
+	DW	FUNCNAME_TK_shal
+	DW	FUNCNAME_TK_shal_toma
+	DW	FUNCNAME_amul_setting
+	DW	FUNCNAME_TK_amul
+	DW	FUNCNAME_san_setting
+	DW	FUNCNAME_TK_san
+	DW	FUNCNAME_kotan_setting
+	DW	FUNCNAME_TK_kotan
+	DW	FUNCNAME_NPC_move_kotan
+	DW	FUNCNAME_NPC_move_kotan2
+	DW	FUNCNAME_NPC_move_kotan2_wait
+	DW	FUNCNAME_NPC_move_kotan3
+	DW	FUNCNAME_watari_setting
+	DW	FUNCNAME_TK_watari
+	DW	FUNCNAME_horse_agon_setting
+	DW	FUNCNAME_TK_horse_agon
+	DW	FUNCNAME_horse_white_setting
+	DW	FUNCNAME_TK_horse_white
+	DW	FUNCNAME_horse_brown_setting
+	DW	FUNCNAME_TK_horse_brown
+	DW	FUNCNAME_horse_ilfa_setting
+	DW	FUNCNAME_TK_horse_ilfa
+	DW	FUNCNAME_horse_zeku_setting
+	DW	FUNCNAME_TK_horse_zeku
+	DW	FUNCNAME_sheep_01_setting
+	DW	FUNCNAME_sheep_02_setting
+	DW	FUNCNAME_sheep_03_setting
+	DW	FUNCNAME_TK_sheep_01
+	DW	FUNCNAME_TK_sheep_02
+	DW	FUNCNAME_TK_sheep_03
+	DW	FUNCNAME_EV_01_37_00
+	DW	FUNCNAME_ET_01_37_00_SEEDA_1
+	DW	FUNCNAME_ET_01_37_00_TOMA_1
+	DW	FUNCNAME_ET_01_37_00_SHAL_1
+	DW	FUNCNAME_EV_01_41_02
+	DW	FUNCNAME_EV_01_41_04
+	DW	FUNCNAME_EV_01_47_00
+	DW	FUNCNAME_ET_01_47_01_RACAN_TALK
+	DW	FUNCNAME_ET_01_47_01_GAIUS_TALK
+	DW	FUNCNAME_ET_ChrWarpIn
+	DW	FUNCNAME_EV_03_02_00
+	DW	FUNCNAME_ET_03_02_00_TurnToREAN
+	DW	FUNCNAME_QS_1202_01
+	DW	FUNCNAME_QS_1202_COMP
+	DW	FUNCNAME_QS_2404_02_C
+	DW	FUNCNAME_TU_01_OVR_AM
+	DW	FUNCNAME__EV_SE_T4600TONNB
+	DW	FUNCNAME__TK_seeda
+	DW	FUNCNAME__TK_lily
+	DW	FUNCNAME__TK_horse_agon
+	DW	FUNCNAME__TK_horse_white
+	DW	FUNCNAME__TK_horse_brown
+	DW	FUNCNAME__TK_horse_ilfa
+	DW	FUNCNAME__TK_horse_zeku
+	DW	FUNCNAME__TK_sheep_01
+	DW	FUNCNAME__TK_sheep_02
+	DW	FUNCNAME__TK_sheep_03
+	DW	FUNCNAME__EV_01_37_00
+	DW	FUNCNAME__EV_01_41_04
+	DW	FUNCNAME__EV_01_47_00
+	DW	FUNCNAME__EV_03_02_00
+	DW	FUNCNAME__QS_1202_01
+	DW	FUNCNAME__QS_1202_COMP
+	DW	FUNCNAME__TU_01_OVR_AM
+FUNCTION_NAME_TABLE_NUM	EQU	91
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_Move_Geru_Enable:	DB	'Move_Geru_Enable',0
+FUNCNAME_Move_Geru_Disable:	DB	'Move_Geru_Disable',0
+FUNCNAME_EV_SE_T4600TONNB:	DB	'EV_SE_T4600TONNB',0
+FUNCNAME_LP_fishpoint00:	DB	'LP_fishpoint00',0
+FUNCNAME_LP_Garage:	DB	'LP_Garage',0
+FUNCNAME_LP_Warehouse:	DB	'LP_Warehouse',0
+FUNCNAME_AV_FishPoint:	DB	'AV_FishPoint',0
+FUNCNAME_AV_01032:	DB	'AV_01032',0
+FUNCNAME_Npc_Table:	DB	'Npc_Table',0
+FUNCNAME_TK_Horse:	DB	'TK_Horse',0
+FUNCNAME_gwenn_setting:	DB	'gwenn_setting',0
+FUNCNAME_TK_gwenn:	DB	'TK_gwenn',0
+FUNCNAME_racan_setting:	DB	'racan_setting',0
+FUNCNAME_TK_racan:	DB	'TK_racan',0
+FUNCNAME_toma_setting:	DB	'toma_setting',0
+FUNCNAME_TK_toma:	DB	'TK_toma',0
+FUNCNAME_seeda_setting:	DB	'seeda_setting',0
+FUNCNAME_TK_seeda:	DB	'TK_seeda',0
+FUNCNAME_lily_setting:	DB	'lily_setting',0
+FUNCNAME_TK_lily:	DB	'TK_lily',0
+FUNCNAME_NPC_move_lily:	DB	'NPC_move_lily',0
+FUNCNAME_shal_setting:	DB	'shal_setting',0
+FUNCNAME_TK_shal:	DB	'TK_shal',0
+FUNCNAME_TK_shal_toma:	DB	'TK_shal_toma',0
+FUNCNAME_amul_setting:	DB	'amul_setting',0
+FUNCNAME_TK_amul:	DB	'TK_amul',0
+FUNCNAME_san_setting:	DB	'san_setting',0
+FUNCNAME_TK_san:	DB	'TK_san',0
+FUNCNAME_kotan_setting:	DB	'kotan_setting',0
+FUNCNAME_TK_kotan:	DB	'TK_kotan',0
+FUNCNAME_NPC_move_kotan:	DB	'NPC_move_kotan',0
+FUNCNAME_NPC_move_kotan2:	DB	'NPC_move_kotan2',0
+FUNCNAME_NPC_move_kotan2_wait:	DB	'NPC_move_kotan2_wait',0
+FUNCNAME_NPC_move_kotan3:	DB	'NPC_move_kotan3',0
+FUNCNAME_watari_setting:	DB	'watari_setting',0
+FUNCNAME_TK_watari:	DB	'TK_watari',0
+FUNCNAME_horse_agon_setting:	DB	'horse_agon_setting',0
+FUNCNAME_TK_horse_agon:	DB	'TK_horse_agon',0
+FUNCNAME_horse_white_setting:	DB	'horse_white_setting',0
+FUNCNAME_TK_horse_white:	DB	'TK_horse_white',0
+FUNCNAME_horse_brown_setting:	DB	'horse_brown_setting',0
+FUNCNAME_TK_horse_brown:	DB	'TK_horse_brown',0
+FUNCNAME_horse_ilfa_setting:	DB	'horse_ilfa_setting',0
+FUNCNAME_TK_horse_ilfa:	DB	'TK_horse_ilfa',0
+FUNCNAME_horse_zeku_setting:	DB	'horse_zeku_setting',0
+FUNCNAME_TK_horse_zeku:	DB	'TK_horse_zeku',0
+FUNCNAME_sheep_01_setting:	DB	'sheep_01_setting',0
+FUNCNAME_sheep_02_setting:	DB	'sheep_02_setting',0
+FUNCNAME_sheep_03_setting:	DB	'sheep_03_setting',0
+FUNCNAME_TK_sheep_01:	DB	'TK_sheep_01',0
+FUNCNAME_TK_sheep_02:	DB	'TK_sheep_02',0
+FUNCNAME_TK_sheep_03:	DB	'TK_sheep_03',0
+FUNCNAME_EV_01_37_00:	DB	'EV_01_37_00',0
+FUNCNAME_ET_01_37_00_SEEDA_1:	DB	'ET_01_37_00_SEEDA_1',0
+FUNCNAME_ET_01_37_00_TOMA_1:	DB	'ET_01_37_00_TOMA_1',0
+FUNCNAME_ET_01_37_00_SHAL_1:	DB	'ET_01_37_00_SHAL_1',0
+FUNCNAME_EV_01_41_02:	DB	'EV_01_41_02',0
+FUNCNAME_EV_01_41_04:	DB	'EV_01_41_04',0
+FUNCNAME_EV_01_47_00:	DB	'EV_01_47_00',0
+FUNCNAME_ET_01_47_01_RACAN_TALK:	DB	'ET_01_47_01_RACAN_TALK',0
+FUNCNAME_ET_01_47_01_GAIUS_TALK:	DB	'ET_01_47_01_GAIUS_TALK',0
+FUNCNAME_ET_ChrWarpIn:	DB	'ET_ChrWarpIn',0
+FUNCNAME_EV_03_02_00:	DB	'EV_03_02_00',0
+FUNCNAME_ET_03_02_00_TurnToREAN:	DB	'ET_03_02_00_TurnToREAN',0
+FUNCNAME_QS_1202_01:	DB	'QS_1202_01',0
+FUNCNAME_QS_1202_COMP:	DB	'QS_1202_COMP',0
+FUNCNAME_QS_2404_02_C:	DB	'QS_2404_02_C',0
+FUNCNAME_TU_01_OVR_AM:	DB	'TU_01_OVR_AM',0
+FUNCNAME__EV_SE_T4600TONNB:	DB	'_EV_SE_T4600TONNB',0
+FUNCNAME__TK_seeda:	DB	'_TK_seeda',0
+FUNCNAME__TK_lily:	DB	'_TK_lily',0
+FUNCNAME__TK_horse_agon:	DB	'_TK_horse_agon',0
+FUNCNAME__TK_horse_white:	DB	'_TK_horse_white',0
+FUNCNAME__TK_horse_brown:	DB	'_TK_horse_brown',0
+FUNCNAME__TK_horse_ilfa:	DB	'_TK_horse_ilfa',0
+FUNCNAME__TK_horse_zeku:	DB	'_TK_horse_zeku',0
+FUNCNAME__TK_sheep_01:	DB	'_TK_sheep_01',0
+FUNCNAME__TK_sheep_02:	DB	'_TK_sheep_02',0
+FUNCNAME__TK_sheep_03:	DB	'_TK_sheep_03',0
+FUNCNAME__EV_01_37_00:	DB	'_EV_01_37_00',0
+FUNCNAME__EV_01_41_04:	DB	'_EV_01_41_04',0
+FUNCNAME__EV_01_47_00:	DB	'_EV_01_47_00',0
+FUNCNAME__EV_03_02_00:	DB	'_EV_03_02_00',0
+FUNCNAME__QS_1202_01:	DB	'_QS_1202_01',0
+FUNCNAME__QS_1202_COMP:	DB	'_QS_1202_COMP',0
+FUNCNAME__TU_01_OVR_AM:	DB	'_TU_01_OVR_AM',0

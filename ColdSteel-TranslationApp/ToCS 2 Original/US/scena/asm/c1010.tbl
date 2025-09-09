@@ -1,0 +1,92 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;c1010.scn 42
+	DD	BTLSET000					;c1010.scn 48
+	DD	BTLSET010					;c1010.scn 57
+	DD	BTLSET011					;c1010.scn 63
+	DD	PreInit					;c1010.scn 73
+	DD	Init					;c1010.scn 88
+	DD	Init_Replay					;c1010.scn 146
+	DD	Reinit					;c1010.scn 181
+	DD	LP_door01					;c1010.scn 209
+	DD	LP_healobject					;c1010.scn 326
+	DD	Npc_Table					;c1010.scn 343
+	DD	evnpc_soldier_002_setting					;c1010.scn 358
+	DD	evnpc_soldier_003_setting					;c1010.scn 378
+	DD	evnpc_soldier_004_setting					;c1010.scn 398
+	DD	TK_evnpc_soldier_002					;c1010.scn 422
+	DD	TK_evnpc_soldier_003					;c1010.scn 425
+	DD	TK_evnpc_soldier_004					;c1010.scn 428
+	DD	EV_04_07_00					;c1010.scn 439
+	DD	EV_SE_FOOT					;c1010.scn 842
+	DD	EV_SE_FOOT_2					;c1010.scn 861
+	DD	EV_04_07_01					;c1010.scn 873
+	DD	EV_04_08_00					;c1010.scn 1164
+	DD	ET_04_08_00_Reinit					;c1010.scn 1351
+	DD	_LP_door01					;c1010.scn 1385
+	DD	_EV_SE_FOOT					;c1010.scn 1385
+	DD	_EV_SE_FOOT_2					;c1010.scn 1385
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_BTLSET000
+	DW	FUNCNAME_BTLSET010
+	DW	FUNCNAME_BTLSET011
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_LP_door01
+	DW	FUNCNAME_LP_healobject
+	DW	FUNCNAME_Npc_Table
+	DW	FUNCNAME_evnpc_soldier_002_setting
+	DW	FUNCNAME_evnpc_soldier_003_setting
+	DW	FUNCNAME_evnpc_soldier_004_setting
+	DW	FUNCNAME_TK_evnpc_soldier_002
+	DW	FUNCNAME_TK_evnpc_soldier_003
+	DW	FUNCNAME_TK_evnpc_soldier_004
+	DW	FUNCNAME_EV_04_07_00
+	DW	FUNCNAME_EV_SE_FOOT
+	DW	FUNCNAME_EV_SE_FOOT_2
+	DW	FUNCNAME_EV_04_07_01
+	DW	FUNCNAME_EV_04_08_00
+	DW	FUNCNAME_ET_04_08_00_Reinit
+	DW	FUNCNAME__LP_door01
+	DW	FUNCNAME__EV_SE_FOOT
+	DW	FUNCNAME__EV_SE_FOOT_2
+FUNCTION_NAME_TABLE_NUM	EQU	26
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_BTLSET000:	DB	0
+FUNCNAME_BTLSET010:	DB	0
+FUNCNAME_BTLSET011:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_LP_door01:	DB	'LP_door01',0
+FUNCNAME_LP_healobject:	DB	'LP_healobject',0
+FUNCNAME_Npc_Table:	DB	'Npc_Table',0
+FUNCNAME_evnpc_soldier_002_setting:	DB	'evnpc_soldier_002_setting',0
+FUNCNAME_evnpc_soldier_003_setting:	DB	'evnpc_soldier_003_setting',0
+FUNCNAME_evnpc_soldier_004_setting:	DB	'evnpc_soldier_004_setting',0
+FUNCNAME_TK_evnpc_soldier_002:	DB	'TK_evnpc_soldier_002',0
+FUNCNAME_TK_evnpc_soldier_003:	DB	'TK_evnpc_soldier_003',0
+FUNCNAME_TK_evnpc_soldier_004:	DB	'TK_evnpc_soldier_004',0
+FUNCNAME_EV_04_07_00:	DB	'EV_04_07_00',0
+FUNCNAME_EV_SE_FOOT:	DB	'EV_SE_FOOT',0
+FUNCNAME_EV_SE_FOOT_2:	DB	'EV_SE_FOOT_2',0
+FUNCNAME_EV_04_07_01:	DB	'EV_04_07_01',0
+FUNCNAME_EV_04_08_00:	DB	'EV_04_08_00',0
+FUNCNAME_ET_04_08_00_Reinit:	DB	'ET_04_08_00_Reinit',0
+FUNCNAME__LP_door01:	DB	'_LP_door01',0
+FUNCNAME__EV_SE_FOOT:	DB	'_EV_SE_FOOT',0
+FUNCNAME__EV_SE_FOOT_2:	DB	'_EV_SE_FOOT_2',0

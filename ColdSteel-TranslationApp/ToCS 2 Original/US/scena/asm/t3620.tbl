@@ -1,0 +1,56 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;t3620.scn 41
+	DD	PreInit					;t3620.scn 48
+	DD	Init					;t3620.scn 63
+	DD	Init_Replay					;t3620.scn 96
+	DD	Reinit					;t3620.scn 125
+	DD	Npc_Table					;t3620.scn 151
+	DD	fabel_setting					;t3620.scn 174
+	DD	TK_fabel					;t3620.scn 186
+	DD	papuri_setting					;t3620.scn 451
+	DD	TK_papuri					;t3620.scn 507
+	DD	antone_setting					;t3620.scn 755
+	DD	TK_antone					;t3620.scn 793
+	DD	npc_dummy_setting					;t3620.scn 1014
+	DD	_TK_antone					;t3620.scn 1057
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_Npc_Table
+	DW	FUNCNAME_fabel_setting
+	DW	FUNCNAME_TK_fabel
+	DW	FUNCNAME_papuri_setting
+	DW	FUNCNAME_TK_papuri
+	DW	FUNCNAME_antone_setting
+	DW	FUNCNAME_TK_antone
+	DW	FUNCNAME_npc_dummy_setting
+	DW	FUNCNAME__TK_antone
+FUNCTION_NAME_TABLE_NUM	EQU	14
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_Npc_Table:	DB	'Npc_Table',0
+FUNCNAME_fabel_setting:	DB	'fabel_setting',0
+FUNCNAME_TK_fabel:	DB	'TK_fabel',0
+FUNCNAME_papuri_setting:	DB	'papuri_setting',0
+FUNCNAME_TK_papuri:	DB	'TK_papuri',0
+FUNCNAME_antone_setting:	DB	'antone_setting',0
+FUNCNAME_TK_antone:	DB	'TK_antone',0
+FUNCNAME_npc_dummy_setting:	DB	'npc_dummy_setting',0
+FUNCNAME__TK_antone:	DB	'_TK_antone',0

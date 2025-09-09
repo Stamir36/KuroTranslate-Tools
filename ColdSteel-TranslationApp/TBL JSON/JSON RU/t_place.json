@@ -1,0 +1,4202 @@
+{
+    "version": "v2",
+    "headers": [
+        "PlaceTableData"
+    ],
+    "entries": [
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "00000000",
+                "unknown_string_1": "null",
+                "unknown_string_2": "---",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "01000000",
+                "unknown_string_1": "null",
+                "unknown_string_2": "？？？",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "a0860100",
+                "unknown_string_1": "c0000",
+                "unknown_string_2": "Столица - Привокзальная площадь",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "04870100",
+                "unknown_string_1": "c0010",
+                "unknown_string_2": "Центральный вокзал Хеймдалля",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "68870100",
+                "unknown_string_1": "c0020",
+                "unknown_string_2": "Железнодорожная военная полиция - Ком. пункт",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "888a0100",
+                "unknown_string_1": "c0100",
+                "unknown_string_2": "Столица - Улица Ванкёр",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "ec8a0100",
+                "unknown_string_1": "c0110",
+                "unknown_string_2": "Бутик Le Sage - Головной магазин",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "508b0100",
+                "unknown_string_1": "c0120",
+                "unknown_string_2": "Универмаг - Плаза Бифрост",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "b48b0100",
+                "unknown_string_1": "c0130",
+                "unknown_string_2": "Оружие и броня Ватсона",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "188c0100",
+                "unknown_string_1": "c0140",
+                "unknown_string_2": "Здание «Имперских хроник»",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "7c8c0100",
+                "unknown_string_1": "c0150",
+                "unknown_string_2": "Артефакторная Lumiere",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "708e0100",
+                "unknown_string_1": "c0200",
+                "unknown_string_2": "Столица - Район Гарнье",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "d48e0100",
+                "unknown_string_1": "c0210",
+                "unknown_string_2": "Оперный театр Хеймдалля",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "388f0100",
+                "unknown_string_1": "c0220",
+                "unknown_string_2": "Ювелирный салон San Corries",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "9c8f0100",
+                "unknown_string_1": "c0230",
+                "unknown_string_2": "Отель - Der Himmel",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "58920100",
+                "unknown_string_1": "c0300",
+                "unknown_string_2": "Столица - Улица Альто",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "bc920100",
+                "unknown_string_1": "c0310",
+                "unknown_string_2": "Улица Альто - Дом семьи Крейг",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "84930100",
+                "unknown_string_1": "c0330",
+                "unknown_string_2": "Бывшее отделение гильдии",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "4c940100",
+                "unknown_string_1": "c0350",
+                "unknown_string_2": "Концерт-кафе - Etoile",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "b0940100",
+                "unknown_string_1": "c0360",
+                "unknown_string_2": "Улица Альто - Дом",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "40960100",
+                "unknown_string_1": "c0400",
+                "unknown_string_2": "Столица - Район Ост",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "a4960100",
+                "unknown_string_1": "c0410",
+                "unknown_string_2": "Район Ост - Дом семьи Регниц",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "6c970100",
+                "unknown_string_1": "c0430",
+                "unknown_string_2": "Паб Гэмджи",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "d0970100",
+                "unknown_string_1": "c0440",
+                "unknown_string_2": "Подержанные товары Эммрода",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "34980100",
+                "unknown_string_1": "c0450",
+                "unknown_string_2": "Район Ост - Дом 1",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "98980100",
+                "unknown_string_1": "c0460",
+                "unknown_string_2": "Район Ост - Дом 2",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "289a0100",
+                "unknown_string_1": "c0500",
+                "unknown_string_2": "Столица - Порт Хеймдалля",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "109e0100",
+                "unknown_string_1": "c0600",
+                "unknown_string_2": "Столица - Район Санкт",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "749e0100",
+                "unknown_string_1": "c0610",
+                "unknown_string_2": "Св. Астрея - Розовый сад",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "d89e0100",
+                "unknown_string_1": "c0620",
+                "unknown_string_2": "Св. Астрея - Комната для встреч",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "f8a10100",
+                "unknown_string_1": "c0700",
+                "unknown_string_2": "Столица - Матер-парк",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "5ca20100",
+                "unknown_string_1": "c0710",
+                "unknown_string_2": "Хрустальный сад",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "e0a50100",
+                "unknown_string_1": "c0800",
+                "unknown_string_2": "Столица - Площадь Драйхельса",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "eaa50100",
+                "unknown_string_1": "c0801",
+                "unknown_string_2": "Столица - Площадь Драйхельса",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "2caa0100",
+                "unknown_string_1": "c0910",
+                "unknown_string_2": "Дворец - Кабинет канцлера",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "90aa0100",
+                "unknown_string_1": "c0920",
+                "unknown_string_2": "★Не используется",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "f4aa0100",
+                "unknown_string_1": "c0930",
+                "unknown_string_2": "Дворец Валфлейм - Гостиная",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "58ab0100",
+                "unknown_string_1": "c0940",
+                "unknown_string_2": "Дворец Валфлейм - Зал для аудиенций",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "bcab0100",
+                "unknown_string_1": "c0950",
+                "unknown_string_2": "Дворец Валфлейм - Приёмный зал",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "20ac0100",
+                "unknown_string_1": "c0960",
+                "unknown_string_2": "Дворец Валфлейм - Терраса",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "84ac0100",
+                "unknown_string_1": "c0970",
+                "unknown_string_2": "Дворец Валфлейм - Подземелье",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "b0ad0100",
+                "unknown_string_1": "c1000",
+                "unknown_string_2": "Имперская вилла Карел",
+                "unknown_data_2": "6e001800"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "14ae0100",
+                "unknown_string_1": "c1010",
+                "unknown_string_2": "Имперская вилла Карел - 1Э",
+                "unknown_data_2": "6e001800"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "78ae0100",
+                "unknown_string_1": "c1020",
+                "unknown_string_2": "Имперская вилла Карел - 3Э",
+                "unknown_data_2": "6e001800"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "dcae0100",
+                "unknown_string_1": "c1030",
+                "unknown_string_2": "Имперская вилла Карел - Большой зал",
+                "unknown_data_2": "6e001800"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "400d0300",
+                "unknown_string_1": "t0000",
+                "unknown_string_2": "Военная академия Торс",
+                "unknown_data_2": "6e001600"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "a40d0300",
+                "unknown_string_1": "t0010",
+                "unknown_string_2": "Главное здание - 1Э",
+                "unknown_data_2": "6e001600"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "080e0300",
+                "unknown_string_1": "t0020",
+                "unknown_string_2": "Главное здание - 2Э",
+                "unknown_data_2": "6e001600"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "340f0300",
+                "unknown_string_1": "t0050",
+                "unknown_string_2": "Спортзал",
+                "unknown_data_2": "6e001600"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "980f0300",
+                "unknown_string_1": "t0060",
+                "unknown_string_2": "Академия - Библиотека",
+                "unknown_data_2": "6e001600"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "fc0f0300",
+                "unknown_string_1": "t0070",
+                "unknown_string_2": "Академия - Актовый зал",
+                "unknown_data_2": "6e001600"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "60100300",
+                "unknown_string_1": "t0080",
+                "unknown_string_2": "Здание студсовета",
+                "unknown_data_2": "6e001600"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "c4100300",
+                "unknown_string_1": "t0090",
+                "unknown_string_2": "Академия - Инженерный корпус",
+                "unknown_data_2": "6e001600"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "410d0300",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Главное здание - Крыша",
+                "unknown_data_2": "6e001600"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "420d0300",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Главные ворота",
+                "unknown_data_2": "6e001600"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "430d0300",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Внутренний двор",
+                "unknown_data_2": "6e001600"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "10150300",
+                "unknown_string_1": "t0200",
+                "unknown_string_2": "Старое здание школы",
+                "unknown_data_2": "6e001600"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "1a150300",
+                "unknown_string_1": "t0201",
+                "unknown_string_2": "Старое здание школы",
+                "unknown_data_2": "6e001600"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "74150300",
+                "unknown_string_1": "t0210",
+                "unknown_string_2": "Старое здание школы - 1Э",
+                "unknown_data_2": "6e001600"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "50340300",
+                "unknown_string_1": "t1000",
+                "unknown_string_2": "Триста",
+                "unknown_data_2": "6e001600"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "b4340300",
+                "unknown_string_1": "t1010",
+                "unknown_string_2": "Общежитие VII класса",
+                "unknown_data_2": "6e001600"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "18350300",
+                "unknown_string_1": "t1020",
+                "unknown_string_2": "Товары Брэндона",
+                "unknown_data_2": "6e001600"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "7c350300",
+                "unknown_string_1": "t1030",
+                "unknown_string_2": "Книжный магазин Кейнса",
+                "unknown_data_2": "6e001600"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "e0350300",
+                "unknown_string_1": "t1040",
+                "unknown_string_2": "Бутик - Le Sage",
+                "unknown_data_2": "6e001600"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "44360300",
+                "unknown_string_1": "t1050",
+                "unknown_string_2": "Кафе и трактир «Кирше»",
+                "unknown_data_2": "6e001600"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "a8360300",
+                "unknown_string_1": "t1060",
+                "unknown_string_2": "Ломбард Михта",
+                "unknown_data_2": "6e001600"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "0c370300",
+                "unknown_string_1": "t1070",
+                "unknown_string_2": "Триста - Дом",
+                "unknown_data_2": "6e001600"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "70370300",
+                "unknown_string_1": "t1080",
+                "unknown_string_2": "Триста - Дом",
+                "unknown_data_2": "6e001600"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "d4370300",
+                "unknown_string_1": "t1090",
+                "unknown_string_2": "Вокзал Тристы",
+                "unknown_data_2": "6e001600"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "9c380300",
+                "unknown_string_1": "t1110",
+                "unknown_string_2": "Часовня Тристы",
+                "unknown_data_2": "6e001600"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "00390300",
+                "unknown_string_1": "t1120",
+                "unknown_string_2": "Радиостанция Тристы",
+                "unknown_data_2": "6e001600"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "2c3a0300",
+                "unknown_string_1": "t1150",
+                "unknown_string_2": "Общежитие старшеклассников",
+                "unknown_data_2": "6e001600"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "903a0300",
+                "unknown_string_1": "t1160",
+                "unknown_string_2": "Общежитие младшеклассников",
+                "unknown_data_2": "6e001600"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "d8470300",
+                "unknown_string_1": "t1500",
+                "unknown_string_2": "Сельдик, торговый город",
+                "unknown_data_2": "6e000800"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "e2470300",
+                "unknown_string_1": "t1501",
+                "unknown_string_2": "Сельдик, торговый город",
+                "unknown_data_2": "6e000800"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "3c480300",
+                "unknown_string_1": "t1510",
+                "unknown_string_2": "Трактир «Флюгер»",
+                "unknown_data_2": "6e000800"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "04490300",
+                "unknown_string_1": "t1530",
+                "unknown_string_2": "Сельдик - Дом управляющего рынком",
+                "unknown_data_2": "6e000800"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "68490300",
+                "unknown_string_1": "t1540",
+                "unknown_string_2": "Сельдик - Дом",
+                "unknown_data_2": "6e000800"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "cc490300",
+                "unknown_string_1": "t1550",
+                "unknown_string_2": "Оружие и артефакты Одвина",
+                "unknown_data_2": "6e000800"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "304a0300",
+                "unknown_string_1": "t1560",
+                "unknown_string_2": "Часовня Сельдика",
+                "unknown_data_2": "6e000800"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "944a0300",
+                "unknown_string_1": "t1570",
+                "unknown_string_2": "Вокзал Сельдика",
+                "unknown_data_2": "6e000800"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "d9470300",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Караул провинциальной армии",
+                "unknown_data_2": "6e000800"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "da470300",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Большой рынок Сельдика",
+                "unknown_data_2": "6e000800"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "f84a0300",
+                "unknown_string_1": "t1580",
+                "unknown_string_2": "Ветряная мельница",
+                "unknown_data_2": "6e000800"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "c04b0300",
+                "unknown_string_1": "t1600",
+                "unknown_string_2": "Восточное шоссе - Фермерский дом",
+                "unknown_data_2": "6e000800"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "244c0300",
+                "unknown_string_1": "t1610",
+                "unknown_string_2": "Западное шоссе - Фермерский дом",
+                "unknown_data_2": "6e000800"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "605b0300",
+                "unknown_string_1": "t2000",
+                "unknown_string_2": "Барейхард - Привокзальная улица",
+                "unknown_data_2": "6e001200"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "c45b0300",
+                "unknown_string_1": "t2010",
+                "unknown_string_2": "Вокзал Барейхарда",
+                "unknown_data_2": "6e001200"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "285c0300",
+                "unknown_string_1": "t2020",
+                "unknown_string_2": "Галерея Кристи",
+                "unknown_data_2": "6e001200"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "615b0300",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Аэропорт Барейхарда",
+                "unknown_data_2": "6e001200"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "485f0300",
+                "unknown_string_1": "t2100",
+                "unknown_string_2": "Барейхард - Центральная площадь",
+                "unknown_data_2": "6e001200"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "ac5f0300",
+                "unknown_string_1": "t2110",
+                "unknown_string_2": "Отель «Эсмеральда»",
+                "unknown_data_2": "6e001200"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "10600300",
+                "unknown_string_1": "t2120",
+                "unknown_string_2": "Ресторан «Сорсьер»",
+                "unknown_data_2": "6e001200"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "74600300",
+                "unknown_string_1": "t2130",
+                "unknown_string_2": "Собор Барейхарда",
+                "unknown_data_2": "6e001200"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "30630300",
+                "unknown_string_1": "t2200",
+                "unknown_string_2": "Барейхард - Квартал знати",
+                "unknown_data_2": "6e001200"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "94630300",
+                "unknown_string_1": "t2210",
+                "unknown_string_2": "Барейхард - Резиденция 1",
+                "unknown_data_2": "6e001200"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "f8630300",
+                "unknown_string_1": "t2220",
+                "unknown_string_2": "Барейхард - Резиденция 2",
+                "unknown_data_2": "6e001200"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "5c640300",
+                "unknown_string_1": "t2230",
+                "unknown_string_2": "Особняк герцога Альбареи",
+                "unknown_data_2": "6e001200"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "5d640300",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Покои герцога",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "5e640300",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Комната Юсиса",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "5f640300",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Пристройка",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "60640300",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Вестибюль",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "18670300",
+                "unknown_string_1": "t2300",
+                "unknown_string_2": "Барейхард - Улица ремесленников",
+                "unknown_data_2": "6e001200"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "7c670300",
+                "unknown_string_1": "t2310",
+                "unknown_string_2": "Фабрика Давоса",
+                "unknown_data_2": "6e001200"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "e0670300",
+                "unknown_string_1": "t2320",
+                "unknown_string_2": "Трактир «Алуэтт»",
+                "unknown_data_2": "6e001200"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "44680300",
+                "unknown_string_1": "t2330",
+                "unknown_string_2": "Ювелирный салон Тёрнера",
+                "unknown_data_2": "6e001200"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "a8680300",
+                "unknown_string_1": "t2340",
+                "unknown_string_2": "Ателье Валенти",
+                "unknown_data_2": "6e001200"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "006b0300",
+                "unknown_string_1": "t2400",
+                "unknown_string_2": "Аэропорт Барейхарда",
+                "unknown_data_2": "6e001200"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "70820300",
+                "unknown_string_1": "t3000",
+                "unknown_string_2": "Леграм, приозёрный город",
+                "unknown_data_2": "6e000000"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "d4820300",
+                "unknown_string_1": "t3010",
+                "unknown_string_2": "Гильдия мастеров - Филиал в Леграме",
+                "unknown_data_2": "6e000000"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "38830300",
+                "unknown_string_1": "t3020",
+                "unknown_string_2": "Магазин Ватто",
+                "unknown_data_2": "6e000000"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "9c830300",
+                "unknown_string_1": "t3030",
+                "unknown_string_2": "Леграм - Дом 2",
+                "unknown_data_2": "6e000000"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "00840300",
+                "unknown_string_1": "t3040",
+                "unknown_string_2": "Леграм - Дом 1",
+                "unknown_data_2": "6e000000"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "64840300",
+                "unknown_string_1": "t3050",
+                "unknown_string_2": "Тренировочный зал школы Арсейд",
+                "unknown_data_2": "6e000000"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "c8840300",
+                "unknown_string_1": "t3060",
+                "unknown_string_2": "Особняк виконта Арсейда",
+                "unknown_data_2": "6e000000"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "2c850300",
+                "unknown_string_1": "t3070",
+                "unknown_string_2": "Особняк - Терраса",
+                "unknown_data_2": "6e000000"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "f4850300",
+                "unknown_string_1": "t3090",
+                "unknown_string_2": "Часовня Леграма",
+                "unknown_data_2": "6e000000"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "58860300",
+                "unknown_string_1": "t3100",
+                "unknown_string_2": "Трактир «Априкоз»",
+                "unknown_data_2": "6e000000"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "71820300",
+                "unknown_string_1": "t3000",
+                "unknown_string_2": "Вокзал Леграма",
+                "unknown_data_2": "6e000000"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "f8950300",
+                "unknown_string_1": "t3500",
+                "unknown_string_2": "Рор, промышленный мегаполис",
+                "unknown_data_2": "6e000b00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "5c960300",
+                "unknown_string_1": "t3510",
+                "unknown_string_2": "Штаб-квартира Reinford - Вестибюль",
+                "unknown_data_2": "6e000b00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "c0960300",
+                "unknown_string_1": "t3520",
+                "unknown_string_2": "23Э - Представительский этаж",
+                "unknown_data_2": "6e000b00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "24970300",
+                "unknown_string_1": "t3530",
+                "unknown_string_2": "24Э - Резиденция Reinford",
+                "unknown_data_2": "6e000b00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "88970300",
+                "unknown_string_1": "t3540",
+                "unknown_string_2": "★Не используется",
+                "unknown_data_2": "6e000b00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "ec970300",
+                "unknown_string_1": "t3550",
+                "unknown_string_2": "Лифт",
+                "unknown_data_2": "6e000b00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "50980300",
+                "unknown_string_1": "t3560",
+                "unknown_string_2": "Магазин RF",
+                "unknown_data_2": "6e000b00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "b4980300",
+                "unknown_string_1": "t3570",
+                "unknown_string_2": "Товары Боронии",
+                "unknown_data_2": "6e000b00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "18990300",
+                "unknown_string_1": "t3580",
+                "unknown_string_2": "Обеденный бар - F",
+                "unknown_data_2": "6e000b00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "7c990300",
+                "unknown_string_1": "t3590",
+                "unknown_string_2": "Рор - Резиденция 1",
+                "unknown_data_2": "6e000b00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "e0990300",
+                "unknown_string_1": "t3600",
+                "unknown_string_2": "Оружие RF",
+                "unknown_data_2": "6e000b00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "449a0300",
+                "unknown_string_1": "t3610",
+                "unknown_string_2": "Собор Рора",
+                "unknown_data_2": "6e000b00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "a89a0300",
+                "unknown_string_1": "t3620",
+                "unknown_string_2": "Отель «Лагранж»",
+                "unknown_data_2": "6e000b00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "0c9b0300",
+                "unknown_string_1": "t3630",
+                "unknown_string_2": "Вокзал Рора",
+                "unknown_data_2": "6e000b00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "2c9e0300",
+                "unknown_string_1": "t3710",
+                "unknown_string_2": "Закусочная Дванса",
+                "unknown_data_2": "6e000b00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "909e0300",
+                "unknown_string_1": "t3720",
+                "unknown_string_2": "Рор - Резиденция 2",
+                "unknown_data_2": "6e000b00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "f49e0300",
+                "unknown_string_1": "t3730",
+                "unknown_string_2": "Мастерская Джекаса",
+                "unknown_data_2": "6e000b00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "589f0300",
+                "unknown_string_1": "t3740",
+                "unknown_string_2": "Технологический институт Рора",
+                "unknown_data_2": "6e000b00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "bc9f0300",
+                "unknown_string_1": "t3750",
+                "unknown_string_2": "Reinford - Военный завод",
+                "unknown_data_2": "6e000b00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "20a00300",
+                "unknown_string_1": "t3760",
+                "unknown_string_2": "Reinford - Военный завод",
+                "unknown_data_2": "6e000b00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "84a00300",
+                "unknown_string_1": "t3770",
+                "unknown_string_2": "Reinford - Военный завод",
+                "unknown_data_2": "6e000b00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "e8a00300",
+                "unknown_string_1": "t3780",
+                "unknown_string_2": "Подземный проход 1",
+                "unknown_data_2": "6e000b00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "4ca10300",
+                "unknown_string_1": "t3790",
+                "unknown_string_2": "Подземный проход 2",
+                "unknown_data_2": "6e000b00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "b0a10300",
+                "unknown_string_1": "t3800",
+                "unknown_string_2": "Штаб-квартира Reinford - Грузовая станция",
+                "unknown_data_2": "6e000b00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "14a20300",
+                "unknown_string_1": "t3810",
+                "unknown_string_2": "Штаб-квартира Reinford - 5Э",
+                "unknown_data_2": "6e000b00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "78a20300",
+                "unknown_string_1": "t3820",
+                "unknown_string_2": "Штаб-квартира Reinford - 12Э",
+                "unknown_data_2": "6e000b00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "dca20300",
+                "unknown_string_1": "t3830",
+                "unknown_string_2": "Штаб-квартира Reinford - 20Э",
+                "unknown_data_2": "6e000b00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "98a50300",
+                "unknown_string_1": "t3900",
+                "unknown_string_2": "Аэропорт Рора",
+                "unknown_data_2": "6e000b00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "80a90300",
+                "unknown_string_1": "t4000",
+                "unknown_string_2": "Юмир, рай горячих источников",
+                "unknown_data_2": "6e000100"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "e4a90300",
+                "unknown_string_1": "t4010",
+                "unknown_string_2": "Станция фуникулёра",
+                "unknown_data_2": "6e000100"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "48aa0300",
+                "unknown_string_1": "t4020",
+                "unknown_string_2": "Товары и сувениры «Зуёк»",
+                "unknown_data_2": "6e000100"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "acaa0300",
+                "unknown_string_1": "t4030",
+                "unknown_string_2": "Таверна «Эхо долины»",
+                "unknown_data_2": "6e000100"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "10ab0300",
+                "unknown_string_1": "t4040",
+                "unknown_string_2": "Особняк барона Шварцера",
+                "unknown_data_2": "6e000100"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "1aab0300",
+                "unknown_string_1": "t4041",
+                "unknown_string_2": "Особняк барона Шварцера",
+                "unknown_data_2": "6e000100"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "d8ab0300",
+                "unknown_string_1": "t4060",
+                "unknown_string_2": "Крылья Феникса",
+                "unknown_data_2": "6e000100"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "3cac0300",
+                "unknown_string_1": "t4070",
+                "unknown_string_2": "Крылья Феникса - Внутренняя купальня",
+                "unknown_data_2": "6e000100"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "a0ac0300",
+                "unknown_string_1": "t4080",
+                "unknown_string_2": "Крылья Феникса - Внешний источник",
+                "unknown_data_2": "6e000100"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "04ad0300",
+                "unknown_string_1": "t4090",
+                "unknown_string_2": "Часовня Юмира",
+                "unknown_data_2": "6e000100"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "68ad0300",
+                "unknown_string_1": "t4100",
+                "unknown_string_2": "Юмир - Дом",
+                "unknown_data_2": "6e000100"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "38b50300",
+                "unknown_string_1": "t4300",
+                "unknown_string_2": "Мини-игра Лыжный склон (Новичок)",
+                "unknown_data_2": "6e000100"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "42b50300",
+                "unknown_string_1": "t4301",
+                "unknown_string_2": "Мини-игра Лыжный склон (Профи)",
+                "unknown_data_2": "6e000100"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "08bd0300",
+                "unknown_string_1": "t4500",
+                "unknown_string_2": "Поселение кочевников",
+                "unknown_data_2": "6e001400"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "12bd0300",
+                "unknown_string_1": "t4501",
+                "unknown_string_2": "Поселение кочевников",
+                "unknown_data_2": "6e001400"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "6cbd0300",
+                "unknown_string_1": "t4510",
+                "unknown_string_2": "Поселение - Дом Ворзелов",
+                "unknown_data_2": "6e00feff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "d0bd0300",
+                "unknown_string_1": "t4520",
+                "unknown_string_2": "Поселение - Гостевая юрта",
+                "unknown_data_2": "6e00feff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "34be0300",
+                "unknown_string_1": "t4530",
+                "unknown_string_2": "Поселение - Дом старейшины",
+                "unknown_data_2": "6e00feff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "98be0300",
+                "unknown_string_1": "t4540",
+                "unknown_string_2": "Поселение - Торговый пост",
+                "unknown_data_2": "6e00feff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "fcbe0300",
+                "unknown_string_1": "t4550",
+                "unknown_string_2": "Поселение - Дом доктора",
+                "unknown_data_2": "6e00feff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "fac00300",
+                "unknown_string_1": "t4601",
+                "unknown_string_2": "Озеро Лакрима",
+                "unknown_data_2": "6e000500"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "54c10300",
+                "unknown_string_1": "t4610",
+                "unknown_string_2": "Хижина у озера",
+                "unknown_data_2": "6e000400"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "e2c40300",
+                "unknown_string_1": "t4701",
+                "unknown_string_2": "Имперская армия - Сторожевая башня",
+                "unknown_data_2": "6e000300"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "3cc50300",
+                "unknown_string_1": "t4710",
+                "unknown_string_2": "Имперская армия - Внутри башни",
+                "unknown_data_2": "6e000300"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "24c90300",
+                "unknown_string_1": "t4810",
+                "unknown_string_2": "Имперская граница - Врата Зендер",
+                "unknown_data_2": "6e000200"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "90d00300",
+                "unknown_string_1": "t5000",
+                "unknown_string_2": "Провинциальная армия - Форт Орокс",
+                "unknown_data_2": "6e001300"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "f4d00300",
+                "unknown_string_1": "t5010",
+                "unknown_string_2": "Зона отдыха - Полумесяц",
+                "unknown_data_2": "6e001300"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "58d10300",
+                "unknown_string_1": "t5020",
+                "unknown_string_2": "Форт Орокс - 1Э",
+                "unknown_data_2": "6e001300"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "bcd10300",
+                "unknown_string_1": "t5030",
+                "unknown_string_2": "Форт Орокс - 2Э",
+                "unknown_data_2": "6e001300"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "20d20300",
+                "unknown_string_1": "t5040",
+                "unknown_string_2": "Форт Орокс - 3Э",
+                "unknown_data_2": "6e001300"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "84d20300",
+                "unknown_string_1": "t5050",
+                "unknown_string_2": "Форт Орокс - Вентиляция",
+                "unknown_data_2": "6e001300"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "22e40300",
+                "unknown_string_1": "t5501",
+                "unknown_string_2": "Крепость Гаррелия - Руины",
+                "unknown_data_2": "6e000700"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "e8eb0300",
+                "unknown_string_1": "t5701",
+                "unknown_string_2": "Крепость Гаррелия - Испытательный полигон",
+                "unknown_data_2": "6e000600"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "4cec0300",
+                "unknown_string_1": "t5710",
+                "unknown_string_2": "Испытательный полигон - Штаб",
+                "unknown_data_2": "6e000600"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "b0ec0300",
+                "unknown_string_1": "t5720",
+                "unknown_string_2": "Испытательный полигон - Магазин",
+                "unknown_data_2": "6e000600"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "14ed0300",
+                "unknown_string_1": "t5730",
+                "unknown_string_2": "Испытательный полигон - Зона отдыха",
+                "unknown_data_2": "6e000600"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "a0f70300",
+                "unknown_string_1": "t6000",
+                "unknown_string_2": "Мост Двух Драконов - Сторона Сельдика",
+                "unknown_data_2": "6e000a00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "04f80300",
+                "unknown_string_1": "t6010",
+                "unknown_string_2": "Мост Двух Драконов - Зона ожидания",
+                "unknown_data_2": "6e000a00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "68f80300",
+                "unknown_string_1": "t6020",
+                "unknown_string_2": "Мост Двух Драконов - Центр. зона",
+                "unknown_data_2": "6e000a00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "ccf80300",
+                "unknown_string_1": "t6030",
+                "unknown_string_2": "Мост Двух Драконов - 2Э",
+                "unknown_data_2": "6e000a00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "30f90300",
+                "unknown_string_1": "t6040",
+                "unknown_string_2": "Мост Двух Драконов - 3Э",
+                "unknown_data_2": "6e000a00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "f8f90300",
+                "unknown_string_1": "t6060",
+                "unknown_string_2": "Мост Двух Драконов - Верхний этаж",
+                "unknown_data_2": "6e000a00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "88fb0300",
+                "unknown_string_1": "t6100",
+                "unknown_string_2": "Мост Двух Драконов - Сторона Гаррелии",
+                "unknown_data_2": "6e000a00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "280b0400",
+                "unknown_string_1": "t6500",
+                "unknown_string_2": "Барьер Шварцдрахе - Сторона Рора",
+                "unknown_data_2": "6e000d00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "8c0b0400",
+                "unknown_string_1": "t6510",
+                "unknown_string_2": "Зона отдыха",
+                "unknown_data_2": "6e000d00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "e0930400",
+                "unknown_string_1": "r0000",
+                "unknown_string_2": "Западное шоссе Сельдика 1",
+                "unknown_data_2": "6e000800"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "44940400",
+                "unknown_string_1": "r0010",
+                "unknown_string_2": "Западное шоссе Сельдика 2",
+                "unknown_data_2": "6e000800"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "a8940400",
+                "unknown_string_1": "r0020",
+                "unknown_string_2": "Восточное шоссе Сельдика 1",
+                "unknown_data_2": "6e000800"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "0c950400",
+                "unknown_string_1": "r0030",
+                "unknown_string_2": "Восточное шоссе Сельдика 2",
+                "unknown_data_2": "6e000800"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "70950400",
+                "unknown_string_1": "r0040",
+                "unknown_string_2": "Восточное шоссе Сельдика 3",
+                "unknown_data_2": "6e000800"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "c8970400",
+                "unknown_string_1": "r0100",
+                "unknown_string_2": "Северное шоссе Крейцен 1",
+                "unknown_data_2": "6e001200"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "2c980400",
+                "unknown_string_1": "r0110",
+                "unknown_string_2": "Северное шоссе Крейцен 2",
+                "unknown_data_2": "6e000800"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "90980400",
+                "unknown_string_1": "r0120",
+                "unknown_string_2": "Северное шоссе Крейцен 3",
+                "unknown_data_2": "6e000800"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "f4980400",
+                "unknown_string_1": "r0130",
+                "unknown_string_2": "Южное шоссе Крейцен",
+                "unknown_data_2": "6e001200"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "b09b0400",
+                "unknown_string_1": "r0200",
+                "unknown_string_2": "Тропа каньона Орокс 1",
+                "unknown_data_2": "6e001300"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "e29b0400",
+                "unknown_string_1": "r0205",
+                "unknown_string_2": "Тропа каньона Орокс 1",
+                "unknown_data_2": "6e001300"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "149c0400",
+                "unknown_string_1": "r0210",
+                "unknown_string_2": "Тропа каньона Орокс 2",
+                "unknown_data_2": "6e001300"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "789c0400",
+                "unknown_string_1": "r0220",
+                "unknown_string_2": "Тропа каньона Орокс 3",
+                "unknown_data_2": "6e001300"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "989f0400",
+                "unknown_string_1": "r0300",
+                "unknown_string_2": "Эбельское шоссе 1",
+                "unknown_data_2": "6e000000"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "fc9f0400",
+                "unknown_string_1": "r0310",
+                "unknown_string_2": "Эбельское шоссе 2",
+                "unknown_data_2": "6e000000"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "60a00400",
+                "unknown_string_1": "r0320",
+                "unknown_string_2": "Эбельское шоссе 3",
+                "unknown_data_2": "6e000f00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "80a30400",
+                "unknown_string_1": "r0400",
+                "unknown_string_2": "Просёлочная дорога Спина",
+                "unknown_data_2": "6e000b00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "e4a30400",
+                "unknown_string_1": "r0410",
+                "unknown_string_2": "Нортийское шоссе 1",
+                "unknown_data_2": "6e000b00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "48a40400",
+                "unknown_string_1": "r0420",
+                "unknown_string_2": "Горная тропа Заксен 1",
+                "unknown_data_2": "6e000b00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "aca40400",
+                "unknown_string_1": "r0430",
+                "unknown_string_2": "Горная тропа Заксен 2",
+                "unknown_data_2": "6e000c00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "10a50400",
+                "unknown_string_1": "r0440",
+                "unknown_string_2": "Нортийское шоссе 2",
+                "unknown_data_2": "6e000b00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "74a50400",
+                "unknown_string_1": "r0450",
+                "unknown_string_2": "Нортийское шоссе 3",
+                "unknown_data_2": "6e001100"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "d8a50400",
+                "unknown_string_1": "r0460",
+                "unknown_string_2": "Нортийское шоссе 4",
+                "unknown_data_2": "6e000b00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "68a70400",
+                "unknown_string_1": "r0500",
+                "unknown_string_2": "Долина Юмир 1",
+                "unknown_data_2": "6e000100"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "cca70400",
+                "unknown_string_1": "r0510",
+                "unknown_string_2": "Долина Юмир 2",
+                "unknown_data_2": "6e000100"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "30a80400",
+                "unknown_string_1": "r0520",
+                "unknown_string_2": "Долина Юмир - Конец",
+                "unknown_data_2": "6e000100"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "94a80400",
+                "unknown_string_1": "r0530",
+                "unknown_string_2": "Святилище Гласии",
+                "unknown_data_2": "6e000100"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "50ab0400",
+                "unknown_string_1": "r0600",
+                "unknown_string_2": "Западное шоссе Тристы",
+                "unknown_data_2": "6e001600"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "b4ab0400",
+                "unknown_string_1": "r0610",
+                "unknown_string_2": "★Не используется",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "18ac0400",
+                "unknown_string_1": "r0620",
+                "unknown_string_2": "Восточное шоссе Тристы 2",
+                "unknown_data_2": "6e001600"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "7cac0400",
+                "unknown_string_1": "r0630",
+                "unknown_string_2": "Восточное шоссе Тристы 1",
+                "unknown_data_2": "6e000800"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "e0ac0400",
+                "unknown_string_1": "r0640",
+                "unknown_string_2": "Западное шоссе Тристы",
+                "unknown_data_2": "6e001600"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "20b30400",
+                "unknown_string_1": "r0800",
+                "unknown_string_2": "Нагорье Норд - Юг",
+                "unknown_data_2": "6e000200"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "84b30400",
+                "unknown_string_1": "r0810",
+                "unknown_string_2": "Нагорье Норд - Север",
+                "unknown_data_2": "6e001400"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "e8b30400",
+                "unknown_string_1": "r0820",
+                "unknown_string_2": "Нагорье Норд - Северо-восток",
+                "unknown_data_2": "6e001000"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "08b70400",
+                "unknown_string_1": "r0900",
+                "unknown_string_2": "Хребет Айзенгард 1",
+                "unknown_data_2": "6e001700"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "6cb70400",
+                "unknown_string_1": "r0910",
+                "unknown_string_2": "Хребет Айзенгард 2",
+                "unknown_data_2": "6e001700"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "d0b70400",
+                "unknown_string_1": "r0920",
+                "unknown_string_2": "Хребет Айзенгард 3",
+                "unknown_data_2": "6e001700"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "f0ba0400",
+                "unknown_string_1": "r1000",
+                "unknown_string_2": "Просёлочная дорога Гаррелии 2",
+                "unknown_data_2": "6e000e00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "54bb0400",
+                "unknown_string_1": "r1010",
+                "unknown_string_2": "Просёлочная дорога Гаррелии 1",
+                "unknown_data_2": "6e000700"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "e41a0600",
+                "unknown_string_1": "m0010",
+                "unknown_string_2": "Природный парк Лунария 1",
+                "unknown_data_2": "6e000900"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "e51a0600",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Природный парк Лунария",
+                "unknown_data_2": "6e000900"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "481b0600",
+                "unknown_string_1": "m0020",
+                "unknown_string_2": "Природный парк Лунария 2",
+                "unknown_data_2": "6e000900"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "ac1b0600",
+                "unknown_string_1": "m0030",
+                "unknown_string_2": "Природный парк Лунария 3",
+                "unknown_data_2": "6e000900"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "101c0600",
+                "unknown_string_1": "m0040",
+                "unknown_string_2": "Природный парк - Глубины",
+                "unknown_data_2": "6e000900"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "082e0600",
+                "unknown_string_1": "m0500",
+                "unknown_string_2": "Подземный водоканал 1",
+                "unknown_data_2": "6e001200"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "6c2e0600",
+                "unknown_string_1": "m0510",
+                "unknown_string_2": "Подземный водоканал 2",
+                "unknown_data_2": "6e001200"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "d02e0600",
+                "unknown_string_1": "m0520",
+                "unknown_string_2": "Подземный водоканал 3",
+                "unknown_data_2": "6e001200"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "342f0600",
+                "unknown_string_1": "m0530",
+                "unknown_string_2": "Караул пров. армии - Подземелье",
+                "unknown_data_2": "6e001200"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "90410600",
+                "unknown_string_1": "m1000",
+                "unknown_string_2": "Замок Лоэнгрин - Снаружи",
+                "unknown_data_2": "6e000000"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "9a410600",
+                "unknown_string_1": "m1001",
+                "unknown_string_2": "Озеро Эбел",
+                "unknown_data_2": "6e000000"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "f4410600",
+                "unknown_string_1": "m1010",
+                "unknown_string_2": "Замок Лоэнгрин - Вестибюль",
+                "unknown_data_2": "6e000000"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "58420600",
+                "unknown_string_1": "m1020",
+                "unknown_string_2": "Замок Лоэнгрин - Левое крыло",
+                "unknown_data_2": "6e000000"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "bc420600",
+                "unknown_string_1": "m1030",
+                "unknown_string_2": "Замок Лоэнгрин - Правое крыло",
+                "unknown_data_2": "6e000000"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "20430600",
+                "unknown_string_1": "m1040",
+                "unknown_string_2": "Замок Лоэнгрин - Внешний коридор 1",
+                "unknown_data_2": "6e000000"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "84430600",
+                "unknown_string_1": "m1050",
+                "unknown_string_2": "Замок Лоэнгрин - Внешний коридор 2",
+                "unknown_data_2": "6e000000"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "e8430600",
+                "unknown_string_1": "m1060",
+                "unknown_string_2": "Замок Лоэнгрин - Лестница",
+                "unknown_data_2": "6e000000"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "4c440600",
+                "unknown_string_1": "m1070",
+                "unknown_string_2": "Замок Лоэнгрин - Цитадель",
+                "unknown_data_2": "6e000000"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "60490600",
+                "unknown_string_1": "m1200",
+                "unknown_string_2": "Железный рудник Заксен - Снаружи",
+                "unknown_data_2": "6e000c00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "c4490600",
+                "unknown_string_1": "m1210",
+                "unknown_string_2": "Железный рудник Заксен - Зона доставки",
+                "unknown_data_2": "6e000c00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "284a0600",
+                "unknown_string_1": "m1220",
+                "unknown_string_2": "Железный рудник Заксен - Зона доставки",
+                "unknown_data_2": "6e000c00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "8c4a0600",
+                "unknown_string_1": "m1230",
+                "unknown_string_2": "Железный рудник Заксен - Штрек 3",
+                "unknown_data_2": "6e000c00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "f04a0600",
+                "unknown_string_1": "m1240",
+                "unknown_string_2": "Железный рудник Заксен - Транзитная зона",
+                "unknown_data_2": "6e000c00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "544b0600",
+                "unknown_string_1": "m1250",
+                "unknown_string_2": "--------------------",
+                "unknown_data_2": "6e000c00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "b84b0600",
+                "unknown_string_1": "m1260",
+                "unknown_string_2": "Центральная диспетчерская - Перед",
+                "unknown_data_2": "6e000c00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "1c4c0600",
+                "unknown_string_1": "m1270",
+                "unknown_string_2": "Железный рудник Заксен - Грузовая станция",
+                "unknown_data_2": "6e000c00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "18550600",
+                "unknown_string_1": "m1500",
+                "unknown_string_2": "Нагорье - Древняя каменоломня",
+                "unknown_data_2": "6e000400"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "7c550600",
+                "unknown_string_1": "m1510",
+                "unknown_string_2": "--------------------",
+                "unknown_data_2": "6e000400"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "e0550600",
+                "unknown_string_1": "m1520",
+                "unknown_string_2": "--------------------",
+                "unknown_data_2": "6e000400"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "a8560600",
+                "unknown_string_1": "m1540",
+                "unknown_string_2": "Древняя каменоломня - Внутри",
+                "unknown_data_2": "6e000400"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "c0b60600",
+                "unknown_string_1": "m4000",
+                "unknown_string_2": "Святилище Терры - Вход",
+                "unknown_data_2": "6e000e00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "cab60600",
+                "unknown_string_1": "m4001",
+                "unknown_string_2": "Святилище Терры",
+                "unknown_data_2": "6e000e00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "d4b60600",
+                "unknown_string_1": "m4002",
+                "unknown_string_2": "Святилище Терры - Испытательный полигон",
+                "unknown_data_2": "6e000e00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "1ab70600",
+                "unknown_string_1": "m4009",
+                "unknown_string_2": "Святилище Терры - Глубины",
+                "unknown_data_2": "6e000e00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "24b70600",
+                "unknown_string_1": "m4010",
+                "unknown_string_2": "Святилище Арии - Вход",
+                "unknown_data_2": "6e001000"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "2eb70600",
+                "unknown_string_1": "m4011",
+                "unknown_string_2": "Святилище Арии",
+                "unknown_data_2": "6e001000"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "38b70600",
+                "unknown_string_1": "m4012",
+                "unknown_string_2": "Святилище Арии - Испытательный полигон",
+                "unknown_data_2": "6e001000"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "7eb70600",
+                "unknown_string_1": "m4019",
+                "unknown_string_2": "Святилище Арии - Глубины",
+                "unknown_data_2": "6e001000"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "88b70600",
+                "unknown_string_1": "m4020",
+                "unknown_string_2": "Святилище Аквы - Вход",
+                "unknown_data_2": "6e000f00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "92b70600",
+                "unknown_string_1": "m4021",
+                "unknown_string_2": "Святилище Аквы",
+                "unknown_data_2": "6e000f00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "9cb70600",
+                "unknown_string_1": "m4022",
+                "unknown_string_2": "Святилище Аквы - Испытательный полигон",
+                "unknown_data_2": "6e000f00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "e2b70600",
+                "unknown_string_1": "m4029",
+                "unknown_string_2": "Святилище Аквы - Глубины",
+                "unknown_data_2": "6e000f00"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "ecb70600",
+                "unknown_string_1": "m4030",
+                "unknown_string_2": "Святилище Игниса - Вход",
+                "unknown_data_2": "6e001100"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "00b80600",
+                "unknown_string_1": "m4032",
+                "unknown_string_2": "Святилище Игниса - Испытательный полигон",
+                "unknown_data_2": "6e001100"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "46b80600",
+                "unknown_string_1": "m4039",
+                "unknown_string_2": "Святилище Игниса - Глубины",
+                "unknown_data_2": "6e001100"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "50b80600",
+                "unknown_string_1": "m4040",
+                "unknown_string_2": "Святилище Гласии - Вход",
+                "unknown_data_2": "6e000100"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "aab80600",
+                "unknown_string_1": "m4049",
+                "unknown_string_2": "Святилище Гласии - Глубины",
+                "unknown_data_2": "6e000100"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "48ca0600",
+                "unknown_string_1": "m4500",
+                "unknown_string_2": "Адский замок - Нижний ярус",
+                "unknown_data_2": "6e001900"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "acca0600",
+                "unknown_string_1": "m4510",
+                "unknown_string_2": "Адский замок - 1-й ярус 1",
+                "unknown_data_2": "6e001900"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "b6ca0600",
+                "unknown_string_1": "m4511",
+                "unknown_string_2": "Адский замок - 1-й ярус 2",
+                "unknown_data_2": "6e001900"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "06cb0600",
+                "unknown_string_1": "m4519",
+                "unknown_string_2": "Адский замок - 1-й ярус, конец",
+                "unknown_data_2": "6e001900"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "10cb0600",
+                "unknown_string_1": "m4520",
+                "unknown_string_2": "Адский замок - 2-й ярус 1",
+                "unknown_data_2": "6e001900"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "1acb0600",
+                "unknown_string_1": "m4521",
+                "unknown_string_2": "Адский замок - 2-й ярус 2",
+                "unknown_data_2": "6e001900"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "6acb0600",
+                "unknown_string_1": "m4529",
+                "unknown_string_2": "Адский замок - 2-й ярус, конец",
+                "unknown_data_2": "6e001900"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "74cb0600",
+                "unknown_string_1": "m4530",
+                "unknown_string_2": "Адский замок - Лифт",
+                "unknown_data_2": "6e001900"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "7ecb0600",
+                "unknown_string_1": "m4531",
+                "unknown_string_2": "Адский замок - Лифт",
+                "unknown_data_2": "6e001900"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "d8cb0600",
+                "unknown_string_1": "m4540",
+                "unknown_string_2": "Адский замок - 3-й ярус 1",
+                "unknown_data_2": "6e001900"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "e2cb0600",
+                "unknown_string_1": "m4541",
+                "unknown_string_2": "Адский замок - 3-й ярус 2",
+                "unknown_data_2": "6e001900"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "24cb0600",
+                "unknown_string_1": "m4522",
+                "unknown_string_2": "Адский замок - Внешний коридор",
+                "unknown_data_2": "6e001900"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "32cc0600",
+                "unknown_string_1": "m4549",
+                "unknown_string_2": "Адский замок - 3-й ярус, конец",
+                "unknown_data_2": "6e001900"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "3ccc0600",
+                "unknown_string_1": "m4550",
+                "unknown_string_2": "Адский замок - Верхний ярус",
+                "unknown_data_2": "6e001900"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "46cc0600",
+                "unknown_string_1": "m4551",
+                "unknown_string_2": "Адский замок - Верхний ярус (Не исп.)",
+                "unknown_data_2": "6e001900"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "96cc0600",
+                "unknown_string_1": "m4559",
+                "unknown_string_2": "Адский замок - Верхний ярус (Не исп.)",
+                "unknown_data_2": "6e001900"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "a0cc0600",
+                "unknown_string_1": "m4560",
+                "unknown_string_2": "Адский замок - Алый трон",
+                "unknown_data_2": "6e001900"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "40ef0700",
+                "unknown_string_1": "e2000",
+                "unknown_string_2": "«Отважный» - Палуба",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "41ef0700",
+                "unknown_string_1": "null",
+                "unknown_string_2": "«Отважный» - Передняя палуба",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "42ef0700",
+                "unknown_string_1": "null",
+                "unknown_string_2": "«Отважный» - Задняя палуба",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "9ab20800",
+                "unknown_string_1": "e7001",
+                "unknown_string_2": "«Отважный» - Внутри",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "58b30800",
+                "unknown_string_1": "e7020",
+                "unknown_string_2": "«Отважный» - 5Э Мостик",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "bcb30800",
+                "unknown_string_1": "e7030",
+                "unknown_string_2": "«Отважный» - 4Э Тренировочная зона",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "20b40800",
+                "unknown_string_1": "e7040",
+                "unknown_string_2": "«Отважный» - 3Э Зона соединения",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "84b40800",
+                "unknown_string_1": "e7050",
+                "unknown_string_2": "«Отважный» - 2Э Многоцелевая зона",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "e8b40800",
+                "unknown_string_1": "e7060",
+                "unknown_string_2": "«Отважный» - 1Э Трюм",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "14b60800",
+                "unknown_string_1": "e7090",
+                "unknown_string_2": "[EV] Мостик+Трюм+Конференц-зал",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "1eb60800",
+                "unknown_string_1": "e7091",
+                "unknown_string_2": "[EV] Мостик+Трюм+Фабрика+3Э Коридор",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "74740800",
+                "unknown_string_1": "e5410",
+                "unknown_string_2": "Артефактный трамвай",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "d4640800",
+                "unknown_string_1": "e5010",
+                "unknown_string_2": "Артефактный поезд",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "de640800",
+                "unknown_string_1": "e5011",
+                "unknown_string_2": "Артефактный поезд",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "e8640800",
+                "unknown_string_1": "e5012",
+                "unknown_string_2": "Артефактный поезд",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "a46c0800",
+                "unknown_string_1": "e5210",
+                "unknown_string_2": "«Айзенграф» - Вагон 6",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "a56c0800",
+                "unknown_string_1": "null",
+                "unknown_string_2": "«Айзенграф» - Вагон 5",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "a66c0800",
+                "unknown_string_1": "null",
+                "unknown_string_2": "«Айзенграф» - Вагон 4",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "a76c0800",
+                "unknown_string_1": "null",
+                "unknown_string_2": "«Айзенграф» - Вагон 3",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "a86c0800",
+                "unknown_string_1": "null",
+                "unknown_string_2": "«Айзенграф» - Вагон 2",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "086d0800",
+                "unknown_string_1": "e5220",
+                "unknown_string_2": "«Айзенграф» - Вагон 1",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "5c780800",
+                "unknown_string_1": "e5510",
+                "unknown_string_2": "Канатная дорога - Внутри 1",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "78b60800",
+                "unknown_string_1": "e7100",
+                "unknown_string_2": "«Пантагрюэль» - Снаружи",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "82b60800",
+                "unknown_string_1": "e7101",
+                "unknown_string_2": "«Пантагрюэль» - Снаружи",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "dcb60800",
+                "unknown_string_1": "e7110",
+                "unknown_string_2": "«Пантагрюэль» - Гостевая зона",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "40b70800",
+                "unknown_string_1": "e7120",
+                "unknown_string_2": "«Пантагрюэль» - Проход",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "a4b70800",
+                "unknown_string_1": "e7130",
+                "unknown_string_2": "«Пантагрюэль» - Внутри 3",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "08b80800",
+                "unknown_string_1": "e7140",
+                "unknown_string_2": "«Пантагрюэль» - Мостик",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "64ca0800",
+                "unknown_string_1": "e7610",
+                "unknown_string_2": "Авиалайнер",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "6eca0800",
+                "unknown_string_1": "e7611",
+                "unknown_string_2": "Авиалайнер",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "65ca0800",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Авиалайнер - Трюм",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "66ca0800",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Авиалайнер - 2Э",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "67ca0800",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Авиалайнер - 3Э",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "68ca0800",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Авиалайнер - 4Э",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "d8be0400",
+                "unknown_string_1": "r1100",
+                "unknown_string_2": "[EV] Холм Танграм",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "c0d40100",
+                "unknown_string_1": "c2000",
+                "unknown_string_2": "[EV] Город Кроссбелл 1 (Центр. площадь)",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "a8d80100",
+                "unknown_string_1": "c2100",
+                "unknown_string_2": "[EV] Город Кроссбелл 2 (Башня Орхис)",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "24d50100",
+                "unknown_string_1": "c2010",
+                "unknown_string_2": "[EV] Служба новостей Кроссбелла",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "d0dd0600",
+                "unknown_string_1": "m5000",
+                "unknown_string_2": "Геофронт E - Блок 1",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "98de0600",
+                "unknown_string_1": "m5020",
+                "unknown_string_2": "Геофронт E - Блок 2",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "fcde0600",
+                "unknown_string_1": "m5030",
+                "unknown_string_2": "Геофронт E - Блок 3",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "60df0600",
+                "unknown_string_1": "m5040",
+                "unknown_string_2": "Геофронт E - Центральный компьютерный зал",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "4a0d0300",
+                "unknown_string_1": "t0001",
+                "unknown_string_2": "Военная академия Торс",
+                "unknown_data_2": "6e001600"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "28110300",
+                "unknown_string_1": "t0100",
+                "unknown_string_2": "Склад «Зольдатов»",
+                "unknown_data_2": "6e001600"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "24150300",
+                "unknown_string_1": "t0202",
+                "unknown_string_2": "Старое здание школы",
+                "unknown_data_2": "6e001600"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "5a340300",
+                "unknown_string_1": "t1001",
+                "unknown_string_2": "Триста",
+                "unknown_data_2": "6e001600"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "aaf70300",
+                "unknown_string_1": "t6001",
+                "unknown_string_2": "Мост Двух Драконов - Снаружи",
+                "unknown_data_2": "6e001600"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "22ac0400",
+                "unknown_string_1": "r0621",
+                "unknown_string_2": "Восточное шоссе Тристы 1",
+                "unknown_data_2": "6e001600"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "38a30600",
+                "unknown_string_1": "m3500",
+                "unknown_string_2": "Коридор грёз - Базовая зона",
+                "unknown_data_2": "6e001600"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "9ca30600",
+                "unknown_string_1": "m3510",
+                "unknown_string_2": "Коридор грёз - Конец",
+                "unknown_data_2": "6e001600"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "00a40600",
+                "unknown_string_1": "m3520",
+                "unknown_string_2": "Безграничный собор",
+                "unknown_data_2": "6e001600"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "64a40600",
+                "unknown_string_1": "m3530",
+                "unknown_string_2": "Безграничный собор",
+                "unknown_data_2": "6e001600"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "c0270900",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Долина Юмир 1",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "c1270900",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Природный парк Лунария 2",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "c2270900",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Восточное шоссе Тристы 1",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "c3270900",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Восточное шоссе Сельдика 1",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "c4270900",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Восточное шоссе Сельдика 3",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "c5270900",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Нагорье - Озеро Лакрима",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "c6270900",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Нагорье Норд - Север",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "c7270900",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Нагорье Норд - Северо-восток",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "c8270900",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Эбельское шоссе 1",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "c9270900",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Леграм, приозёрный город",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "ca270900",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Южное шоссе Крейцен",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "cb270900",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Эбельское шоссе 3",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "cc270900",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Мост Двух Драконов - Сторона Сельдика",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "cd270900",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Мост Двух Драконов - Сторона Гаррелии",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "ce270900",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Просёлочная дорога Спина",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "cf270900",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Горная тропа Заксен 2",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "d0270900",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Нортийское шоссе 3",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "d1270900",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Святилище Гласии - Глубины",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "d2270900",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Тропа каньона Орокс 1",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "d3270900",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Северное шоссе Крейцен 1",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "d4270900",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Северное шоссе Крейцен 2",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "d5270900",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Академия - Пруд",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "d6270900",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Триста - Река",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "d7270900",
+                "unknown_string_1": "null",
+                "unknown_string_2": "★Заглушка",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "0a000000",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Пролог - Глубины отчаяния",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "0b000000",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Акт 1 - Пепельные хроники",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "0c000000",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Антракт - На борту «Пантагрюэля»",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "0d000000",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Акт 2 - Пробуждение львов",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "0e000000",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Финал - Вперёд, без остановки",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "0f000000",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Дивертисмент - Оккупация",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "10000000",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Эпилог - Конец зимы",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "14000000",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Пролог - Конец",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "15000000",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Акт 1 - Конец",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "16000000",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Антракт - Конец",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "17000000",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Акт 2 - Конец",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "18000000",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Финал - Конец",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "19000000",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Побочная история - Конец",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "1a000000",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Эпилог - Конец ★ Чистые данные",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "1e000000",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Финал - Битва с Алым Апокалипсисом",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "1f000000",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Акт 2 - К барьеру Шварцдрахе",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "84030000",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Коридор грёз",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "85030000",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Коридор грёз - Этаж",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "86030000",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Коридор грёз - Этаж",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "91030000",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Коридор грёз - Этаж",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "8e030000",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Бесконечный лабиринт",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "8f030000",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Бесконечный лабиринт - Этаж",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "90030000",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Бесконечный лабиринт - Этаж",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "91030000",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Бесконечный лабиринт - Этаж",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "60ae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "★Не используется",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "61ae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Зарядная станция+",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "62ae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Зарядная станция+",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "63ae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Зарядная станция++",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "64ae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Устройство обслуживания артефактов",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "65ae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Товары и сувениры «Зуёк»",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "66ae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Испытательный полигон - Магазин",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "67ae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Испытательный полигон - Зона отдыха",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "68ae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Врата Зендер - Магазин",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "69ae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Инженерный клуб",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "6aae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Таверна «Эхо долины»",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "6bae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Оружие и артефакты Одвина",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "6cae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Лавка ингредиентов Лимона",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "6dae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Мясная лавка Берты",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "6eae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Товары Марко",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "6fae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Аптека Флинта",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "70ae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Ювелирная лавка Барока",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "71ae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Продуктовая лавка Гибсона",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "72ae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Медовая лавка Люче",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "73ae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Товары Корнетты",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "74ae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Крис, разносчик газет",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "75ae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Трактир «Флюгер»",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "76ae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Магазин Килта",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "77ae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Врата Зендер - Столовая",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "78ae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Магазин Ватто",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "79ae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Трактир «Априкоз»",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "7aae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Фабрика Давоса",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "7bae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Товары «Хендерсон и Ко»",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "7cae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Клуб «Лексингтон»",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "7dae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Книжный «Фортнум»",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "7eae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Бутик - Camellia",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "7fae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Обувь «Триколор»",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "80ae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Отель «Эсмеральда»",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "81ae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Ресторан «Сорсьер»",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "82ae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Трактир «Алуэтт»",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "83ae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Ювелирный салон Тёрнера",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "84ae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Ателье Валенти",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "85ae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Зона отдыха - Полумесяц",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "86ae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Оружие RF",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "87ae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Магазин RF",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "88ae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Товары Боронии",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "89ae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Обеденный бар - F",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "8aae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Отель «Лагранж»",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "8bae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Закусочная Дванса",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "8cae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Компания Reinford",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "8dae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Мастерская Джекаса",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "8eae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Магазин кампуса",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "8fae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Кафетерий",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "90ae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Товары Брэндона",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "91ae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Книжный магазин Кейнса",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "92ae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Бутик - Le Sage",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "93ae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Кафе и трактир «Кирше»",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "94ae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Ломбард Михта",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "95ae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Оружейная лавка Каспера",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "96ae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "«Отважный» - Кладовая",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "97ae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Торговая лавка Бекки",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "98ae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Товары высшего класса Хьюго",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "99ae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Магазин милоты Колетт",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "9aae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Ингредиенты Николаса",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "9bae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Литературный клуб",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "9cae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Эликсиры Розин",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "9eae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Клуб искусств",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "9dae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Фотокружок",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "9fae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Имперский рыболовный клуб",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "a0ae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Имперский рыболовный клуб",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "a1ae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Зона ожидания",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "a2ae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Зона отдыха",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "a3ae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Жиллет, торговец",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "a4ae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Торговый автомат",
+                "unknown_data_2": "6e00ffff"
+            }
+        },
+        {
+            "header": "PlaceTableData",
+            "values": {
+                "unknown_data_1": "a5ae0a00",
+                "unknown_string_1": "null",
+                "unknown_string_2": "Лавка на блошином рынке",
+                "unknown_data_2": "6e00ffff"
+            }
+        }
+    ]
+}

@@ -1,0 +1,92 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;m4549.scn 42
+	DD	BTLSET000					;m4549.scn 59
+	DD	PreInit					;m4549.scn 69
+	DD	Init					;m4549.scn 84
+	DD	Init_Replay					;m4549.scn 142
+	DD	Reinit					;m4549.scn 207
+	DD	LP_dropItem00					;m4549.scn 225
+	DD	LP_healobject					;m4549.scn 233
+	DD	LP_healobject_k					;m4549.scn 241
+	DD	LP_warpobj00					;m4549.scn 261
+	DD	WP_WarpOut					;m4549.scn 386
+	DD	AV_04007					;m4549.scn 422
+	DD	EV_04_20_00					;m4549.scn 453
+	DD	Sub_Quake0					;m4549.scn 2072
+	DD	EV_04_20_01					;m4549.scn 2082
+	DD	ET_04_20_01_ARSEID_01					;m4549.scn 5197
+	DD	ET_04_20_01_MACVARN_01					;m4549.scn 5398
+	DD	ET_SE					;m4549.scn 5601
+	DD	SB_04_REVISIT3F					;m4549.scn 5959
+	DD	_LP_warpobj00					;m4549.scn 6039
+	DD	_WP_WarpOut					;m4549.scn 6039
+	DD	_EV_04_20_00					;m4549.scn 6039
+	DD	_EV_04_20_01					;m4549.scn 6039
+	DD	_ET_04_20_01_ARSEID_01					;m4549.scn 6039
+	DD	_ET_04_20_01_MACVARN_01					;m4549.scn 6039
+	DD	_ET_SE					;m4549.scn 6039
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_BTLSET000
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_LP_dropItem00
+	DW	FUNCNAME_LP_healobject
+	DW	FUNCNAME_LP_healobject_k
+	DW	FUNCNAME_LP_warpobj00
+	DW	FUNCNAME_WP_WarpOut
+	DW	FUNCNAME_AV_04007
+	DW	FUNCNAME_EV_04_20_00
+	DW	FUNCNAME_Sub_Quake0
+	DW	FUNCNAME_EV_04_20_01
+	DW	FUNCNAME_ET_04_20_01_ARSEID_01
+	DW	FUNCNAME_ET_04_20_01_MACVARN_01
+	DW	FUNCNAME_ET_SE
+	DW	FUNCNAME_SB_04_REVISIT3F
+	DW	FUNCNAME__LP_warpobj00
+	DW	FUNCNAME__WP_WarpOut
+	DW	FUNCNAME__EV_04_20_00
+	DW	FUNCNAME__EV_04_20_01
+	DW	FUNCNAME__ET_04_20_01_ARSEID_01
+	DW	FUNCNAME__ET_04_20_01_MACVARN_01
+	DW	FUNCNAME__ET_SE
+FUNCTION_NAME_TABLE_NUM	EQU	26
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_BTLSET000:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_LP_dropItem00:	DB	'LP_dropItem00',0
+FUNCNAME_LP_healobject:	DB	'LP_healobject',0
+FUNCNAME_LP_healobject_k:	DB	'LP_healobject_k',0
+FUNCNAME_LP_warpobj00:	DB	'LP_warpobj00',0
+FUNCNAME_WP_WarpOut:	DB	'WP_WarpOut',0
+FUNCNAME_AV_04007:	DB	'AV_04007',0
+FUNCNAME_EV_04_20_00:	DB	'EV_04_20_00',0
+FUNCNAME_Sub_Quake0:	DB	'Sub_Quake0',0
+FUNCNAME_EV_04_20_01:	DB	'EV_04_20_01',0
+FUNCNAME_ET_04_20_01_ARSEID_01:	DB	'ET_04_20_01_ARSEID_01',0
+FUNCNAME_ET_04_20_01_MACVARN_01:	DB	'ET_04_20_01_MACVARN_01',0
+FUNCNAME_ET_SE:	DB	'ET_SE',0
+FUNCNAME_SB_04_REVISIT3F:	DB	'SB_04_REVISIT3F',0
+FUNCNAME__LP_warpobj00:	DB	'_LP_warpobj00',0
+FUNCNAME__WP_WarpOut:	DB	'_WP_WarpOut',0
+FUNCNAME__EV_04_20_00:	DB	'_EV_04_20_00',0
+FUNCNAME__EV_04_20_01:	DB	'_EV_04_20_01',0
+FUNCNAME__ET_04_20_01_ARSEID_01:	DB	'_ET_04_20_01_ARSEID_01',0
+FUNCNAME__ET_04_20_01_MACVARN_01:	DB	'_ET_04_20_01_MACVARN_01',0
+FUNCNAME__ET_SE:	DB	'_ET_SE',0

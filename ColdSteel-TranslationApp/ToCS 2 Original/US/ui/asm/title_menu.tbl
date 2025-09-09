@@ -1,0 +1,92 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	Init					;title_menu.scn 25
+	DD	InitTitle					;title_menu.scn 98
+	DD	OpenTitle					;title_menu.scn 136
+	DD	CloseTitle					;title_menu.scn 149
+	DD	OpenTop					;title_menu.scn 157
+	DD	CloseTop1					;title_menu.scn 165
+	DD	CloseTop2					;title_menu.scn 169
+	DD	OpenMenu					;title_menu.scn 174
+	DD	ChangeToLevel					;title_menu.scn 185
+	DD	ChangeToButton					;title_menu.scn 198
+	DD	ChangeToSystem					;title_menu.scn 213
+	DD	ChangeSystemToButton					;title_menu.scn 226
+	DD	CloseSystem					;title_menu.scn 239
+	DD	InitOptionMenu					;title_menu.scn 250
+	DD	OpenOptionMenu					;title_menu.scn 260
+	DD	CloseOptionMenu					;title_menu.scn 271
+	DD	FadeOutTitle					;title_menu.scn 283
+	DD	FadeIn					;title_menu.scn 289
+	DD	FadeOut50					;title_menu.scn 294
+	DD	InitHikitugiMenu					;title_menu.scn 302
+	DD	OpenHikitugiMenu					;title_menu.scn 329
+	DD	CloseHikitugiMenu					;title_menu.scn 340
+	DD	CloseTopButton					;title_menu.scn 350
+	DD	OpenTopButton					;title_menu.scn 361
+	DD	CloseLevelButton					;title_menu.scn 373
+	DD	OpenLevelButton					;title_menu.scn 381
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_InitTitle
+	DW	FUNCNAME_OpenTitle
+	DW	FUNCNAME_CloseTitle
+	DW	FUNCNAME_OpenTop
+	DW	FUNCNAME_CloseTop1
+	DW	FUNCNAME_CloseTop2
+	DW	FUNCNAME_OpenMenu
+	DW	FUNCNAME_ChangeToLevel
+	DW	FUNCNAME_ChangeToButton
+	DW	FUNCNAME_ChangeToSystem
+	DW	FUNCNAME_ChangeSystemToButton
+	DW	FUNCNAME_CloseSystem
+	DW	FUNCNAME_InitOptionMenu
+	DW	FUNCNAME_OpenOptionMenu
+	DW	FUNCNAME_CloseOptionMenu
+	DW	FUNCNAME_FadeOutTitle
+	DW	FUNCNAME_FadeIn
+	DW	FUNCNAME_FadeOut50
+	DW	FUNCNAME_InitHikitugiMenu
+	DW	FUNCNAME_OpenHikitugiMenu
+	DW	FUNCNAME_CloseHikitugiMenu
+	DW	FUNCNAME_CloseTopButton
+	DW	FUNCNAME_OpenTopButton
+	DW	FUNCNAME_CloseLevelButton
+	DW	FUNCNAME_OpenLevelButton
+FUNCTION_NAME_TABLE_NUM	EQU	26
+;=====================================================================
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_InitTitle:	DB	'InitTitle',0
+FUNCNAME_OpenTitle:	DB	'OpenTitle',0
+FUNCNAME_CloseTitle:	DB	'CloseTitle',0
+FUNCNAME_OpenTop:	DB	'OpenTop',0
+FUNCNAME_CloseTop1:	DB	'CloseTop1',0
+FUNCNAME_CloseTop2:	DB	'CloseTop2',0
+FUNCNAME_OpenMenu:	DB	'OpenMenu',0
+FUNCNAME_ChangeToLevel:	DB	'ChangeToLevel',0
+FUNCNAME_ChangeToButton:	DB	'ChangeToButton',0
+FUNCNAME_ChangeToSystem:	DB	'ChangeToSystem',0
+FUNCNAME_ChangeSystemToButton:	DB	'ChangeSystemToButton',0
+FUNCNAME_CloseSystem:	DB	'CloseSystem',0
+FUNCNAME_InitOptionMenu:	DB	'InitOptionMenu',0
+FUNCNAME_OpenOptionMenu:	DB	'OpenOptionMenu',0
+FUNCNAME_CloseOptionMenu:	DB	'CloseOptionMenu',0
+FUNCNAME_FadeOutTitle:	DB	'FadeOutTitle',0
+FUNCNAME_FadeIn:	DB	'FadeIn',0
+FUNCNAME_FadeOut50:	DB	'FadeOut50',0
+FUNCNAME_InitHikitugiMenu:	DB	'InitHikitugiMenu',0
+FUNCNAME_OpenHikitugiMenu:	DB	'OpenHikitugiMenu',0
+FUNCNAME_CloseHikitugiMenu:	DB	'CloseHikitugiMenu',0
+FUNCNAME_CloseTopButton:	DB	'CloseTopButton',0
+FUNCNAME_OpenTopButton:	DB	'OpenTopButton',0
+FUNCNAME_CloseLevelButton:	DB	'CloseLevelButton',0
+FUNCNAME_OpenLevelButton:	DB	'OpenLevelButton',0

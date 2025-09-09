@@ -1,0 +1,146 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;t6060.scn 51
+	DD	BTLSET000					;t6060.scn 58
+	DD	PreInit					;t6060.scn 68
+	DD	Init					;t6060.scn 83
+	DD	Init_Replay					;t6060.scn 141
+	DD	Reinit					;t6060.scn 187
+	DD	LP_tbox00					;t6060.scn 206
+	DD	LP_healobject					;t6060.scn 248
+	DD	LP_dropItem00					;t6060.scn 259
+	DD	AV_03004					;t6060.scn 322
+	DD	Npc_Table					;t6060.scn 331
+	DD	craig_setting					;t6060.scn 357
+	DD	TK_craig					;t6060.scn 390
+	DD	neithardt_setting					;t6060.scn 572
+	DD	TK_neithardt					;t6060.scn 591
+	DD	gaul_setting					;t6060.scn 735
+	DD	TK_gaul					;t6060.scn 758
+	DD	kisling_setting					;t6060.scn 935
+	DD	TK_kisling					;t6060.scn 958
+	DD	emanz_setting					;t6060.scn 1081
+	DD	TK_emanz					;t6060.scn 1097
+	DD	fiona_setting					;t6060.scn 1178
+	DD	TK_fiona					;t6060.scn 1191
+	DD	TK_fiona_craig_03_Z2_01					;t6060.scn 1277
+	DD	TK_fiona_craig_03_Z2_02					;t6060.scn 1401
+	DD	EV_03_05_00					;t6060.scn 1475
+	DD	ET_03_05_00_BattleWait					;t6060.scn 2715
+	DD	ET_03_05_00_quakeMONS					;t6060.scn 2721
+	DD	EV_03_05_01					;t6060.scn 2733
+	DD	ET_03_05_01_quakeMONS					;t6060.scn 4454
+	DD	ET_03_05_01_loadNEITHARDT					;t6060.scn 4463
+	DD	ET_03_05_01_DeadMONSTER					;t6060.scn 4471
+	DD	ET_03_05_01_DeadMONSTER_2					;t6060.scn 4486
+	DD	SB_STUDENT09_MUNCH_02					;t6060.scn 4519
+	DD	EV_SHORT_BR2B					;t6060.scn 4901
+	DD	_LP_tbox00					;t6060.scn 5002
+	DD	_LP_dropItem00					;t6060.scn 5002
+	DD	_TK_craig					;t6060.scn 5002
+	DD	_TK_gaul					;t6060.scn 5002
+	DD	_EV_03_05_00					;t6060.scn 5002
+	DD	_ET_03_05_00_quakeMONS					;t6060.scn 5002
+	DD	_EV_03_05_01					;t6060.scn 5002
+	DD	_ET_03_05_01_quakeMONS					;t6060.scn 5002
+	DD	_SB_STUDENT09_MUNCH_02					;t6060.scn 5002
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_BTLSET000
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_LP_tbox00
+	DW	FUNCNAME_LP_healobject
+	DW	FUNCNAME_LP_dropItem00
+	DW	FUNCNAME_AV_03004
+	DW	FUNCNAME_Npc_Table
+	DW	FUNCNAME_craig_setting
+	DW	FUNCNAME_TK_craig
+	DW	FUNCNAME_neithardt_setting
+	DW	FUNCNAME_TK_neithardt
+	DW	FUNCNAME_gaul_setting
+	DW	FUNCNAME_TK_gaul
+	DW	FUNCNAME_kisling_setting
+	DW	FUNCNAME_TK_kisling
+	DW	FUNCNAME_emanz_setting
+	DW	FUNCNAME_TK_emanz
+	DW	FUNCNAME_fiona_setting
+	DW	FUNCNAME_TK_fiona
+	DW	FUNCNAME_TK_fiona_craig_03_Z2_01
+	DW	FUNCNAME_TK_fiona_craig_03_Z2_02
+	DW	FUNCNAME_EV_03_05_00
+	DW	FUNCNAME_ET_03_05_00_BattleWait
+	DW	FUNCNAME_ET_03_05_00_quakeMONS
+	DW	FUNCNAME_EV_03_05_01
+	DW	FUNCNAME_ET_03_05_01_quakeMONS
+	DW	FUNCNAME_ET_03_05_01_loadNEITHARDT
+	DW	FUNCNAME_ET_03_05_01_DeadMONSTER
+	DW	FUNCNAME_ET_03_05_01_DeadMONSTER_2
+	DW	FUNCNAME_SB_STUDENT09_MUNCH_02
+	DW	FUNCNAME_EV_SHORT_BR2B
+	DW	FUNCNAME__LP_tbox00
+	DW	FUNCNAME__LP_dropItem00
+	DW	FUNCNAME__TK_craig
+	DW	FUNCNAME__TK_gaul
+	DW	FUNCNAME__EV_03_05_00
+	DW	FUNCNAME__ET_03_05_00_quakeMONS
+	DW	FUNCNAME__EV_03_05_01
+	DW	FUNCNAME__ET_03_05_01_quakeMONS
+	DW	FUNCNAME__SB_STUDENT09_MUNCH_02
+FUNCTION_NAME_TABLE_NUM	EQU	44
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_BTLSET000:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_LP_tbox00:	DB	'LP_tbox00',0
+FUNCNAME_LP_healobject:	DB	'LP_healobject',0
+FUNCNAME_LP_dropItem00:	DB	'LP_dropItem00',0
+FUNCNAME_AV_03004:	DB	'AV_03004',0
+FUNCNAME_Npc_Table:	DB	'Npc_Table',0
+FUNCNAME_craig_setting:	DB	'craig_setting',0
+FUNCNAME_TK_craig:	DB	'TK_craig',0
+FUNCNAME_neithardt_setting:	DB	'neithardt_setting',0
+FUNCNAME_TK_neithardt:	DB	'TK_neithardt',0
+FUNCNAME_gaul_setting:	DB	'gaul_setting',0
+FUNCNAME_TK_gaul:	DB	'TK_gaul',0
+FUNCNAME_kisling_setting:	DB	'kisling_setting',0
+FUNCNAME_TK_kisling:	DB	'TK_kisling',0
+FUNCNAME_emanz_setting:	DB	'emanz_setting',0
+FUNCNAME_TK_emanz:	DB	'TK_emanz',0
+FUNCNAME_fiona_setting:	DB	'fiona_setting',0
+FUNCNAME_TK_fiona:	DB	'TK_fiona',0
+FUNCNAME_TK_fiona_craig_03_Z2_01:	DB	'TK_fiona_craig_03_Z2_01',0
+FUNCNAME_TK_fiona_craig_03_Z2_02:	DB	'TK_fiona_craig_03_Z2_02',0
+FUNCNAME_EV_03_05_00:	DB	'EV_03_05_00',0
+FUNCNAME_ET_03_05_00_BattleWait:	DB	'ET_03_05_00_BattleWait',0
+FUNCNAME_ET_03_05_00_quakeMONS:	DB	'ET_03_05_00_quakeMONS',0
+FUNCNAME_EV_03_05_01:	DB	'EV_03_05_01',0
+FUNCNAME_ET_03_05_01_quakeMONS:	DB	'ET_03_05_01_quakeMONS',0
+FUNCNAME_ET_03_05_01_loadNEITHARDT:	DB	'ET_03_05_01_loadNEITHARDT',0
+FUNCNAME_ET_03_05_01_DeadMONSTER:	DB	'ET_03_05_01_DeadMONSTER',0
+FUNCNAME_ET_03_05_01_DeadMONSTER_2:	DB	'ET_03_05_01_DeadMONSTER_2',0
+FUNCNAME_SB_STUDENT09_MUNCH_02:	DB	'SB_STUDENT09_MUNCH_02',0
+FUNCNAME_EV_SHORT_BR2B:	DB	'EV_SHORT_BR2B',0
+FUNCNAME__LP_tbox00:	DB	'_LP_tbox00',0
+FUNCNAME__LP_dropItem00:	DB	'_LP_dropItem00',0
+FUNCNAME__TK_craig:	DB	'_TK_craig',0
+FUNCNAME__TK_gaul:	DB	'_TK_gaul',0
+FUNCNAME__EV_03_05_00:	DB	'_EV_03_05_00',0
+FUNCNAME__ET_03_05_00_quakeMONS:	DB	'_ET_03_05_00_quakeMONS',0
+FUNCNAME__EV_03_05_01:	DB	'_EV_03_05_01',0
+FUNCNAME__ET_03_05_01_quakeMONS:	DB	'_ET_03_05_01_quakeMONS',0
+FUNCNAME__SB_STUDENT09_MUNCH_02:	DB	'_SB_STUDENT09_MUNCH_02',0

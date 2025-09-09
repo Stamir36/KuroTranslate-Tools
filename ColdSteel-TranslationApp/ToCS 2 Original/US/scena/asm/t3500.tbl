@@ -1,0 +1,560 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;t3500.scn 86
+	DD	PreInit					;t3500.scn 100
+	DD	Init					;t3500.scn 124
+	DD	Init_Replay					;t3500.scn 175
+	DD	Reinit					;t3500.scn 276
+	DD	LP_door02					;t3500.scn 311
+	DD	LP_door05					;t3500.scn 388
+	DD	LP_elev01					;t3500.scn 506
+	DD	LP_elev02					;t3500.scn 553
+	DD	AV_03006					;t3500.scn 602
+	DD	AV_03006b					;t3500.scn 609
+	DD	Npc_Table					;t3500.scn 619
+	DD	eliot_setting					;t3500.scn 702
+	DD	machias_setting					;t3500.scn 722
+	DD	fie_setting					;t3500.scn 751
+	DD	emma_setting					;t3500.scn 776
+	DD	celine2_setting					;t3500.scn 801
+	DD	jusis_setting					;t3500.scn 821
+	DD	gaius_setting					;t3500.scn 845
+	DD	millium_setting					;t3500.scn 868
+	DD	t3500_soldier_f_setting					;t3500.scn 898
+	DD	TK_t3500_soldier_f					;t3500.scn 910
+	DD	ogma_setting					;t3500.scn 1043
+	DD	TK_ogma					;t3500.scn 1055
+	DD	t3500_soldier_k1_setting					;t3500.scn 1215
+	DD	TK_t3500_soldier_k1					;t3500.scn 1227
+	DD	t3500_soldier_k2_setting					;t3500.scn 1340
+	DD	TK_t3500_soldier_k2					;t3500.scn 1353
+	DD	t3500_soldier_c_setting					;t3500.scn 1458
+	DD	TK_t3500_soldier_c					;t3500.scn 1471
+	DD	spilert_setting					;t3500.scn 1593
+	DD	TK_spilert					;t3500.scn 1606
+	DD	drossel_setting					;t3500.scn 1844
+	DD	NPC_move_Drossel					;t3500.scn 1857
+	DD	TK_drossel					;t3500.scn 1877
+	DD	garon_setting					;t3500.scn 2098
+	DD	TK_garon					;t3500.scn 2111
+	DD	freky_setting					;t3500.scn 2290
+	DD	TK_freky					;t3500.scn 2302
+	DD	owl_setting					;t3500.scn 2481
+	DD	TK_owl					;t3500.scn 2501
+	DD	zink_setting					;t3500.scn 2730
+	DD	TK_zink					;t3500.scn 2749
+	DD	t3500_passenger01_setting					;t3500.scn 2763
+	DD	TK_t3500_passenger01					;t3500.scn 2776
+	DD	t3500_passenger02_setting					;t3500.scn 2832
+	DD	TK_t3500_passenger02					;t3500.scn 2845
+	DD	rinda_setting					;t3500.scn 2894
+	DD	TK_rinda					;t3500.scn 2907
+	DD	rokomo_setting					;t3500.scn 3120
+	DD	TK_rokomo					;t3500.scn 3153
+	DD	TK_rokomo_tod_03_B_03					;t3500.scn 3322
+	DD	tod_setting					;t3500.scn 3361
+	DD	TK_tod					;t3500.scn 3396
+	DD	dovance_setting					;t3500.scn 3551
+	DD	TK_dovance					;t3500.scn 3563
+	DD	yurna_setting					;t3500.scn 3595
+	DD	TK_yurna					;t3500.scn 3608
+	DD	log_setting					;t3500.scn 3658
+	DD	TK_log					;t3500.scn 3671
+	DD	t3500_soldier_r01_setting					;t3500.scn 3726
+	DD	TK_t3500_soldier_r01					;t3500.scn 3738
+	DD	t3500_soldier_r02_setting					;t3500.scn 4043
+	DD	TK_t3500_soldier_r02					;t3500.scn 4055
+	DD	t3500_soldier_b01_setting					;t3500.scn 4320
+	DD	TK_t3500_soldier_b01					;t3500.scn 4339
+	DD	t3500_soldier_b02_setting					;t3500.scn 4435
+	DD	TK_t3500_soldier_b02					;t3500.scn 4448
+	DD	t3500_soldier_u01_setting					;t3500.scn 4533
+	DD	TK_t3500_soldier_u01					;t3500.scn 4545
+	DD	givonz_setting					;t3500.scn 4659
+	DD	TK_givonz					;t3500.scn 4683
+	DD	natary_setting					;t3500.scn 4924
+	DD	TK_natary					;t3500.scn 4939
+	DD	sisna_setting					;t3500.scn 5177
+	DD	TK_sisna					;t3500.scn 5190
+	DD	magy_setting					;t3500.scn 5443
+	DD	TK_magy					;t3500.scn 5457
+	DD	TK_sisna_magy_04_02					;t3500.scn 5674
+	DD	crome_setting					;t3500.scn 5730
+	DD	NPC_move_Crome					;t3500.scn 5750
+	DD	TK_crome					;t3500.scn 5794
+	DD	biblio_setting					;t3500.scn 6050
+	DD	TK_biblio					;t3500.scn 6061
+	DD	dove01_setting					;t3500.scn 6355
+	DD	TK_dove01					;t3500.scn 6367
+	DD	dove02_setting					;t3500.scn 6384
+	DD	TK_dove02					;t3500.scn 6396
+	DD	dove03_setting					;t3500.scn 6413
+	DD	TK_dove03					;t3500.scn 6425
+	DD	dove04_setting					;t3500.scn 6442
+	DD	TK_dove04					;t3500.scn 6454
+	DD	dove05_setting					;t3500.scn 6471
+	DD	TK_dove05					;t3500.scn 6483
+	DD	antone_setting					;t3500.scn 6497
+	DD	TK_antone					;t3500.scn 6522
+	DD	TK_ANTONE_RICKS_03_Z4					;t3500.scn 6641
+	DD	keiv_setting					;t3500.scn 6689
+	DD	TK_keiv					;t3500.scn 6701
+	DD	sandy_setting					;t3500.scn 6849
+	DD	TK_sandy					;t3500.scn 6869
+	DD	TK_SANDY_YOHAN_04					;t3500.scn 6961
+	DD	yohan_setting					;t3500.scn 7004
+	DD	TK_yohan					;t3500.scn 7023
+	DD	sherif_setting					;t3500.scn 7116
+	DD	TK_sherif					;t3500.scn 7153
+	DD	haves_setting					;t3500.scn 7309
+	DD	TK_haves					;t3500.scn 7323
+	DD	grego_setting					;t3500.scn 7469
+	DD	TK_grego					;t3500.scn 7483
+	DD	radiconcar1_setting					;t3500.scn 7570
+	DD	NPC_move_RadiconCar1					;t3500.scn 7584
+	DD	radiconcar2_setting					;t3500.scn 7608
+	DD	NPC_move_RadiconCar2					;t3500.scn 7622
+	DD	dones_setting					;t3500.scn 7646
+	DD	TK_dones					;t3500.scn 7659
+	DD	t3900_passenger01_setting					;t3500.scn 7686
+	DD	TK_t3900_passenger01					;t3500.scn 7699
+	DD	t3900_passenger02_setting					;t3500.scn 7729
+	DD	TK_t3900_passenger02					;t3500.scn 7742
+	DD	andore_setting					;t3500.scn 7774
+	DD	TK_andore					;t3500.scn 7788
+	DD	ricks_setting					;t3500.scn 7872
+	DD	TK_ricks					;t3500.scn 7900
+	DD	karigan_setting					;t3500.scn 7980
+	DD	TK_karigan					;t3500.scn 7992
+	DD	dominic_setting					;t3500.scn 8059
+	DD	TK_dominic					;t3500.scn 8076
+	DD	t3500_soldier_t01_setting					;t3500.scn 8131
+	DD	TK_t3500_soldier_t01					;t3500.scn 8144
+	DD	EV_03_11_01					;t3500.scn 8204
+	DD	EV_03_12_00					;t3500.scn 8613
+	DD	ET_03_12_00_Move					;t3500.scn 9674
+	DD	EV_03_13_00					;t3500.scn 9711
+	DD	ET_03_13_00_TurnToALISA					;t3500.scn 10249
+	DD	EV_03_14_00					;t3500.scn 10261
+	DD	EV_03_19_02					;t3500.scn 10452
+	DD	EV_Save_Menu					;t3500.scn 10639
+	DD	EV_03_21_03					;t3500.scn 10734
+	DD	EV_03_23_01					;t3500.scn 11020
+	DD	QS_2404_02_A					;t3500.scn 11118
+	DD	SB_KIZUNA_ELIOT_04					;t3500.scn 11462
+	DD	SB_KIZUNA_MACHIAS_04					;t3500.scn 11865
+	DD	SB_KIZUNA_EMMA_04					;t3500.scn 12784
+	DD	SB_KIZUNA_FIE_04A					;t3500.scn 13279
+	DD	SB_KIZUNA_ELIOT_04_B					;t3500.scn 13896
+	DD	SB_KIZUNA_MACHIAS_04_B					;t3500.scn 13923
+	DD	SB_KIZUNA_EMMA_04_B					;t3500.scn 13950
+	DD	SB_KIZUNA_GAIUS_04_B					;t3500.scn 13977
+	DD	SB_KIZUNA_FIE_04_B					;t3500.scn 14004
+	DD	SB_KIZUNA_MILLIUM_04_B					;t3500.scn 14032
+	DD	SB_04_ANTONE					;t3500.scn 14059
+	DD	ET_SB_04_ANTONE_WAI					;t3500.scn 14491
+	DD	TU_03_FREEPOINT					;t3500.scn 14506
+	DD	ST_TO_T3510					;t3500.scn 14577
+	DD	ST_TO_R0400					;t3500.scn 14620
+	DD	ST_TO_R0410					;t3500.scn 14667
+	DD	ST_TO_R0420					;t3500.scn 14715
+	DD	_LP_door05					;t3500.scn 14764
+	DD	_LP_elev01					;t3500.scn 14764
+	DD	_LP_elev02					;t3500.scn 14764
+	DD	_TK_zink					;t3500.scn 14764
+	DD	_TK_dove01					;t3500.scn 14764
+	DD	_TK_dove02					;t3500.scn 14764
+	DD	_TK_dove03					;t3500.scn 14764
+	DD	_TK_dove04					;t3500.scn 14764
+	DD	_TK_dove05					;t3500.scn 14764
+	DD	_TK_andore					;t3500.scn 14764
+	DD	_EV_03_11_01					;t3500.scn 14764
+	DD	_EV_03_12_00					;t3500.scn 14764
+	DD	_EV_03_13_00					;t3500.scn 14764
+	DD	_EV_03_14_00					;t3500.scn 14764
+	DD	_EV_03_19_02					;t3500.scn 14764
+	DD	_EV_Save_Menu					;t3500.scn 14764
+	DD	_EV_03_21_03					;t3500.scn 14764
+	DD	_QS_2404_02_A					;t3500.scn 14764
+	DD	_SB_KIZUNA_ELIOT_04					;t3500.scn 14764
+	DD	_SB_KIZUNA_MACHIAS_04					;t3500.scn 14764
+	DD	_SB_KIZUNA_EMMA_04					;t3500.scn 14764
+	DD	_SB_KIZUNA_FIE_04A					;t3500.scn 14764
+	DD	_SB_04_ANTONE					;t3500.scn 14764
+	DD	_TU_03_FREEPOINT					;t3500.scn 14764
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_LP_door02
+	DW	FUNCNAME_LP_door05
+	DW	FUNCNAME_LP_elev01
+	DW	FUNCNAME_LP_elev02
+	DW	FUNCNAME_AV_03006
+	DW	FUNCNAME_AV_03006b
+	DW	FUNCNAME_Npc_Table
+	DW	FUNCNAME_eliot_setting
+	DW	FUNCNAME_machias_setting
+	DW	FUNCNAME_fie_setting
+	DW	FUNCNAME_emma_setting
+	DW	FUNCNAME_celine2_setting
+	DW	FUNCNAME_jusis_setting
+	DW	FUNCNAME_gaius_setting
+	DW	FUNCNAME_millium_setting
+	DW	FUNCNAME_t3500_soldier_f_setting
+	DW	FUNCNAME_TK_t3500_soldier_f
+	DW	FUNCNAME_ogma_setting
+	DW	FUNCNAME_TK_ogma
+	DW	FUNCNAME_t3500_soldier_k1_setting
+	DW	FUNCNAME_TK_t3500_soldier_k1
+	DW	FUNCNAME_t3500_soldier_k2_setting
+	DW	FUNCNAME_TK_t3500_soldier_k2
+	DW	FUNCNAME_t3500_soldier_c_setting
+	DW	FUNCNAME_TK_t3500_soldier_c
+	DW	FUNCNAME_spilert_setting
+	DW	FUNCNAME_TK_spilert
+	DW	FUNCNAME_drossel_setting
+	DW	FUNCNAME_NPC_move_Drossel
+	DW	FUNCNAME_TK_drossel
+	DW	FUNCNAME_garon_setting
+	DW	FUNCNAME_TK_garon
+	DW	FUNCNAME_freky_setting
+	DW	FUNCNAME_TK_freky
+	DW	FUNCNAME_owl_setting
+	DW	FUNCNAME_TK_owl
+	DW	FUNCNAME_zink_setting
+	DW	FUNCNAME_TK_zink
+	DW	FUNCNAME_t3500_passenger01_setting
+	DW	FUNCNAME_TK_t3500_passenger01
+	DW	FUNCNAME_t3500_passenger02_setting
+	DW	FUNCNAME_TK_t3500_passenger02
+	DW	FUNCNAME_rinda_setting
+	DW	FUNCNAME_TK_rinda
+	DW	FUNCNAME_rokomo_setting
+	DW	FUNCNAME_TK_rokomo
+	DW	FUNCNAME_TK_rokomo_tod_03_B_03
+	DW	FUNCNAME_tod_setting
+	DW	FUNCNAME_TK_tod
+	DW	FUNCNAME_dovance_setting
+	DW	FUNCNAME_TK_dovance
+	DW	FUNCNAME_yurna_setting
+	DW	FUNCNAME_TK_yurna
+	DW	FUNCNAME_log_setting
+	DW	FUNCNAME_TK_log
+	DW	FUNCNAME_t3500_soldier_r01_setting
+	DW	FUNCNAME_TK_t3500_soldier_r01
+	DW	FUNCNAME_t3500_soldier_r02_setting
+	DW	FUNCNAME_TK_t3500_soldier_r02
+	DW	FUNCNAME_t3500_soldier_b01_setting
+	DW	FUNCNAME_TK_t3500_soldier_b01
+	DW	FUNCNAME_t3500_soldier_b02_setting
+	DW	FUNCNAME_TK_t3500_soldier_b02
+	DW	FUNCNAME_t3500_soldier_u01_setting
+	DW	FUNCNAME_TK_t3500_soldier_u01
+	DW	FUNCNAME_givonz_setting
+	DW	FUNCNAME_TK_givonz
+	DW	FUNCNAME_natary_setting
+	DW	FUNCNAME_TK_natary
+	DW	FUNCNAME_sisna_setting
+	DW	FUNCNAME_TK_sisna
+	DW	FUNCNAME_magy_setting
+	DW	FUNCNAME_TK_magy
+	DW	FUNCNAME_TK_sisna_magy_04_02
+	DW	FUNCNAME_crome_setting
+	DW	FUNCNAME_NPC_move_Crome
+	DW	FUNCNAME_TK_crome
+	DW	FUNCNAME_biblio_setting
+	DW	FUNCNAME_TK_biblio
+	DW	FUNCNAME_dove01_setting
+	DW	FUNCNAME_TK_dove01
+	DW	FUNCNAME_dove02_setting
+	DW	FUNCNAME_TK_dove02
+	DW	FUNCNAME_dove03_setting
+	DW	FUNCNAME_TK_dove03
+	DW	FUNCNAME_dove04_setting
+	DW	FUNCNAME_TK_dove04
+	DW	FUNCNAME_dove05_setting
+	DW	FUNCNAME_TK_dove05
+	DW	FUNCNAME_antone_setting
+	DW	FUNCNAME_TK_antone
+	DW	FUNCNAME_TK_ANTONE_RICKS_03_Z4
+	DW	FUNCNAME_keiv_setting
+	DW	FUNCNAME_TK_keiv
+	DW	FUNCNAME_sandy_setting
+	DW	FUNCNAME_TK_sandy
+	DW	FUNCNAME_TK_SANDY_YOHAN_04
+	DW	FUNCNAME_yohan_setting
+	DW	FUNCNAME_TK_yohan
+	DW	FUNCNAME_sherif_setting
+	DW	FUNCNAME_TK_sherif
+	DW	FUNCNAME_haves_setting
+	DW	FUNCNAME_TK_haves
+	DW	FUNCNAME_grego_setting
+	DW	FUNCNAME_TK_grego
+	DW	FUNCNAME_radiconcar1_setting
+	DW	FUNCNAME_NPC_move_RadiconCar1
+	DW	FUNCNAME_radiconcar2_setting
+	DW	FUNCNAME_NPC_move_RadiconCar2
+	DW	FUNCNAME_dones_setting
+	DW	FUNCNAME_TK_dones
+	DW	FUNCNAME_t3900_passenger01_setting
+	DW	FUNCNAME_TK_t3900_passenger01
+	DW	FUNCNAME_t3900_passenger02_setting
+	DW	FUNCNAME_TK_t3900_passenger02
+	DW	FUNCNAME_andore_setting
+	DW	FUNCNAME_TK_andore
+	DW	FUNCNAME_ricks_setting
+	DW	FUNCNAME_TK_ricks
+	DW	FUNCNAME_karigan_setting
+	DW	FUNCNAME_TK_karigan
+	DW	FUNCNAME_dominic_setting
+	DW	FUNCNAME_TK_dominic
+	DW	FUNCNAME_t3500_soldier_t01_setting
+	DW	FUNCNAME_TK_t3500_soldier_t01
+	DW	FUNCNAME_EV_03_11_01
+	DW	FUNCNAME_EV_03_12_00
+	DW	FUNCNAME_ET_03_12_00_Move
+	DW	FUNCNAME_EV_03_13_00
+	DW	FUNCNAME_ET_03_13_00_TurnToALISA
+	DW	FUNCNAME_EV_03_14_00
+	DW	FUNCNAME_EV_03_19_02
+	DW	FUNCNAME_EV_Save_Menu
+	DW	FUNCNAME_EV_03_21_03
+	DW	FUNCNAME_EV_03_23_01
+	DW	FUNCNAME_QS_2404_02_A
+	DW	FUNCNAME_SB_KIZUNA_ELIOT_04
+	DW	FUNCNAME_SB_KIZUNA_MACHIAS_04
+	DW	FUNCNAME_SB_KIZUNA_EMMA_04
+	DW	FUNCNAME_SB_KIZUNA_FIE_04A
+	DW	FUNCNAME_SB_KIZUNA_ELIOT_04_B
+	DW	FUNCNAME_SB_KIZUNA_MACHIAS_04_B
+	DW	FUNCNAME_SB_KIZUNA_EMMA_04_B
+	DW	FUNCNAME_SB_KIZUNA_GAIUS_04_B
+	DW	FUNCNAME_SB_KIZUNA_FIE_04_B
+	DW	FUNCNAME_SB_KIZUNA_MILLIUM_04_B
+	DW	FUNCNAME_SB_04_ANTONE
+	DW	FUNCNAME_ET_SB_04_ANTONE_WAI
+	DW	FUNCNAME_TU_03_FREEPOINT
+	DW	FUNCNAME_ST_TO_T3510
+	DW	FUNCNAME_ST_TO_R0400
+	DW	FUNCNAME_ST_TO_R0410
+	DW	FUNCNAME_ST_TO_R0420
+	DW	FUNCNAME__LP_door05
+	DW	FUNCNAME__LP_elev01
+	DW	FUNCNAME__LP_elev02
+	DW	FUNCNAME__TK_zink
+	DW	FUNCNAME__TK_dove01
+	DW	FUNCNAME__TK_dove02
+	DW	FUNCNAME__TK_dove03
+	DW	FUNCNAME__TK_dove04
+	DW	FUNCNAME__TK_dove05
+	DW	FUNCNAME__TK_andore
+	DW	FUNCNAME__EV_03_11_01
+	DW	FUNCNAME__EV_03_12_00
+	DW	FUNCNAME__EV_03_13_00
+	DW	FUNCNAME__EV_03_14_00
+	DW	FUNCNAME__EV_03_19_02
+	DW	FUNCNAME__EV_Save_Menu
+	DW	FUNCNAME__EV_03_21_03
+	DW	FUNCNAME__QS_2404_02_A
+	DW	FUNCNAME__SB_KIZUNA_ELIOT_04
+	DW	FUNCNAME__SB_KIZUNA_MACHIAS_04
+	DW	FUNCNAME__SB_KIZUNA_EMMA_04
+	DW	FUNCNAME__SB_KIZUNA_FIE_04A
+	DW	FUNCNAME__SB_04_ANTONE
+	DW	FUNCNAME__TU_03_FREEPOINT
+FUNCTION_NAME_TABLE_NUM	EQU	182
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_LP_door02:	DB	'LP_door02',0
+FUNCNAME_LP_door05:	DB	'LP_door05',0
+FUNCNAME_LP_elev01:	DB	'LP_elev01',0
+FUNCNAME_LP_elev02:	DB	'LP_elev02',0
+FUNCNAME_AV_03006:	DB	'AV_03006',0
+FUNCNAME_AV_03006b:	DB	'AV_03006b',0
+FUNCNAME_Npc_Table:	DB	'Npc_Table',0
+FUNCNAME_eliot_setting:	DB	'eliot_setting',0
+FUNCNAME_machias_setting:	DB	'machias_setting',0
+FUNCNAME_fie_setting:	DB	'fie_setting',0
+FUNCNAME_emma_setting:	DB	'emma_setting',0
+FUNCNAME_celine2_setting:	DB	'celine2_setting',0
+FUNCNAME_jusis_setting:	DB	'jusis_setting',0
+FUNCNAME_gaius_setting:	DB	'gaius_setting',0
+FUNCNAME_millium_setting:	DB	'millium_setting',0
+FUNCNAME_t3500_soldier_f_setting:	DB	't3500_soldier_f_setting',0
+FUNCNAME_TK_t3500_soldier_f:	DB	'TK_t3500_soldier_f',0
+FUNCNAME_ogma_setting:	DB	'ogma_setting',0
+FUNCNAME_TK_ogma:	DB	'TK_ogma',0
+FUNCNAME_t3500_soldier_k1_setting:	DB	't3500_soldier_k1_setting',0
+FUNCNAME_TK_t3500_soldier_k1:	DB	'TK_t3500_soldier_k1',0
+FUNCNAME_t3500_soldier_k2_setting:	DB	't3500_soldier_k2_setting',0
+FUNCNAME_TK_t3500_soldier_k2:	DB	'TK_t3500_soldier_k2',0
+FUNCNAME_t3500_soldier_c_setting:	DB	't3500_soldier_c_setting',0
+FUNCNAME_TK_t3500_soldier_c:	DB	'TK_t3500_soldier_c',0
+FUNCNAME_spilert_setting:	DB	'spilert_setting',0
+FUNCNAME_TK_spilert:	DB	'TK_spilert',0
+FUNCNAME_drossel_setting:	DB	'drossel_setting',0
+FUNCNAME_NPC_move_Drossel:	DB	'NPC_move_Drossel',0
+FUNCNAME_TK_drossel:	DB	'TK_drossel',0
+FUNCNAME_garon_setting:	DB	'garon_setting',0
+FUNCNAME_TK_garon:	DB	'TK_garon',0
+FUNCNAME_freky_setting:	DB	'freky_setting',0
+FUNCNAME_TK_freky:	DB	'TK_freky',0
+FUNCNAME_owl_setting:	DB	'owl_setting',0
+FUNCNAME_TK_owl:	DB	'TK_owl',0
+FUNCNAME_zink_setting:	DB	'zink_setting',0
+FUNCNAME_TK_zink:	DB	'TK_zink',0
+FUNCNAME_t3500_passenger01_setting:	DB	't3500_passenger01_setting',0
+FUNCNAME_TK_t3500_passenger01:	DB	'TK_t3500_passenger01',0
+FUNCNAME_t3500_passenger02_setting:	DB	't3500_passenger02_setting',0
+FUNCNAME_TK_t3500_passenger02:	DB	'TK_t3500_passenger02',0
+FUNCNAME_rinda_setting:	DB	'rinda_setting',0
+FUNCNAME_TK_rinda:	DB	'TK_rinda',0
+FUNCNAME_rokomo_setting:	DB	'rokomo_setting',0
+FUNCNAME_TK_rokomo:	DB	'TK_rokomo',0
+FUNCNAME_TK_rokomo_tod_03_B_03:	DB	'TK_rokomo_tod_03_B_03',0
+FUNCNAME_tod_setting:	DB	'tod_setting',0
+FUNCNAME_TK_tod:	DB	'TK_tod',0
+FUNCNAME_dovance_setting:	DB	'dovance_setting',0
+FUNCNAME_TK_dovance:	DB	'TK_dovance',0
+FUNCNAME_yurna_setting:	DB	'yurna_setting',0
+FUNCNAME_TK_yurna:	DB	'TK_yurna',0
+FUNCNAME_log_setting:	DB	'log_setting',0
+FUNCNAME_TK_log:	DB	'TK_log',0
+FUNCNAME_t3500_soldier_r01_setting:	DB	't3500_soldier_r01_setting',0
+FUNCNAME_TK_t3500_soldier_r01:	DB	'TK_t3500_soldier_r01',0
+FUNCNAME_t3500_soldier_r02_setting:	DB	't3500_soldier_r02_setting',0
+FUNCNAME_TK_t3500_soldier_r02:	DB	'TK_t3500_soldier_r02',0
+FUNCNAME_t3500_soldier_b01_setting:	DB	't3500_soldier_b01_setting',0
+FUNCNAME_TK_t3500_soldier_b01:	DB	'TK_t3500_soldier_b01',0
+FUNCNAME_t3500_soldier_b02_setting:	DB	't3500_soldier_b02_setting',0
+FUNCNAME_TK_t3500_soldier_b02:	DB	'TK_t3500_soldier_b02',0
+FUNCNAME_t3500_soldier_u01_setting:	DB	't3500_soldier_u01_setting',0
+FUNCNAME_TK_t3500_soldier_u01:	DB	'TK_t3500_soldier_u01',0
+FUNCNAME_givonz_setting:	DB	'givonz_setting',0
+FUNCNAME_TK_givonz:	DB	'TK_givonz',0
+FUNCNAME_natary_setting:	DB	'natary_setting',0
+FUNCNAME_TK_natary:	DB	'TK_natary',0
+FUNCNAME_sisna_setting:	DB	'sisna_setting',0
+FUNCNAME_TK_sisna:	DB	'TK_sisna',0
+FUNCNAME_magy_setting:	DB	'magy_setting',0
+FUNCNAME_TK_magy:	DB	'TK_magy',0
+FUNCNAME_TK_sisna_magy_04_02:	DB	'TK_sisna_magy_04_02',0
+FUNCNAME_crome_setting:	DB	'crome_setting',0
+FUNCNAME_NPC_move_Crome:	DB	'NPC_move_Crome',0
+FUNCNAME_TK_crome:	DB	'TK_crome',0
+FUNCNAME_biblio_setting:	DB	'biblio_setting',0
+FUNCNAME_TK_biblio:	DB	'TK_biblio',0
+FUNCNAME_dove01_setting:	DB	'dove01_setting',0
+FUNCNAME_TK_dove01:	DB	'TK_dove01',0
+FUNCNAME_dove02_setting:	DB	'dove02_setting',0
+FUNCNAME_TK_dove02:	DB	'TK_dove02',0
+FUNCNAME_dove03_setting:	DB	'dove03_setting',0
+FUNCNAME_TK_dove03:	DB	'TK_dove03',0
+FUNCNAME_dove04_setting:	DB	'dove04_setting',0
+FUNCNAME_TK_dove04:	DB	'TK_dove04',0
+FUNCNAME_dove05_setting:	DB	'dove05_setting',0
+FUNCNAME_TK_dove05:	DB	'TK_dove05',0
+FUNCNAME_antone_setting:	DB	'antone_setting',0
+FUNCNAME_TK_antone:	DB	'TK_antone',0
+FUNCNAME_TK_ANTONE_RICKS_03_Z4:	DB	'TK_ANTONE_RICKS_03_Z4',0
+FUNCNAME_keiv_setting:	DB	'keiv_setting',0
+FUNCNAME_TK_keiv:	DB	'TK_keiv',0
+FUNCNAME_sandy_setting:	DB	'sandy_setting',0
+FUNCNAME_TK_sandy:	DB	'TK_sandy',0
+FUNCNAME_TK_SANDY_YOHAN_04:	DB	'TK_SANDY_YOHAN_04',0
+FUNCNAME_yohan_setting:	DB	'yohan_setting',0
+FUNCNAME_TK_yohan:	DB	'TK_yohan',0
+FUNCNAME_sherif_setting:	DB	'sherif_setting',0
+FUNCNAME_TK_sherif:	DB	'TK_sherif',0
+FUNCNAME_haves_setting:	DB	'haves_setting',0
+FUNCNAME_TK_haves:	DB	'TK_haves',0
+FUNCNAME_grego_setting:	DB	'grego_setting',0
+FUNCNAME_TK_grego:	DB	'TK_grego',0
+FUNCNAME_radiconcar1_setting:	DB	'radiconcar1_setting',0
+FUNCNAME_NPC_move_RadiconCar1:	DB	'NPC_move_RadiconCar1',0
+FUNCNAME_radiconcar2_setting:	DB	'radiconcar2_setting',0
+FUNCNAME_NPC_move_RadiconCar2:	DB	'NPC_move_RadiconCar2',0
+FUNCNAME_dones_setting:	DB	'dones_setting',0
+FUNCNAME_TK_dones:	DB	'TK_dones',0
+FUNCNAME_t3900_passenger01_setting:	DB	't3900_passenger01_setting',0
+FUNCNAME_TK_t3900_passenger01:	DB	'TK_t3900_passenger01',0
+FUNCNAME_t3900_passenger02_setting:	DB	't3900_passenger02_setting',0
+FUNCNAME_TK_t3900_passenger02:	DB	'TK_t3900_passenger02',0
+FUNCNAME_andore_setting:	DB	'andore_setting',0
+FUNCNAME_TK_andore:	DB	'TK_andore',0
+FUNCNAME_ricks_setting:	DB	'ricks_setting',0
+FUNCNAME_TK_ricks:	DB	'TK_ricks',0
+FUNCNAME_karigan_setting:	DB	'karigan_setting',0
+FUNCNAME_TK_karigan:	DB	'TK_karigan',0
+FUNCNAME_dominic_setting:	DB	'dominic_setting',0
+FUNCNAME_TK_dominic:	DB	'TK_dominic',0
+FUNCNAME_t3500_soldier_t01_setting:	DB	't3500_soldier_t01_setting',0
+FUNCNAME_TK_t3500_soldier_t01:	DB	'TK_t3500_soldier_t01',0
+FUNCNAME_EV_03_11_01:	DB	'EV_03_11_01',0
+FUNCNAME_EV_03_12_00:	DB	'EV_03_12_00',0
+FUNCNAME_ET_03_12_00_Move:	DB	'ET_03_12_00_Move',0
+FUNCNAME_EV_03_13_00:	DB	'EV_03_13_00',0
+FUNCNAME_ET_03_13_00_TurnToALISA:	DB	'ET_03_13_00_TurnToALISA',0
+FUNCNAME_EV_03_14_00:	DB	'EV_03_14_00',0
+FUNCNAME_EV_03_19_02:	DB	'EV_03_19_02',0
+FUNCNAME_EV_Save_Menu:	DB	'EV_Save_Menu',0
+FUNCNAME_EV_03_21_03:	DB	'EV_03_21_03',0
+FUNCNAME_EV_03_23_01:	DB	'EV_03_23_01',0
+FUNCNAME_QS_2404_02_A:	DB	'QS_2404_02_A',0
+FUNCNAME_SB_KIZUNA_ELIOT_04:	DB	'SB_KIZUNA_ELIOT_04',0
+FUNCNAME_SB_KIZUNA_MACHIAS_04:	DB	'SB_KIZUNA_MACHIAS_04',0
+FUNCNAME_SB_KIZUNA_EMMA_04:	DB	'SB_KIZUNA_EMMA_04',0
+FUNCNAME_SB_KIZUNA_FIE_04A:	DB	'SB_KIZUNA_FIE_04A',0
+FUNCNAME_SB_KIZUNA_ELIOT_04_B:	DB	'SB_KIZUNA_ELIOT_04_B',0
+FUNCNAME_SB_KIZUNA_MACHIAS_04_B:	DB	'SB_KIZUNA_MACHIAS_04_B',0
+FUNCNAME_SB_KIZUNA_EMMA_04_B:	DB	'SB_KIZUNA_EMMA_04_B',0
+FUNCNAME_SB_KIZUNA_GAIUS_04_B:	DB	'SB_KIZUNA_GAIUS_04_B',0
+FUNCNAME_SB_KIZUNA_FIE_04_B:	DB	'SB_KIZUNA_FIE_04_B',0
+FUNCNAME_SB_KIZUNA_MILLIUM_04_B:	DB	'SB_KIZUNA_MILLIUM_04_B',0
+FUNCNAME_SB_04_ANTONE:	DB	'SB_04_ANTONE',0
+FUNCNAME_ET_SB_04_ANTONE_WAI:	DB	'ET_SB_04_ANTONE_WAI',0
+FUNCNAME_TU_03_FREEPOINT:	DB	'TU_03_FREEPOINT',0
+FUNCNAME_ST_TO_T3510:	DB	'ST_TO_T3510',0
+FUNCNAME_ST_TO_R0400:	DB	'ST_TO_R0400',0
+FUNCNAME_ST_TO_R0410:	DB	'ST_TO_R0410',0
+FUNCNAME_ST_TO_R0420:	DB	'ST_TO_R0420',0
+FUNCNAME__LP_door05:	DB	'_LP_door05',0
+FUNCNAME__LP_elev01:	DB	'_LP_elev01',0
+FUNCNAME__LP_elev02:	DB	'_LP_elev02',0
+FUNCNAME__TK_zink:	DB	'_TK_zink',0
+FUNCNAME__TK_dove01:	DB	'_TK_dove01',0
+FUNCNAME__TK_dove02:	DB	'_TK_dove02',0
+FUNCNAME__TK_dove03:	DB	'_TK_dove03',0
+FUNCNAME__TK_dove04:	DB	'_TK_dove04',0
+FUNCNAME__TK_dove05:	DB	'_TK_dove05',0
+FUNCNAME__TK_andore:	DB	'_TK_andore',0
+FUNCNAME__EV_03_11_01:	DB	'_EV_03_11_01',0
+FUNCNAME__EV_03_12_00:	DB	'_EV_03_12_00',0
+FUNCNAME__EV_03_13_00:	DB	'_EV_03_13_00',0
+FUNCNAME__EV_03_14_00:	DB	'_EV_03_14_00',0
+FUNCNAME__EV_03_19_02:	DB	'_EV_03_19_02',0
+FUNCNAME__EV_Save_Menu:	DB	'_EV_Save_Menu',0
+FUNCNAME__EV_03_21_03:	DB	'_EV_03_21_03',0
+FUNCNAME__QS_2404_02_A:	DB	'_QS_2404_02_A',0
+FUNCNAME__SB_KIZUNA_ELIOT_04:	DB	'_SB_KIZUNA_ELIOT_04',0
+FUNCNAME__SB_KIZUNA_MACHIAS_04:	DB	'_SB_KIZUNA_MACHIAS_04',0
+FUNCNAME__SB_KIZUNA_EMMA_04:	DB	'_SB_KIZUNA_EMMA_04',0
+FUNCNAME__SB_KIZUNA_FIE_04A:	DB	'_SB_KIZUNA_FIE_04A',0
+FUNCNAME__SB_04_ANTONE:	DB	'_SB_04_ANTONE',0
+FUNCNAME__TU_03_FREEPOINT:	DB	'_TU_03_FREEPOINT',0

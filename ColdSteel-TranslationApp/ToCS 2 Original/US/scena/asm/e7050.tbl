@@ -1,0 +1,326 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;e7050.scn 50
+	DD	PreInit					;e7050.scn 56
+	DD	Init					;e7050.scn 73
+	DD	Init_Replay					;e7050.scn 121
+	DD	Reinit					;e7050.scn 308
+	DD	LP_elev					;e7050.scn 327
+	DD	LP_door03					;e7050.scn 405
+	DD	LP_BUY00					;e7050.scn 430
+	DD	LP_BUY01					;e7050.scn 435
+	DD	LP_Book00					;e7050.scn 453
+	DD	LP_Book01					;e7050.scn 458
+	DD	LP_Book0					;e7050.scn 463
+	DD	LP_TIPS_HISTORY					;e7050.scn 659
+	DD	LP_TIPS_CULT1					;e7050.scn 821
+	DD	LP_TIPS_CULT2					;e7050.scn 959
+	DD	LP_TIPS_TECH1					;e7050.scn 1122
+	DD	LP_TIPS_TECH2					;e7050.scn 1272
+	DD	LP_TIPS_INTER1					;e7050.scn 1402
+	DD	LP_TIPS_INTER2					;e7050.scn 1555
+	DD	LP_TIPS_POLITIC					;e7050.scn 1720
+	DD	LP_News00					;e7050.scn 1903
+	DD	LP_News01					;e7050.scn 1907
+	DD	LP_News0					;e7050.scn 1912
+	DD	Npc_Table					;e7050.scn 2059
+	DD	alisa_setting					;e7050.scn 2195
+	DD	eliot_setting					;e7050.scn 2218
+	DD	laura_setting					;e7050.scn 2235
+	DD	machias_setting					;e7050.scn 2261
+	DD	emma_setting					;e7050.scn 2305
+	DD	celine2_setting					;e7050.scn 2346
+	DD	jusis_setting					;e7050.scn 2367
+	DD	fie_setting					;e7050.scn 2393
+	DD	millium_setting					;e7050.scn 2420
+	DD	sara_setting					;e7050.scn 2478
+	DD	thomas_setting					;e7050.scn 2506
+	DD	rosine_setting					;e7050.scn 2521
+	DD	munch_setting					;e7050.scn 2549
+	DD	monica_setting					;e7050.scn 2581
+	DD	bridget_setting					;e7050.scn 2620
+	DD	stefan_setting					;e7050.scn 2643
+	DD	kenneth_setting					;e7050.scn 2673
+	DD	margarita_setting					;e7050.scn 2706
+	DD	nicholas_setting					;e7050.scn 2756
+	DD	fidelio_setting					;e7050.scn 2794
+	DD	dorothe_setting					;e7050.scn 2833
+	DD	rex_setting					;e7050.scn 2881
+	DD	beryl_setting					;e7050.scn 2903
+	DD	makarov_setting					;e7050.scn 2927
+	DD	ferris_setting					;e7050.scn 2943
+	DD	vincent_setting					;e7050.scn 2959
+	DD	salyfa_setting					;e7050.scn 2975
+	DD	TK_fidelio_dorothe_03_Z4					;e7050.scn 2993
+	DD	TK_millium_nicholas_03_Z1					;e7050.scn 3055
+	DD	TK_emma_fie_celine_03_Z3					;e7050.scn 3094
+	DD	TK_emma_millium_celine_03_Z4					;e7050.scn 3200
+	DD	TK_emma_celine_03_Z4					;e7050.scn 3280
+	DD	TK_machias_jusis_03_Z3					;e7050.scn 3378
+	DD	e7020_student05_setting					;e7050.scn 3424
+	DD	TK_e7020_student05					;e7050.scn 3439
+	DD	e7020_student06_setting					;e7050.scn 3470
+	DD	TK_e7020_student06					;e7050.scn 3485
+	DD	QS_2302_01					;e7050.scn 3525
+	DD	SB_KIZUNA_MILLIUM_05					;e7050.scn 3939
+	DD	YR_01_00					;e7050.scn 4448
+	DD	YR_01_02					;e7050.scn 4684
+	DD	YR_01_01_INCREMENT					;e7050.scn 5367
+	DD	YR_01_01					;e7050.scn 5380
+	DD	EV_about_blade1					;e7050.scn 5562
+	DD	EV_about_blade2					;e7050.scn 5617
+	DD	LP2_blade					;e7050.scn 5690
+	DD	LP2_blade1					;e7050.scn 5735
+	DD	LP2_blade2					;e7050.scn 5738
+	DD	SB_03_TRISTA_BLADE_FIRST					;e7050.scn 5745
+	DD	SB_03_TRISTA_BLADE					;e7050.scn 5920
+	DD	YR_02_00					;e7050.scn 8765
+	DD	YR_02_02					;e7050.scn 8906
+	DD	YR_02_03					;e7050.scn 9613
+	DD	CHK_SB_03_ABOUT_KURO_KOUBOU					;e7050.scn 9773
+	DD	SB_03_ABOUT_KURO_KOUBOU					;e7050.scn 9782
+	DD	FC_YR_12_Check					;e7050.scn 10232
+	DD	FC_YR_12_Reword					;e7050.scn 10253
+	DD	YR_12_00					;e7050.scn 10337
+	DD	TU_03_SHIP_2F					;e7050.scn 10537
+	DD	TU_03_SHIP_COMP					;e7050.scn 10723
+	DD	CHK_YR_19_00					;e7050.scn 10758
+	DD	YR_19_00					;e7050.scn 10781
+	DD	YR_19_06					;e7050.scn 11124
+	DD	_LP_elev					;e7050.scn 11579
+	DD	_LP_Book0					;e7050.scn 11579
+	DD	_LP_News0					;e7050.scn 11579
+	DD	_QS_2302_01					;e7050.scn 11579
+	DD	_SB_KIZUNA_MILLIUM_05					;e7050.scn 11579
+	DD	_YR_01_00					;e7050.scn 11579
+	DD	_YR_01_01					;e7050.scn 11579
+	DD	_EV_about_blade1					;e7050.scn 11579
+	DD	_EV_about_blade2					;e7050.scn 11579
+	DD	_LP2_blade					;e7050.scn 11579
+	DD	_SB_03_TRISTA_BLADE_FIRST					;e7050.scn 11579
+	DD	_FC_YR_12_Reword					;e7050.scn 11579
+	DD	_YR_12_00					;e7050.scn 11579
+	DD	_TU_03_SHIP_2F					;e7050.scn 11579
+	DD	_TU_03_SHIP_COMP					;e7050.scn 11579
+	DD	_YR_19_00					;e7050.scn 11579
+	DD	_YR_19_06					;e7050.scn 11579
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_LP_elev
+	DW	FUNCNAME_LP_door03
+	DW	FUNCNAME_LP_BUY00
+	DW	FUNCNAME_LP_BUY01
+	DW	FUNCNAME_LP_Book00
+	DW	FUNCNAME_LP_Book01
+	DW	FUNCNAME_LP_Book0
+	DW	FUNCNAME_LP_TIPS_HISTORY
+	DW	FUNCNAME_LP_TIPS_CULT1
+	DW	FUNCNAME_LP_TIPS_CULT2
+	DW	FUNCNAME_LP_TIPS_TECH1
+	DW	FUNCNAME_LP_TIPS_TECH2
+	DW	FUNCNAME_LP_TIPS_INTER1
+	DW	FUNCNAME_LP_TIPS_INTER2
+	DW	FUNCNAME_LP_TIPS_POLITIC
+	DW	FUNCNAME_LP_News00
+	DW	FUNCNAME_LP_News01
+	DW	FUNCNAME_LP_News0
+	DW	FUNCNAME_Npc_Table
+	DW	FUNCNAME_alisa_setting
+	DW	FUNCNAME_eliot_setting
+	DW	FUNCNAME_laura_setting
+	DW	FUNCNAME_machias_setting
+	DW	FUNCNAME_emma_setting
+	DW	FUNCNAME_celine2_setting
+	DW	FUNCNAME_jusis_setting
+	DW	FUNCNAME_fie_setting
+	DW	FUNCNAME_millium_setting
+	DW	FUNCNAME_sara_setting
+	DW	FUNCNAME_thomas_setting
+	DW	FUNCNAME_rosine_setting
+	DW	FUNCNAME_munch_setting
+	DW	FUNCNAME_monica_setting
+	DW	FUNCNAME_bridget_setting
+	DW	FUNCNAME_stefan_setting
+	DW	FUNCNAME_kenneth_setting
+	DW	FUNCNAME_margarita_setting
+	DW	FUNCNAME_nicholas_setting
+	DW	FUNCNAME_fidelio_setting
+	DW	FUNCNAME_dorothe_setting
+	DW	FUNCNAME_rex_setting
+	DW	FUNCNAME_beryl_setting
+	DW	FUNCNAME_makarov_setting
+	DW	FUNCNAME_ferris_setting
+	DW	FUNCNAME_vincent_setting
+	DW	FUNCNAME_salyfa_setting
+	DW	FUNCNAME_TK_fidelio_dorothe_03_Z4
+	DW	FUNCNAME_TK_millium_nicholas_03_Z1
+	DW	FUNCNAME_TK_emma_fie_celine_03_Z3
+	DW	FUNCNAME_TK_emma_millium_celine_03_Z4
+	DW	FUNCNAME_TK_emma_celine_03_Z4
+	DW	FUNCNAME_TK_machias_jusis_03_Z3
+	DW	FUNCNAME_e7020_student05_setting
+	DW	FUNCNAME_TK_e7020_student05
+	DW	FUNCNAME_e7020_student06_setting
+	DW	FUNCNAME_TK_e7020_student06
+	DW	FUNCNAME_QS_2302_01
+	DW	FUNCNAME_SB_KIZUNA_MILLIUM_05
+	DW	FUNCNAME_YR_01_00
+	DW	FUNCNAME_YR_01_02
+	DW	FUNCNAME_YR_01_01_INCREMENT
+	DW	FUNCNAME_YR_01_01
+	DW	FUNCNAME_EV_about_blade1
+	DW	FUNCNAME_EV_about_blade2
+	DW	FUNCNAME_LP2_blade
+	DW	FUNCNAME_LP2_blade1
+	DW	FUNCNAME_LP2_blade2
+	DW	FUNCNAME_SB_03_TRISTA_BLADE_FIRST
+	DW	FUNCNAME_SB_03_TRISTA_BLADE
+	DW	FUNCNAME_YR_02_00
+	DW	FUNCNAME_YR_02_02
+	DW	FUNCNAME_YR_02_03
+	DW	FUNCNAME_CHK_SB_03_ABOUT_KURO_KOUBOU
+	DW	FUNCNAME_SB_03_ABOUT_KURO_KOUBOU
+	DW	FUNCNAME_FC_YR_12_Check
+	DW	FUNCNAME_FC_YR_12_Reword
+	DW	FUNCNAME_YR_12_00
+	DW	FUNCNAME_TU_03_SHIP_2F
+	DW	FUNCNAME_TU_03_SHIP_COMP
+	DW	FUNCNAME_CHK_YR_19_00
+	DW	FUNCNAME_YR_19_00
+	DW	FUNCNAME_YR_19_06
+	DW	FUNCNAME__LP_elev
+	DW	FUNCNAME__LP_Book0
+	DW	FUNCNAME__LP_News0
+	DW	FUNCNAME__QS_2302_01
+	DW	FUNCNAME__SB_KIZUNA_MILLIUM_05
+	DW	FUNCNAME__YR_01_00
+	DW	FUNCNAME__YR_01_01
+	DW	FUNCNAME__EV_about_blade1
+	DW	FUNCNAME__EV_about_blade2
+	DW	FUNCNAME__LP2_blade
+	DW	FUNCNAME__SB_03_TRISTA_BLADE_FIRST
+	DW	FUNCNAME__FC_YR_12_Reword
+	DW	FUNCNAME__YR_12_00
+	DW	FUNCNAME__TU_03_SHIP_2F
+	DW	FUNCNAME__TU_03_SHIP_COMP
+	DW	FUNCNAME__YR_19_00
+	DW	FUNCNAME__YR_19_06
+FUNCTION_NAME_TABLE_NUM	EQU	104
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_LP_elev:	DB	'LP_elev',0
+FUNCNAME_LP_door03:	DB	'LP_door03',0
+FUNCNAME_LP_BUY00:	DB	'LP_BUY00',0
+FUNCNAME_LP_BUY01:	DB	'LP_BUY01',0
+FUNCNAME_LP_Book00:	DB	'LP_Book00',0
+FUNCNAME_LP_Book01:	DB	'LP_Book01',0
+FUNCNAME_LP_Book0:	DB	'LP_Book0',0
+FUNCNAME_LP_TIPS_HISTORY:	DB	'LP_TIPS_HISTORY',0
+FUNCNAME_LP_TIPS_CULT1:	DB	'LP_TIPS_CULT1',0
+FUNCNAME_LP_TIPS_CULT2:	DB	'LP_TIPS_CULT2',0
+FUNCNAME_LP_TIPS_TECH1:	DB	'LP_TIPS_TECH1',0
+FUNCNAME_LP_TIPS_TECH2:	DB	'LP_TIPS_TECH2',0
+FUNCNAME_LP_TIPS_INTER1:	DB	'LP_TIPS_INTER1',0
+FUNCNAME_LP_TIPS_INTER2:	DB	'LP_TIPS_INTER2',0
+FUNCNAME_LP_TIPS_POLITIC:	DB	'LP_TIPS_POLITIC',0
+FUNCNAME_LP_News00:	DB	'LP_News00',0
+FUNCNAME_LP_News01:	DB	'LP_News01',0
+FUNCNAME_LP_News0:	DB	'LP_News0',0
+FUNCNAME_Npc_Table:	DB	'Npc_Table',0
+FUNCNAME_alisa_setting:	DB	'alisa_setting',0
+FUNCNAME_eliot_setting:	DB	'eliot_setting',0
+FUNCNAME_laura_setting:	DB	'laura_setting',0
+FUNCNAME_machias_setting:	DB	'machias_setting',0
+FUNCNAME_emma_setting:	DB	'emma_setting',0
+FUNCNAME_celine2_setting:	DB	'celine2_setting',0
+FUNCNAME_jusis_setting:	DB	'jusis_setting',0
+FUNCNAME_fie_setting:	DB	'fie_setting',0
+FUNCNAME_millium_setting:	DB	'millium_setting',0
+FUNCNAME_sara_setting:	DB	'sara_setting',0
+FUNCNAME_thomas_setting:	DB	'thomas_setting',0
+FUNCNAME_rosine_setting:	DB	'rosine_setting',0
+FUNCNAME_munch_setting:	DB	'munch_setting',0
+FUNCNAME_monica_setting:	DB	'monica_setting',0
+FUNCNAME_bridget_setting:	DB	'bridget_setting',0
+FUNCNAME_stefan_setting:	DB	'stefan_setting',0
+FUNCNAME_kenneth_setting:	DB	'kenneth_setting',0
+FUNCNAME_margarita_setting:	DB	'margarita_setting',0
+FUNCNAME_nicholas_setting:	DB	'nicholas_setting',0
+FUNCNAME_fidelio_setting:	DB	'fidelio_setting',0
+FUNCNAME_dorothe_setting:	DB	'dorothe_setting',0
+FUNCNAME_rex_setting:	DB	'rex_setting',0
+FUNCNAME_beryl_setting:	DB	'beryl_setting',0
+FUNCNAME_makarov_setting:	DB	'makarov_setting',0
+FUNCNAME_ferris_setting:	DB	'ferris_setting',0
+FUNCNAME_vincent_setting:	DB	'vincent_setting',0
+FUNCNAME_salyfa_setting:	DB	'salyfa_setting',0
+FUNCNAME_TK_fidelio_dorothe_03_Z4:	DB	'TK_fidelio_dorothe_03_Z4',0
+FUNCNAME_TK_millium_nicholas_03_Z1:	DB	'TK_millium_nicholas_03_Z1',0
+FUNCNAME_TK_emma_fie_celine_03_Z3:	DB	'TK_emma_fie_celine_03_Z3',0
+FUNCNAME_TK_emma_millium_celine_03_Z4:	DB	'TK_emma_millium_celine_03_Z4',0
+FUNCNAME_TK_emma_celine_03_Z4:	DB	'TK_emma_celine_03_Z4',0
+FUNCNAME_TK_machias_jusis_03_Z3:	DB	'TK_machias_jusis_03_Z3',0
+FUNCNAME_e7020_student05_setting:	DB	'e7020_student05_setting',0
+FUNCNAME_TK_e7020_student05:	DB	'TK_e7020_student05',0
+FUNCNAME_e7020_student06_setting:	DB	'e7020_student06_setting',0
+FUNCNAME_TK_e7020_student06:	DB	'TK_e7020_student06',0
+FUNCNAME_QS_2302_01:	DB	'QS_2302_01',0
+FUNCNAME_SB_KIZUNA_MILLIUM_05:	DB	'SB_KIZUNA_MILLIUM_05',0
+FUNCNAME_YR_01_00:	DB	'YR_01_00',0
+FUNCNAME_YR_01_02:	DB	'YR_01_02',0
+FUNCNAME_YR_01_01_INCREMENT:	DB	'YR_01_01_INCREMENT',0
+FUNCNAME_YR_01_01:	DB	'YR_01_01',0
+FUNCNAME_EV_about_blade1:	DB	'EV_about_blade1',0
+FUNCNAME_EV_about_blade2:	DB	'EV_about_blade2',0
+FUNCNAME_LP2_blade:	DB	'LP2_blade',0
+FUNCNAME_LP2_blade1:	DB	'LP2_blade1',0
+FUNCNAME_LP2_blade2:	DB	'LP2_blade2',0
+FUNCNAME_SB_03_TRISTA_BLADE_FIRST:	DB	'SB_03_TRISTA_BLADE_FIRST',0
+FUNCNAME_SB_03_TRISTA_BLADE:	DB	'SB_03_TRISTA_BLADE',0
+FUNCNAME_YR_02_00:	DB	'YR_02_00',0
+FUNCNAME_YR_02_02:	DB	'YR_02_02',0
+FUNCNAME_YR_02_03:	DB	'YR_02_03',0
+FUNCNAME_CHK_SB_03_ABOUT_KURO_KOUBOU:	DB	'CHK_SB_03_ABOUT_KURO_KOUBOU',0
+FUNCNAME_SB_03_ABOUT_KURO_KOUBOU:	DB	'SB_03_ABOUT_KURO_KOUBOU',0
+FUNCNAME_FC_YR_12_Check:	DB	'FC_YR_12_Check',0
+FUNCNAME_FC_YR_12_Reword:	DB	'FC_YR_12_Reword',0
+FUNCNAME_YR_12_00:	DB	'YR_12_00',0
+FUNCNAME_TU_03_SHIP_2F:	DB	'TU_03_SHIP_2F',0
+FUNCNAME_TU_03_SHIP_COMP:	DB	'TU_03_SHIP_COMP',0
+FUNCNAME_CHK_YR_19_00:	DB	'CHK_YR_19_00',0
+FUNCNAME_YR_19_00:	DB	'YR_19_00',0
+FUNCNAME_YR_19_06:	DB	'YR_19_06',0
+FUNCNAME__LP_elev:	DB	'_LP_elev',0
+FUNCNAME__LP_Book0:	DB	'_LP_Book0',0
+FUNCNAME__LP_News0:	DB	'_LP_News0',0
+FUNCNAME__QS_2302_01:	DB	'_QS_2302_01',0
+FUNCNAME__SB_KIZUNA_MILLIUM_05:	DB	'_SB_KIZUNA_MILLIUM_05',0
+FUNCNAME__YR_01_00:	DB	'_YR_01_00',0
+FUNCNAME__YR_01_01:	DB	'_YR_01_01',0
+FUNCNAME__EV_about_blade1:	DB	'_EV_about_blade1',0
+FUNCNAME__EV_about_blade2:	DB	'_EV_about_blade2',0
+FUNCNAME__LP2_blade:	DB	'_LP2_blade',0
+FUNCNAME__SB_03_TRISTA_BLADE_FIRST:	DB	'_SB_03_TRISTA_BLADE_FIRST',0
+FUNCNAME__FC_YR_12_Reword:	DB	'_FC_YR_12_Reword',0
+FUNCNAME__YR_12_00:	DB	'_YR_12_00',0
+FUNCNAME__TU_03_SHIP_2F:	DB	'_TU_03_SHIP_2F',0
+FUNCNAME__TU_03_SHIP_COMP:	DB	'_TU_03_SHIP_COMP',0
+FUNCNAME__YR_19_00:	DB	'_YR_19_00',0
+FUNCNAME__YR_19_06:	DB	'_YR_19_06',0

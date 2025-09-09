@@ -1,0 +1,350 @@
+;=====================================================================
+; オフセットテーブル Esccより出力
+; 対応するインクルードファイルと同じ順番に並んでいるはず
+; 複数のスクリプトから参照できるように外部ファイルとしています。
+;=====================================================================
+TABLE_TOP:
+	DD	CharaterSection					;e7030.scn 51
+	DD	BTLSET000					;e7030.scn 58
+	DD	BTLSET001					;e7030.scn 64
+	DD	BTLSET002					;e7030.scn 70
+	DD	BTLSET003					;e7030.scn 76
+	DD	BTLSET004					;e7030.scn 82
+	DD	BTLSET005					;e7030.scn 89
+	DD	BTLSET006					;e7030.scn 95
+	DD	BTLSET007					;e7030.scn 101
+	DD	BTLSET008					;e7030.scn 107
+	DD	BTLSET009					;e7030.scn 113
+	DD	BTLSET010					;e7030.scn 120
+	DD	BTLSET011					;e7030.scn 126
+	DD	BTLSET012					;e7030.scn 132
+	DD	BTLSET013					;e7030.scn 138
+	DD	BTLSET014					;e7030.scn 144
+	DD	PreInit					;e7030.scn 155
+	DD	Init					;e7030.scn 173
+	DD	Init_Replay					;e7030.scn 233
+	DD	Reinit					;e7030.scn 353
+	DD	LP_elev					;e7030.scn 372
+	DD	LP_door00					;e7030.scn 450
+	DD	FC_door00_lock					;e7030.scn 473
+	DD	FC_door00_unlock					;e7030.scn 484
+	DD	LP_door02					;e7030.scn 499
+	DD	FC_door02_lock					;e7030.scn 522
+	DD	FC_door02_unlock					;e7030.scn 533
+	DD	LP_door01					;e7030.scn 548
+	DD	FC_door01_lock					;e7030.scn 571
+	DD	FC_door01_unlock					;e7030.scn 582
+	DD	LP2_Deco_Book					;e7030.scn 597
+	DD	Npc_Table					;e7030.scn 728
+	DD	alisa_setting					;e7030.scn 799
+	DD	eliot_setting					;e7030.scn 855
+	DD	laura_setting					;e7030.scn 885
+	DD	fie_setting					;e7030.scn 917
+	DD	millium_setting					;e7030.scn 932
+	DD	gaius_setting					;e7030.scn 948
+	DD	sara_setting					;e7030.scn 966
+	DD	alfin_setting					;e7030.scn 988
+	DD	monica_setting					;e7030.scn 1030
+	DD	theresia_setting					;e7030.scn 1053
+	DD	emily_setting					;e7030.scn 1083
+	DD	loggins_setting					;e7030.scn 1134
+	DD	alan_setting					;e7030.scn 1171
+	DD	haibel_setting					;e7030.scn 1193
+	DD	training_core01_setting					;e7030.scn 1236
+	DD	TK_training_core01					;e7030.scn 1262
+	DD	training_core02_setting					;e7030.scn 1276
+	DD	TK_training_core02					;e7030.scn 1303
+	DD	training_core03_setting					;e7030.scn 1317
+	DD	TK_training_core03					;e7030.scn 1342
+	DD	edel_setting					;e7030.scn 1356
+	DD	friedel_setting					;e7030.scn 1375
+	DD	TK_gaius_sara_03_B_01					;e7030.scn 1394
+	DD	jusis_setting					;e7030.scn 1476
+	DD	TK_jusis_alfin_03_C_01					;e7030.scn 1509
+	DD	celine2_setting					;e7030.scn 1575
+	DD	TK_celine2_alfin_03_D_01					;e7030.scn 1589
+	DD	TK_alisa_emily_03_Z1					;e7030.scn 1701
+	DD	TK_alisa_alfin_03_Z3					;e7030.scn 1739
+	DD	student_pat01_setting					;e7030.scn 1849
+	DD	TK_student_pat01					;e7030.scn 1862
+	DD	student_pat02_setting					;e7030.scn 1897
+	DD	TK_student_pat02					;e7030.scn 1911
+	DD	e7020_student01_setting					;e7030.scn 1945
+	DD	TK_e7020_student01					;e7030.scn 1958
+	DD	EV_QS_2302_02_01					;e7030.scn 1999
+	DD	QS_2302_02					;e7030.scn 2002
+	DD	EV_YR_06_00_HideNPC					;e7030.scn 5915
+	DD	EV_YR_06_00_ShowNPC					;e7030.scn 5929
+	DD	YR_06_00					;e7030.scn 5941
+	DD	YR_06_01A					;e7030.scn 6178
+	DD	YR_06_01					;e7030.scn 6337
+	DD	YR_06_02A					;e7030.scn 6734
+	DD	YR_06_02					;e7030.scn 6880
+	DD	YR_06_03					;e7030.scn 7183
+	DD	YR_07_00					;e7030.scn 7596
+	DD	YR_07_01A					;e7030.scn 7841
+	DD	YR_07_01					;e7030.scn 7994
+	DD	YR_07_02A					;e7030.scn 8384
+	DD	YR_07_02					;e7030.scn 8523
+	DD	YR_07_03					;e7030.scn 8834
+	DD	YR_08_00					;e7030.scn 9239
+	DD	YR_08_01A					;e7030.scn 9488
+	DD	YR_08_01					;e7030.scn 9643
+	DD	YR_08_02A					;e7030.scn 10041
+	DD	YR_08_02					;e7030.scn 10181
+	DD	YR_08_03					;e7030.scn 10484
+	DD	YR_09_00					;e7030.scn 10852
+	DD	TU_03_SHIP_4F					;e7030.scn 11157
+	DD	TU_03_SHIP_COMP					;e7030.scn 11382
+	DD	_LP_elev					;e7030.scn 11420
+	DD	_TK_training_core01					;e7030.scn 11420
+	DD	_TK_training_core02					;e7030.scn 11420
+	DD	_TK_training_core03					;e7030.scn 11420
+	DD	_QS_2302_02					;e7030.scn 11420
+	DD	_YR_06_00					;e7030.scn 11420
+	DD	_YR_06_01					;e7030.scn 11420
+	DD	_YR_06_02					;e7030.scn 11420
+	DD	_YR_06_03					;e7030.scn 11420
+	DD	_YR_07_00					;e7030.scn 11420
+	DD	_YR_07_01					;e7030.scn 11420
+	DD	_YR_07_02					;e7030.scn 11420
+	DD	_YR_07_03					;e7030.scn 11420
+	DD	_YR_08_00					;e7030.scn 11420
+	DD	_YR_08_01					;e7030.scn 11420
+	DD	_YR_08_02					;e7030.scn 11420
+	DD	_YR_08_03					;e7030.scn 11420
+	DD	_YR_09_00					;e7030.scn 11420
+	DD	_TU_03_SHIP_4F					;e7030.scn 11420
+	DD	_TU_03_SHIP_COMP					;e7030.scn 11420
+TABLE_Size	EQU	($-TABLE_TOP)
+
+;=====================================================================
+;funtion名前テーブル
+;=====================================================================
+FUNCTION_NAME_TABLE_TOP:
+	DW	FUNCNAME_CharaterSection
+	DW	FUNCNAME_BTLSET000
+	DW	FUNCNAME_BTLSET001
+	DW	FUNCNAME_BTLSET002
+	DW	FUNCNAME_BTLSET003
+	DW	FUNCNAME_BTLSET004
+	DW	FUNCNAME_BTLSET005
+	DW	FUNCNAME_BTLSET006
+	DW	FUNCNAME_BTLSET007
+	DW	FUNCNAME_BTLSET008
+	DW	FUNCNAME_BTLSET009
+	DW	FUNCNAME_BTLSET010
+	DW	FUNCNAME_BTLSET011
+	DW	FUNCNAME_BTLSET012
+	DW	FUNCNAME_BTLSET013
+	DW	FUNCNAME_BTLSET014
+	DW	FUNCNAME_PreInit
+	DW	FUNCNAME_Init
+	DW	FUNCNAME_Init_Replay
+	DW	FUNCNAME_Reinit
+	DW	FUNCNAME_LP_elev
+	DW	FUNCNAME_LP_door00
+	DW	FUNCNAME_FC_door00_lock
+	DW	FUNCNAME_FC_door00_unlock
+	DW	FUNCNAME_LP_door02
+	DW	FUNCNAME_FC_door02_lock
+	DW	FUNCNAME_FC_door02_unlock
+	DW	FUNCNAME_LP_door01
+	DW	FUNCNAME_FC_door01_lock
+	DW	FUNCNAME_FC_door01_unlock
+	DW	FUNCNAME_LP2_Deco_Book
+	DW	FUNCNAME_Npc_Table
+	DW	FUNCNAME_alisa_setting
+	DW	FUNCNAME_eliot_setting
+	DW	FUNCNAME_laura_setting
+	DW	FUNCNAME_fie_setting
+	DW	FUNCNAME_millium_setting
+	DW	FUNCNAME_gaius_setting
+	DW	FUNCNAME_sara_setting
+	DW	FUNCNAME_alfin_setting
+	DW	FUNCNAME_monica_setting
+	DW	FUNCNAME_theresia_setting
+	DW	FUNCNAME_emily_setting
+	DW	FUNCNAME_loggins_setting
+	DW	FUNCNAME_alan_setting
+	DW	FUNCNAME_haibel_setting
+	DW	FUNCNAME_training_core01_setting
+	DW	FUNCNAME_TK_training_core01
+	DW	FUNCNAME_training_core02_setting
+	DW	FUNCNAME_TK_training_core02
+	DW	FUNCNAME_training_core03_setting
+	DW	FUNCNAME_TK_training_core03
+	DW	FUNCNAME_edel_setting
+	DW	FUNCNAME_friedel_setting
+	DW	FUNCNAME_TK_gaius_sara_03_B_01
+	DW	FUNCNAME_jusis_setting
+	DW	FUNCNAME_TK_jusis_alfin_03_C_01
+	DW	FUNCNAME_celine2_setting
+	DW	FUNCNAME_TK_celine2_alfin_03_D_01
+	DW	FUNCNAME_TK_alisa_emily_03_Z1
+	DW	FUNCNAME_TK_alisa_alfin_03_Z3
+	DW	FUNCNAME_student_pat01_setting
+	DW	FUNCNAME_TK_student_pat01
+	DW	FUNCNAME_student_pat02_setting
+	DW	FUNCNAME_TK_student_pat02
+	DW	FUNCNAME_e7020_student01_setting
+	DW	FUNCNAME_TK_e7020_student01
+	DW	FUNCNAME_EV_QS_2302_02_01
+	DW	FUNCNAME_QS_2302_02
+	DW	FUNCNAME_EV_YR_06_00_HideNPC
+	DW	FUNCNAME_EV_YR_06_00_ShowNPC
+	DW	FUNCNAME_YR_06_00
+	DW	FUNCNAME_YR_06_01A
+	DW	FUNCNAME_YR_06_01
+	DW	FUNCNAME_YR_06_02A
+	DW	FUNCNAME_YR_06_02
+	DW	FUNCNAME_YR_06_03
+	DW	FUNCNAME_YR_07_00
+	DW	FUNCNAME_YR_07_01A
+	DW	FUNCNAME_YR_07_01
+	DW	FUNCNAME_YR_07_02A
+	DW	FUNCNAME_YR_07_02
+	DW	FUNCNAME_YR_07_03
+	DW	FUNCNAME_YR_08_00
+	DW	FUNCNAME_YR_08_01A
+	DW	FUNCNAME_YR_08_01
+	DW	FUNCNAME_YR_08_02A
+	DW	FUNCNAME_YR_08_02
+	DW	FUNCNAME_YR_08_03
+	DW	FUNCNAME_YR_09_00
+	DW	FUNCNAME_TU_03_SHIP_4F
+	DW	FUNCNAME_TU_03_SHIP_COMP
+	DW	FUNCNAME__LP_elev
+	DW	FUNCNAME__TK_training_core01
+	DW	FUNCNAME__TK_training_core02
+	DW	FUNCNAME__TK_training_core03
+	DW	FUNCNAME__QS_2302_02
+	DW	FUNCNAME__YR_06_00
+	DW	FUNCNAME__YR_06_01
+	DW	FUNCNAME__YR_06_02
+	DW	FUNCNAME__YR_06_03
+	DW	FUNCNAME__YR_07_00
+	DW	FUNCNAME__YR_07_01
+	DW	FUNCNAME__YR_07_02
+	DW	FUNCNAME__YR_07_03
+	DW	FUNCNAME__YR_08_00
+	DW	FUNCNAME__YR_08_01
+	DW	FUNCNAME__YR_08_02
+	DW	FUNCNAME__YR_08_03
+	DW	FUNCNAME__YR_09_00
+	DW	FUNCNAME__TU_03_SHIP_4F
+	DW	FUNCNAME__TU_03_SHIP_COMP
+FUNCTION_NAME_TABLE_NUM	EQU	112
+;=====================================================================
+FUNCNAME_CharaterSection:	DB	0
+FUNCNAME_BTLSET000:	DB	0
+FUNCNAME_BTLSET001:	DB	0
+FUNCNAME_BTLSET002:	DB	0
+FUNCNAME_BTLSET003:	DB	0
+FUNCNAME_BTLSET004:	DB	0
+FUNCNAME_BTLSET005:	DB	0
+FUNCNAME_BTLSET006:	DB	0
+FUNCNAME_BTLSET007:	DB	0
+FUNCNAME_BTLSET008:	DB	0
+FUNCNAME_BTLSET009:	DB	0
+FUNCNAME_BTLSET010:	DB	0
+FUNCNAME_BTLSET011:	DB	0
+FUNCNAME_BTLSET012:	DB	0
+FUNCNAME_BTLSET013:	DB	0
+FUNCNAME_BTLSET014:	DB	0
+FUNCNAME_PreInit:	DB	'PreInit',0
+FUNCNAME_Init:	DB	'Init',0
+FUNCNAME_Init_Replay:	DB	'Init_Replay',0
+FUNCNAME_Reinit:	DB	'Reinit',0
+FUNCNAME_LP_elev:	DB	'LP_elev',0
+FUNCNAME_LP_door00:	DB	'LP_door00',0
+FUNCNAME_FC_door00_lock:	DB	'FC_door00_lock',0
+FUNCNAME_FC_door00_unlock:	DB	'FC_door00_unlock',0
+FUNCNAME_LP_door02:	DB	'LP_door02',0
+FUNCNAME_FC_door02_lock:	DB	'FC_door02_lock',0
+FUNCNAME_FC_door02_unlock:	DB	'FC_door02_unlock',0
+FUNCNAME_LP_door01:	DB	'LP_door01',0
+FUNCNAME_FC_door01_lock:	DB	'FC_door01_lock',0
+FUNCNAME_FC_door01_unlock:	DB	'FC_door01_unlock',0
+FUNCNAME_LP2_Deco_Book:	DB	'LP2_Deco_Book',0
+FUNCNAME_Npc_Table:	DB	'Npc_Table',0
+FUNCNAME_alisa_setting:	DB	'alisa_setting',0
+FUNCNAME_eliot_setting:	DB	'eliot_setting',0
+FUNCNAME_laura_setting:	DB	'laura_setting',0
+FUNCNAME_fie_setting:	DB	'fie_setting',0
+FUNCNAME_millium_setting:	DB	'millium_setting',0
+FUNCNAME_gaius_setting:	DB	'gaius_setting',0
+FUNCNAME_sara_setting:	DB	'sara_setting',0
+FUNCNAME_alfin_setting:	DB	'alfin_setting',0
+FUNCNAME_monica_setting:	DB	'monica_setting',0
+FUNCNAME_theresia_setting:	DB	'theresia_setting',0
+FUNCNAME_emily_setting:	DB	'emily_setting',0
+FUNCNAME_loggins_setting:	DB	'loggins_setting',0
+FUNCNAME_alan_setting:	DB	'alan_setting',0
+FUNCNAME_haibel_setting:	DB	'haibel_setting',0
+FUNCNAME_training_core01_setting:	DB	'training_core01_setting',0
+FUNCNAME_TK_training_core01:	DB	'TK_training_core01',0
+FUNCNAME_training_core02_setting:	DB	'training_core02_setting',0
+FUNCNAME_TK_training_core02:	DB	'TK_training_core02',0
+FUNCNAME_training_core03_setting:	DB	'training_core03_setting',0
+FUNCNAME_TK_training_core03:	DB	'TK_training_core03',0
+FUNCNAME_edel_setting:	DB	'edel_setting',0
+FUNCNAME_friedel_setting:	DB	'friedel_setting',0
+FUNCNAME_TK_gaius_sara_03_B_01:	DB	'TK_gaius_sara_03_B_01',0
+FUNCNAME_jusis_setting:	DB	'jusis_setting',0
+FUNCNAME_TK_jusis_alfin_03_C_01:	DB	'TK_jusis_alfin_03_C_01',0
+FUNCNAME_celine2_setting:	DB	'celine2_setting',0
+FUNCNAME_TK_celine2_alfin_03_D_01:	DB	'TK_celine2_alfin_03_D_01',0
+FUNCNAME_TK_alisa_emily_03_Z1:	DB	'TK_alisa_emily_03_Z1',0
+FUNCNAME_TK_alisa_alfin_03_Z3:	DB	'TK_alisa_alfin_03_Z3',0
+FUNCNAME_student_pat01_setting:	DB	'student_pat01_setting',0
+FUNCNAME_TK_student_pat01:	DB	'TK_student_pat01',0
+FUNCNAME_student_pat02_setting:	DB	'student_pat02_setting',0
+FUNCNAME_TK_student_pat02:	DB	'TK_student_pat02',0
+FUNCNAME_e7020_student01_setting:	DB	'e7020_student01_setting',0
+FUNCNAME_TK_e7020_student01:	DB	'TK_e7020_student01',0
+FUNCNAME_EV_QS_2302_02_01:	DB	'EV_QS_2302_02_01',0
+FUNCNAME_QS_2302_02:	DB	'QS_2302_02',0
+FUNCNAME_EV_YR_06_00_HideNPC:	DB	'EV_YR_06_00_HideNPC',0
+FUNCNAME_EV_YR_06_00_ShowNPC:	DB	'EV_YR_06_00_ShowNPC',0
+FUNCNAME_YR_06_00:	DB	'YR_06_00',0
+FUNCNAME_YR_06_01A:	DB	'YR_06_01A',0
+FUNCNAME_YR_06_01:	DB	'YR_06_01',0
+FUNCNAME_YR_06_02A:	DB	'YR_06_02A',0
+FUNCNAME_YR_06_02:	DB	'YR_06_02',0
+FUNCNAME_YR_06_03:	DB	'YR_06_03',0
+FUNCNAME_YR_07_00:	DB	'YR_07_00',0
+FUNCNAME_YR_07_01A:	DB	'YR_07_01A',0
+FUNCNAME_YR_07_01:	DB	'YR_07_01',0
+FUNCNAME_YR_07_02A:	DB	'YR_07_02A',0
+FUNCNAME_YR_07_02:	DB	'YR_07_02',0
+FUNCNAME_YR_07_03:	DB	'YR_07_03',0
+FUNCNAME_YR_08_00:	DB	'YR_08_00',0
+FUNCNAME_YR_08_01A:	DB	'YR_08_01A',0
+FUNCNAME_YR_08_01:	DB	'YR_08_01',0
+FUNCNAME_YR_08_02A:	DB	'YR_08_02A',0
+FUNCNAME_YR_08_02:	DB	'YR_08_02',0
+FUNCNAME_YR_08_03:	DB	'YR_08_03',0
+FUNCNAME_YR_09_00:	DB	'YR_09_00',0
+FUNCNAME_TU_03_SHIP_4F:	DB	'TU_03_SHIP_4F',0
+FUNCNAME_TU_03_SHIP_COMP:	DB	'TU_03_SHIP_COMP',0
+FUNCNAME__LP_elev:	DB	'_LP_elev',0
+FUNCNAME__TK_training_core01:	DB	'_TK_training_core01',0
+FUNCNAME__TK_training_core02:	DB	'_TK_training_core02',0
+FUNCNAME__TK_training_core03:	DB	'_TK_training_core03',0
+FUNCNAME__QS_2302_02:	DB	'_QS_2302_02',0
+FUNCNAME__YR_06_00:	DB	'_YR_06_00',0
+FUNCNAME__YR_06_01:	DB	'_YR_06_01',0
+FUNCNAME__YR_06_02:	DB	'_YR_06_02',0
+FUNCNAME__YR_06_03:	DB	'_YR_06_03',0
+FUNCNAME__YR_07_00:	DB	'_YR_07_00',0
+FUNCNAME__YR_07_01:	DB	'_YR_07_01',0
+FUNCNAME__YR_07_02:	DB	'_YR_07_02',0
+FUNCNAME__YR_07_03:	DB	'_YR_07_03',0
+FUNCNAME__YR_08_00:	DB	'_YR_08_00',0
+FUNCNAME__YR_08_01:	DB	'_YR_08_01',0
+FUNCNAME__YR_08_02:	DB	'_YR_08_02',0
+FUNCNAME__YR_08_03:	DB	'_YR_08_03',0
+FUNCNAME__YR_09_00:	DB	'_YR_09_00',0
+FUNCNAME__TU_03_SHIP_4F:	DB	'_TU_03_SHIP_4F',0
+FUNCNAME__TU_03_SHIP_COMP:	DB	'_TU_03_SHIP_COMP',0
