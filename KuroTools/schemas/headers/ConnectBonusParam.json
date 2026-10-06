@@ -16,27 +16,19 @@
 			"bonus": "toffset"
 		}
 	},
-    "KURO_PC_88B": {
-		"game": "Kuro?",
+	"CLE_PC": {
+		"game": "Kai",
 		"schema": {
 			"id": "uint",
 			"int1": "uint",
-			"int2": "uint",
-			"int3": "uint",
+			"int2": "ulong",
+			"int3": "u32array",
 			"int4": "uint",
-			"int5": "uint",
-			"int6": "uint",
+			"int5": "ulong",
+			"int6": "u32array",
 			"int7": "uint",
-			"int8": "uint",
-			"int9": "uint",
-            "unk_int1": "int",
-            "unk_int2": "int",
-            "unk_int3": "int",
-            "unk_int4": "int",
-            "unk_int5": "int",
-            "unk_int6": "int",
-            "unk_int7": "int",
-            "unk_int8": "int",
+			"int8": "ulong",
+			"int9": "ulong",
 			"description": "toffset",
 			"bonus": "toffset"
 		}

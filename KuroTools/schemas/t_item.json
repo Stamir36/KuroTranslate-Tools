@@ -3,6 +3,9 @@
 		"ItemTableData",
 		"ItemKindParam2",
 		"QuartzParam",
-		"ItemTabType"
+		"ItemTabType",
+		"ItemShopTabType",
+		"ItemParam",
+		"SkillEffectText"
 	]
 }

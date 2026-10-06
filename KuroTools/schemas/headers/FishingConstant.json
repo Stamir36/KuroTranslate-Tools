@@ -1,0 +1,38 @@
+{
+	"NISA_PC": {
+		"game": "Kuro2",
+		"schema": {
+			"ulong1": "ulong",
+			"ulong2": "ulong",
+			"ulong3": "ulong"
+		}
+	},
+	"FALCOM_PC_SORA2": {
+		"game": "Sora2",
+		"schema": {
+			"float1": "float",
+			"float2": "float",
+			"float3": "float",
+			"float4": "float",
+			"float5": "float",
+			"float6": "float",
+			"float7": "float",
+			"float8": "float",
+			"float9": "float",
+			"float10": "float",
+			"float11": "float",
+			"float12": "float",
+			"float13": "float",
+			"float14": "float",
+			"float15": "float",
+			"float16": "float",
+			"float17": "float",
+			"float18": "float",
+			"float19": "float",
+			"float20": "float",
+			"int1": "int",
+			"int2": "int",
+			"text": "toffset"
+		}
+	}
+}

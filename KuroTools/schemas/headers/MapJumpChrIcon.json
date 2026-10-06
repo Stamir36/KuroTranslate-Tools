@@ -1,0 +1,10 @@
+{
+	"FALCOM_PC": {
+		"game": "Sora2",
+		"schema": {
+			"int1": "int",
+			"float1": "float",
+			"int2": "int"
+		}
+	}
+}

@@ -1,0 +1,11 @@
+{
+	"FALCOM_PC": {
+		"game": "Sora2",
+		"schema": {
+			"id": "long",
+			"long1": "long",
+			"long2": "long",
+			"long3": "long"
+		}
+	}
+}

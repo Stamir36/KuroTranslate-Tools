@@ -7,6 +7,9 @@
 		"TacticalBonus",
 		"ATBonusParam",
 		"BattleEnemyLevelStatusAdjust",
-		"BattleEnemyLevelAdjust"
+		"BattleEnemyLevelAdjust",
+		"BattleEnemyDamageAdjust",
+		"BattleSCraftDamageRatio",
+		"BattleLevelEnemyAdjust"
 	]
 }

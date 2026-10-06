@@ -3,6 +3,7 @@
 		"MapJumpRegionData",
 		"MapJumpAreaData",
 		"MapJumpSpotData",
-		"MapJumpWorldData"
+		"MapJumpWorldData",
+		"MapJumpChrIcon"
 	]
 }

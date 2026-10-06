@@ -9,6 +9,9 @@
 		"RecruitmentMember",
 		"QuestReportBackTexture",
 		"QuestSubText",
-		"StampCharaList"
+		"StampCharaList",
+		"NaviText",
+		"QuestReportVoice",
+		"QuestRankBefore"
 	]
 }

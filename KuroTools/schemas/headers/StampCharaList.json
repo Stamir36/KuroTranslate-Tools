@@ -7,13 +7,13 @@
 			"float2": "float"
 		}
 	},
-    "KURO_PC_16B": {
-		"game": "Kuro3",
+	"CLE_PC": {
+		"game": "Kai",
 		"schema": {
 			"id": "uint",
 			"float1": "float",
 			"float2": "float",
-            "unknown_uint": "uint"
+			"float3": "float"
 		}
 	}
 }

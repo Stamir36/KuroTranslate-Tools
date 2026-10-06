@@ -1,0 +1,24 @@
+{
+	"headers": [
+		"ViewerMainList",
+		"ViewerSystemList",
+		"ViewerMapList",
+		"ViewerCharaSelectList",
+		"ViewerCharaEquipList",
+		"ViewerShotList",
+		"ViewerMapData",
+		"ViewerEnvList",
+		"ViewerBGMList",
+		"ViewerCharaList",
+		"ViewerCostumeList",
+		"ViewerAttachList",
+		"ViewerHairList",
+		"ViewerWeaponList",
+		"ViewerFaceList",
+		"ViewerMouseList",
+		"ViewerCheekList",
+		"ViewerEyeLineList",
+		"ViewerNeckDirList",
+		"ViewerMotionList"
+	]
+}

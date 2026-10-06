@@ -1,0 +1,20 @@
+{
+	"NISA_PC": {
+		"game": "Kuro2",
+		"schema": {
+			"uint1": "uint",
+			"ushort1": "ushort",
+			"uint2": "uint",
+			"ushort2": "ushort"
+		}
+	},
+	"FALCOM_PC_SORA2": {
+		"game": "Sora2",
+		"schema": {
+			"uint1": "uint",
+			"ushort1": "ushort",
+			"uint2": "uint",
+			"ushort2": "ushort"
+		}
+	}
+}

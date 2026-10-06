@@ -1,6 +1,9 @@
 {
 	"headers": [
 		"AchievementTableData",
-		"AchievementTable"
+		"AchievementTable",
+		"AchievementCategoryData",
+		"PlayRecordData"
 	]
+
 }

@@ -1,0 +1,10 @@
+{
+	"FALCOM_PC": {
+		"game": "Sora2",
+		"schema": {
+			"name": "toffset",
+			"note_entry": "toffset",
+			"scena_id": "long"
+		}
+	}
+}

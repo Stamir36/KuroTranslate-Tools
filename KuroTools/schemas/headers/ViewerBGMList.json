@@ -1,0 +1,11 @@
+{
+	"FALCOM_PC": {
+		"game": "Sora2",
+		"schema": {
+			"int1": "int",
+			"int2": "uint",
+			"text1": "toffset",
+			"long1": "long"
+		}
+	}
+}

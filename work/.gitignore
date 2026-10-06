@@ -1,0 +1,9 @@
+# Тяжёлые/производные данные — не в git
+extract/
+repack_check/
+decompiled/
+tbl_json/
+backup/
+*.pac
+__pycache__/
+*.pyc

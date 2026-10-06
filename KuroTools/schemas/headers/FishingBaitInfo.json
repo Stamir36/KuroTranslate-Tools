@@ -1,0 +1,43 @@
+{
+	"NISA_PC": {
+		"game": "Kuro2",
+		"schema": {
+			"uint1": "uint",
+			"uint2": "uint"
+		}
+	},
+	"FALCOM_PC_SORA2": {
+		"game": "Sora2",
+		"schema": {
+			"bait_info": "int",
+			"fish_id_1": "int",
+			"fish_id_2": "int",
+			"fish_id_3": "int",
+			"fish_id_4": "int",
+			"fish_id_5": "int",
+			"fish_id_6": "int",
+			"fish_id_7": "int",
+			"fish_id_8": "int",
+			"fish_id_9": "int",
+			"fish_id_10": "int",
+			"fish_id_11": "int",
+			"fish_id_12": "int",
+			"fish_id_13": "int",
+			"fish_id_14": "int",
+			"fish_id_15": "int",
+			"fish_id_16": "int",
+			"fish_id_17": "int",
+			"fish_id_18": "int",
+			"fish_id_19": "int",
+			"fish_id_20": "int",
+			"fish_id_21": "int",
+			"fish_id_22": "int",
+			"fish_id_23": "int",
+			"fish_id_24": "int",
+			"fish_id_25": "int",
+			"fish_id_26": "int",
+			"fish_id_27": "int",
+			"fish_id_28": "int"
+		}
+	}
+}

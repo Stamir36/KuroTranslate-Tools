@@ -502,6 +502,11 @@ def init_command_names_dicts():
     (0x1D, 0x00) : "Cmd_unknown_12_00", (0x1D, 0x01) : "Cmd_unknown_12_01", (0x1D, 0x02) : "Cmd_unknown_12_02",
     (0x1D, 0x03) : "Cmd_unknown_12_03", (0x1D, 0x04) : "Cmd_unknown_12_04", (0x1D, 0x05) : "Cmd_unknown_12_05",
     (0x1D, 0x07) : "Cmd_unknown_12_07",
+
+    # --- Добавлено из апстрима KuroTools-master_ForUPDATE (отсутствовало в форке) ---
+    (6, 45) : "Cmd_unknown_06_2D",
+    (13, 108) : "Cmd_unknown_0D_6C",
+    (13, 109) : "Cmd_unknown_0D_6D",
     }
 
     reverse_commands_dict =  {v: k for k, v in commands_dict.items()}

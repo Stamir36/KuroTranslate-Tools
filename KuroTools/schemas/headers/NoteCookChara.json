@@ -1,0 +1,17 @@
+{
+	"FALCOM_PC": {
+		"game": "Sora1",
+		"schema": {
+			"id": "short"
+		}
+	},
+	"FALCOM_PC2": {
+		"game": "Sora2",
+		"schema": {
+			"chr_id": "long",
+			"long1": "long",
+			"int1": "int",
+			"int2": "int"
+		}
+	}
+}
