@@ -4,6 +4,11 @@ repack_check/
 decompiled/
 tbl_json/
 backup/
+build/
+stage4/
 *.pac
+# Крупные производные карты (пересобираются build_translation_map.py за секунды):
+translation_map/scripts.jsonl
+translation_map/tables.jsonl
 __pycache__/
 *.pyc
