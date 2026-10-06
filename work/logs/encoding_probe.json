@@ -1,0 +1,58 @@
+{
+ ".dat": {
+  "dir": "work/extract/script",
+  "total": 1016,
+  "utf8_jp": 948,
+  "sjis_only": 64,
+  "samples": [
+   [
+    "ai_chr0001_enemy.dat",
+    "通常攻撃１"
+   ],
+   [
+    "ai_chr0102_enemy.dat",
+    "攻撃１:近接攻撃１"
+   ],
+   [
+    "ai_chr0102_enemy_2.dat",
+    "攻撃１:近接攻撃１"
+   ],
+   [
+    "ai_chr0303_enemy.dat",
+    "攻撃1:突き"
+   ],
+   [
+    "ai_chr5303_enemy.dat",
+    "攻撃1：ホーミング弾"
+   ]
+  ]
+ },
+ ".tbl": {
+  "dir": "work/extract/table",
+  "total": 844,
+  "utf8_jp": 655,
+  "sjis_only": 94,
+  "samples": [
+   [
+    "t_achievement.tbl",
+    "譚歌抄を５編閲覧しよう"
+   ],
+   [
+    "t_action_card.tbl",
+    "スヤスヤ"
+   ],
+   [
+    "t_action_card_support.tbl",
+    "竜宮先生"
+   ],
+   [
+    "t_action_course.tbl",
+    "国語"
+   ],
+   [
+    "t_active_voice.tbl",
+    "一体何なんだ、この場所は…"
+   ]
+  ]
+ }
+}

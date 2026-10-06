@@ -18,3 +18,12 @@
 - `python -m compileall -q .` → 0 :: ошибок компиляции нет.
 - `python -m py_compile launcher.pyw` → 0; `xliff_editor_gui.py` → 0.
 - smoke: `tbl2json.py -h`, `json2tbl.py -h`, `dat2py.py -h`, `import disasm.*` → 0.
+- `git add <точные пути>; git commit` → 0 :: commit c63c747 (335 файлов, без pycache).
+
+### ЭТАП 2 — распаковка .pac и инвентаризация
+- `FPACker.exe` (без арг.) → 0 :: usage: `unpack-all <file.pac>`, `pack <directory>`.
+- `cp table/script/scene.pac work/extract/` → 0.
+- `./FPACker.exe unpack-all ../work/extract/table.pac` → 0 :: создал `PAC-Extractors/table/` (844 .tbl). Перенесён в `work/extract/table`.
+- `./FPACker.exe unpack-all ../work/extract/script.pac` → 0 :: 1016 .dat.
+- `./FPACker.exe unpack-all ../work/extract/scene.pac` → 0 :: 1148 файлов (.bin/.json).
+- python-проба кодировки → 0 :: UTF-8 подтверждён; результат `work/logs/encoding_probe.json`.

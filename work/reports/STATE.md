@@ -3,7 +3,7 @@
 Обновляется после каждого этапа. При возобновлении сессии — читать первым.
 
 ## Текущий этап
-**Этап 2 — распаковка .pac и инвентаризация** (следующий к запуску).
+**Этап 3 — обратимая пересборка (round-trip pack→unpack)** (следующий к запуску).
 
 ## Сделано
 - **Этап 0**: создано дерево `work/{reports,translation_map,logs,backup,extract,repack_check,decompiled,tbl_json}`; бэкап форка → `work/backup/KuroTools_baseline/`; окружение — Python 3.10.11.
@@ -13,8 +13,10 @@
   - `compileall` → 0; авторские UI-файлы компилируются.
   - Отчёт: `work/logs/STAGE_1_REPORT.md`, план: `work/reports/MERGE_PLAN.md`.
 
+- **Этап 2**: `PAC_USAGE.md`, `INVENTORY.md`, `encoding_probe.json`. Распакованы FPACker'ом: table=844 `.tbl`, script=1016 `.dat` (scena 756/ai 132/ani 115/obj 13), scene=1148 (`.bin`+`.json`). Кодировка строк — **UTF-8** (эмпирически). Магии: `#TBL`, `#scp`, `JSON`.
+
 ## Следующий шаг
-Этап 2: прочитать `PAC-Extractors/FPACker README.md` + исходники `FalcomPACTool-main/`; зафиксировать CLI в `reports/PAC_USAGE.md`; распаковать `table.pac`, `script.pac` и (в отдельную папку) `scene.pac` в `work/extract/`; построить `reports/INVENTORY.md`; пробы кодировки.
+Этап 3: пересобрать **нетронутые** `work/extract/{table,script,scene}` обратно через `FPACker.exe pack`; распаковать результат в `work/repack_check/`; сравнить байт-в-байт с оригиналом (имена, порядок, выравнивание). При расхождении — дописать `work/tools/pack_fpac.py` по спецификации из `PAC_USAGE.md` до пустого diff.
 
 ## Открытые проблемы / риски
 - Формат FPAC известен из README apstрима: заголовок 16 байт (`FPAC`, n_files, first_addr, unk=1); записи 32 байта, CRC32(имени)^0xFFFFFFFF, сортировка по CRC; строки имён и данные — natural sort. Точную обратимость проверим на Этапе 3.
