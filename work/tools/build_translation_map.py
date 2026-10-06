@@ -46,6 +46,24 @@ def scan_dat_strings(path):
     return out
 
 
+def scan_tbl_raw(path):
+    """Японские строки прямо из .tbl (включая хвостовой пул).
+
+    Нужно для таблиц без корректной схемы: их текст лежит в хвосте и не
+    попадает в JSON. Гарантирует полноту карты перевода.
+    """
+    data = open(path, "rb").read()
+    out = []
+    for m in re.finditer(rb"[\x20-\xff]{2,}", data):
+        try:
+            s = m.group(0).decode("utf-8")
+        except UnicodeDecodeError:
+            continue
+        if is_jp(s):
+            out.append(s)
+    return out
+
+
 def walk_tbl_json(obj, out, fname):
     """Рекурсивно собирает строковые значения из разобранного JSON таблицы."""
     if isinstance(obj, dict):
@@ -95,7 +113,18 @@ def main():
         for i, v in enumerate(vals):
             trecs.append({"id": f"{rel}:{i}", "file": rel, "kind": "tbl",
                           "jp_text": v, "ru_text": "", "context": "tbl string field"})
-        index_rows.append([rel, len(vals), "ok" if vals else "empty"])
+        # Файлы без схемы: строки в JSON нет — берём их прямо из .tbl, чтобы
+        # карта перевода была полной. kind="tbl_raw" (место вставки определить
+        # позже, когда появится схема).
+        raw_txt = os.path.join(os.path.dirname(jdir), "extract", "table",
+                               os.path.basename(jp).replace(".json", ".tbl"))
+        raw = scan_tbl_raw(raw_txt) if (not vals and os.path.exists(raw_txt)) else []
+        for i, v in enumerate(raw, start=len(vals)):
+            trecs.append({"id": f"{rel}:raw:{i}", "file": rel, "kind": "tbl_raw",
+                          "jp_text": v, "ru_text": "",
+                          "context": "tbl tail (нет схемы — текстовый пул)"})
+        status = "ok" if vals else ("raw_only" if raw else "empty")
+        index_rows.append([rel, len(vals) + len(raw), status])
         total += len(vals)
     with open(os.path.join(OUT, "tables.jsonl"), "w", encoding="utf-8") as f:
         for r in trecs:

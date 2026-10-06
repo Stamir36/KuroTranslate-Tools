@@ -1,0 +1,9 @@
+{
+	"Kyoto_ScriptTextTableData": {
+		"game": "Kyoto",
+		"schema": {
+			"text_0x0": "toffset",
+			"text_0x8": "toffset"
+		}
+	}
+}

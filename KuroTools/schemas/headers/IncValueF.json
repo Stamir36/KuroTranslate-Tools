@@ -6,5 +6,12 @@
 			"value": "float",
 			"padding": "uint"
 		}
+	},
+	"Kyoto_IncValueF_1": {
+		"game": "Kyoto",
+		"schema": {
+			"text_0x0": "toffset",
+			"raw_0x8": "data8"
+		}
 	}
 }

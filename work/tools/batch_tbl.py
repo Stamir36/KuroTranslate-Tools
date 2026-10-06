@@ -28,7 +28,7 @@ for i, f in enumerate(files):
     src = os.path.join(tbl_dir, f)
     stem = os.path.splitext(f)[0]
     try:
-        p1 = subprocess.run([sys.executable, "tbl2json.py", src], cwd=KURO, env=env,
+        p1 = subprocess.run([sys.executable, "tbl2json.py", "-g", "Kyoto", src], cwd=KURO, env=env,
                             capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=TIMEOUT)
     except subprocess.TimeoutExpired:
         err += 1

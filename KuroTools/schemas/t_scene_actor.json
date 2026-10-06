@@ -1,0 +1,7 @@
+{
+	"headers": [
+		"SceneActorTable_MapObject",
+		"SceneActorTable_LookPoint",
+		"SceneActorTable_EventBox"
+	]
+}

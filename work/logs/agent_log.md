@@ -66,3 +66,11 @@
 - `python work/tools/build_pacs.py --verify` → 0 :: table/script/scene пересобраны из work/extract, все три **EXACT** (байт-в-байт с оригиналами).
 - Созданы `work/RUNBOOK.md` и `work/reports/REPORT.md`.
 - Итог: архивы EXACT; таблицы 842/844 EXACT; карта 67969 строк; .dat — функционально (нужен игровой тест).
+
+### ЭТАП 5, ДОПОЛНЕНИЕ — покрытие таблиц текстом (после ревью пользователя)
+- Диагностика `diagnose_tbl_text.py` → обнаружено 55 таблиц без извлекаемого текста (~18900 строк) при формально высоком byte-exact (частично достигался hex-откатом).
+- `tbl2json` теперь запускается с `-g Kyoto` (batch_tbl.py) → t_achievement и др. дают и текст, и EXACT; round-trip 842/844 сохранён.
+- `infer_schema.py` (вывод схем: data<N> + toffset) + `apply_inferred_schemas.py` (политика «только EXACT», иначе откат). Итог: EXACT 27/55, +238 строк, без регрессий; не-EXACT откатаны.
+- Причина остатка: в записи есть массив из 1 элемента по 2 байта (u16), пространство типов знает только u32array → нужен тип u16array/u8array.
+- `build_translation_map.py`: для таблиц без схемы добавлен сырой скан .tbl (kind=tbl_raw) → tables.jsonl 21363→35170, всего 68998.
+- Отмечено: `KuroTools/tbl_strings.xliff(.bak)` удалены НЕ мной (чужое изменение) — не трогаю.

@@ -5,5 +5,13 @@
 			"name": "toffset",
 			"value": "toffset"
 		}
+	},
+	"Kyoto_IncValueS": {
+		"game": "Kyoto",
+		"schema": {
+			"text_0x0": "toffset",
+			"raw_0x8": "data8",
+			"text_0x10": "toffset"
+		}
 	}
 }

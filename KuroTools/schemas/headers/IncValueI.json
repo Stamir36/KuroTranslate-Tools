@@ -5,5 +5,12 @@
 			"name": "toffset",
 			"value": "ulong"
 		}
+	},
+	"Kyoto_IncValueI_1": {
+		"game": "Kyoto",
+		"schema": {
+			"text_0x0": "toffset",
+			"raw_0x8": "data8"
+		}
 	}
 }

@@ -2,6 +2,7 @@
 	"headers": [
 		"GourmetParam",
 		"GourmetRankParam",
-		"GourmetChr"
+		"GourmetChr",
+		"GourmetText"
 	]
 }

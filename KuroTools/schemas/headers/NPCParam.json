@@ -30,5 +30,17 @@
 			"int7": "uint",
 			"int8": "uint"
 		}
+	},
+	"Kyoto_NPCParam": {
+		"game": "Kyoto",
+		"schema": {
+			"raw_0x0": "data16",
+			"text_0x10": "toffset",
+			"raw_0x18": "data8",
+			"text_0x20": "toffset",
+			"raw_0x28": "data40",
+			"text_0x50": "toffset",
+			"raw_0x58": "data72"
+		}
 	}
 }

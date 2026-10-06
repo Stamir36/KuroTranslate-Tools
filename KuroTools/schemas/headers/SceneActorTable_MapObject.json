@@ -1,0 +1,10 @@
+{
+	"Kyoto_SceneActorTable_MapObject": {
+		"game": "Kyoto",
+		"schema": {
+			"text_0x0": "toffset",
+			"text_0x8": "toffset",
+			"raw_0x10": "data48"
+		}
+	}
+}

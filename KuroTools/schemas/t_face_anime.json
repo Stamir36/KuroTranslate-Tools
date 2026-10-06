@@ -1,0 +1,14 @@
+{
+	"headers": [
+		"FaceAnimeData",
+		"EyePresetData",
+		"EyeScaleData",
+		"MouthPatternMap",
+		"EyeDirPatternNameData",
+		"EyeLidsPatternNameData",
+		"EyeBrowsPatternNameData",
+		"MouthPatternNameData",
+		"EyeBallSizePatternNameData",
+		"FaceTexturePatternNameData"
+	]
+}
