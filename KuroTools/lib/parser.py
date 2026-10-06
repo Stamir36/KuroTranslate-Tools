@@ -44,13 +44,23 @@ def readfloat(stream: BufferedReader) -> float:
 
 
 def readtext(
-    stream: BufferedReader, encoding: str = "utf-8", raw: bool = False
+    stream: BufferedReader, encoding: str = "utf-8", raw: bool = False,
+    max_length: int = 0x10000, strict: bool = False,
 ) -> str | bytes:
     output = b""
     char = stream.read(1)
-    while char != b"\0":
+    # Stop on NUL (normal terminator), EOF (b"" — a bogus/out-of-range pointer),
+    # or an unreasonable length (missing terminator). Without the EOF/limit
+    # guards a bad toffset makes `stream.read(1)` return b"" forever.
+    while char and char != b"\0" and len(output) < max_length:
         output += char
         char = stream.read(1)
+
+    if strict and char != b"\0":
+        raise ValueError(
+            f"unterminated string at offset {stream.tell() - len(output)} "
+            f"(read {len(output)} bytes without a NUL terminator)"
+        )
 
     if raw:
         return output
@@ -58,10 +68,12 @@ def readtext(
         return output.decode(encoding)
 
 
-def readtextoffset(stream: BufferedReader, offset: int, encoding: str = "utf-8") -> str:
+def readtextoffset(
+    stream: BufferedReader, offset: int, encoding: str = "utf-8", strict: bool = False
+) -> str:
     return_offset = stream.tell()
     stream.seek(offset)
-    output = readtext(stream, raw=True)
+    output = readtext(stream, raw=True, strict=strict)
     stream.seek(return_offset)
     return output.decode(encoding)
 
@@ -111,9 +123,9 @@ def process_data(
         processed += data_processed
     elif datatype.startswith("toffset"):
         if datatype == "toffset":
-            data = readtextoffset(stream, readint(stream, 8))
+            data = readtextoffset(stream, readint(stream, 8), strict=True)
         else:
-            data = readtextoffset(stream, readint(stream, 8), encoding=datatype[7:])
+            data = readtextoffset(stream, readint(stream, 8), encoding=datatype[7:], strict=True)
         processed += 8
     elif (datatype.startswith("u") and  datatype.endswith("array")):
         length = int(int(datatype[1:len(datatype)-5])/8)

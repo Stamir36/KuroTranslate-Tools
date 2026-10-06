@@ -72,6 +72,11 @@ def parse(name: Union[str, bytes, os.PathLike], game: Optional[str] = None) -> N
         output = {}
         has_extra = False
         has_schema = True
+        # Tracks whether every header was decoded through a real schema. If any
+        # header falls back to raw hex we cannot regenerate the trailing data
+        # pool (string/blob tail after the declared tables), so it must be
+        # preserved verbatim or the file loses bytes on json2tbl round-trip.
+        all_headers_covered = True
 
         # Load schema metadata if available
         schema_meta_path = Path("schemas") / f"{filename}.json"
@@ -106,6 +111,21 @@ def parse(name: Union[str, bytes, os.PathLike], game: Optional[str] = None) -> N
         if headers and headers[-1]["start"] + headers[-1]["length"] * headers[-1]["count"] < filesize:
             has_extra = True
 
+        def read_hex_records(hdr):
+            """Read a header's records verbatim as hex text."""
+            tbl_file.seek(hdr["start"])
+            records = []
+            for _ in range(hdr["count"]):
+                raw_bytes = tbl_file.read(hdr["length"])
+                if len(raw_bytes) != hdr["length"]:
+                    raise ValueError(f"Unexpected end of file in header '{hdr['name']}'.")
+                hex_digits = raw_bytes.hex()
+                hex_text = " ".join(
+                    hex_digits[j:j + 2] for j in range(0, len(hex_digits), 2)
+                ).upper()
+                records.append({"data": hex_text})
+            return records
+
         # Process each header's data
         for header in headers:
             tbl_file.seek(header["start"])
@@ -139,65 +159,69 @@ def parse(name: Union[str, bytes, os.PathLike], game: Optional[str] = None) -> N
                 if correct_schema is None:
                     print(f"Warning: No matching schema found for header '{header['name']}' "
                           f"(entry size = {actual_entry_size}). Using raw hex.")
-                    for _ in range(header["count"]):
-                        raw_bytes = tbl_file.read(header["length"])
-                        if len(raw_bytes) != header["length"]:
-                            raise ValueError(f"Unexpected end of file in header '{header['name']}'.")
-                        hex_text = " ".join(
-                            raw_bytes.hex()[j:j + 2] for j in range(0, len(raw_bytes.hex()), 2)
-                        ).upper()
-                        header_data["data"].append({"data": hex_text})
+                    all_headers_covered = False
+                    header_data["data"] = read_hex_records(header)
                 else:
                     schema_dict = correct_schema[1]
-                    header["schema"] = schema_dict.get("game", correct_schema[0])
-
-                    for _ in range(header["count"]):
-                        processed = 0
-                        data = {}
-                        schema = correct_schema[1]["schema"]
-                        for key, datatype in schema.items():
-                            # Handle composite types (e.g., "comp:Position")
-                            if isinstance(datatype, str) and datatype.startswith("comp:"):
-                                comp_key = datatype[5:]
-                                if comp_key in schema:
-                                    datatype = schema[comp_key]
-                                else:
-                                    raise KeyError(f"Composite reference '{datatype}' not found in schema.")
-                            value, processed_bytes = process_data(
-                                tbl_file, datatype, header["length"] - processed
-                            )
-                            data[key] = value
-                            processed += processed_bytes
-                        header_data["data"].append(data)
+                    schema_game = schema_dict.get("game", correct_schema[0])
+                    try:
+                        for _ in range(header["count"]):
+                            processed = 0
+                            data = {}
+                            schema = correct_schema[1]["schema"]
+                            for key, datatype in schema.items():
+                                # Handle composite types (e.g., "comp:Position")
+                                if isinstance(datatype, str) and datatype.startswith("comp:"):
+                                    comp_key = datatype[5:]
+                                    if comp_key in schema:
+                                        datatype = schema[comp_key]
+                                    else:
+                                        raise KeyError(f"Composite reference '{datatype}' not found in schema.")
+                                value, processed_bytes = process_data(
+                                    tbl_file, datatype, header["length"] - processed
+                                )
+                                data[key] = value
+                                processed += processed_bytes
+                            header_data["data"].append(data)
+                    except Exception as exc:
+                        # A schema that matches by size but not by field layout
+                        # (e.g. a different game variant) can resolve a bogus
+                        # string pointer. Fall back to a verbatim hex copy of the
+                        # header so the file round-trips intact.
+                        print(f"Warning: failed to decode header '{header['name']}' with schema "
+                              f"'{correct_schema[0]}' ({exc}); using raw hex.")
+                        header.pop("schema", None)
+                        header_data["data"] = read_hex_records(header)
+                        all_headers_covered = False
+                    else:
+                        header["schema"] = schema_game
             else:
                 # No schema available — dump raw hex
-                for _ in range(header["count"]):
-                    raw_bytes = tbl_file.read(header["length"])
-                    if len(raw_bytes) != header["length"]:
-                        raise ValueError(f"Unexpected end of file in header '{header['name']}'.")
-                    hex_text = " ".join(
-                        raw_bytes.hex()[j:j + 2] for j in range(0, len(raw_bytes.hex()), 2)
-                    ).upper()
-                    header_data["data"].append({"data": hex_text})
+                all_headers_covered = False
+                header_data["data"] = read_hex_records(header)
 
             tbl_data.append(header_data)
             print(header)
 
         output["data"] = tbl_data
 
-        # Dump any trailing extra data if no schema is available
-        if has_extra and not has_schema:
+        # Dump any trailing extra data whenever at least one header was not
+        # decoded via a schema (its blob/string pool cannot be regenerated).
+        if has_extra and (not has_schema or not all_headers_covered):
             remaining = tbl_file.read()
             if remaining:
-                hex_text = " ".join(
-                    remaining.hex()[j:j + 2] for j in range(0, len(remaining.hex()), 2)
+                # Compute .hex() once — calling it inside the generator is O(n^2)
+                # and makes large tails (hundreds of KB) effectively hang.
+                hex_digits = remaining.hex()
+                output["data_dump"] = " ".join(
+                    hex_digits[j:j + 2] for j in range(0, len(hex_digits), 2)
                 ).upper()
-                output["data_dump"] = hex_text
 
-        # Remove internal fields from headers in final output
+        # Remove internal fields from headers in final output. "length" is kept
+        # so empty tables (count == 0) keep their declared entry size — json2tbl
+        # cannot re-derive it from data when there are no records.
         for header in output["headers"]:
             header.pop("count", None)
-            header.pop("length", None)
             header.pop("start", None)
 
         # Write output JSON

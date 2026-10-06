@@ -36,7 +36,8 @@ def pack(name: Union[str, bytes, os.PathLike]) -> None:
             # Hex dump mode (no real schema)
             if len(all_header_data) > 0:
                 header["length"] = len(bytes.fromhex(all_header_data[0]["data"]))
-            else:
+            elif "length" not in header:
+                # Empty table with no stored size (legacy JSON) — nothing to derive.
                 header["length"] = 0
             schema_content = {"data": "data"}
         else:

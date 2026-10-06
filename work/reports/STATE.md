@@ -3,7 +3,7 @@
 Обновляется после каждого этапа. При возобновлении сессии — читать первым.
 
 ## Текущий этап
-**Этап 5 — таблицы (.tbl): схемы + json→tbl round-trip** (следующий к запуску).
+**Этап 6 — карта перевода** (следующий к запуску).
 
 ## Сделано
 - **Этап 0**: создано дерево `work/{reports,translation_map,logs,backup,extract,repack_check,decompiled,tbl_json}`; бэкап форка → `work/backup/KuroTools_baseline/`; окружение — Python 3.10.11.
@@ -19,11 +19,14 @@
 
 - **Этап 4**: disasm работает на 756/756; дописано 162 опкода Kyoto; исправлены маркеры (нужен `--markers True`) и дедуп строк. Размер файла и код+строки восстанавливаются, но ПОЛНЫЙ байт-в-байт НЕ достигнут (остаток — слоты varout/struct-указателей). См. `work/logs/STAGE_4_REPORT.md` (§5 BLOCKED-остаток).
 
+- **Этап 5**: ГОТОВО — round-trip таблиц **842/844 byte-exact (99.8%)**, 0 ошибок (было 90.0%). Устранены 3 бага `tbl2json.py`/`json2tbl.py`/`lib/parser.py` (потеря хвостового пула, потеря `length` у пустых таблиц, зацикливание на битом указателе) + O(n²)-дамп хвоста. 844 JSON сгенерированы. Отчёт: `work/logs/STAGE_5_REPORT.md`.
+
 ## Следующий шаг
-Этап 5: `tbl2json.py` по всем 844 `work/extract/table/*.tbl` (с `-g Kyoto` при необходимости); список падений; для падений — новые схемы по `DOCS/How to make a schema.md` (`schemas/kyoto_xanadu_*`); `json2tbl.py` → байт-в-байт по каждой .tbl. Отчёт: покрытие схемами.
+Этап 6: `work/tools/build_translation_map.py` — собрать карту перевода (scripts.jsonl + tables.jsonl + MAP_INDEX.csv) из `work/extract/script/**/*.dat` и `work/tbl_json/*.json`.
 
 ## Открытый BLOCKED
 - Этап 4: не байт-в-байт (указатели varout/struct на равные строки в разных ячейках). Функционально корректно, но требует доработки порядка строк.
+- Этап 5: `t_condition_info.tbl`, `t_costume.tbl` — совпадают по размеру, но `toffset`-пул собирается в ином порядке (подходит чужая схема Kai/Kuro1). Нужны Kyoto-схемы `ConditionInfoTableData`/`CostumeAttachOffset`. До тех пор — только hex-passthrough, не редактировать.
 
 ## Открытые проблемы / риски
 - Формат FPAC известен из README apstрима: заголовок 16 байт (`FPAC`, n_files, first_addr, unk=1); записи 32 байта, CRC32(имени)^0xFFFFFFFF, сортировка по CRC; строки имён и данные — natural sort. Точную обратимость проверим на Этапе 3.

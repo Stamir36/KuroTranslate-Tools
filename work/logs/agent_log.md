@@ -45,3 +45,15 @@
 - `roundtrip_dat.py` → DIFF; расследование: `opcode_bytes.py` выявил потерю 3807 байт на opcode 0x26 (ADDLINEMARKER) → нужен `--markers True`.
 - Исправлен размер: code_len 45116 совпал; затем добавлен дедуп struct params → размер файла совпал (97650).
 - Батч 60 файлов → 60 DIFF, размеры совпадают, 0 ошибок. Остаток: слоты varout/sparam-указателей. Статус — частичный (см. STAGE_4_REPORT.md §5).
+
+### ЭТАП 5 — таблицы (.tbl): схемы + json→tbl round-trip
+- `batch_tbl.py work/extract/table` → 0 :: базовая линия 844: OK=760 DIFF=81 ERR=3 (90.0%).
+- Диагностика: у 811/844 файлов есть хвостовой пул (данные после объявленных таблиц); `tbl2json.py` сохранял его только при полном отсутствии схемы → потеря хвоста (new==end).
+- Правка `tbl2json.py`: сохранять хвост (data_dump), если хотя бы один header не покрыт схемой (`all_headers_covered`). Бэкап `work/backup/tbl2json.py.pre_stage5`.
+- Batch → OK=831 DIFF=9 ERR=4 (98.5%).
+- Диагностика оставшихся DIFF: у 5 файлов `count=0`; `json2tbl.py` терял `length` (в hex-режиме берёт длину из первой записи). Правка: `tbl2json` сохраняет `length` в JSON; `json2tbl` не затирает его нулём. → эти 5 + t_btlsys стали EXACT.
+- Причина «зависаний» (t_mapjump/t_active_voice/t_inc): `lib/parser.readtext` зацикливался при `stream.read(1)==b""` (указатель за EOF). Добавлены guard от EOF/длины + `strict` (только для таблиц через `process_data`). Бэкап `work/backup/parser.py.pre_stage5`.
+- `tbl2json.py`: при ошибке декодирования по схеме header откатывается на hex (size-match ≠ layout-match, напр. чужая игра) → t_mapjump/t_active_voice/t_achievement стали EXACT.
+- O(n²)-баг: `remaining.hex()` вызывался внутри генератора (хвост 629 КБ у t_inc). Исправлено → t_inc EXACT (1.7s).
+- Остаются DIFF: t_condition_info, t_costume (совпадают по размеру; схемы подходят по размеру, но layout иной → порядок пула строк различается; нужны собственные Kyoto-схемы).
+- Правка таймаута batch: TIMEOUT 60 → 180.

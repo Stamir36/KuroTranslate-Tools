@@ -1,0 +1,12 @@
+  ...100/844 ok=100 diff=0 err=0
+  ...200/844 ok=198 diff=2 err=0
+  ...300/844 ok=298 diff=2 err=0
+  ...400/844 ok=398 diff=2 err=0
+  ...500/844 ok=498 diff=2 err=0
+  ...600/844 ok=598 diff=2 err=0
+  ...700/844 ok=698 diff=2 err=0
+  ...800/844 ok=798 diff=2 err=0
+TOTAL=844 OK=842 DIFF=2 ERR=0 exact%=99.8
+failures written to work/logs/batch_tbl_result.txt
+   DIFF t_condition_info.tbl ['orig=2821 new=2821']
+   DIFF t_costume.tbl ['orig=25768 new=25768']
