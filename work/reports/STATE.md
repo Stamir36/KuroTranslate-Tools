@@ -3,7 +3,7 @@
 Обновляется после каждого этапа. При возобновлении сессии — читать первым.
 
 ## Текущий этап
-**Этап 3 — обратимая пересборка (round-trip pack→unpack)** (следующий к запуску).
+**Этап 4 — disasm→assemble round-trip сценариев (.dat)** (следующий к запуску).
 
 ## Сделано
 - **Этап 0**: создано дерево `work/{reports,translation_map,logs,backup,extract,repack_check,decompiled,tbl_json}`; бэкап форка → `work/backup/KuroTools_baseline/`; окружение — Python 3.10.11.
@@ -15,8 +15,10 @@
 
 - **Этап 2**: `PAC_USAGE.md`, `INVENTORY.md`, `encoding_probe.json`. Распакованы FPACker'ом: table=844 `.tbl`, script=1016 `.dat` (scena 756/ai 132/ani 115/obj 13), scene=1148 (`.bin`+`.json`). Кодировка строк — **UTF-8** (эмпирически). Магии: `#TBL`, `#scp`, `JSON`.
 
+- **Этап 3**: ГОТОВО — пустой diff байт-в-байт на всех трёх архивах собственным `work/tools/pack_fpac.py`. FPACker не 1:1 на table (28/844). Выведен natural-sort (числа сравниваются лексикографически, регистронезависимо). Отчёт: `work/logs/STAGE_3_REPORT.md`.
+
 ## Следующий шаг
-Этап 3: пересобрать **нетронутые** `work/extract/{table,script,scene}` обратно через `FPACker.exe pack`; распаковать результат в `work/repack_check/`; сравнить байт-в-байт с оригиналом (имена, порядок, выравнивание). При расхождении — дописать `work/tools/pack_fpac.py` по спецификации из `PAC_USAGE.md` до пустого diff.
+Этап 4: на 3–5 образцах `work/extract/script/scena/*.dat` прогнать disasm-режим KuroTools (`dat2py.py`, `--decompile False`) и `dat2py_batch.py`; при KeyError — дописать опкоды; добиться assemble→byte-identical для нETронутых образцов, затем пакетно по 756 scena/. Релизный канал — disasm. `scene.pac` — по согласованию, в конце.
 
 ## Открытые проблемы / риски
 - Формат FPAC известен из README apstрима: заголовок 16 байт (`FPAC`, n_files, first_addr, unk=1); записи 32 байта, CRC32(имени)^0xFFFFFFFF, сортировка по CRC; строки имён и данные — natural sort. Точную обратимость проверим на Этапе 3.

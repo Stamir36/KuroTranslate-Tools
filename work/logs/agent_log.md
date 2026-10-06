@@ -27,3 +27,11 @@
 - `./FPACker.exe unpack-all ../work/extract/script.pac` → 0 :: 1016 .dat.
 - `./FPACker.exe unpack-all ../work/extract/scene.pac` → 0 :: 1148 файлов (.bin/.json).
 - python-проба кодировки → 0 :: UTF-8 подтверждён; результат `work/logs/encoding_probe.json`.
+- `git commit` → 0 :: commit b395714.
+
+### ЭТАП 3 — обратимая пересборка
+- `FPACker.exe pack ../../extract/table` → 0 :: out.pac в work/extract; сравнение — 28/844 записей отличаются (offset 0x3D8).
+- Анализ порядка → 0 :: вывод — оригинал сортирует числовые прогоны лексикографически (left-aligned), регистронезависимо; FPACker сортирует численно.
+- `python work/tools/pack_fpac.py work/extract/<p> ... --prefix <p>` → 0 :: таблица/script/scene **byte-identical** с оригиналами (cmp совпал).
+- `FPACker.exe pack` для script/scene → byte-identical; для table — DIFFER.
+- Распаковка `table_mine.pac` и `diff -r` → **FILES IDENTICAL**.
