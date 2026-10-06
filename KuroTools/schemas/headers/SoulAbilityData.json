@@ -1,0 +1,12 @@
+{
+	"Kyoto_SoulAbilityData": {
+		"game": "Kyoto",
+		"schema": {
+			"raw_0x0": "data16",
+			"text_0x10": "toffset",
+			"text_0x18": "toffset",
+			"text_0x20": "toffset",
+			"text_0x28": "toffset"
+		}
+	}
+}

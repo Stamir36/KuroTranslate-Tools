@@ -7,6 +7,10 @@
 		"HelpIconList",
 		"HelpController",
 		"HelpOverlayIcon",
-		"HelpImageList"
+		"HelpImageList",
+		"HelpImageTableData",
+		"HelpImageOverlayTableData",
+		"HelpNoteCategoryTableData",
+		"HelpNoteTableData"
 	]
 }

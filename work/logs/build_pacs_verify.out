@@ -1,0 +1,10 @@
+OK   table: 8221834 байт -> C:\Develop\GitHib\KuroTranslate-Tools\work\build\pac\table.pac [EXACT]
+OK   script: 51012476 байт -> C:\Develop\GitHib\KuroTranslate-Tools\work\build\pac\script.pac [EXACT]
+OK   scene: 61110404 байт -> C:\Develop\GitHib\KuroTranslate-Tools\work\build\pac\scene.pac [EXACT]
+
+| архив | размер | статус |
+|---|---|---|
+| table | 8221834 | EXACT |
+| script | 51012476 | EXACT |
+| scene | 61110404 | EXACT |
+EXIT=0

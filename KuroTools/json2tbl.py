@@ -21,10 +21,81 @@ def init_argparse() -> argparse.ArgumentParser:
     return parser
 
 
+def rebuild_tail(data: dict):
+    """Splice edited ``tail_strings`` back into the tail and return the new tail
+    bytes together with a shift function mapping old absolute offsets to new.
+
+    Regions are spliced in offset order; any byte outside a region is copied
+    verbatim. If nothing was edited the result is identical to the original.
+    """
+    tail_start = data["tail_start"]
+    tail = bytes.fromhex(data["data_dump"].replace(" ", ""))
+    regions = sorted(data["tail_strings"], key=lambda r: r["offset"])
+    out = bytearray()
+    bounds = []  # (offset, cumulative_delta) — delta of regions with offset <= o
+    cur = tail_start
+    cum = 0
+    for r in regions:
+        o = r["offset"]
+        if o < cur:
+            continue  # overlapping/duplicate region — ignore
+        out += tail[cur - tail_start:o - tail_start]
+        new = r["text"].encode("utf-8")
+        cum += (len(new) + 1) - r["len"]
+        bounds.append((o, cum))
+        out += new + b"\x00"
+        cur = o + r["len"]
+    out += tail[cur - tail_start:]
+    orig_end = tail_start + len(tail)
+
+    def shift(x: int) -> int:
+        s = 0
+        for o, c in bounds:
+            if o < x:
+                s = c
+            else:
+                break
+        return s
+
+    return bytes(out), shift, tail_start, orig_end
+
+
+def fixup_records(data: dict, shift, tail_start: int, orig_end: int) -> None:
+    """Rewrite 8-byte-aligned tail pointers inside verbatim hex records so they
+    keep pointing at the (possibly moved) data after the tail was respliced."""
+    for entry in data["data"]:
+        for rec in entry["data"]:
+            if not (isinstance(rec, dict) and set(rec.keys()) == {"data"}
+                    and isinstance(rec["data"], str)):
+                continue
+            raw = bytearray(bytes.fromhex(rec["data"].replace(" ", "")))
+            changed = False
+            for k in range(0, len(raw) - 7, 8):
+                v = int.from_bytes(raw[k:k + 8], "little")
+                if tail_start <= v < orig_end:
+                    nv = v + shift(v)
+                    if nv != v:
+                        raw[k:k + 8] = nv.to_bytes(8, "little")
+                        changed = True
+            if changed:
+                hex_digits = raw.hex()
+                rec["data"] = " ".join(
+                    hex_digits[j:j + 2] for j in range(0, len(hex_digits), 2)
+                ).upper()
+
+
 def pack(name: Union[str, bytes, os.PathLike]) -> None:
     filename = Path(name).stem
     with open(name, "r", encoding="utf-8") as inputfile:
         data = json.load(inputfile)
+
+    if "tail_strings" in data and data.get("tail_strings"):
+        new_tail, shift, tail_start, orig_end = rebuild_tail(data)
+        fixup_records(data, shift, tail_start, orig_end)
+        hex_digits = new_tail.hex()
+        data["data_dump"] = " ".join(
+            hex_digits[j:j + 2] for j in range(0, len(hex_digits), 2)
+        ).upper()
     
     current_addr = 8 + len(data["headers"]) * 0x50
 

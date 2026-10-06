@@ -1,0 +1,16 @@
+{
+	"Kyoto_SacredTreeParam": {
+		"game": "Kyoto",
+		"schema": {
+			"raw_0x0": "data8",
+			"text_0x8": "toffset",
+			"raw_0x10": "data8",
+			"text_0x18": "toffset",
+			"raw_0x20": "data8",
+			"text_0x28": "toffset",
+			"arr_0x30": "u16array",
+			"raw_0x3c": "data12",
+			"text_0x48": "toffset"
+		}
+	}
+}

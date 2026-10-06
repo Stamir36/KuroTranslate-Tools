@@ -1,0 +1,12 @@
+{
+	"Kyoto_ShopNormalInfo": {
+		"game": "Kyoto",
+		"schema": {
+			"raw_0x0": "data8",
+			"text_0x8": "toffset",
+			"text_0x10": "toffset",
+			"text_0x18": "toffset",
+			"text_0x20": "toffset"
+		}
+	}
+}

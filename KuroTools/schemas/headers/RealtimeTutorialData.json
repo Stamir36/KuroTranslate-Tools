@@ -1,0 +1,13 @@
+{
+	"Kyoto_RealtimeTutorialData": {
+		"game": "Kyoto",
+		"schema": {
+			"raw_0x0": "data8",
+			"text_0x8": "toffset",
+			"raw_0x10": "data48",
+			"text_0x40": "toffset",
+			"raw_0x48": "data8",
+			"text_0x50": "toffset"
+		}
+	}
+}

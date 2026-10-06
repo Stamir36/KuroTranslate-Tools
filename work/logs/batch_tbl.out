@@ -10,3 +10,4 @@ TOTAL=844 OK=842 DIFF=2 ERR=0 exact%=99.8
 failures written to work/logs/batch_tbl_result.txt
    DIFF t_condition_info.tbl ['orig=2821 new=2821']
    DIFF t_costume.tbl ['orig=25768 new=25768']
+EXIT=0

@@ -3,10 +3,12 @@
 Обновляется после каждого этапа. При возобновлении сессии — читать первым.
 
 ## Текущий этап
-**ВСЕ ЭТАПЫ 0–7 ЗАВЕРШЕНЫ.** Техническая база готова; далее — перевод и игровой тест.
-- Карта перевода: `work/translation_map/` (67 969 записей, 29 395 уникальных).
+**ВСЕ ЭТАПЫ 0–8 ЗАВЕРШЕНЫ.** Техническая база готова; далее — перевод и игровой тест.
+- **Покрытие таблиц текстом (Этап 8): 0 полностью потерянных .tbl.** JP-строк в хвостах
+  27 359; извлечено 27 333 (остальные 26 — артефакты сканера, текст в JSON есть).
+- Карта перевода: `work/translation_map/` (scripts 46 606 + tables 33 900).
 - Пайплайн сборки: `work/tools/build_pacs.py` (3 архива EXACT).
-- RUNBOOK: `work/RUNBOOK.md`; итоговый отчёт: `work/reports/REPORT.md`.
+- RUNBOOK: `work/RUNBOOK.md`; отчёты: `work/reports/REPORT.md`, `work/logs/STAGE_8_REPORT.md`.
 
 ## Сделано
 - **Этап 0**: создано дерево `work/{reports,translation_map,logs,backup,extract,repack_check,decompiled,tbl_json}`; бэкап форка → `work/backup/KuroTools_baseline/`; окружение — Python 3.10.11.
@@ -30,6 +32,18 @@
 
 ## Следующий шаг
 Перевод строк из `work/translation_map/` + `work/tbl_json/`, затем сборка (`json2tbl`, `py2dat_batch`) и игровой тест. См. §8 в `work/reports/REPORT.md`.
+
+## Этап 8 (покрытие .tbl текстом)
+- Дозакрыты схемы (`-g Kyoto`) для 21 из 41 «потерянных» + `t_event`/`t_todo`/`t_keyword`:
+  byte-exact И текст (`t_status` 299, `t_help` 406, `t_team_name` 450, `t_event` 844,
+  `t_realtime_tutorial` 453, `t_monster_note` 245, `t_dlc` 90, `t_chapter`, `t_skill` и др.).
+- Для таблиц без выводимой схемы — **редактируемый текстовый пул**: `tbl2json` кладёт
+  `tail_strings` (`{offset,len,text}`), `json2tbl` сплайсит правки и пересчитывает
+  8-выровненные указатели в hex-записях; без правок — byte-exact. Покрыты `t_voice`
+  (9001, идентификаторы голоса — не для перевода), `t_npc_c*`, `t_place`, `t_chr_name`,
+  `t_lookpoint`, `t_mapjump`, `t_action_*` и др.
+- Точная диагностика — `work/tools/diagnose_tbl_text2.py` (старая рвала строки по `\n`).
+- Round-trip остался **842/844**, 0 ошибок (те же 2 DIFF: `t_condition_info`, `t_costume`).
 
 ## Открытый BLOCKED
 - Этап 4: не байт-в-байт (указатели varout/struct на равные строки в разных ячейках). Функционально корректно, но требует доработки порядка строк.

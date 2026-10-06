@@ -1,0 +1,14 @@
+{
+	"Kyoto_MonsterNote": {
+		"game": "Kyoto",
+		"schema": {
+			"text_0x0": "toffset",
+			"text_0x8": "toffset",
+			"text_0x10": "toffset",
+			"raw_0x18": "data32",
+			"text_0x38": "toffset",
+			"raw_0x40": "data8",
+			"text_0x48": "toffset"
+		}
+	}
+}

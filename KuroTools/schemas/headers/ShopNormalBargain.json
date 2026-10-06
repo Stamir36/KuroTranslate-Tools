@@ -1,0 +1,12 @@
+{
+	"Kyoto_ShopNormalBargain": {
+		"game": "Kyoto",
+		"schema": {
+			"raw_0x0": "data16",
+			"arr_0x10": "u16array",
+			"raw_0x1c": "data4",
+			"arr_0x20": "u16array",
+			"raw_0x2c": "data4"
+		}
+	}
+}

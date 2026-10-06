@@ -15,7 +15,7 @@
 			"float1": "float",
 			"target_aoe_range": "float",
 			"target_aoe_size": "float",
-			"effects" : {
+			"effects": {
 				"size": 5,
 				"schema": {
 					"id": "uint",
@@ -35,6 +35,16 @@
 			"name": "toffset",
 			"description_1": "toffset",
 			"description_2": "toffset"
+		}
+	},
+	"Kyoto_SkillParam": {
+		"game": "Kyoto",
+		"schema": {
+			"raw_0x0": "data8",
+			"text_0x8": "toffset",
+			"raw_0x10": "data104",
+			"text_0x78": "toffset",
+			"text_0x80": "toffset"
 		}
 	}
 }

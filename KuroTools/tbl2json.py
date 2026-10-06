@@ -26,6 +26,39 @@ def init_argparse() -> argparse.ArgumentParser:
     return parser
 
 
+def extract_tail_strings(tail: bytes, table_start: int) -> list:
+    """Everything in ``tail`` (bytes after the declared tables) that looks like
+    a NUL-terminated UTF-8 string, as ``{"offset", "len", "text"}``.
+
+    ``offset`` is the absolute file offset, ``len`` the byte length of the
+    original text including the terminating NUL. json2tbl uses both to splice
+    edited text back at exactly the same place.
+    """
+    out = []
+    i = 0
+    n = len(tail)
+    while i < n:
+        j = tail.find(b"\0", i)
+        if j < 0:
+            break
+        raw = tail[i:j]
+        if raw:
+            try:
+                text = raw.decode("utf-8")
+            except UnicodeDecodeError:
+                text = None
+            if text is not None and not any(
+                ord(c) < 0x20 and c not in "\t\n\r" for c in text
+            ):
+                out.append({
+                    "offset": table_start + i,
+                    "len": len(raw) + 1,
+                    "text": text,
+                })
+        i = j + 1
+    return out
+
+
 def parse(name: Union[str, bytes, os.PathLike], game: Optional[str] = None) -> None:
     true_filename = Path(name).stem
     # Replace digits in filename with %d to match generic schema names (e.g., "item01" → "item%d")
@@ -208,6 +241,9 @@ def parse(name: Union[str, bytes, os.PathLike], game: Optional[str] = None) -> N
         # Dump any trailing extra data whenever at least one header was not
         # decoded via a schema (its blob/string pool cannot be regenerated).
         if has_extra and (not has_schema or not all_headers_covered):
+            table_end = max(
+                h["start"] + h["length"] * h["count"] for h in headers
+            )
             remaining = tbl_file.read()
             if remaining:
                 # Compute .hex() once — calling it inside the generator is O(n^2)
@@ -216,6 +252,20 @@ def parse(name: Union[str, bytes, os.PathLike], game: Optional[str] = None) -> N
                 output["data_dump"] = " ".join(
                     hex_digits[j:j + 2] for j in range(0, len(hex_digits), 2)
                 ).upper()
+                # Additionally expose every NUL-terminated UTF-8 string in the
+                # tail together with its absolute offset and byte length. This
+                # is what makes the Japanese text of tables WITHOUT a working
+                # schema visible (and translatable) instead of a pure hex blob.
+                # json2tbl rebuilds the tail by splicing these regions back, so
+                # an unedited file still round-trips byte-for-byte.
+                # Expose the tail as an editable string pool. The tail hex dump
+                # is written last, so any pool strings a decoded header wrote out
+                # of band are overwritten anyway — splicing the dump is the single
+                # source of truth, and an unedited file stays byte-exact.
+                strings = extract_tail_strings(remaining, table_end)
+                if strings:
+                    output["tail_start"] = table_end
+                    output["tail_strings"] = strings
 
         # Remove internal fields from headers in final output. "length" is kept
         # so empty tables (count == 0) keep their declared entry size — json2tbl

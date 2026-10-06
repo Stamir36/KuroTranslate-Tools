@@ -610,5 +610,24 @@
 			"name": "toffset",
 			"description": "toffset"
 		}
+	},
+	"Kyoto_StatusParam": {
+		"game": "Kyoto",
+		"schema": {
+			"text_0x0": "toffset",
+			"text_0x8": "toffset",
+			"raw_0x10": "data8",
+			"text_0x18": "toffset",
+			"text_0x20": "toffset",
+			"text_0x28": "toffset",
+			"text_0x30": "toffset",
+			"text_0x38": "toffset",
+			"text_0x40": "toffset",
+			"raw_0x48": "data72",
+			"text_0x90": "toffset",
+			"raw_0x98": "data136",
+			"text_0x120": "toffset",
+			"text_0x128": "toffset"
+		}
 	}
 }

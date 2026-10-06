@@ -1,6 +1,7 @@
 {
 	"headers": [
 		"Status",
-		"StatusParam"
+		"StatusParam",
+		"CharaChangeParam"
 	]
 }

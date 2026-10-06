@@ -116,15 +116,23 @@ def main():
         # Файлы без схемы: строки в JSON нет — берём их прямо из .tbl, чтобы
         # карта перевода была полной. kind="tbl_raw" (место вставки определить
         # позже, когда появится схема).
-        raw_txt = os.path.join(os.path.dirname(jdir), "extract", "table",
-                               os.path.basename(jp).replace(".json", ".tbl"))
-        raw = scan_tbl_raw(raw_txt) if (not vals and os.path.exists(raw_txt)) else []
-        for i, v in enumerate(raw, start=len(vals)):
-            trecs.append({"id": f"{rel}:raw:{i}", "file": rel, "kind": "tbl_raw",
-                          "jp_text": v, "ru_text": "",
-                          "context": "tbl tail (нет схемы — текстовый пул)"})
-        status = "ok" if vals else ("raw_only" if raw else "empty")
-        index_rows.append([rel, len(vals) + len(raw), status])
+        # Для файлов без рабочей схемы строки берём из текстового пула
+        # (tail_strings) — это уже РЕДАКТИРУЕМЫЕ строки: правка текста в JSON,
+        # затем json2tbl — и .tbl соберётся с пересчитанными указателями.
+        # Грубый скан всего .tbl больше не нужен (он давал мусор из бинарных
+        # байт, ошибочно декодируемых как CJK).
+        tail_texts = []
+        if isinstance(obj, dict):
+            tail_texts = [r["text"] for r in obj.get("tail_strings", [])
+                          if isinstance(r, dict) and is_jp(r.get("text", ""))]
+        if not vals:
+            for i, v in enumerate(tail_texts):
+                trecs.append({"id": f"{rel}:tail:{i}", "file": rel, "kind": "tbl_tail",
+                              "jp_text": v, "ru_text": "",
+                              "context": "tbl tail (редактируемый текстовый пул)"})
+        n_add = len(vals) if vals else len(tail_texts)
+        status = "ok" if vals else ("tail_pool" if tail_texts else "empty")
+        index_rows.append([rel, n_add, status])
         total += len(vals)
     with open(os.path.join(OUT, "tables.jsonl"), "w", encoding="utf-8") as f:
         for r in trecs:

@@ -1,0 +1,13 @@
+{
+	"Kyoto_SpotMenu": {
+		"game": "Kyoto",
+		"schema": {
+			"raw_0x0": "data8",
+			"text_0x8": "toffset",
+			"text_0x10": "toffset",
+			"raw_0x18": "data8",
+			"arr_0x20": "u32array",
+			"raw_0x2c": "data12"
+		}
+	}
+}

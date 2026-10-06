@@ -1,0 +1,10 @@
+{
+	"Kyoto_EndingSection": {
+		"game": "Kyoto",
+		"schema": {
+			"raw_0x0": "data24",
+			"text_0x18": "toffset",
+			"raw_0x20": "data8"
+		}
+	}
+}

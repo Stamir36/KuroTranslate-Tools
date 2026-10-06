@@ -12,5 +12,19 @@
 			"text2": "toffset",
 			"text3": "toffset"
 		}
+	},
+	"Kyoto_DLCTableData": {
+		"game": "Kyoto",
+		"schema": {
+			"raw_0x0": "data8",
+			"arr_0x8": "u32array",
+			"raw_0x14": "data4",
+			"arr_0x18": "u32array",
+			"raw_0x24": "data4",
+			"text_0x28": "toffset",
+			"text_0x30": "toffset",
+			"text_0x38": "toffset",
+			"text_0x40": "toffset"
+		}
 	}
 }

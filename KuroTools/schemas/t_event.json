@@ -2,6 +2,7 @@
 	"headers": [
 		"EventGroupData",
 		"EventSubGroupData",
-		"EventTable"
+		"EventTable",
+		"EventTableData"
 	]
 }

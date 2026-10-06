@@ -42,5 +42,24 @@
 			"text": "toffset",
 			"long3": "long"
 		}
+	},
+	"Kyoto_EventTableData": {
+		"game": "Kyoto",
+		"schema": {
+			"raw_0x0": "data8",
+			"text_0x8": "toffset",
+			"text_0x10": "toffset",
+			"text_0x18": "toffset",
+			"text_0x20": "toffset",
+			"text_0x28": "toffset",
+			"raw_0x30": "data8",
+			"text_0x38": "toffset",
+			"arr_0x40": "u16array",
+			"raw_0x4c": "data4",
+			"arr_0x50": "u16array",
+			"raw_0x5c": "data4",
+			"text_0x60": "toffset",
+			"raw_0x68": "data8"
+		}
 	}
 }
