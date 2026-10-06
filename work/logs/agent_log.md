@@ -57,3 +57,7 @@
 - O(n²)-баг: `remaining.hex()` вызывался внутри генератора (хвост 629 КБ у t_inc). Исправлено → t_inc EXACT (1.7s).
 - Остаются DIFF: t_condition_info, t_costume (совпадают по размеру; схемы подходят по размеру, но layout иной → порядок пула строк различается; нужны собственные Kyoto-схемы).
 - Правка таймаута batch: TIMEOUT 60 → 180.
+
+### ЭТАП 6 — карта перевода
+- `python work/tools/build_translation_map.py` → 0 :: scripts=46606, tables=21363, total 67969; `work/translation_map/{scripts,tables}.jsonl` + `MAP_INDEX.csv`.
+- `python work/tools/analyze_map.py` → 0 :: уникальных строк 29395 (script 11230 + tbl 18252); scena=41766, ai=1167, ani=3665, obj=8.
