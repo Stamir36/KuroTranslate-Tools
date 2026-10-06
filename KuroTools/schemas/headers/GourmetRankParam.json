@@ -8,5 +8,11 @@
 			"long1": "long",
 			"rank_up_text": "toffset"
 		}
+	},
+	"Kyoto_GourmetRankParam": {
+		"game": "Kyoto",
+		"schema": {
+			"raw_0x0": "data16"
+		}
 	}
 }

@@ -1,0 +1,18 @@
+{
+	"Kyoto_ChatTableData": {
+		"game": "Kyoto",
+		"schema": {
+			"raw_0x0": "data8",
+			"arr_0x8": "u32array",
+			"raw_0x14": "data4",
+			"text_0x18": "toffset",
+			"text_0x20": "toffset",
+			"text_0x28": "toffset",
+			"raw_0x30": "data8",
+			"arr_0x38": "u32array",
+			"raw_0x44": "data4",
+			"arr_0x48": "u32array",
+			"raw_0x54": "data4"
+		}
+	}
+}

@@ -1,0 +1,15 @@
+{
+	"Kyoto_QuestHeader": {
+		"game": "Kyoto",
+		"schema": {
+			"raw_0x0": "data8",
+			"text_0x8": "toffset",
+			"arr_0x10": "u32array",
+			"raw_0x1c": "data4",
+			"arr_0x20": "u16array",
+			"raw_0x2c": "data4",
+			"text_0x30": "toffset",
+			"raw_0x38": "data24"
+		}
+	}
+}

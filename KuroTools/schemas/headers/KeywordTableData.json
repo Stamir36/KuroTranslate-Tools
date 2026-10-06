@@ -1,0 +1,13 @@
+{
+	"Kyoto_KeywordTableData": {
+		"game": "Kyoto",
+		"schema": {
+			"raw_0x0": "data16",
+			"arr_0x10": "u16array",
+			"raw_0x1c": "data4",
+			"text_0x20": "toffset",
+			"text_0x28": "toffset",
+			"text_0x30": "toffset"
+		}
+	}
+}

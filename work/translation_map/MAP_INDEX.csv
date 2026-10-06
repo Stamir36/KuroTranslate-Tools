@@ -1086,9 +1086,9 @@ table/t_battle_9999.tbl,0,empty
 table/t_bgm.tbl,0,empty
 table/t_bgmset.tbl,0,empty
 table/t_break_object.tbl,0,empty
-table/t_btlsys.tbl,42,raw_only
+table/t_btlsys.tbl,42,ok
 table/t_chapter.tbl,20,raw_only
-table/t_chat.tbl,110,raw_only
+table/t_chat.tbl,110,ok
 table/t_chatmes_01_05_00.tbl,37,ok
 table/t_chatmes_01_09_01.tbl,15,ok
 table/t_chatmes_01_11_00.tbl,41,ok
@@ -1144,7 +1144,7 @@ table/t_costume.tbl,0,empty
 table/t_dlc.tbl,182,raw_only
 table/t_dlc_appid_convert.tbl,0,empty
 table/t_dungeon.tbl,0,empty
-table/t_dungeon_quest.tbl,60,raw_only
+table/t_dungeon_quest.tbl,60,ok
 table/t_dungeon_result.tbl,0,empty
 table/t_effect.tbl,0,empty
 table/t_ending_production.tbl,87,raw_only
@@ -1727,7 +1727,7 @@ table/t_heal_object.tbl,0,empty
 table/t_help.tbl,820,raw_only
 table/t_inc.tbl,71,raw_only
 table/t_item.tbl,1903,ok
-table/t_keyword.tbl,770,raw_only
+table/t_keyword.tbl,346,ok
 table/t_lookpoint.tbl,1005,raw_only
 table/t_map_gimmick.tbl,0,empty
 table/t_map_name_production.tbl,0,empty
@@ -1792,7 +1792,7 @@ table/t_mon_d1112.tbl,0,empty
 table/t_mon_e0300.tbl,0,empty
 table/t_monster_door.tbl,0,empty
 table/t_monster_note.tbl,528,raw_only
-table/t_musubi.tbl,164,raw_only
+table/t_musubi.tbl,188,ok
 table/t_name.tbl,531,ok
 table/t_npc_a0500.tbl,0,empty
 table/t_npc_a1001.tbl,0,empty
@@ -1827,7 +1827,7 @@ table/t_npc_d0600.tbl,0,empty
 table/t_npc_d0800.tbl,0,empty
 table/t_npc_d1000.tbl,0,empty
 table/t_npc_e9000.tbl,0,empty
-table/t_parttime.tbl,6,raw_only
+table/t_parttime.tbl,6,ok
 table/t_place.tbl,246,raw_only
 table/t_portrait.tbl,0,empty
 table/t_realtime_tutorial.tbl,674,raw_only
@@ -1855,7 +1855,7 @@ table/t_template_actor.tbl,0,empty
 table/t_text.tbl,1322,ok
 table/t_time_change.tbl,0,empty
 table/t_tips.tbl,10,ok
-table/t_todo.tbl,59,raw_only
+table/t_todo.tbl,93,ok
 table/t_uds.tbl,0,empty
 table/t_voice.tbl,0,empty
 table/t_voice_play.tbl,0,empty

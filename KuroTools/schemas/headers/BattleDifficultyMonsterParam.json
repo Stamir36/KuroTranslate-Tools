@@ -1,0 +1,9 @@
+{
+	"Kyoto_BattleDifficultyMonsterParam": {
+		"game": "Kyoto",
+		"schema": {
+			"text_0x0": "toffset",
+			"raw_0x8": "data8"
+		}
+	}
+}

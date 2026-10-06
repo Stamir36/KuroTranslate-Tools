@@ -74,8 +74,10 @@ def process(stem, dry=False):
     if not os.path.exists(tp):
         return ("MISSING", 0, 0)
     data = open(tp, "rb").read()
-    hs = IS.parse_headers(data)
-    table_end = max(h["start"] + h["length"] * h["count"] for h in hs)
+    res = IS.infer_file(data)
+    if not res:
+        return ("NO_LAYOUT", 0, 0)
+    schemas, headers, _ = res
     store = {}  # путь -> исходное содержимое (для отката при неудаче)
 
     key = os.path.join(KURO, "schemas", stem + ".json")
@@ -87,12 +89,13 @@ def process(stem, dry=False):
     changed = False
     added_headers = []
 
-    for h in hs:
-        if h["name"] not in listed:
-            listed.append(h["name"])
+    for h in headers:
+        name = h["name"]
+        if name not in listed:
+            listed.append(name)
             changed = True
-            added_headers.append(h["name"])
-        hsp = os.path.join(KURO, "schemas", "headers", h["name"] + ".json")
+            added_headers.append(name)
+        hsp = os.path.join(KURO, "schemas", "headers", name + ".json")
         try:
             existing = json.load(open(hsp, encoding="utf-8")) if os.path.exists(hsp) else {}
         except Exception:
@@ -102,22 +105,15 @@ def process(stem, dry=False):
         no_kyoto = h["length"] in sz and "Kyoto" not in sz[h["length"]]
         if not (need or no_kyoto):
             continue
-        res = IS.infer(data, len(data), h, table_end)
-        if not res:
-            continue
         snapshot(hsp, store)
-        variant = {"game": "Kyoto", "schema": res["schema"]}
+        variant = {"game": "Kyoto", "schema": schemas[name]}
         if need:
-            existing[f"Kyoto_{h['name']}"] = variant
+            existing[f"Kyoto_{name}"] = variant
         else:
-            k = None
             i = 1
-            while k is None:
-                cand = f"Kyoto_{h['name']}_{i}"
-                if cand not in existing:
-                    k = cand
+            while f"Kyoto_{name}_{i}" in existing:
                 i += 1
-            existing[k] = variant
+            existing[f"Kyoto_{name}_{i}"] = variant
         if not dry:
             backup(hsp)
             os.makedirs(os.path.dirname(hsp), exist_ok=True)

@@ -1,0 +1,12 @@
+{
+	"Kyoto_PartTimeBonusData": {
+		"game": "Kyoto",
+		"schema": {
+			"raw_0x0": "data8",
+			"arr_0x8": "u16array",
+			"raw_0x14": "data4",
+			"arr_0x18": "u16array",
+			"raw_0x24": "data12"
+		}
+	}
+}
