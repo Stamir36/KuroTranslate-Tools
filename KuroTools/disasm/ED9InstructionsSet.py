@@ -507,6 +507,170 @@ def init_command_names_dicts():
     (6, 45) : "Cmd_unknown_06_2D",
     (13, 108) : "Cmd_unknown_0D_6C",
     (13, 109) : "Cmd_unknown_0D_6D",
+
+    # --- Kyoto Xanadu: опкоды, обнаруженные пакетным сканом 756 scena/*.dat (Этап 4) ---
+    (1, 234) : "Cmd_unknown_01_EA",
+    (1, 235) : "Cmd_unknown_01_EB",
+    (1, 236) : "Cmd_unknown_01_EC",
+    (1, 237) : "Cmd_unknown_01_ED",
+    (1, 239) : "Cmd_unknown_01_EF",
+    (6, 46) : "Cmd_unknown_06_2E",
+    (14, 47) : "Cmd_unknown_0E_2F",
+    (18, 16) : "Cmd_unknown_12_10",
+    (18, 19) : "Cmd_unknown_12_13",
+    (18, 20) : "Cmd_unknown_12_14",
+    (18, 21) : "Cmd_unknown_12_15",
+    (18, 22) : "Cmd_unknown_12_16",
+    (18, 23) : "Cmd_unknown_12_17",
+    (18, 24) : "Cmd_unknown_12_18",
+    (22, 17) : "Cmd_unknown_16_11",
+    (22, 19) : "Cmd_unknown_16_13",
+    (22, 20) : "Cmd_unknown_16_14",
+    (22, 22) : "Cmd_unknown_16_16",
+    (22, 23) : "Cmd_unknown_16_17",
+    (22, 24) : "Cmd_unknown_16_18",
+    (22, 25) : "Cmd_unknown_16_19",
+    (22, 28) : "Cmd_unknown_16_1C",
+    (22, 29) : "Cmd_unknown_16_1D",
+    (22, 30) : "Cmd_unknown_16_1E",
+    (22, 31) : "Cmd_unknown_16_1F",
+    (22, 32) : "Cmd_unknown_16_20",
+    (22, 33) : "Cmd_unknown_16_21",
+    (22, 34) : "Cmd_unknown_16_22",
+    (22, 37) : "Cmd_unknown_16_25",
+    (22, 38) : "Cmd_unknown_16_26",
+    (22, 39) : "Cmd_unknown_16_27",
+    (22, 42) : "Cmd_unknown_16_2A",
+    (22, 43) : "Cmd_unknown_16_2B",
+    (22, 46) : "Cmd_unknown_16_2E",
+    (22, 47) : "Cmd_unknown_16_2F",
+    (22, 48) : "Cmd_unknown_16_30",
+    (22, 49) : "Cmd_unknown_16_31",
+    (22, 53) : "Cmd_unknown_16_35",
+    (22, 54) : "Cmd_unknown_16_36",
+    (22, 55) : "Cmd_unknown_16_37",
+    (22, 56) : "Cmd_unknown_16_38",
+    (22, 57) : "Cmd_unknown_16_39",
+    (22, 58) : "Cmd_unknown_16_3A",
+    (22, 59) : "Cmd_unknown_16_3B",
+    (22, 60) : "Cmd_unknown_16_3C",
+    (22, 61) : "Cmd_unknown_16_3D",
+    (22, 63) : "Cmd_unknown_16_3F",
+    (22, 64) : "Cmd_unknown_16_40",
+    (22, 65) : "Cmd_unknown_16_41",
+    (22, 66) : "Cmd_unknown_16_42",
+    (22, 67) : "Cmd_unknown_16_43",
+    (22, 68) : "Cmd_unknown_16_44",
+    (22, 69) : "Cmd_unknown_16_45",
+    (22, 70) : "Cmd_unknown_16_46",
+    (22, 71) : "Cmd_unknown_16_47",
+    (22, 72) : "Cmd_unknown_16_48",
+    (22, 73) : "Cmd_unknown_16_49",
+    (22, 74) : "Cmd_unknown_16_4A",
+    (22, 75) : "Cmd_unknown_16_4B",
+    (22, 76) : "Cmd_unknown_16_4C",
+    (22, 77) : "Cmd_unknown_16_4D",
+    (22, 78) : "Cmd_unknown_16_4E",
+    (22, 80) : "Cmd_unknown_16_50",
+    (22, 81) : "Cmd_unknown_16_51",
+    (22, 82) : "Cmd_unknown_16_52",
+    (22, 83) : "Cmd_unknown_16_53",
+    (22, 84) : "Cmd_unknown_16_54",
+    (22, 85) : "Cmd_unknown_16_55",
+    (22, 86) : "Cmd_unknown_16_56",
+    (22, 87) : "Cmd_unknown_16_57",
+    (22, 88) : "Cmd_unknown_16_58",
+    (22, 89) : "Cmd_unknown_16_59",
+    (22, 90) : "Cmd_unknown_16_5A",
+    (22, 91) : "Cmd_unknown_16_5B",
+    (22, 92) : "Cmd_unknown_16_5C",
+    (22, 93) : "Cmd_unknown_16_5D",
+    (22, 94) : "Cmd_unknown_16_5E",
+    (22, 95) : "Cmd_unknown_16_5F",
+    (22, 96) : "Cmd_unknown_16_60",
+    (22, 97) : "Cmd_unknown_16_61",
+    (22, 98) : "Cmd_unknown_16_62",
+    (22, 99) : "Cmd_unknown_16_63",
+    (22, 100) : "Cmd_unknown_16_64",
+    (22, 101) : "Cmd_unknown_16_65",
+    (22, 102) : "Cmd_unknown_16_66",
+    (22, 103) : "Cmd_unknown_16_67",
+    (22, 104) : "Cmd_unknown_16_68",
+    (22, 105) : "Cmd_unknown_16_69",
+    (22, 106) : "Cmd_unknown_16_6A",
+    (22, 107) : "Cmd_unknown_16_6B",
+    (22, 108) : "Cmd_unknown_16_6C",
+    (22, 109) : "Cmd_unknown_16_6D",
+    (22, 110) : "Cmd_unknown_16_6E",
+    (22, 111) : "Cmd_unknown_16_6F",
+    (22, 112) : "Cmd_unknown_16_70",
+    (22, 113) : "Cmd_unknown_16_71",
+    (22, 117) : "Cmd_unknown_16_75",
+    (22, 118) : "Cmd_unknown_16_76",
+    (22, 119) : "Cmd_unknown_16_77",
+    (22, 120) : "Cmd_unknown_16_78",
+    (22, 121) : "Cmd_unknown_16_79",
+    (22, 123) : "Cmd_unknown_16_7B",
+    (22, 124) : "Cmd_unknown_16_7C",
+    (22, 125) : "Cmd_unknown_16_7D",
+    (22, 128) : "Cmd_unknown_16_80",
+    (22, 129) : "Cmd_unknown_16_81",
+    (22, 130) : "Cmd_unknown_16_82",
+    (22, 132) : "Cmd_unknown_16_84",
+    (22, 133) : "Cmd_unknown_16_85",
+    (22, 134) : "Cmd_unknown_16_86",
+    (22, 135) : "Cmd_unknown_16_87",
+    (22, 139) : "Cmd_unknown_16_8B",
+    (22, 140) : "Cmd_unknown_16_8C",
+    (22, 141) : "Cmd_unknown_16_8D",
+    (22, 142) : "Cmd_unknown_16_8E",
+    (22, 143) : "Cmd_unknown_16_8F",
+    (22, 144) : "Cmd_unknown_16_90",
+    (26, 11) : "Cmd_unknown_1A_0B",
+    (26, 12) : "Cmd_unknown_1A_0C",
+    (26, 13) : "Cmd_unknown_1A_0D",
+    (26, 14) : "Cmd_unknown_1A_0E",
+    (26, 15) : "Cmd_unknown_1A_0F",
+    (26, 16) : "Cmd_unknown_1A_10",
+    (26, 19) : "Cmd_unknown_1A_13",
+    (26, 20) : "Cmd_unknown_1A_14",
+    (26, 21) : "Cmd_unknown_1A_15",
+    (26, 22) : "Cmd_unknown_1A_16",
+    (26, 23) : "Cmd_unknown_1A_17",
+    (26, 24) : "Cmd_unknown_1A_18",
+    (26, 25) : "Cmd_unknown_1A_19",
+    (26, 26) : "Cmd_unknown_1A_1A",
+    (26, 33) : "Cmd_unknown_1A_21",
+    (26, 37) : "Cmd_unknown_1A_25",
+    (26, 38) : "Cmd_unknown_1A_26",
+    (26, 39) : "Cmd_unknown_1A_27",
+    (26, 41) : "Cmd_unknown_1A_29",
+    (26, 44) : "Cmd_unknown_1A_2C",
+    (26, 48) : "Cmd_unknown_1A_30",
+    (26, 49) : "Cmd_unknown_1A_31",
+    (26, 50) : "Cmd_unknown_1A_32",
+    (26, 51) : "Cmd_unknown_1A_33",
+    (26, 53) : "Cmd_unknown_1A_35",
+    (26, 55) : "Cmd_unknown_1A_37",
+    (26, 56) : "Cmd_unknown_1A_38",
+    (26, 57) : "Cmd_unknown_1A_39",
+    (26, 58) : "Cmd_unknown_1A_3A",
+    (26, 59) : "Cmd_unknown_1A_3B",
+    (26, 60) : "Cmd_unknown_1A_3C",
+    (26, 61) : "Cmd_unknown_1A_3D",
+    (26, 62) : "Cmd_unknown_1A_3E",
+    (26, 63) : "Cmd_unknown_1A_3F",
+    (26, 64) : "Cmd_unknown_1A_40",
+    (26, 65) : "Cmd_unknown_1A_41",
+    (26, 66) : "Cmd_unknown_1A_42",
+    (26, 67) : "Cmd_unknown_1A_43",
+    (26, 68) : "Cmd_unknown_1A_44",
+    (26, 69) : "Cmd_unknown_1A_45",
+    (26, 70) : "Cmd_unknown_1A_46",
+    (26, 71) : "Cmd_unknown_1A_47",
+    (26, 72) : "Cmd_unknown_1A_48",
+    (26, 73) : "Cmd_unknown_1A_49",
+    (28, 15) : "Cmd_unknown_1C_0F",
     }
 
     reverse_commands_dict =  {v: k for k, v in commands_dict.items()}
@@ -517,6 +681,7 @@ location_counter = 0
 smallest_data_ptr = sys.maxsize #big enough
 commands_dict = {}
 reverse_commands_dict = {}
+discovered_commands = set()
 
 init_command_names_dicts()
 
@@ -709,6 +874,30 @@ def OP_23(instr, stream):
     nb_args = readint(stream, 1); instr.operands.append(operand(nb_args, False))
     instr.name = "CALLFROMANOTHERSCRIPT2"
 
+def register_discovered_command(structID, command_op_code):
+    """Регистрирует неизвестную (structID, cmd) в обоих словарях под сгенерированным
+    именем, чтобы дизассемблер не падал, а ассемблер мог собрать обратно (round-trip).
+    Найденные опкоды дописывает в файл из env KYOTO_OPCODE_LOG."""
+    global commands_dict, reverse_commands_dict, discovered_commands
+    key = (structID, command_op_code)
+    base = f"Cmd_unknown_{structID:02X}_{command_op_code:02X}"
+    name = base
+    n = 1
+    while name in reverse_commands_dict and reverse_commands_dict[name] != key:
+        name = f"{base}_dup{n}"
+        n += 1
+    commands_dict[key] = name
+    reverse_commands_dict[name] = key
+    if key not in discovered_commands:
+        discovered_commands.add(key)
+        import os as _os
+        log_path = _os.environ.get("KYOTO_OPCODE_LOG")
+        if log_path:
+            with open(log_path, "a", encoding="utf-8") as f:
+                f.write(f"{structID} {command_op_code} {name}\n")
+    return name
+
+
 def OP_24(instr, stream):
     global commands_dict
     structID = readint(stream, 1)
@@ -720,7 +909,7 @@ def OP_24(instr, stream):
     if command_key in commands_dict:
         instr.operands.append(operand(commands_dict[command_key], False))
     else:
-        raise KeyError(command_key)
+        instr.operands.append(operand(register_discovered_command(structID, command_op_code), False))
 
 def OP_25(instr, stream):
     global location_counter, locations_dict

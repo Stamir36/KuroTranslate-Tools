@@ -3,7 +3,7 @@
 Обновляется после каждого этапа. При возобновлении сессии — читать первым.
 
 ## Текущий этап
-**Этап 4 — disasm→assemble round-trip сценариев (.dat)** (следующий к запуску).
+**Этап 5 — таблицы (.tbl): схемы + json→tbl round-trip** (следующий к запуску).
 
 ## Сделано
 - **Этап 0**: создано дерево `work/{reports,translation_map,logs,backup,extract,repack_check,decompiled,tbl_json}`; бэкап форка → `work/backup/KuroTools_baseline/`; окружение — Python 3.10.11.
@@ -17,8 +17,13 @@
 
 - **Этап 3**: ГОТОВО — пустой diff байт-в-байт на всех трёх архивах собственным `work/tools/pack_fpac.py`. FPACker не 1:1 на table (28/844). Выведен natural-sort (числа сравниваются лексикографически, регистронезависимо). Отчёт: `work/logs/STAGE_3_REPORT.md`.
 
+- **Этап 4**: disasm работает на 756/756; дописано 162 опкода Kyoto; исправлены маркеры (нужен `--markers True`) и дедуп строк. Размер файла и код+строки восстанавливаются, но ПОЛНЫЙ байт-в-байт НЕ достигнут (остаток — слоты varout/struct-указателей). См. `work/logs/STAGE_4_REPORT.md` (§5 BLOCKED-остаток).
+
 ## Следующий шаг
-Этап 4: на 3–5 образцах `work/extract/script/scena/*.dat` прогнать disasm-режим KuroTools (`dat2py.py`, `--decompile False`) и `dat2py_batch.py`; при KeyError — дописать опкоды; добиться assemble→byte-identical для нETронутых образцов, затем пакетно по 756 scena/. Релизный канал — disasm. `scene.pac` — по согласованию, в конце.
+Этап 5: `tbl2json.py` по всем 844 `work/extract/table/*.tbl` (с `-g Kyoto` при необходимости); список падений; для падений — новые схемы по `DOCS/How to make a schema.md` (`schemas/kyoto_xanadu_*`); `json2tbl.py` → байт-в-байт по каждой .tbl. Отчёт: покрытие схемами.
+
+## Открытый BLOCKED
+- Этап 4: не байт-в-байт (указатели varout/struct на равные строки в разных ячейках). Функционально корректно, но требует доработки порядка строк.
 
 ## Открытые проблемы / риски
 - Формат FPAC известен из README apstрима: заголовок 16 байт (`FPAC`, n_files, first_addr, unk=1); записи 32 байта, CRC32(имени)^0xFFFFFFFF, сортировка по CRC; строки имён и данные — natural sort. Точную обратимость проверим на Этапе 3.

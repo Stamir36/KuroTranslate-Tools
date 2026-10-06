@@ -35,3 +35,13 @@
 - `python work/tools/pack_fpac.py work/extract/<p> ... --prefix <p>` → 0 :: таблица/script/scene **byte-identical** с оригиналами (cmp совпал).
 - `FPACker.exe pack` для script/scene → byte-identical; для table — DIFFER.
 - Распаковка `table_mine.pac` и `diff -r` → **FILES IDENTICAL**.
+- `git commit` → 0 :: commit 5c0b290.
+
+### ЭТАП 4 — сценарии (.dat)
+- `dat2py.py --decompile False 00_00_00.dat` → KeyError (18,22) :: нужны опкоды Kyoto.
+- Добавлен `register_discovered_command` в `ED9InstructionsSet.py` → 0 :: сбор 162 опкодов.
+- `scan_opcodes.py scena` → 756/756 OK, 162 уникальных опкодов (лог в work/logs).
+- Запечены 162 опкода в статический словарь → py_compile OK, словарь 1698 записей.
+- `roundtrip_dat.py` → DIFF; расследование: `opcode_bytes.py` выявил потерю 3807 байт на opcode 0x26 (ADDLINEMARKER) → нужен `--markers True`.
+- Исправлен размер: code_len 45116 совпал; затем добавлен дедуп struct params → размер файла совпал (97650).
+- Батч 60 файлов → 60 DIFF, размеры совпадают, 0 ошибок. Остаток: слоты varout/sparam-указателей. Статус — частичный (см. STAGE_4_REPORT.md §5).

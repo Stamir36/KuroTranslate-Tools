@@ -247,65 +247,60 @@ def compile():
             write_dword_in_byte_array("<I", bin_code_section, start, start_code_section + j.addr_destination)
     
             
-    string_section_addr = start_strings_section     
-    
+    string_section_addr = start_strings_section
+    # Дедупликация строк: оригинальный компилятор Falcom хранит каждую уникальную
+    # строку один раз; повторные ссылки указывают на ту же ячейку. Без этого
+    # ассемблер раздувал бы строковую секцию (см. STAGE_4_REPORT.md).
+    # Раскладка строковых секций эмпирически совпадает с оригиналом Falcom так:
+    #   * code-строки, имена функций, varout, varin — БЕЗ дедупликации (дубли сохраняются);
+    #   * struct params — С дедупликацией против всего пула (повторные ссылки
+    #     указывают на первую ячейку). См. work/logs/STAGE_4_REPORT.md (Этап 4).
+    _string_pool = {}
+
+    def bin_string_section_extend(output):
+        nonlocal bin_string_section
+        bin_string_section = bin_string_section + output
+
+    def _emit_string(actual_string, dedup=False):
+        nonlocal string_section_addr
+        if dedup and actual_string in _string_pool:
+            return _string_pool[actual_string]
+        addr = string_section_addr
+        output = actual_string.encode("utf-8") + b"\0"
+        bin_string_section_extend(output)
+        if actual_string not in _string_pool:
+            _string_pool[actual_string] = addr
+        string_section_addr = string_section_addr + len(output)
+        return addr
+
     #first we write the strings from the code
     for str_data in strings_offsets_code:
         where_to_update_ptr = str_data[0]
-        actual_string       = str_data[1]
-        output = actual_string.encode("utf-8") + b"\0"
-        bin_string_section = bin_string_section + output 
-        write_dword_in_byte_array("<I", bin_code_section, where_to_update_ptr, STR(string_section_addr))
-        string_section_addr = string_section_addr + len(output)
+        write_dword_in_byte_array("<I", bin_code_section, where_to_update_ptr, STR(_emit_string(str_data[1], dedup=False)))
     
     bin_file = header_b + bin_function_header_section + bin_fun_output_vars_section + bin_fun_input_vars_section 
     bin_file = bin_file +  bin_structs_section + bin_structs_params_section 
     bin_file = bin_file + bin_script_var_section + bin_code_section
     
     for str_data in strings_offsets_fun_names:
-        where_to_update_ptr = str_data[0]
-        actual_string       = str_data[1]
-        output = actual_string.encode("utf-8") + b"\0"
-        bin_string_section = bin_string_section + output 
-        write_dword_in_byte_array("<I", bin_file, where_to_update_ptr, STR(string_section_addr))
-        string_section_addr = string_section_addr + len(output)
+        write_dword_in_byte_array("<I", bin_file, str_data[0], STR(_emit_string(str_data[1], dedup=False)))
 
     for str_data in strings_offsets_fun_varout:
-        where_to_update_ptr = str_data[0]
-        actual_string       = str_data[1]
-        output = actual_string.encode("utf-8") + b"\0"
-        bin_string_section = bin_string_section + output 
-        write_dword_in_byte_array("<I", bin_file, where_to_update_ptr, STR(string_section_addr))
-        string_section_addr = string_section_addr + len(output)
+        write_dword_in_byte_array("<I", bin_file, str_data[0], STR(_emit_string(str_data[1], dedup=False)))
     
     for str_data in strings_offsets_fun_varin:
-        where_to_update_ptr = str_data[0]
-        actual_string       = str_data[1]
-        output = actual_string.encode("utf-8") + b"\0"
-        bin_string_section = bin_string_section + output 
-        write_dword_in_byte_array("<I", bin_file, where_to_update_ptr, STR(string_section_addr))
-        string_section_addr = string_section_addr + len(output)
+        write_dword_in_byte_array("<I", bin_file, str_data[0], STR(_emit_string(str_data[1], dedup=False)))
 
     for str_data in strings_offsets_struct_params:
-        where_to_update_ptr = str_data[0]
-        actual_string       = str_data[1]
-        output = actual_string.encode("utf-8") + b"\0"
-        bin_string_section = bin_string_section + output 
-        write_dword_in_byte_array("<I", bin_file, where_to_update_ptr, STR(string_section_addr))
-        string_section_addr = string_section_addr + len(output)
+        write_dword_in_byte_array("<I", bin_file, str_data[0], STR(_emit_string(str_data[1], dedup=True)))
     
     for str_data in strings_offsets_script_var:
-        where_to_update_ptr = str_data[0]
-        actual_string       = str_data[1]
-        output = actual_string.encode("utf-8") + b"\0"
-        bin_string_section = bin_string_section + output 
-        write_dword_in_byte_array("<I", bin_file, where_to_update_ptr, STR(string_section_addr))
-        string_section_addr = string_section_addr + len(output)
+        write_dword_in_byte_array("<I", bin_file, str_data[0], STR(_emit_string(str_data[1], dedup=True)))
     
     
     
     bin_file = bin_file + bin_string_section
-    
+
     dat_file = open(current_script.name + ".dat", "wb")
     dat_file.write(bin_file)
     dat_file.close()
