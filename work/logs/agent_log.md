@@ -61,3 +61,8 @@
 ### ЭТАП 6 — карта перевода
 - `python work/tools/build_translation_map.py` → 0 :: scripts=46606, tables=21363, total 67969; `work/translation_map/{scripts,tables}.jsonl` + `MAP_INDEX.csv`.
 - `python work/tools/analyze_map.py` → 0 :: уникальных строк 29395 (script 11230 + tbl 18252); scena=41766, ai=1167, ani=3665, obj=8.
+
+### ЭТАП 7 — пайплайн сборки + RUNBOOK + итоговый отчёт
+- `python work/tools/build_pacs.py --verify` → 0 :: table/script/scene пересобраны из work/extract, все три **EXACT** (байт-в-байт с оригиналами).
+- Созданы `work/RUNBOOK.md` и `work/reports/REPORT.md`.
+- Итог: архивы EXACT; таблицы 842/844 EXACT; карта 67969 строк; .dat — функционально (нужен игровой тест).

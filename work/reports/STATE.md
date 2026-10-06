@@ -3,7 +3,10 @@
 Обновляется после каждого этапа. При возобновлении сессии — читать первым.
 
 ## Текущий этап
-**Этап 6 — карта перевода** (следующий к запуску).
+**ВСЕ ЭТАПЫ 0–7 ЗАВЕРШЕНЫ.** Техническая база готова; далее — перевод и игровой тест.
+- Карта перевода: `work/translation_map/` (67 969 записей, 29 395 уникальных).
+- Пайплайн сборки: `work/tools/build_pacs.py` (3 архива EXACT).
+- RUNBOOK: `work/RUNBOOK.md`; итоговый отчёт: `work/reports/REPORT.md`.
 
 ## Сделано
 - **Этап 0**: создано дерево `work/{reports,translation_map,logs,backup,extract,repack_check,decompiled,tbl_json}`; бэкап форка → `work/backup/KuroTools_baseline/`; окружение — Python 3.10.11.
@@ -21,8 +24,12 @@
 
 - **Этап 5**: ГОТОВО — round-trip таблиц **842/844 byte-exact (99.8%)**, 0 ошибок (было 90.0%). Устранены 3 бага `tbl2json.py`/`json2tbl.py`/`lib/parser.py` (потеря хвостового пула, потеря `length` у пустых таблиц, зацикливание на битом указателе) + O(n²)-дамп хвоста. 844 JSON сгенерированы. Отчёт: `work/logs/STAGE_5_REPORT.md`.
 
+- **Этап 6**: ГОТОВО — карта перевода: `scripts.jsonl` (46 606), `tables.jsonl` (21 363), `MAP_INDEX.csv`; уникальных 29 395. Отчёт: `work/logs/STAGE_6_REPORT.md`.
+
+- **Этап 7**: ГОТОВО — пайплайн сборки `work/tools/build_pacs.py` (все 3 архива **EXACT**), `work/RUNBOOK.md`, итоговый `work/reports/REPORT.md`.
+
 ## Следующий шаг
-Этап 6: `work/tools/build_translation_map.py` — собрать карту перевода (scripts.jsonl + tables.jsonl + MAP_INDEX.csv) из `work/extract/script/**/*.dat` и `work/tbl_json/*.json`.
+Перевод строк из `work/translation_map/` + `work/tbl_json/`, затем сборка (`json2tbl`, `py2dat_batch`) и игровой тест. См. §8 в `work/reports/REPORT.md`.
 
 ## Открытый BLOCKED
 - Этап 4: не байт-в-байт (указатели varout/struct на равные строки в разных ячейках). Функционально корректно, но требует доработки порядка строк.
