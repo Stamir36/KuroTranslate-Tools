@@ -51,6 +51,16 @@ TBL_DISASSEMBLE_SCRIPT = "tbl2json.py"
 TBL_ASSEMBLE_SCRIPT = "json2tbl.py"
 TBL_STRINGS_XLIFF_FILE = "tbl_strings.xliff" # Combined XLIFF file in MAIN_PATH
 TBL_XLIFF_FILE_PATH = os.path.join(MAIN_PATH, TBL_STRINGS_XLIFF_FILE)
+# --- TBL strings <-> TSV (для перевода через чатовые ИИ) ---
+TBL_STRINGS_MAP_SCRIPT = "strings_map.py"
+TBL_STRINGS_TSV = os.path.join(MAIN_PATH, "strings.tsv")
+# --- PAC (FPAC) Constants ---
+PAC_TOOLS_SCRIPT = "pac_tools.py"
+PAC_TOOLS_PATH = os.path.join(MAIN_PATH, PAC_TOOLS_SCRIPT)
+PAC_UNPACK_FOLDER = "pac_unpacked"   # Куда распаковываются .pac
+PAC_PACKED_FOLDER = "pac_packed"     # Куда собираются .pac
+# Игра (вариант схемы) для .tbl: соответствует параметру -g tbl2json.py.
+TBL_GAME_OPTIONS = ["Kyoto", "Kai", "Kuro1", "Kuro2", "Sora1", "Ys_X", "Авто"]
 # --- TBL String Filter Constants ---
 TBL_MIN_STRING_LENGTH = 3     # Min length for extraction
 TBL_REQUIRE_SPACE = True      # Require space (unless non-ASCII)
@@ -194,6 +204,32 @@ LANGUAGES = {
         'error_tbl_parse_no_xliff': "ERROR: XLIFF file not found for injection: {filename}",
         'error_tbl_parse_no_map': "ERROR: Could not load translations from XLIFF: {filename}",
         # --- END TBL Strings ---
+        # --- PAC Strings ---
+        'pac_files_label': "PAC archives (FPAC)",
+        'button_pac_unpack': "Unpack .pac",
+        'button_pac_pack': "Pack archive (.pac)",
+        'button_pac_info': "Archive info",
+        'pac_unpack_prompt_log': "Selecting a .pac archive to unpack...",
+        'pac_unpack_prompt_title': "Unpack .pac - select archive",
+        'pac_unpack_done_log': "Unpacked to: {path}",
+        'pac_pack_prompt_log': "Selecting a folder to pack into .pac...",
+        'pac_pack_prompt_title': "Pack .pac - select folder",
+        'pac_pack_done_log': "Archive written to: {path}",
+        'pac_cancel_log': "Selection cancelled.",
+        'pac_pack_prefix_prompt': "Archive name prefix (folder name inside .pac):",
+        'status_pac_unpacking': "Status: Unpacking .pac archive...",
+        'status_pac_packing': "Status: Packing .pac archive...",
+        'game_select_label': "TBL game (schema):",
+        'error_pac_tools_missing': "ERROR: pac_tools.py not found: {path}",
+        'game_auto': "Авто",
+        'button_strings_export': "Strings -> TSV (for AI)",
+        'button_strings_import': "Translation TSV -> strings",
+        'strings_export_log': "Exporting strings to: {path}",
+        'strings_import_log': "Importing translations from: {path}",
+        'status_strings_exporting': "Status: Exporting strings to TSV...",
+        'status_strings_importing': "Status: Importing translations from TSV...",
+        'error_tsv_missing': "ERROR: TSV file not found: {path}",
+        # --- END PAC Strings ---
     },
     'ru': {
         'title': "KuroTranslate Tools",
@@ -321,6 +357,32 @@ LANGUAGES = {
         'error_tbl_parse_no_xliff': "ОШИБКА: XLIFF файл не найден для внедрения: {filename}",
         'error_tbl_parse_no_map': "ОШИБКА: Не удалось загрузить переводы из XLIFF: {filename}",
         # --- END TBL Strings ---
+        # --- PAC Strings ---
+        'pac_files_label': "PAC архивы (FPAC)",
+        'button_pac_unpack': "Распаковать .pac",
+        'button_pac_pack': "Собрать .pac",
+        'button_pac_info': "Информация об архиве",
+        'pac_unpack_prompt_log': "Выбор .pac архива для распаковки...",
+        'pac_unpack_prompt_title': "Распаковать .pac - выберите архив",
+        'pac_unpack_done_log': "Распаковано в: {path}",
+        'pac_pack_prompt_log': "Выбор папки для сборки в .pac...",
+        'pac_pack_prompt_title': "Собрать .pac - выберите папку",
+        'pac_pack_done_log': "Архив записан в: {path}",
+        'pac_cancel_log': "Выбор отменён.",
+        'pac_pack_prefix_prompt': "Префикс имён внутри архива (папка внутри .pac):",
+        'status_pac_unpacking': "Статус: Распаковка .pac архива...",
+        'status_pac_packing': "Статус: Сборка .pac архива...",
+        'game_select_label': "Игра (схема) для TBL:",
+        'error_pac_tools_missing': "ОШИБКА: pac_tools.py не найден: {path}",
+        'game_auto': "Авто",
+        'button_strings_export': "Строки -> TSV (для ИИ)",
+        'button_strings_import': "Перевод TSV -> строки",
+        'strings_export_log': "Экспорт строк в: {path}",
+        'strings_import_log': "Импорт перевода из: {path}",
+        'status_strings_exporting': "Статус: Экспорт строк в TSV...",
+        'status_strings_importing': "Статус: Импорт перевода из TSV...",
+        'error_tsv_missing': "ОШИБКА: TSV файл не найден: {path}",
+        # --- END PAC Strings ---
     }
 }
 
@@ -340,7 +402,7 @@ class App(customtkinter.CTk):
             tkinter.messagebox.showerror(title,msg)
             sys.exit(1)
         xliff_dat_path=os.path.join(MAIN_PATH,"data_game_strings.xliff")
-        self.script_definitions={'1_disassemble':("dat2py_batch.py",[]),'2_extract':("py_to_xliff.py",[]),'3_edit':("xliff_editor_gui.py",[xliff_dat_path]),'4_create_map':("inject_translations.py",[]),'5_compile':("py2dat_batch.py",[]),'tbl_disassemble_check':(TBL_DISASSEMBLE_SCRIPT,[]),'tbl_assemble_check':(TBL_ASSEMBLE_SCRIPT,[]),'tbl_xliff_edit_check':("xliff_editor_gui.py",[])}
+        self.script_definitions={'1_disassemble':("dat2py_batch.py",[]),'2_extract':("py_to_xliff.py",[]),'3_edit':("xliff_editor_gui.py",[xliff_dat_path]),'4_create_map':("inject_translations.py",[]),'5_compile':("py2dat_batch.py",[]),'tbl_disassemble_check':(TBL_DISASSEMBLE_SCRIPT,[]),'tbl_assemble_check':(TBL_ASSEMBLE_SCRIPT,[]),'tbl_xliff_edit_check':("xliff_editor_gui.py",[]),'pac_unpack':("pac_tools.py",[]),'pac_pack':("pac_tools.py",[]),'pac_info':("pac_tools.py",[]),'strings_export':("strings_map.py",[]),'strings_import':("strings_map.py",[])}
         self.dat_button_order=['1_disassemble','2_extract','3_edit','4_create_map','5_compile']
         self.title(self.get_string('title'))
         self.geometry(f"{1100}x720")
@@ -398,6 +460,36 @@ class App(customtkinter.CTk):
         self.tbl_xliff_edit_button=customtkinter.CTkButton(self.button_frame,text=self.get_string('button_tbl_edit'),command=lambda: self.run_script_thread('tbl_xliff_edit_check',extra_args=[]))
         self.tbl_xliff_edit_button.grid(row=row,column=0,columnspan=2,padx=20,pady=(5,5),sticky="ew")
         self.buttons['tbl_xliff_edit']=self.tbl_xliff_edit_button
+        row+=1
+        self.strings_export_button=customtkinter.CTkButton(self.button_frame,text=self.get_string('button_strings_export'),command=self.run_strings_export)
+        self.strings_export_button.grid(row=row,column=0,columnspan=2,padx=20,pady=(5,5),sticky="ew")
+        self.buttons['strings_export']=self.strings_export_button
+        row+=1
+        self.strings_import_button=customtkinter.CTkButton(self.button_frame,text=self.get_string('button_strings_import'),command=self.run_strings_import)
+        self.strings_import_button.grid(row=row,column=0,columnspan=2,padx=20,pady=(5,5),sticky="ew")
+        self.buttons['strings_import']=self.strings_import_button
+        row+=1
+        # --- PAC (FPAC) section ---
+        self.pac_label=customtkinter.CTkLabel(self.button_frame,text=self.get_string('pac_files_label'),font=customtkinter.CTkFont(weight="bold"))
+        self.pac_label.grid(row=row,column=0,columnspan=2,padx=20,pady=(15,10),sticky="ew")
+        row+=1
+        self.pac_unpack_button=customtkinter.CTkButton(self.button_frame,text=self.get_string('button_pac_unpack'),command=self.run_pac_unpack)
+        self.pac_unpack_button.grid(row=row,column=0,padx=(20,5),pady=(5,5),sticky="ew")
+        self.buttons['pac_unpack']=self.pac_unpack_button
+        self.pac_pack_button=customtkinter.CTkButton(self.button_frame,text=self.get_string('button_pac_pack'),command=self.run_pac_pack)
+        self.pac_pack_button.grid(row=row,column=1,padx=(5,20),pady=(5,5),sticky="ew")
+        self.buttons['pac_pack']=self.pac_pack_button
+        row+=1
+        self.pac_info_button=customtkinter.CTkButton(self.button_frame,text=self.get_string('button_pac_info'),command=self.run_pac_info)
+        self.pac_info_button.grid(row=row,column=0,columnspan=2,padx=20,pady=(5,5),sticky="ew")
+        self.buttons['pac_info']=self.pac_info_button
+        row+=1
+        # --- TBL game (schema) selector ---
+        self.game_label=customtkinter.CTkLabel(self.button_frame,text=self.get_string('game_select_label'),anchor="w")
+        self.game_label.grid(row=row,column=0,padx=(20,5),pady=(5,5),sticky="w")
+        self.game_combo=customtkinter.CTkComboBox(self.button_frame,values=TBL_GAME_OPTIONS)
+        self.game_combo.set("Kyoto")
+        self.game_combo.grid(row=row,column=1,padx=(5,20),pady=(5,5),sticky="ew")
         row+=1
         self.lang_label=customtkinter.CTkLabel(self.button_frame,text=self.get_string('lang_select_label'),anchor="w")
         self.lang_label.grid(row=row,column=0,padx=(20,5),pady=(15,5),sticky="w")
@@ -502,6 +594,8 @@ class App(customtkinter.CTk):
             self.set_status(self.get_string('status_idle'))
         if hasattr(self,'dat_label'): self.dat_label.configure(text=self.get_string('dat_files_label'))
         if hasattr(self,'tbl_label'): self.tbl_label.configure(text=self.get_string('tbl_files_label'))
+        if hasattr(self,'pac_label'): self.pac_label.configure(text=self.get_string('pac_files_label'))
+        if hasattr(self,'game_label'): self.game_label.configure(text=self.get_string('game_select_label'))
         if hasattr(self,'lang_label'): self.lang_label.configure(text=self.get_string('lang_select_label'))
         for sid in self.dat_button_order:
             bkey=f"button_{sid}"
@@ -514,6 +608,11 @@ class App(customtkinter.CTk):
         if hasattr(self,'tbl_parse_button'): self.tbl_parse_button.configure(text=self.get_string('button_tbl_parse_json_xliff'))
         if hasattr(self,'open_parser_button'): self.open_parser_button.configure(text=self.get_string('button_open_parser'))
         if hasattr(self,'tbl_xliff_edit_button'): self.tbl_xliff_edit_button.configure(text=self.get_string('button_tbl_edit'))
+        if hasattr(self,'pac_unpack_button'): self.pac_unpack_button.configure(text=self.get_string('button_pac_unpack'))
+        if hasattr(self,'pac_pack_button'): self.pac_pack_button.configure(text=self.get_string('button_pac_pack'))
+        if hasattr(self,'pac_info_button'): self.pac_info_button.configure(text=self.get_string('button_pac_info'))
+        if hasattr(self,'strings_export_button'): self.strings_export_button.configure(text=self.get_string('button_strings_export'))
+        if hasattr(self,'strings_import_button'): self.strings_import_button.configure(text=self.get_string('button_strings_import'))
         if hasattr(self,'terminate_button'): self.terminate_button.configure(text=self.get_string('terminate_button'))
 
     def check_scripts_exist(self):
@@ -576,6 +675,18 @@ class App(customtkinter.CTk):
         tbl_d_ok=os.path.isfile(os.path.join(MAIN_PATH,TBL_DISASSEMBLE_SCRIPT))
         tbl_a_ok=os.path.isfile(os.path.join(MAIN_PATH,TBL_ASSEMBLE_SCRIPT))
         self.buttons.get('tbl_parse_json_xliff',{}).configure(state="normal" if tbl_d_ok and tbl_a_ok else "disabled")
+        pac_ok=os.path.isfile(PAC_TOOLS_PATH)
+        for pk in ('pac_unpack','pac_pack','pac_info'):
+            b=self.buttons.get(pk)
+            if b is not None:
+                b.configure(state="normal" if pac_ok else "disabled", fg_color=("#3B8ED0","#1F6AA5") if pac_ok else "gray")
+        if not pac_ok and log:
+            mlog.append(self.get_string('error_pac_tools_missing',path=PAC_TOOLS_PATH))
+        sm_ok=os.path.isfile(os.path.join(MAIN_PATH,TBL_STRINGS_MAP_SCRIPT))
+        for sk in ('strings_export','strings_import'):
+            b=self.buttons.get(sk)
+            if b is not None:
+                b.configure(state="normal" if sm_ok else "disabled", fg_color=("#3B8ED0","#1F6AA5") if sm_ok else "gray")
         if log:
             for msg in mlog:
                 self.log_message(msg,tags=("error_log",))
@@ -704,6 +815,116 @@ class App(customtkinter.CTk):
                 tkinter.messagebox.showwarning(self.get_string('compile_mode_title'),self.get_string('compile_mode_invalid'))
             return
         self.run_script_thread(script_id,extra_args=[carg])
+
+    # --- TBL strings <-> TSV ---
+    def run_strings_export(self):
+        if self.is_running:
+            tkinter.messagebox.showwarning(self.get_string('warn_already_running'), self.get_string('warn_already_running_msg'))
+            return
+        if not os.path.isdir(TBL_JSON_FOLDER_PATH):
+            err = self.get_string('error_source_folder_not_found', path=TBL_JSON_FOLDER_PATH)
+            self.log_message(err, tags=("error_log",)); tkinter.messagebox.showerror(self.get_string('warning_title'), err)
+            return
+        self.set_status(self.get_string('status_strings_exporting'))
+        self.log_message(self.get_string('strings_export_log', path=TBL_STRINGS_TSV))
+        self.run_script_thread('strings_export', extra_args=['export', TBL_JSON_FOLDER_PATH, TBL_STRINGS_TSV])
+
+    def run_strings_import(self):
+        if self.is_running:
+            tkinter.messagebox.showwarning(self.get_string('warn_already_running'), self.get_string('warn_already_running_msg'))
+            return
+        if not os.path.isfile(TBL_STRINGS_TSV):
+            err = self.get_string('error_tsv_missing', path=TBL_STRINGS_TSV)
+            self.log_message(err, tags=("error_log",)); tkinter.messagebox.showerror(self.get_string('warning_title'), err)
+            return
+        if not os.path.isdir(TBL_JSON_FOLDER_PATH):
+            err = self.get_string('error_source_folder_not_found', path=TBL_JSON_FOLDER_PATH)
+            self.log_message(err, tags=("error_log",)); tkinter.messagebox.showerror(self.get_string('warning_title'), err)
+            return
+        self.set_status(self.get_string('status_strings_importing'))
+        self.log_message(self.get_string('strings_import_log', path=TBL_STRINGS_TSV))
+        self.run_script_thread('strings_import', extra_args=['import', TBL_JSON_FOLDER_PATH, TBL_STRINGS_TSV])
+
+    # --- PAC (FPAC) actions ---
+    def _get_tbl_game(self):
+        g = self.game_combo.get() if hasattr(self, 'game_combo') else 'Kyoto'
+        if g in ('Авто', 'Auto', ''):
+            return None
+        return g
+
+    def _pac_tools_ok(self):
+        if not os.path.isfile(PAC_TOOLS_PATH):
+            msg = self.get_string('error_pac_tools_missing', path=PAC_TOOLS_PATH)
+            self.log_message(msg, tags=("error_log",))
+            tkinter.messagebox.showerror(self.get_string('warning_title'), msg)
+            return False
+        return True
+
+    def run_pac_unpack(self):
+        if self.is_running:
+            tkinter.messagebox.showwarning(self.get_string('warn_already_running'), self.get_string('warn_already_running_msg'))
+            return
+        if not self._pac_tools_ok():
+            return
+        self.log_message(self.get_string('pac_unpack_prompt_log'))
+        fpath = tkinter.filedialog.askopenfilename(
+            title=self.get_string('pac_unpack_prompt_title'), initialdir=MAIN_PATH,
+            filetypes=[("FPAC archives", "*.pac"), ("All files", "*.*")])
+        if not fpath:
+            self.log_message(self.get_string('pac_cancel_log'))
+            return
+        stem = os.path.splitext(os.path.basename(fpath))[0]
+        out = os.path.join(MAIN_PATH, PAC_UNPACK_FOLDER, stem)
+        os.makedirs(out, exist_ok=True)
+        self.log_message(self.get_string('pac_unpack_done_log', path=out))
+        self.set_status(self.get_string('status_pac_unpacking'))
+        self.run_script_thread('pac_unpack', extra_args=['unpack', fpath, out])
+
+    def run_pac_pack(self):
+        if self.is_running:
+            tkinter.messagebox.showwarning(self.get_string('warn_already_running'), self.get_string('warn_already_running_msg'))
+            return
+        if not self._pac_tools_ok():
+            return
+        self.log_message(self.get_string('pac_pack_prompt_log'))
+        fpath = tkinter.filedialog.askdirectory(
+            title=self.get_string('pac_pack_prompt_title'),
+            initialdir=os.path.join(MAIN_PATH, PAC_UNPACK_FOLDER) if os.path.isdir(os.path.join(MAIN_PATH, PAC_UNPACK_FOLDER)) else MAIN_PATH)
+        if not fpath:
+            self.log_message(self.get_string('pac_cancel_log'))
+            return
+        name = os.path.basename(os.path.normpath(fpath))
+        # Префикс имён внутри архива (table/script/scene). Если папка уже названа
+        # так — берём его, иначе спрашиваем (например, выход json_to_tbl → table).
+        prefix = name if name.lower() in ('table', 'script', 'scene') else None
+        if prefix is None:
+            dlg = customtkinter.CTkInputDialog(
+                title=self.get_string('pac_pack_prompt_title'),
+                text=self.get_string('pac_pack_prefix_prompt').replace("\\n", "\n") + f"\n\n{name}")
+            prefix = dlg.get_input()
+            if prefix is None or prefix.strip() == "":
+                prefix = name
+            prefix = prefix.strip()
+        outdir = os.path.join(MAIN_PATH, PAC_PACKED_FOLDER)
+        os.makedirs(outdir, exist_ok=True)
+        out = os.path.join(outdir, prefix + ".pac")
+        self.log_message(self.get_string('pac_pack_done_log', path=out))
+        self.set_status(self.get_string('status_pac_packing'))
+        self.run_script_thread('pac_pack', extra_args=['pack', fpath, out, '--prefix', prefix])
+
+    def run_pac_info(self):
+        if self.is_running:
+            tkinter.messagebox.showwarning(self.get_string('warn_already_running'), self.get_string('warn_already_running_msg'))
+            return
+        if not self._pac_tools_ok():
+            return
+        fpath = tkinter.filedialog.askopenfilename(
+            title=self.get_string('button_pac_info'), initialdir=MAIN_PATH,
+            filetypes=[("FPAC archives", "*.pac"), ("All files", "*.*")])
+        if not fpath:
+            self.log_message(self.get_string('pac_cancel_log'))
+            return
+        self.run_script_thread('pac_info', extra_args=['info', fpath])
 
     def open_main_path_folder(self):
         fpath=MAIN_PATH
@@ -1050,6 +1271,10 @@ class App(customtkinter.CTk):
                 bname=os.path.basename(ifile_path)
                 self.message_queue.put({"type":"output","data":self.get_string('log_processing_file',filename=bname)})
                 cmd=[PYTHON_EXECUTABLE,"-u",s_path,ifile_path]
+                if mode=='disassemble':
+                    game=self._get_tbl_game()
+                    if game:
+                        cmd += ["-g", game]
                 exit_code=self._run_command_and_wait(cmd,f"{s_name} ({bname})")
                 if exit_code==0:
                     exp_out=os.path.splitext(bname)[0]+o_ext

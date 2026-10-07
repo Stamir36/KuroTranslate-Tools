@@ -1,2 +1,0 @@
-DIFF	t_condition_info.tbl	orig=2821 new=2821
-DIFF	t_costume.tbl	orig=25768 new=25768

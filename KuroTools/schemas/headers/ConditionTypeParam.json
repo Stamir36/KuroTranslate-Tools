@@ -12,5 +12,11 @@
 			"id": "uint",
 			"value": "uint"
 		}
+	},
+	"Kyoto_ConditionTypeParam": {
+		"game": "Kyoto",
+		"schema": {
+			"raw_0x0": "data2"
+		}
 	}
 }

@@ -1,31 +1,5 @@
 {
 	"FALCOM_PS4": {
-		"game": "Kuro1",
-		"schema": {
-			"id": "uint",
-			"int1": "uint",
-			"state_name": "toffset",
-			"int2": "uint",
-			"int3": "uint",
-			"int4": "uint",
-				"effects" : {
-				"size": 3,
-				"schema": {
-					"value1": "int",
-					"value2": "int",
-					"value3": "int",
-					"value4": "int"
-				}
-			},
-			"float1": "float",
-			"int5": "int",
-			"int6": "int",
-			"int7": "int",
-			"int8": "int",
-			"flag": "toffset"
-		}
-	},
-	"FALCOM_PS4": {
 		"game": "Kai",
 		"schema": {
 			"id": "uint",
@@ -34,7 +8,7 @@
 			"int2": "uint",
 			"int3": "uint",
 			"int4": "uint",
-				"effects" : {
+			"effects": {
 				"size": 3,
 				"schema": {
 					"value1": "int",
@@ -62,7 +36,7 @@
 			"int2": "uint",
 			"int3": "uint",
 			"int4": "uint",
-				"effects" : {
+			"effects": {
 				"size": 2,
 				"schema": {
 					"value1": "int",
@@ -77,6 +51,19 @@
 			"int7": "int",
 			"int8": "int",
 			"flag": "toffset"
+		}
+	},
+	"Kyoto_ConditionInfoTableData_1": {
+		"game": "Kyoto",
+		"schema": {
+			"raw_0x0": "data8",
+			"text_0x8": "toffset",
+			"raw_0x10": "data56",
+			"arr_0x48": "u16array",
+			"raw_0x54": "data4",
+			"arr_0x58": "u16array",
+			"raw_0x64": "data4",
+			"text_0x68": "toffset"
 		}
 	}
 }
