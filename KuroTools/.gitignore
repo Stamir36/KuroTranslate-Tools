@@ -1,0 +1,13 @@
+# Рабочие артефакты лаунчера (создаются при работе, не для репозитория)
+__pycache__/
+*.pyc
+pac_unpacked/
+pac_packed/
+tbl_to_json/
+json_to_tbl/
+data_to_py/
+data_to_py_DECOMPILE/
+strings.tsv
+data_game_strings.xliff
+/*.tbl
+/*.json
