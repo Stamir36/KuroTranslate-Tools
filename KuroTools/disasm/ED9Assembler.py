@@ -1,4 +1,5 @@
 
+import re
 import struct
 import disasm.ED9InstructionsSet as ED9InstructionsSet
 import disasm.script as script
@@ -58,6 +59,15 @@ def UNDEF(value: int)->int:
 def INT(value: int)->int:
     return (value & 0x3FFFFFFF) | 0x40000000
 def FLOAT(value: float)->int:
+    # ВАЖНО: функция должна быть идемпотентной, как INT/UNDEF/STR.
+    # Дизассемблер печатает PUSHFLOAT(FLOAT(x)), то есть внутренний FLOAT()
+    # уже закодировал значение, а затем PUSHFLOAT() вызывает FLOAT() ещё раз.
+    # Для INT/UNDEF/STR повторное кодирование безвредно, а для FLOAT оно
+    # ломало данные: сдвиг на 2 бита применялся дважды и, например, 0.0
+    # превращалось в 2^31 (2147483648.0) при пересборке .dat.
+    # Поэтому уже закодированное значение (целое с тегом float 0b10) берём как есть.
+    if isinstance(value, int) and (value & 0xC0000000) == 0x80000000:
+        return value & 0xFFFFFFFF
     float_bytes = struct.pack("<f",value)
     float_uint = struct.unpack("<I", float_bytes)[0]
     float_uint = float_uint >> 2
@@ -291,8 +301,15 @@ def compile():
     for str_data in strings_offsets_fun_varin:
         write_dword_in_byte_array("<I", bin_file, str_data[0], STR(_emit_string(str_data[1], dedup=False)))
 
+    # Struct-параметры (array2): Falcom дедуплицирует их только против пула,
+    # собранного предыдущими секциями (code / имена функций / varin / varout),
+    # но НЕ друг против друга — каждая повторная ссылка внутри секции получает
+    # свою ячейку. Именно это правило делает round-trip .dat совпадающим по
+    # размеру и по набору строк (проверено work/tools/roundtrip_dat.py).
+    _pre_pool = set(_string_pool.keys())
     for str_data in strings_offsets_struct_params:
-        write_dword_in_byte_array("<I", bin_file, str_data[0], STR(_emit_string(str_data[1], dedup=True)))
+        write_dword_in_byte_array("<I", bin_file, str_data[0], STR(
+            _emit_string(str_data[1], dedup=(str_data[1] in _pre_pool))))
     
     for str_data in strings_offsets_script_var:
         write_dword_in_byte_array("<I", bin_file, str_data[0], STR(_emit_string(str_data[1], dedup=True)))
@@ -882,7 +899,18 @@ def RUNCMD(var, command_name):
     global bin_code_section
     global current_stack
 
-    (id_struct, op_code) = ED9InstructionsSet.reverse_commands_dict[command_name]
+    # Не все команды есть в статической таблице: дизассемблер регистрирует
+    # «неизвестные» опкоды в СВОЁМ процессе под именем Cmd_unknown_<ID>_<OP>,
+    # а ассемблер запускается отдельно и этой записи не видит. Поэтому здесь
+    # восстанавливаем (id_struct, op_code) прямо из имени — иначе round-trip
+    # падал с KeyError на .dat с новыми командами (папки ani/ и часть chr*).
+    entry = ED9InstructionsSet.reverse_commands_dict.get(command_name)
+    if entry is None:
+        _m = re.match(r"Cmd_unknown_([0-9A-Fa-f]+)_([0-9A-Fa-f]+)", command_name)
+        if not _m:
+            raise KeyError(command_name)
+        entry = (int(_m.group(1), 16), int(_m.group(2), 16))
+    (id_struct, op_code) = entry
 
     struct_b = bytearray(struct.pack("<B", id_struct))
     op_code_b = bytearray(struct.pack("<B", op_code))

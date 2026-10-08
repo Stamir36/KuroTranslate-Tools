@@ -61,6 +61,13 @@ PAC_UNPACK_FOLDER = "pac_unpacked"   # Куда распаковываются .
 PAC_PACKED_FOLDER = "pac_packed"     # Куда собираются .pac
 # Игра (вариант схемы) для .tbl: соответствует параметру -g tbl2json.py.
 TBL_GAME_OPTIONS = ["Kyoto", "Kai", "Kuro1", "Kuro2", "Sora1", "Ys_X", "Авто"]
+# Карты перевода: script = .dat (реплики/скрипты), tbl = .tbl (UI, таблицы).
+WF_KIND_OPTIONS = ["Таблицы .tbl (UI, меню)", "Скрипты .dat (диалоги)"]
+# Что собирать на вкладке «Сборка»: те же значения, что у `translation_workflow.py --what`.
+WF_WHAT_OPTIONS = ["table — таблицы .tbl", "script — скрипты .dat", "scene — сцены (без сборки)"]
+# Цвет доступной кнопки (тема customtkinter "blue") — запасной вариант,
+# обычно берётся родной цвет кнопки, запомненный при создании.
+BUTTON_FG_OK = ("#3B8ED0", "#1F6AA5")
 # --- TBL String Filter Constants ---
 TBL_MIN_STRING_LENGTH = 3     # Min length for extraction
 TBL_REQUIRE_SPACE = True      # Require space (unless non-ASCII)
@@ -113,15 +120,46 @@ LANGUAGES = {
         'compile_mode_1': "1) Only files with translated strings (Recommended)",
         'compile_mode_2': "2) All files in data_to_py folder",
         'compile_mode_invalid': "Invalid input. Please enter 1 or 2.",
-        'dat_files_label': "Work with DAT files",
+        # --- Translation workflow (jsonl maps) ---
+        'tabs_hint': "Translate - the main flow, Build - the result, More - extra tools.",
+        'wf_kind_label': "What to translate:",
+        'wf_group_main': "MAIN ORDER",
+        'wf_group_ai': "TRANSLATE VIA AI CHAT (no editor)",
+        'wf_group_xliff': "ALTERNATIVE: XLIFF",
+        'wf_prepare': "1. Unpack the game (.dat + .tbl)",
+        'wf_edit_map': "2. Open the map editor",
+        'wf_apply': "3. Apply translation to files",
+        'wf_maps': "Rebuild the map from scratch",
+        'wf_status': "Translation status",
+        'wf_chunks': "AI chunks (500 lines each)",
+        'wf_import_chunks': "Import chunks from chat",
+        'wf_map2xliff': "Map -> XLIFF",
+        'wf_edit_xliff': "XLIFF editor",
+        'wf_xliff2map': "XLIFF -> map",
+        'wf_hint': "Order: unpack -> map editor -> apply -> build -> pack.",
+        'wf_more_head': "EVERYTHING ELSE",
+        'wf_build_label': "BUILD AND CHECK",
+        'wf_build_dat': "5a. Build only .dat",
+        'wf_build_tbl': "5b. Build only .tbl",
+        'wf_pack': "6. Pack .pac",
+        'selftest_button': "SELFTEST",
+        'selftest_log': "SELFTEST: checking {path}",
+        'selftest_no_archive': "No archive to check: {path}",
+        'build_what_label': "What to build (archive):",
+        'wf_all': "★ Build everything → pac_packed",
+        'wf_all_force': "Build everything from scratch (--force)",
+        'wf_build_manual': "STEP BY STEP (if needed)",
+        'build_all_hint': "One button: apply the map → build files → pack and compare with the original. Result in pac_packed.",
+        'build_hint': "These buttons do a single step and do not apply the map.",
+        'dat_files_label': "DAT files",
         'button_1_disassemble': "1. Disassemble DAT",
         'button_2_extract': "2. Extract Strings",
-        'button_3_edit': "3. Edit Translation (DAT XLIFF)",
-        'button_4_create_map': "4. Create Translation Map",
+        'button_3_edit': "3. Edit translation (XLIFF)",
+        'button_4_create_map': "4. Create map",
         'button_5_compile': "5. Compile DAT",
-        'tbl_files_label': "Batch work with TBL files", # Updated Section Title
-        'button_open_parser': "Open parsing folder", # Kept original text, opens MAIN_PATH now
-        'button_tbl_edit': "Launch XLIFF editor", # Changed from "Launch XLIFF Editor"
+        'tbl_files_label': "TBL files", # Updated Section Title
+        'button_open_parser': "Open folder", # Kept original text, opens MAIN_PATH now
+        'button_tbl_edit': "XLIFF editor", # Changed from "Launch XLIFF Editor"
         'xliff_editor_note': "XLIFF editor has auto-translation features.",
         'lang_select_label': "Language:",
         'terminate_button': "Terminate Script",
@@ -155,8 +193,8 @@ LANGUAGES = {
         'extract_prompt_dat_folder_title': "Extract Strings - Select DAT Folder",
         # --- TBL Strings ---
         'button_tbl_disassemble': "Disassemble .tbl", # UI Change
-        'button_tbl_assemble': "Assemble .json to .tbl", # UI Change
-        'button_tbl_parse_json_xliff': "Parse TBL strings JSON to XLIFF file", # New Button
+        'button_tbl_assemble': "Assemble .tbl", # UI Change
+        'button_tbl_parse_json_xliff': "Parse TBL -> XLIFF", # New Button
         'tbl_folder_prompt_title_disassemble': "Batch Disassemble TBL - Select Folder with TBLs",
         'tbl_folder_prompt_log': "Prompting for TBL folder path...",
         'tbl_folder_selected_log': "Selected TBL folder: {path}",
@@ -207,7 +245,7 @@ LANGUAGES = {
         # --- PAC Strings ---
         'pac_files_label': "PAC archives (FPAC)",
         'button_pac_unpack': "Unpack .pac",
-        'button_pac_pack': "Pack archive (.pac)",
+        'button_pac_pack': "Pack .pac",
         'button_pac_info': "Archive info",
         'pac_unpack_prompt_log': "Selecting a .pac archive to unpack...",
         'pac_unpack_prompt_title': "Unpack .pac - select archive",
@@ -223,7 +261,7 @@ LANGUAGES = {
         'error_pac_tools_missing': "ERROR: pac_tools.py not found: {path}",
         'game_auto': "Авто",
         'button_strings_export': "Strings -> TSV (for AI)",
-        'button_strings_import': "Translation TSV -> strings",
+        'button_strings_import': "TSV -> strings",
         'strings_export_log': "Exporting strings to: {path}",
         'strings_import_log': "Importing translations from: {path}",
         'status_strings_exporting': "Status: Exporting strings to TSV...",
@@ -266,15 +304,46 @@ LANGUAGES = {
         'compile_mode_1': "1) Только файлы с переведенными строками (Рекомендуется)",
         'compile_mode_2': "2) Все файлы в папке data_to_py",
         'compile_mode_invalid': "Неверный ввод. Введите 1 или 2.",
-        'dat_files_label': "Работа с DAT файлами",
-        'button_1_disassemble': "1. Дизассемблировать DAT",
+        # --- Рабочий поток перевода (карты jsonl) ---
+        'tabs_hint': "Перевод — основной поток, Сборка — результат, Ещё — служебное.",
+        'wf_kind_label': "Что переводим:",
+        'wf_group_main': "ОСНОВНОЙ ПОРЯДОК",
+        'wf_group_ai': "ПЕРЕВОД ЧАТОМ, БЕЗ РЕДАКТОРА",
+        'wf_group_xliff': "АЛЬТЕРНАТИВА: XLIFF",
+        'wf_prepare': "1. Разобрать игру (.dat + .tbl)",
+        'wf_edit_map': "2. Открыть редактор карты",
+        'wf_apply': "3. Применить перевод в файлы",
+        'wf_maps': "Пересобрать карту заново",
+        'wf_status': "Статус перевода",
+        'wf_chunks': "Куски для ИИ (по 500 строк)",
+        'wf_import_chunks': "Импорт кусков из чата",
+        'wf_map2xliff': "Карта → XLIFF",
+        'wf_edit_xliff': "Редактор XLIFF",
+        'wf_xliff2map': "XLIFF → карта",
+        'wf_hint': "Порядок: разобрать → редактор карты → применить в файлы → собрать → упаковать.",
+        'wf_more_head': "ВСЁ ОСТАЛЬНОЕ",
+        'wf_build_label': "СБОРКА И ПРОВЕРКА",
+        'wf_build_dat': "5а. Собрать только .dat",
+        'wf_build_tbl': "5б. Собрать только .tbl",
+        'wf_pack': "6. Упаковать .pac",
+        'selftest_button': "SELFTEST (автотест)",
+        'selftest_log': "SELFTEST: проверяю {path}",
+        'selftest_no_archive': "Нет архива для проверки: {path}",
+        'build_what_label': "Что собирать (архив):",
+        'wf_all': "★ Собрать всё → pac_packed",
+        'wf_all_force': "Собрать всё начисто (--force)",
+        'wf_build_manual': "ПОШАГОВО (если нужно)",
+        'build_all_hint': "Одна кнопка: применить карту → собрать файлы → упаковать и сверить с оригиналом. Результат в pac_packed.",
+        'build_hint': "Эти кнопки делают только один шаг и не применяют карту.",
+        'dat_files_label': "DAT файлы",
+        'button_1_disassemble': "1. Разобрать DAT",
         'button_2_extract': "2. Извлечь строки",
-        'button_3_edit': "3. Редактировать перевод (DAT XLIFF)",
-        'button_4_create_map': "4. Создать карту перевода",
+        'button_3_edit': "3. Правка перевода (XLIFF)",
+        'button_4_create_map': "4. Создать карту",
         'button_5_compile': "5. Скомпилировать DAT",
-        'tbl_files_label': "Пакетная работа с TBL файлами", # Обновлен заголовок секции
-        'button_open_parser': "Открыть папку парсинга", # Текст сохранен, открывает MAIN_PATH
-        'button_tbl_edit': "Запустить XLIFF редактор", # Текст из скриншота
+        'tbl_files_label': "TBL файлы", # Обновлен заголовок секции
+        'button_open_parser': "Открыть папку", # Текст сохранен, открывает MAIN_PATH
+        'button_tbl_edit': "XLIFF редактор", # Текст из скриншота
         'xliff_editor_note': "XLIFF редактор имеет функции автоматического перевода.",
         'lang_select_label': "Язык:",
         'terminate_button': "Прервать Скрипт",
@@ -308,8 +377,8 @@ LANGUAGES = {
         'extract_prompt_dat_folder_title': "Извлечь строки - Выберите папку DAT",
         # --- TBL Strings ---
         'button_tbl_disassemble': "Разобрать .tbl", # Текст из скриншота
-        'button_tbl_assemble': "Собрать .json в .tbl", # Текст из скриншота
-        'button_tbl_parse_json_xliff': "Парсинг TBL строк JSON в XLIFF файл", # Новая кнопка
+        'button_tbl_assemble': "Собрать .tbl", # Текст из скриншота
+        'button_tbl_parse_json_xliff': "Парсинг TBL → XLIFF", # Новая кнопка
         'tbl_folder_prompt_title_disassemble': "Пакетный разбор TBL - Выберите папку с TBL",
         'tbl_folder_prompt_log': "Запрос пути к папке с TBL...",
         'tbl_folder_selected_log': "Выбрана папка TBL: {path}",
@@ -361,7 +430,7 @@ LANGUAGES = {
         'pac_files_label': "PAC архивы (FPAC)",
         'button_pac_unpack': "Распаковать .pac",
         'button_pac_pack': "Собрать .pac",
-        'button_pac_info': "Информация об архиве",
+        'button_pac_info': "Инфо об архиве",
         'pac_unpack_prompt_log': "Выбор .pac архива для распаковки...",
         'pac_unpack_prompt_title': "Распаковать .pac - выберите архив",
         'pac_unpack_done_log': "Распаковано в: {path}",
@@ -376,7 +445,7 @@ LANGUAGES = {
         'error_pac_tools_missing': "ОШИБКА: pac_tools.py не найден: {path}",
         'game_auto': "Авто",
         'button_strings_export': "Строки -> TSV (для ИИ)",
-        'button_strings_import': "Перевод TSV -> строки",
+        'button_strings_import': "TSV -> строки",
         'strings_export_log': "Экспорт строк в: {path}",
         'strings_import_log': "Импорт перевода из: {path}",
         'status_strings_exporting': "Статус: Экспорт строк в TSV...",
@@ -402,12 +471,16 @@ class App(customtkinter.CTk):
             tkinter.messagebox.showerror(title,msg)
             sys.exit(1)
         xliff_dat_path=os.path.join(MAIN_PATH,"data_game_strings.xliff")
-        self.script_definitions={'1_disassemble':("dat2py_batch.py",[]),'2_extract':("py_to_xliff.py",[]),'3_edit':("xliff_editor_gui.py",[xliff_dat_path]),'4_create_map':("inject_translations.py",[]),'5_compile':("py2dat_batch.py",[]),'tbl_disassemble_check':(TBL_DISASSEMBLE_SCRIPT,[]),'tbl_assemble_check':(TBL_ASSEMBLE_SCRIPT,[]),'tbl_xliff_edit_check':("xliff_editor_gui.py",[]),'pac_unpack':("pac_tools.py",[]),'pac_pack':("pac_tools.py",[]),'pac_info':("pac_tools.py",[]),'strings_export':("strings_map.py",[]),'strings_import':("strings_map.py",[])}
+        self.script_definitions={'workflow':("translation_workflow.py",[]),'edit_map':("map_editor_gui.py",[]),'selftest':("selftest.py",[]),'edit_xliff':("xliff_editor_gui.py",[]),'1_disassemble':("dat2py_batch.py",[]),'2_extract':("py_to_xliff.py",[]),'3_edit':("xliff_editor_gui.py",[xliff_dat_path]),'4_create_map':("inject_translations.py",[]),'5_compile':("py2dat_batch.py",[]),'tbl_disassemble_check':(TBL_DISASSEMBLE_SCRIPT,[]),'tbl_assemble_check':(TBL_ASSEMBLE_SCRIPT,[]),'tbl_xliff_edit_check':("xliff_editor_gui.py",[]),'pac_unpack':("pac_tools.py",[]),'pac_pack':("pac_tools.py",[]),'pac_info':("pac_tools.py",[]),'strings_export':("strings_map.py",[]),'strings_import':("strings_map.py",[])}
         self.dat_button_order=['1_disassemble','2_extract','3_edit','4_create_map','5_compile']
         self.title(self.get_string('title'))
-        self.geometry(f"{1100}x720")
+        self.geometry(f"{1180}x800")
+        # Панель кнопок не должна сжиматься до обрезки подписей.
+        self.minsize(1080, 720)
         self.grid_columnconfigure(0,weight=3)
-        self.grid_columnconfigure(1,weight=1)
+        # Правая панель — фиксированной достаточной ширины: иначе длинные
+        # подписи кнопок («3. Применить перевод в файлы») обрезались.
+        self.grid_columnconfigure(1,weight=1,minsize=340)
         self.grid_rowconfigure(0,weight=1)
         self.grid_rowconfigure(1,weight=0)
         dfont=customtkinter.CTkFont()
@@ -416,20 +489,144 @@ class App(customtkinter.CTk):
         self.output_textbox.grid(row=0,column=0,padx=(20,10),pady=(20,20),sticky="nsew")
         self.output_textbox.configure(state="disabled",wrap="word")
         self._configure_text_tags()
-        self.button_frame=customtkinter.CTkFrame(self,width=250,corner_radius=5)
-        self.button_frame.grid(row=0,column=1,padx=(10,20),pady=(20,20),sticky="nsew")
+        # Прокручиваемый контейнер кнопок: их много и они не влезают на экран.
+        # Панель целиком не прокручивается: прокрутка только внутри активной
+        # вкладки, иначе на экране было две полосы прокрутки друг в друге.
+        self.button_frame=customtkinter.CTkFrame(self,width=360,corner_radius=5)
+        self.button_frame.grid(row=0,column=1,padx=(10,14),pady=(20,14),sticky="nsew")
         self.button_frame.grid_columnconfigure(0,weight=1)
         self.button_frame.grid_columnconfigure(1,weight=1)
+        # ---------------------------------- Панель ----------------------------------
+        # Три вкладки вместо одной длинной свалки кнопок: понятно, что главное,
+        # а что служебное. Подписи короткие, чтобы ничего не обрезалось.
         row=0
         self.buttons={}
-        self.dat_label=customtkinter.CTkLabel(self.button_frame,text=self.get_string('dat_files_label'),font=customtkinter.CTkFont(weight="bold"))
-        self.dat_label.grid(row=row,column=0,columnspan=2,padx=20,pady=(10,10),sticky="ew")
+        tabs_hint=customtkinter.CTkLabel(self.button_frame,text=self.get_string('tabs_hint',default="Перевод — основной поток, Сборка — результат, Ещё — служебные инструменты."),font=customtkinter.CTkFont(size=10),text_color="gray50",justify="left",wraplength=300)
+        tabs_hint.grid(row=row,column=0,columnspan=2,padx=8,pady=(6,2),sticky="ew")
+        row+=1
+        self.tabview=customtkinter.CTkTabview(self.button_frame,width=340,corner_radius=5)
+        self.tabview.grid(row=row,column=0,columnspan=2,padx=8,pady=(2,6),sticky="nsew")
+        row+=1
+        tab_translate=self.tabview.add("Перевод")
+        tab_build=self.tabview.add("Сборка")
+        tab_more=self.tabview.add("Ещё")
+        self.tab_translate_frame=customtkinter.CTkScrollableFrame(tab_translate,width=330,height=430,corner_radius=5)
+        self.tab_build_frame=customtkinter.CTkScrollableFrame(tab_build,width=330,height=430,corner_radius=5)
+        self.tab_more_frame=customtkinter.CTkScrollableFrame(tab_more,width=330,height=430,corner_radius=5)
+        for _tab,_inner in ((tab_translate,self.tab_translate_frame),(tab_build,self.tab_build_frame),(tab_more,self.tab_more_frame)):
+            _tab.grid_columnconfigure(0,weight=1)
+            _tab.grid_rowconfigure(0,weight=1)
+            _inner.grid(row=0,column=0,padx=2,pady=2,sticky="nsew")
+            _inner.grid_columnconfigure(0,weight=1)
+            _inner.grid_columnconfigure(1,weight=1)
+        self.wf_tf=self.tab_translate_frame
+        self.build_tf=self.tab_build_frame
+        self.more_tf=self.tab_more_frame
+        # ---------------------------- ВКЛАДКА «ПЕРЕВОД» ----------------------------
+        row=0
+        wf_font=customtkinter.CTkFont(weight="bold")
+        self.wf_label=customtkinter.CTkLabel(self.wf_tf,text=self.get_string('wf_label',default="ПЕРЕВОД (карты jsonl)"),font=wf_font)
+        self.wf_label.grid(row=row,column=0,columnspan=2,padx=8,pady=(6,4),sticky="ew")
+        row+=1
+        wf_kind_label=customtkinter.CTkLabel(self.wf_tf,text=self.get_string('wf_kind_label',default="Что переводим:"),font=customtkinter.CTkFont(size=10),text_color="gray50",anchor="w")
+        wf_kind_label.grid(row=row,column=0,columnspan=2,padx=8,pady=(2,0),sticky="ew")
+        row+=1
+        self.wf_kind_combo=customtkinter.CTkComboBox(self.wf_tf,values=WF_KIND_OPTIONS)
+        self.wf_kind_combo.set(WF_KIND_OPTIONS[0])
+        self.wf_kind_combo.grid(row=row,column=0,columnspan=2,padx=8,pady=(2,6),sticky="ew")
+        row+=1
+        # Кнопки сгруппированы по смыслу: сверху то, что нужно каждый день,
+        # ниже — перевод через чат и альтернативный путь через XLIFF.
+        wf_buttons=[
+            ('-',self.get_string('wf_group_main',default="ОСНОВНОЙ ПОРЯДОК"),None),
+            ('wf_prepare',self.get_string('wf_prepare',default="1. Разобрать игру (.dat + .tbl)"),lambda:self.run_workflow(['prepare'])),
+            ('wf_edit_map',self.get_string('wf_edit_map',default="2. Открыть редактор карты"),lambda:self.run_script_thread('edit_map',extra_args=['--kind',self.wf_kind()])),
+            ('wf_apply',self.get_string('wf_apply',default="3. Применить перевод в файлы"),lambda:self.run_workflow(['apply','--kind',self.wf_kind()])),
+            ('wf_maps',self.get_string('wf_maps',default="Пересобрать карту заново"),lambda:self.run_workflow(['maps'])),
+            ('wf_status',self.get_string('wf_status',default="Статус перевода"),lambda:self.run_workflow(['status'])),
+            ('-',self.get_string('wf_group_ai',default="ПЕРЕВОД ЧАТОМ, БЕЗ РЕДАКТОРА"),None),
+            ('wf_chunks',self.get_string('wf_chunks',default="Куски для ИИ (по 500 строк)"),lambda:self.run_workflow(['chunks','--kind',self.wf_kind(),'--size','500','--only-empty'])),
+            ('wf_import_chunks',self.get_string('wf_import_chunks',default="Импорт кусков из чата"),lambda:self.run_workflow(['import-chunks','--kind',self.wf_kind()])),
+            ('-',self.get_string('wf_group_xliff',default="АЛЬТЕРНАТИВА: XLIFF"),None),
+            ('wf_map2xliff',self.get_string('wf_map2xliff',default="Карта → XLIFF"),lambda:self.run_workflow(['map2xliff','--kind',self.wf_kind()])),
+            ('wf_edit_xliff',self.get_string('wf_edit_xliff',default="Редактор XLIFF"),self.open_workflow_xliff),
+            ('wf_xliff2map',self.get_string('wf_xliff2map',default="XLIFF → карта"),lambda:self.run_workflow(['xliff2map','--kind',self.wf_kind()])),
+        ]
+        for key,btext,bcmd in wf_buttons:
+            if key=='-':
+                customtkinter.CTkLabel(self.wf_tf,text=btext,font=customtkinter.CTkFont(size=10,weight="bold"),text_color="gray50",anchor="w",wraplength=300).grid(row=row,column=0,columnspan=2,padx=8,pady=(12,0),sticky="ew")
+                row+=1
+                continue
+            b=customtkinter.CTkButton(self.wf_tf,text=btext,command=bcmd)
+            if key=='wf_edit_map':
+                b.configure(fg_color="#1f6f3f",hover_color="#15512e")
+            b.grid(row=row,column=0,columnspan=2,padx=8,pady=(3,3),sticky="ew")
+            self.buttons[key]=b
+            row+=1
+        wf_hint=customtkinter.CTkLabel(self.wf_tf,text=self.get_string('wf_hint',default="Порядок: разобрать → редактор карты → применить в файлы → собрать → упаковать"),font=customtkinter.CTkFont(size=10),text_color="gray50",justify="left",wraplength=300)
+        wf_hint.grid(row=row,column=0,columnspan=2,padx=8,pady=(8,4),sticky="ew")
+        row+=1
+        # ---------------------------- ВКЛАДКА «СБОРКА» ----------------------------
+        row=0
+        build_label=customtkinter.CTkLabel(self.build_tf,text=self.get_string('wf_build_label',default="СБОРКА И ПРОВЕРКА"),font=wf_font)
+        build_label.grid(row=row,column=0,columnspan=2,padx=8,pady=(6,4),sticky="ew")
+        row+=1
+        self.build_what_label=customtkinter.CTkLabel(self.build_tf,text=self.get_string('build_what_label',default="Что собирать:"),font=customtkinter.CTkFont(size=10),text_color="gray50",anchor="w")
+        self.build_what_label.grid(row=row,column=0,columnspan=2,padx=8,pady=(2,0),sticky="ew")
+        row+=1
+        self.build_what_combo=customtkinter.CTkComboBox(self.build_tf,values=WF_WHAT_OPTIONS)
+        self.build_what_combo.set(WF_WHAT_OPTIONS[0])
+        self.build_what_combo.grid(row=row,column=0,columnspan=2,padx=8,pady=(2,8),sticky="ew")
+        row+=1
+        # Главная кнопка всего лаунчера: одной кнопкой делается то, ради чего
+        # сюда приходят — «перевод из карты → файлы → pac_packed/<архив>.pac».
+        self.all_button=customtkinter.CTkButton(self.build_tf,text=self.get_string('wf_all',default="Собрать всё → pac_packed"),command=lambda:self.run_workflow(['all','--what',self.wf_what()]),fg_color="#1f6f3f",hover_color="#15512e",height=38,font=customtkinter.CTkFont(size=14,weight="bold"))
+        self.all_button.grid(row=row,column=0,columnspan=2,padx=8,pady=(2,4),sticky="ew")
+        self.buttons['wf_all']=self.all_button
+        row+=1
+        self.all_force_button=customtkinter.CTkButton(self.build_tf,text=self.get_string('wf_all_force',default="Собрать всё начисто (--force)"),command=lambda:self.run_workflow(['all','--what',self.wf_what(),'--force']))
+        self.all_force_button.grid(row=row,column=0,columnspan=2,padx=8,pady=(0,8),sticky="ew")
+        self.buttons['wf_all_force']=self.all_force_button
+        row+=1
+        self.build_all_hint=customtkinter.CTkLabel(self.build_tf,text=self.get_string('build_all_hint',default="«Собрать всё» = применить карту → собрать файлы → упаковать и сверить с оригиналом. Результат: pac_packed/<table|script|scene>.pac"),font=customtkinter.CTkFont(size=10),text_color="gray50",justify="left",wraplength=300)
+        self.build_all_hint.grid(row=row,column=0,columnspan=2,padx=8,pady=(0,6),sticky="ew")
+        row+=1
+        self.build_manual_label=customtkinter.CTkLabel(self.build_tf,text=self.get_string('wf_build_manual',default="ПОШАГОВО (если нужно)"),font=customtkinter.CTkFont(size=10,weight="bold"),text_color="gray50",anchor="w")
+        self.build_manual_label.grid(row=row,column=0,columnspan=2,padx=8,pady=(8,0),sticky="ew")
+        row+=1
+        for key,btext,bcmd in [
+            ('wf_build_dat',self.get_string('wf_build_dat',default="5а. Собрать только .dat"),lambda:self.run_workflow(['build','--what','script'])),
+            ('wf_build_tbl',self.get_string('wf_build_tbl',default="5б. Собрать только .tbl"),lambda:self.run_workflow(['build','--what','table'])),
+            ('wf_pack',self.get_string('wf_pack',default="6. Упаковать .pac"),self.prompt_pack_workflow),
+            ('selftest',self.get_string('selftest_button',default="SELFTEST (автотест)"),self.run_selftest),
+        ]:
+            b=customtkinter.CTkButton(self.build_tf,text=btext,command=bcmd)
+            b.grid(row=row,column=0,columnspan=2,padx=8,pady=(3,3),sticky="ew")
+            self.buttons[key]=b
+            row+=1
+        self.game_label=customtkinter.CTkLabel(self.build_tf,text=self.get_string('game_select_label'),anchor="w")
+        self.game_label.grid(row=row,column=0,columnspan=2,padx=8,pady=(10,2),sticky="w")
+        row+=1
+        self.game_combo=customtkinter.CTkComboBox(self.build_tf,values=TBL_GAME_OPTIONS)
+        self.game_combo.set("Kyoto")
+        self.game_combo.grid(row=row,column=0,columnspan=2,padx=8,pady=(2,6),sticky="ew")
+        row+=1
+        build_hint=customtkinter.CTkLabel(self.build_tf,text=self.get_string('build_hint',default="Сборка берёт перевод из карты, поэтому сначала «4. Применить перевод»."),font=customtkinter.CTkFont(size=10),text_color="gray50",justify="left",wraplength=300)
+        build_hint.grid(row=row,column=0,columnspan=2,padx=8,pady=(8,4),sticky="ew")
+        row+=1
+        # ----------------------------- ВКЛАДКА «ЕЩЁ» -----------------------------
+        row=0
+        more_head=customtkinter.CTkLabel(self.more_tf,text=self.get_string('wf_more_head',default="ВСЁ ОСТАЛЬНОЕ"),font=wf_font)
+        more_head.grid(row=row,column=0,columnspan=2,padx=8,pady=(6,4),sticky="ew")
+        row+=1
+        self.dat_label=customtkinter.CTkLabel(self.more_tf,text=self.get_string('dat_files_label'),font=customtkinter.CTkFont(weight="bold"))
+        self.dat_label.grid(row=row,column=0,columnspan=2,padx=8,pady=(8,6),sticky="ew")
         row+=1
         for i, sid in enumerate(self.dat_button_order):
             bkey=f"button_{sid}"
             btext=self.get_string(bkey,default=sid.replace("_"," ").title())
-            btn=customtkinter.CTkButton(self.button_frame,text=btext)
-            btn.grid(row=row+i,column=0,columnspan=2,padx=20,pady=(5,5),sticky="ew")
+            btn=customtkinter.CTkButton(self.more_tf,text=btext)
+            btn.grid(row=row+i,column=0,columnspan=2,padx=8,pady=(5,5),sticky="ew")
             if sid=='1_disassemble':
                 btn.configure(command=self.prompt_for_dat_path_and_run)
             elif sid=='2_extract':
@@ -440,71 +637,77 @@ class App(customtkinter.CTk):
                 btn.configure(command=lambda s=sid: self.run_script_thread(s))
             self.buttons[sid]=btn
         row+=len(self.dat_button_order)
-        self.tbl_label=customtkinter.CTkLabel(self.button_frame,text=self.get_string('tbl_files_label'),font=customtkinter.CTkFont(weight="bold"))
-        self.tbl_label.grid(row=row,column=0,columnspan=2,padx=20,pady=(15,10),sticky="ew")
+        more_label=customtkinter.CTkLabel(self.more_tf,text=self.get_string('more_label',default="СТАРЫЕ ИНСТРУМЕНТЫ"),font=customtkinter.CTkFont(weight="bold"))
+        more_label.grid(row=row,column=0,columnspan=2,padx=8,pady=(6,4),sticky="ew")
         row+=1
-        self.tbl_disassemble_button=customtkinter.CTkButton(self.button_frame,text=self.get_string('button_tbl_disassemble'),command=lambda: self.run_batch_tbl_process('disassemble'))
-        self.tbl_disassemble_button.grid(row=row,column=0,padx=(20,5),pady=(5,5),sticky="ew")
+        self.tbl_label=customtkinter.CTkLabel(self.more_tf,text=self.get_string('tbl_files_label'),font=customtkinter.CTkFont(weight="bold"))
+        self.tbl_label.grid(row=row,column=0,columnspan=2,padx=8,pady=(8,6),sticky="ew")
+        row+=1
+        self.tbl_disassemble_button=customtkinter.CTkButton(self.more_tf,text=self.get_string('button_tbl_disassemble'),command=lambda: self.run_batch_tbl_process('disassemble'))
+        self.tbl_disassemble_button.grid(row=row,column=0,padx=(8,4),pady=(5,5),sticky="ew")
         self.buttons['tbl_disassemble']=self.tbl_disassemble_button
-        self.tbl_assemble_button=customtkinter.CTkButton(self.button_frame,text=self.get_string('button_tbl_assemble'),command=lambda: self.run_batch_tbl_process('assemble'))
-        self.tbl_assemble_button.grid(row=row,column=1,padx=(5,20),pady=(5,5),sticky="ew")
+        self.tbl_assemble_button=customtkinter.CTkButton(self.more_tf,text=self.get_string('button_tbl_assemble'),command=lambda: self.run_batch_tbl_process('assemble'))
+        self.tbl_assemble_button.grid(row=row,column=1,padx=(4,8),pady=(5,5),sticky="ew")
         self.buttons['tbl_assemble']=self.tbl_assemble_button
         row+=1
-        self.tbl_parse_button=customtkinter.CTkButton(self.button_frame,text=self.get_string('button_tbl_parse_json_xliff'),command=self.prompt_tbl_parse_mode)
-        self.tbl_parse_button.grid(row=row,column=0,columnspan=2,padx=20,pady=(5,5),sticky="ew")
+        self.tbl_parse_button=customtkinter.CTkButton(self.more_tf,text=self.get_string('button_tbl_parse_json_xliff'),command=self.prompt_tbl_parse_mode)
+        self.tbl_parse_button.grid(row=row,column=0,columnspan=2,padx=8,pady=(5,5),sticky="ew")
         self.buttons['tbl_parse_json_xliff']=self.tbl_parse_button
         row+=1
-        self.open_parser_button=customtkinter.CTkButton(self.button_frame,text=self.get_string('button_open_parser'),command=self.open_main_path_folder)
-        self.open_parser_button.grid(row=row,column=0,columnspan=2,padx=20,pady=(5,5),sticky="ew")
+        self.open_parser_button=customtkinter.CTkButton(self.more_tf,text=self.get_string('button_open_parser'),command=self.open_main_path_folder)
+        self.open_parser_button.grid(row=row,column=0,columnspan=2,padx=8,pady=(5,5),sticky="ew")
         row+=1
-        self.tbl_xliff_edit_button=customtkinter.CTkButton(self.button_frame,text=self.get_string('button_tbl_edit'),command=lambda: self.run_script_thread('tbl_xliff_edit_check',extra_args=[]))
-        self.tbl_xliff_edit_button.grid(row=row,column=0,columnspan=2,padx=20,pady=(5,5),sticky="ew")
+        self.tbl_xliff_edit_button=customtkinter.CTkButton(self.more_tf,text=self.get_string('button_tbl_edit'),command=lambda: self.run_script_thread('tbl_xliff_edit_check',extra_args=[]))
+        self.tbl_xliff_edit_button.grid(row=row,column=0,columnspan=2,padx=8,pady=(5,5),sticky="ew")
         self.buttons['tbl_xliff_edit']=self.tbl_xliff_edit_button
         row+=1
-        self.strings_export_button=customtkinter.CTkButton(self.button_frame,text=self.get_string('button_strings_export'),command=self.run_strings_export)
-        self.strings_export_button.grid(row=row,column=0,columnspan=2,padx=20,pady=(5,5),sticky="ew")
+        self.strings_export_button=customtkinter.CTkButton(self.more_tf,text=self.get_string('button_strings_export'),command=self.run_strings_export)
+        self.strings_export_button.grid(row=row,column=0,columnspan=2,padx=8,pady=(5,5),sticky="ew")
         self.buttons['strings_export']=self.strings_export_button
         row+=1
-        self.strings_import_button=customtkinter.CTkButton(self.button_frame,text=self.get_string('button_strings_import'),command=self.run_strings_import)
-        self.strings_import_button.grid(row=row,column=0,columnspan=2,padx=20,pady=(5,5),sticky="ew")
+        self.strings_import_button=customtkinter.CTkButton(self.more_tf,text=self.get_string('button_strings_import'),command=self.run_strings_import)
+        self.strings_import_button.grid(row=row,column=0,columnspan=2,padx=8,pady=(5,5),sticky="ew")
         self.buttons['strings_import']=self.strings_import_button
         row+=1
         # --- PAC (FPAC) section ---
-        self.pac_label=customtkinter.CTkLabel(self.button_frame,text=self.get_string('pac_files_label'),font=customtkinter.CTkFont(weight="bold"))
-        self.pac_label.grid(row=row,column=0,columnspan=2,padx=20,pady=(15,10),sticky="ew")
+        self.pac_label=customtkinter.CTkLabel(self.more_tf,text=self.get_string('pac_files_label'),font=customtkinter.CTkFont(weight="bold"))
+        self.pac_label.grid(row=row,column=0,columnspan=2,padx=8,pady=(10,6),sticky="ew")
         row+=1
-        self.pac_unpack_button=customtkinter.CTkButton(self.button_frame,text=self.get_string('button_pac_unpack'),command=self.run_pac_unpack)
-        self.pac_unpack_button.grid(row=row,column=0,padx=(20,5),pady=(5,5),sticky="ew")
+        self.pac_unpack_button=customtkinter.CTkButton(self.more_tf,text=self.get_string('button_pac_unpack'),command=self.run_pac_unpack)
+        self.pac_unpack_button.grid(row=row,column=0,padx=(8,4),pady=(5,5),sticky="ew")
         self.buttons['pac_unpack']=self.pac_unpack_button
-        self.pac_pack_button=customtkinter.CTkButton(self.button_frame,text=self.get_string('button_pac_pack'),command=self.run_pac_pack)
-        self.pac_pack_button.grid(row=row,column=1,padx=(5,20),pady=(5,5),sticky="ew")
+        self.pac_pack_button=customtkinter.CTkButton(self.more_tf,text=self.get_string('button_pac_pack'),command=self.run_pac_pack)
+        self.pac_pack_button.grid(row=row,column=1,padx=(4,8),pady=(5,5),sticky="ew")
         self.buttons['pac_pack']=self.pac_pack_button
         row+=1
-        self.pac_info_button=customtkinter.CTkButton(self.button_frame,text=self.get_string('button_pac_info'),command=self.run_pac_info)
-        self.pac_info_button.grid(row=row,column=0,columnspan=2,padx=20,pady=(5,5),sticky="ew")
+        self.pac_info_button=customtkinter.CTkButton(self.more_tf,text=self.get_string('button_pac_info'),command=self.run_pac_info)
+        self.pac_info_button.grid(row=row,column=0,columnspan=2,padx=8,pady=(5,5),sticky="ew")
         self.buttons['pac_info']=self.pac_info_button
         row+=1
-        # --- TBL game (schema) selector ---
-        self.game_label=customtkinter.CTkLabel(self.button_frame,text=self.get_string('game_select_label'),anchor="w")
-        self.game_label.grid(row=row,column=0,padx=(20,5),pady=(5,5),sticky="w")
-        self.game_combo=customtkinter.CTkComboBox(self.button_frame,values=TBL_GAME_OPTIONS)
-        self.game_combo.set("Kyoto")
-        self.game_combo.grid(row=row,column=1,padx=(5,20),pady=(5,5),sticky="ew")
-        row+=1
+        # Ниже вкладок — то, что должно быть видно всегда: язык, СТОП и подпись.
+        # Вкладки стоят на строках 0 и 1 панели, поэтому продолжаем с 2.
+        row=2
         self.lang_label=customtkinter.CTkLabel(self.button_frame,text=self.get_string('lang_select_label'),anchor="w")
-        self.lang_label.grid(row=row,column=0,padx=(20,5),pady=(15,5),sticky="w")
+        self.lang_label.grid(row=row,column=0,padx=(14,5),pady=(12,5),sticky="w")
         self.lang_combo=customtkinter.CTkComboBox(self.button_frame,values=list(self.languages_map.keys()),command=self.change_language)
         self.lang_combo.set(list(self.languages_map.keys())[list(self.languages_map.values()).index(self.current_lang)])
-        self.lang_combo.grid(row=row,column=1,padx=(5,20),pady=(15,5),sticky="ew")
+        self.lang_combo.grid(row=row,column=1,padx=(5,14),pady=(12,5),sticky="ew")
         row+=1
         self.terminate_button=customtkinter.CTkButton(self.button_frame,text=self.get_string('terminate_button'),command=self.terminate_process,state="disabled",fg_color="red",hover_color="darkred")
-        self.terminate_button.grid(row=row,column=0,columnspan=2,padx=20,pady=(10,10),sticky="ew")
+        self.terminate_button.grid(row=row,column=0,columnspan=2,padx=14,pady=(10,10),sticky="ew")
         self.buttons['terminate_button']=self.terminate_button
         row+=1
         self.author_label=customtkinter.CTkLabel(self.button_frame,text="Developer Launcher: Stamir\nРабота основана на форке: nnguyen259/KuroTools",font=customtkinter.CTkFont(size=10),text_color="gray50")
-        self.author_label.grid(row=row,column=0,columnspan=2,padx=20,pady=(0,10),sticky="ew")
+        self.author_label.grid(row=row,column=0,columnspan=2,padx=14,pady=(0,10),sticky="ew")
         row+=1
-        self.button_frame.grid_rowconfigure(row,weight=1)
+        # Растягиваются вкладки, а не пустая строка: на низком окне список
+        # кнопок сжимается и прокручивается, а язык/«Прервать»/подпись — видны.
+        self.button_frame.grid_rowconfigure(1,weight=1)
+        self.button_frame.grid_rowconfigure(row,weight=0)
+        # Вкладки сами разделяют основной поток и служебные инструменты,
+        # поэтому ничего не скрываем: индикатор просто показывает состояние.
+        self.advanced_visible=True
+        self.apply_advanced_visibility()
         self.status_label=customtkinter.CTkLabel(self,text=self.get_string('status_idle'),anchor="w")
         self.status_label.grid(row=1,column=0,columnspan=2,padx=20,pady=(0,10),sticky="ew")
         self.process=None
@@ -515,6 +718,10 @@ class App(customtkinter.CTk):
         self.current_process_pid=None
         self.initial_check_done=False
         self._parse_choice=None
+        # Запоминаем «нормальные» цвета кнопок: при выключении красим в серый,
+        # при включении возвращаем родной цвет (у некоторых он свой — зелёный/красный).
+        self._button_fg={bid:btn.cget("fg_color") for bid,btn in self.buttons.items()}
+        self.running_script_name=None
         self.update_ui_language()
         self.check_scripts_exist()
         self.after(100,self.process_queue)
@@ -568,7 +775,7 @@ class App(customtkinter.CTk):
         self.title(self.get_string('title'))
         cstat=self.status_label.cget("text")
         if self.is_running:
-            rname="script"
+            rname=self.running_script_name or "script"
             status_map={'status_extract_running':'button_2_extract','status_tbl_disassembling':'button_tbl_disassemble','status_tbl_assembling':'button_tbl_assemble','status_tbl_parsing_j2x':'tbl_parse_json_to_xliff','status_tbl_parsing_x2j':'tbl_parse_xliff_to_json'}
             found_status=False
             for skey,bkey in status_map.items():
@@ -577,7 +784,7 @@ class App(customtkinter.CTk):
                     rname=self.get_string(bkey)
                     found_status=True
                     break
-            if not found_status:
+            if not found_status and not self.running_script_name:
                 for sid,btn in self.buttons.items():
                     if btn.cget("state")=="disabled" and sid not in ['terminate_button','tbl_disassemble','tbl_assemble','tbl_parse_json_xliff','tbl_xliff_edit']:
                         sdef_id='3_edit' if sid=='3_edit' else sid
@@ -616,8 +823,24 @@ class App(customtkinter.CTk):
         if hasattr(self,'terminate_button'): self.terminate_button.configure(text=self.get_string('terminate_button'))
 
     def check_scripts_exist(self):
+        """Единственное место, которое решает, что вообще можно нажать.
+
+        Раньше состояние кнопок жило в трёх расходящихся местах
+        (disable_all_buttons / enable_all_buttons / этот метод), причём при
+        включении кнопки восстанавливались только по id из script_definitions.
+        У кнопок вкладок «Перевод» и «Сборка» id другие (wf_prepare, wf_build_tbl,
+        wf_all, ...), и их скрипт — общий translation_workflow.py, поэтому после
+        первой же операции они гасли навсегда. Теперь: сначала ВСЕ кнопки
+        возвращаются в работу, а потом гасятся только те, чей скрипт или нужный
+        файл реально отсутствует.
+        """
         all_ok=True
         log=not self.initial_check_done
+        if not self.is_running:
+            for bid in self.buttons:
+                if bid=='terminate_button':
+                    continue
+                self._set_button_enabled(bid,True)
         if not os.path.isdir(MAIN_PATH):
             self.log_message(self.get_string('error_dir_not_found',path=MAIN_PATH),tags=("error_log",))
             self.disable_all_buttons()
@@ -635,8 +858,8 @@ class App(customtkinter.CTk):
                 if log:
                     mlog.append(self.get_string('error_script_not_found',path=abs_p))
                 all_ok=False
-                self.buttons.get('3_edit',{}).configure(state="disabled",fg_color="gray")
-                self.buttons.get('tbl_xliff_edit',{}).configure(state="disabled",fg_color="gray")
+                self._set_button_enabled('3_edit',False)
+                self._set_button_enabled('tbl_xliff_edit',False)
             else:
                 if log:
                     flog.append(self.get_string('info_found_script',script_name=rel))
@@ -644,49 +867,57 @@ class App(customtkinter.CTk):
                 dat_arg_ok=(not xliff_p) or os.path.exists(xliff_p)
                 if xliff_p and not dat_arg_ok and log:
                     self.log_message(f"WARN: {self.get_string('warning_arg_file_not_found',script=rel,arg_path=xliff_p)}",tags=("warning_log",))
-                self.buttons.get('3_edit',{}).configure(state="normal" if dat_arg_ok else "disabled")
-                self.buttons.get('tbl_xliff_edit',{}).configure(state="normal")
+                self._set_button_enabled('3_edit',dat_arg_ok)
+                self._set_button_enabled('tbl_xliff_edit',True)
         for sid,(rel,args) in self.script_definitions.items():
             if rel in checked:
                 continue
             abs_p=os.path.join(MAIN_PATH,rel)
             ex=os.path.isfile(abs_p)
             checked.add(rel)
-            btn=None
+            bkey=None
             if sid=='tbl_disassemble_check':
-                btn=self.buttons.get('tbl_disassemble')
+                bkey='tbl_disassemble'
             elif sid=='tbl_assemble_check':
-                btn=self.buttons.get('tbl_assemble')
+                bkey='tbl_assemble'
             elif not sid.startswith('tbl_'):
-                btn=self.buttons.get(sid)
+                bkey=sid
             if not ex:
                 if log:
                     mlog.append(self.get_string('error_script_not_found',path=abs_p))
                 all_ok=False
-                if btn:
-                    btn.configure(state="disabled",fg_color="gray")
-                if sid in ['tbl_disassemble_check','tbl_assemble_check'] and 'tbl_parse_json_xliff' in self.buttons:
-                     self.buttons.get('tbl_parse_json_xliff',{}).configure(state="disabled",fg_color="gray")
+                if bkey:
+                    self._set_button_enabled(bkey,False)
+                if sid in ['tbl_disassemble_check','tbl_assemble_check']:
+                     self._set_button_enabled('tbl_parse_json_xliff',False)
             else:
                 if log:
                     flog.append(self.get_string('info_found_script',script_name=rel))
-                if btn:
-                    btn.configure(state="normal")
+                if bkey:
+                    self._set_button_enabled(bkey,True)
         tbl_d_ok=os.path.isfile(os.path.join(MAIN_PATH,TBL_DISASSEMBLE_SCRIPT))
         tbl_a_ok=os.path.isfile(os.path.join(MAIN_PATH,TBL_ASSEMBLE_SCRIPT))
-        self.buttons.get('tbl_parse_json_xliff',{}).configure(state="normal" if tbl_d_ok and tbl_a_ok else "disabled")
+        self._set_button_enabled('tbl_parse_json_xliff',tbl_d_ok and tbl_a_ok)
         pac_ok=os.path.isfile(PAC_TOOLS_PATH)
         for pk in ('pac_unpack','pac_pack','pac_info'):
-            b=self.buttons.get(pk)
-            if b is not None:
-                b.configure(state="normal" if pac_ok else "disabled", fg_color=("#3B8ED0","#1F6AA5") if pac_ok else "gray")
+            self._set_button_enabled(pk,pac_ok)
         if not pac_ok and log:
             mlog.append(self.get_string('error_pac_tools_missing',path=PAC_TOOLS_PATH))
         sm_ok=os.path.isfile(os.path.join(MAIN_PATH,TBL_STRINGS_MAP_SCRIPT))
         for sk in ('strings_export','strings_import'):
-            b=self.buttons.get(sk)
-            if b is not None:
-                b.configure(state="normal" if sm_ok else "disabled", fg_color=("#3B8ED0","#1F6AA5") if sm_ok else "gray")
+            self._set_button_enabled(sk,sm_ok)
+        # Кнопки вкладок «Перевод» и «Сборка» — это один общий скрипт
+        # translation_workflow.py, в script_definitions его id не совпадает
+        # с id кнопок, поэтому проверяем файлы напрямую.
+        wf_ok=os.path.isfile(os.path.join(MAIN_PATH,'translation_workflow.py'))
+        for wk in ('wf_prepare','wf_apply','wf_maps','wf_status','wf_chunks',
+                   'wf_import_chunks','wf_map2xliff','wf_xliff2map',
+                   'wf_build_dat','wf_build_tbl','wf_pack','wf_all','wf_all_force'):
+            self._set_button_enabled(wk,wf_ok)
+        map_ok=os.path.isfile(os.path.join(MAIN_PATH,'map_editor_gui.py'))
+        self._set_button_enabled('wf_edit_map',wf_ok and map_ok)
+        if not wf_ok and log:
+            mlog.append(self.get_string('error_script_not_found',path=os.path.join(MAIN_PATH,'translation_workflow.py')))
         if log:
             for msg in mlog:
                 self.log_message(msg,tags=("error_log",))
@@ -761,7 +992,22 @@ class App(customtkinter.CTk):
         if hasattr(self,'open_parser_button'):
             self.open_parser_button.configure(state="normal")
 
+    def _set_button_enabled(self,bid,enabled):
+        """Включить/выключить кнопку, возвращая ей родной цвет."""
+        btn=self.buttons.get(bid)
+        if btn is None:
+            return
+        if enabled:
+            btn.configure(state="normal",fg_color=self._button_fg.get(bid,BUTTON_FG_OK))
+        else:
+            btn.configure(state="disabled",fg_color="gray")
+
     def enable_all_buttons(self):
+        """Вернуть кнопки в работу после завершения операции.
+
+        Идёт через check_scripts_exist(), поэтому кнопки вкладок «Перевод» и
+        «Сборка» больше не остаются выключенными после первого же запуска.
+        """
         if self.is_running:
             self.disable_all_buttons()
             return
@@ -945,6 +1191,105 @@ class App(customtkinter.CTk):
             self.log_message(emsg,tags=("error_log",))
             tkinter.messagebox.showerror(self.get_string('error_unexpected',e=''),emsg)
 
+    # ------------------------- Перевод: обёртки над translation_workflow.py -------------------------
+    def run_selftest(self):
+        """Автотест: архив из pac_packed читается и собирается обратно байт-в-байт.
+
+        Раньше кнопка звала selftest.py с путями ../work/extract/... — таких
+        каталогов в репозитории нет, и автотест падал ещё до начала проверки.
+        Теперь проверяется то, что реально нужно: готовый архив (если он есть)
+        или оригинал из «Файлы для перевода».
+        """
+        if self.is_running:
+            tkinter.messagebox.showwarning(self.get_string('warn_already_running'),self.get_string('warn_already_running_msg'))
+            return
+        what=self.wf_what()
+        built=os.path.join(MAIN_PATH,PAC_PACKED_FOLDER,what+".pac")
+        orig=os.path.abspath(os.path.join(MAIN_PATH,os.pardir,"Файлы для перевода",what+".pac"))
+        target=built if os.path.isfile(built) else orig
+        if not os.path.isfile(target):
+            msg=self.get_string('selftest_no_archive',default="Нет архива для проверки: {path}",path=target)
+            self.log_message(msg,tags=("error_log",))
+            tkinter.messagebox.showerror(self.get_string('warning_title'),msg)
+            return
+        work=os.path.join(MAIN_PATH,"selftest_work")
+        self.log_message(self.get_string('selftest_log',default="SELFTEST: проверяю {path}",path=target),tags=("info_log",))
+        self.run_script_thread('selftest',extra_args=['--pac',target,'--game',self._get_tbl_game() or 'Kyoto','--work',work])
+
+    def wf_kind(self):
+        try:
+            val=(self.wf_kind_combo.get() or "").strip().lower()
+        except Exception:
+            val=""
+        # Комбо показывает дружелюбные названия, поэтому проверяем и русские
+        # варианты («Таблицы .tbl…»), и старые латинские.
+        if val.startswith("tbl") or val.startswith("tab") or val.startswith("табл"):
+            return "tbl"
+        return "script"
+
+    def wf_what(self):
+        """Выбранный архив для сборки: table/script/scene (берётся из вкладки «Сборка»)."""
+        try:
+            val=(self.build_what_combo.get() or "").strip().lower()
+        except Exception:
+            val=""
+        for key in ("scene","table","script"):
+            if val.startswith(key):
+                return key
+        return "table"
+
+    def run_workflow(self, args):
+        self.run_script_thread('workflow', extra_args=args)
+
+    def open_workflow_xliff(self):
+        kind=self.wf_kind()
+        # translation_workflow.py кладёт XLIFF в KuroTools/xliff/{script,tbl}.xliff
+        xpath=os.path.join(MAIN_PATH,"xliff",f"{kind}.xliff")
+        if not os.path.isfile(xpath):
+            self.log_message(f"XLIFF not found: {xpath}",tags=("error_log",))
+            tkinter.messagebox.showwarning("XLIFF",f"Нет файла:\n{xpath}\n\nСначала нажмите 'Карта → XLIFF'.")
+            return
+        self.run_script_thread('edit_xliff', extra_args=[xpath])
+
+    def prompt_pack_workflow(self):
+        win=customtkinter.CTkToplevel(self)
+        win.title(self.get_string('wf_pack',default="Упаковать .pac"))
+        win.geometry("320x210")
+        win.transient(self)
+        customtkinter.CTkLabel(win,text=f"Какой архив упаковать?\nРезультат: {PAC_PACKED_FOLDER}/<имя>.pac").pack(padx=16,pady=(16,6))
+        var=tkinter.StringVar(value=self.wf_what())
+        for name in ("table","script","scene"):
+            customtkinter.CTkRadioButton(win,text=name,variable=var,value=name).pack(padx=24,pady=2,anchor="w")
+        def _go():
+            win.destroy()
+            self.run_workflow(['pack','--what',var.get()])
+        customtkinter.CTkButton(win,text="Упаковать",command=_go).pack(pady=12)
+        win.grab_set()
+
+    def advanced_widgets_list(self):
+        # Старые инструменты теперь живут на отдельной вкладке «Ещё», поэтому
+        # прятать нечего: список всегда пуст, а метод оставлен для совместимости
+        # с apply_advanced_visibility() и toggle_advanced_tools().
+        return []
+
+    def apply_advanced_visibility(self):
+        items=self.advanced_widgets_list()
+        if not items:
+            # Ничего не скрывается — не трогаем и подпись кнопки-индикатора.
+            return
+        for w in items:
+            try:
+                if self.advanced_visible:
+                    w.grid()
+                else:
+                    w.grid_remove()
+            except Exception:
+                pass
+
+    def toggle_advanced_tools(self):
+        self.advanced_visible=not getattr(self,'advanced_visible',False)
+        self.apply_advanced_visibility()
+
     def run_script_thread(self, script_id, extra_args=None):
         if self.is_running:
             print(f"Busy, skip '{script_id}'.")
@@ -967,6 +1312,7 @@ class App(customtkinter.CTk):
         self.process=None
         self.current_process_pid=None
         self.disable_all_buttons()
+        self.running_script_name=rel_path
         self.set_status(self.get_string('status_running',script_name=rel_path))
         log_args=" ".join(f'"{a}"' if " " in a else a for a in fargs_str)
         self.log_message(self.get_string('log_running',script_name=rel_path,args=log_args))
@@ -983,6 +1329,8 @@ class App(customtkinter.CTk):
             penv["PYTHONPATH"]=ppath
             self.process=subprocess.Popen(cmd_list,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,stdin=subprocess.PIPE,shell=False,cwd=MAIN_PATH,encoding='utf-8',errors='replace',creationflags=subprocess.CREATE_NEW_PROCESS_GROUP if sys.platform=="win32" else 0,bufsize=1,env=penv)
             self.current_process_pid=self.process.pid
+            # У «Прервать» состояние зависит от PID, а он известен только здесь.
+            self.message_queue.put({"type":"pid","data":self.process.pid})
             pid_end=self.current_process_pid
             for line in iter(self.process.stdout.readline,''):
                 if not line:
@@ -1604,6 +1952,11 @@ class App(customtkinter.CTk):
                     if is_significant:
                         self.log_message(f"--- {mdata} ---", tags=mtags)
 
+                elif mtype == "pid":
+                    # Процесс реально стартовал — теперь «Прервать» можно нажимать.
+                    tb=self.buttons.get('terminate_button')
+                    if tb is not None and self.is_running:
+                        tb.configure(state="normal")
                 elif mtype == "error":
                     self.set_status(self.get_string('status_error'))
                     self.log_message(self.get_string('log_error', error_message=mdata), tags=("error_log",))

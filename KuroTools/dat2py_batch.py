@@ -27,7 +27,9 @@ INPUT_DAT_DIR = None
 OUTPUT_PY_SUBDIR = "data_to_py"
 LOG_FILE = "LogDisassembler.txt"
 DECOMPILE_MODE = True
-SHOW_MARKERS = False
+# Маркеры строк (инструкция 0x26 ADDLINEMARKER) нужно сохранять: без них
+# пересобранный .dat теряет часть кода и уже не совпадает с оригиналом по размеру.
+SHOW_MARKERS = True
 # --------------------
 
 # --- Код для добавления sys.path ---

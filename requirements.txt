@@ -1,0 +1,22 @@
+# Зависимости KuroTranslate-Tools.
+# Установка: pip install -r requirements.txt
+# Требуется Python 3.10+ (на Windows tkinter входит в установщик; на Linux нужен python3-tk).
+
+# --- Интерфейс: лаунчер, редактор карты, редактор XLIFF ---
+customtkinter
+pygments
+colorama
+
+# --- Форматы игр: чтение/запись сжатых CLE-файлов ---
+zstandard
+
+# --- Редактор XLIFF: разбор XML и автоперевод (DeepL/Google) ---
+lxml
+deep_translator
+
+# --- Пакет экспорта в Excel (KuroTools/Parser/) ---
+pandas
+openpyxl
+
+# --- Необязательно: запасной сборщик кода для Python < 3.9, где нет ast.unparse ---
+# astor

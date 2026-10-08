@@ -250,11 +250,17 @@ def compile_py_scripts(py_dir_path, dat_dir_path, only_translated):
         compilation_successful = False
         try:
             print(f"  Запуск компиляции файла: {temp_py_filename}")
-            # Запускаем временный скрипт
+            # Запускаем временный скрипт. Скрипт делает `from disasm.ED9Assembler import *`,
+            # поэтому в PYTHONPATH обязательно должен быть каталог KuroTools (там лежат
+            # пакеты disasm/ и lib/). Без этого компиляция падала с ModuleNotFoundError.
+            run_env = dict(os.environ)
+            run_env["PYTHONPATH"] = os.path.dirname(os.path.abspath(__file__)) + os.pathsep + run_env.get("PYTHONPATH", "")
+            run_env.setdefault("PYTHONUTF8", "1")
             result = subprocess.run(
                 [python_executable, temp_py_path],
                 capture_output=True, text=True, encoding='utf-8', # Указываем кодировку явно
                 cwd=py_dir_path, # Запускаем из папки со скриптами
+                env=run_env,
                 check=False # Не выбрасывать исключение при ненулевом коде возврата
             )
 

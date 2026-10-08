@@ -8,6 +8,12 @@ import argparse
 from lib.parser import process_data, readint, get_size_from_schema
 from processcle import processCLE
 
+# Схемы лежат рядом со скриптом. Ищем их относительно __file__, а не CWD:
+# иначе запуск из другого каталога (например tbl_to_json/) молча давал JSON
+# БЕЗ раскодированных полей — записи уходили в data_dump как hex-дампы,
+# и в карту перевода попадал мусор вместо текста.
+SCHEMAS_DIR = Path(__file__).resolve().parent / "schemas"
+
 
 def init_argparse() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
@@ -112,7 +118,7 @@ def parse(name: Union[str, bytes, os.PathLike], game: Optional[str] = None) -> N
         all_headers_covered = True
 
         # Load schema metadata if available
-        schema_meta_path = Path("schemas") / f"{filename}.json"
+        schema_meta_path = SCHEMAS_DIR / f"{filename}.json"
         if schema_meta_path.exists():
             with open(schema_meta_path, encoding="utf-8") as header_file:
                 schemas_meta = json.load(header_file)
@@ -165,7 +171,7 @@ def parse(name: Union[str, bytes, os.PathLike], game: Optional[str] = None) -> N
             header_data = {"name": header["name"], "data": []}
 
             if has_schema and header["name"] in schema_list:
-                header_schema_path = Path("schemas") / "headers" / f"{header['name']}.json"
+                header_schema_path = SCHEMAS_DIR / "headers" / f"{header['name']}.json"
                 if not header_schema_path.exists():
                     print(f"Warning: Schema file not found for header '{header['name']}'. Using raw hex.")
                     correct_schema = None

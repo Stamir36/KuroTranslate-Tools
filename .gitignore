@@ -1,0 +1,57 @@
+# Что не должно попадать в публичный репозиторий.
+#
+# ВАЖНО про file-маски: файл, попавший под .gitignore, перестаёт быть виден
+# поисковым инструментам (read_files/glob). Поэтому рабочая папка переводчика
+# KuroTools/tools/ описана отдельно, в KuroTools/.gitignore, тоже масками по
+# файлам, а не по каталогам.
+
+# --- рабочий мусор прошлых сессий (сборки, распаковки, логи) ---
+work/
+__pycache__/
+*.pyc
+
+# --- собранная русская копия игры и ресурсы из самой игры ---
+KYOTO XANADU Russian/
+Fonts/Original Files Game/
+Fonts/asset/
+Fonts/asset_ttf/
+Fonts/work_fonts/
+Fonts/gotovoe/
+Fonts/preview/
+Fonts/reports/
+Fonts/__pycache__/
+Fonts/reference_other_game/
+
+# --- сторонние бинарники и утилиты, они не наши ---
+PAC-Extractors/
+Fonts/Falcom.Font.Creator.1.3/
+
+# --- служебные каталоги инструментов ---
+.freebuff/
+
+# --- игровые данные: не публикуем (копирайт Falcom) ---
+# Собранная русская копия игры одним архивом и распакованные ассеты движка.
+KYOTO XANADU Russian.zip
+KYOTO XANADU asset_ko/
+# Собранные архивы .pac для установки в игру — это данные игры, а не наш код.
+# Сам перевод публикуется картой KuroTools/translation_map/*.jsonl.
+Файлы для перевода/
+
+# --- бинарники внутри Fonts/ (сторонние и игровые) ---
+# xinput1_4.dll — библиотека из игры, ProductSans.ttf — чужой шрифт,
+# .jpg — сравнительные скриншоты. Инструменты Fonts/tools/*.py публикуем.
+Fonts/*.dll
+Fonts/*.jpg
+Fonts/ProductSans.ttf
+
+# --- документация с дампом текста игры ---
+# Отчёты аудита сцен построчно цитируют японский текст игры (40 тыс. знаков).
+# Публикуем только отчёты без текста игры.
+DOCS/audit/SCENE_*
+
+# --- временные файлы редакторов ---
+*.bak
+*.tmp
+~$*
+Thumbs.db
+desktop.ini

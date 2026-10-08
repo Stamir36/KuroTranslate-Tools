@@ -774,7 +774,11 @@ class ED9Disassembler(object):
                             decompiled_str = "CallFunctionFromAnotherScriptWithoutReturnAddr(" + decompiled_str + ")"
                             
                             addr = function.instructions[idx_return_addr].operands[0].value
-                            if addr in ED9InstructionsSet.locations_dict:
+                            # Операнд 0x25 мог быть уже заменён на метку (строку) — тогда
+                            # используем её как есть (см. пояснение в add_return_addresses).
+                            if isinstance(addr, str):
+                                label = addr
+                            elif addr in ED9InstructionsSet.locations_dict:
                                 label = ED9InstructionsSet.locations_dict[addr]
                             else:
                                 label = "Loc_"+ str(ED9InstructionsSet.location_counter)
@@ -973,13 +977,22 @@ class ED9Disassembler(object):
 
             elif instruction.op_code == 0x25: 
                addr = instruction.operands[0].value
-               if addr in ED9InstructionsSet.locations_dict:
+               # Операнд 0x25 может прийти СЮДА УЖЕ как метка (строка), а не как
+               # сырой адрес: другой проход мог его пометить. Строку нельзя искать
+               # в locations_dict (там ключи — адреса) — иначе для той же цели
+               # создавалось ВТОРОЕ имя, ссылка PUSHRETURNADDRESSFROMANOTHERSCRIPT
+               # расходилась с определением Label(), и ассемблер оставлял
+               # addr_destination = -1, записывая неверный адрес возврата.
+               if isinstance(addr, str):
+                   pass
+               elif addr in ED9InstructionsSet.locations_dict:
                    label = ED9InstructionsSet.locations_dict[addr]
+                   instruction.operands[0] = ED9InstructionsSet.operand(label, False)
                else:
                    label = "Loc_"+ str(ED9InstructionsSet.location_counter)
                    ED9InstructionsSet.locations_dict[addr] = label
                    ED9InstructionsSet.location_counter = ED9InstructionsSet.location_counter + 1
-               instruction.operands[0] = ED9InstructionsSet.operand(label, False)
+                   instruction.operands[0] = ED9InstructionsSet.operand(label, False)
                #The previous instruction is likely where the call really starts, it pushes a small unsigned integer (maybe some kind of stack size allocated for the called function?)
             if (update_stack_needed):
                 self.update_stack(instruction, stack, instruction_id)

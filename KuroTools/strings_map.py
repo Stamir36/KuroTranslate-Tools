@@ -23,8 +23,9 @@ import re
 import string
 import sys
 
-# Пропускаем идентификаторы, хекс-дампы и «шумовые» строки.
-_ID_RE = re.compile(r"^[A-Za-z0-9_./\\|\- ]+$")
+# Пропускаем идентификаторы, хекс-дампы и «шумовые» строки. Японский текст
+# определяется по не-ASCII символам; английский — если это фраза (есть пробел/\n),
+# в отличие от одиночных идентификаторов (chr001, AniReset, path/…).
 _HEX_RE = re.compile(r"^[0-9A-Fa-f ]+$")
 
 
@@ -33,10 +34,17 @@ def is_translatable(s, minlen):
         return False
     if _HEX_RE.fullmatch(s):
         return False
+    # t_/tbl_ -подобные идентификаторы
+    if s.startswith("tbl_") and all(c.isalnum() or c == "_" for c in s):
+        return False
+    # Чисто ASCII без пробела/перевода строки — почти наверняка ID, а не текст.
+    if " " not in s and "\n" not in s and all(ord(c) < 128 for c in s):
+        return False
+    # «AniReset»/«chr001»-стиль: только буквы/цифры/подчёркивания без пробелов.
+    if "_" in s and " " not in s and "\n" not in s and all(c.isalnum() or c == "_" for c in s) and s[0].isalpha():
+        return False
     if all(c in (string.digits + string.punctuation + string.whitespace) for c in s):
         return False
-    if _ID_RE.fullmatch(s):
-        return False  # чистый ASCII-идентификатор (tbl_*, chr001, path/…)
     return True
 
 

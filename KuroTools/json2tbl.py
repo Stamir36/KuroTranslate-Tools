@@ -7,6 +7,10 @@ from lib.packer import pack_data, writehex, writeint, writetext
 from lib.parser import get_size_from_schema
 from lib.crc32 import compute_crc32
 
+# См. комментарий в tbl2json.py: схемы ищем относительно скрипта, а не CWD,
+# иначе сборка .tbl из JSON, собранного в другом каталоге, падала/ломалась.
+SCHEMAS_DIR = Path(__file__).resolve().parent / "schemas"
+
 
 def init_argparse() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
@@ -114,7 +118,7 @@ def pack(name: Union[str, bytes, os.PathLike]) -> None:
         else:
             # New format: header["schema"] = game name (e.g., "Sora1")
             schema_game = header["schema"]
-            schema_file_path = f'schemas/headers/{header["name"]}.json'
+            schema_file_path = str(SCHEMAS_DIR / "headers" / f'{header["name"]}.json')
             
             if not os.path.exists(schema_file_path):
                 raise FileNotFoundError(f"Schema file not found: {schema_file_path}")

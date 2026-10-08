@@ -64,38 +64,31 @@ def is_translatable_string(s):
     # Считаем строку переводимой, если она прошла все проверки
     return True
 
-class PushStringVisitor(ast.NodeVisitor):
-    """Обходит AST и извлекает строки из PUSHSTRING."""
+class StringExtractVisitor(ast.NodeVisitor):
+    """Обходит AST и извлекает ВСЕ строковые константы.
+
+    Раньше извлекались только аргументы PUSHSTRING, из-за чего терялось ~94%
+    строк (имена/ошибки в struct-параметрах, строки CallFunctionFromAnotherScript,
+    выходные/входные переменные и т.п.). Теперь берём любую строковую константу,
+    прошедшую фильтр is_translatable_string — так извлечение симметрично
+    замене в py2dat_batch.py (там подменяются все строковые константы).
+    """
     def __init__(self, filename):
         self.filename = filename
         self.count = 0
 
-    def visit_Call(self, node):
-        func_name = ""
-        if isinstance(node.func, ast.Name):
-            func_name = node.func.id
-
-        if func_name == "PUSHSTRING":
-            if node.args and isinstance(node.args[0], ast.Constant) and isinstance(node.args[0].value, str):
-                original_string = node.args[0].value
-                if is_translatable_string(original_string):
-                    if original_string not in string_to_id_map:
-                        text_id = f"py_{uuid.uuid4().hex[:12]}"
-                        string_to_id_map[original_string] = text_id
-                        xliff_data[text_id] = {"source": original_string, "file": self.filename}
-                        self.count += 1
-                    # else: ID уже есть для этой строки
-            elif node.args and isinstance(node.args[0], ast.Str): # Совместимость с Python < 3.8
-                 original_string = node.args[0].s
-                 if is_translatable_string(original_string):
-                    if original_string not in string_to_id_map:
-                        text_id = f"py_{uuid.uuid4().hex[:12]}"
-                        string_to_id_map[original_string] = text_id
-                        xliff_data[text_id] = {"source": original_string, "file": self.filename}
-                        self.count += 1
-
-        # Продолжаем обход дерева, чтобы найти все вызовы PUSHSTRING
+    def visit_Constant(self, node):
+        if isinstance(node.value, str) and is_translatable_string(node.value):
+            original_string = node.value
+            if original_string not in string_to_id_map:
+                text_id = f"py_{uuid.uuid4().hex[:12]}"
+                string_to_id_map[original_string] = text_id
+                xliff_data[text_id] = {"source": original_string, "file": self.filename}
+                self.count += 1
         self.generic_visit(node)
+
+    def visit_Str(self, node):  # Совместимость с Python < 3.8
+        self.visit_Constant(node)
 
 def create_xliff_and_map(xliff_filepath, strmap_filepath):
     """Создает XLIFF и пустой JSON для карты строк."""
@@ -181,7 +174,7 @@ def process_py_files(py_dir):
                 source_code = f_read.read()
 
             tree = ast.parse(source_code, filename=filename)
-            visitor = PushStringVisitor(filename)
+            visitor = StringExtractVisitor(filename)
             visitor.visit(tree)
             if visitor.count > 0:
                  print(f"  Найдено новых уникальных строк: {visitor.count}")
